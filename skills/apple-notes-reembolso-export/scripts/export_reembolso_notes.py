@@ -41,8 +41,7 @@ def apple_escape(text: str) -> str:
     return text.replace("\\", "\\\\").replace('"', '\\"')
 
 
-def discover_notes(account: str, marker: str):
-    marker_lower = marker.lower()
+def discover_notes(folder_name: str):
     script = f'''
 on pad2(n)
   if n < 10 then
@@ -52,30 +51,33 @@ on pad2(n)
 end pad2
 
 tell application "Notes"
+  set targetFolder to missing value
+  repeat with acc in accounts
+    repeat with f in folders of acc
+      try
+        if (name of f) is equal to "{apple_escape(folder_name)}" then
+          set targetFolder to f
+          exit repeat
+        end if
+      end try
+    end repeat
+    if targetFolder is not missing value then exit repeat
+  end repeat
+
+  if targetFolder is missing value then error "Folder not found: {apple_escape(folder_name)}"
+
   set outLines to {{}}
-  repeat with n in notes of account "{apple_escape(account)}"
+  repeat with n in notes of targetFolder
     try
-      set b to body of n
-      considering case
-        set matchesMarker to false
-      end considering
-      if (b as text) is not "" then
-        ignoring case
-          if b contains "{apple_escape(marker)}" or b contains "{apple_escape(marker_lower)}" then
-            set matchesMarker to true
-          end if
-        end ignoring
-      end if
-      if matchesMarker then
-        set d to creation date of n
-        set yyyy to year of d as integer
-        set mm to my pad2(month of d as integer)
-        set dd to my pad2(day of d as integer)
-        set isoDate to (yyyy as text) & "-" & mm & "-" & dd
-        copy ((name of n) & tab & isoDate) to end of outLines
-      end if
+      set d to creation date of n
+      set yyyy to year of d as integer
+      set mm to my pad2(month of d as integer)
+      set dd to my pad2(day of d as integer)
+      set isoDate to (yyyy as text) & "-" & mm & "-" & dd
+      copy ((name of n) & tab & isoDate) to end of outLines
     end try
   end repeat
+
   if (count of outLines) is 0 then
     return ""
   end if
@@ -95,15 +97,30 @@ end tell
     return notes
 
 
-def export_note(account: str, note_name: str, output_path: Path):
+def export_note(folder_name: str, note_name: str, output_path: Path):
     output_path.parent.mkdir(parents=True, exist_ok=True)
     script = f'''
 use scripting additions
 
 tell application "Notes"
   activate
+  set targetFolder to missing value
+  repeat with acc in accounts
+    repeat with f in folders of acc
+      try
+        if (name of f) is equal to "{apple_escape(folder_name)}" then
+          set targetFolder to f
+          exit repeat
+        end if
+      end try
+    end repeat
+    if targetFolder is not missing value then exit repeat
+  end repeat
+
+  if targetFolder is missing value then error "Folder not found: {apple_escape(folder_name)}"
+
   set targetNote to missing value
-  repeat with n in notes of account "{apple_escape(account)}"
+  repeat with n in notes of targetFolder
     try
       if (name of n) is equal to "{apple_escape(note_name)}" then
         set targetNote to n
@@ -131,15 +148,14 @@ end tell
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Export Apple Notes reimbursement-tag notes to Dropbox PDFs")
-    ap.add_argument("--tag", default="#reembolso")
-    ap.add_argument("--account", default="iCloud")
+    ap = argparse.ArgumentParser(description="Export Apple Notes reimbursement smart-folder notes to Dropbox PDFs")
+    ap.add_argument("--folder", default="RTF Reembolsos")
     ap.add_argument("--dest-root", default=str(default_dest_root()))
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
     dest_root = Path(args.dest_root).expanduser()
-    notes = discover_notes(args.account, args.tag)
+    notes = discover_notes(args.folder)
 
     if not notes:
         print("No matching notes found.")
@@ -151,7 +167,7 @@ def main():
         filename = f"{note['created']}_{sanitize_filename(note['name'])}.pdf"
         planned.append((note["name"], dest_root / year / filename))
 
-    print(f"Found {len(planned)} matching notes for marker {args.tag}.")
+    print(f"Found {len(planned)} notes in smart folder {args.folder}.")
     for name, path in planned:
         print(f"- {name} -> {path}")
 
@@ -161,7 +177,7 @@ def main():
     failures = []
     for name, path in planned:
         try:
-            export_note(args.account, name, path)
+            export_note(args.folder, name, path)
             print(f"Exported: {path}")
         except Exception as e:
             failures.append((name, str(e)))
