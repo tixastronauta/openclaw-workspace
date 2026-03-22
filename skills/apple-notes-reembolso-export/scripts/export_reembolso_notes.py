@@ -136,7 +136,7 @@ delay 1.2
 
 tell application "System Events"
   tell process "Notes"
-    click menu item "Export as PDF…" of menu "File" of menu bar item "File" of menu bar 1
+    click menu item "PDF" of menu 1 of menu item "Export as" of menu "File" of menu bar item "File" of menu bar 1
     delay 1.0
     keystroke "{apple_escape(str(output_path))}"
     delay 0.5
