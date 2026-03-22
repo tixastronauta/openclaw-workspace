@@ -59,6 +59,7 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - Read files, explore, organize, learn
 - Search the web, check calendars
 - Work within this workspace
+- Commit and push meaningful workspace changes to the configured private remote repo
 
 **Ask first:**
 
@@ -206,6 +207,34 @@ Periodically (every few days), use a heartbeat to:
 Think of it like a human reviewing their journal and updating their mental model. Daily files are raw notes; MEMORY.md is curated wisdom.
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
+
+## Git Policy
+
+The `workspace/` folder is versioned in git and should be treated as the durable home for prompts, notes, memory files, and workspace docs.
+
+### Commit & Push Rule
+
+- Automatically commit **meaningful** completed changes made inside `workspace/`
+- Automatically push those commits to the configured **private remote**
+- Do **not** wait for confirmation on routine meaningful workspace updates
+- Avoid commit spam: group tiny related edits into one sensible commit
+- Use clear, boring commit messages that describe the change
+
+### What counts as meaningful
+
+- Updates to `AGENTS.md`, `SOUL.md`, `USER.md`, `TOOLS.md`, `IDENTITY.md`, `MEMORY.md`
+- New or updated files in `memory/`
+- New helper docs, scripts, or workspace configuration
+- Completed cleanups or organizational changes
+
+### What should not be auto-committed blindly
+
+- Half-finished experiments
+- Temporary scratch files unless intentionally kept
+- Changes the user explicitly says not to commit
+- Secrets that should not live in the workspace repo
+
+If a change is meaningful and safe, commit it and push it.
 
 ## Make It Yours
 
