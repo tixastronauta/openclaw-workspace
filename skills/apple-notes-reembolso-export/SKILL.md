@@ -19,7 +19,8 @@ Use this skill to export Apple Notes that contain a reimbursement tag such as `#
 - Search the specified Apple Notes account for notes whose HTML body contains the tag string.
 - Use the note creation date for filenames by default.
 - Sanitize the note name for safe filenames.
-- Save files under Dropbox, defaulting to `~/Dropbox/Reembolsos` when available.
+- Save files under Dropbox, defaulting to `~/Dropbox/Reticências Fenomenais/Documentos para a contabilidade/<YEAR>/`.
+- Place each export inside the proper year folder derived from the note date.
 - Filename format: `YYYY-MM-DD_note-name.pdf`
 
 ## Commands

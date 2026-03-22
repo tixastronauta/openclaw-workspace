@@ -18,10 +18,10 @@ def run_osascript(script: str) -> str:
     return proc.stdout.strip()
 
 
-def default_dropbox_dir() -> Path:
+def default_dest_root() -> Path:
     candidates = [
-        Path.home() / "Dropbox" / "Reembolsos",
-        Path.home() / "Library/CloudStorage/Dropbox" / "Reembolsos",
+        Path.home() / "Dropbox" / "Reticências Fenomenais" / "Documentos para a contabilidade",
+        Path.home() / "Library/CloudStorage/Dropbox" / "Reticências Fenomenais" / "Documentos para a contabilidade",
     ]
     for p in candidates:
         if p.parent.exists():
@@ -123,11 +123,11 @@ def main():
     ap = argparse.ArgumentParser(description="Export Apple Notes reimbursement-tag notes to Dropbox PDFs")
     ap.add_argument("--tag", default="#reembolso")
     ap.add_argument("--account", default="iCloud")
-    ap.add_argument("--dest", default=str(default_dropbox_dir()))
+    ap.add_argument("--dest-root", default=str(default_dest_root()))
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
-    dest = Path(args.dest).expanduser()
+    dest_root = Path(args.dest_root).expanduser()
     notes = discover_notes(args.account, args.tag)
 
     if not notes:
@@ -136,8 +136,9 @@ def main():
 
     planned = []
     for note in notes:
+        year = note["created"][:4]
         filename = f"{note['created']}_{sanitize_filename(note['name'])}.pdf"
-        planned.append((note["name"], dest / filename))
+        planned.append((note["name"], dest_root / year / filename))
 
     print(f"Found {len(planned)} matching notes for tag {args.tag}.")
     for name, path in planned:
