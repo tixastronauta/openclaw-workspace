@@ -42,8 +42,7 @@ def apple_escape(text: str) -> str:
     return text.replace("\\", "\\\\").replace('"', '\\"')
 
 
-def discover_notes(folder_name: str, skip_processed: bool = True):
-    processed_check = "if b contains \"#processed\" then set isProcessed to true" if skip_processed else "set isProcessed to false"
+def discover_notes(folder_name: str):
     script = f'''
 on pad2(n)
   if n < 10 then
@@ -71,17 +70,12 @@ tell application "Notes"
   set outLines to {{}}
   repeat with n in notes of targetFolder
     try
-      set b to body of n
-      set isProcessed to false
-      {processed_check}
-      if isProcessed is false then
-        set d to creation date of n
-        set yyyy to year of d as integer
-        set mm to my pad2(month of d as integer)
-        set dd to my pad2(day of d as integer)
-        set isoDate to (yyyy as text) & "-" & mm & "-" & dd
-        copy ((name of n) & tab & isoDate) to end of outLines
-      end if
+      set d to creation date of n
+      set yyyy to year of d as integer
+      set mm to my pad2(month of d as integer)
+      set dd to my pad2(day of d as integer)
+      set isoDate to (yyyy as text) & "-" & mm & "-" & dd
+      copy ((name of n) & tab & isoDate) to end of outLines
     end try
   end repeat
 
@@ -167,44 +161,6 @@ end tell
     run_osascript(script)
 
 
-def mark_processed(folder_name: str, note_name: str):
-    script = f'''
-tell application "Notes"
-  set targetFolder to missing value
-  repeat with acc in accounts
-    repeat with f in folders of acc
-      try
-        if (name of f) is equal to "{apple_escape(folder_name)}" then
-          set targetFolder to f
-          exit repeat
-        end if
-      end try
-    end repeat
-    if targetFolder is not missing value then exit repeat
-  end repeat
-
-  if targetFolder is missing value then error "Folder not found: {apple_escape(folder_name)}"
-
-  set targetNote to missing value
-  repeat with n in notes of targetFolder
-    try
-      if (name of n) is equal to "{apple_escape(note_name)}" then
-        set targetNote to n
-        exit repeat
-      end if
-    end try
-  end repeat
-  if targetNote is missing value then error "Note not found: {apple_escape(note_name)}"
-
-  set existingBody to body of targetNote
-  if existingBody does not contain "#processed" then
-    set body of targetNote to existingBody & "<div><br></div><div>#processed</div>"
-  end if
-end tell
-'''
-    run_osascript(script)
-
-
 def wait_for_file(path: Path, timeout_seconds: float = 12.0) -> bool:
     deadline = time.time() + timeout_seconds
     while time.time() < deadline:
@@ -218,12 +174,11 @@ def main():
     ap = argparse.ArgumentParser(description="Export Apple Notes reimbursement smart-folder notes to Dropbox PDFs")
     ap.add_argument("--folder", default="RTF Reembolsos")
     ap.add_argument("--dest-root", default=str(default_dest_root()))
-    ap.add_argument("--include-processed", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
     dest_root = Path(args.dest_root).expanduser()
-    notes = discover_notes(args.folder, skip_processed=not args.include_processed)
+    notes = discover_notes(args.folder)
 
     if not notes:
         print("No matching notes found.")
@@ -247,7 +202,6 @@ def main():
         try:
             export_note(args.folder, name, path)
             if wait_for_file(path):
-                mark_processed(args.folder, name)
                 print(f"Exported: {path}")
             else:
                 raise RuntimeError(f"Expected exported file not found at {path}")
