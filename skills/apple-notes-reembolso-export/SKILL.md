@@ -23,6 +23,7 @@ Use this skill to export Apple Notes from the smart folder `RTF Reembolsos` into
 - Save files under Dropbox, defaulting to `~/Dropbox/Reticências Fenomenais/Documentos para a contabilidade/<YEAR>/`.
 - Place each export inside the proper year folder derived from the note date.
 - Filename format: `YYYY-MM-DD_note-name.pdf`
+- After a successful export, append `#processed` to the note so future runs can skip it.
 
 ## Commands
 

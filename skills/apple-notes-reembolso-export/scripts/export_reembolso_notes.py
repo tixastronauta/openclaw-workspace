@@ -3,6 +3,7 @@ import argparse
 import re
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 
@@ -41,7 +42,8 @@ def apple_escape(text: str) -> str:
     return text.replace("\\", "\\\\").replace('"', '\\"')
 
 
-def discover_notes(folder_name: str):
+def discover_notes(folder_name: str, skip_processed: bool = True):
+    processed_check = "if b contains \"#processed\" then set isProcessed to true" if skip_processed else "set isProcessed to false"
     script = f'''
 on pad2(n)
   if n < 10 then
@@ -69,12 +71,17 @@ tell application "Notes"
   set outLines to {{}}
   repeat with n in notes of targetFolder
     try
-      set d to creation date of n
-      set yyyy to year of d as integer
-      set mm to my pad2(month of d as integer)
-      set dd to my pad2(day of d as integer)
-      set isoDate to (yyyy as text) & "-" & mm & "-" & dd
-      copy ((name of n) & tab & isoDate) to end of outLines
+      set b to body of n
+      set isProcessed to false
+      {processed_check}
+      if isProcessed is false then
+        set d to creation date of n
+        set yyyy to year of d as integer
+        set mm to my pad2(month of d as integer)
+        set dd to my pad2(day of d as integer)
+        set isoDate to (yyyy as text) & "-" & mm & "-" & dd
+        copy ((name of n) & tab & isoDate) to end of outLines
+      end if
     end try
   end repeat
 
@@ -99,6 +106,8 @@ end tell
 
 def export_note(folder_name: str, note_name: str, output_path: Path):
     output_path.parent.mkdir(parents=True, exist_ok=True)
+    folder_path = output_path.parent
+    filename_base = output_path.stem
     script = f'''
 use scripting additions
 
@@ -133,29 +142,88 @@ tell application "Notes"
 end tell
 
 delay 1.2
-
+set the clipboard to "{apple_escape(str(folder_path))}"
 tell application "System Events"
   tell process "Notes"
     click menu item "PDF" of menu 1 of menu item "Export as" of menu "File" of menu bar item "File" of menu bar 1
+    delay 1.2
+    keystroke "G" using {{command down, shift down}}
+    delay 0.6
+    keystroke "v" using {{command down}}
+    delay 0.4
+    key code 36
     delay 1.0
-    keystroke "{apple_escape(str(output_path))}"
+    set the clipboard to "{apple_escape(filename_base)}"
+    keystroke "v" using {{command down}}
     delay 0.5
-    keystroke return
+    try
+      click button "Save" of sheet 1 of window 1
+    on error
+      key code 36
+    end try
   end tell
 end tell
 '''
     run_osascript(script)
 
 
+def mark_processed(folder_name: str, note_name: str):
+    script = f'''
+tell application "Notes"
+  set targetFolder to missing value
+  repeat with acc in accounts
+    repeat with f in folders of acc
+      try
+        if (name of f) is equal to "{apple_escape(folder_name)}" then
+          set targetFolder to f
+          exit repeat
+        end if
+      end try
+    end repeat
+    if targetFolder is not missing value then exit repeat
+  end repeat
+
+  if targetFolder is missing value then error "Folder not found: {apple_escape(folder_name)}"
+
+  set targetNote to missing value
+  repeat with n in notes of targetFolder
+    try
+      if (name of n) is equal to "{apple_escape(note_name)}" then
+        set targetNote to n
+        exit repeat
+      end if
+    end try
+  end repeat
+  if targetNote is missing value then error "Note not found: {apple_escape(note_name)}"
+
+  set existingBody to body of targetNote
+  if existingBody does not contain "#processed" then
+    set body of targetNote to existingBody & "<div><br></div><div>#processed</div>"
+  end if
+end tell
+'''
+    run_osascript(script)
+
+
+def wait_for_file(path: Path, timeout_seconds: float = 12.0) -> bool:
+    deadline = time.time() + timeout_seconds
+    while time.time() < deadline:
+        if path.exists() and path.stat().st_size > 0:
+            return True
+        time.sleep(0.5)
+    return path.exists() and path.stat().st_size > 0
+
+
 def main():
     ap = argparse.ArgumentParser(description="Export Apple Notes reimbursement smart-folder notes to Dropbox PDFs")
     ap.add_argument("--folder", default="RTF Reembolsos")
     ap.add_argument("--dest-root", default=str(default_dest_root()))
+    ap.add_argument("--include-processed", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
     dest_root = Path(args.dest_root).expanduser()
-    notes = discover_notes(args.folder)
+    notes = discover_notes(args.folder, skip_processed=not args.include_processed)
 
     if not notes:
         print("No matching notes found.")
@@ -178,7 +246,11 @@ def main():
     for name, path in planned:
         try:
             export_note(args.folder, name, path)
-            print(f"Exported: {path}")
+            if wait_for_file(path):
+                mark_processed(args.folder, name)
+                print(f"Exported: {path}")
+            else:
+                raise RuntimeError(f"Expected exported file not found at {path}")
         except Exception as e:
             failures.append((name, str(e)))
             print(f"FAILED: {name}: {e}", file=sys.stderr)
