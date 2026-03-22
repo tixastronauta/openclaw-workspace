@@ -16,7 +16,8 @@ Use this skill to export Apple Notes that contain a reimbursement tag such as `#
 
 ## Default behavior
 
-- Search the specified Apple Notes account for notes whose HTML body contains the tag string.
+- Search the specified Apple Notes account for notes whose HTML body contains the reimbursement marker text case-insensitively.
+- Treat Apple Notes tag text pragmatically: match the marker text even if Notes exposes it oddly in the HTML body.
 - Use the note creation date for filenames by default.
 - Sanitize the note name for safe filenames.
 - Save files under Dropbox, defaulting to `~/Dropbox/Reticências Fenomenais/Documentos para a contabilidade/<YEAR>/`.

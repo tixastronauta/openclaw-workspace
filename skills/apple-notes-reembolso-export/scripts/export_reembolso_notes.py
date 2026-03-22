@@ -41,7 +41,8 @@ def apple_escape(text: str) -> str:
     return text.replace("\\", "\\\\").replace('"', '\\"')
 
 
-def discover_notes(account: str, tag: str):
+def discover_notes(account: str, marker: str):
+    marker_lower = marker.lower()
     script = f'''
 on pad2(n)
   if n < 10 then
@@ -55,7 +56,17 @@ tell application "Notes"
   repeat with n in notes of account "{apple_escape(account)}"
     try
       set b to body of n
-      if b contains "{apple_escape(tag)}" then
+      considering case
+        set matchesMarker to false
+      end considering
+      if (b as text) is not "" then
+        ignoring case
+          if b contains "{apple_escape(marker)}" or b contains "{apple_escape(marker_lower)}" then
+            set matchesMarker to true
+          end if
+        end ignoring
+      end if
+      if matchesMarker then
         set d to creation date of n
         set yyyy to year of d as integer
         set mm to my pad2(month of d as integer)
@@ -140,7 +151,7 @@ def main():
         filename = f"{note['created']}_{sanitize_filename(note['name'])}.pdf"
         planned.append((note["name"], dest_root / year / filename))
 
-    print(f"Found {len(planned)} matching notes for tag {args.tag}.")
+    print(f"Found {len(planned)} matching notes for marker {args.tag}.")
     for name, path in planned:
         print(f"- {name} -> {path}")
 
