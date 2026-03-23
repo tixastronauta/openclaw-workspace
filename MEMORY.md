@@ -10,6 +10,8 @@ This file is the curated memory for important facts, preferences, decisions, and
 - Preferred style: funny, straight to the point
 - Preferred workspace git behavior: automatically commit and push meaningful completed workspace changes to the private remote repo
 - Preferred chat channel(s): web chat and Telegram
+- Language preference: conversation can be in Portuguese or English; keep code, documentation, comments, and Markdown files in English
+- Workspace preference: by default, do not create, modify, move, or delete files outside the workspace unless Tiago explicitly asks
 
 ## Assistant
 
