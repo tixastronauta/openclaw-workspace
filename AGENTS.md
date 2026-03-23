@@ -118,6 +118,15 @@ Reactions are lightweight social signals. Humans use them constantly — they sa
 
 Skills provide your tools. When you need one, check its `SKILL.md`. Keep local notes (camera names, SSH details, voice preferences) in `TOOLS.md`.
 
+## Self-Improvement Loop
+
+Use the lightweight learning system in `.learnings/` to capture durable lessons, meaningful failures, and future capabilities.
+
+- Read `.learnings/RULES.md` before expanding the system or logging lots of entries.
+- Use `SETUP-TODO.md` for actionable setup/config tasks.
+- Promote durable rules into `MEMORY.md`, `AGENTS.md`, `TOOLS.md`, or `SOUL.md` when they clearly deserve permanence.
+- Keep it lean: do not create bureaucratic note spam.
+
 **🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summaries, and "storytime" moments! Way more engaging than walls of text. Surprise people with funny voices.
 
 **📝 Platform Formatting:**
