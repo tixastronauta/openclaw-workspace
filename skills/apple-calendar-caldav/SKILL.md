@@ -1,6 +1,6 @@
 ---
 name: apple-calendar-caldav
-description: Read and write Apple Calendar / iCloud calendars through CalDAV using environment-provided credentials. Use when a user wants to list available Apple calendars, inspect upcoming events, search events by text, create events with date or time, update existing events, delete events, handle recurring events, or consume machine-friendly JSON output without assuming local macOS Calendar access. Best for setups where credentials live in a local .env file and the skill must remain publishable and free of personal data.
+description: Read and write Apple Calendar / iCloud calendars through CalDAV using environment-provided credentials. Use when a user wants to list available Apple calendars, inspect upcoming events, search events by text, create events with date or time, update existing events, delete events, handle recurring events, add Apple-friendly display alarms (VALARM), or consume machine-friendly JSON output without assuming local macOS Calendar access. Best for setups where credentials live in a local .env file and the skill must remain publishable and free of personal data.
 ---
 
 # Apple Calendar CalDAV
@@ -26,8 +26,9 @@ Do not hardcode personal values into the skill.
 2. Use `scripts/caldav_apple.py list-calendars --json` to discover available calendars.
 3. Use `scripts/caldav_apple.py list-events --json` or `find-events --json` to inspect events and capture `uid`/`href`.
 4. Use `create-event` for timed or all-day events.
-5. Use `update-event` or `delete-event` with `uid` or `href` for changes.
-6. For recurring events, use `--rrule` when creating or updating, and use `--recurrence-id` when targeting a specific recurring instance.
+5. Add Apple-friendly display alarms with one or more `--alarm` flags.
+6. Use `update-event` or `delete-event` with `uid` or `href` for changes.
+7. For recurring events, use `--rrule` when creating or updating, and use `--recurrence-id` when targeting a specific recurring instance.
 
 ## Commands
 
@@ -82,6 +83,30 @@ python3 scripts/caldav_apple.py \
 
 When the datetime has no offset, the script interprets it using `--timezone` or `APPLE_CALDAV_TIMEZONE`.
 
+### Create an event with Apple-friendly alarms
+
+```bash
+python3 scripts/caldav_apple.py \
+  --env-file /path/to/.env \
+  --calendar "Pessoal" \
+  --timezone Europe/Lisbon \
+  --json \
+  create-event \
+  --title "Consulta" \
+  --start 2026-03-27T14:00:00 \
+  --end 2026-03-27T15:00:00 \
+  --alarm -1d \
+  --alarm -30m
+```
+
+Supported alarm syntax is intentionally simple and Apple-friendly:
+
+- `-15m`
+- `-1h`
+- `-1d`
+
+These create `VALARM` blocks with `ACTION:DISPLAY` and a short description derived from the event title.
+
 ### Create an all-day event
 
 ```bash
@@ -119,6 +144,29 @@ python3 scripts/caldav_apple.py \
   --title "Novo título" \
   --start 2026-03-27T15:00:00Z \
   --end 2026-03-27T16:00:00Z
+```
+
+### Replace or clear alarms
+
+```bash
+python3 scripts/caldav_apple.py \
+  --env-file /path/to/.env \
+  --calendar "Pessoal" \
+  --json \
+  update-event \
+  --uid EVENT_UID \
+  --alarm -1h \
+  --alarm -10m
+```
+
+```bash
+python3 scripts/caldav_apple.py \
+  --env-file /path/to/.env \
+  --calendar "Pessoal" \
+  --json \
+  update-event \
+  --uid EVENT_UID \
+  --clear-alarms
 ```
 
 ### Update recurrence rule or target a specific recurring instance
@@ -164,7 +212,9 @@ python3 scripts/caldav_apple.py \
 - JSON output includes both UTC and local/timezone-aware values where available.
 - `list-events` expands recurring events by default so searches and listings show actual instances in the chosen window.
 - Use `--no-expand` when you need the base recurring object rather than expanded instances.
-- Surface failures plainly: missing env vars, auth failure, missing calendar, write-disabled mode, invalid timezone, or missing event identifier.
+- Alarm support focuses on Apple-friendly `VALARM` display reminders using relative triggers.
+- `update-event --alarm ...` replaces existing alarms with the provided set.
+- Surface failures plainly: missing env vars, auth failure, missing calendar, write-disabled mode, invalid timezone, invalid alarm format, or missing event identifier.
 
 ## Resource
 
@@ -179,6 +229,7 @@ Use this helper for:
 - creating all-day or timed events
 - handling timezone-aware and naive datetimes
 - creating and updating recurring events via RRULE
+- creating Apple-friendly `VALARM` reminders
 - updating events
 - deleting events
 - machine-friendly JSON output

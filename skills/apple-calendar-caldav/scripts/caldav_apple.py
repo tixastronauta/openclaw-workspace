@@ -30,7 +30,6 @@ ENV_KEYS = {
     'timezone': 'APPLE_CALDAV_TIMEZONE',
 }
 
-
 TEXT_KEYS = {'SUMMARY', 'DESCRIPTION', 'LOCATION'}
 DEFAULT_LOOKBACK_DAYS = 3650
 DEFAULT_LOOKAHEAD_DAYS = 3650
@@ -176,6 +175,7 @@ class CalDAVClient:
                 event.get('location'),
                 event.get('uid'),
                 event.get('rrule'),
+                ' '.join(a.get('description') or '' for a in event.get('alarms', [])),
             ])).lower()
             if query_lc in haystack:
                 matches.append(event)
@@ -213,7 +213,7 @@ class CalDAVClient:
         status, response_headers, _ = self.request(event_url, method='PUT', body=ics_text.encode('utf-8'), headers=headers)
         return {'status': status, 'etag': response_headers.get('ETag'), 'path': urllib.parse.urlparse(event_url).path}
 
-    def create_event(self, calendar_name: str, title: str, start_value: str, end_value: str, description: str | None = None, location: str | None = None, timezone_name: str | None = None, rrule: str | None = None):
+    def create_event(self, calendar_name: str, title: str, start_value: str, end_value: str, description: str | None = None, location: str | None = None, timezone_name: str | None = None, rrule: str | None = None, alarms: list[str] | None = None):
         calendar_url = self._calendar_url(calendar_name)
         uid = str(uuid.uuid4())
         stamp = to_utc_basic(dt.datetime.now(dt.UTC))
@@ -221,6 +221,7 @@ class CalDAVClient:
         start_info = parse_input_datetime(start_value, tz_name)
         end_info = parse_input_datetime(end_value, tz_name)
         validate_dt_pair(start_info, end_info)
+        alarm_objs = parse_alarm_specs(alarms or [], title)
         lines = [
             'BEGIN:VCALENDAR',
             'VERSION:2.0',
@@ -238,6 +239,7 @@ class CalDAVClient:
             lines.append(f'LOCATION:{escape_ics_text(location)}')
         if rrule:
             lines.append(f'RRULE:{rrule}')
+        lines.extend(serialize_alarms(alarm_objs))
         lines += ['END:VEVENT', 'END:VCALENDAR', '']
         body = '\r\n'.join(lines)
         event_url = urllib.parse.urljoin(calendar_url.rstrip('/') + '/', uid + '.ics')
@@ -247,9 +249,9 @@ class CalDAVClient:
             body=body.encode('utf-8'),
             headers={'Content-Type': 'text/calendar; charset=utf-8; component=VEVENT', 'If-None-Match': '*'},
         )
-        return {'status': status, 'uid': uid, 'href': urllib.parse.urlparse(event_url).path, 'etag': headers.get('ETag'), 'rrule': rrule, 'timezone': tz_name}
+        return {'status': status, 'uid': uid, 'href': urllib.parse.urlparse(event_url).path, 'etag': headers.get('ETag'), 'rrule': rrule, 'timezone': tz_name, 'alarms': alarm_objs}
 
-    def update_event(self, calendar_name: str, uid: str | None = None, href: str | None = None, recurrence_id: str | None = None, title: str | None = None, start_value: str | None = None, end_value: str | None = None, description: str | None = None, location: str | None = None, timezone_name: str | None = None, rrule: str | None = None, clear_rrule: bool = False):
+    def update_event(self, calendar_name: str, uid: str | None = None, href: str | None = None, recurrence_id: str | None = None, title: str | None = None, start_value: str | None = None, end_value: str | None = None, description: str | None = None, location: str | None = None, timezone_name: str | None = None, rrule: str | None = None, clear_rrule: bool = False, alarms: list[str] | None = None, clear_alarms: bool = False):
         event = self.get_event(calendar_name, uid=uid, href=href, recurrence_id=recurrence_id)
         props = event['props'].copy()
         if title is not None:
@@ -280,6 +282,10 @@ class CalDAVClient:
             props.pop('RRULE', None)
         elif rrule is not None:
             props['RRULE'] = rrule
+        if clear_alarms:
+            props['_VALARMS'] = []
+        elif alarms is not None and len(alarms) > 0:
+            props['_VALARMS'] = parse_alarm_specs(alarms, props.get('SUMMARY') or 'Reminder')
         props['DTSTAMP'] = to_utc_basic(dt.datetime.now(dt.UTC))
         ics_text = build_ics_from_props(props)
         result = self.put_event(event['href'], ics_text, etag=event.get('etag'))
@@ -287,6 +293,7 @@ class CalDAVClient:
         result['href'] = event['href']
         result['recurrence_id'] = props.get('RECURRENCE-ID')
         result['rrule'] = props.get('RRULE')
+        result['alarms'] = props.get('_VALARMS', [])
         return result
 
     def delete_event(self, calendar_name: str, uid: str | None = None, href: str | None = None, recurrence_id: str | None = None):
@@ -394,15 +401,32 @@ def parse_ics_bundle(ics_text: str, href: str, etag: str | None, calendar_name: 
 
 def parse_vevent_props(event_lines: list[str], href: str, etag: str | None, calendar_name: str, default_timezone: str):
     props = {}
+    alarms = []
+    current_alarm = None
     for line in event_lines:
+        if line == 'BEGIN:VALARM':
+            current_alarm = {}
+            continue
+        if line == 'END:VALARM':
+            if current_alarm is not None:
+                alarms.append(current_alarm)
+            current_alarm = None
+            continue
         if ':' not in line:
             continue
         left, value = line.split(':', 1)
         key = left.split(';', 1)[0]
         params = left[len(key):]
-        props[key] = unescape_ics_text(value)
+        parsed_value = unescape_ics_text(value)
+        if current_alarm is not None:
+            current_alarm[key] = parsed_value
+            if params:
+                current_alarm[f'{key}__PARAMS'] = params
+            continue
+        props[key] = parsed_value
         if params:
             props[f'{key}__PARAMS'] = params
+    props['_VALARMS'] = normalize_alarm_list(alarms)
     dtstart = props_to_dtinfo(props, 'DTSTART', default_timezone)
     dtend = props_to_dtinfo(props, 'DTEND', default_timezone)
     recurrence_id = props_to_dtinfo(props, 'RECURRENCE-ID', default_timezone)
@@ -412,6 +436,7 @@ def parse_vevent_props(event_lines: list[str], href: str, etag: str | None, cale
         'description': props.get('DESCRIPTION'),
         'location': props.get('LOCATION'),
         'rrule': props.get('RRULE'),
+        'alarms': props.get('_VALARMS', []),
         'recurrence_id': dtinfo_to_json(recurrence_id),
         'recurrence_id_raw': props.get('RECURRENCE-ID'),
         'dtstart': dtinfo_to_json(dtstart),
@@ -423,6 +448,17 @@ def parse_vevent_props(event_lines: list[str], href: str, etag: str | None, cale
         'calendar': calendar_name,
         'sort_key': dtinfo_sort_key(dtstart),
     }
+
+
+def normalize_alarm_list(alarms: list[dict]):
+    out = []
+    for alarm in alarms:
+        out.append({
+            'action': alarm.get('ACTION', 'DISPLAY'),
+            'trigger': alarm.get('TRIGGER'),
+            'description': alarm.get('DESCRIPTION', 'Reminder'),
+        })
+    return out
 
 
 def props_to_dtinfo(props: dict, key: str, default_timezone: str | None = None):
@@ -468,13 +504,64 @@ def build_ics_from_props(props: dict):
             params = props.get(f'{key}__PARAMS', '')
             lines.append(f'{key}{params}:{value}')
     for key, value in props.items():
-        if key in ordered or key.endswith('__PARAMS'):
+        if key in ordered or key.endswith('__PARAMS') or key == '_VALARMS':
             continue
         if key in TEXT_KEYS:
             value = escape_ics_text(str(value))
         lines.append(f'{key}:{value}')
+    lines.extend(serialize_alarms(props.get('_VALARMS', [])))
     lines += ['END:VEVENT', 'END:VCALENDAR', '']
     return '\r\n'.join(lines)
+
+
+def parse_alarm_specs(specs: list[str], summary: str | None = None):
+    alarms = []
+    for spec in specs:
+        alarms.append(parse_alarm_spec(spec, summary))
+    return alarms
+
+
+def parse_alarm_spec(spec: str, summary: str | None = None):
+    value = spec.strip()
+    if not value:
+        raise RuntimeError('Alarm spec cannot be empty')
+    sign = -1
+    if value[0] == '+':
+        sign = 1
+        value = value[1:]
+    elif value[0] == '-':
+        sign = -1
+        value = value[1:]
+    m = re.fullmatch(r'(\d+)([mhd])', value.lower())
+    if not m:
+        raise RuntimeError(f'Invalid alarm spec: {spec}. Use forms like -15m, -1h, -1d')
+    amount = int(m.group(1))
+    unit = m.group(2)
+    if unit == 'm':
+        duration = f'PT{amount}M'
+    elif unit == 'h':
+        duration = f'PT{amount}H'
+    elif unit == 'd':
+        duration = f'P{amount}D'
+    else:
+        raise RuntimeError(f'Unsupported alarm unit: {unit}')
+    trigger = f'-{duration}' if sign < 0 else duration
+    return {
+        'action': 'DISPLAY',
+        'trigger': trigger,
+        'description': summary or 'Reminder',
+    }
+
+
+def serialize_alarms(alarms: list[dict]):
+    lines = []
+    for alarm in alarms:
+        lines.append('BEGIN:VALARM')
+        lines.append(f"ACTION:{alarm.get('action', 'DISPLAY')}")
+        lines.append(f"TRIGGER:{alarm['trigger']}")
+        lines.append(f"DESCRIPTION:{escape_ics_text(alarm.get('description') or 'Reminder')}")
+        lines.append('END:VALARM')
+    return lines
 
 
 def dtinfo_to_json(info: dict | None):
@@ -547,6 +634,7 @@ def event_to_output(event: dict):
         'location': event.get('location'),
         'all_day': event.get('all_day'),
         'rrule': event.get('rrule'),
+        'alarms': event.get('alarms', []),
         'recurrence_id': event.get('recurrence_id'),
         'dtstart': event.get('dtstart'),
         'dtend': event.get('dtend'),
@@ -612,7 +700,7 @@ def cmd_create_event(args):
     calendar_name = cfg['calendar']
     if not calendar_name:
         raise RuntimeError('No calendar selected. Pass --calendar or set APPLE_CALDAV_CALENDAR.')
-    result = client.create_event(calendar_name, args.title, args.start, args.end, description=args.description, location=args.location, timezone_name=cfg['timezone'], rrule=args.rrule)
+    result = client.create_event(calendar_name, args.title, args.start, args.end, description=args.description, location=args.location, timezone_name=cfg['timezone'], rrule=args.rrule, alarms=args.alarm)
     emit(result, args.json)
 
 
@@ -636,6 +724,8 @@ def cmd_update_event(args):
         timezone_name=cfg['timezone'],
         rrule=args.rrule,
         clear_rrule=args.clear_rrule,
+        alarms=args.alarm,
+        clear_alarms=args.clear_alarms,
     )
     emit(result, args.json)
 
@@ -683,6 +773,7 @@ def build_parser():
     p3.add_argument('--description', default=None, help='Optional event description')
     p3.add_argument('--location', default=None, help='Optional event location')
     p3.add_argument('--rrule', default=None, help='Optional RRULE, e.g. FREQ=WEEKLY;COUNT=5')
+    p3.add_argument('--alarm', action='append', default=[], help='Apple-friendly display alarm relative to start, e.g. -15m, -1h, -1d. Repeat for multiple alarms.')
     p3.set_defaults(func=cmd_create_event)
 
     p4 = sub.add_parser('update-event', help='Update an existing event by uid or href')
@@ -696,6 +787,8 @@ def build_parser():
     p4.add_argument('--location', default=None, help='New location; use empty string to clear')
     p4.add_argument('--rrule', default=None, help='New RRULE')
     p4.add_argument('--clear-rrule', action='store_true', help='Remove RRULE')
+    p4.add_argument('--alarm', action='append', default=None, help='Replace alarms with Apple-friendly display alarms, e.g. -15m, -1h, -1d. Repeat for multiple alarms.')
+    p4.add_argument('--clear-alarms', action='store_true', help='Remove all VALARMs')
     p4.set_defaults(func=cmd_update_event)
 
     p5 = sub.add_parser('delete-event', help='Delete an existing event by uid or href')
