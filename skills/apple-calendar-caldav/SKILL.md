@@ -1,6 +1,6 @@
 ---
 name: apple-calendar-caldav
-description: Read and write Apple Calendar / iCloud calendars through CalDAV using environment-provided credentials. Use when a user wants to list available Apple calendars, inspect upcoming events, or create simple events without assuming local macOS Calendar access. Best for setups where credentials live in a local .env file and the skill must remain publishable and free of personal data.
+description: Read and write Apple Calendar / iCloud calendars through CalDAV using environment-provided credentials. Use when a user wants to list available Apple calendars, inspect upcoming events, create events with date or time, update existing events, delete events, or consume machine-friendly JSON output without assuming local macOS Calendar access. Best for setups where credentials live in a local .env file and the skill must remain publishable and free of personal data.
 ---
 
 # Apple Calendar CalDAV
@@ -22,9 +22,10 @@ Do not hardcode personal values into the skill.
 ## Quick workflow
 
 1. Confirm the env file exists and is ignored by git.
-2. Use `scripts/caldav_apple.py list-calendars` to discover available calendars.
-3. Use `scripts/caldav_apple.py list-events` to inspect upcoming events.
-4. Use `scripts/caldav_apple.py create-all-day-event` only when write access is intended and `APPLE_CALDAV_MODE` allows it.
+2. Use `scripts/caldav_apple.py list-calendars --json` to discover available calendars.
+3. Use `scripts/caldav_apple.py list-events --json` to inspect upcoming events and capture `uid`/`href`.
+4. Use `create-event` for timed or all-day events.
+5. Use `update-event` or `delete-event` with `uid` or `href` for changes.
 
 ## Commands
 
@@ -35,6 +36,7 @@ Run from the skill directory or with a full path.
 ```bash
 python3 scripts/caldav_apple.py \
   --env-file /path/to/.env \
+  --json \
   list-calendars
 ```
 
@@ -44,10 +46,26 @@ python3 scripts/caldav_apple.py \
 python3 scripts/caldav_apple.py \
   --env-file /path/to/.env \
   --calendar "Pessoal" \
+  --json \
   list-events --days 30 --limit 10
 ```
 
 If `--calendar` is omitted, the script falls back to `APPLE_CALDAV_CALENDAR`.
+
+### Create a timed event
+
+```bash
+python3 scripts/caldav_apple.py \
+  --env-file /path/to/.env \
+  --calendar "Pessoal" \
+  --json \
+  create-event \
+  --title "Reunião Nyx" \
+  --start 2026-03-27T14:00:00Z \
+  --end 2026-03-27T15:00:00Z \
+  --description "teste" \
+  --location "online"
+```
 
 ### Create an all-day event
 
@@ -55,18 +73,42 @@ If `--calendar` is omitted, the script falls back to `APPLE_CALDAV_CALENDAR`.
 python3 scripts/caldav_apple.py \
   --env-file /path/to/.env \
   --calendar "Pessoal" \
-  create-all-day-event --title "nyx" --date 2026-03-27
+  --json \
+  create-event --title "nyx" --start 2026-03-27 --end 2026-03-28
 ```
 
-Use `--description` when useful.
+### Update an event
+
+```bash
+python3 scripts/caldav_apple.py \
+  --env-file /path/to/.env \
+  --calendar "Pessoal" \
+  --json \
+  update-event \
+  --uid EVENT_UID \
+  --title "Novo título" \
+  --start 2026-03-27T15:00:00Z \
+  --end 2026-03-27T16:00:00Z
+```
+
+### Delete an event
+
+```bash
+python3 scripts/caldav_apple.py \
+  --env-file /path/to/.env \
+  --calendar "Pessoal" \
+  --json \
+  delete-event --uid EVENT_UID
+```
 
 ## Behavior notes
 
+- Prefer JSON output for automation.
 - Prefer `list-calendars` before assuming a calendar name.
-- Treat `VEVENT` calendars as event calendars and `VTODO` calendars as task lists.
+- Use `uid` or `href` from `list-events --json` to target updates and deletes.
 - Refuse writes when `APPLE_CALDAV_MODE` is not a write-capable value.
-- Keep output concise and user-facing: calendar names, event titles, dates, and creation status.
-- Surface failures plainly: missing env vars, auth failure, missing calendar, or write-disabled mode.
+- Timed events use UTC when an explicit timezone is not provided.
+- Surface failures plainly: missing env vars, auth failure, missing calendar, write-disabled mode, or missing event identifier.
 
 ## Resource
 
@@ -76,7 +118,10 @@ Use this helper for:
 
 - CalDAV discovery
 - listing calendars
-- listing future events in a date window
-- creating all-day events
+- listing future events
+- creating all-day or timed events
+- updating events
+- deleting events
+- machine-friendly JSON output
 
 Prefer extending this script rather than embedding ad-hoc CalDAV XML in future tasks.

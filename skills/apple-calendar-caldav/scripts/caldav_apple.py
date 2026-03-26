@@ -2,7 +2,9 @@
 import argparse
 import base64
 import datetime as dt
+import json
 import os
+import re
 import ssl
 import sys
 import urllib.parse
@@ -10,7 +12,6 @@ import urllib.request
 import uuid
 import xml.etree.ElementTree as ET
 from pathlib import Path
-import re
 
 NS = {
     'd': 'DAV:',
@@ -39,9 +40,7 @@ def load_env_file(path: str | None) -> None:
         if not line or line.startswith('#') or '=' not in line:
             continue
         key, value = line.split('=', 1)
-        key = key.strip()
-        value = value.strip().strip('"').strip("'")
-        os.environ.setdefault(key, value)
+        os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
 
 
 class CalDAVClient:
@@ -125,16 +124,19 @@ class CalDAVClient:
                 return cal
         raise RuntimeError('No VEVENT calendar found')
 
-    def list_events(self, calendar_name: str, start: dt.datetime, end: dt.datetime):
+    def _calendar_url(self, calendar_name: str) -> str:
         cal = self.get_calendar(calendar_name)
-        calendar_url = urllib.parse.urljoin(self.base_url + '/', cal['href'])
+        return urllib.parse.urljoin(self.base_url + '/', cal['href'])
+
+    def list_events(self, calendar_name: str, start: dt.datetime, end: dt.datetime):
+        calendar_url = self._calendar_url(calendar_name)
         body = f'''<?xml version="1.0" encoding="utf-8"?>
 <c:calendar-query xmlns:d="DAV:" xmlns:c="urn:ietf:params:xml:ns:caldav">
   <d:prop><d:getetag/><c:calendar-data/></d:prop>
   <c:filter>
     <c:comp-filter name="VCALENDAR">
       <c:comp-filter name="VEVENT">
-        <c:time-range start="{start.strftime('%Y%m%dT%H%M%SZ')}" end="{end.strftime('%Y%m%dT%H%M%SZ')}"/>
+        <c:time-range start="{to_utc_basic(start)}" end="{to_utc_basic(end)}"/>
       </c:comp-filter>
     </c:comp-filter>
   </c:filter>
@@ -145,21 +147,46 @@ class CalDAVClient:
         for resp in root.findall('d:response', NS):
             href = resp.find('d:href', NS)
             caldata = resp.find('.//c:calendar-data', NS)
+            etag = resp.find('.//d:getetag', NS)
             if href is None or caldata is None or not caldata.text:
                 continue
             parsed = parse_ics(caldata.text)
             parsed['href'] = href.text
+            parsed['etag'] = etag.text if etag is not None else None
+            parsed['calendar'] = calendar_name
             events.append(parsed)
         events.sort(key=lambda e: e.get('sort_key', '99999999'))
         return events
 
-    def create_all_day_event(self, calendar_name: str, title: str, date_str: str, description: str | None = None):
-        cal = self.get_calendar(calendar_name)
-        calendar_url = urllib.parse.urljoin(self.base_url + '/', cal['href'])
-        day = dt.date.fromisoformat(date_str)
-        next_day = day + dt.timedelta(days=1)
+    def get_event(self, calendar_name: str, uid: str | None = None, href: str | None = None):
+        events = self.list_events(calendar_name, dt.datetime.now(dt.UTC) - dt.timedelta(days=3650), dt.datetime.now(dt.UTC) + dt.timedelta(days=3650))
+        if uid:
+            for event in events:
+                if event.get('uid') == uid:
+                    return event
+            raise RuntimeError(f'Event not found for uid: {uid}')
+        if href:
+            norm = normalize_href(href)
+            for event in events:
+                if normalize_href(event.get('href', '')) == norm:
+                    return event
+            raise RuntimeError(f'Event not found for href: {href}')
+        raise RuntimeError('Provide uid or href to identify the event')
+
+    def put_event(self, event_href: str, ics_text: str, etag: str | None = None):
+        event_url = urllib.parse.urljoin(self.base_url + '/', event_href.lstrip('/'))
+        headers = {'Content-Type': 'text/calendar; charset=utf-8; component=VEVENT'}
+        if etag:
+            headers['If-Match'] = etag
+        status, response_headers, _ = self.request(event_url, method='PUT', body=ics_text.encode('utf-8'), headers=headers)
+        return {'status': status, 'etag': response_headers.get('ETag'), 'path': urllib.parse.urlparse(event_url).path}
+
+    def create_event(self, calendar_name: str, title: str, start_iso: str, end_iso: str, description: str | None = None, location: str | None = None):
+        calendar_url = self._calendar_url(calendar_name)
         uid = str(uuid.uuid4())
-        stamp = dt.datetime.now(dt.UTC).strftime('%Y%m%dT%H%M%SZ')
+        stamp = to_utc_basic(dt.datetime.now(dt.UTC))
+        start_info = parse_input_datetime(start_iso)
+        end_info = parse_input_datetime(end_iso)
         lines = [
             'BEGIN:VCALENDAR',
             'VERSION:2.0',
@@ -168,58 +195,207 @@ class CalDAVClient:
             f'UID:{uid}',
             f'DTSTAMP:{stamp}',
             f'SUMMARY:{escape_ics_text(title)}',
-            f'DTSTART;VALUE=DATE:{day.strftime("%Y%m%d")}',
-            f'DTEND;VALUE=DATE:{next_day.strftime("%Y%m%d")}',
-            'TRANSP:TRANSPARENT',
         ]
+        lines.extend(serialize_dt('DTSTART', start_info))
+        lines.extend(serialize_dt('DTEND', end_info))
         if description:
             lines.append(f'DESCRIPTION:{escape_ics_text(description)}')
+        if location:
+            lines.append(f'LOCATION:{escape_ics_text(location)}')
         lines += ['END:VEVENT', 'END:VCALENDAR', '']
-        body = '\r\n'.join(lines).encode()
+        body = '\r\n'.join(lines)
         event_url = urllib.parse.urljoin(calendar_url.rstrip('/') + '/', uid + '.ics')
         status, headers, _ = self.request(
             event_url,
             method='PUT',
-            body=body,
+            body=body.encode('utf-8'),
             headers={'Content-Type': 'text/calendar; charset=utf-8; component=VEVENT', 'If-None-Match': '*'},
         )
-        return {'status': status, 'uid': uid, 'path': urllib.parse.urlparse(event_url).path, 'etag': headers.get('ETag')}
+        return {'status': status, 'uid': uid, 'href': urllib.parse.urlparse(event_url).path, 'etag': headers.get('ETag')}
+
+    def update_event(self, calendar_name: str, uid: str | None = None, href: str | None = None, title: str | None = None, start_iso: str | None = None, end_iso: str | None = None, description: str | None = None, location: str | None = None):
+        event = self.get_event(calendar_name, uid=uid, href=href)
+        props = event['props'].copy()
+        if title is not None:
+            props['SUMMARY'] = title
+        if description is not None:
+            if description == '':
+                props.pop('DESCRIPTION', None)
+            else:
+                props['DESCRIPTION'] = description
+        if location is not None:
+            if location == '':
+                props.pop('LOCATION', None)
+            else:
+                props['LOCATION'] = location
+        if start_iso is not None:
+            start_info = parse_input_datetime(start_iso)
+            apply_dt_to_props(props, 'DTSTART', start_info)
+        else:
+            start_info = props_to_dtinfo(props, 'DTSTART')
+        if end_iso is not None:
+            end_info = parse_input_datetime(end_iso)
+            apply_dt_to_props(props, 'DTEND', end_info)
+        else:
+            end_info = props_to_dtinfo(props, 'DTEND')
+        if bool(start_info.get('all_day')) != bool(end_info.get('all_day')):
+            raise RuntimeError('DTSTART and DTEND must both be all-day or both timed')
+        props['DTSTAMP'] = to_utc_basic(dt.datetime.now(dt.UTC))
+        ics_text = build_ics_from_props(props)
+        result = self.put_event(event['href'], ics_text, etag=event.get('etag'))
+        result['uid'] = props.get('UID')
+        result['href'] = event['href']
+        return result
+
+    def delete_event(self, calendar_name: str, uid: str | None = None, href: str | None = None):
+        event = self.get_event(calendar_name, uid=uid, href=href)
+        event_url = urllib.parse.urljoin(self.base_url + '/', event['href'].lstrip('/'))
+        headers = {}
+        if event.get('etag'):
+            headers['If-Match'] = event['etag']
+        status, _, _ = self.request(event_url, method='DELETE', headers=headers)
+        return {'status': status, 'uid': event.get('uid'), 'href': event.get('href')}
+
+
+def normalize_href(value: str) -> str:
+    return '/' + value.lstrip('/')
+
+
+def to_utc_basic(value: dt.datetime) -> str:
+    return value.astimezone(dt.UTC).strftime('%Y%m%dT%H%M%SZ')
+
+
+def parse_input_datetime(value: str):
+    if re.fullmatch(r'\d{4}-\d{2}-\d{2}', value):
+        return {'all_day': True, 'date': dt.date.fromisoformat(value)}
+    normalized = value.replace('Z', '+00:00')
+    parsed = dt.datetime.fromisoformat(normalized)
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=dt.UTC)
+    else:
+        parsed = parsed.astimezone(dt.UTC)
+    return {'all_day': False, 'datetime': parsed}
+
+
+def serialize_dt(name: str, info: dict):
+    if info['all_day']:
+        return [f'{name};VALUE=DATE:{info["date"].strftime("%Y%m%d")}']
+    return [f'{name}:{to_utc_basic(info["datetime"])}']
 
 
 def escape_ics_text(text: str) -> str:
     return text.replace('\\', '\\\\').replace(';', '\\;').replace(',', '\\,').replace('\n', '\\n')
 
 
+def unescape_ics_text(text: str) -> str:
+    return text.replace('\\n', '\n').replace('\\,', ',').replace('\\;', ';').replace('\\\\', '\\')
+
+
+def unfold_ics_lines(ics_text: str):
+    raw = ics_text.replace('\r\n', '\n').replace('\r', '\n').split('\n')
+    lines = []
+    for line in raw:
+        if not line:
+            continue
+        if line.startswith((' ', '\t')) and lines:
+            lines[-1] += line[1:]
+        else:
+            lines.append(line)
+    return lines
+
+
 def parse_ics(ics_text: str):
-    summary = first_match(ics_text, r'^SUMMARY(?:;[^:]*)?:(.+)$') or '(untitled)'
-    dtstart = parse_dt_line(ics_text, 'DTSTART')
-    dtend = parse_dt_line(ics_text, 'DTEND')
-    uid = first_match(ics_text, r'^UID(?:;[^:]*)?:(.+)$') or ''
+    props = parse_vevent_props(ics_text)
+    dtstart = props_to_dtinfo(props, 'DTSTART')
+    dtend = props_to_dtinfo(props, 'DTEND')
     return {
-        'summary': summary,
-        'dtstart': dtstart,
-        'dtend': dtend,
-        'uid': uid,
-        'sort_key': dtstart['raw'] if dtstart else '99999999',
+        'uid': props.get('UID'),
+        'summary': props.get('SUMMARY', '(untitled)'),
+        'description': props.get('DESCRIPTION'),
+        'location': props.get('LOCATION'),
+        'dtstart': dtinfo_to_json(dtstart),
+        'dtend': dtinfo_to_json(dtend),
+        'all_day': bool(dtstart and dtstart.get('all_day')),
+        'props': props,
+        'ics': ics_text,
+        'sort_key': dtinfo_sort_key(dtstart),
     }
 
 
-def first_match(text: str, pattern: str):
-    m = re.search(pattern, text, re.M)
-    return m.group(1).strip() if m else None
+def parse_vevent_props(ics_text: str):
+    lines = unfold_ics_lines(ics_text)
+    in_event = False
+    props = {}
+    for line in lines:
+        if line == 'BEGIN:VEVENT':
+            in_event = True
+            continue
+        if line == 'END:VEVENT':
+            break
+        if not in_event or ':' not in line:
+            continue
+        left, value = line.split(':', 1)
+        key = left.split(';', 1)[0]
+        params = left[len(key):]
+        props[key] = unescape_ics_text(value)
+        if params:
+            props[f'{key}__PARAMS'] = params
+    return props
 
 
-def parse_dt_line(ics_text: str, key: str):
-    m = re.search(rf'^{re.escape(key)}(;[^:]*)?:(.+)$', ics_text, re.M)
-    if not m:
+def props_to_dtinfo(props: dict, key: str):
+    raw = props.get(key)
+    if not raw:
         return None
-    params = m.group(1) or ''
-    raw = m.group(2).strip()
-    return {
-        'raw': raw,
-        'all_day': 'VALUE=DATE' in params,
-        'params': params,
-    }
+    params = props.get(f'{key}__PARAMS', '')
+    if 'VALUE=DATE' in params:
+        return {'all_day': True, 'date': dt.date.fromisoformat(f'{raw[0:4]}-{raw[4:6]}-{raw[6:8]}')}
+    if raw.endswith('Z'):
+        parsed = dt.datetime.strptime(raw, '%Y%m%dT%H%M%SZ').replace(tzinfo=dt.UTC)
+    else:
+        parsed = dt.datetime.strptime(raw, '%Y%m%dT%H%M%S').replace(tzinfo=dt.UTC)
+    return {'all_day': False, 'datetime': parsed}
+
+
+def apply_dt_to_props(props: dict, key: str, info: dict):
+    if info['all_day']:
+        props[key] = info['date'].strftime('%Y%m%d')
+        props[f'{key}__PARAMS'] = ';VALUE=DATE'
+    else:
+        props[key] = to_utc_basic(info['datetime'])
+        props.pop(f'{key}__PARAMS', None)
+
+
+def build_ics_from_props(props: dict):
+    ordered = ['UID', 'DTSTAMP', 'SUMMARY', 'DTSTART', 'DTEND', 'DESCRIPTION', 'LOCATION']
+    lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//OpenClaw Skill//Apple Calendar CalDAV//EN', 'BEGIN:VEVENT']
+    for key in ordered:
+        if key in props:
+            value = escape_ics_text(str(props[key])) if key in {'SUMMARY', 'DESCRIPTION', 'LOCATION'} else str(props[key])
+            params = props.get(f'{key}__PARAMS', '')
+            lines.append(f'{key}{params}:{value}')
+    for key, value in props.items():
+        if key in ordered or key.endswith('__PARAMS'):
+            continue
+        lines.append(f'{key}:{escape_ics_text(str(value))}')
+    lines += ['END:VEVENT', 'END:VCALENDAR', '']
+    return '\r\n'.join(lines)
+
+
+def dtinfo_to_json(info: dict | None):
+    if not info:
+        return None
+    if info['all_day']:
+        return {'type': 'date', 'value': info['date'].isoformat()}
+    return {'type': 'datetime', 'value': info['datetime'].astimezone(dt.UTC).isoformat().replace('+00:00', 'Z')}
+
+
+def dtinfo_sort_key(info: dict | None):
+    if not info:
+        return '99999999'
+    if info['all_day']:
+        return info['date'].isoformat()
+    return info['datetime'].astimezone(dt.UTC).isoformat()
 
 
 def require_config(args):
@@ -237,10 +413,48 @@ def require_config(args):
     return values
 
 
+def ensure_write_mode(mode: str):
+    if mode.lower() not in {'write', 'readwrite', 'rw'}:
+        raise RuntimeError(f'Calendar mode does not allow writes: {mode}')
+
+
+def emit(data, as_json: bool):
+    if as_json:
+        print(json.dumps(data, ensure_ascii=False, indent=2))
+        return
+    if isinstance(data, list):
+        for idx, item in enumerate(data, 1):
+            print(f'{idx}. {item}')
+    elif isinstance(data, dict):
+        for k, v in data.items():
+            print(f'{k}: {v}')
+    else:
+        print(data)
+
+
+def event_to_output(event: dict):
+    return {
+        'uid': event.get('uid'),
+        'href': event.get('href'),
+        'etag': event.get('etag'),
+        'calendar': event.get('calendar'),
+        'summary': event.get('summary'),
+        'description': event.get('description'),
+        'location': event.get('location'),
+        'all_day': event.get('all_day'),
+        'dtstart': event.get('dtstart'),
+        'dtend': event.get('dtend'),
+    }
+
+
 def cmd_list_calendars(args):
     cfg = require_config(args)
     client = CalDAVClient(cfg['url'], cfg['username'], cfg['password'])
-    for i, cal in enumerate(client.list_calendars(), 1):
+    calendars = client.list_calendars()
+    if args.json:
+        emit(calendars, True)
+        return
+    for i, cal in enumerate(calendars, 1):
         comps = ', '.join(cal['components']) if cal['components'] else 'unknown'
         print(f'{i}. {cal["name"]}')
         print(f'   path: {cal["href"]}')
@@ -258,41 +472,61 @@ def cmd_list_events(args):
     start = dt.datetime.now(dt.UTC)
     end = start + dt.timedelta(days=args.days)
     events = client.list_events(calendar_name, start, end)
-    limit = args.limit if args.limit is not None else len(events)
-    for i, event in enumerate(events[:limit], 1):
-        start_text = format_dt(event.get('dtstart'))
-        print(f'{i}. {event["summary"]} | {start_text}')
-
-
-def format_dt(parsed):
-    if not parsed:
-        return 'unknown'
-    raw = parsed['raw']
-    if parsed['all_day']:
-        return f'{raw[0:4]}-{raw[4:6]}-{raw[6:8]} (all day)'
-    if len(raw) >= 15:
-        return f'{raw[0:4]}-{raw[4:6]}-{raw[6:8]} {raw[9:11]}:{raw[11:13]} UTC'
-    return raw
+    output = [event_to_output(e) for e in events[:args.limit]]
+    if args.json:
+        emit(output, True)
+        return
+    for i, event in enumerate(output, 1):
+        print(f"{i}. {event['summary']} | {event['dtstart']['value'] if event['dtstart'] else 'unknown'}")
 
 
 def cmd_create_event(args):
     cfg = require_config(args)
-    if cfg['mode'].lower() not in {'write', 'readwrite', 'rw'}:
-        raise RuntimeError(f'Calendar mode does not allow writes: {cfg["mode"]}')
+    ensure_write_mode(cfg['mode'])
     client = CalDAVClient(cfg['url'], cfg['username'], cfg['password'])
     calendar_name = cfg['calendar']
     if not calendar_name:
         raise RuntimeError('No calendar selected. Pass --calendar or set APPLE_CALDAV_CALENDAR.')
-    result = client.create_all_day_event(calendar_name, args.title, args.date, args.description)
-    print(f'status: {result["status"]}')
-    print(f'uid: {result["uid"]}')
-    print(f'path: {result["path"]}')
+    result = client.create_event(calendar_name, args.title, args.start, args.end, description=args.description, location=args.location)
+    emit(result, args.json)
+
+
+def cmd_update_event(args):
+    cfg = require_config(args)
+    ensure_write_mode(cfg['mode'])
+    client = CalDAVClient(cfg['url'], cfg['username'], cfg['password'])
+    calendar_name = cfg['calendar']
+    if not calendar_name:
+        raise RuntimeError('No calendar selected. Pass --calendar or set APPLE_CALDAV_CALENDAR.')
+    result = client.update_event(
+        calendar_name,
+        uid=args.uid,
+        href=args.href,
+        title=args.title,
+        start_iso=args.start,
+        end_iso=args.end,
+        description=args.description,
+        location=args.location,
+    )
+    emit(result, args.json)
+
+
+def cmd_delete_event(args):
+    cfg = require_config(args)
+    ensure_write_mode(cfg['mode'])
+    client = CalDAVClient(cfg['url'], cfg['username'], cfg['password'])
+    calendar_name = cfg['calendar']
+    if not calendar_name:
+        raise RuntimeError('No calendar selected. Pass --calendar or set APPLE_CALDAV_CALENDAR.')
+    result = client.delete_event(calendar_name, uid=args.uid, href=args.href)
+    emit(result, args.json)
 
 
 def build_parser():
     parser = argparse.ArgumentParser(description='Apple Calendar / iCloud CalDAV helper')
     parser.add_argument('--env-file', default=None, help='Path to .env file with APPLE_CALDAV_* variables')
     parser.add_argument('--calendar', default=None, help='Calendar name override')
+    parser.add_argument('--json', action='store_true', help='Emit JSON output')
     sub = parser.add_subparsers(dest='command', required=True)
 
     p1 = sub.add_parser('list-calendars', help='List available calendars')
@@ -303,11 +537,28 @@ def build_parser():
     p2.add_argument('--limit', type=int, default=10, help='Maximum events to print')
     p2.set_defaults(func=cmd_list_events)
 
-    p3 = sub.add_parser('create-all-day-event', help='Create an all-day event')
+    p3 = sub.add_parser('create-event', help='Create an event (timed or all-day)')
     p3.add_argument('--title', required=True, help='Event title')
-    p3.add_argument('--date', required=True, help='Event date in YYYY-MM-DD')
+    p3.add_argument('--start', required=True, help='Start in YYYY-MM-DD or ISO datetime')
+    p3.add_argument('--end', required=True, help='End in YYYY-MM-DD or ISO datetime')
     p3.add_argument('--description', default=None, help='Optional event description')
+    p3.add_argument('--location', default=None, help='Optional event location')
     p3.set_defaults(func=cmd_create_event)
+
+    p4 = sub.add_parser('update-event', help='Update an existing event by uid or href')
+    p4.add_argument('--uid', default=None, help='Event UID')
+    p4.add_argument('--href', default=None, help='Event href/path')
+    p4.add_argument('--title', default=None, help='New title')
+    p4.add_argument('--start', default=None, help='New start in YYYY-MM-DD or ISO datetime')
+    p4.add_argument('--end', default=None, help='New end in YYYY-MM-DD or ISO datetime')
+    p4.add_argument('--description', default=None, help='New description; use empty string to clear')
+    p4.add_argument('--location', default=None, help='New location; use empty string to clear')
+    p4.set_defaults(func=cmd_update_event)
+
+    p5 = sub.add_parser('delete-event', help='Delete an existing event by uid or href')
+    p5.add_argument('--uid', default=None, help='Event UID')
+    p5.add_argument('--href', default=None, help='Event href/path')
+    p5.set_defaults(func=cmd_delete_event)
     return parser
 
 
