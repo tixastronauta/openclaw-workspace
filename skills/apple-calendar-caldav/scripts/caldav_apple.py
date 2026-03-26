@@ -12,6 +12,7 @@ import urllib.request
 import uuid
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 NS = {
     'd': 'DAV:',
@@ -26,7 +27,13 @@ ENV_KEYS = {
     'password': 'APPLE_CALDAV_PASSWORD',
     'calendar': 'APPLE_CALDAV_CALENDAR',
     'mode': 'APPLE_CALDAV_MODE',
+    'timezone': 'APPLE_CALDAV_TIMEZONE',
 }
+
+
+TEXT_KEYS = {'SUMMARY', 'DESCRIPTION', 'LOCATION'}
+DEFAULT_LOOKBACK_DAYS = 3650
+DEFAULT_LOOKAHEAD_DAYS = 3650
 
 
 def load_env_file(path: str | None) -> None:
@@ -44,10 +51,11 @@ def load_env_file(path: str | None) -> None:
 
 
 class CalDAVClient:
-    def __init__(self, base_url: str, username: str, password: str):
+    def __init__(self, base_url: str, username: str, password: str, default_timezone: str = 'UTC'):
         self.base_url = base_url.rstrip('/')
         self.username = username
         self.password = password
+        self.default_timezone = default_timezone or 'UTC'
         self._calendar_home_url = None
 
     def request(self, url: str, method: str = 'PROPFIND', body: bytes | str | None = None, headers: dict | None = None):
@@ -128,11 +136,14 @@ class CalDAVClient:
         cal = self.get_calendar(calendar_name)
         return urllib.parse.urljoin(self.base_url + '/', cal['href'])
 
-    def list_events(self, calendar_name: str, start: dt.datetime, end: dt.datetime):
+    def list_events(self, calendar_name: str, start: dt.datetime, end: dt.datetime, expand: bool = True):
         calendar_url = self._calendar_url(calendar_name)
+        extra = ''
+        if expand:
+            extra = f'<c:expand start="{to_utc_basic(start)}" end="{to_utc_basic(end)}"/>'
         body = f'''<?xml version="1.0" encoding="utf-8"?>
 <c:calendar-query xmlns:d="DAV:" xmlns:c="urn:ietf:params:xml:ns:caldav">
-  <d:prop><d:getetag/><c:calendar-data/></d:prop>
+  <d:prop><d:getetag/><c:calendar-data>{extra}</c:calendar-data></d:prop>
   <c:filter>
     <c:comp-filter name="VCALENDAR">
       <c:comp-filter name="VEVENT">
@@ -150,26 +161,47 @@ class CalDAVClient:
             etag = resp.find('.//d:getetag', NS)
             if href is None or caldata is None or not caldata.text:
                 continue
-            parsed = parse_ics(caldata.text)
-            parsed['href'] = href.text
-            parsed['etag'] = etag.text if etag is not None else None
-            parsed['calendar'] = calendar_name
-            events.append(parsed)
+            parsed_events = parse_ics_bundle(caldata.text, href.text, etag.text if etag is not None else None, calendar_name, self.default_timezone)
+            events.extend(parsed_events)
         events.sort(key=lambda e: e.get('sort_key', '99999999'))
         return events
 
-    def get_event(self, calendar_name: str, uid: str | None = None, href: str | None = None):
-        events = self.list_events(calendar_name, dt.datetime.now(dt.UTC) - dt.timedelta(days=3650), dt.datetime.now(dt.UTC) + dt.timedelta(days=3650))
+    def find_events(self, calendar_name: str, query: str, start: dt.datetime, end: dt.datetime, expand: bool = True):
+        query_lc = query.lower()
+        matches = []
+        for event in self.list_events(calendar_name, start, end, expand=expand):
+            haystack = ' '.join(filter(None, [
+                event.get('summary'),
+                event.get('description'),
+                event.get('location'),
+                event.get('uid'),
+                event.get('rrule'),
+            ])).lower()
+            if query_lc in haystack:
+                matches.append(event)
+        return matches
+
+    def get_event(self, calendar_name: str, uid: str | None = None, href: str | None = None, recurrence_id: str | None = None):
+        events = self.list_events(
+            calendar_name,
+            dt.datetime.now(dt.UTC) - dt.timedelta(days=DEFAULT_LOOKBACK_DAYS),
+            dt.datetime.now(dt.UTC) + dt.timedelta(days=DEFAULT_LOOKAHEAD_DAYS),
+            expand=False,
+        )
         if uid:
-            for event in events:
-                if event.get('uid') == uid:
-                    return event
+            filtered = [e for e in events if e.get('uid') == uid]
+            if recurrence_id is not None:
+                filtered = [e for e in filtered if e.get('recurrence_id_raw') == recurrence_id]
+            for event in filtered:
+                return event
             raise RuntimeError(f'Event not found for uid: {uid}')
         if href:
             norm = normalize_href(href)
-            for event in events:
-                if normalize_href(event.get('href', '')) == norm:
-                    return event
+            filtered = [e for e in events if normalize_href(e.get('href', '')) == norm]
+            if recurrence_id is not None:
+                filtered = [e for e in filtered if e.get('recurrence_id_raw') == recurrence_id]
+            for event in filtered:
+                return event
             raise RuntimeError(f'Event not found for href: {href}')
         raise RuntimeError('Provide uid or href to identify the event')
 
@@ -181,12 +213,14 @@ class CalDAVClient:
         status, response_headers, _ = self.request(event_url, method='PUT', body=ics_text.encode('utf-8'), headers=headers)
         return {'status': status, 'etag': response_headers.get('ETag'), 'path': urllib.parse.urlparse(event_url).path}
 
-    def create_event(self, calendar_name: str, title: str, start_iso: str, end_iso: str, description: str | None = None, location: str | None = None):
+    def create_event(self, calendar_name: str, title: str, start_value: str, end_value: str, description: str | None = None, location: str | None = None, timezone_name: str | None = None, rrule: str | None = None):
         calendar_url = self._calendar_url(calendar_name)
         uid = str(uuid.uuid4())
         stamp = to_utc_basic(dt.datetime.now(dt.UTC))
-        start_info = parse_input_datetime(start_iso)
-        end_info = parse_input_datetime(end_iso)
+        tz_name = timezone_name or self.default_timezone
+        start_info = parse_input_datetime(start_value, tz_name)
+        end_info = parse_input_datetime(end_value, tz_name)
+        validate_dt_pair(start_info, end_info)
         lines = [
             'BEGIN:VCALENDAR',
             'VERSION:2.0',
@@ -202,6 +236,8 @@ class CalDAVClient:
             lines.append(f'DESCRIPTION:{escape_ics_text(description)}')
         if location:
             lines.append(f'LOCATION:{escape_ics_text(location)}')
+        if rrule:
+            lines.append(f'RRULE:{rrule}')
         lines += ['END:VEVENT', 'END:VCALENDAR', '']
         body = '\r\n'.join(lines)
         event_url = urllib.parse.urljoin(calendar_url.rstrip('/') + '/', uid + '.ics')
@@ -211,10 +247,10 @@ class CalDAVClient:
             body=body.encode('utf-8'),
             headers={'Content-Type': 'text/calendar; charset=utf-8; component=VEVENT', 'If-None-Match': '*'},
         )
-        return {'status': status, 'uid': uid, 'href': urllib.parse.urlparse(event_url).path, 'etag': headers.get('ETag')}
+        return {'status': status, 'uid': uid, 'href': urllib.parse.urlparse(event_url).path, 'etag': headers.get('ETag'), 'rrule': rrule, 'timezone': tz_name}
 
-    def update_event(self, calendar_name: str, uid: str | None = None, href: str | None = None, title: str | None = None, start_iso: str | None = None, end_iso: str | None = None, description: str | None = None, location: str | None = None):
-        event = self.get_event(calendar_name, uid=uid, href=href)
+    def update_event(self, calendar_name: str, uid: str | None = None, href: str | None = None, recurrence_id: str | None = None, title: str | None = None, start_value: str | None = None, end_value: str | None = None, description: str | None = None, location: str | None = None, timezone_name: str | None = None, rrule: str | None = None, clear_rrule: bool = False):
+        event = self.get_event(calendar_name, uid=uid, href=href, recurrence_id=recurrence_id)
         props = event['props'].copy()
         if title is not None:
             props['SUMMARY'] = title
@@ -228,33 +264,39 @@ class CalDAVClient:
                 props.pop('LOCATION', None)
             else:
                 props['LOCATION'] = location
-        if start_iso is not None:
-            start_info = parse_input_datetime(start_iso)
+        tz_name = timezone_name or self.default_timezone
+        if start_value is not None:
+            start_info = parse_input_datetime(start_value, tz_name)
             apply_dt_to_props(props, 'DTSTART', start_info)
         else:
-            start_info = props_to_dtinfo(props, 'DTSTART')
-        if end_iso is not None:
-            end_info = parse_input_datetime(end_iso)
+            start_info = props_to_dtinfo(props, 'DTSTART', tz_name)
+        if end_value is not None:
+            end_info = parse_input_datetime(end_value, tz_name)
             apply_dt_to_props(props, 'DTEND', end_info)
         else:
-            end_info = props_to_dtinfo(props, 'DTEND')
-        if bool(start_info.get('all_day')) != bool(end_info.get('all_day')):
-            raise RuntimeError('DTSTART and DTEND must both be all-day or both timed')
+            end_info = props_to_dtinfo(props, 'DTEND', tz_name)
+        validate_dt_pair(start_info, end_info)
+        if clear_rrule:
+            props.pop('RRULE', None)
+        elif rrule is not None:
+            props['RRULE'] = rrule
         props['DTSTAMP'] = to_utc_basic(dt.datetime.now(dt.UTC))
         ics_text = build_ics_from_props(props)
         result = self.put_event(event['href'], ics_text, etag=event.get('etag'))
         result['uid'] = props.get('UID')
         result['href'] = event['href']
+        result['recurrence_id'] = props.get('RECURRENCE-ID')
+        result['rrule'] = props.get('RRULE')
         return result
 
-    def delete_event(self, calendar_name: str, uid: str | None = None, href: str | None = None):
-        event = self.get_event(calendar_name, uid=uid, href=href)
+    def delete_event(self, calendar_name: str, uid: str | None = None, href: str | None = None, recurrence_id: str | None = None):
+        event = self.get_event(calendar_name, uid=uid, href=href, recurrence_id=recurrence_id)
         event_url = urllib.parse.urljoin(self.base_url + '/', event['href'].lstrip('/'))
         headers = {}
         if event.get('etag'):
             headers['If-Match'] = event['etag']
         status, _, _ = self.request(event_url, method='DELETE', headers=headers)
-        return {'status': status, 'uid': event.get('uid'), 'href': event.get('href')}
+        return {'status': status, 'uid': event.get('uid'), 'href': event.get('href'), 'recurrence_id': event.get('recurrence_id_raw')}
 
 
 def normalize_href(value: str) -> str:
@@ -265,22 +307,49 @@ def to_utc_basic(value: dt.datetime) -> str:
     return value.astimezone(dt.UTC).strftime('%Y%m%dT%H%M%SZ')
 
 
-def parse_input_datetime(value: str):
+def zone_or_utc(name: str | None):
+    if not name:
+        return dt.UTC
+    try:
+        return ZoneInfo(name)
+    except Exception:
+        raise RuntimeError(f'Invalid timezone: {name}')
+
+
+def parse_input_datetime(value: str, timezone_name: str | None = None):
     if re.fullmatch(r'\d{4}-\d{2}-\d{2}', value):
-        return {'all_day': True, 'date': dt.date.fromisoformat(value)}
+        return {'all_day': True, 'date': dt.date.fromisoformat(value), 'timezone': None, 'floating': False}
     normalized = value.replace('Z', '+00:00')
     parsed = dt.datetime.fromisoformat(normalized)
     if parsed.tzinfo is None:
-        parsed = parsed.replace(tzinfo=dt.UTC)
-    else:
-        parsed = parsed.astimezone(dt.UTC)
-    return {'all_day': False, 'datetime': parsed}
+        tz = zone_or_utc(timezone_name or 'UTC')
+        parsed = parsed.replace(tzinfo=tz)
+        return {'all_day': False, 'datetime': parsed, 'timezone': timezone_name or 'UTC', 'floating': False}
+    return {'all_day': False, 'datetime': parsed, 'timezone': None, 'floating': False}
 
 
 def serialize_dt(name: str, info: dict):
     if info['all_day']:
         return [f'{name};VALUE=DATE:{info["date"].strftime("%Y%m%d")}']
+    if info.get('timezone'):
+        local = info['datetime'].astimezone(zone_or_utc(info['timezone']))
+        return [f'{name};TZID={info["timezone"]}:{local.strftime("%Y%m%dT%H%M%S")}']
+    if info['datetime'].tzinfo is None:
+        return [f'{name}:{info["datetime"].strftime("%Y%m%dT%H%M%S")}']
     return [f'{name}:{to_utc_basic(info["datetime"])}']
+
+
+def validate_dt_pair(start_info: dict, end_info: dict):
+    if bool(start_info.get('all_day')) != bool(end_info.get('all_day')):
+        raise RuntimeError('DTSTART and DTEND must both be all-day or both timed')
+    if start_info['all_day']:
+        if end_info['date'] <= start_info['date']:
+            raise RuntimeError('For all-day events, end date must be after start date')
+        return
+    s = start_info['datetime']
+    e = end_info['datetime']
+    if e <= s:
+        raise RuntimeError('End must be after start')
 
 
 def escape_ics_text(text: str) -> str:
@@ -304,35 +373,29 @@ def unfold_ics_lines(ics_text: str):
     return lines
 
 
-def parse_ics(ics_text: str):
-    props = parse_vevent_props(ics_text)
-    dtstart = props_to_dtinfo(props, 'DTSTART')
-    dtend = props_to_dtinfo(props, 'DTEND')
-    return {
-        'uid': props.get('UID'),
-        'summary': props.get('SUMMARY', '(untitled)'),
-        'description': props.get('DESCRIPTION'),
-        'location': props.get('LOCATION'),
-        'dtstart': dtinfo_to_json(dtstart),
-        'dtend': dtinfo_to_json(dtend),
-        'all_day': bool(dtstart and dtstart.get('all_day')),
-        'props': props,
-        'ics': ics_text,
-        'sort_key': dtinfo_sort_key(dtstart),
-    }
-
-
-def parse_vevent_props(ics_text: str):
+def parse_ics_bundle(ics_text: str, href: str, etag: str | None, calendar_name: str, default_timezone: str):
     lines = unfold_ics_lines(ics_text)
-    in_event = False
-    props = {}
+    events = []
+    current = None
     for line in lines:
         if line == 'BEGIN:VEVENT':
-            in_event = True
+            current = []
             continue
         if line == 'END:VEVENT':
-            break
-        if not in_event or ':' not in line:
+            if current is not None:
+                parsed = parse_vevent_props(current, href, etag, calendar_name, default_timezone)
+                events.append(parsed)
+            current = None
+            continue
+        if current is not None:
+            current.append(line)
+    return events
+
+
+def parse_vevent_props(event_lines: list[str], href: str, etag: str | None, calendar_name: str, default_timezone: str):
+    props = {}
+    for line in event_lines:
+        if ':' not in line:
             continue
         left, value = line.split(':', 1)
         key = left.split(';', 1)[0]
@@ -340,44 +403,76 @@ def parse_vevent_props(ics_text: str):
         props[key] = unescape_ics_text(value)
         if params:
             props[f'{key}__PARAMS'] = params
-    return props
+    dtstart = props_to_dtinfo(props, 'DTSTART', default_timezone)
+    dtend = props_to_dtinfo(props, 'DTEND', default_timezone)
+    recurrence_id = props_to_dtinfo(props, 'RECURRENCE-ID', default_timezone)
+    return {
+        'uid': props.get('UID'),
+        'summary': props.get('SUMMARY', '(untitled)'),
+        'description': props.get('DESCRIPTION'),
+        'location': props.get('LOCATION'),
+        'rrule': props.get('RRULE'),
+        'recurrence_id': dtinfo_to_json(recurrence_id),
+        'recurrence_id_raw': props.get('RECURRENCE-ID'),
+        'dtstart': dtinfo_to_json(dtstart),
+        'dtend': dtinfo_to_json(dtend),
+        'all_day': bool(dtstart and dtstart.get('all_day')),
+        'props': props,
+        'href': href,
+        'etag': etag,
+        'calendar': calendar_name,
+        'sort_key': dtinfo_sort_key(dtstart),
+    }
 
 
-def props_to_dtinfo(props: dict, key: str):
+def props_to_dtinfo(props: dict, key: str, default_timezone: str | None = None):
     raw = props.get(key)
     if not raw:
         return None
     params = props.get(f'{key}__PARAMS', '')
     if 'VALUE=DATE' in params:
-        return {'all_day': True, 'date': dt.date.fromisoformat(f'{raw[0:4]}-{raw[4:6]}-{raw[6:8]}')}
+        return {'all_day': True, 'date': dt.date.fromisoformat(f'{raw[0:4]}-{raw[4:6]}-{raw[6:8]}'), 'timezone': None, 'floating': False}
+    tz_match = re.search(r'TZID=([^;:]+)', params)
+    tz_name = tz_match.group(1) if tz_match else None
     if raw.endswith('Z'):
         parsed = dt.datetime.strptime(raw, '%Y%m%dT%H%M%SZ').replace(tzinfo=dt.UTC)
-    else:
-        parsed = dt.datetime.strptime(raw, '%Y%m%dT%H%M%S').replace(tzinfo=dt.UTC)
-    return {'all_day': False, 'datetime': parsed}
+        return {'all_day': False, 'datetime': parsed, 'timezone': 'UTC', 'floating': False}
+    parsed = dt.datetime.strptime(raw, '%Y%m%dT%H%M%S')
+    if tz_name:
+        parsed = parsed.replace(tzinfo=zone_or_utc(tz_name))
+        return {'all_day': False, 'datetime': parsed, 'timezone': tz_name, 'floating': False}
+    parsed = parsed.replace(tzinfo=zone_or_utc(default_timezone or 'UTC'))
+    return {'all_day': False, 'datetime': parsed, 'timezone': default_timezone or 'UTC', 'floating': True}
 
 
 def apply_dt_to_props(props: dict, key: str, info: dict):
     if info['all_day']:
         props[key] = info['date'].strftime('%Y%m%d')
         props[f'{key}__PARAMS'] = ';VALUE=DATE'
-    else:
-        props[key] = to_utc_basic(info['datetime'])
-        props.pop(f'{key}__PARAMS', None)
+        return
+    if info.get('timezone'):
+        local = info['datetime'].astimezone(zone_or_utc(info['timezone']))
+        props[key] = local.strftime('%Y%m%dT%H%M%S')
+        props[f'{key}__PARAMS'] = f';TZID={info["timezone"]}'
+        return
+    props[key] = to_utc_basic(info['datetime'])
+    props.pop(f'{key}__PARAMS', None)
 
 
 def build_ics_from_props(props: dict):
-    ordered = ['UID', 'DTSTAMP', 'SUMMARY', 'DTSTART', 'DTEND', 'DESCRIPTION', 'LOCATION']
+    ordered = ['UID', 'RECURRENCE-ID', 'DTSTAMP', 'SUMMARY', 'DTSTART', 'DTEND', 'RRULE', 'DESCRIPTION', 'LOCATION']
     lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//OpenClaw Skill//Apple Calendar CalDAV//EN', 'BEGIN:VEVENT']
     for key in ordered:
         if key in props:
-            value = escape_ics_text(str(props[key])) if key in {'SUMMARY', 'DESCRIPTION', 'LOCATION'} else str(props[key])
+            value = escape_ics_text(str(props[key])) if key in TEXT_KEYS else str(props[key])
             params = props.get(f'{key}__PARAMS', '')
             lines.append(f'{key}{params}:{value}')
     for key, value in props.items():
         if key in ordered or key.endswith('__PARAMS'):
             continue
-        lines.append(f'{key}:{escape_ics_text(str(value))}')
+        if key in TEXT_KEYS:
+            value = escape_ics_text(str(value))
+        lines.append(f'{key}:{value}')
     lines += ['END:VEVENT', 'END:VCALENDAR', '']
     return '\r\n'.join(lines)
 
@@ -387,7 +482,14 @@ def dtinfo_to_json(info: dict | None):
         return None
     if info['all_day']:
         return {'type': 'date', 'value': info['date'].isoformat()}
-    return {'type': 'datetime', 'value': info['datetime'].astimezone(dt.UTC).isoformat().replace('+00:00', 'Z')}
+    utc_value = info['datetime'].astimezone(dt.UTC).isoformat().replace('+00:00', 'Z')
+    return {
+        'type': 'datetime',
+        'value': utc_value,
+        'timezone': info.get('timezone'),
+        'local_value': info['datetime'].isoformat(),
+        'floating': info.get('floating', False),
+    }
 
 
 def dtinfo_sort_key(info: dict | None):
@@ -406,10 +508,12 @@ def require_config(args):
         'password': os.environ.get(ENV_KEYS['password']),
         'calendar': args.calendar or os.environ.get(ENV_KEYS['calendar']),
         'mode': os.environ.get(ENV_KEYS['mode'], 'readonly'),
+        'timezone': args.timezone or os.environ.get(ENV_KEYS['timezone'], 'UTC'),
     }
     missing = [ENV_KEYS[k] for k in ('url', 'username', 'password') if not values[k]]
     if missing:
         raise RuntimeError('Missing required environment variables: ' + ', '.join(missing))
+    zone_or_utc(values['timezone'])
     return values
 
 
@@ -442,6 +546,8 @@ def event_to_output(event: dict):
         'description': event.get('description'),
         'location': event.get('location'),
         'all_day': event.get('all_day'),
+        'rrule': event.get('rrule'),
+        'recurrence_id': event.get('recurrence_id'),
         'dtstart': event.get('dtstart'),
         'dtend': event.get('dtend'),
     }
@@ -449,7 +555,7 @@ def event_to_output(event: dict):
 
 def cmd_list_calendars(args):
     cfg = require_config(args)
-    client = CalDAVClient(cfg['url'], cfg['username'], cfg['password'])
+    client = CalDAVClient(cfg['url'], cfg['username'], cfg['password'], default_timezone=cfg['timezone'])
     calendars = client.list_calendars()
     if args.json:
         emit(calendars, True)
@@ -465,36 +571,55 @@ def cmd_list_calendars(args):
 
 def cmd_list_events(args):
     cfg = require_config(args)
-    client = CalDAVClient(cfg['url'], cfg['username'], cfg['password'])
+    client = CalDAVClient(cfg['url'], cfg['username'], cfg['password'], default_timezone=cfg['timezone'])
     calendar_name = cfg['calendar']
     if not calendar_name:
         raise RuntimeError('No calendar selected. Pass --calendar or set APPLE_CALDAV_CALENDAR.')
     start = dt.datetime.now(dt.UTC)
     end = start + dt.timedelta(days=args.days)
-    events = client.list_events(calendar_name, start, end)
+    events = client.list_events(calendar_name, start, end, expand=not args.no_expand)
     output = [event_to_output(e) for e in events[:args.limit]]
     if args.json:
         emit(output, True)
         return
     for i, event in enumerate(output, 1):
-        print(f"{i}. {event['summary']} | {event['dtstart']['value'] if event['dtstart'] else 'unknown'}")
+        start_value = event['dtstart']['value'] if event['dtstart'] else 'unknown'
+        print(f"{i}. {event['summary']} | {start_value}")
+
+
+def cmd_find_events(args):
+    cfg = require_config(args)
+    client = CalDAVClient(cfg['url'], cfg['username'], cfg['password'], default_timezone=cfg['timezone'])
+    calendar_name = cfg['calendar']
+    if not calendar_name:
+        raise RuntimeError('No calendar selected. Pass --calendar or set APPLE_CALDAV_CALENDAR.')
+    start = dt.datetime.now(dt.UTC) - dt.timedelta(days=args.lookback_days)
+    end = dt.datetime.now(dt.UTC) + dt.timedelta(days=args.days)
+    events = client.find_events(calendar_name, args.query, start, end, expand=not args.no_expand)
+    output = [event_to_output(e) for e in events[:args.limit]]
+    if args.json:
+        emit(output, True)
+        return
+    for i, event in enumerate(output, 1):
+        start_value = event['dtstart']['value'] if event['dtstart'] else 'unknown'
+        print(f"{i}. {event['summary']} | {start_value}")
 
 
 def cmd_create_event(args):
     cfg = require_config(args)
     ensure_write_mode(cfg['mode'])
-    client = CalDAVClient(cfg['url'], cfg['username'], cfg['password'])
+    client = CalDAVClient(cfg['url'], cfg['username'], cfg['password'], default_timezone=cfg['timezone'])
     calendar_name = cfg['calendar']
     if not calendar_name:
         raise RuntimeError('No calendar selected. Pass --calendar or set APPLE_CALDAV_CALENDAR.')
-    result = client.create_event(calendar_name, args.title, args.start, args.end, description=args.description, location=args.location)
+    result = client.create_event(calendar_name, args.title, args.start, args.end, description=args.description, location=args.location, timezone_name=cfg['timezone'], rrule=args.rrule)
     emit(result, args.json)
 
 
 def cmd_update_event(args):
     cfg = require_config(args)
     ensure_write_mode(cfg['mode'])
-    client = CalDAVClient(cfg['url'], cfg['username'], cfg['password'])
+    client = CalDAVClient(cfg['url'], cfg['username'], cfg['password'], default_timezone=cfg['timezone'])
     calendar_name = cfg['calendar']
     if not calendar_name:
         raise RuntimeError('No calendar selected. Pass --calendar or set APPLE_CALDAV_CALENDAR.')
@@ -502,11 +627,15 @@ def cmd_update_event(args):
         calendar_name,
         uid=args.uid,
         href=args.href,
+        recurrence_id=args.recurrence_id,
         title=args.title,
-        start_iso=args.start,
-        end_iso=args.end,
+        start_value=args.start,
+        end_value=args.end,
         description=args.description,
         location=args.location,
+        timezone_name=cfg['timezone'],
+        rrule=args.rrule,
+        clear_rrule=args.clear_rrule,
     )
     emit(result, args.json)
 
@@ -514,11 +643,11 @@ def cmd_update_event(args):
 def cmd_delete_event(args):
     cfg = require_config(args)
     ensure_write_mode(cfg['mode'])
-    client = CalDAVClient(cfg['url'], cfg['username'], cfg['password'])
+    client = CalDAVClient(cfg['url'], cfg['username'], cfg['password'], default_timezone=cfg['timezone'])
     calendar_name = cfg['calendar']
     if not calendar_name:
         raise RuntimeError('No calendar selected. Pass --calendar or set APPLE_CALDAV_CALENDAR.')
-    result = client.delete_event(calendar_name, uid=args.uid, href=args.href)
+    result = client.delete_event(calendar_name, uid=args.uid, href=args.href, recurrence_id=args.recurrence_id)
     emit(result, args.json)
 
 
@@ -526,6 +655,7 @@ def build_parser():
     parser = argparse.ArgumentParser(description='Apple Calendar / iCloud CalDAV helper')
     parser.add_argument('--env-file', default=None, help='Path to .env file with APPLE_CALDAV_* variables')
     parser.add_argument('--calendar', default=None, help='Calendar name override')
+    parser.add_argument('--timezone', default=None, help='IANA timezone for naive datetimes, e.g. Europe/Lisbon')
     parser.add_argument('--json', action='store_true', help='Emit JSON output')
     sub = parser.add_subparsers(dest='command', required=True)
 
@@ -535,7 +665,16 @@ def build_parser():
     p2 = sub.add_parser('list-events', help='List future events from a calendar')
     p2.add_argument('--days', type=int, default=30, help='Look-ahead window in days')
     p2.add_argument('--limit', type=int, default=10, help='Maximum events to print')
+    p2.add_argument('--no-expand', action='store_true', help='Do not expand recurring events into instances')
     p2.set_defaults(func=cmd_list_events)
+
+    pfind = sub.add_parser('find-events', help='Search events by text')
+    pfind.add_argument('--query', required=True, help='Case-insensitive text query')
+    pfind.add_argument('--days', type=int, default=365, help='Look-ahead window in days')
+    pfind.add_argument('--lookback-days', type=int, default=30, help='Look-back window in days')
+    pfind.add_argument('--limit', type=int, default=20, help='Maximum events to print')
+    pfind.add_argument('--no-expand', action='store_true', help='Do not expand recurring events into instances')
+    pfind.set_defaults(func=cmd_find_events)
 
     p3 = sub.add_parser('create-event', help='Create an event (timed or all-day)')
     p3.add_argument('--title', required=True, help='Event title')
@@ -543,21 +682,26 @@ def build_parser():
     p3.add_argument('--end', required=True, help='End in YYYY-MM-DD or ISO datetime')
     p3.add_argument('--description', default=None, help='Optional event description')
     p3.add_argument('--location', default=None, help='Optional event location')
+    p3.add_argument('--rrule', default=None, help='Optional RRULE, e.g. FREQ=WEEKLY;COUNT=5')
     p3.set_defaults(func=cmd_create_event)
 
     p4 = sub.add_parser('update-event', help='Update an existing event by uid or href')
     p4.add_argument('--uid', default=None, help='Event UID')
     p4.add_argument('--href', default=None, help='Event href/path')
+    p4.add_argument('--recurrence-id', default=None, help='Specific recurring instance RECURRENCE-ID to target')
     p4.add_argument('--title', default=None, help='New title')
     p4.add_argument('--start', default=None, help='New start in YYYY-MM-DD or ISO datetime')
     p4.add_argument('--end', default=None, help='New end in YYYY-MM-DD or ISO datetime')
     p4.add_argument('--description', default=None, help='New description; use empty string to clear')
     p4.add_argument('--location', default=None, help='New location; use empty string to clear')
+    p4.add_argument('--rrule', default=None, help='New RRULE')
+    p4.add_argument('--clear-rrule', action='store_true', help='Remove RRULE')
     p4.set_defaults(func=cmd_update_event)
 
     p5 = sub.add_parser('delete-event', help='Delete an existing event by uid or href')
     p5.add_argument('--uid', default=None, help='Event UID')
     p5.add_argument('--href', default=None, help='Event href/path')
+    p5.add_argument('--recurrence-id', default=None, help='Specific recurring instance RECURRENCE-ID to target')
     p5.set_defaults(func=cmd_delete_event)
     return parser
 
