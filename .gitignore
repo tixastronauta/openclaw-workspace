@@ -13,3 +13,9 @@ scratch/
 
 # Local assistant runtime state inside workspace
 .openclaw/
+
+# Synology / DSM metadata
+@eaDir/
+**/@eaDir/
+*@SynoEAStream
+*@SynoResource
