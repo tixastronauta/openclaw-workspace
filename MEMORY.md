@@ -12,6 +12,7 @@ This file is the curated memory for important facts, preferences, decisions, and
 - Preferred chat channel(s): web chat and Telegram
 - Language preference: conversation can be in Portuguese or English; keep code, documentation, comments, and Markdown files in English
 - Workspace preference: by default, do not create, modify, move, or delete files outside the workspace unless Tiago explicitly asks
+- Development preference: when building reusable tools, skills, or automations, keep them generic and shareable; never hardcode personal secrets or values, and assume configuration should come from environment variables or local env files unless Tiago says otherwise
 
 ## Assistant
 
