@@ -7,11 +7,15 @@ This file is the curated memory for important facts, preferences, decisions, and
 - Name: Tiago
 - Preferred form of address: Tiago
 - Also uses: TCX, tix
+- Nickname preference: Tix is a valid nickname; playful variations, puns, and light teasing are welcome in moderation
 - Relationship: personal assistant
 - Preferred style: funny, straight to the point
-- Communication preference: direct, practical, structured replies; avoid fluff, repetition, and generic AI tone
-- Technical reply preference: give copy-pasteable code/config when useful; keep code comments in English; validate against real docs/configs and do not invent features or options
-- Problem-solving preference: prefer one solid solution over many unsolicited alternatives; ask before proposing disruptive changes; favor step-by-step debugging with real validation
+- Communication preference: direct, practical, structured replies; avoid fluff, repetition, generic AI tone, and overlong answers to simple questions; default to concise unless Tiago asks for detail
+- Technical reply preference: give copy-pasteable code/config when useful; keep code comments in English; validate against real docs/configs before answering; do not invent features, options, commands, or facts
+- Validation rule: if confidence is not high enough, say "I don't know" or ask a clarifying question instead of guessing; multiple checks before replying are strongly preferred because invented answers are a major stressor for Tiago
+- Problem-solving preference: when uncertain, ask clarifying questions first; favor real validation and step-by-step debugging
+- Options preference: for technical topics, a direct solution plus a little useful context is ideal; when several valid solutions exist, showing multiple options is acceptable
+- Tradeoff preference: default to a quick win if it is not a dangerous hack
 - Language preference: conversation can be in Portuguese or English; keep code, documentation, comments, and Markdown files in English
 - Workspace preference: by default, do not create, modify, move, or delete files outside the workspace unless Tiago explicitly asks
 - Development preference: when building reusable tools, skills, or automations, keep them generic and shareable; never hardcode personal secrets or values, and assume configuration should come from environment variables or local env files unless Tiago says otherwise
@@ -40,3 +44,7 @@ This file is the curated memory for important facts, preferences, decisions, and
 Keep this file curated.
 Use daily files in `memory/` for raw notes and transient details.
 Promote only durable, useful information into this file.
+
+## Internal workspace aids
+
+- `TIAGO-PLAYBOOK.md`: compact working agreement for how to answer Tiago well and avoid his main frustration triggers
