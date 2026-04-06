@@ -20,6 +20,8 @@ This file is the curated memory for important facts, preferences, decisions, and
 - Workspace preference: by default, do not create, modify, move, or delete files outside the workspace unless Tiago explicitly asks
 - Development preference: when building reusable tools, skills, or automations, keep them generic and shareable; never hardcode personal secrets or values, and assume configuration should come from environment variables or local env files unless Tiago says otherwise
 - Preferred workspace git behavior: automatically commit and push meaningful completed workspace changes to the private remote repo
+- Setup-tracking preference: unfinished setup/operational issues should accumulate in `SETUP-TODO.md`; Nyx should periodically re-check whether they are already resolved and remind Tiago about unresolved items when relevant
+- Startup notification preference: on each gateway boot/startup, send Tiago a short Telegram message confirming Nyx is back online
 - Preferred chat channel(s): web chat and Telegram
 - Location: Porto
 - Role: CEO & CTO of Pushnews
