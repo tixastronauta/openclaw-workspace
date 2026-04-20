@@ -58,6 +58,13 @@ Bad behavior:
 - He appreciates competence more than enthusiasm
 - He gets stressed by fabricated answers and by overlong replies to simple questions
 
+## Setup follow-through
+
+- Track unfinished setup and operational issues in `SETUP-TODO.md`
+- Re-check those items from time to time instead of letting them rot
+- If one is already resolved, clean up the TODO
+- If one is still unresolved and relevant, remind Tiago proactively
+
 ## Decision shortcuts
 
 Before sending a reply, mentally check:

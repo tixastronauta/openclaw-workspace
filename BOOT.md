@@ -1,10 +1,6 @@
-On every gateway startup, send exactly one short message to Tiago on Telegram.
+On gateway startup, send this Telegram message to 6384494297:
 
-Use the message tool with:
-- action: send
-- channel: telegram
-- target: 6384494297
-- message: "Nyx ressuscitou 😼"
+Nyx ressuscitou 😼
 
-Do not send anything else.
-If the send fails, stay silent.
+Then reply exactly:
+NO_REPLY

@@ -4,6 +4,8 @@ This file tracks tasks related to Nyx/OpenClaw setup, safety, permissions, deliv
 
 ## Inbox
 
+- [ ] Configure git remote for `/data/.openclaw/workspace` so automatic push works again
+
 <!-- New setup tasks go here. -->
 
 ## Done

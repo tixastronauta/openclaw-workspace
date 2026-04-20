@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "gog": {
+      "version": "1.0.0",
+      "installedAt": 1776683825437
+    },
+    "nano-pdf": {
+      "version": "1.0.0",
+      "installedAt": 1776683854548
+    },
+    "weather": {
+      "version": "1.0.0",
+      "installedAt": 1776683879195
+    }
+  }
+}

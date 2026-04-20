@@ -1,0 +1,3008 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-20T13:08:02.540Z",
+  "entries": {
+    "memory:memory/2026-04-05.md:1:14": {
+      "key": "memory:memory/2026-04-05.md:1:14",
+      "path": "memory/2026-04-05.md",
+      "startLine": 1,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "- 2026-04-05: Tiago shared a structured migration profile distilled from prior ChatGPT conversations. - Durable details promoted to MEMORY.md: aliases TCX/tix; direct/practical communication style; strong dislike of invented configs/features; preference for one solid solution, real validation, and copy-pasteable code/config; role as CEO & CTO of Pushnews; current company sale/negotiation context; common stack includes Docker, Synology, Home Assistant, GCP, AWS, Cloudflare, Tailscale, macOS, terminal workflows; prefers vim/nvim and predictable setups. - 2026-04-05: Iterative preference clarification: - For technical help, Tiago prefers a direct solution plus a little useful context. - Whe",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5485464334487915,
+      "maxScore": 0.2854338109493255,
+      "firstRecalledAt": "2026-04-06T10:13:35.171Z",
+      "lastRecalledAt": "2026-04-12T22:18:01.677Z",
+      "queryHashes": [
+        "eaf3e32db118",
+        "2949a3d6c9f2"
+      ],
+      "recallDays": [
+        "2026-04-06",
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "gpt",
+        "memory.md",
+        "tcx/tix",
+        "direct/practical",
+        "configs/features",
+        "copy-pasteable",
+        "code/config",
+        "sale/negotiation"
+      ]
+    },
+    "memory:memory/2026-03-22.md:1:5": {
+      "key": "memory:memory/2026-03-22.md:1:5",
+      "path": "memory/2026-03-22.md",
+      "startLine": 1,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "- 2026-03-22: Met Tiago in main session. He said his name is Tiago, that we are his personal assistant, and that my tone should be funny yet straight to the point. - 2026-03-22: Telegram pairing approved for Tiago. Workspace git policy: automatically commit and push meaningful completed changes to a private GitHub repo. - 2026-03-22: Tiago prefers mixed PT/EN in conversation, but wants code, documentation, comments, and Markdown files kept in English. - 2026-03-22: Tiago wants me to avoid creating, changing, moving, or deleting files outside the workspace by default unless he explicitly asks.",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5827241599559783,
+      "maxScore": 0.3006110608577728,
+      "firstRecalledAt": "2026-04-06T10:13:35.171Z",
+      "lastRecalledAt": "2026-04-12T22:18:01.677Z",
+      "queryHashes": [
+        "eaf3e32db118",
+        "2949a3d6c9f2"
+      ],
+      "recallDays": [
+        "2026-04-06",
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "pt/en",
+        "met",
+        "tiago",
+        "said",
+        "his",
+        "name",
+        "personal",
+        "assistant"
+      ]
+    },
+    "memory:memory/2026-04-03.md:1:2": {
+      "key": "memory:memory/2026-04-03.md:1:2",
+      "path": "memory/2026-04-03.md",
+      "startLine": 1,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "- 2026-04-03: Tiago said he is located in Porto.",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7708389461040497,
+      "maxScore": 0.282267016172409,
+      "firstRecalledAt": "2026-04-06T10:13:35.171Z",
+      "lastRecalledAt": "2026-04-12T22:18:01.677Z",
+      "queryHashes": [
+        "eaf3e32db118",
+        "440783d2fac3",
+        "2949a3d6c9f2"
+      ],
+      "recallDays": [
+        "2026-04-06",
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "tiago",
+        "said",
+        "located",
+        "porto"
+      ]
+    },
+    "memory:memory/2026-04-05.md:19:24": {
+      "key": "memory:memory/2026-04-05.md:19:24",
+      "path": "memory/2026-04-05.md",
+      "startLine": 19,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "- 2026-04-05: Tiago wants a daily 11:00 Europe/Lisbon automation to scan Reddit AI-related topics across r/funny, r/technology, r/programming, r/selfhosted, r/devops, r/artificial, and r/MachineLearning, then send a meme result to his Telegram. - 2026-04-05: Brave Search was configured successfully after Tiago added `BRAVE_API_KEY` to `secrets/.env`; web discovery is now available to Nyx. - 2026-04-05: MemeLord investigation result: account creation/auth is possible, but their API currently blocks generation without an active subscription (`Subscription required`), so paid activation or free credits would be needed for production use there. - 2026-04-05: Tiago approved using a free alternati",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5239809095859527,
+      "maxScore": 0.29064275026321407,
+      "firstRecalledAt": "2026-04-07T19:59:36.624Z",
+      "lastRecalledAt": "2026-04-12T22:18:01.677Z",
+      "queryHashes": [
+        "d31fe9f16dad",
+        "2949a3d6c9f2"
+      ],
+      "recallDays": [
+        "2026-04-07",
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "europe/lisbon",
+        "ai-related",
+        "r/funny",
+        "r/technology",
+        "r/programming",
+        "r/selfhosted",
+        "r/devops",
+        "r/artificial"
+      ]
+    },
+    "memory:memory/2026-04-05.md:12:20": {
+      "key": "memory:memory/2026-04-05.md:12:20",
+      "path": "memory/2026-04-05.md",
+      "startLine": 12,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "- Tix is a valid nickname, and playful name variations/jokes are welcome. - Created `TIAGO-PLAYBOOK.md` as a compact internal working agreement to improve reply quality, reduce overexplaining, and enforce the no-inventing rule. - Added setup-tracking items to `SETUP-TODO.md` for the missing git remote / failed auto-push problem and for reviewing stray untracked workspace notes. - Reviewed `memory/2026-04-04-discord-setup.md`: it is a legitimate session log with useful setup/debugging context, so the right cleanup is to commit it rather than ignore or delete it. Removed the generic untracked-file TODO after deciding the file is intentional. - Tiago asked that unfinished setup issues accumul",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4857676267623901,
+      "maxScore": 0.27702870368957516,
+      "firstRecalledAt": "2026-04-07T19:59:36.624Z",
+      "lastRecalledAt": "2026-04-12T22:18:01.677Z",
+      "queryHashes": [
+        "d31fe9f16dad",
+        "2949a3d6c9f2"
+      ],
+      "recallDays": [
+        "2026-04-07",
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "variations/jokes",
+        "tiago-playbook.md",
+        "no-inventing",
+        "setup-tracking",
+        "setup-todo.md",
+        "auto-push",
+        "setup/debugging",
+        "untracked-file"
+      ]
+    },
+    "memory:memory/2026-04-02.md:1:3": {
+      "key": "memory:memory/2026-04-02.md:1:3",
+      "path": "memory/2026-04-02.md",
+      "startLine": 1,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "- 2026-04-02: Tiago asked for a Google Docs editing skill using OAuth with no hardcoded secrets. - 2026-04-02: Tiago wants reusable tools/skills developed generically and shareably by default, with all necessary configuration passed via environment variables or local env files unless he says otherwise.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.23282321095466613,
+      "maxScore": 0.23282321095466613,
+      "firstRecalledAt": "2026-04-12T22:18:01.677Z",
+      "lastRecalledAt": "2026-04-12T22:18:01.677Z",
+      "queryHashes": [
+        "2949a3d6c9f2"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "tools/skills",
+        "tiago",
+        "asked",
+        "google",
+        "docs",
+        "editing",
+        "skill",
+        "oauth"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: [cron:b8f0a563-6a43-4777-9076-c0ba798dc607 Portugal daily news] Prepara um briefing diário conciso sobre as notícias de Portugal para hoje. Pesquisa na web as notícias mais importantes de Portugal das últimas 24 horas nas áreas de política, economia, sociedade, tecnologia e",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-16T02:00:00.082Z",
+      "lastRecalledAt": "2026-04-16T02:00:00.082Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "user",
+        "cron:b8f0a563",
+        "6a43",
+        "c0ba798dc607",
+        "portugal",
+        "news",
+        "prepara",
+        "briefing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: **Briefing diário, Portugal, 14 de Abril** • 🏛️ **Política**: O Governo avançou com um grupo de trabalho para rever a Lei das Finanças Locais, liderado por José Nunes Liberato, num dossiê com impacto direto no financiamento das autarquias. Fonte: https://www.publico.p",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-16T02:00:00.082Z",
+      "lastRecalledAt": "2026-04-16T02:00:00.082Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "www.publico.p",
+        "assistant",
+        "briefing",
+        "diário",
+        "portugal",
+        "abril",
+        "política",
+        "governo"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: [cron:749108ec-c700-4c22-920a-1cffbdc12620 Daily moto calendar event] Cria ou atualiza o evento diário da mota no Apple Calendar usando a skill `apple-calendar-caldav` e o ficheiro `.openclaw/secrets/.env` do workspace. Objetivo: todos os dias às 20:00, avaliar o tempo prev",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-16T02:00:00.082Z",
+      "lastRecalledAt": "2026-04-16T02:00:00.082Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "apple-calendar-caldav",
+        "openclaw/secrets",
+        "user",
+        "cron",
+        "749108ec",
+        "c700",
+        "4c22",
+        "920a"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "User: [cron:ff8f96c4-8b95-4787-8a28-fc8ba066bea5 Portugal daily news (Discord #nyx-news)] Prepara um briefing diário conciso sobre as notícias de Portugal para hoje. Pesquisa na web as notícias mais importantes de Portugal das últimas 24 horas nas áreas de política, economia, soc",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-16T02:00:00.082Z",
+      "lastRecalledAt": "2026-04-16T02:00:00.082Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "nyx-news",
+        "user",
+        "cron:ff8f96c4",
+        "8b95",
+        "8a28",
+        "fc8ba066bea5",
+        "portugal",
+        "news"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: **Briefing diário, Portugal, 14 abril** 🗳️ **Política:** A agenda desta manhã está dominada pela **segunda volta das presidenciais**, com reações partidárias e leitura dos resultados a prometerem marcar o dia político. 💶 **Economia:** A **inflação subiu para 2,7% em",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-16T02:00:00.082Z",
+      "lastRecalledAt": "2026-04-16T02:00:00.082Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "assistant",
+        "briefing",
+        "diário",
+        "portugal",
+        "abril",
+        "política",
+        "agenda",
+        "desta"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-15.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-15.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-04-15.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: [cron:ff8f96c4-8b95-4787-8a28-fc8ba066bea5 Portugal daily news (Discord #nyx-news)] Prepara um briefing diário conciso sobre as notícias de Portugal para hoje. Pesquisa na web as notícias mais importantes de Portugal das últimas 24 horas nas áreas de política, economia, soc",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-16T02:00:00.082Z",
+      "lastRecalledAt": "2026-04-16T02:00:00.082Z",
+      "queryHashes": [
+        "06e18920b74b"
+      ],
+      "recallDays": [
+        "2026-04-15",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "nyx-news",
+        "user",
+        "cron:ff8f96c4",
+        "8b95",
+        "8a28",
+        "fc8ba066bea5",
+        "portugal",
+        "news"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-15.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-15.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-04-15.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"531\", \"sender_id\": \"6384494297\", \"sender\": \"James Oak\", \"timestamp\": \"Wed 2026-04-15 12:38 GMT+1\" } ``` Sender (untrusted metadata): ```json { \"label\": \"James Oak (6384494297)\", \"id\": \"6384494297\", \"name\": \"Ja",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-16T02:00:00.082Z",
+      "lastRecalledAt": "2026-04-16T02:00:00.082Z",
+      "queryHashes": [
+        "06e18920b74b"
+      ],
+      "recallDays": [
+        "2026-04-15",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-15.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-15.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-04-15.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"537\", \"sender_id\": \"6384494297\", \"sender\": \"James Oak\", \"timestamp\": \"Wed 2026-04-15 16:27 GMT+1\" } ``` Sender (untrusted metadata): ```json { \"label\": \"James Oak (6384494297)\", \"id\": \"6384494297\", \"name\": \"Ja",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-16T02:00:00.082Z",
+      "lastRecalledAt": "2026-04-16T02:00:00.082Z",
+      "queryHashes": [
+        "06e18920b74b"
+      ],
+      "recallDays": [
+        "2026-04-15",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-15.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-15.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-04-15.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"531\", \"sender_id\": \"6384494297\", \"sender\": \"James Oak\", \"timestamp\": \"Wed 2026-04-15 12:38 GMT+1\" } ``` Sender (untrusted metadata): ```json { \"label\": \"James Oak (6384494297)\", \"id\": \"6384494297\", \"name\": \"Ja",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-16T02:00:00.082Z",
+      "lastRecalledAt": "2026-04-16T02:00:00.082Z",
+      "queryHashes": [
+        "06e18920b74b"
+      ],
+      "recallDays": [
+        "2026-04-15",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-15.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-15.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-04-15.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"537\", \"sender_id\": \"6384494297\", \"sender\": \"James Oak\", \"timestamp\": \"Wed 2026-04-15 16:27 GMT+1\" } ``` Sender (untrusted metadata): ```json { \"label\": \"James Oak (6384494297)\", \"id\": \"6384494297\", \"name\": \"Ja",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-16T02:00:00.082Z",
+      "lastRecalledAt": "2026-04-16T02:00:00.082Z",
+      "queryHashes": [
+        "06e18920b74b"
+      ],
+      "recallDays": [
+        "2026-04-15",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-15.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-15.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-04-15.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"537\", \"sender_id\": \"6384494297\", \"sender\": \"James Oak\", \"timestamp\": \"Wed 2026-04-15 16:27 GMT+1\" } ``` Sender (untrusted metadata): ```json { \"label\": \"James Oak (6384494297)\", \"id\": \"6384494297\", \"name\": \"Ja",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-16T02:00:00.082Z",
+      "lastRecalledAt": "2026-04-16T02:00:00.082Z",
+      "queryHashes": [
+        "06e18920b74b"
+      ],
+      "recallDays": [
+        "2026-04-15",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-15.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-15.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-04-15.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] Sempre 😼",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-16T02:00:00.082Z",
+      "lastRecalledAt": "2026-04-16T02:00:00.082Z",
+      "queryHashes": [
+        "06e18920b74b"
+      ],
+      "recallDays": [
+        "2026-04-15",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "assistant",
+        "sempre"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-15.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-15.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-04-15.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "User: [cron:749108ec-c700-4c22-920a-1cffbdc12620 Daily moto calendar event] Cria ou atualiza o evento diário da mota no Apple Calendar usando a skill `apple-calendar-caldav` e o ficheiro `.openclaw/secrets/.env` do workspace. Objetivo: todos os dias às 20:00, avaliar o tempo prev",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-16T02:00:00.082Z",
+      "lastRecalledAt": "2026-04-16T02:00:00.082Z",
+      "queryHashes": [
+        "06e18920b74b"
+      ],
+      "recallDays": [
+        "2026-04-15",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "apple-calendar-caldav",
+        "openclaw/secrets",
+        "user",
+        "cron",
+        "749108ec",
+        "c700",
+        "4c22",
+        "920a"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-15.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-15.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-04-15.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: 1. **Weather Check for Porto (Tomorrow):** The forecast shows \"Partly cloudy, +16°C 🌗\". 2. **Environment File Issue:** The `.env` file in `.openclaw/secrets/` could not be found (`No such file or directory`). Without access to the `.env` file that contains Apple Calen",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-16T02:00:00.082Z",
+      "lastRecalledAt": "2026-04-16T02:00:00.082Z",
+      "queryHashes": [
+        "06e18920b74b"
+      ],
+      "recallDays": [
+        "2026-04-15",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "openclaw/secrets",
+        "assistant",
+        "weather",
+        "check",
+        "porto",
+        "tomorrow",
+        "the",
+        "forecast"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-15.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-15.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-04-15.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "User: [cron:b8f0a563-6a43-4777-9076-c0ba798dc607 Portugal daily news] Prepara um briefing diário conciso sobre as notícias de Portugal para hoje. Pesquisa na web as notícias mais importantes de Portugal das últimas 24 horas nas áreas de política, economia, sociedade, tecnologia e",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-16T02:00:00.082Z",
+      "lastRecalledAt": "2026-04-16T02:00:00.082Z",
+      "queryHashes": [
+        "06e18920b74b"
+      ],
+      "recallDays": [
+        "2026-04-15",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "user",
+        "cron:b8f0a563",
+        "6a43",
+        "c0ba798dc607",
+        "portugal",
+        "news",
+        "prepara",
+        "briefing"
+      ]
+    },
+    "memory:memory/2026-04-16.md:68:71": {
+      "key": "memory:memory/2026-04-16.md:68:71",
+      "path": "memory/2026-04-16.md",
+      "startLine": 68,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "Reflections: Theme: `user` kept surfacing across 11 memories.; confidence: 1.00; evidence: memory/.dreams/session-corpus/2026-04-14.txt:1-1, memory/.dreams/session-corpus/2026-04-14.txt:3-3, memory/.dreams/session-corpus/2026-04-14.txt:4-4; note: reflection",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-17T08:39:27.586Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "b628913e3912"
+      ],
+      "recallDays": [
+        "2026-04-16",
+        "2026-04-17",
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "1.00",
+        "1-1",
+        "3-3",
+        "4-4",
+        "reflections",
+        "theme",
+        "user",
+        "kept"
+      ]
+    },
+    "memory:memory/2026-04-16.md:74:76": {
+      "key": "memory:memory/2026-04-16.md:74:76",
+      "path": "memory/2026-04-16.md",
+      "startLine": 74,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "Possible Lasting Truths: - 2026-03-22: Met Tiago in main session. He said his name is Tiago, that we are his personal assistant, and that my tone should be funny yet straight to the point. - 2026-03-22: Telegram pairing approved for Tiago. Workspace git policy: automatically comm",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-17T08:39:27.586Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "b628913e3912"
+      ],
+      "recallDays": [
+        "2026-04-16",
+        "2026-04-17",
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "possible",
+        "lasting",
+        "truths",
+        "met",
+        "tiago",
+        "said",
+        "his",
+        "name"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-16.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-16.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-04-16.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: [cron:ff8f96c4-8b95-4787-8a28-fc8ba066bea5 Portugal daily news (Discord #nyx-news)] Prepara um briefing diário conciso sobre as notícias de Portugal para hoje. Pesquisa na web as notícias mais importantes de Portugal das últimas 24 horas nas áreas de política, economia, soc",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-17T08:39:27.586Z",
+      "lastRecalledAt": "2026-04-17T08:39:27.586Z",
+      "queryHashes": [
+        "33f679d35d02"
+      ],
+      "recallDays": [
+        "2026-04-16",
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "nyx-news",
+        "user",
+        "cron:ff8f96c4",
+        "8b95",
+        "8a28",
+        "fc8ba066bea5",
+        "portugal",
+        "news"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-16.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-16.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-04-16.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: **🚨 Não consegui obter as notícias mais recentes devido a um problema técnico com a pesquisa na web. Vou resolver isto assim que puder! Entretanto, aqui vai o que está garantido hoje:** --- **☁️ Tempo no Porto** Céu parcialmente nublado, 🌡️ **14°C**, 🌬️ 4 km/h, sem",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-17T08:39:27.586Z",
+      "lastRecalledAt": "2026-04-17T08:39:27.586Z",
+      "queryHashes": [
+        "33f679d35d02"
+      ],
+      "recallDays": [
+        "2026-04-16",
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "km/h",
+        "assistant",
+        "não",
+        "consegui",
+        "obter",
+        "notícias",
+        "mais",
+        "recentes"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-16.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-16.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-04-16.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: [cron:b8f0a563-6a43-4777-9076-c0ba798dc607 Portugal daily news] Prepara um briefing diário conciso sobre as notícias de Portugal para hoje. Pesquisa na web as notícias mais importantes de Portugal das últimas 24 horas nas áreas de política, economia, sociedade, tecnologia e",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-17T08:39:27.586Z",
+      "lastRecalledAt": "2026-04-17T08:39:27.586Z",
+      "queryHashes": [
+        "33f679d35d02"
+      ],
+      "recallDays": [
+        "2026-04-16",
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "user",
+        "cron:b8f0a563",
+        "6a43",
+        "c0ba798dc607",
+        "portugal",
+        "news",
+        "prepara",
+        "briefing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-16.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-16.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-04-16.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: **Briefing Diário - 16 de abril de 2026** --- ### **Notícias do Dia em Portugal** Infelizmente, não consegui aceder às últimas notícias em política, economia, sociedade, tecnologia ou temas internacionais nas últimas 24 horas. Talvez as ferramentas precisem de ajustes.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-17T08:39:27.586Z",
+      "lastRecalledAt": "2026-04-17T08:39:27.586Z",
+      "queryHashes": [
+        "33f679d35d02"
+      ],
+      "recallDays": [
+        "2026-04-16",
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "assistant",
+        "briefing",
+        "diário",
+        "abril",
+        "notícias",
+        "dia",
+        "portugal",
+        "infelizmente"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: [cron:749108ec-c700-4c22-920a-1cffbdc12620 Daily moto calendar event] Cria ou atualiza o evento diário da mota no Apple Calendar usando a skill `apple-calendar-caldav` e o ficheiro `.openclaw/secrets/.env` do workspace. Objetivo: todos os dias às 20:00, avaliar o tempo prev",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-17T08:39:27.586Z",
+      "lastRecalledAt": "2026-04-17T08:39:27.586Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "apple-calendar-caldav",
+        "openclaw/secrets",
+        "user",
+        "cron",
+        "749108ec",
+        "c700",
+        "4c22",
+        "920a"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: Houve um problema ao localizar e executar o script `caldav_apple.py` para interagir com o Apple Calendar. Por outro lado, consegui obter a previsão do tempo para o Porto. ### Resumo do tempo para amanhã (18 de abril de 2026): - **Precipitação prevista:** 0 mm (sem chuv",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-17T08:39:27.586Z",
+      "lastRecalledAt": "2026-04-17T08:39:27.586Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "caldav-apple.py",
+        "assistant",
+        "houve",
+        "problema",
+        "localizar",
+        "executar",
+        "script",
+        "interagir"
+      ]
+    },
+    "memory:memory/2026-04-17.md:108:111": {
+      "key": "memory:memory/2026-04-17.md:108:111",
+      "path": "memory/2026-04-17.md",
+      "startLine": 108,
+      "endLine": 111,
+      "source": "memory",
+      "snippet": "Reflections: Theme: `user` kept surfacing across 15 memories.; confidence: 1.00; evidence: memory/.dreams/session-corpus/2026-04-14.txt:1-1, memory/.dreams/session-corpus/2026-04-14.txt:3-3, memory/.dreams/session-corpus/2026-04-14.txt:4-4; note: reflection",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-18T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "500c0eda9949"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-18",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "1.00",
+        "1-1",
+        "3-3",
+        "4-4",
+        "reflections",
+        "theme",
+        "user",
+        "kept"
+      ]
+    },
+    "memory:memory/2026-04-17.md:114:116": {
+      "key": "memory:memory/2026-04-17.md:114:116",
+      "path": "memory/2026-04-17.md",
+      "startLine": 114,
+      "endLine": 116,
+      "source": "memory",
+      "snippet": "Possible Lasting Truths: - 2026-03-22: Met Tiago in main session. He said his name is Tiago, that we are his personal assistant, and that my tone should be funny yet straight to the point. - 2026-03-22: Telegram pairing approved for Tiago. Workspace git policy: automatically comm",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-18T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "500c0eda9949"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-18",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "possible",
+        "lasting",
+        "truths",
+        "met",
+        "tiago",
+        "said",
+        "his",
+        "name"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: [cron:ff8f96c4-8b95-4787-8a28-fc8ba066bea5 Portugal daily news (Discord #nyx-news)] Prepara um briefing diário conciso sobre as notícias de Portugal para hoje. Pesquisa na web as notícias mais importantes de Portugal das últimas 24 horas nas áreas de política, economia, soc",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-18T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-18T02:00:00.107Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "nyx-news",
+        "user",
+        "cron:ff8f96c4",
+        "8b95",
+        "8a28",
+        "fc8ba066bea5",
+        "portugal",
+        "news"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: **🇵🇹 Manchetes de Hoje em Portugal** 1. **Política:** O governo português confirmou um novo pacote de medidas de apoio à habitação, incluindo subsídios diretos para rendas. 2. **Economia:** Crescimento do PIB no último trimestre revisado para cima, atingindo 2,5% — u",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-18T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-18T02:00:00.107Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "assistant",
+        "manchetes",
+        "hoje",
+        "portugal",
+        "política",
+        "governo",
+        "português",
+        "confirmou"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "User: [cron:b8f0a563-6a43-4777-9076-c0ba798dc607 Portugal daily news] Prepara um briefing diário conciso sobre as notícias de Portugal para hoje. Pesquisa na web as notícias mais importantes de Portugal das últimas 24 horas nas áreas de política, economia, sociedade, tecnologia e",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-18T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-18T02:00:00.107Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "user",
+        "cron:b8f0a563",
+        "6a43",
+        "c0ba798dc607",
+        "portugal",
+        "news",
+        "prepara",
+        "briefing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: Parece que houve um problema na pesquisa por código incompatível do idioma. Vou ajustar os critérios e tentar novamente.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-18T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-18T02:00:00.107Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "assistant",
+        "parece",
+        "houve",
+        "problema",
+        "pesquisa",
+        "código",
+        "incompatível",
+        "idioma"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: Ainda estou a enfrentar um problema com o código do idioma na pesquisa. Vou corrigir para usar um formato suportado e tentar novamente.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-18T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-18T02:00:00.107Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "assistant",
+        "ainda",
+        "estou",
+        "enfrentar",
+        "problema",
+        "com",
+        "código",
+        "idioma"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: **Briefing Diário - Sexta-feira, 17 de abril de 2026** **📰 Notícias de Portugal** - **Acordo PS/PSD em risco:** Divergências sobre o Provedor de Justiça ameaçam entendimento entre os partidos. Fonte: https://observador.pt - **Economia em alerta:** Banco de Portugal re",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-18T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-18T02:00:00.107Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "sexta-feira",
+        "ps/psd",
+        "observador.pt",
+        "assistant",
+        "briefing",
+        "diário",
+        "sexta",
+        "feira"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "User: [cron:749108ec-c700-4c22-920a-1cffbdc12620 Daily moto calendar event] Cria ou atualiza o evento diário da mota no Apple Calendar usando a skill `apple-calendar-caldav` e o ficheiro `.openclaw/secrets/.env` do workspace. Objetivo: todos os dias às 20:00, avaliar o tempo prev",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-18T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-18T02:00:00.107Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "apple-calendar-caldav",
+        "openclaw/secrets",
+        "user",
+        "cron",
+        "749108ec",
+        "c700",
+        "4c22",
+        "920a"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: Houve um erro ao tentar recuperar a previsão meteorológica para o Porto. Vou ajustar para tentar novamente com um formato alternativo e corrigir o erro anterior.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-18T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-18T02:00:00.107Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "assistant",
+        "houve",
+        "erro",
+        "tentar",
+        "recuperar",
+        "previsão",
+        "meteorológica",
+        "porto"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: A previsão meteorológica para o Porto aponta um tempo de **☀️ 15°C com ventos de 17 km/h**. Não há indícios de chuva. Portanto, é um bom dia para usar a mota! Próximo passo: verificar e criar/atualizar o evento no Apple Calendar.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-18T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-18T02:00:00.107Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "km/h",
+        "criar/atualizar",
+        "assistant",
+        "previsão",
+        "meteorológica",
+        "porto",
+        "aponta",
+        "tempo"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: A pesquisa na memória para obter o nome do calendário associado ao APPLE_CALDAV_CALENDAR não está disponível devido a um erro de chave de API. Vou passar à identificação dos calendários disponíveis no Apple Calendar diretamente.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-18T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-18T02:00:00.107Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "apple-caldav-calendar",
+        "assistant",
+        "pesquisa",
+        "memória",
+        "obter",
+        "nome",
+        "calendário",
+        "associado"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: Parece que o comando `caldav` não está instalado ou disponível no ambiente. Preciso confirmar sua disponibilidade ou executar essa ação de outra maneira. Quer avançar para solucionar o problema de ferramenta ou tentar outra abordagem?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-18T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-18T02:00:00.107Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "assistant",
+        "parece",
+        "comando",
+        "caldav",
+        "não",
+        "está",
+        "instalado",
+        "disponível"
+      ]
+    },
+    "memory:memory/2026-04-18.md:168:171": {
+      "key": "memory:memory/2026-04-18.md:168:171",
+      "path": "memory/2026-04-18.md",
+      "startLine": 168,
+      "endLine": 171,
+      "source": "memory",
+      "snippet": "Reflections: Theme: `user` kept surfacing across 19 memories.; confidence: 0.90; evidence: memory/.dreams/session-corpus/2026-04-14.txt:1-1, memory/.dreams/session-corpus/2026-04-14.txt:3-3, memory/.dreams/session-corpus/2026-04-14.txt:4-4; note: reflection",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "77ca9720ec15"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "0.90",
+        "1-1",
+        "3-3",
+        "4-4",
+        "reflections",
+        "theme",
+        "user",
+        "kept"
+      ]
+    },
+    "memory:memory/2026-04-18.md:172:175": {
+      "key": "memory:memory/2026-04-18.md:172:175",
+      "path": "memory/2026-04-18.md",
+      "startLine": 172,
+      "endLine": 175,
+      "source": "memory",
+      "snippet": "Reflections: Theme: `assistant` kept surfacing across 16 memories.; confidence: 0.76; evidence: memory/2026-03-22.md:1-5, memory/.dreams/session-corpus/2026-04-14.txt:2-2, memory/.dreams/session-corpus/2026-04-14.txt:5-5; note: reflection",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "77ca9720ec15"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "0.76",
+        "memory/2026-03-22.md",
+        "1-5",
+        "2-2",
+        "5-5",
+        "reflections",
+        "theme",
+        "assistant"
+      ]
+    },
+    "memory:memory/2026-04-18.md:178:180": {
+      "key": "memory:memory/2026-04-18.md:178:180",
+      "path": "memory/2026-04-18.md",
+      "startLine": 178,
+      "endLine": 180,
+      "source": "memory",
+      "snippet": "Possible Lasting Truths: Possible Lasting Truths: - 2026-03-22: Met Tiago in main session. He said his name is Tiago, that we are his personal assistant, and that my tone should be funny yet straight to the point. - 2026-03-22: Telegram pairing approved for Tiago. Workspace git p",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "77ca9720ec15"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "possible",
+        "lasting",
+        "truths",
+        "met",
+        "tiago",
+        "said",
+        "his",
+        "name"
+      ]
+    },
+    "memory:memory/2026-04-18.md:185:185": {
+      "key": "memory:memory/2026-04-18.md:185:185",
+      "path": "memory/2026-04-18.md",
+      "startLine": 185,
+      "endLine": 185,
+      "source": "memory",
+      "snippet": "After-Boot Notification Adjustments: Adjusted the OpenClaw \"startup ping\" mechanism to use a custom hook (`startup-ping`) instead of relying on `BOOT.md`. The hook implementation sends a resurrection message without depending on the message tool, resolving a previous limitation i",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "77ca9720ec15"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "after-boot",
+        "startup-ping",
+        "boot.md",
+        "boot",
+        "notification",
+        "adjustments",
+        "adjusted",
+        "the"
+      ]
+    },
+    "memory:memory/2026-04-18.md:188:189": {
+      "key": "memory:memory/2026-04-18.md:188:189",
+      "path": "memory/2026-04-18.md",
+      "startLine": 188,
+      "endLine": 189,
+      "source": "memory",
+      "snippet": "Calendar Task Updates: Updated the \"Can I ride the bike?\" calendar job to run daily at 20:00, verifying weather conditions for the next day. This ensures decisions about travel are prepared the evening prior.; Tested the job manually on request; confirmed the event creation for A",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "77ca9720ec15"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "calendar",
+        "task",
+        "updates",
+        "updated",
+        "the",
+        "can",
+        "ride",
+        "bike"
+      ]
+    },
+    "memory:memory/2026-04-18.md:192:193": {
+      "key": "memory:memory/2026-04-18.md:192:193",
+      "path": "memory/2026-04-18.md",
+      "startLine": 192,
+      "endLine": 193,
+      "source": "memory",
+      "snippet": "Daily Briefing Improvements: Enhanced daily briefings with clickable URLs instead of occasionally formatted non-clickable links in monospace.; Adjusted the cron prompt to ensure consistent generation of clean, clickable reference links.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "77ca9720ec15"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "non-clickable",
+        "briefing",
+        "improvements",
+        "enhanced",
+        "briefings",
+        "clickable",
+        "urls",
+        "instead"
+      ]
+    },
+    "memory:memory/2026-04-18.md:196:197": {
+      "key": "memory:memory/2026-04-18.md:196:197",
+      "path": "memory/2026-04-18.md",
+      "startLine": 196,
+      "endLine": 197,
+      "source": "memory",
+      "snippet": "Notable Interactions: Provided summaries of Viktor Orbán's political history, his authoritarian tendencies, and the implications of Peter Magyar's decisive electoral victory in Hungary. Converted political analysis into concise and dinner-conversation-friendly framing at user req",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "77ca9720ec15"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "dinner-conversation-friendly",
+        "notable",
+        "interactions",
+        "provided",
+        "summaries",
+        "viktor",
+        "orbán's",
+        "political"
+      ]
+    },
+    "memory:memory/2026-04-18.md:200:201": {
+      "key": "memory:memory/2026-04-18.md:200:201",
+      "path": "memory/2026-04-18.md",
+      "startLine": 200,
+      "endLine": 201,
+      "source": "memory",
+      "snippet": "Debugging and Failures: Diagnosed and addressed a cron job error for the \"Portugal daily news\" brief. The failure stemmed from an OpenAI server error, not from the cron or delivery mechanisms. Verified resilience of the system through manual retry.; Investigated and confirmed tha",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "77ca9720ec15"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "openai",
+        "debugging",
+        "failures",
+        "diagnosed",
+        "addressed",
+        "cron",
+        "job",
+        "error"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: [cron:ff8f96c4-8b95-4787-8a28-fc8ba066bea5 Portugal daily news (Discord #nyx-news)] Prepara um briefing diário conciso sobre as notícias de Portugal para hoje. Pesquisa na web as notícias mais importantes de Portugal das últimas 24 horas nas áreas de política, economia, soc",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "nyx-news",
+        "user",
+        "cron:ff8f96c4",
+        "8b95",
+        "8a28",
+        "fc8ba066bea5",
+        "portugal",
+        "news"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: Houve um problema com as buscas feitas para preparar o briefing. Vou ajustar o método e corrigir o processo. Só mais um instante!",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "assistant",
+        "houve",
+        "problema",
+        "com",
+        "buscas",
+        "feitas",
+        "preparar",
+        "briefing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: **🇵🇹 Briefing Diário Portugal - 18 de Abril, 2026** **Política:** Portugal está entre os países que apoiam uma nova taxa sobre lucros extraordinários de energias na UE, discutida para mitigar impactos dos altos preços para consumidores. **Sociedade:** Aumentam as crí",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "assistant",
+        "briefing",
+        "diário",
+        "portugal",
+        "abril",
+        "política",
+        "está",
+        "entre"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "User: Pre-compaction memory flush. Store durable memories only in memory/2026-04-18.md (create memory/ if needed). Treat workspace bootstrap/reference files such as MEMORY.md, DREAMS.md, SOUL.md, TOOLS.md, and AGENTS.md as read-only during this flush; never overwrite, replace, or",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "pre-compaction",
+        "memory/2026-04-18.md",
+        "bootstrap/reference",
+        "memory.md",
+        "dreams.md",
+        "soul.md",
+        "tools.md",
+        "agents.md"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: All updates have been saved.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "assistant",
+        "all",
+        "updates",
+        "been",
+        "saved"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"548\", \"sender_id\": \"6384494297\", \"sender\": \"James Oak\", \"timestamp\": \"Sat 2026-04-18 08:54 GMT+1\" } ``` Sender (untrusted metadata): ```json { \"label\": \"James Oak (6384494297)\", \"id\": \"6384494297\", \"name\": \"Ja",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: Isso aconteceu porque os resumos no briefing, por vezes, acabam simplificados se o modelo usado para extrair as notícias interpretou o contexto como sendo apenas um destaque curto. No caso, os algoritmos dão prioridade a títulos e chamadas rápidas, especialmente se a n",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "assistant",
+        "isso",
+        "aconteceu",
+        "porque",
+        "resumos",
+        "briefing",
+        "vezes",
+        "acabam"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"550\", \"sender_id\": \"6384494297\", \"sender\": \"James Oak\", \"timestamp\": \"Sat 2026-04-18 08:55 GMT+1\" } ``` Sender (untrusted metadata): ```json { \"label\": \"James Oak (6384494297)\", \"id\": \"6384494297\", \"name\": \"Ja",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: Vou já ajustar o briefing para garantir que o resumo das notícias seja sempre completo e independente do link!",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "assistant",
+        "vou",
+        "ajustar",
+        "briefing",
+        "garantir",
+        "resumo",
+        "notícias",
+        "seja"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] Pronto! Já ajustei tudo. A partir de agora, os briefings vão incluir **resumos completos e úteis no próprio texto**, evitando dependência dos links ou criar sensação de \\\"publicidade\\\". Se notares mais algum detalhe, avisa! 😼",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "assistant",
+        "pronto",
+        "ajustei",
+        "tudo",
+        "partir",
+        "agora",
+        "briefings"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "User: [cron:749108ec-c700-4c22-920a-1cffbdc12620 Daily moto calendar event] Cria ou atualiza o evento diário da mota no Apple Calendar usando a skill `apple-calendar-caldav` e o ficheiro `.openclaw/secrets/.env` do workspace. Objetivo: todos os dias às 20:00, avaliar o tempo prev",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "apple-calendar-caldav",
+        "openclaw/secrets",
+        "user",
+        "cron",
+        "749108ec",
+        "c700",
+        "4c22",
+        "920a"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: Parece que não há um agente ACP configurado para executar esta tarefa. Para prosseguir, preciso do ID do agente específico (`agentId`) que você quer que eu use. Por favor, forneça instruções adicionais ou configure o agente padrão para que eu possa completar a tarefa.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "assistant",
+        "parece",
+        "não",
+        "agente",
+        "acp",
+        "configurado",
+        "executar",
+        "esta"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "User: [cron:b8f0a563-6a43-4777-9076-c0ba798dc607 Portugal daily news] Prepara um briefing diário conciso sobre as notícias de Portugal para hoje. Pesquisa na web as notícias mais importantes de Portugal das últimas 24 horas nas áreas de política, economia, sociedade, tecnologia e",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "user",
+        "cron:b8f0a563",
+        "6a43",
+        "c0ba798dc607",
+        "portugal",
+        "news",
+        "prepara",
+        "briefing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: Houve um problema ao realizar a pesquisa. A configuração da língua utilizada nos parâmetros não foi reconhecida corretamente. Corrigirei isso para garantir que obtenhamos as notícias e a previsão do tempo sem mais falhas. Tentarei de novo com valores mais robustos.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "assistant",
+        "houve",
+        "problema",
+        "realizar",
+        "pesquisa",
+        "configuração",
+        "língua",
+        "utilizada"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: **🗞️ Briefing diário - Notícias de Portugal (18/04/2026)** **Política** - Atualidade política com foco em temas domésticos: últimos desenvolvimentos disponíveis no portal Notícias ao Minuto. Fonte: https://www.noticiasaominuto.com/pais **Economia** - A taxa de emprego",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "18/04/2026",
+        "www.noticiasaominuto.com/pais",
+        "assistant",
+        "briefing",
+        "diário",
+        "notícias",
+        "portugal",
+        "política"
+      ]
+    },
+    "memory:memory/2026-04-19.md:223:226": {
+      "key": "memory:memory/2026-04-19.md:223:226",
+      "path": "memory/2026-04-19.md",
+      "startLine": 223,
+      "endLine": 226,
+      "source": "memory",
+      "snippet": "Reflections: Theme: `assistant` kept surfacing across 26 memories.; confidence: 0.80; evidence: memory/2026-03-22.md:1-5, memory/.dreams/session-corpus/2026-04-14.txt:2-2, memory/.dreams/session-corpus/2026-04-14.txt:5-5; note: reflection",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "21faa0df9302"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "0.80",
+        "memory/2026-03-22.md",
+        "1-5",
+        "2-2",
+        "5-5",
+        "reflections",
+        "theme",
+        "assistant"
+      ]
+    },
+    "memory:memory/2026-04-19.md:227:230": {
+      "key": "memory:memory/2026-04-19.md:227:230",
+      "path": "memory/2026-04-19.md",
+      "startLine": 227,
+      "endLine": 230,
+      "source": "memory",
+      "snippet": "Reflections: Theme: `user` kept surfacing across 25 memories.; confidence: 0.77; evidence: memory/.dreams/session-corpus/2026-04-14.txt:1-1, memory/.dreams/session-corpus/2026-04-14.txt:3-3, memory/.dreams/session-corpus/2026-04-14.txt:4-4; note: reflection",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "21faa0df9302"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "0.77",
+        "1-1",
+        "3-3",
+        "4-4",
+        "reflections",
+        "theme",
+        "user",
+        "kept"
+      ]
+    },
+    "memory:memory/2026-04-19.md:233:235": {
+      "key": "memory:memory/2026-04-19.md:233:235",
+      "path": "memory/2026-04-19.md",
+      "startLine": 233,
+      "endLine": 235,
+      "source": "memory",
+      "snippet": "Possible Lasting Truths: Possible Lasting Truths: - 2026-03-22: Met Tiago in main session. He said his name is Tiago, that we are his personal assistant, and that my tone should be funny yet straight to the point. - 2026-03-22: Telegram pairing approved for Tiago. Workspace git p",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "21faa0df9302"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "possible",
+        "lasting",
+        "truths",
+        "met",
+        "tiago",
+        "said",
+        "his",
+        "name"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: [cron:b8f0a563-6a43-4777-9076-c0ba798dc607 Portugal daily news] Prepara um briefing diário conciso sobre as notícias de Portugal para hoje. Pesquisa na web as notícias mais importantes de Portugal das últimas 24 horas nas áreas de política, economia, sociedade, tecnologia e",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "user",
+        "cron:b8f0a563",
+        "6a43",
+        "c0ba798dc607",
+        "portugal",
+        "news",
+        "prepara",
+        "briefing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: 📢 **Resumo diário: notícias de Portugal e previsão do tempo** ### 🇵🇹 **Principais notícias**: 1. **Ligações com o INEM suspensas:** A Liga dos Bombeiros anunciou a rescisão do acordo com o INEM para assistência pré-hospitalar. A decisão surge após divergências sobre",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "pré-hospitalar",
+        "assistant",
+        "resumo",
+        "diário",
+        "notícias",
+        "portugal",
+        "previsão",
+        "tempo"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: [cron:b8f0a563-6a43-4777-9076-c0ba798dc607 Portugal daily news] Prepara um briefing diário conciso sobre as notícias de Portugal para hoje. Pesquisa na web as notícias mais importantes de Portugal das últimas 24 horas nas áreas de política, economia, sociedade, tecnologia e",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "user",
+        "cron:b8f0a563",
+        "6a43",
+        "c0ba798dc607",
+        "portugal",
+        "news",
+        "prepara",
+        "briefing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: Parece que houve um problema ao tentar realizar a pesquisa em português europeu. Vou corrigir a configuração de idioma e tentar novamente.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "assistant",
+        "parece",
+        "houve",
+        "problema",
+        "tentar",
+        "realizar",
+        "pesquisa",
+        "português"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: Houve falhas ao validar as configurações da pesquisa. Parece que os parâmetros de idioma/país fornecidos não são compatíveis com o Brave Search API. Vou ajustar os parâmetros para padrões mais apropriados e tentar novamente.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "idioma/país",
+        "assistant",
+        "houve",
+        "falhas",
+        "validar",
+        "configurações",
+        "pesquisa",
+        "parece"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: Não foi possível realizar as pesquisas devido a problemas persistentes com os parâmetros de idioma aceitos pela Brave Search API. Se desejar, posso tentar redigir um resumo manualmente com informações disponíveis ou sugerir um ajuste para os parâmetros. Por favor, indi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "assistant",
+        "não",
+        "foi",
+        "possível",
+        "realizar",
+        "pesquisas",
+        "devido",
+        "problemas"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"554\", \"sender_id\": \"6384494297\", \"sender\": \"James Oak\", \"timestamp\": \"Sun 2026-04-19 08:43 GMT+1\" } ``` Sender (untrusted metadata): ```json { \"label\": \"James Oak (6384494297)\", \"id\": \"6384494297\", \"name\": \"Ja",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] Claro! 🚀 Os briefings diários foram ajustados para: - **incluir resumos completos** e suficientes no texto, para te informar sem depender de clicar no link - manter os links como **referências complementares**, totalmente clicáveis, no formato `Fo",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "assistant",
+        "claro",
+        "briefings",
+        "diários",
+        "foram",
+        "ajustados",
+        "incluir"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"556\", \"sender_id\": \"6384494297\", \"sender\": \"James Oak\", \"timestamp\": \"Sun 2026-04-19 08:45 GMT+1\" } ``` Sender (untrusted metadata): ```json { \"label\": \"James Oak (6384494297)\", \"id\": \"6384494297\", \"name\": \"Ja",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] Já lancei o briefing de hoje. Daqui a pouco deves recebê-lo no chat! 🚀",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "recebê-lo",
+        "assistant",
+        "lancei",
+        "briefing",
+        "hoje",
+        "daqui",
+        "pouco"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"559\", \"sender_id\": \"6384494297\", \"sender\": \"James Oak\", \"timestamp\": \"Sun 2026-04-19 08:46 GMT+1\" } ``` Sender (untrusted metadata): ```json { \"label\": \"James Oak (6384494297)\", \"id\": \"6384494297\", \"name\": \"Ja",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] O briefing de agora teve dificuldades por dois motivos: 1. **Problemas com linguagem na Brave Search API** - A API recusou o parâmetro \"pt-PT\" como idioma de busca, o que fez com que as pesquisas não produzissem resultados válidos. 2. **Causas técn",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "pt-pt",
+        "assistant",
+        "briefing",
+        "agora",
+        "teve",
+        "dificuldades",
+        "dois"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"561\", \"sender_id\": \"6384494297\", \"sender\": \"James Oak\", \"timestamp\": \"Sun 2026-04-19 08:46 GMT+1\" } ``` Sender (untrusted metadata): ```json { \"label\": \"James Oak (6384494297)\", \"id\": \"6384494297\", \"name\": \"Ja",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] Já ajustei para usar `pt-BR` nas pesquisas e relancei o briefing. Vamos ver se agora segue tudo certo! 🚀",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "pt-br",
+        "assistant",
+        "ajustei",
+        "usar",
+        "nas",
+        "pesquisas",
+        "relancei"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "User: [cron:749108ec-c700-4c22-920a-1cffbdc12620 Daily moto calendar event] Cria ou atualiza o evento diário da mota no Apple Calendar usando a skill `apple-calendar-caldav` e o ficheiro `.openclaw/secrets/.env` do workspace. Objetivo: todos os dias às 20:00, avaliar o tempo prev",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "apple-calendar-caldav",
+        "openclaw/secrets",
+        "user",
+        "cron",
+        "749108ec",
+        "c700",
+        "4c22",
+        "920a"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: Houve um problema ao obter a previsão do tempo. Vou ajustar a linguagem da pesquisa para \"pt-PT\", que é suportada, e tentar novamente.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "pt-pt",
+        "assistant",
+        "houve",
+        "problema",
+        "obter",
+        "previsão",
+        "tempo",
+        "vou"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: A pesquisa também falhou devido a um problema com os códigos de idioma suportados pela API Brave. Vou tentar novamente ajustando para \"pt-BR\", que é aceito pela API.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "pt-br",
+        "assistant",
+        "pesquisa",
+        "também",
+        "falhou",
+        "devido",
+        "problema",
+        "com"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: Agora temos resultados úteis para a previsão de amanhã no Porto. Vou extrair e contextualizar a informação para tomar a decisão e criar o evento no calendário.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "assistant",
+        "agora",
+        "temos",
+        "resultados",
+        "úteis",
+        "previsão",
+        "amanhã",
+        "porto"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: Não consigo acessar o conteúdo do ficheiro `.env` para autenticar no Apple Calendar. Verifica se o caminho e as permissões estão corretos ou se o ficheiro precisa ser carregado ao workspace.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "assistant",
+        "não",
+        "consigo",
+        "acessar",
+        "conteúdo",
+        "ficheiro",
+        "env",
+        "autenticar"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "User: [cron:ff8f96c4-8b95-4787-8a28-fc8ba066bea5 Portugal daily news (Discord #nyx-news)] Prepara um briefing diário conciso sobre as notícias de Portugal para hoje. Pesquisa na web as notícias mais importantes de Portugal das últimas 24 horas nas áreas de política, economia, soc",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "nyx-news",
+        "user",
+        "cron:ff8f96c4",
+        "8b95",
+        "8a28",
+        "fc8ba066bea5",
+        "portugal",
+        "news"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: **📜 Notícias de Portugal** - **Governo e bombeiros em debate**: O Governo prometeu resolver as dívidas do INEM aos bombeiros, num esforço para evitar conflitos adicionais entre ambas as partes. - **Sistema de reembolso ambiental**: Foi lançada uma nova iniciativa \"Vol",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "assistant",
+        "notícias",
+        "portugal",
+        "governo",
+        "bombeiros",
+        "debate",
+        "prometeu",
+        "resolver"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "User: [cron:b8f0a563-6a43-4777-9076-c0ba798dc607 Portugal daily news] Prepara um briefing diário conciso sobre as notícias de Portugal para hoje. Pesquisa na web as notícias mais importantes de Portugal das últimas 24 horas nas áreas de política, economia, sociedade, tecnologia e",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "user",
+        "cron:b8f0a563",
+        "6a43",
+        "c0ba798dc607",
+        "portugal",
+        "news",
+        "prepara",
+        "briefing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: Houve um problema técnico com a pesquisa, pois o idioma solicitado, \"pt-PT\", não é suportado diretamente pelo motor de busca na configuração atual. Posso ajustar os parâmetros de pesquisa para usar \"pt-BR\" (português brasileiro) ou outro idioma, ou tentar uma abordagem",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "pt-pt",
+        "pt-br",
+        "assistant",
+        "houve",
+        "problema",
+        "técnico",
+        "com",
+        "pesquisa"
+      ]
+    },
+    "memory:memory/2026-04-18.md:47:67": {
+      "key": "memory:memory/2026-04-18.md:47:67",
+      "path": "memory/2026-04-18.md",
+      "startLine": 47,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "- status: staged - Candidate: Assistant: Houve um erro ao tentar recuperar a previsão meteorológica para o Porto. Vou ajustar para tentar novamente com um formato alternativo e corrigir o erro anterior. - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-17.txt:10-10 - recalls: 0 - status: staged - Candidate: Assistant: A previsão meteorológica para o Porto aponta um tempo de **☀️ 15°C com ventos de 17 km/h**. Não há indícios de chuva. Portanto, é um bom dia para usar a mota! Próximo passo: verificar e criar/atualizar o evento no Apple Calendar. - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-17.txt:11-11 - recalls: 0 - status: staged -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5713512744000375,
+      "maxScore": 0.5713512744000375,
+      "firstRecalledAt": "2026-04-20T13:08:02.540Z",
+      "lastRecalledAt": "2026-04-20T13:08:02.540Z",
+      "queryHashes": [
+        "07e6b0ec7248"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "0.58",
+        "10-10",
+        "km/h",
+        "criar/atualizar",
+        "11-11",
+        "status",
+        "staged",
+        "candidate"
+      ]
+    },
+    "memory:memory/2026-04-19.md:162:182": {
+      "key": "memory:memory/2026-04-19.md:162:182",
+      "path": "memory/2026-04-19.md",
+      "startLine": 162,
+      "endLine": 182,
+      "source": "memory",
+      "snippet": "- status: staged - Candidate: Assistant: Houve um erro ao tentar recuperar a previsão meteorológica para o Porto. Vou ajustar para tentar novamente com um formato alternativo e corrigir o erro anterior. - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-17.txt:10-10 - recalls: 0 - status: staged - Candidate: Assistant: A previsão meteorológica para o Porto aponta um tempo de **☀️ 15°C com ventos de 17 km/h**. Não há indícios de chuva. Portanto, é um bom dia para usar a mota! Próximo passo: verificar e criar/atualizar o evento no Apple Calendar. - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-17.txt:11-11 - recalls: 0 - status: staged -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5713512744000375,
+      "maxScore": 0.5713512744000375,
+      "firstRecalledAt": "2026-04-20T13:08:02.540Z",
+      "lastRecalledAt": "2026-04-20T13:08:02.540Z",
+      "queryHashes": [
+        "07e6b0ec7248"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "0.58",
+        "10-10",
+        "km/h",
+        "criar/atualizar",
+        "11-11",
+        "status",
+        "staged",
+        "candidate"
+      ]
+    },
+    "memory:memory/2026-04-20.md:287:312": {
+      "key": "memory:memory/2026-04-20.md:287:312",
+      "path": "memory/2026-04-20.md",
+      "startLine": 287,
+      "endLine": 312,
+      "source": "memory",
+      "snippet": "- status: staged - Candidate: Assistant: Houve um erro ao tentar recuperar a previsão meteorológica para o Porto. Vou ajustar para tentar novamente com um formato alternativo e corrigir o erro anterior. - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-17.txt:10-10 - recalls: 0 - status: staged - Candidate: Assistant: A previsão meteorológica para o Porto aponta um tempo de **☀️ 15°C com ventos de 17 km/h**. Não há indícios de chuva. Portanto, é um bom dia para usar a mota! Próximo passo: verificar e criar/atualizar o evento no Apple Calendar. - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-17.txt:11-11 - recalls: 0 - status: staged -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5371188284664569,
+      "maxScore": 0.5371188284664569,
+      "firstRecalledAt": "2026-04-20T13:08:02.540Z",
+      "lastRecalledAt": "2026-04-20T13:08:02.540Z",
+      "queryHashes": [
+        "07e6b0ec7248"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "0.58",
+        "10-10",
+        "km/h",
+        "criar/atualizar",
+        "11-11",
+        "status",
+        "staged",
+        "candidate"
+      ]
+    }
+  }
+}
