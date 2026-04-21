@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-20T13:08:02.540Z",
+  "updatedAt": "2026-04-21T02:00:00.157Z",
   "entries": {
     "memory:memory/2026-04-05.md:1:14": {
       "key": "memory:memory/2026-04-05.md:1:14",
@@ -678,12 +678,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 11 memories.; confidence: 1.00; evidence: memory/.dreams/session-corpus/2026-04-14.txt:1-1, memory/.dreams/session-corpus/2026-04-14.txt:3-3, memory/.dreams/session-corpus/2026-04-14.txt:4-4; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T08:39:27.586Z",
-      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
       "queryHashes": [
         "b628913e3912"
       ],
@@ -691,7 +691,8 @@
         "2026-04-16",
         "2026-04-17",
         "2026-04-19",
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "1.00",
@@ -712,12 +713,12 @@
       "source": "memory",
       "snippet": "Possible Lasting Truths: - 2026-03-22: Met Tiago in main session. He said his name is Tiago, that we are his personal assistant, and that my tone should be funny yet straight to the point. - 2026-03-22: Telegram pairing approved for Tiago. Workspace git policy: automatically comm",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T08:39:27.586Z",
-      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
       "queryHashes": [
         "b628913e3912"
       ],
@@ -725,7 +726,8 @@
         "2026-04-16",
         "2026-04-17",
         "2026-04-19",
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "possible",
@@ -936,19 +938,20 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 15 memories.; confidence: 1.00; evidence: memory/.dreams/session-corpus/2026-04-14.txt:1-1, memory/.dreams/session-corpus/2026-04-14.txt:3-3, memory/.dreams/session-corpus/2026-04-14.txt:4-4; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-18T02:00:00.107Z",
-      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
       "queryHashes": [
         "500c0eda9949"
       ],
       "recallDays": [
         "2026-04-17",
         "2026-04-18",
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "1.00",
@@ -969,19 +972,20 @@
       "source": "memory",
       "snippet": "Possible Lasting Truths: - 2026-03-22: Met Tiago in main session. He said his name is Tiago, that we are his personal assistant, and that my tone should be funny yet straight to the point. - 2026-03-22: Telegram pairing approved for Tiago. Workspace git policy: automatically comm",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-18T02:00:00.107Z",
-      "lastRecalledAt": "2026-04-20T02:00:00.107Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
       "queryHashes": [
         "500c0eda9949"
       ],
       "recallDays": [
         "2026-04-17",
         "2026-04-18",
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "possible",
@@ -1354,18 +1358,19 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 19 memories.; confidence: 0.90; evidence: memory/.dreams/session-corpus/2026-04-14.txt:1-1, memory/.dreams/session-corpus/2026-04-14.txt:3-3, memory/.dreams/session-corpus/2026-04-14.txt:4-4; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-19T02:00:00.108Z",
-      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
       "recallDays": [
         "2026-04-18",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-21"
       ],
       "conceptTags": [
         "0.90",
@@ -1386,18 +1391,19 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 16 memories.; confidence: 0.76; evidence: memory/2026-03-22.md:1-5, memory/.dreams/session-corpus/2026-04-14.txt:2-2, memory/.dreams/session-corpus/2026-04-14.txt:5-5; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-19T02:00:00.108Z",
-      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
       "recallDays": [
         "2026-04-18",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-21"
       ],
       "conceptTags": [
         "0.76",
@@ -1418,18 +1424,19 @@
       "source": "memory",
       "snippet": "Possible Lasting Truths: Possible Lasting Truths: - 2026-03-22: Met Tiago in main session. He said his name is Tiago, that we are his personal assistant, and that my tone should be funny yet straight to the point. - 2026-03-22: Telegram pairing approved for Tiago. Workspace git p",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-19T02:00:00.108Z",
-      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
       "recallDays": [
         "2026-04-18",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-21"
       ],
       "conceptTags": [
         "possible",
@@ -1450,18 +1457,19 @@
       "source": "memory",
       "snippet": "After-Boot Notification Adjustments: Adjusted the OpenClaw \"startup ping\" mechanism to use a custom hook (`startup-ping`) instead of relying on `BOOT.md`. The hook implementation sends a resurrection message without depending on the message tool, resolving a previous limitation i",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-19T02:00:00.108Z",
-      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
       "recallDays": [
         "2026-04-18",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-21"
       ],
       "conceptTags": [
         "after-boot",
@@ -1482,18 +1490,19 @@
       "source": "memory",
       "snippet": "Calendar Task Updates: Updated the \"Can I ride the bike?\" calendar job to run daily at 20:00, verifying weather conditions for the next day. This ensures decisions about travel are prepared the evening prior.; Tested the job manually on request; confirmed the event creation for A",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-19T02:00:00.108Z",
-      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
       "recallDays": [
         "2026-04-18",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-21"
       ],
       "conceptTags": [
         "calendar",
@@ -1514,18 +1523,19 @@
       "source": "memory",
       "snippet": "Daily Briefing Improvements: Enhanced daily briefings with clickable URLs instead of occasionally formatted non-clickable links in monospace.; Adjusted the cron prompt to ensure consistent generation of clean, clickable reference links.",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-19T02:00:00.108Z",
-      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
       "recallDays": [
         "2026-04-18",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-21"
       ],
       "conceptTags": [
         "non-clickable",
@@ -1546,18 +1556,19 @@
       "source": "memory",
       "snippet": "Notable Interactions: Provided summaries of Viktor Orbán's political history, his authoritarian tendencies, and the implications of Peter Magyar's decisive electoral victory in Hungary. Converted political analysis into concise and dinner-conversation-friendly framing at user req",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-19T02:00:00.108Z",
-      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
       "recallDays": [
         "2026-04-18",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-21"
       ],
       "conceptTags": [
         "dinner-conversation-friendly",
@@ -1578,18 +1589,19 @@
       "source": "memory",
       "snippet": "Debugging and Failures: Diagnosed and addressed a cron job error for the \"Portugal daily news\" brief. The failure stemmed from an OpenAI server error, not from the cron or delivery mechanisms. Verified resilience of the system through manual retry.; Investigated and confirmed tha",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-19T02:00:00.108Z",
-      "lastRecalledAt": "2026-04-19T02:00:00.108Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
       "recallDays": [
         "2026-04-18",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-21"
       ],
       "conceptTags": [
         "openai",
@@ -3002,6 +3014,3831 @@
         "status",
         "staged",
         "candidate"
+      ]
+    },
+    "memory:memory/2026-04-20.md:313:316": {
+      "key": "memory:memory/2026-04-20.md:313:316",
+      "path": "memory/2026-04-20.md",
+      "startLine": 313,
+      "endLine": 316,
+      "source": "memory",
+      "snippet": "Reflections: Theme: `assistant` kept surfacing across 40 memories.; confidence: 0.94; evidence: memory/.dreams/session-corpus/2026-04-14.txt:2-2, memory/.dreams/session-corpus/2026-04-14.txt:5-5, memory/.dreams/session-corpus/2026-04-15.txt:7-7; note: reflection",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "511fd8111b88"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "0.94",
+        "2-2",
+        "5-5",
+        "7-7",
+        "reflections",
+        "theme",
+        "assistant",
+        "kept"
+      ]
+    },
+    "memory:memory/2026-04-20.md:317:320": {
+      "key": "memory:memory/2026-04-20.md:317:320",
+      "path": "memory/2026-04-20.md",
+      "startLine": 317,
+      "endLine": 320,
+      "source": "memory",
+      "snippet": "Reflections: Theme: `user` kept surfacing across 35 memories.; confidence: 0.82; evidence: memory/.dreams/session-corpus/2026-04-14.txt:1-1, memory/.dreams/session-corpus/2026-04-14.txt:3-3, memory/.dreams/session-corpus/2026-04-14.txt:4-4; note: reflection",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "511fd8111b88"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "0.82",
+        "1-1",
+        "3-3",
+        "4-4",
+        "reflections",
+        "theme",
+        "user",
+        "kept"
+      ]
+    },
+    "memory:memory/2026-04-20.md:323:325": {
+      "key": "memory:memory/2026-04-20.md:323:325",
+      "path": "memory/2026-04-20.md",
+      "startLine": 323,
+      "endLine": 325,
+      "source": "memory",
+      "snippet": "Possible Lasting Truths: Possible Lasting Truths: - 2026-03-22: Met Tiago in main session. He said his name is Tiago, that we are his personal assistant, and that my tone should be funny yet straight to the point. - 2026-03-22: Telegram pairing approved for Tiago. Workspace git p",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "511fd8111b88"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "possible",
+        "lasting",
+        "truths",
+        "met",
+        "tiago",
+        "said",
+        "his",
+        "name"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "User: Repete então",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "repete",
+        "então"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "User: Quero receber agora",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "quero",
+        "receber",
+        "agora"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "User: Que problemas aconteceram?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "problemas",
+        "aconteceram"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "User: Testa então com pt-br",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "pt-br",
+        "user",
+        "testa",
+        "então",
+        "com"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: [cron:b8f0a563-6a43-4777-9076-c0ba798dc607 Portugal daily news] Prepara um briefing diário com as notícias mais relevantes de Portugal das últimas 24h nas áreas de política, economia, sociedade, tecnologia e temas internacionais com impacto em Portugal. Pesquisa em notícias",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "cron:b8f0a563",
+        "6a43",
+        "c0ba798dc607",
+        "portugal",
+        "news",
+        "prepara",
+        "briefing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: Houve um erro ao validar os parâmetros para a pesquisa na Brave Search API. A linguagem `pt-PT` parece não ser suportada, embora tenha sido requerida na tarefa para atender à variante europeia do português. Aqui está o plano atual para contornar isso: 1. Usar um idioma",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "pt-pt",
+        "assistant",
+        "houve",
+        "erro",
+        "validar",
+        "parâmetros",
+        "pesquisa",
+        "brave"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: ### 📰 **Briefing Diário - Notícias de Portugal** *Segunda-feira, 20 de abril de 2026* --- #### 🛡️ **Política** - **Presidente reúne com parceiros sociais na próxima semana**: Encontros agendados para debater questões económicas e sociais. [Leia mais](https://eco.sapo",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "segunda-feira",
+        "eco.sapo",
+        "assistant",
+        "briefing",
+        "diário",
+        "notícias",
+        "portugal",
+        "segunda"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "User: A new session was started via /new or /reset. If runtime-provided startup context is included for this first turn, use it before responding to the user. Then greet the user in your configured persona, if one is provided. Be yourself - use your defined voice, mannerisms, and",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "runtime-provided",
+        "user",
+        "new",
+        "was",
+        "started",
+        "via",
+        "reset",
+        "runtime"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: Hey Tiago! 😼 What's the plan for today? Got tasks, reminders, or something tricky to handle?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "hey",
+        "tiago",
+        "what's",
+        "the",
+        "plan",
+        "got",
+        "tasks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "User: ganda nyx, tenho um desafio para ti. vai ao meu gmail e lê o ultimo email da plenitude. analisa o anexo e diz-me o que ele contém",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "diz-me",
+        "user",
+        "ganda",
+        "nyx",
+        "tenho",
+        "desafio",
+        "vai",
+        "meu"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: Boa, Tiago! 😼 Vou já tratar disso. Vou verificar o teu Gmail, ler o último email da Plenitude, e analisar o anexo. Já dou notícias!",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "boa",
+        "tiago",
+        "vou",
+        "tratar",
+        "disso",
+        "verificar",
+        "teu"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: Parece que não tenho memória específica sobre isso ou acesso ao teu Gmail configurado. Para resolver, precisamos garantir que consigo aceder ao teu Gmail para verificar o email da Plenitude e analisar o anexo. Confirma se já configurei algum acesso ou como devo procede",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "parece",
+        "não",
+        "tenho",
+        "memória",
+        "específica",
+        "sobre",
+        "isso"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "User: então? estás perdida?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "então",
+        "estás",
+        "perdida"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: Não estou perdida, mas sem acesso direto ao teu Gmail, não consigo avançar. 😼 Precisamos confirmar se já configurei esse acesso ou se tens algum detalhe para partilhar comigo, tipo as credenciais de IMAP/SMTP ou outra forma de acessar. Quero resolver isto já!",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "imap/smtp",
+        "assistant",
+        "não",
+        "estou",
+        "perdida",
+        "mas",
+        "sem",
+        "acesso"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "User: tu tens acesso ao skill gog. e a minha conta de email ja esta configurada.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "tens",
+        "acesso",
+        "skill",
+        "gog",
+        "minha",
+        "conta",
+        "email"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: O último email da Plenitude é uma fatura no valor de **130,27 €** para o fornecimento em **Rua das Areias Nº86**. Inclui a data de emissão de **17/04/2026** e um anexo em PDF com a fatura detalhada. Parece que estou a enfrentar dificuldades na extração do anexo com a `",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "17/04/2026",
+        "assistant",
+        "último",
+        "email",
+        "plenitude",
+        "uma",
+        "fatura",
+        "valor"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "User: utiliza o nano-pdf para leres o ficheiro",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "nano-pdf",
+        "user",
+        "utiliza",
+        "nano",
+        "pdf",
+        "leres",
+        "ficheiro"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: Estou a precisar de algumas dependências de sistema para usar o `nano-pdf` — especificamente, o `pdftotext` e o `tesseract`. Preciso que estas sejam instaladas primeiro para extrair o conteúdo do PDF. Queres que as instale ou preferes fazer isso no teu lado?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "nano-pdf",
+        "assistant",
+        "estou",
+        "precisar",
+        "algumas",
+        "dependências",
+        "sistema",
+        "usar"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "User: diz-me como instalar isso, porque tu estas a correr dentro de um docker container e talvez eu precise de re-criar a imagem?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "diz-me",
+        "re-criar",
+        "user",
+        "diz",
+        "instalar",
+        "isso",
+        "porque",
+        "estas"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: create a simple calendar event for today at 14:30 titled 'Test Event'.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "subagent",
+        "context",
+        "you",
+        "running"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: The `.env` file needed for creating the calendar event exists in `/data/.openclaw/workspace/secrets/.env`, but it seems the required environment variables (`APPLE_CALDAV_URL`, `APPLE_CALDAV_USERNAME`, `APPLE_CALDAV_PASSWORD`) are missing or incomplete in this file. Wit",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "openclaw/workspace/secrets",
+        "apple-caldav-url",
+        "apple-caldav-username",
+        "apple-caldav-password",
+        "assistant",
+        "the",
+        "env",
+        "needed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "User: yo nyx! tudo bem? supostamente ja te instalei o skill \"gog\". consegues confirmar se está a funcionar? por exemplo, diz-me o subject dos meus 10 emails mais recentes",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "diz-me",
+        "user",
+        "nyx",
+        "tudo",
+        "bem",
+        "supostamente",
+        "instalei",
+        "skill"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: Aqui estão os assuntos dos teus 10 emails mais recentes: 1. **[Security alert]** - Google 2. **[CAIXA: Uma oportunidade Pra Elas]** - CAIXA - Adimplência 3. **[⚠️ 𝗦𝘂𝗮 𝗰𝗼𝗻𝘁𝗮 𝗳𝗼𝗶 𝗯𝗹𝗼𝗾𝘂𝗲𝗮𝗱𝗮]** - Support 4. **[Alfaiataria com até 70% OFF]** - Estoque 5.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "aqui",
+        "estão",
+        "assuntos",
+        "dos",
+        "teus",
+        "emails",
+        "mais"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "User: diz-me os meus proximos 5 eventos do calendario",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "diz-me",
+        "user",
+        "diz",
+        "meus",
+        "proximos",
+        "eventos",
+        "calendario"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: Parece que a API do Google Calendar ainda não está configurada para o projeto associado ao skill \"gog\". Precisarás habilitar a API do Google Calendar no teu Google Cloud Console. Segue estes passos: 1. Vai para este link: [Google Cloud Console - Calendar API](https://c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "parece",
+        "api",
+        "google",
+        "calendar",
+        "ainda",
+        "não",
+        "está"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "User: tenta novamente",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "tenta",
+        "novamente"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: Não há eventos próximos no teu calendário principal. Se esperavas ver algo e não está a aparecer, verifica se o calendário correto está configurado.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "não",
+        "eventos",
+        "próximos",
+        "teu",
+        "calendário",
+        "principal",
+        "esperavas"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "User: na proxima semana tenho eventos. consegues ver?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "proxima",
+        "semana",
+        "tenho",
+        "eventos",
+        "consegues",
+        "ver"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: Aqui está o evento que tens na próxima semana: - **[2026-04-20 | 14:00 - 14:30]**: **teste** Se houver algo mais com que precisas ajuda, avisa!",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "aqui",
+        "está",
+        "evento",
+        "tens",
+        "próxima",
+        "semana",
+        "teste"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "User: pa. mentira. esse evento é HOJE. na proxima semana tenho um evento no dia 1 de maio",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "mentira",
+        "esse",
+        "evento",
+        "hoje",
+        "proxima",
+        "semana",
+        "tenho"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Assistant: Não encontrei eventos no calendário para o dia 1 de maio ou para a próxima semana. Parece que há algo inconsistente. Tens a certeza que o evento está no teu calendário principal? Se quiseres, podemos verificar outro calendário ou ajustar as configurações para ver se al",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "não",
+        "encontrei",
+        "eventos",
+        "calendário",
+        "dia",
+        "maio",
+        "próxima"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "User: qual calendario estas a considerar o principal?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "qual",
+        "calendario",
+        "estas",
+        "considerar",
+        "principal"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: Parece que não consegui listar os calendários disponíveis diretamente. O calendário principal que considerei era o \"primary\", que é geralmente associado ao primeiro calendário padrão na tua conta Google. Se quiseres verificar um calendário específico ou outro que não s",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "parece",
+        "não",
+        "consegui",
+        "listar",
+        "calendários",
+        "disponíveis",
+        "diretamente"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Adicionar ao calendário `marechal diário` — inserir prompts interativos, arquivos e cards úteis ou gerir ajuste \"Inspiração s",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "subagent",
+        "context",
+        "you",
+        "running"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "Assistant: Não localizei contexto direto sobre o calendário específico chamado `marechal diário` ou detalhes sobre o ajuste \"Inspiração solta\". Porém, há menções relacionadas a automação de eventos no Apple Calendar (como criar um evento diário às 20:00), além de dificuldades téc",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "não",
+        "localizei",
+        "contexto",
+        "direto",
+        "sobre",
+        "calendário",
+        "específico"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Retry creating a Google Calendar event for today at 14:30 named 'Test Event' now that the authentication issue might be resol",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "subagent",
+        "context",
+        "you",
+        "running"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "Assistant: The Google Calendar event \"Test Event\" was successfully created for today (April 20, 2026) at 14:30. Here are the details: - **Description**: Test Event for today. - **Start Time**: 14:30 (UTC+1) - **End Time**: 15:30 (UTC+1) - **Status**: Confirmed - **Event Link**: [",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "the",
+        "google",
+        "calendar",
+        "event",
+        "test",
+        "was",
+        "successfully"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "User: [cron:749108ec-c700-4c22-920a-1cffbdc12620 Daily moto calendar event] Cria ou atualiza o evento diário da mota no Apple Calendar usando a skill `apple-calendar-caldav` e o ficheiro `.openclaw/secrets/.env` do workspace. Objetivo: todos os dias às 20:00, avaliar o tempo prev",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "apple-calendar-caldav",
+        "openclaw/secrets",
+        "user",
+        "cron",
+        "749108ec",
+        "c700",
+        "4c22",
+        "920a"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "Assistant: Obtive a previsão para o Porto amanhã: *Solarengo, 20°C, sem chuva e ventos leves (7km/h)*. No entanto, ocorreu um erro ao tentar listar os calendários via CalDAV com as credenciais configuradas. Parece que o comando `source ~/.openclaw/secrets/.env` não está disponíve",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "7km/h",
+        "openclaw/secrets",
+        "assistant",
+        "obtive",
+        "previsão",
+        "porto",
+        "amanhã",
+        "solarengo"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Transcribe the content of the audio file",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "subagent",
+        "context",
+        "you",
+        "running"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "Assistant: To transcribe the content, I need the audio file. Could you please provide the file for processing?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "transcribe",
+        "the",
+        "content",
+        "need",
+        "audio",
+        "you",
+        "please"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "User: [cron:b8f0a563-6a43-4777-9076-c0ba798dc607 Portugal daily news] Prepara um briefing diário conciso sobre as notícias de Portugal para hoje. Pesquisa na web as notícias mais importantes de Portugal das últimas 24 horas nas áreas de política, economia, sociedade, tecnologia e",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "cron:b8f0a563",
+        "6a43",
+        "c0ba798dc607",
+        "portugal",
+        "news",
+        "prepara",
+        "briefing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "Assistant: As buscas não foram bem-sucedidas devido a um problema de configuração no idioma utilizado. Vou corrigir o parâmetro e tentar novamente.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "bem-sucedidas",
+        "assistant",
+        "buscas",
+        "não",
+        "foram",
+        "bem",
+        "sucedidas",
+        "devido"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "Assistant: ### Briefing Diário - 20 de Abril de 2026 🌅 #### 🗞️ **Notícias de Portugal** 1. **Bombeiros vs. INEM**: A Liga dos Bombeiros decidiu rescindir o acordo com o INEM devido a alegadas falhas na assistência pré-hospitalar. Situação gera alerta na saúde de emergência em P",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "pré-hospitalar",
+        "assistant",
+        "briefing",
+        "diário",
+        "abril",
+        "notícias",
+        "portugal",
+        "bombeiros"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "User: Tão pouquinhas notícias hoje?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "tão",
+        "pouquinhas",
+        "notícias",
+        "hoje"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] Hoje o briefing teve menos notícias porque: - As fontes nos filtros de pesquisa não retornaram tantos resultados relevantes. - Alguns temas diários persistem sem avanços significativos. Já ajustei o idioma para `pt-BR` e realinhei os parâmetros de",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "pt-br",
+        "assistant",
+        "hoje",
+        "briefing",
+        "teve",
+        "menos",
+        "notícias"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "User: E nem falaste da mota.. algo mudou",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "nem",
+        "falaste",
+        "mota",
+        "algo",
+        "mudou"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] Foi falha nos parâmetros ajustados para os resumos. A parte da **nota da mota** não deveria ter ficado de fora, e isso foi descuido na atualização que fiz para usar o `pt-BR`. Parece que ao mudar um foco ali, perdi sem querer a seção personalizada",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "pt-br",
+        "assistant",
+        "foi",
+        "falha",
+        "nos",
+        "parâmetros",
+        "ajustados"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "User: O que aconteceu?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "aconteceu"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] O que aconteceu foi bem provavelmente um ajuste mal alinhado: 1. Eu reescrevi o prompt do briefing recentemente para corrigir: - **Links sempre clicáveis** - Idioma de busca `pt-BR` (por causa da API) - Evitar resumos dependentes de clicar 2. Duran",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "pt-br",
+        "assistant",
+        "aconteceu",
+        "foi",
+        "bem",
+        "provavelmente",
+        "ajuste"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:47:47": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:47:47",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 47,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "User: Tens a certeza que a api só dá PT-br?? Acho isso super estranho. Investiga por favor",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "pt-br",
+        "user",
+        "tens",
+        "certeza",
+        "api",
+        "acho",
+        "isso",
+        "super"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:48:48": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:48:48",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] A Brave Search API permite várias configurações de idioma e linguagem em formato padrão ISO-639-1. Em resumo: - Não limita os resultados a **pt-BR**, mas isso pode ter sido um erro interpretativo na configuração que enviava `pt-PT`. - Idiomas como",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "iso-639-1",
+        "pt-br",
+        "pt-pt",
+        "assistant",
+        "brave",
+        "api",
+        "permite"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:49:49": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:49:49",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 49,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "User: [cron:ff8f96c4-8b95-4787-8a28-fc8ba066bea5 Portugal daily news (Discord #nyx-news)] Prepara um briefing diário conciso sobre as notícias de Portugal para hoje. Pesquisa na web as notícias mais importantes de Portugal das últimas 24 horas nas áreas de política, economia, soc",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "nyx-news",
+        "user",
+        "cron:ff8f96c4",
+        "8b95",
+        "8a28",
+        "fc8ba066bea5",
+        "portugal",
+        "news"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:50:50": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:50:50",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 50,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "Assistant: **📰 Notícias de Portugal - 20 de abril, 2026** - **Política**: Um relatório recente aponta para o aumento da desconfiança pública nas instituições políticas em Portugal após escândalos de corrupção. - **Economia**: Pequenos negócios enfrentam dificuldades para adaptar",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "notícias",
+        "portugal",
+        "abril",
+        "política",
+        "relatório",
+        "recente",
+        "aponta"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:51:51": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:51:51",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] Yes, what’s up? 😼",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "assistant",
+        "yes",
+        "what’s"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:52:52": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:52:52",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 52,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Create a Google Calendar event for today at 14:30 named 'Test Event'. Ignore Apple Calendar and related setups.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "subagent",
+        "context",
+        "you",
+        "running"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:53:53": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:53:53",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 53,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "Assistant: I encountered an issue with the Google Workspace CLI (`gog`). The existing authentication token appears corrupted (`aes.KeyUnwrap(): integrity check failed`), making it impossible to proceed with creating the requested event. To fix this: 1. Reauthenticate using `gog a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "aes.keyunwrap",
+        "assistant",
+        "encountered",
+        "issue",
+        "the",
+        "google",
+        "cli",
+        "gog"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:54:54": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:54:54",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 54,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Transcribe the content of the new audio file",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "subagent",
+        "context",
+        "you",
+        "running"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:55:55": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:55:55",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 55,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "Assistant: To transcribe the content of the new audio file, please provide the audio file that needs transcription. Once you share it, I'll begin the process.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "transcribe",
+        "the",
+        "content",
+        "new",
+        "audio",
+        "please",
+        "provide"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:56:56": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:56:56",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 56,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Transcribe the final provided audio file to text.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "subagent",
+        "context",
+        "you",
+        "running"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:57:57": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:57:57",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 57,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "Assistant: I couldn't find the audio file `final_audio_file.mp3`. It seems like it doesn't exist in the expected location. Please check the file path or ensure that the file has been uploaded to the workspace.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "final-audio-file.mp3",
+        "assistant",
+        "couldn't",
+        "find",
+        "the",
+        "audio",
+        "seems",
+        "like"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:58:58": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:58:58",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 58,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Create a Google Calendar event on Wednesday from 8:00 AM to 6:00 PM titled 'Pai em Casa'.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "subagent",
+        "context",
+        "you",
+        "running"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:59:59": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:59:59",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 59,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "Assistant: The Google Calendar event titled **\"Pai em Casa\"** has been successfully created. Here's the event information: - **Date:** Wednesday, April 22, 2026 - **Time:** 8:00 AM to 6:00 PM (GMT+1) - **Event link:** [Pai em Casa on Google Calendar](https://www.google.com/calend",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "www.google.com/calend",
+        "assistant",
+        "the",
+        "google",
+        "calendar",
+        "event",
+        "titled",
+        "pai"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:60:60": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:60:60",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 60,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "User: A new session was started via /new or /reset. If runtime-provided startup context is included for this first turn, use it before responding to the user. Then greet the user in your configured persona, if one is provided. Be yourself - use your defined voice, mannerisms, and",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "runtime-provided",
+        "user",
+        "new",
+        "was",
+        "started",
+        "via",
+        "reset",
+        "runtime"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:61:61": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:61:61",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 61,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "Assistant: Hey Tiago! 😼 It's Monday, and I'm geared up to jump into action. What's on your mind?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "hey",
+        "tiago",
+        "it's",
+        "monday",
+        "i'm",
+        "geared",
+        "jump"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:62:62": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:62:62",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 62,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "User: confirma se tens instalado o skill \"gog\" por favor",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "confirma",
+        "tens",
+        "instalado",
+        "skill",
+        "gog",
+        "favor"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:63:63": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:63:63",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 63,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "Assistant: Sim, o skill \"gog\" está instalado! Ele permite acessar o Google Workspace (Gmail, Agenda, Drive, Contatos, Sheets e Docs). O que precisas fazer com ele?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "sim",
+        "skill",
+        "gog",
+        "está",
+        "instalado",
+        "ele",
+        "permite"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:64:64": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:64:64",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 64,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "User: quero que cries um evento de teste para as 14:30 de hoje",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "quero",
+        "cries",
+        "evento",
+        "teste",
+        "hoje"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:65:65": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:65:65",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 65,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "Assistant: Claro! Vou criar um evento de teste para hoje às 14:30. Precisas adicionar mais detalhes, como título, duração ou descrição? Ou é só um lembrete simples?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "claro",
+        "vou",
+        "criar",
+        "evento",
+        "teste",
+        "hoje",
+        "precisas"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:66:66": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:66:66",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 66,
+      "endLine": 66,
+      "source": "memory",
+      "snippet": "User: qualquer coisa de teste. evento normal",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "qualquer",
+        "coisa",
+        "teste",
+        "evento",
+        "normal"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:67:67": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:67:67",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 67,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "Assistant: Perfeito! Estou agora a criar o evento de teste para as 14:30. Já te confirmo quando estiver pronto!",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "perfeito",
+        "estou",
+        "agora",
+        "criar",
+        "evento",
+        "teste",
+        "confirmo"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:68:68": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:68:68",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 68,
+      "endLine": 68,
+      "source": "memory",
+      "snippet": "User: <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…767d session_id: 17583180-c8f3-42d9-8b80-44e",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "17583180-c8f3-42d9-8b80-44e",
+        "user",
+        "openclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:69:69": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:69:69",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 69,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "Assistant: Parece que o arquivo `.env` com as credenciais necessárias para criar o evento no Apple Calendar está presente, mas faltam algumas informações importantes: `APPLE_CALDAV_URL`, `APPLE_CALDAV_USERNAME` e `APPLE_CALDAV_PASSWORD`. Sem esses valores, não posso autenticar no",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "apple-caldav-url",
+        "apple-caldav-username",
+        "apple-caldav-password",
+        "assistant",
+        "parece",
+        "arquivo",
+        "env",
+        "com"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:70:70": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:70:70",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 70,
+      "endLine": 70,
+      "source": "memory",
+      "snippet": "User: eu NAO QUERO QUE UTILIZES O APPLE_CALDAV -- utiliza o skill \"gog\" apenas!!!!",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "apple-caldav",
+        "user",
+        "nao",
+        "quero",
+        "utilizes",
+        "utiliza",
+        "skill",
+        "gog"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:71:71": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:71:71",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 71,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "Assistant: Entendido, vou criar o evento usando apenas o skill \"gog\" para o Google Calendar. Já trato disso!",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "entendido",
+        "vou",
+        "criar",
+        "evento",
+        "usando",
+        "apenas",
+        "skill"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:72:72": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:72:72",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 72,
+      "endLine": 72,
+      "source": "memory",
+      "snippet": "Assistant: Para instalar as dependências `pdftotext` e `tesseract` dentro de um container Docker, precisas adicioná-las à tua imagem. Aqui vai um exemplo de como ajustar o `Dockerfile`: ```Dockerfile # Base image FROM python:3.10-slim # Instalar dependências de sistema RUN apt-ge",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "adicioná-las",
+        "3.10-slim",
+        "apt-ge",
+        "assistant",
+        "instalar",
+        "dependências",
+        "pdftotext",
+        "tesseract"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:73:73": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:73:73",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 73,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "User: vê se ja tens acesso às tools de pdf que necessitas",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "tens",
+        "acesso",
+        "tools",
+        "pdf",
+        "necessitas"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:74:74": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:74:74",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 74,
+      "endLine": 74,
+      "source": "memory",
+      "snippet": "Assistant: As ferramentas necessárias estão instaladas, mas o ficheiro PDF parece não estar disponível no local esperado. Precisamos garantir que o ficheiro **26201000934_042026_F26PT-00197632.pdf** está na pasta certa. Podes confirmar ou enviá-lo novamente?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "enviá-lo",
+        "assistant",
+        "ferramentas",
+        "necessárias",
+        "estão",
+        "instaladas",
+        "mas",
+        "ficheiro"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:75:75": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:75:75",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 75,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "User: não vou fazer isso. vai ao email e obtem o ficheiro novamente por favor",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "não",
+        "vou",
+        "fazer",
+        "isso",
+        "vai",
+        "email",
+        "obtem"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:76:76": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:76:76",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 76,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "Assistant: Houve um problema ao tentar obter o anexo do email: um erro relacionado ao token do anexo. Vou verificar o comando para garantir que está correto. Já volto com uma solução! 😼",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "houve",
+        "problema",
+        "tentar",
+        "obter",
+        "anexo",
+        "email",
+        "erro"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:77:77": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:77:77",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 77,
+      "endLine": 77,
+      "source": "memory",
+      "snippet": "Assistant: O comando para obter o anexo ainda está a falhar devido a argumentos inesperados. Vou precisar ajustar o formato do comando ou verificar outra abordagem. Continua no email, vou resolver isso sem mais complicações.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "comando",
+        "obter",
+        "anexo",
+        "ainda",
+        "está",
+        "falhar",
+        "devido"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:78:78": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:78:78",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 78,
+      "endLine": 78,
+      "source": "memory",
+      "snippet": "Assistant: Ainda estou a tentar encontrar o formato correto do comando para descarregar o anexo. Parece que as opções disponíveis podem ter mudado ou estão documentadas de forma diferente. Queres que eu investigue mais a fundo ou tentamos outra abordagem para accessar o arquivo?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "ainda",
+        "estou",
+        "tentar",
+        "encontrar",
+        "formato",
+        "correto",
+        "comando"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:79:79": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:79:79",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 79,
+      "endLine": 79,
+      "source": "memory",
+      "snippet": "User: quero que faças o que te pedi de uma vez por todas. vai ao email, obtem a ultima fatura da plenitude, analisa o PDF e diz-me o que é que ele contém",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "diz-me",
+        "user",
+        "quero",
+        "faças",
+        "pedi",
+        "uma",
+        "vez",
+        "todas"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:80:80": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:80:80",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 80,
+      "endLine": 80,
+      "source": "memory",
+      "snippet": "Assistant: A última fatura da Plenitude ainda está no pipeline. Vou garantir que a tarefa seja cumprida e informo assim que o PDF for processado. 🎯",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "última",
+        "fatura",
+        "plenitude",
+        "ainda",
+        "está",
+        "pipeline",
+        "vou"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:81:81": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:81:81",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 81,
+      "endLine": 81,
+      "source": "memory",
+      "snippet": "User: então estás a dormir?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "então",
+        "estás",
+        "dormir"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:82:82": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:82:82",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 82,
+      "endLine": 82,
+      "source": "memory",
+      "snippet": "Assistant: Não, Tiago — estou completamente alerta! O anexo da Plenitude está a causar problemas técnicos. Vou garantir que resolvo isso agora mesmo, sem enrolação!",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "não",
+        "tiago",
+        "estou",
+        "completamente",
+        "alerta",
+        "anexo",
+        "plenitude"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:83:83": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:83:83",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 83,
+      "endLine": 83,
+      "source": "memory",
+      "snippet": "Assistant: Aqui está o conteúdo da tua fatura da Plenitude: - **Valor total:** 130,27€ - **Nº da fatura:** FT F26PT/00197632 - **Data de emissão:** 17-04-2026 - **Prazo de pagamento:** 01-05-2026 - **Consumo:** 689 kWh (dividido entre Ponta, Cheia e Vazio) - **Cálculo de emissões",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "f26pt/00197632",
+        "17-04-2026",
+        "01-05-2026",
+        "assistant",
+        "aqui",
+        "está",
+        "conteúdo",
+        "tua"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:84:84": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:84:84",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 84,
+      "endLine": 84,
+      "source": "memory",
+      "snippet": "User: acabei de correr isto, e funcionou. porque é que tu não consegues? node@a7e47d0cd55e:/app$ gog calendar events tiago.carvalho@gmail.com --days 14 ID START END SUMMARY 5tqtqrrrdepjk1p32l6ke6dmvi 2026-04-20T14:00:00+01:00 2026-04-20T14:30:00+01:00 teste k4svgefsajbnfl383j59o1",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "tiago.carvalho",
+        "gmail.com",
+        "2026-04-20t14",
+        "user",
+        "acabei",
+        "correr",
+        "isto",
+        "funcionou"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:85:85": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:85:85",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 85,
+      "endLine": 85,
+      "source": "memory",
+      "snippet": "Assistant: Parece que o comando que usaste incluiu explicitamente um endereço de email: `gog calendar events tiago.carvalho@gmail.com --days 14`. Por outro lado, eu estava a consultar o calendário principal de forma genérica (`primary`) sem especificar um endereço. Provavelmente,",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "tiago.carvalho",
+        "gmail.com",
+        "assistant",
+        "parece",
+        "comando",
+        "usaste",
+        "incluiu",
+        "explicitamente"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:86:86": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:86:86",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 86,
+      "endLine": 86,
+      "source": "memory",
+      "snippet": "User: usando \"primary\" tambem funciona. porque é que tu não consegues? node@a7e47d0cd55e:/app$ gog calendar events primary --days 14 ID START END SUMMARY 5tqtqrrrdepjk1p32l6ke6dmvi 2026-04-20T14:00:00+01:00 2026-04-20T14:30:00+01:00 teste k4svgefsajbnfl383j59o1a098 2026-05-01T19:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "2026-04-20t14",
+        "2026-05-01t19",
+        "user",
+        "usando",
+        "primary",
+        "tambem",
+        "funciona",
+        "porque"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:87:87": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:87:87",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 87,
+      "endLine": 87,
+      "source": "memory",
+      "snippet": "Assistant: Se o comando funciona diretamente na tua linha de comando mas não para mim, algo pode estar errado no ambiente onde estou a executar o `gog`. Aqui estão algumas possíveis razões: 1. **Configuração de Ambiente:** Pode ser que o meu ambiente não esteja a usar as mesmas c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "comando",
+        "funciona",
+        "diretamente",
+        "tua",
+        "linha",
+        "mas",
+        "não"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:88:88": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:88:88",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 88,
+      "endLine": 88,
+      "source": "memory",
+      "snippet": "User: tenta consultar especificamente o dia 2026-05-02 -- confirma se consegues ver os eventos desse dia no calendario principal. tem que existir um",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "tenta",
+        "consultar",
+        "especificamente",
+        "dia",
+        "confirma",
+        "consegues",
+        "ver"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:89:89": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:89:89",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 89,
+      "endLine": 89,
+      "source": "memory",
+      "snippet": "Assistant: Infelizmente, não consegui encontrar nenhum evento no calendário principal para o dia 2026-05-02. Isso contradiz a informação que mencionaste, o que sugere que algo pode estar mal configurado ou no ambiente onde estou a correr os comandos. Se quiseres, posso fazer mais",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "infelizmente",
+        "não",
+        "consegui",
+        "encontrar",
+        "nenhum",
+        "evento",
+        "calendário"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:90:90": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:90:90",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 90,
+      "endLine": 90,
+      "source": "memory",
+      "snippet": "User: /skill gog",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "skill",
+        "gog"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:91:91": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:91:91",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 91,
+      "endLine": 91,
+      "source": "memory",
+      "snippet": "Assistant: O skill \"gog\" está instalado e funcional, mas parece haver alguma inconsistência na forma como as permissões ou o ambiente estão configurados. Resumo do estado do skill: - **Comandos Testados**: - Email: OK, consegui listar assuntos do Gmail. - Calendário: Inconsistent",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "skill",
+        "gog",
+        "está",
+        "instalado",
+        "funcional",
+        "mas",
+        "parece"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:92:92": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:92:92",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 92,
+      "endLine": 92,
+      "source": "memory",
+      "snippet": "User: consegues listar ficheiros que tenho no google drive?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "consegues",
+        "listar",
+        "ficheiros",
+        "tenho",
+        "google",
+        "drive"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:93:93": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:93:93",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 93,
+      "endLine": 93,
+      "source": "memory",
+      "snippet": "Assistant: Aqui estão os ficheiros mais recentes no teu Google Drive: 1. **spherelephant e reticências** - file, 6.2 KB (Modificado: 2026-04-14) 2. **Contas Mensais** - file, 13.9 KB (Modificado: 2026-04-01) 3. **comprovativo (5)** - file, 2.7 KB (Modificado: 2026-04-01) 4. **com",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "6.2",
+        "13.9",
+        "2.7",
+        "assistant",
+        "aqui",
+        "estão",
+        "ficheiros",
+        "mais"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:94:94": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:94:94",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 94,
+      "endLine": 94,
+      "source": "memory",
+      "snippet": "User: quero testar as tuas aptidoes de ler emails e pdfs. consulta o ultimo email da \"plenitude\" e diz-me o que está no PDF em anexo",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "diz-me",
+        "user",
+        "quero",
+        "testar",
+        "tuas",
+        "aptidoes",
+        "ler",
+        "emails"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:95:95": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:95:95",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 95,
+      "endLine": 95,
+      "source": "memory",
+      "snippet": "Assistant: Parece que houve um erro ao tentar descarregar o anexo. Preciso confirmar o comando correto para descarregar anexos com o `gog`. Deixa-me investigar isso para ajustar e retomar o teste.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "deixa-me",
+        "assistant",
+        "parece",
+        "houve",
+        "erro",
+        "tentar",
+        "descarregar",
+        "anexo"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:96:96": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:96:96",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 96,
+      "endLine": 96,
+      "source": "memory",
+      "snippet": "User: Testa. Eu não me acredito que não funcione com português de Portugal",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "testa",
+        "não",
+        "acredito",
+        "funcione",
+        "com",
+        "português",
+        "portugal"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:97:97": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:97:97",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 97,
+      "endLine": 97,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] Ajustei o idioma para `pt-PT` e já relancei o briefing. Vamos confirmar se o suporte para português europeu funciona desta vez! 🚀",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "pt-pt",
+        "assistant",
+        "ajustei",
+        "idioma",
+        "relancei",
+        "briefing",
+        "vamos"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:98:98": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:98:98",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 98,
+      "endLine": 98,
+      "source": "memory",
+      "snippet": "User: Perfeito. Mantém assim",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "perfeito",
+        "mantém",
+        "assim"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:99:99": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:99:99",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 99,
+      "endLine": 99,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] Perfeito! Vou manter o briefing com `pt-PT` ajustado e continuar sempre nessa linha. Qualquer coisa, é só dizer! 😼",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "pt-pt",
+        "assistant",
+        "perfeito",
+        "vou",
+        "manter",
+        "briefing",
+        "com"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:100:100": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:100:100",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 100,
+      "endLine": 100,
+      "source": "memory",
+      "snippet": "User: Mas olha… e a parte relativa a mota?!",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "mas",
+        "olha",
+        "parte",
+        "relativa",
+        "mota"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:101:101": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:101:101",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 101,
+      "endLine": 101,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] Boa chamada! A **nota da mota** vai voltar nos próximos briefings – vou garantir que continua incluída sempre: - Previsão personalizada para andar na **Super Duke** - Texto com humor leve e dica prática adaptada ao tempo e à estrada Deixa só eu aju",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "assistant",
+        "boa",
+        "chamada",
+        "nota",
+        "mota",
+        "vai",
+        "voltar"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:102:102": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:102:102",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 102,
+      "endLine": 102,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] Pronto! Já reforcei para que a **\"Nota de estrada\" da mota** volte e nunca mais falhe. A partir do próximo briefing, será incluída sempre com a dica sobre a estrada e o humor de leve! 🏍️😼",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "assistant",
+        "pronto",
+        "reforcei",
+        "nota",
+        "estrada",
+        "mota",
+        "volte"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:103:103": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:103:103",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 103,
+      "endLine": 103,
+      "source": "memory",
+      "snippet": "User: [media attached: /data/.openclaw/media/inbound/file_0---30213685-4d57-4dd3-ba8f-aed4d5431a3f.ogg (audio/ogg; codecs=opus) | /data/.openclaw/media/inbound/file_0---30213685-4d57-4dd3-ba8f-aed4d5431a3f.ogg] To send an image back, prefer the message tool (media/path/filePath).",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "openclaw/media/inbound/file-0",
+        "audio/ogg",
+        "media/path/filepath",
+        "user",
+        "media",
+        "attached",
+        "data",
+        "openclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:104:104": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:104:104",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 104,
+      "endLine": 104,
+      "source": "memory",
+      "snippet": "Assistant: Parece que estou com algumas limitações para processar diretamente o áudio enviado. Vou revisar uma abordagem funcional para resolver isso e já volto com uma solução!",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "parece",
+        "estou",
+        "com",
+        "algumas",
+        "limitações",
+        "processar",
+        "diretamente"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:105:105": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:105:105",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 105,
+      "endLine": 105,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] Oi! Estou a ajustar a melhor forma de transcrever o teu áudio aqui. Não te preocupes que já encontro uma solução para isso! 🚀",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "assistant",
+        "estou",
+        "ajustar",
+        "melhor",
+        "forma",
+        "transcrever",
+        "teu"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:106:106": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:106:106",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 106,
+      "endLine": 106,
+      "source": "memory",
+      "snippet": "User: Oi estás aí?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "estás"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:107:107": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:107:107",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 107,
+      "endLine": 107,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] Estou sim! Estou a tentar resolver a questão da transcrição do áudio. Preciso ajustar a ferramenta certa aqui, mas estou na área. 😼",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "assistant",
+        "estou",
+        "sim",
+        "tentar",
+        "resolver",
+        "questão",
+        "transcrição"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:108:108": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:108:108",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 108,
+      "endLine": 108,
+      "source": "memory",
+      "snippet": "Assistant: Vou usar o Google Calendar para criar o evento. Já confirmo assim que estiver pronto!",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "vou",
+        "usar",
+        "google",
+        "calendar",
+        "criar",
+        "evento",
+        "confirmo"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:109:109": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:109:109",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 109,
+      "endLine": 109,
+      "source": "memory",
+      "snippet": "User: <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…061a session_id: 9264b9f5-9385-4cdf-a179-baf",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "9264b9f5-9385-4cdf-a179-baf",
+        "user",
+        "openclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:110:110": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:110:110",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 110,
+      "endLine": 110,
+      "source": "memory",
+      "snippet": "Assistant: Encontrei um problema com a autenticação do Google Workspace CLI (`gog`). O token atual está corrompido (`aes.KeyUnwrap(): integrity check failed`). Para corrigir isso: 1. Reautentica usando o comando `gog auth add` com a tua conta. 2. Certifica-te de que o `gog` está",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "aes.keyunwrap",
+        "certifica-te",
+        "assistant",
+        "encontrei",
+        "problema",
+        "com",
+        "autenticação",
+        "google"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:111:111": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:111:111",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 111,
+      "endLine": 111,
+      "source": "memory",
+      "snippet": "User: tenta agora",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "tenta",
+        "agora"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:112:112": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:112:112",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 112,
+      "endLine": 112,
+      "source": "memory",
+      "snippet": "Assistant: Vou tentar criar o evento novamente no Google Calendar. Já te atualizo com o resultado!",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "vou",
+        "tentar",
+        "criar",
+        "evento",
+        "novamente",
+        "google",
+        "calendar"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:113:113": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:113:113",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 113,
+      "endLine": 113,
+      "source": "memory",
+      "snippet": "User: <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…aaf7 session_id: 5f13864f-a8fa-40b4-b712-023",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "5f13864f-a8fa-40b4-b712-023",
+        "user",
+        "openclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:114:114": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:114:114",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 114,
+      "endLine": 114,
+      "source": "memory",
+      "snippet": "Assistant: O evento \"Test Event\" foi criado com sucesso para hoje, 20 de abril de 2026, às 14:30. Aqui estão os detalhes: - **Descrição**: Test Event for today. - **Hora de início**: 14:30 (UTC+1) - **Hora de término**: 15:30 (UTC+1) - **Status**: Confirmado - **Link do evento**:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "evento",
+        "test",
+        "event",
+        "foi",
+        "criado",
+        "com",
+        "sucesso"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:115:115": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:115:115",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 115,
+      "endLine": 115,
+      "source": "memory",
+      "snippet": "User: [media attached: /data/.openclaw/media/inbound/file_4---3eef9320-57b9-4073-8d45-452b22627934.ogg (audio/ogg; codecs=opus) | /data/.openclaw/media/inbound/file_4---3eef9320-57b9-4073-8d45-452b22627934.ogg] To send an image back, prefer the message tool (media/path/filePath).",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "openclaw/media/inbound/file-4",
+        "audio/ogg",
+        "media/path/filepath",
+        "user",
+        "media",
+        "attached",
+        "data",
+        "openclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:116:116": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:116:116",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 116,
+      "endLine": 116,
+      "source": "memory",
+      "snippet": "Assistant: Estou a transcrever o áudio enviado. Já te dou o retorno!",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "estou",
+        "transcrever",
+        "áudio",
+        "enviado",
+        "dou",
+        "retorno"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:117:117": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:117:117",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 117,
+      "endLine": 117,
+      "source": "memory",
+      "snippet": "User: <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…2834 session_id: 75564dcc-fd80-4a18-81aa-dfa",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "75564dcc-fd80-4a18-81aa-dfa",
+        "user",
+        "openclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:118:118": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:118:118",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 118,
+      "endLine": 118,
+      "source": "memory",
+      "snippet": "Assistant: Preciso do arquivo de áudio para realizar a transcrição. Podes reenviar o áudio, por favor?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "preciso",
+        "arquivo",
+        "áudio",
+        "realizar",
+        "transcrição",
+        "podes",
+        "reenviar"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:119:119": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:119:119",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 119,
+      "endLine": 119,
+      "source": "memory",
+      "snippet": "User: [Audio] User text: [Telegram James Oak (@sirjamesoak) id:6384494297 +8s Mon 2026-04-20 14:20 GMT+1] <media:audio> Transcript: Consegues ouvir este áudio?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T02:00:00.157Z",
+      "lastRecalledAt": "2026-04-21T02:00:00.157Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "audio",
+        "telegram",
+        "james",
+        "oak",
+        "sirjamesoak",
+        "mon",
+        "gmt"
       ]
     }
   }
