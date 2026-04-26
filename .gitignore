@@ -14,6 +14,10 @@ scratch/
 # Local assistant runtime state inside workspace
 .openclaw/
 
+# Monitor runtime state and snapshots
+/data/pushnews_sheet_monitor/
+data/pushnews_sheet_monitor/
+
 # Synology / DSM metadata
 @eaDir/
 **/@eaDir/
