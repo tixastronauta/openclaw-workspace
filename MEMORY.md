@@ -1,52 +1,55 @@
-# MEMORY.md - Long-Term Memory
+## Isa Pimentel
+- **Nome**: Isa Pimentel
+- **Relação**: Namorada do Tiago
+- **Email**: isapimentel80@hotmail.com
+- **Data de nascimento**: 14/10/1980
 
-This file is the curated memory for important facts, preferences, decisions, and context worth keeping across sessions.
+## Preferences
+- For Brave Search API requests, always use `ui_lang=en-US`.
+- Respond in PT-PT when Tiago writes in Portuguese.
+- Prefer concise, practical, structured, actionable replies.
+- Validate commands, APIs, flags, features, and current best practices before recommending them.
+- Do not invent commands, features, or unsupported assumptions.
+- In troubleshooting, prefer step-by-step diagnosis with few hypotheses at a time.
+- When only code correction is requested, return only the corrected code.
+- Use English for code comments.
+- Prefer `vim` over `nano`.
+- Prefer Docker Compose without `version:`.
 
-## Tiago
+## Promoted From Short-Term Memory (2026-04-22)
 
-- Name: Tiago
-- Preferred form of address: Tiago
-- Also uses: TCX, tix
-- Nickname preference: Tix is a valid nickname; playful variations, puns, and light teasing are welcome in moderation
-- Relationship: personal assistant
-- Preferred style: funny, straight to the point
-- Communication preference: direct, practical, structured replies; avoid fluff, repetition, generic AI tone, and overlong answers to simple questions; default to concise unless Tiago asks for detail
-- Technical reply preference: give copy-pasteable code/config when useful; keep code comments in English; validate against real docs/configs before answering; do not invent features, options, commands, or facts
-- Validation rule: if confidence is not high enough, say "I don't know" or ask a clarifying question instead of guessing; multiple checks before replying are strongly preferred because invented answers are a major stressor for Tiago
-- Problem-solving preference: when uncertain, ask clarifying questions first; favor real validation and step-by-step debugging
-- Options preference: for technical topics, a direct solution plus a little useful context is ideal; when several valid solutions exist, showing multiple options is acceptable
-- Tradeoff preference: default to a quick win if it is not a dangerous hack
-- Language preference: conversation can be in Portuguese or English; keep code, documentation, comments, and Markdown files in English
-- Workspace preference: by default, do not create, modify, move, or delete files outside the workspace unless Tiago explicitly asks
-- Development preference: when building reusable tools, skills, or automations, keep them generic and shareable; never hardcode personal secrets or values, and assume configuration should come from environment variables or local env files unless Tiago says otherwise
-- Preferred workspace git behavior: automatically commit and push meaningful completed workspace changes to the private remote repo
-- Setup-tracking preference: unfinished setup/operational issues should accumulate in `SETUP-TODO.md`; Nyx should periodically re-check whether they are already resolved and remind Tiago about unresolved items when relevant
-- Startup notification preference: on each gateway boot/startup, send Tiago a short Telegram message confirming Nyx is back online
-- Preferred chat channel(s): web chat and Telegram
-- Location: Porto
-- Role: CEO & CTO of Pushnews
-- Work profile: technical + business; builder/operator with strong autonomy
-- Current major context: Pushnews is in a sale/negotiation process, so pragmatic, low-drama support is especially useful
-- Common technical stack/context: Docker, Synology, Home Assistant, Google Cloud, AWS, Cloudflare, Tailscale, macOS, terminal workflows
-- Tooling preferences: prefers vim/nvim, Docker Compose organized by service, and stable predictable setups over magic
+<!-- openclaw-memory-promotion:memory:memory/2026-04-17.md:114:116 -->
+- - Candidate: Possible Lasting Truths: - 2026-03-22: Met Tiago in main session. He said his name is Tiago, that we are his personal assistant, and that my tone should be funny yet straight to the point. - 2026-03-22: Telegram pairing approved for Tiago. Workspace git policy: automatically comm - confidence: 0.62 - evidence: memory/2026-04-16.md:74-76 [score=0.847 recalls=0 avg=0.620 source=memory/2026-04-17.md:8-10]
 
-## Assistant
+## Work
+- **Main role**: CEO & CTO of Pushnews.
+- **Pushnews**: B2B SaaS for customer engagement/retention with Web Push, OnSite Push/overlays, SMS, email, and NPS/CSAT.
+- **Current strategic context**: keeping Pushnews operational while preparing for potential sale/M&A or a strategic partner.
+- **Ownership context to remember**: Impacting Group ~90%, Tiago ~10%.
+- **Core stack**: Google Cloud, AWS us-east-1, Cloudflare, Docker, PHP, JavaScript, Golang, MySQL, Google Workspace, Slack.
 
-- Name: Nyx
-- Vibe: funny, sharp, straight to the point
-- Emoji: 😼
+## Infrastructure & Personal Tech Context
+- Uses macOS.
+- Recurring platforms/tools: Synology, Home Assistant, UniFi, Tailscale, Cloudflare Tunnel, Reolink, Jellyfin.
+- **Areosa**: Home Assistant on Raspberry Pi 4, no Bluetooth, with ConBee II.
+- **Areias**: Home Assistant on Raspberry Pi 5, with Bluetooth, no ConBee II.
+- **BanaNAS**: Synology NAS used as Docker host.
+- **Pappadell**: off-site Ubuntu server.
+- **Piratix**: media stack naming tied to Jellyfin and arr services.
+- **Domotix**: smart home / network / house context.
 
-## Setup
+## Projects & Interests
+- **universidade.pt**: possible passive-income project with low-maintenance SEO/content approach.
+- Interested in coffee/barista, technology, home automation, smart home, media servers, and motorcycles.
+- Uses iPhone 15 Pro.
+- Has or had a KTM Super Duke R 2023 and a Beta Xtrainer 300 2018.
 
-- Telegram is configured and paired with Tiago's Telegram account
-- `workspace/` is versioned in git and connected to a private GitHub repo
+## Communication Notes
+- Avoid the word `destrinçar`.
+- Avoid filler or overly emphatic phrases like `sem paninhos quentes`, `nua e crua`, or similar.
+- For call/transcription summaries, summarize in the same language the call happened in.
 
-## Notes
+## Promoted From Short-Term Memory (2026-04-26)
 
-Keep this file curated.
-Use daily files in `memory/` for raw notes and transient details.
-Promote only durable, useful information into this file.
-
-## Internal workspace aids
-
-- `TIAGO-PLAYBOOK.md`: compact working agreement for how to answer Tiago well and avoid his main frustration triggers
+<!-- openclaw-memory-promotion:memory:memory/2026-04-19.md:233:235 -->
+- - Candidate: Possible Lasting Truths: Possible Lasting Truths: - 2026-03-22: Met Tiago in main session. He said his name is Tiago, that we are his personal assistant, and that my tone should be funny yet straight to the point. - 2026-03-22: Telegram pairing approved for Tiago. Workspace git p - confidence: 0.62 - evidence: memory/2026-04-18.md:178-180 [score=0.901 recalls=0 avg=0.620 source=memory/2026-04-19.md:13-15]
