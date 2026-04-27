@@ -1,0 +1,62 @@
+{
+  "topic": "Incentivos em Portugal para painéis solares/fotovoltaico/autoconsumo em habitação",
+  "createdAt": "2026-04-27T15:05:00+01:00",
+  "lastCheckedAt": "2026-04-27T15:56:00+01:00",
+  "status": "monitoring",
+  "activeIncentives": [],
+  "watchSignals": [
+    {
+      "level": "watch",
+      "title": "Governo prepara novo programa de apoio a painéis solares com vouchers tipo E-LAR",
+      "detectedAt": "2026-04-27T15:56:00+01:00",
+      "source": "SIC Notícias, 2026-04-24",
+      "url": "https://sicnoticias.pt/pais/ambiente/2026-04-24-video-governo-lanca-novos-apoios-a-compra-de-carros-eletricos-e-paineis-solares-ee3e9d23",
+      "summary": "Notícia indica que estará a ser preparado um novo apoio à instalação de painéis solares, com sistema de vouchers semelhante ao E-LAR. Ainda não encontrei aviso oficial/candidaturas abertas.",
+      "notified": false
+    }
+  ],
+  "closedOrNotDirectlyRelevant": [
+    {
+      "title": "Programa E-LAR 2.ª Fase",
+      "source": "Fundo Ambiental",
+      "url": "https://www.fundoambiental.pt/apoios-prr/c13-eficiencia-energetica-em-edificios/11c13-i012025-programa-e-lar-2-fase.aspx",
+      "status": "encerrado para novas candidaturas em 24/03/2026; não é apoio direto a painéis solares"
+    },
+    {
+      "title": "Bairros + Sustentáveis",
+      "source": "Portugal.gov.pt",
+      "url": "https://portugal.gov.pt/gc25/comunicacao/noticias/100-milhoes-para-casas-mais-eficientes-e-combate-a-pobreza-energetica",
+      "status": "programa institucional/entidades locais; inclui painéis solares em bairros, não candidatura individual típica para casa privada"
+    }
+  ],
+  "sourcesToMonitor": [
+    "https://www.fundoambiental.pt/",
+    "https://www.fundoambiental.pt/apoios-prr.aspx",
+    "https://www.portugal.gov.pt/",
+    "https://www.dgeg.gov.pt/",
+    "https://www.adene.pt/",
+    "https://recuperarportugal.gov.pt/",
+    "https://www.portugal2030.pt/"
+  ],
+  "queries": [
+    "Portugal incentivos painéis solares fotovoltaicos candidaturas Fundo Ambiental",
+    "site:fundoambiental.pt fotovoltaico candidaturas incentivo painéis solares",
+    "site:gov.pt energia incentivos painéis solares candidaturas Portugal",
+    "site:dgeg.gov.pt autoconsumo fotovoltaico incentivo candidatura",
+    "site:adene.pt painéis solares incentivo candidatura",
+    "site:recuperarportugal.gov.pt painéis solares habitação candidatura"
+  ],
+  "alertCriteria": [
+    "Novo aviso oficial publicado",
+    "Data/hora anunciada para abertura de candidaturas",
+    "Formulário/plataforma de candidatura disponível",
+    "Alteração de estado de 'preparação' para 'aberto' ou 'abre em breve'",
+    "Prazos, dotação, elegibilidade ou modalidade voucher/comparticipação publicados para habitação/painéis solares/autoconsumo"
+  ],
+  "notificationTargets": {
+    "primaryRequested": "Telegram",
+    "telegramStatus": "blocked_missing_chat_target",
+    "fallback": "Discord #nyx-tasks"
+  },
+  "lastFindingsSummary": "Não encontrei candidatura oficial aberta para painéis solares habitacionais. Há sinal recente de preparação de novo programa com vouchers, ainda sem aviso oficial localizado."
+}
