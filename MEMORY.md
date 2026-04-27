@@ -15,6 +15,7 @@
 - Use English for code comments.
 - Prefer `vim` over `nano`.
 - Prefer Docker Compose without `version:`.
+- Do not proactively mention workspace git commits; only mention commits if Tiago asks.
 
 ## Promoted From Short-Term Memory (2026-04-22)
 
@@ -53,3 +54,8 @@
 
 <!-- openclaw-memory-promotion:memory:memory/2026-04-19.md:233:235 -->
 - - Candidate: Possible Lasting Truths: Possible Lasting Truths: - 2026-03-22: Met Tiago in main session. He said his name is Tiago, that we are his personal assistant, and that my tone should be funny yet straight to the point. - 2026-03-22: Telegram pairing approved for Tiago. Workspace git p - confidence: 0.62 - evidence: memory/2026-04-18.md:178-180 [score=0.901 recalls=0 avg=0.620 source=memory/2026-04-19.md:13-15]
+
+## Promoted From Short-Term Memory (2026-04-27)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-04-20.md:323:325 -->
+- - Candidate: Possible Lasting Truths: Possible Lasting Truths: - 2026-03-22: Met Tiago in main session. He said his name is Tiago, that we are his personal assistant, and that my tone should be funny yet straight to the point. - 2026-03-22: Telegram pairing approved for Tiago. Workspace git p - confidence: 0.62 - evidence: memory/2026-04-18.md:178-180 [score=0.894 recalls=0 avg=0.620 source=memory/2026-04-20.md:138-140]
