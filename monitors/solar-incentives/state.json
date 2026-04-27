@@ -1,7 +1,7 @@
 {
   "topic": "Incentivos em Portugal para painéis solares/fotovoltaico/autoconsumo em habitação",
   "createdAt": "2026-04-27T15:05:00+01:00",
-  "lastCheckedAt": "2026-04-27T15:56:00+01:00",
+  "lastCheckedAt": "2026-04-27T15:59:00+01:00",
   "status": "monitoring",
   "activeIncentives": [],
   "watchSignals": [
@@ -11,7 +11,16 @@
       "detectedAt": "2026-04-27T15:56:00+01:00",
       "source": "SIC Notícias, 2026-04-24",
       "url": "https://sicnoticias.pt/pais/ambiente/2026-04-24-video-governo-lanca-novos-apoios-a-compra-de-carros-eletricos-e-paineis-solares-ee3e9d23",
-      "summary": "Notícia indica que estará a ser preparado um novo apoio à instalação de painéis solares, com sistema de vouchers semelhante ao E-LAR. Ainda não encontrei aviso oficial/candidaturas abertas.",
+      "summary": "Notícia indica que estará a ser preparado um novo apoio à instalação de painéis solares, com sistema de vouchers semelhante ao E-LAR. Ainda não encontrei aviso oficial/candidaturas abertas no Fundo Ambiental/Agência para o Clima, Portugal.gov.pt, DGEG, ADENE ou Recuperar Portugal.",
+      "notified": false
+    },
+    {
+      "level": "watch",
+      "title": "Instrumento financeiro para eficiência energética residencial e pobreza energética inclui fotovoltaico/baterias",
+      "detectedAt": "2026-04-27T15:59:00+01:00",
+      "source": "ADENE, 2025-12-16 / Portaria n.º 442-A/2025/1",
+      "url": "https://www.adene.pt/publicadas-medidas-de-eficiencia-energetica-para-combate-a-pobreza-energetica/",
+      "summary": "Apoio sob forma de empréstimo reembolsável, gerido pelo BPF e Agência para o Clima, para medidas de eficiência energética no residencial, incluindo produção renovável para autoconsumo (fotovoltaico, baterias). Candidatura junto de instituições de crédito; orientado para combate à pobreza energética. Não encontrei página de candidatura direta/voucher aberto para painéis solares em casa privada.",
       "notified": false
     }
   ],
@@ -27,6 +36,18 @@
       "source": "Portugal.gov.pt",
       "url": "https://portugal.gov.pt/gc25/comunicacao/noticias/100-milhoes-para-casas-mais-eficientes-e-combate-a-pobreza-energetica",
       "status": "programa institucional/entidades locais; inclui painéis solares em bairros, não candidatura individual típica para casa privada"
+    },
+    {
+      "title": "PAE+S II / Programa de Apoio a Edifícios Mais Sustentáveis",
+      "source": "Fundo Ambiental / Portugal.gov.pt / Recuperar Portugal",
+      "url": "https://www.fundoambiental.pt/apoios-prr/c13-eficiencia-energetica-em-edificios/01c13-i01-paes-ii.aspx",
+      "status": "programa histórico/encerrado; resultados encontrados referem prazos antigos e não candidatura nova em 2026"
+    },
+    {
+      "title": "Apoios a fotovoltaico agrícola, hidroagrícola, Açores/Madeira ou comunidades/autoconsumo coletivo",
+      "source": "Portugal.gov.pt / Recuperar Portugal / Fundo Ambiental / DGEG",
+      "url": "https://recuperarportugal.gov.pt/",
+      "status": "não diretamente aplicável a casa privada do Tiago no continente ou são avisos antigos/sectoriais"
     }
   ],
   "sourcesToMonitor": [
@@ -46,6 +67,12 @@
     "site:adene.pt painéis solares incentivo candidatura",
     "site:recuperarportugal.gov.pt painéis solares habitação candidatura"
   ],
+  "lastSearches": [
+    {
+      "at": "2026-04-27T15:59:00+01:00",
+      "summary": "Pesquisas obrigatórias executadas com ui_lang=en-US. Verificados resultados oficiais do Fundo Ambiental/ApC, Portugal.gov.pt, DGEG, ADENE e Recuperar Portugal. Não foi localizado aviso oficial novo, candidatura aberta, data de abertura ou formulário para apoio direto a painéis solares/fotovoltaico/autoconsumo em casa privada. Sinal de imprensa sobre futuro voucher mantém-se sem confirmação oficial localizada. ADENE/Portaria 442-A/2025 identificada como financiamento reembolsável orientado a pobreza energética, não candidatura direta/voucher solar."
+    }
+  ],
   "alertCriteria": [
     "Novo aviso oficial publicado",
     "Data/hora anunciada para abertura de candidaturas",
@@ -55,8 +82,9 @@
   ],
   "notificationTargets": {
     "primaryRequested": "Telegram",
-    "telegramStatus": "blocked_missing_chat_target",
-    "fallback": "Discord #nyx-tasks"
+    "telegramStatus": "configured",
+    "telegramTo": "telegram:6384494297",
+    "fallback": "Discord #nyx-tasks only if Telegram delivery fails"
   },
-  "lastFindingsSummary": "Não encontrei candidatura oficial aberta para painéis solares habitacionais. Há sinal recente de preparação de novo programa com vouchers, ainda sem aviso oficial localizado."
+  "lastFindingsSummary": "Não encontrei candidatura oficial aberta para painéis solares habitacionais. Há sinal recente de preparação de novo programa com vouchers, ainda sem aviso oficial localizado. Alertas relevantes serão entregues no Telegram."
 }
