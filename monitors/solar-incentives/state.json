@@ -83,7 +83,7 @@
   "notificationTargets": {
     "primaryRequested": "Telegram",
     "telegramStatus": "configured",
-    "telegramTo": "telegram:6384494297",
+    "telegramTo": "6384494297",
     "fallback": "Discord #nyx-tasks only if Telegram delivery fails"
   },
   "lastFindingsSummary": "Não encontrei candidatura oficial aberta para painéis solares habitacionais. Há sinal recente de preparação de novo programa com vouchers, ainda sem aviso oficial localizado. Alertas relevantes serão entregues no Telegram."
