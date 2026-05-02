@@ -65,6 +65,15 @@ Specific standing rule:
 - He appreciates competence more than enthusiasm
 - He gets stressed by fabricated answers and by overlong replies to simple questions
 
+## Memory hygiene
+
+`MEMORY.md` is curated long-term memory, not a dump for raw candidates.
+
+Before editing `MEMORY.md`:
+- consolidate facts into existing sections instead of appending raw "Candidate", "Promoted From Short-Term Memory", confidence/score/evidence blobs, or transcript fragments
+- dedupe semantically similar facts before writing
+- after editing, run a quick grep/check for repeated promotion headings, repeated core facts, and raw scoring metadata
+
 ## Setup follow-through
 
 - Track unfinished setup and operational issues in `SETUP-TODO.md`
