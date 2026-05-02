@@ -1,4 +1,11 @@
-## Isa Pimentel
+## People
+
+### Tiago
+- Tiago is the human I'm helping; this is a personal assistant relationship.
+- Tiago prefers me to be funny yet straight to the point.
+- Telegram pairing was approved for Tiago.
+
+### Isa Pimentel
 - **Nome**: Isa Pimentel
 - **Relação**: Namorada do Tiago
 - **Email**: isapimentel80@hotmail.com
@@ -7,6 +14,7 @@
 ## Preferences
 - For Brave Search API requests, always use `ui_lang=en-US`.
 - Respond in PT-PT when Tiago writes in Portuguese.
+- Tiago prefers mixed PT/EN in conversation, but wants code, documentation, comments, and Markdown files kept in English.
 - Prefer concise, practical, structured, actionable replies.
 - Validate commands, APIs, flags, features, and current best practices before recommending them.
 - Do not invent commands, features, or unsupported assumptions.
@@ -16,12 +24,8 @@
 - Prefer `vim` over `nano`.
 - Prefer Docker Compose without `version:`.
 - Do not proactively mention workspace git commits; only mention commits if Tiago asks.
+- Avoid creating, changing, moving, or deleting files outside the workspace by default unless Tiago explicitly asks.
 - When Tiago asks for a "ponto de situação"/status update about incentives, energy, solar, panels, photovoltaic, autoconsumo, or related house-energy topics, always check the workspace project `projects/solar-incentives-monitor/` and its `data/state.json` before answering; do not rely only on memory search.
-
-## Promoted From Short-Term Memory (2026-04-22)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-04-17.md:114:116 -->
-- - Candidate: Possible Lasting Truths: - 2026-03-22: Met Tiago in main session. He said his name is Tiago, that we are his personal assistant, and that my tone should be funny yet straight to the point. - 2026-03-22: Telegram pairing approved for Tiago. Workspace git policy: automatically comm - confidence: 0.62 - evidence: memory/2026-04-16.md:74-76 [score=0.847 recalls=0 avg=0.620 source=memory/2026-04-17.md:8-10]
 
 ## Work
 - **Main role**: CEO & CTO of Pushnews.
@@ -50,18 +54,3 @@
 - Avoid the word `destrinçar`.
 - Avoid filler or overly emphatic phrases like `sem paninhos quentes`, `nua e crua`, or similar.
 - For call/transcription summaries, summarize in the same language the call happened in.
-
-## Promoted From Short-Term Memory (2026-04-26)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-04-19.md:233:235 -->
-- - Candidate: Possible Lasting Truths: Possible Lasting Truths: - 2026-03-22: Met Tiago in main session. He said his name is Tiago, that we are his personal assistant, and that my tone should be funny yet straight to the point. - 2026-03-22: Telegram pairing approved for Tiago. Workspace git p - confidence: 0.62 - evidence: memory/2026-04-18.md:178-180 [score=0.901 recalls=0 avg=0.620 source=memory/2026-04-19.md:13-15]
-
-## Promoted From Short-Term Memory (2026-04-27)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-04-20.md:323:325 -->
-- - Candidate: Possible Lasting Truths: Possible Lasting Truths: - 2026-03-22: Met Tiago in main session. He said his name is Tiago, that we are his personal assistant, and that my tone should be funny yet straight to the point. - 2026-03-22: Telegram pairing approved for Tiago. Workspace git p - confidence: 0.62 - evidence: memory/2026-04-18.md:178-180 [score=0.894 recalls=0 avg=0.620 source=memory/2026-04-20.md:138-140]
-
-## Promoted From Short-Term Memory (2026-04-29)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-03-22.md:1:5 -->
-- - 2026-03-22: Met Tiago in main session. He said his name is Tiago, that we are his personal assistant, and that my tone should be funny yet straight to the point. - 2026-03-22: Telegram pairing approved for Tiago. Workspace git policy: automatically commit and push meaningful completed changes to a private GitHub repo. - 2026-03-22: Tiago prefers mixed PT/EN in conversation, but wants code, documentation, comments, and Markdown files kept in English. - 2026-03-22: Tiago wants me to avoid creating, changing, moving, or deleting files outside the workspace by default unless he explicitly asks. [score=0.879 recalls=6 avg=0.366 source=memory/2026-03-22.md:1-5]
