@@ -1,0 +1,26 @@
+{
+  "language": "pt-PT",
+  "region": "Grande Porto",
+  "weeklySchedule": "Sunday 10:00 Europe/Lisbon",
+  "superAlignedCheck": "Daily 16:00 Europe/Lisbon",
+  "include": [
+    "electronic music",
+    "drum and bass",
+    "rock",
+    "metal",
+    "selected exhibitions"
+  ],
+  "exclude": [
+    "gastronomy",
+    "family events",
+    "theatre",
+    "cinema",
+    "cycles",
+    "classical music",
+    "world music",
+    "photography-focused events"
+  ],
+  "curation": "tight",
+  "priceSensitivity": "ignore price",
+  "delivery": "Telegram"
+}
