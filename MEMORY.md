@@ -51,7 +51,7 @@
 - Has a motorcycle: KTM Super Duke R 2023.
 
 ## Communication Notes
-- In WhatsApp direct chats with Tiago, always prefix replies with `[😼 Nyx]`.
+- In WhatsApp direct chats with Tiago, always prefix replies with inline-code identifier `` `[😼 Nyx]` ``.
 - Avoid the word `destrinçar`.
 - Do not mention gremlins, goblins or other related creatures on metaphors.
 - Avoid filler or overly emphatic phrases like `sem paninhos quentes`, `nua e crua`, or similar.
