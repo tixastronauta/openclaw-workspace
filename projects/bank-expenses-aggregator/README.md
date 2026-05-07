@@ -10,6 +10,7 @@ Current production flow:
 - Parse credit-card statement PDFs named `YYYYMM-ExtratoCartao-<Bank>.pdf`.
 - Parse current-account movement CSVs named `YYYYMM-Movimentos-<Bank>.csv`.
 - Keep debit/expense rows only, with `Valor` always positive.
+- Apply user-maintained exclusion rules from the Sheet tab `Regras Exclusao` (for example card payments from current accounts).
 - Apply user-maintained categorisation rules from the Sheet tab `Regras Catalogacao`.
 - Overwrite the Sheet tab `Movimentos` with all processed months.
 

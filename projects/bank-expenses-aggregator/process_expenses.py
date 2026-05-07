@@ -27,6 +27,7 @@ TARGET_TITLE = "Movimentos Bancários"
 
 MOV_HEADERS = ["Banco", "Tipo", "Mes", "Data", "Descritivo", "Valor", "Categoria", "Fonte"]
 RULES_RANGE = "'Regras Catalogacao'!A1:I500"
+EXCLUSION_RULES_RANGE = "'Regras Exclusao'!A1:I500"
 CATEGORIES_RANGE = "Categorias!A1:A500"
 
 
@@ -60,6 +61,20 @@ class Rule:
     bank: str
     kind: str
     category: str
+    notes: str
+
+
+@dataclass(frozen=True)
+class ExclusionRule:
+    row: int
+    active: bool
+    priority: int
+    text: str
+    value: float | None
+    match_type: str
+    bank: str
+    kind: str
+    reason: str
     notes: str
 
 
@@ -267,6 +282,13 @@ def load_sheet_values(spreadsheet_id: str, range_a1: str, account: str) -> list[
     return json.loads(raw).get("values", [])
 
 
+def _priority(value: str) -> int:
+    try:
+        return int(float(str(value).replace(",", "."))) if str(value).strip() else 0
+    except ValueError:
+        return 0
+
+
 def load_rules(spreadsheet_id: str, account: str) -> list[Rule]:
     values = load_sheet_values(spreadsheet_id, RULES_RANGE, account)
     rules: list[Rule] = []
@@ -277,15 +299,25 @@ def load_rules(spreadsheet_id: str, account: str) -> list[Rule]:
             continue
         if not text.strip() or norm(text).startswith("exemplo:"):
             continue
-        try:
-            priority_int = int(float(str(priority).replace(",", "."))) if str(priority).strip() else 0
-        except ValueError:
-            priority_int = 0
-        rules.append(Rule(row=row_num, active=True, priority=priority_int, text=text.strip(), value=amount(value), match_type=norm(match_type) or "contem", bank=bank.strip(), kind=kind.strip(), category=category.strip(), notes=notes.strip()))
+        rules.append(Rule(row=row_num, active=True, priority=_priority(priority), text=text.strip(), value=amount(value), match_type=norm(match_type) or "contem", bank=bank.strip(), kind=kind.strip(), category=category.strip(), notes=notes.strip()))
     return sorted(rules, key=lambda r: (r.priority, r.row), reverse=True)
 
 
-def rule_matches(rule: Rule, exp: Expense) -> bool:
+def load_exclusion_rules(spreadsheet_id: str, account: str) -> list[ExclusionRule]:
+    values = load_sheet_values(spreadsheet_id, EXCLUSION_RULES_RANGE, account)
+    rules: list[ExclusionRule] = []
+    for row_num, row in enumerate(values[1:], start=2):
+        row = (row + [""] * 9)[:9]
+        active, priority, text, value, match_type, bank, kind, reason, notes = row
+        if norm(active) not in {"sim", "yes", "true", "1", "s"}:
+            continue
+        if not text.strip() or norm(text).startswith("exemplo:"):
+            continue
+        rules.append(ExclusionRule(row=row_num, active=True, priority=_priority(priority), text=text.strip(), value=amount(value), match_type=norm(match_type) or "contem", bank=bank.strip(), kind=kind.strip(), reason=reason.strip(), notes=notes.strip()))
+    return sorted(rules, key=lambda r: (r.priority, r.row), reverse=True)
+
+
+def rule_matches(rule: Rule | ExclusionRule, exp: Expense) -> bool:
     if rule.bank and norm(exp.bank) != norm(rule.bank):
         return False
     if rule.kind and norm(exp.kind) != norm(rule.kind):
@@ -352,6 +384,22 @@ def infer_category(exp: Expense) -> str:
     if "levantamento" in d or d.startswith("lev atm"):
         return "ATM"
     return ""
+
+
+def apply_exclusion_rules(expenses: list[Expense], rules: list[ExclusionRule]) -> tuple[list[Expense], Counter[str]]:
+    kept: list[Expense] = []
+    excluded: Counter[str] = Counter()
+    for exp in expenses:
+        matched_rule = None
+        for rule in rules:
+            if rule_matches(rule, exp):
+                matched_rule = rule
+                break
+        if matched_rule:
+            excluded[f"rule row {matched_rule.row}: {matched_rule.text} ({matched_rule.reason or 'excluded'})"] += 1
+        else:
+            kept.append(exp)
+    return kept, excluded
 
 
 def apply_rules(expenses: list[Expense], rules: list[Rule]) -> Counter[str]:
@@ -431,18 +479,22 @@ def update_sheet(spreadsheet_id: str, rows: list[list[Any]], account: str) -> No
         pass
 
 
-def summarise(expenses: list[Expense], metadata: dict[str, Any], rule_matches: Counter[str]) -> dict[str, Any]:
+def summarise(expenses: list[Expense], metadata: dict[str, Any], rule_matches: Counter[str], exclusion_matches: Counter[str], raw_total: int) -> dict[str, Any]:
     by_month = Counter(e.statement_month for e in expenses)
     by_bank_type = Counter((e.bank, e.kind) for e in expenses)
     by_source = Counter(e.source for e in expenses)
     categorised = sum(1 for e in expenses if e.category)
+    excluded_total = sum(exclusion_matches.values())
     return {
+        "raw_expenses_before_exclusions": raw_total,
+        "excluded": excluded_total,
         "total_expenses": len(expenses),
         "categorised": categorised,
         "uncategorised": len(expenses) - categorised,
         "by_month": dict(sorted(by_month.items())),
         "by_bank_type": {f"{bank} / {kind}": count for (bank, kind), count in sorted(by_bank_type.items())},
         "by_source": dict(sorted(by_source.items())),
+        "exclusion_matches": dict(exclusion_matches),
         "rule_matches": dict(rule_matches),
         "parsed_files": metadata["parsed_files"],
         "skipped": metadata["skipped"],
@@ -459,11 +511,14 @@ def main() -> None:
 
     with tempfile.TemporaryDirectory(prefix="expense-source-") as tmp:
         expenses, metadata = discover_and_parse(args.folder_id, args.account, Path(tmp))
+    raw_total = len(expenses)
+    exclusion_rules = load_exclusion_rules(args.spreadsheet_id, args.account)
+    expenses, exclusion_matches = apply_exclusion_rules(expenses, exclusion_rules)
     rules = load_rules(args.spreadsheet_id, args.account)
     matched_rules = apply_rules(expenses, rules)
     rows = rows_for_sheet(expenses)
     update_sheet(args.spreadsheet_id, rows, args.account)
-    summary = summarise(expenses, metadata, matched_rules)
+    summary = summarise(expenses, metadata, matched_rules, exclusion_matches, raw_total)
     text = json.dumps(summary, ensure_ascii=False, indent=2)
     if args.summary_out:
         args.summary_out.write_text(text + "\n", encoding="utf-8")

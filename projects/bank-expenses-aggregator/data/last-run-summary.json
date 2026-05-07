@@ -1,18 +1,20 @@
 {
-  "total_expenses": 518,
+  "raw_expenses_before_exclusions": 518,
+  "excluded": 12,
+  "total_expenses": 506,
   "categorised": 278,
-  "uncategorised": 240,
+  "uncategorised": 228,
   "by_month": {
-    "2026-01": 142,
-    "2026-02": 175,
-    "2026-03": 135,
-    "2026-04": 66
+    "2026-01": 138,
+    "2026-02": 173,
+    "2026-03": 131,
+    "2026-04": 64
   },
   "by_bank_type": {
     "ActivoBank / Cartão": 11,
-    "ActivoBank / Conta à ordem": 71,
+    "ActivoBank / Conta à ordem": 67,
     "CGD / Cartão": 17,
-    "CGD / Conta à ordem": 231,
+    "CGD / Conta à ordem": 223,
     "Unibanco / Cartão": 48,
     "Universo / Cartão": 140
   },
@@ -21,24 +23,30 @@
     "202601-ExtratoCartao-CGD.pdf": 1,
     "202601-ExtratoCartao-Unibanco.pdf": 3,
     "202601-ExtratoCartao-Universo.pdf": 49,
-    "202601-Movimentos-ActivoBank.csv": 18,
-    "202601-Movimentos-CGD.csv": 66,
+    "202601-Movimentos-ActivoBank.csv": 17,
+    "202601-Movimentos-CGD.csv": 63,
     "202602-ExtratoCartao-ActivoBank.pdf": 2,
     "202602-ExtratoCartao-CGD.pdf": 11,
     "202602-ExtratoCartao-Unibanco.pdf": 45,
     "202602-ExtratoCartao-Universo.pdf": 37,
-    "202602-Movimentos-ActivoBank.csv": 20,
-    "202602-Movimentos-CGD.csv": 60,
+    "202602-Movimentos-ActivoBank.csv": 19,
+    "202602-Movimentos-CGD.csv": 59,
     "202603-ExtratoCartao-ActivoBank.pdf": 2,
     "202603-ExtratoCartao-CGD.pdf": 2,
     "202603-ExtratoCartao-Universo.pdf": 51,
-    "202603-Movimentos-ActivoBank.csv": 23,
-    "202603-Movimentos-CGD.csv": 57,
+    "202603-Movimentos-ActivoBank.csv": 22,
+    "202603-Movimentos-CGD.csv": 54,
     "202604-ExtratoCartao-ActivoBank.pdf": 2,
     "202604-ExtratoCartao-CGD.pdf": 3,
     "202604-ExtratoCartao-Universo.pdf": 3,
-    "202604-Movimentos-ActivoBank.csv": 10,
-    "202604-Movimentos-CGD.csv": 48
+    "202604-Movimentos-ActivoBank.csv": 9,
+    "202604-Movimentos-CGD.csv": 47
+  },
+  "exclusion_matches": {
+    "rule row 2: PAGAMENTO CARTAO DE CREDITO (Pagamento de cartão de crédito)": 4,
+    "rule row 3: C CLASSIC (Pagamento de cartão de crédito)": 3,
+    "rule row 5: UNIVERSO IME SA (Pagamento de cartão de crédito)": 1,
+    "rule row 4: UNIVERSO (Pagamento de cartão de crédito)": 4
   },
   "rule_matches": {
     "fallback -> Viaturas - Combustível": 6,
