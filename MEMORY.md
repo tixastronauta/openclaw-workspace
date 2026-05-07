@@ -48,9 +48,25 @@
 - **universidade.pt**: possible passive-income project with low-maintenance SEO/content approach.
 - Interested in coffee/barista, technology, home automation, smart home, media servers, and motorcycles.
 - Uses iPhone 15 Pro.
-- Has or had a KTM Super Duke R 2023 and a Beta Xtrainer 300 2018.
+- Has a motorcycle: KTM Super Duke R 2023.
 
 ## Communication Notes
+- In WhatsApp direct chats with Tiago, always prefix replies with `[😼 Nyx]`.
 - Avoid the word `destrinçar`.
+- Do not mention gremlins, goblins or other related creatures on metaphors.
 - Avoid filler or overly emphatic phrases like `sem paninhos quentes`, `nua e crua`, or similar.
 - For call/transcription summaries, summarize in the same language the call happened in.
+
+## Promoted From Short-Term Memory (2026-05-03)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-04-27.md:3:5 -->
+- - Criei monitor de incentivos solares Portugal em `projects/solar-incentives-monitor/` com estado persistente. Estado inicial: sem candidatura oficial aberta; sinal recente de novo programa de vouchers para painéis solares noticiado pela SIC em 2026-04-24. Falta configurar alvo Telegram para notificações; fallback Discord #nyx-tasks. - Configurei o monitor de incentivos solares para entregar alertas relevantes no Telegram do Tiago (`telegram:6384494297`); fallback Discord só se falhar. - Corrigi a localização do monitor de incentivos solares para respeitar o skill workspace-files-organization: agora vive em `projects/solar-incentives-monitor/`, com estado em `projects/solar-incentives-monitor/data/state.json`. [score=0.872 recalls=0 avg=0.620 source=memory/2026-04-27.md:3-5]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-27.md:7:7 -->
+- - Reforcei o skill `workspace-files-organization` para disparar antes de criar ficheiros duráveis, monitores, estado persistente e artefactos de cron; regra explícita: monitor com estado persistente é projecto e deve viver em `projects/<name>/data/`. [score=0.872 recalls=0 avg=0.620 source=memory/2026-04-27.md:7-7]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-27.md:9:9 -->
+- - Tiago pediu para eu não informar proativamente sobre commits feitos; só mencionar commits se ele perguntar. Promovi para MEMORY.md. [score=0.872 recalls=0 avg=0.620 source=memory/2026-04-27.md:9-9]
+
+## Promoted From Short-Term Memory (2026-05-06)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-04-18.md:180:192 -->
+- - - 2026-03-22: Met Tiago in main session. He said his name is Tiago, that we are his personal assistant, and that my tone should be funny yet straight to the point. - 2026-03-22: Telegram pairing approved for Tiago. Workspace git policy: automatically commit and push meaningful completed changes to a private GitHub repo. - 2026-03-22: Tiago prefers mixed PT/EN in conversation, but wants code, documentation, comments, and Markdown files kept in English. - 2026-03-22: Tiago wants me to avoid creating, changing, moving, or deleting files outside the workspace by default unless he explicitly asks. [confidence=0.51 evidence=memory/2026-03-22.md:1-5] <!-- openclaw:dreaming:rem:end --> ## April 8-15, 2026 Updates ### After-Boot Notification Adjustments - Adjusted the OpenClaw "startup ping" mechanism to use a custom hook (`startup-ping`) instead of relying on `BOOT.md`. The hook implementation sends a resurrection message without depending on the message tool, resolving a previous limitation in the container's early boot context. ### Calendar Task Updates - Updated the "Can I ride the bike?" calendar job to run daily at 20:00, verifying weather conditions for the next day. This ensures decisions about travel are prepared the evening prior. - Tested the job manually on request; confirmed the event creation for April 8, 2026, in the "Personal" calendar, but the user encountered delayed sync issues with their Apple Calendar. ### Daily Briefing Improvements - Enhanced daily briefings with clickable URLs instead of occasionally formatted non-clickable links in monospace. [score=0.854 recalls=4 avg=0.476 source=memory/2026-04-18.md:180-192]
