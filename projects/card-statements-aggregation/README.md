@@ -2,4 +2,26 @@
 
 Started: 2026-05-07
 
-Aggregates selected bank card statement PDFs from a specific Google Drive folder into a Google Sheet. Current test scope: January statements only for ActivoBank and CGD.
+Aggregates bank expenses from a specific Google Drive folder into a Google Sheet.
+
+Current production flow:
+
+- Discover source files in the Drive folder.
+- Parse credit-card statement PDFs named `<Bank>-ExtratoCartao-YYYYMM.pdf`.
+- Parse current-account movement CSVs named `<Bank>-Movimentos-YYYYMM.csv`.
+- Keep debit/expense rows only, with `Valor` always positive.
+- Apply user-maintained categorisation rules from the Sheet tab `Regras Catalogacao`.
+- Overwrite the Sheet tab `Movimentos` with all processed months.
+
+Main script:
+
+```bash
+python3 projects/card-statements-aggregation/process_expenses.py
+```
+
+Default Drive folder and Sheet IDs are defined in the script, with CLI flags available for overrides.
+
+Supported source formats at the moment:
+
+- Credit-card PDFs: ActivoBank, CGD, Unibanco, Universo
+- Current-account CSVs: ActivoBank, CGD
