@@ -7,8 +7,8 @@ Aggregates bank expenses from a specific Google Drive folder into a Google Sheet
 Current production flow:
 
 - Discover source files in the Drive folder.
-- Parse credit-card statement PDFs named `<Bank>-ExtratoCartao-YYYYMM.pdf`.
-- Parse current-account movement CSVs named `<Bank>-Movimentos-YYYYMM.csv`.
+- Parse credit-card statement PDFs named `YYYYMM-ExtratoCartao-<Bank>.pdf`.
+- Parse current-account movement CSVs named `YYYYMM-Movimentos-<Bank>.csv`.
 - Keep debit/expense rows only, with `Valor` always positive.
 - Apply user-maintained categorisation rules from the Sheet tab `Regras Catalogacao`.
 - Overwrite the Sheet tab `Movimentos` with all processed months.

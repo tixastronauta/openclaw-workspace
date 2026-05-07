@@ -110,7 +110,11 @@ def google_serial(d: date) -> int:
 
 def parse_source_name(name: str) -> tuple[str, str, str] | None:
     """Return (bank, source_type, YYYY-MM) for known filenames."""
-    m = re.match(r"^(?P<bank>[^-]+)-(?P<label>ExtratoCartao|Movimentos)-(?P<ym>\d{6})\.(?P<ext>pdf|csv)$", name, re.I)
+    # Preferred format: 202602-ExtratoCartao-ActivoBank.pdf
+    m = re.match(r"^(?P<ym>\d{6})-(?P<label>ExtratoCartao|Movimentos)-(?P<bank>[^.]+)\.(?P<ext>pdf|csv)$", name, re.I)
+    # Backward-compatible legacy format: ActivoBank-ExtratoCartao-202602.pdf
+    if not m:
+        m = re.match(r"^(?P<bank>[^-]+)-(?P<label>ExtratoCartao|Movimentos)-(?P<ym>\d{6})\.(?P<ext>pdf|csv)$", name, re.I)
     if not m:
         return None
     bank = m.group("bank")
