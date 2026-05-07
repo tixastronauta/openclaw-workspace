@@ -1,4 +1,4 @@
-# Card Statements Aggregation
+# Bank Expenses Aggregator
 
 Started: 2026-05-07
 
@@ -16,7 +16,7 @@ Current production flow:
 Main script:
 
 ```bash
-python3 projects/card-statements-aggregation/process_expenses.py
+python3 projects/bank-expenses-aggregator/process_expenses.py
 ```
 
 Default Drive folder and Sheet IDs are defined in the script, with CLI flags available for overrides.
