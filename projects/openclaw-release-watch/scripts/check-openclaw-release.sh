@@ -28,16 +28,22 @@ TMP_JSON="$STATE_DIR/latest_release.json"
 TMP_META="$STATE_DIR/latest_release_meta.json"
 mkdir -p "$STATE_DIR"
 
+CURRENT_VERSION=""
+if command -v openclaw >/dev/null 2>&1; then
+  CURRENT_VERSION="$(openclaw --version 2>/dev/null | awk '{print $NF}' | sed 's/^v//')"
+fi
+
 curl -fsSL \
   -H 'Accept: application/vnd.github+json' \
   -H 'X-GitHub-Api-Version: 2022-11-28' \
   'https://api.github.com/repos/openclaw/openclaw/releases?per_page=20' > "$TMP_JSON"
 
-python3 - <<'PY' "$TMP_JSON" "$TMP_META" "$LAST_FILE" "$LEGACY_LAST_FILE"
+python3 - <<'PY' "$TMP_JSON" "$TMP_META" "$LAST_FILE" "$LEGACY_LAST_FILE" "$CURRENT_VERSION"
 import json, sys, os
 from pathlib import Path
+from datetime import datetime, timezone
 
-json_path, meta_path, last_path, legacy_last_path = sys.argv[1:5]
+json_path, meta_path, last_path, legacy_last_path, current_version = sys.argv[1:6]
 releases = json.load(open(json_path, 'r', encoding='utf-8'))
 stable = None
 for rel in releases:
@@ -63,6 +69,25 @@ payload = {
 }
 Path(meta_path).write_text(json.dumps(payload, ensure_ascii=False), encoding='utf-8')
 
+def normalize_version(value):
+    value = (value or '').strip()
+    if value.lower().startswith('openclaw '):
+        value = value.split()[-1]
+    return value.lstrip('v')
+
+def write_marker(path, reason):
+    marker = {
+        'tag_name': tag,
+        'name': name,
+        'html_url': url,
+        'published_at': published,
+        'notified_at': datetime.now(timezone.utc).isoformat(),
+        'suppressed_reason': reason,
+    }
+    tmp_marker_path = f'{path}.tmp'
+    Path(tmp_marker_path).write_text(json.dumps(marker, ensure_ascii=False), encoding='utf-8')
+    os.replace(tmp_marker_path, path)
+
 def read_last(path):
     if not os.path.exists(path):
         return None
@@ -79,18 +104,13 @@ last_tag = read_last(last_path)
 if last_tag is None:
     last_tag = read_last(legacy_last_path)
 
-if last_tag == tag:
+if normalize_version(current_version) == normalize_version(tag):
+    if last_tag != tag:
+        write_marker(last_path, 'already_running_current_stable')
+    print('NO_CHANGE')
+elif last_tag == tag:
     print('NO_CHANGE')
 else:
-    marker = {
-        'tag_name': tag,
-        'name': name,
-        'html_url': url,
-        'published_at': published,
-        'notified_at': __import__('datetime').datetime.now(__import__('datetime').timezone.utc).isoformat(),
-    }
-    tmp_marker_path = f'{last_path}.tmp'
-    Path(tmp_marker_path).write_text(json.dumps(marker, ensure_ascii=False), encoding='utf-8')
-    os.replace(tmp_marker_path, last_path)
+    write_marker(last_path, 'notified')
     print('NEW_RELEASE')
 PY
