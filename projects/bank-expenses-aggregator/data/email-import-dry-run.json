@@ -1,0 +1,79 @@
+{
+  "results": [
+    {
+      "bank": "Unibanco",
+      "query": "from:unibanco has:attachment",
+      "effective_query": "from:unibanco has:attachment after:2026/04/01 before:2026/05/10",
+      "status": "dry-run",
+      "thread": {
+        "id": "19db4a5162c0db44",
+        "date": "2026-04-22 11:03",
+        "from": "Extrato Unibanco <extratos@unibanco.pt>",
+        "subject": "Extrato de Conta Mensal Unibanco"
+      },
+      "attachments": [
+        "D_20260418_904475634_699009801200000.pdf"
+      ],
+      "source_attachment": "D_20260418_904475634_699009801200000.pdf",
+      "target_name": "202604-ExtratoCartao-Unibanco.pdf",
+      "yyyymm": "202604",
+      "reason": "Dry-run: não descarreguei nem fiz upload."
+    },
+    {
+      "bank": "ActivoBank",
+      "query": "from:activobank subject:(cartões) has:attachment",
+      "effective_query": "from:activobank subject:(cartões) has:attachment after:2026/04/01 before:2026/05/10",
+      "status": "exists",
+      "thread": {
+        "id": "19de6c9221e6cdf8",
+        "date": "2026-05-02 04:43",
+        "from": "ACTIVOBANK INFORMA <ActivoBank.Informa@activobank.pt>",
+        "subject": "Extrato Autónomo de Cartões"
+      },
+      "attachments": [
+        "EXT  AUTONOMO CARTAO (DOC 202600005).pdf"
+      ],
+      "source_attachment": "EXT  AUTONOMO CARTAO (DOC 202600005).pdf",
+      "target_name": "202604-ExtratoCartao-ActivoBank.pdf",
+      "yyyymm": "202604",
+      "reason": "Ficheiro já existe na pasta Drive."
+    },
+    {
+      "bank": "Universo",
+      "query": "from:universo has:attachment",
+      "effective_query": "from:universo has:attachment after:2026/04/01 before:2026/05/10",
+      "status": "exists",
+      "thread": {
+        "id": "19dc8addfab9f6aa",
+        "date": "2026-04-26 08:24",
+        "from": "Extratos Universo <extrato@universo.pt>",
+        "subject": "Extrato Universo"
+      },
+      "attachments": [
+        "243657722_202604.pdf"
+      ],
+      "source_attachment": "243657722_202604.pdf",
+      "target_name": "202604-ExtratoCartao-Universo.pdf",
+      "yyyymm": "202604",
+      "reason": "Ficheiro já existe na pasta Drive."
+    },
+    {
+      "bank": "CGD",
+      "query": "from:cgd subject:(extrato) has:attachment",
+      "effective_query": "from:cgd subject:(extrato) has:attachment after:2026/04/01 before:2026/05/10",
+      "status": "manual",
+      "thread": {
+        "id": "19d8aca47296dd61",
+        "date": "2026-04-14 08:00",
+        "from": "Caixadirecta <caixadirectaoperacoes@cgd.pt>",
+        "subject": "Extrato de Cartão disponível"
+      },
+      "attachments": [
+        "headercdo.jpg",
+        "smime.p7s"
+      ],
+      "reason": "CGD já emitiu extrato mas precisas ir ao site para fazer o download"
+    }
+  ],
+  "telegram_message": "Extratos de cartões — importação mensal\n🧪 Unibanco: dry-run `202604-ExtratoCartao-Unibanco.pdf`\n☑️ ActivoBank: já existia `202604-ExtratoCartao-ActivoBank.pdf`\n☑️ Universo: já existia `202604-ExtratoCartao-Universo.pdf`\n⚠️ CGD: CGD já emitiu extrato mas precisas ir ao site para fazer o download"
+}

@@ -14,13 +14,16 @@ Current production flow:
 - Apply user-maintained categorisation rules from the Sheet tab `Regras Catalogacao`.
 - Overwrite the Sheet tab `Movimentos` with all processed months.
 
-Main script:
+Main scripts:
 
 ```bash
 python3 projects/bank-expenses-aggregator/process_expenses.py
+python3 projects/bank-expenses-aggregator/import_card_statement_emails.py
 ```
 
-Default Drive folder and Sheet IDs are defined in the script, with CLI flags available for overrides.
+`import_card_statement_emails.py` reads the `Email Import Config` Sheet tab, searches Gmail for monthly card statement emails, imports available PDF attachments into the Drive source folder, and reports banks that require manual download. By default it targets the previous calendar month; override with `--yyyymm YYYYMM` if needed.
+
+Default Drive folder and Sheet IDs are defined in the scripts, with CLI flags available for overrides.
 
 Supported source formats at the moment:
 
