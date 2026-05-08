@@ -56,6 +56,7 @@
 - Do not mention gremlins, goblins or other related creatures on metaphors.
 - Avoid filler or overly emphatic phrases like `sem paninhos quentes`, `nua e crua`, or similar.
 - For call/transcription summaries, summarize in the same language the call happened in.
+- When detecting an event where **Sobass** plays, tell Tiago that **Cu** is playing that night; I may refer to him as **Cu-bass**.
 
 ## Promoted From Short-Term Memory (2026-05-03)
 
