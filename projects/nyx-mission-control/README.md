@@ -16,7 +16,8 @@ Docker sidecar remains only as a development/fallback option.
 
 - Dark web dashboard, local-only.
 - Read-only: no approvals, command execution, cron edits, messages, or project edits.
-- Sources: `openclaw cron list`, workspace `projects/*`, OpenClaw logs, and local activity signals.
+- Sources: `openclaw cron list --json`, workspace `projects/*`, OpenClaw logs, and local activity signals.
+- Calendar-style Scheduled Tasks view inspired by the Mission Control video: weekly cron map plus always-running interval routines.
 - Realtime updates via SSE.
 - Small local cache under `data/` for normalized events. The cache is an index, not the source of truth.
 

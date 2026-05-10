@@ -54,4 +54,28 @@ td { color: #d8e0ea; font-size: 14px; }
 code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
 pre { background: #070a0f; border: 1px solid var(--line); border-radius: 12px; padding: 12px; overflow: auto; max-height: 420px; }
 .empty { color: var(--muted); padding: 18px; border: 1px dashed var(--line); border-radius: 14px; }
-@media (max-width: 980px) { .sidebar { position: static; width: auto; } main { margin-left: 0; } .topbar { display: block; } .span-8,.span-6,.span-4 { grid-column: span 12; } .kpis { grid-template-columns: repeat(2, 1fr); } }
+.section-head { display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; margin-bottom: 14px; }
+.section-head p { margin: 4px 0 0; }
+.always { background: rgba(255,255,255,.035); border: 1px solid var(--line); border-radius: 14px; padding: 12px; margin-bottom: 14px; }
+.always h3 { margin: 0 0 10px; font-size: 14px; color: var(--muted); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.task-chip { display: inline-flex; padding: 7px 10px; border-radius: 9px; font-size: 12px; border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.06); }
+.muted { color: var(--muted); }
+.calendar-grid { display: grid; grid-template-columns: repeat(7, minmax(150px, 1fr)); gap: 8px; overflow-x: auto; }
+.calendar-day { min-height: 520px; background: rgba(255,255,255,.025); border: 1px solid var(--line); border-radius: 14px; padding: 8px; }
+.day-head { display: flex; justify-content: space-between; align-items: center; color: var(--muted); padding: 4px 4px 8px; border-bottom: 1px solid rgba(255,255,255,.06); margin-bottom: 8px; }
+.day-head strong { color: var(--text); }
+.day-events { display: grid; gap: 7px; }
+.cal-event { border-radius: 9px; padding: 8px; border: 1px solid rgba(255,255,255,.10); background: rgba(255,255,255,.06); min-height: 52px; }
+.cal-event strong { display: block; font-size: 12px; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cal-event span { display: block; color: rgba(231,237,246,.72); font-size: 11px; margin-top: 4px; }
+.no-events { color: var(--muted); text-align: center; padding: 20px 0; }
+.orange { background-color: rgba(249,115,22,.20); border-color: rgba(249,115,22,.38); }
+.blue { background-color: rgba(59,130,246,.20); border-color: rgba(59,130,246,.38); }
+.green { background-color: rgba(16,185,129,.20); border-color: rgba(16,185,129,.38); }
+.purple { background-color: rgba(139,92,246,.20); border-color: rgba(139,92,246,.38); }
+.red { background-color: rgba(239,68,68,.20); border-color: rgba(239,68,68,.38); }
+.slate { background-color: rgba(100,116,139,.20); border-color: rgba(100,116,139,.38); }
+.cal-event.Erro { box-shadow: inset 3px 0 0 var(--err); }
+.cal-event.Aviso { box-shadow: inset 3px 0 0 var(--warn); }
+@media (max-width: 980px) { .sidebar { position: static; width: auto; } main { margin-left: 0; } .topbar { display: block; } .span-8,.span-6,.span-4 { grid-column: span 12; } .kpis { grid-template-columns: repeat(2, 1fr); } .calendar-grid { grid-template-columns: repeat(7, 190px); } }

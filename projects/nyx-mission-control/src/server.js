@@ -44,6 +44,7 @@ async function buildSnapshot() {
       config,
       sources: [cronData.source, projectData.source, approvalData.source, logData.source],
       crons: cronData.crons,
+      calendar: cronData.calendar,
       projects: projectData.projects,
       approvals: approvalData.approvals,
       logErrors: logData.logErrors,

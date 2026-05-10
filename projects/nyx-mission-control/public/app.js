@@ -33,7 +33,14 @@ function renderHome() {
 }
 
 function renderCrons() {
-  $('crons').innerHTML = `<div class="card"><h2>Crons & Reminders</h2><table class="table"><thead><tr><th>Status</th><th>Name</th><th>Detail</th></tr></thead><tbody>${(snapshot.crons || []).map((c) => `<tr><td>${badge(c.severity, c.status)}</td><td>${esc(c.name)}</td><td><code>${esc(c.raw)}</code></td></tr>`).join('')}</tbody></table>${!snapshot.crons?.length ? empty('Cron source unavailable or no jobs parsed.') : ''}</div>`;
+  $('crons').innerHTML = `<div class="card"><h2>Crons & Reminders</h2><table class="table"><thead><tr><th>Status</th><th>Name</th><th>Schedule</th><th>Next</th><th>Last</th></tr></thead><tbody>${(snapshot.crons || []).map((c) => `<tr><td>${badge(c.severity, c.status)}</td><td>${esc(c.name)}<div class="detail">${esc(c.description || '')}</div></td><td><code>${esc(c.scheduleText || '')}</code></td><td>${fmt(c.nextRunAt)}</td><td>${fmt(c.lastRunAt)}</td></tr>`).join('')}</tbody></table>${!snapshot.crons?.length ? empty('Cron source unavailable or no jobs parsed.') : ''}</div>`;
+}
+
+function renderCalendar() {
+  const calendar = snapshot.calendar || { alwaysRunning: [], days: [] };
+  const chips = (calendar.alwaysRunning || []).map((item) => `<span class="task-chip ${esc(item.color)}">${esc(item.title)} · ${esc(item.scheduleText)}</span>`).join('');
+  const days = (calendar.days || []).map((day) => `<div class="calendar-day"><div class="day-head"><strong>${esc(day.label)}</strong><small>${fmt(day.date).split(',')[0]}</small></div><div class="day-events">${(day.events || []).map((event) => `<div class="cal-event ${esc(event.color)} ${esc(event.severity)}"><strong>${esc(event.title)}</strong><span>${esc(event.time)} · ${esc(event.status)}</span></div>`).join('') || '<div class="no-events">—</div>'}</div></div>`).join('');
+  $('calendar').innerHTML = `<div class="card"><div class="section-head"><div><h2>Scheduled Tasks</h2><p>Nyx automated routines, adapted from the Mission Control calendar idea: recurring jobs as a weekly operations map, not personal calendar noise.</p></div><span class="badge OK">Week</span></div><div class="always"><h3>⚡ Always Running</h3><div class="chips">${chips || '<span class="muted">No interval jobs detected.</span>'}</div></div><div class="calendar-grid">${days}</div></div>`;
 }
 
 function renderProjects() {
@@ -54,7 +61,7 @@ function renderSettings() {
 
 function render() {
   if (!snapshot) return;
-  renderHealth(); renderHome(); renderCrons(); renderProjects(); renderActivity(); renderLogs(); renderSettings();
+  renderHealth(); renderHome(); renderCrons(); renderCalendar(); renderProjects(); renderActivity(); renderLogs(); renderSettings();
 }
 
 async function load() {

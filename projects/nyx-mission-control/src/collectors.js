@@ -51,35 +51,202 @@ function parseCronTable(output) {
       id,
       name: compact(rest.split(/\s{2,}/)[0] || rest, 80),
       status,
+      enabled: !/\bdisabled\b/i.test(rest),
       severity: severityFromStatus(status),
+      scheduleText: compact(rest, 120),
       raw: line
     });
   }
   return rows;
 }
 
+function cronText(schedule = {}) {
+  if (schedule.kind === 'cron') return `${schedule.expr}${schedule.tz ? ` @ ${schedule.tz}` : ''}`;
+  if (schedule.kind === 'every') return `Every ${formatDuration(schedule.everyMs)}`;
+  if (schedule.kind === 'at') return `At ${schedule.at}`;
+  return 'Unknown schedule';
+}
+
+function formatDuration(ms = 0) {
+  const minutes = Math.round(ms / 60000);
+  if (minutes < 60) return `${minutes} min`;
+  const hours = Math.round(minutes / 60);
+  if (hours < 24) return `${hours}h`;
+  const days = Math.round(hours / 24);
+  return `${days}d`;
+}
+
+function normalizeCronJob(job) {
+  const status = job.state?.lastRunStatus || job.state?.lastStatus || (job.enabled === false ? 'disabled' : 'idle');
+  return {
+    id: job.id,
+    name: job.name || job.description || job.id,
+    description: job.description || '',
+    enabled: job.enabled !== false,
+    status,
+    severity: severityFromStatus(status),
+    schedule: job.schedule || {},
+    scheduleText: cronText(job.schedule || {}),
+    nextRunAt: job.state?.nextRunAtMs ? new Date(job.state.nextRunAtMs).toISOString() : null,
+    lastRunAt: job.state?.lastRunAtMs ? new Date(job.state.lastRunAtMs).toISOString() : null,
+    delivery: job.delivery || {},
+    target: job.sessionTarget || job.sessionKey || '',
+    raw: job
+  };
+}
+
+function startOfWeek(date = new Date()) {
+  const d = new Date(date);
+  d.setHours(0, 0, 0, 0);
+  d.setDate(d.getDate() - d.getDay());
+  return d;
+}
+
+function parseCronField(field, min, max) {
+  const values = new Set();
+  if (!field || field === '*') {
+    for (let i = min; i <= max; i++) values.add(i);
+    return values;
+  }
+  for (const part of String(field).split(',')) {
+    const [rangePart, stepPart] = part.split('/');
+    const step = Number(stepPart || 1);
+    let start = min;
+    let end = max;
+    if (rangePart !== '*') {
+      if (rangePart.includes('-')) {
+        const [a, b] = rangePart.split('-').map(Number);
+        start = Number.isFinite(a) ? a : min;
+        end = Number.isFinite(b) ? b : max;
+      } else {
+        const n = Number(rangePart);
+        if (Number.isFinite(n)) start = end = n;
+      }
+    }
+    for (let i = start; i <= end; i += step || 1) {
+      if (i >= min && i <= max) values.add(i);
+    }
+  }
+  return values;
+}
+
+function jobColor(name = '') {
+  const colors = ['orange', 'blue', 'green', 'purple', 'red', 'slate'];
+  let hash = 0;
+  for (const char of name) hash = ((hash << 5) - hash + char.charCodeAt(0)) | 0;
+  return colors[Math.abs(hash) % colors.length];
+}
+
+function makeCalendarEvent(job, date) {
+  return {
+    id: `${job.id}:${date.toISOString()}`,
+    jobId: job.id,
+    title: job.name,
+    time: date.toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' }),
+    iso: date.toISOString(),
+    severity: job.severity || 'OK',
+    color: jobColor(job.name),
+    scheduleText: job.scheduleText,
+    status: job.status,
+    enabled: job.enabled !== false
+  };
+}
+
+function buildScheduleCalendar(crons) {
+  const weekStart = startOfWeek();
+  const days = Array.from({ length: 7 }, (_, index) => {
+    const date = new Date(weekStart);
+    date.setDate(weekStart.getDate() + index);
+    return { date: date.toISOString(), label: date.toLocaleDateString('en-US', { weekday: 'short' }), events: [] };
+  });
+  const alwaysRunning = [];
+
+  for (const job of crons.filter((cron) => cron.enabled !== false)) {
+    const schedule = job.schedule || {};
+    if (schedule.kind === 'every') {
+      alwaysRunning.push({ id: job.id, title: job.name, scheduleText: job.scheduleText, severity: job.severity, color: jobColor(job.name) });
+      continue;
+    }
+    if (schedule.kind === 'at' && schedule.at) {
+      const date = new Date(schedule.at);
+      const offset = Math.floor((startOfWeek(date) - weekStart) / (7 * DAY_MS));
+      const dayIndex = Math.floor((new Date(date).setHours(0, 0, 0, 0) - weekStart) / DAY_MS);
+      if (offset === 0 && days[dayIndex]) days[dayIndex].events.push(makeCalendarEvent(job, date));
+      continue;
+    }
+    if (schedule.kind !== 'cron' || !schedule.expr) continue;
+    const [minField, hourField, domField, monField, dowField] = schedule.expr.trim().split(/\s+/);
+    if (!dowField) continue;
+    const minutes = parseCronField(minField, 0, 59);
+    const hours = parseCronField(hourField, 0, 23);
+    const dom = parseCronField(domField, 1, 31);
+    const mon = parseCronField(monField, 1, 12);
+    const dow = parseCronField(dowField, 0, 7);
+    for (let dayIndex = 0; dayIndex < 7; dayIndex++) {
+      const date = new Date(weekStart);
+      date.setDate(weekStart.getDate() + dayIndex);
+      const dayOfWeek = date.getDay();
+      const cronDow = dayOfWeek === 0 ? [0, 7] : [dayOfWeek];
+      const matchesDow = dowField === '*' || cronDow.some((value) => dow.has(value));
+      const matchesDom = domField === '*' || dom.has(date.getDate());
+      if (!matchesDow || !matchesDom || !mon.has(date.getMonth() + 1)) continue;
+      for (const hour of hours) {
+        for (const minute of minutes) {
+          if (days[dayIndex].events.length > 24) continue;
+          const occurrence = new Date(date);
+          occurrence.setHours(hour, minute, 0, 0);
+          days[dayIndex].events.push(makeCalendarEvent(job, occurrence));
+        }
+      }
+    }
+  }
+  for (const day of days) day.events.sort((a, b) => a.iso.localeCompare(b.iso));
+  return { weekStart: weekStart.toISOString(), alwaysRunning, days };
+}
+
 export async function collectCrons() {
   try {
-    const { stdout, stderr } = await execFileAsync('openclaw', ['cron', 'list'], { timeout: 9000, maxBuffer: 1024 * 1024 });
-    const crons = parseCronTable(stdout);
+    const { stdout, stderr } = await execFileAsync('openclaw', ['cron', 'list', '--json'], { timeout: 9000, maxBuffer: 3 * 1024 * 1024 });
+    const parsed = JSON.parse(stdout);
+    const crons = (parsed.jobs || []).map(normalizeCronJob);
     return {
-      source: sourceOk('cron scheduler', `${crons.length} jobs via openclaw cron list`),
+      source: sourceOk('cron scheduler', `${crons.length} jobs via openclaw cron list --json`),
       crons,
+      calendar: buildScheduleCalendar(crons),
       events: crons.map((cron) => ({
-        id: `cron:${cron.id}:${cron.status}`,
-        ts: new Date().toISOString(),
+        id: `cron:${cron.id}:${cron.status}:${cron.nextRunAt || ''}`,
+        ts: cron.lastRunAt || cron.nextRunAt || new Date().toISOString(),
         type: 'cron',
         severity: cron.severity,
         title: `Cron ${cron.status}: ${cron.name}`,
-        detail: cron.raw,
-        technical: { id: cron.id, raw: cron.raw, stderr }
+        detail: `${cron.scheduleText}${cron.nextRunAt ? ` · next ${cron.nextRunAt}` : ''}`,
+        technical: { id: cron.id, schedule: cron.schedule, state: cron.raw?.state, stderr }
       }))
     };
-  } catch (error) {
-    const detail = error?.code === 'ENOENT'
-      ? 'OpenClaw CLI not found inside this container. Build with NYX_MC_BASE_IMAGE set to an OpenClaw image, or run the app inside an environment that has the openclaw CLI.'
-      : error;
-    return { source: sourceError('cron scheduler', detail), crons: [], events: [] };
+  } catch (jsonError) {
+    try {
+      const { stdout, stderr } = await execFileAsync('openclaw', ['cron', 'list'], { timeout: 9000, maxBuffer: 1024 * 1024 });
+      const crons = parseCronTable(stdout);
+      return {
+        source: sourceOk('cron scheduler', `${crons.length} jobs via openclaw cron list`),
+        crons,
+        calendar: buildScheduleCalendar(crons),
+        events: crons.map((cron) => ({
+          id: `cron:${cron.id}:${cron.status}`,
+          ts: new Date().toISOString(),
+          type: 'cron',
+          severity: cron.severity,
+          title: `Cron ${cron.status}: ${cron.name}`,
+          detail: cron.raw,
+          technical: { id: cron.id, raw: cron.raw, stderr }
+        }))
+      };
+    } catch (error) {
+      const detail = error?.code === 'ENOENT'
+        ? 'OpenClaw CLI not found inside this container. Run embedded in the Gateway/OpenClaw environment or use an image that includes the openclaw CLI.'
+        : (jsonError?.message ? `${jsonError.message}; fallback failed: ${error.message}` : error);
+      return { source: sourceError('cron scheduler', detail), crons: [], calendar: buildScheduleCalendar([]), events: [] };
+    }
   }
 }
 
