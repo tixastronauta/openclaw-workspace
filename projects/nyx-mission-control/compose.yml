@@ -1,0 +1,17 @@
+services:
+  nyx-mission-control:
+    build: .
+    container_name: nyx-mission-control
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:4317:4317"
+    environment:
+      - PORT=4317
+      - WORKSPACE_DIR=/workspace
+      - OPENCLAW_DIR=/openclaw
+      - CACHE_DIR=/app/data
+      - REFRESH_MS=30000
+    volumes:
+      - /data/.openclaw/workspace:/workspace:ro
+      - /data/.openclaw:/openclaw:ro
+      - ./data:/app/data

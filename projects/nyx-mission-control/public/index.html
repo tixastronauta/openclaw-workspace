@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nyx Mission Control</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand"><span class="orb"></span><div><strong>Nyx</strong><small>Mission Control</small></div></div>
+      <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#crons">Crons</a>
+        <a href="#projects">Projects</a>
+        <a href="#activity">Activity</a>
+        <a href="#logs">Logs</a>
+        <a href="#settings">Settings</a>
+      </nav>
+      <button id="copyDiag" class="ghost">Copy diagnostic</button>
+      <button id="refresh" class="ghost">Refresh now</button>
+    </aside>
+    <main>
+      <header class="topbar">
+        <div>
+          <h1>Nyx Mission Control</h1>
+          <p id="subtitle">Read-only local cockpit for OpenClaw/Nyx.</p>
+        </div>
+        <div id="sourceHealth" class="source-health"></div>
+      </header>
+      <section id="home" class="page active"></section>
+      <section id="crons" class="page"></section>
+      <section id="projects" class="page"></section>
+      <section id="activity" class="page"></section>
+      <section id="logs" class="page"></section>
+      <section id="settings" class="page"></section>
+    </main>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

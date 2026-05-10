@@ -1,0 +1,8 @@
+{
+  "name": "Nyx Mission Control",
+  "status": "active",
+  "updatedAt": "2026-05-10",
+  "nextAction": "Run the local POC, inspect real data quality, and tune collectors/thresholds.",
+  "owner": "Nyx",
+  "priority": "high"
+}
