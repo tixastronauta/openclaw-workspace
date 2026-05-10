@@ -7,8 +7,7 @@ import { GlobalSearch } from "./GlobalSearch";
 const nav = [
   { href: "/cursos/", label: "Cursos" },
   { href: "/faculdades/", label: "Faculdades" },
-  { href: "/ciclos/", label: "Ciclos" },
-  { href: "/quem-somos/", label: "Quem somos" }
+  { href: "/ciclos/", label: "Ciclos" }
 ];
 
 export function Header() {

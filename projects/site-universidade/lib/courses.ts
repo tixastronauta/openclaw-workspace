@@ -32,8 +32,6 @@ export type Course = {
 type CsvRow = Record<string, string | undefined>;
 
 const CSV_PATH = path.join(process.cwd(), "data", "courses.csv");
-const SIMPLE_GRADE_COLUMN_PATTERN = /^(entryGrade|entry_grade|grade|nota|notaEntrada|nota_entrada)(\d{4})$/i;
-const DGES_GRADE_COLUMN_PATTERN = /^nota_ult_col_(\d{4})_(\d)a$/i;
 
 function clean(value: string | undefined): string | undefined {
   const trimmed = value?.trim();
@@ -48,28 +46,42 @@ function getFirst(row: CsvRow, keys: string[]): string | undefined {
   return undefined;
 }
 
+function phaseLabel(phase: string): string {
+  const match = phase.match(/^(\d+)a$/i);
+  if (match) return `${match[1]}.ª fase`;
+  return phase;
+}
+
 function extractGrades(row: CsvRow): AdmissionGrade[] {
-  return Object.entries(row)
-    .map(([key, value]) => {
-      const grade = clean(value);
-      if (!grade) return null;
+  const raw = clean(row.nota_ult_col_json);
+  if (!raw) return [];
 
-      const dgesMatch = key.match(DGES_GRADE_COLUMN_PATTERN);
-      if (dgesMatch) {
-        return {
-          year: dgesMatch[1],
-          phase: `${dgesMatch[2]}.ª fase`,
-          grade
-        };
-      }
+  try {
+    const parsed = JSON.parse(raw) as Record<string, Record<string, unknown> | unknown>;
 
-      const simpleMatch = key.match(SIMPLE_GRADE_COLUMN_PATTERN);
-      if (simpleMatch) return { year: simpleMatch[2], grade };
+    return Object.entries(parsed)
+      .flatMap(([year, phases]) => {
+        if (!/^\d{4}$/.test(year) || typeof phases !== "object" || phases === null || Array.isArray(phases)) return [];
 
-      return null;
-    })
-    .filter((grade): grade is AdmissionGrade => Boolean(grade))
-    .sort((a, b) => Number(b.year) - Number(a.year) || (a.phase ?? "").localeCompare(b.phase ?? "", "pt"));
+        const grades: AdmissionGrade[] = [];
+
+        for (const [phase, value] of Object.entries(phases as Record<string, unknown>)) {
+          const grade = clean(String(value ?? ""));
+          if (!grade) continue;
+
+          grades.push({
+            year,
+            phase: phaseLabel(phase),
+            grade
+          });
+        }
+
+        return grades;
+      })
+      .sort((a, b) => Number(a.year) - Number(b.year) || (a.phase ?? "").localeCompare(b.phase ?? "", "pt"));
+  } catch {
+    return [];
+  }
 }
 
 function uniqueSlugs(courses: Omit<Course, "slug">[]): Course[] {
