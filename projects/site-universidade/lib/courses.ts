@@ -17,6 +17,8 @@ export type Course = {
   institutionCode?: string;
   institutionName?: string;
   institutionSigla?: string;
+  institutionUrl?: string;
+  courseUrl?: string;
   cidade?: string;
   distrito?: string;
   morada?: string;
@@ -105,6 +107,8 @@ export function getAllCourses(): Course[] {
       institutionCode: getFirst(row, ["institutionCode", "institution_code", "code"]),
       institutionName: getFirst(row, ["institutionName", "institution_name", "instituicao"]),
       institutionSigla: getFirst(row, ["institutionSigla", "institution_sigla", "sigla"]),
+      institutionUrl: getFirst(row, ["institutionUrl", "institution_url", "url_instituicao"]),
+      courseUrl: getFirst(row, ["courseUrl", "course_url", "url_curso"]),
       cidade: getFirst(row, ["cidade"]),
       distrito: getFirst(row, ["distrito"]),
       morada: getFirst(row, ["morada"]),
@@ -154,6 +158,11 @@ export type Faculty = {
   slug: string;
   institutionCode?: string;
   institutionName: string;
+  institutionSigla?: string;
+  institutionUrl?: string;
+  cidade?: string;
+  distrito?: string;
+  morada?: string;
   courses: Course[];
 };
 
@@ -173,6 +182,11 @@ export function getAllFaculties(): Faculty[] {
         slug: slugify([first.institutionName, first.institutionCode].filter(Boolean).join(" ")),
         institutionCode: first.institutionCode,
         institutionName: first.institutionName as string,
+        institutionSigla: first.institutionSigla,
+        institutionUrl: first.institutionUrl,
+        cidade: first.cidade,
+        distrito: first.distrito,
+        morada: first.morada,
         courses: courses.sort((a, b) => a.courseName.localeCompare(b.courseName, "pt"))
       };
     })
@@ -220,6 +234,11 @@ export function getAllDistricts(): District[] {
             slug: fslug,
             institutionCode: course.institutionCode,
             institutionName: course.institutionName,
+            institutionSigla: course.institutionSigla,
+            institutionUrl: course.institutionUrl,
+            cidade: course.cidade,
+            distrito: course.distrito,
+            morada: course.morada,
             courses: []
           });
         }

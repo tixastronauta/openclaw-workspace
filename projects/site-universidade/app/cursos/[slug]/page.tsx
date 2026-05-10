@@ -5,6 +5,7 @@ import { ADS_ENABLED, AdSlot } from "@/components/AdSlot";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Container } from "@/components/Container";
 import { GradesChart } from "@/components/GradesChart";
+import { MapEmbed } from "@/components/MapEmbed";
 import { getAllCourses, getCourseBySlug, getFacultySlugByInstitution, getRelatedCourses } from "@/lib/courses";
 import { slugify } from "@/lib/slug";
 import { siteConfig } from "@/lib/site";
@@ -46,15 +47,37 @@ function ExternalLinkIcon() {
   );
 }
 
-function OfficialSources({ course }: { course: Awaited<ReturnType<typeof getCourseBySlug>> }) {
+function UsefulLinks({ course }: { course: Awaited<ReturnType<typeof getCourseBySlug>> }) {
   if (!course) return null;
-  const hasLinks = course.infoCursosUrl || course.dgesUrl;
+  const hasLinks = course.courseUrl || course.institutionUrl || course.infoCursosUrl || course.dgesUrl;
   if (!hasLinks) return null;
 
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-      <h2 className="text-lg font-semibold text-slate-950">Fontes oficiais</h2>
+      <h2 className="text-lg font-semibold text-slate-950">Ligações úteis</h2>
       <div className="mt-4 flex flex-col gap-2">
+        {course.courseUrl && (
+          <a
+            href={course.courseUrl}
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+            className="flex items-center rounded-xl border border-slate-300 px-4 py-2.5 text-sm font-semibold text-slate-700 hover:border-brand-600 hover:text-brand-700"
+          >
+            Página do curso
+            <ExternalLinkIcon />
+          </a>
+        )}
+        {course.institutionUrl && (
+          <a
+            href={course.institutionUrl}
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+            className="flex items-center rounded-xl border border-slate-300 px-4 py-2.5 text-sm font-semibold text-slate-700 hover:border-brand-600 hover:text-brand-700"
+          >
+            Site da instituição
+            <ExternalLinkIcon />
+          </a>
+        )}
         {course.infoCursosUrl && (
           <a
             href={course.infoCursosUrl}
@@ -89,6 +112,8 @@ export default async function CourseDetailPage({ params }: PageProps) {
 
   const relatedCourses = getRelatedCourses(course);
   const facultySlug = getFacultySlugByInstitution(course.institutionName, course.institutionCode);
+  const institutionLabel = [course.institutionName, course.institutionSigla ? `(${course.institutionSigla})` : undefined].filter(Boolean).join(" ");
+  const mapQuery = [course.morada, course.cidade, course.distrito, course.institutionName].filter(Boolean).join(", ");
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -105,7 +130,7 @@ export default async function CourseDetailPage({ params }: PageProps) {
   const breadcrumbs = [
     { label: "Cursos", href: "/cursos/" },
     ...(course.institutionName && facultySlug
-      ? [{ label: course.institutionName, href: `/faculdades/${facultySlug}/` }]
+      ? [{ label: institutionLabel, href: `/faculdades/${facultySlug}/` }]
       : []),
     { label: course.courseName }
   ];
@@ -120,9 +145,12 @@ export default async function CourseDetailPage({ params }: PageProps) {
         <div>
           <h1 className="text-4xl font-bold tracking-tight text-slate-950">{course.courseName}</h1>
           {course.institutionName && (
-            facultySlug
-              ? <Link href={`/faculdades/${facultySlug}/`} className="mt-3 block text-lg font-medium text-slate-700 hover:text-brand-700">{course.institutionName}</Link>
-              : <p className="mt-3 text-lg font-medium text-slate-700">{course.institutionName}</p>
+            <div className="mt-3 flex flex-wrap items-center gap-2">
+              {facultySlug
+                ? <Link href={`/faculdades/${facultySlug}/`} className="text-lg font-medium text-slate-700 hover:text-brand-700">{course.institutionName}</Link>
+                : <p className="text-lg font-medium text-slate-700">{course.institutionName}</p>}
+              {course.institutionSigla && <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium uppercase tracking-wide text-slate-500">{course.institutionSigla}</span>}
+            </div>
           )}
           <div className="mt-3 flex flex-wrap gap-2 text-xs font-medium uppercase tracking-wide text-slate-500">
             {course.cycle && (
@@ -195,7 +223,8 @@ export default async function CourseDetailPage({ params }: PageProps) {
 
         {/* Right column */}
         <aside className="grid content-start gap-6">
-          <OfficialSources course={course} />
+          <UsefulLinks course={course} />
+          <MapEmbed query={mapQuery} title={`Localização de ${institutionLabel || course.courseName}`} />
           {ADS_ENABLED && <AdSlot label="Página de curso — lateral" />}
         </aside>
       </article>

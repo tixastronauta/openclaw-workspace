@@ -6,7 +6,7 @@ import { promisify } from "node:util";
 const execFileAsync = promisify(execFile);
 const spreadsheetId = process.env.GOOGLE_SHEET_ID || "1m7LzrYoYTrCHYr3vBiaeK62ZOw-4GQVCbXse6d5FE6E";
 const sheetName = process.env.GOOGLE_SHEET_NAME || "dges_cursos_2026";
-const range = process.env.GOOGLE_SHEET_RANGE || `${sheetName}!A1:Z2000`;
+const range = process.env.GOOGLE_SHEET_RANGE || `${sheetName}!A1:AD2000`;
 const account = process.env.GOG_ACCOUNT || "tiago.carvalho@gmail.com";
 const outputPath = path.join(process.cwd(), "data", "courses.csv");
 

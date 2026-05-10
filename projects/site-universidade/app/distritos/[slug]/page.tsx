@@ -61,6 +61,7 @@ export default async function DistritoPage({ params }: PageProps) {
                 {facultySlug ? (
                   <Link href={`/faculdades/${facultySlug}/`} className="hover:text-brand-700">{institutionName}</Link>
                 ) : institutionName}
+                {first?.institutionSigla && <span className="ml-3 align-middle rounded-full bg-slate-100 px-3 py-1 text-xs font-medium uppercase tracking-wide text-slate-500">{first.institutionSigla}</span>}
               </h2>
               {(first?.cidade || first?.morada) && (
                 <p className="mb-4 text-sm text-slate-500">

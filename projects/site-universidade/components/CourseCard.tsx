@@ -12,7 +12,12 @@ export function CourseCard({ course }: { course: Course }) {
         </Link>
       </h2>
       {course.institutionName && <p className="mt-2 text-sm text-slate-600">{course.institutionName}</p>}
-      {course.cycle && <p className="mt-1 text-xs font-medium uppercase tracking-wide text-slate-500">{course.cycle}</p>}
+      {(course.institutionSigla || course.cycle) && (
+        <div className="mt-2 flex flex-wrap gap-2 text-xs font-medium uppercase tracking-wide text-slate-500">
+          {course.institutionSigla && <span className="rounded-full bg-slate-100 px-3 py-1">{course.institutionSigla}</span>}
+          {course.cycle && <span className="rounded-full bg-slate-100 px-3 py-1">{course.cycle}</span>}
+        </div>
+      )}
       {latestGrade ? (
         <p className="mt-3 text-sm text-slate-600">Nota mais recente disponível: {latestGrade.grade} ({latestGrade.year}{latestGrade.phase ? `, ${latestGrade.phase}` : ""})</p>
       ) : (

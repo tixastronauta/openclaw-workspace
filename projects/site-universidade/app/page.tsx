@@ -24,7 +24,7 @@ export default function HomePage() {
             Cursos do ensino superior em Portugal, reunidos num só sítio.
           </h1>
           <p className="mt-5 text-lg leading-8 text-slate-700">
-            Pesquisa cursos, consulta notas de entrada disponíveis e segue rapidamente para as fontes oficiais DGES e InfoCursos. A informação deve ser sempre confirmada nos organismos oficiais.
+            Pesquisa cursos, compara instituições e encontra rapidamente informação organizada sobre o ensino superior em Portugal — tudo num diretório simples, pesquisável e feito para te poupar tempo.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/cursos/" className="rounded-xl bg-brand-700 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-brand-900">
@@ -47,7 +47,7 @@ export default function HomePage() {
         </section>
       )}
 
-      <section className="mt-12 grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+      <section className="mt-12 grid gap-8 lg:grid-cols-2">
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
           <h2 className="text-xl font-semibold text-slate-950">Explorar por inicial</h2>
           <div className="mt-5 flex flex-wrap gap-2">
@@ -57,17 +57,22 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
-          {cycles.length > 0 && (
-            <div className="mt-6 border-t border-slate-100 pt-5">
-              <h3 className="text-sm font-semibold text-slate-950">Ciclos disponíveis</h3>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {cycles.map((cycle) => (
-                  <Link key={cycle} href={`/ciclos/${slugify(cycle)}/`} className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600 hover:bg-brand-100 hover:text-brand-700">{cycle}</Link>
-                ))}
-              </div>
-            </div>
-          )}
         </div>
+        {cycles.length > 0 && (
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h2 className="text-xl font-semibold text-slate-950">Explorar por ciclos</h2>
+            <div className="mt-5 flex flex-wrap gap-2">
+              {cycles.map((cycle) => (
+                <Link key={cycle} href={`/ciclos/${slugify(cycle)}/`} className="rounded-lg border border-slate-200 px-3 py-2 text-sm font-semibold text-slate-700 hover:border-brand-600 hover:text-brand-700">
+                  {cycle}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+      </section>
+
+      <section className="mt-8">
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
           <h2 className="text-xl font-semibold text-slate-950">O que encontras aqui</h2>
           <ul className="mt-4 grid gap-3 text-sm leading-6 text-slate-700 sm:grid-cols-2">

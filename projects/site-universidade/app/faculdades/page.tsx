@@ -47,8 +47,12 @@ export default function FacultiesPage() {
                       {faculty.institutionName}
                     </Link>
                   </h2>
-                  <p className="mt-2 text-sm text-slate-600">{faculty.courses.length} curso{faculty.courses.length === 1 ? "" : "s"} disponível{faculty.courses.length === 1 ? "" : "eis"}</p>
-                  {faculty.institutionCode && <p className="mt-1 text-xs font-medium uppercase tracking-wide text-slate-500">Código {faculty.institutionCode}</p>}
+                  {faculty.institutionSigla && (
+                    <div className="mt-2 flex flex-wrap gap-2 text-xs font-medium uppercase tracking-wide text-slate-500">
+                      <span className="rounded-full bg-slate-100 px-3 py-1">{faculty.institutionSigla}</span>
+                    </div>
+                  )}
+                  <p className="mt-2 text-sm text-slate-600">{faculty.courses.length} curso{faculty.courses.length === 1 ? "" : "s"} {faculty.courses.length === 1 ? "disponível" : "disponíveis"}</p>
                   <Link href={`/faculdades/${faculty.slug}/`} className="mt-4 inline-flex text-sm font-semibold text-brand-700 hover:text-brand-900">
                     Ver cursos →
                   </Link>
