@@ -76,7 +76,10 @@ export async function collectCrons() {
       }))
     };
   } catch (error) {
-    return { source: sourceError('cron scheduler', error), crons: [], events: [] };
+    const detail = error?.code === 'ENOENT'
+      ? 'OpenClaw CLI not found inside this container. Build with NYX_MC_BASE_IMAGE set to an OpenClaw image, or run the app inside an environment that has the openclaw CLI.'
+      : error;
+    return { source: sourceError('cron scheduler', detail), crons: [], events: [] };
   }
 }
 

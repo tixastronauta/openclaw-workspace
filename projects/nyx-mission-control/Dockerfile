@@ -1,4 +1,5 @@
-FROM node:24-alpine
+ARG BASE_IMAGE=node:24-alpine
+FROM ${BASE_IMAGE}
 WORKDIR /app
 COPY package.json ./
 COPY src ./src

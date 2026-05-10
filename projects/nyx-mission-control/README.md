@@ -42,3 +42,24 @@ docker compose up -d --build
 ```
 
 Inside the container, `WORKSPACE_DIR` remains `/workspace`; the `.env` variables only control the host-side bind mounts.
+
+## Cron collector note
+
+The Crons page uses the `openclaw cron list` CLI. The default sidecar base image is `node:24-alpine`, which does not include the OpenClaw CLI, so the Crons page will show the cron source as unavailable.
+
+If you have a custom OpenClaw image that includes Node and the `openclaw` CLI, build with it:
+
+```bash
+cat >> .env <<'EOF'
+NYX_MC_BASE_IMAGE=your-openclaw-image:tag
+EOF
+
+docker compose up -d --build
+```
+
+Quick check:
+
+```bash
+docker exec nyx-mission-control which openclaw
+docker exec nyx-mission-control openclaw cron list
+```

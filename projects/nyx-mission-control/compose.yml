@@ -1,6 +1,9 @@
 services:
   nyx-mission-control:
-    build: .
+    build:
+      context: .
+      args:
+        BASE_IMAGE: ${NYX_MC_BASE_IMAGE:-node:24-alpine}
     container_name: nyx-mission-control
     restart: unless-stopped
     ports:
