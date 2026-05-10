@@ -50,7 +50,8 @@ function ownerBadge(owner) {
 }
 
 function taskCard(task) {
-  return `<div class="task-card owner-${esc(task.owner)}" data-task-id="${esc(task.id)}"><div class="task-card-top">${ownerBadge(task.owner)}<span class="priority-pill">${esc(task.priority || 'normal')}</span></div><div class="task-title">${esc(task.title)}</div><div class="task-meta">${task.project ? `Project: ${esc(task.project)}` : 'No project'}</div>${task.description ? `<div class="task-desc">${esc(task.description)}</div>` : ''}<div class="task-actions"><button data-move="backlog">Backlog</button><button data-move="todo">To do</button><button data-move="in_progress">Doing</button><button data-move="blocked">Blocked</button><button data-move="done">Done</button><button class="danger" data-delete="true">Delete</button></div></div>`;
+  const execution = [task.lastRunSummary ? `<div class="task-run">Last run: ${esc(task.lastRunSummary)}</div>` : '', task.blockedReason ? `<div class="task-blocked">Blocked: ${esc(task.blockedReason)}</div>` : ''].join('');
+  return `<div class="task-card owner-${esc(task.owner)}" data-task-id="${esc(task.id)}"><div class="task-card-top">${ownerBadge(task.owner)}<span class="priority-pill">${esc(task.priority || 'normal')}</span></div><div class="task-title">${esc(task.title)}</div><div class="task-meta">${task.project ? `Project: ${esc(task.project)}` : 'No project'}${task.runId ? ` · ${esc(task.runId)}` : ''}</div>${task.description ? `<div class="task-desc">${esc(task.description)}</div>` : ''}${execution}<div class="task-actions"><button data-move="backlog">Backlog</button><button data-move="todo">To do</button><button data-move="in_progress">Doing</button><button data-move="blocked">Blocked</button><button data-move="done">Done</button><button class="danger" data-delete="true">Delete</button></div></div>`;
 }
 
 function renderTasks() {

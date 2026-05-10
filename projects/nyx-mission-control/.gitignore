@@ -5,3 +5,4 @@ data/*.json
 data/*.tmp
 data/*.log
 data/*.pid
+data/*.txt

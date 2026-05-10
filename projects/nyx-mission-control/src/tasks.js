@@ -47,7 +47,12 @@ function sanitizeTask(input, existing = {}) {
     status,
     description: String(input.description ?? existing.description ?? '').trim(),
     project: String(input.project ?? existing.project ?? '').trim(),
-    priority: String(input.priority ?? existing.priority ?? 'normal').trim() || 'normal'
+    priority: String(input.priority ?? existing.priority ?? 'normal').trim() || 'normal',
+    executionStartedAt: input.executionStartedAt ?? existing.executionStartedAt,
+    executionFinishedAt: input.executionFinishedAt ?? existing.executionFinishedAt,
+    lastRunSummary: input.lastRunSummary ?? existing.lastRunSummary,
+    blockedReason: input.blockedReason ?? existing.blockedReason,
+    runId: input.runId ?? existing.runId
   };
 }
 
@@ -181,6 +186,53 @@ export async function deleteTask(cacheDir, id) {
   const event = { ts: nowIso(), kind: 'task_deleted', task };
   queueNotifyAndAudit(cacheDir, event);
   return { task, notification: { queued: true } };
+}
+
+export async function claimNextNyxTask(cacheDir) {
+  const tasks = await readTasks(cacheDir);
+  const index = tasks.findIndex((task) => task.owner === 'nyx' && task.status === 'todo');
+  if (index === -1) return null;
+  const before = tasks[index];
+  const startedAt = nowIso();
+  const runId = `nyx_run_${Date.now().toString(36)}`;
+  const task = {
+    ...before,
+    status: 'in_progress',
+    executionStartedAt: startedAt,
+    executionFinishedAt: null,
+    blockedReason: null,
+    runId,
+    updatedAt: startedAt,
+    history: [...(before.history || []), { ts: startedAt, kind: 'claimed', from: before.status, to: 'in_progress', owner: 'nyx', runId }]
+  };
+  tasks[index] = task;
+  await writeTasks(cacheDir, tasks);
+  const event = { ts: startedAt, kind: 'task_moved', from: before.status, to: 'in_progress', task };
+  queueNotifyAndAudit(cacheDir, event);
+  return task;
+}
+
+export async function finishTaskExecution(cacheDir, id, { status, summary = '', blockedReason = '' }) {
+  if (!['done', 'blocked'].includes(status)) throw new Error('Finish status must be done or blocked');
+  const tasks = await readTasks(cacheDir);
+  const index = tasks.findIndex((task) => task.id === id);
+  if (index === -1) throw new Error('Task not found');
+  const before = tasks[index];
+  const finishedAt = nowIso();
+  const task = {
+    ...before,
+    status,
+    executionFinishedAt: finishedAt,
+    lastRunSummary: String(summary || '').trim(),
+    blockedReason: status === 'blocked' ? String(blockedReason || summary || '').trim() : null,
+    updatedAt: finishedAt,
+    history: [...(before.history || []), { ts: finishedAt, kind: 'finished', from: before.status, to: status, owner: 'nyx', runId: before.runId, summary }]
+  };
+  tasks[index] = task;
+  await writeTasks(cacheDir, tasks);
+  const event = { ts: finishedAt, kind: 'task_moved', from: before.status, to: status, task };
+  queueNotifyAndAudit(cacheDir, event);
+  return task;
 }
 
 export async function getTaskBoard(cacheDir) {

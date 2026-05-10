@@ -100,6 +100,8 @@ pre { background: #070a0f; border: 1px solid var(--line); border-radius: 12px; p
 .owner-legend { display: flex; align-items: center; gap: 8px; margin-top: 8px; color: var(--muted); font-size: 12px; }
 .task-title { font-weight: 700; line-height: 1.25; }
 .task-meta, .task-desc { color: var(--muted); font-size: 12px; margin-top: 5px; }
+.task-run { color: #d6ffe9; background: rgba(66,211,146,.10); border: 1px solid rgba(66,211,146,.22); border-radius: 8px; padding: 6px; font-size: 12px; margin-top: 8px; }
+.task-blocked { color: #ffe9a8; background: rgba(247,201,72,.10); border: 1px solid rgba(247,201,72,.25); border-radius: 8px; padding: 6px; font-size: 12px; margin-top: 8px; }
 .task-actions { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
 .task-actions button { cursor: pointer; border: 1px solid var(--line); background: rgba(0,0,0,.18); color: var(--muted); border-radius: 8px; padding: 5px 7px; font-size: 11px; }
 .task-actions button:hover { color: var(--text); border-color: rgba(139,92,246,.7); }
