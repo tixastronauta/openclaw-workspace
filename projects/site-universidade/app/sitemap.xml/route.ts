@@ -1,13 +1,16 @@
-import { getAllCourses, getAllFaculties } from "@/lib/courses";
+import { getAllCourses, getAllDistricts, getAllFaculties, getCycles } from "@/lib/courses";
+import { slugify } from "@/lib/slug";
 import { siteConfig } from "@/lib/site";
 
 export const dynamic = "force-static";
 
 export function GET() {
-  const staticRoutes = ["", "/cursos", "/faculdades", "/sobre", "/contacto", "/privacidade", "/termos", "/fontes-oficiais"];
+  const staticRoutes = ["", "/cursos", "/faculdades", "/ciclos", "/distritos", "/sobre", "/contacto", "/privacidade", "/termos", "/fontes-oficiais"];
   const courseRoutes = getAllCourses().map((course) => `/cursos/${course.slug}`);
   const facultyRoutes = getAllFaculties().map((faculty) => `/faculdades/${faculty.slug}`);
-  const urls = [...staticRoutes, ...courseRoutes, ...facultyRoutes]
+  const cycleRoutes = getCycles().map((cycle) => `/ciclos/${slugify(cycle)}`);
+  const districtRoutes = getAllDistricts().map((district) => `/distritos/${district.slug}`);
+  const urls = [...staticRoutes, ...courseRoutes, ...facultyRoutes, ...cycleRoutes, ...districtRoutes]
     .map((route) => `  <url><loc>${siteConfig.url}${route}/</loc></url>`)
     .join("\n");
 

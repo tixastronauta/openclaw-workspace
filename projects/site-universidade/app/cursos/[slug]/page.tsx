@@ -6,6 +6,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Container } from "@/components/Container";
 import { GradesChart } from "@/components/GradesChart";
 import { getAllCourses, getCourseBySlug, getFacultySlugByInstitution, getRelatedCourses } from "@/lib/courses";
+import { slugify } from "@/lib/slug";
 import { siteConfig } from "@/lib/site";
 
 type PageProps = {
@@ -53,9 +54,6 @@ function OfficialSources({ course }: { course: Awaited<ReturnType<typeof getCour
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
       <h2 className="text-lg font-semibold text-slate-950">Fontes oficiais</h2>
-      <p className="mt-2 text-sm leading-6 text-slate-600">
-        Confirma sempre dados e candidaturas nas fontes oficiais.
-      </p>
       <div className="mt-4 flex flex-col gap-2">
         {course.infoCursosUrl && (
           <a
@@ -127,14 +125,22 @@ export default async function CourseDetailPage({ params }: PageProps) {
               : <p className="mt-3 text-lg font-medium text-slate-700">{course.institutionName}</p>
           )}
           <div className="mt-3 flex flex-wrap gap-2 text-xs font-medium uppercase tracking-wide text-slate-500">
-            {course.cycle && <span className="rounded-full bg-slate-100 px-3 py-1">{course.cycle}</span>}
+            {course.cycle && (
+              <Link href={`/ciclos/${slugify(course.cycle)}/`} className="rounded-full bg-slate-100 px-3 py-1 hover:bg-brand-100 hover:text-brand-700">{course.cycle}</Link>
+            )}
             {course.courseCode && <span className="rounded-full bg-slate-100 px-3 py-1">Curso {course.courseCode}</span>}
             {course.reference && <span className="rounded-full bg-slate-100 px-3 py-1">Ref. {course.reference}</span>}
           </div>
-          <p className="mt-4 max-w-3xl text-slate-700">
-            Consulta as notas de entrada disponíveis para este curso e confirma sempre a informação atualizada nas fontes oficiais indicadas.
-          </p>
 
+          {course.courseDescription && (
+            <blockquote className="mt-6 rounded-2xl border-l-4 border-brand-600 bg-brand-50 px-6 py-5">
+              <p className="text-base leading-7 text-slate-800">{course.courseDescription}</p>
+            </blockquote>
+          )}
+
+          <p className="mt-5 max-w-3xl text-slate-700">
+            Consulta as notas de entrada disponíveis para este curso e confirma sempre a informação atualizada nas fontes oficiais.
+          </p>
           <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="text-2xl font-semibold text-slate-950">Notas de entrada</h2>
             {course.grades.length > 0 ? (

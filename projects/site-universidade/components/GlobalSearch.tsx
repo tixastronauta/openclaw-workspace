@@ -11,23 +11,41 @@ type SearchCourse = {
 };
 
 export function GlobalSearch({ courses }: { courses: SearchCourse[] }) {
-  const [query, setQuery] = useState("");
+  // search results state — input value is uncontrolled (owned by the browser)
+  const [results, setResults] = useState<SearchCourse[]>([]);
   const [open, setOpen] = useState(false);
-  const [isComposing, setIsComposing] = useState(false);
+  const [hasValue, setHasValue] = useState(false);
   const [, startTransition] = useTransition();
   const inputRef = useRef<HTMLInputElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const normalized = query.trim().toLocaleLowerCase("pt");
-  const results = normalized
-    ? courses
-        .filter((c) =>
-          `${c.courseName} ${c.institutionName ?? ""} ${c.institutionSigla ?? ""}`
-            .toLocaleLowerCase("pt")
-            .includes(normalized)
-        )
-        .slice(0, 10)
-    : [];
+  function search(raw: string) {
+    const normalized = raw.trim().toLocaleLowerCase("pt");
+    setHasValue(raw.length > 0);
+    if (!normalized) {
+      setResults([]);
+      return;
+    }
+    startTransition(() => {
+      setResults(
+        courses
+          .filter((c) =>
+            `${c.courseName} ${c.institutionName ?? ""} ${c.institutionSigla ?? ""}`
+              .toLocaleLowerCase("pt")
+              .includes(normalized)
+          )
+          .slice(0, 10)
+      );
+    });
+  }
+
+  function clear() {
+    if (inputRef.current) inputRef.current.value = "";
+    setResults([]);
+    setHasValue(false);
+    setOpen(false);
+    inputRef.current?.focus();
+  }
 
   // Close on click outside
   useEffect(() => {
@@ -67,17 +85,10 @@ export function GlobalSearch({ courses }: { courses: SearchCourse[] }) {
           id="global-search"
           type="text"
           inputMode="search"
-          value={query}
+          // uncontrolled — no value/onChange; browser owns the text
           onFocus={() => setOpen(true)}
-          onChange={(e) => {
-            if (isComposing) return;
-            startTransition(() => setQuery(e.target.value));
-            setOpen(true);
-          }}
-          onCompositionStart={() => setIsComposing(true)}
-          onCompositionEnd={(e) => {
-            setIsComposing(false);
-            startTransition(() => setQuery((e.target as HTMLInputElement).value));
+          onInput={(e) => {
+            search((e.target as HTMLInputElement).value);
             setOpen(true);
           }}
           placeholder="Pesquisar cursos..."
@@ -87,11 +98,11 @@ export function GlobalSearch({ courses }: { courses: SearchCourse[] }) {
           spellCheck={false}
           className="w-full rounded-xl border border-slate-300 bg-white py-2 pl-9 pr-8 text-sm outline-none ring-brand-600 transition focus:ring-2"
         />
-        {query && (
+        {hasValue && (
           <button
             type="button"
             aria-label="Limpar pesquisa"
-            onClick={() => { setQuery(""); setOpen(false); inputRef.current?.focus(); }}
+            onMouseDown={(e) => { e.preventDefault(); clear(); }}
             className="absolute right-2 top-1/2 -translate-y-1/2 rounded p-0.5 text-slate-400 hover:text-slate-700"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4" aria-hidden="true">
@@ -101,28 +112,30 @@ export function GlobalSearch({ courses }: { courses: SearchCourse[] }) {
         )}
       </div>
 
-      {open && normalized.length > 0 && (
+      {open && results.length > 0 && (
         <div className="absolute left-0 right-0 top-[calc(100%+6px)] z-50 max-h-[70vh] overflow-y-auto rounded-2xl border border-slate-200 bg-white shadow-xl">
-          {results.length > 0 ? (
-            <ul role="listbox">
-              {results.map((course) => (
-                <li key={course.slug} role="option" aria-selected="false">
-                  <Link
-                    href={`/cursos/${course.slug}/`}
-                    onClick={() => { setOpen(false); setQuery(""); }}
-                    className="flex flex-col gap-0.5 px-4 py-3 text-sm hover:bg-brand-50"
-                  >
-                    <span className="font-medium text-slate-900">{course.courseName}</span>
-                    {course.institutionName && (
-                      <span className="text-xs text-slate-500">{course.institutionName}</span>
-                    )}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="px-4 py-3 text-sm text-slate-500">Sem resultados para esta pesquisa.</p>
-          )}
+          <ul role="listbox">
+            {results.map((course) => (
+              <li key={course.slug} role="option" aria-selected="false">
+                <Link
+                  href={`/cursos/${course.slug}/`}
+                  onClick={() => { clear(); }}
+                  className="flex flex-col gap-0.5 px-4 py-3 text-sm hover:bg-brand-50"
+                >
+                  <span className="font-medium text-slate-900">{course.courseName}</span>
+                  {course.institutionName && (
+                    <span className="text-xs text-slate-500">{course.institutionName}</span>
+                  )}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {open && hasValue && results.length === 0 && (
+        <div className="absolute left-0 right-0 top-[calc(100%+6px)] z-50 rounded-2xl border border-slate-200 bg-white shadow-xl">
+          <p className="px-4 py-3 text-sm text-slate-500">Sem resultados para esta pesquisa.</p>
         </div>
       )}
     </div>

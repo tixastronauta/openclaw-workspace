@@ -17,8 +17,12 @@ export type Course = {
   institutionCode?: string;
   institutionName?: string;
   institutionSigla?: string;
+  cidade?: string;
+  distrito?: string;
+  morada?: string;
   reference?: string;
   grades: AdmissionGrade[];
+  courseDescription?: string;
   infoCursosUrl?: string;
   dgesUrl?: string;
 };
@@ -101,8 +105,12 @@ export function getAllCourses(): Course[] {
       institutionCode: getFirst(row, ["institutionCode", "institution_code", "code"]),
       institutionName: getFirst(row, ["institutionName", "institution_name", "instituicao"]),
       institutionSigla: getFirst(row, ["institutionSigla", "institution_sigla", "sigla"]),
+      cidade: getFirst(row, ["cidade"]),
+      distrito: getFirst(row, ["distrito"]),
+      morada: getFirst(row, ["morada"]),
       reference: getFirst(row, ["reference", "referencia"]),
       grades: extractGrades(row),
+      courseDescription: getFirst(row, ["courseDescription", "course_description"]),
       infoCursosUrl: getFirst(row, ["infoCursosUrl", "infocursosUrl", "info_cursos_url", "InfoCursos", "estatisticas_do_curso"]),
       dgesUrl: getFirst(row, ["dgesUrl", "dges_url", "DGES", "detalhes_do_curso"])
     });
@@ -136,6 +144,10 @@ export function getCourseInitials(): string[] {
 
 export function getCycles(): string[] {
   return Array.from(new Set(getAllCourses().map((course) => course.cycle).filter((cycle): cycle is string => Boolean(cycle)))).sort((a, b) => a.localeCompare(b, "pt"));
+}
+
+export function getCoursesByCycle(cycle: string): Course[] {
+  return getAllCourses().filter((course) => course.cycle === cycle);
 }
 
 export type Faculty = {
@@ -174,4 +186,60 @@ export function getFacultySlugByInstitution(institutionName?: string, institutio
 
 export function getFacultyBySlug(slug: string): Faculty | undefined {
   return getAllFaculties().find((faculty) => faculty.slug === slug);
+}
+
+// ── Districts ────────────────────────────────────────────────────────────────
+
+export type District = {
+  slug: string;
+  name: string;
+  faculties: Faculty[];
+  courseCount: number;
+};
+
+export function getAllDistricts(): District[] {
+  const courses = getAllCourses();
+
+  // group courses by district
+  const byCourse = new Map<string, typeof courses>();
+  for (const course of courses) {
+    if (!course.distrito) continue;
+    byCourse.set(course.distrito, [...(byCourse.get(course.distrito) ?? []), course]);
+  }
+
+  return Array.from(byCourse.entries())
+    .map(([name, districtCourses]) => {
+      // unique faculties in this district
+      const facultyMap = new Map<string, Faculty>();
+      for (const course of districtCourses) {
+        if (!course.institutionName) continue;
+        const key = `${course.institutionName}::${course.institutionCode ?? ""}`;
+        if (!facultyMap.has(key)) {
+          const fslug = slugify([course.institutionName, course.institutionCode].filter(Boolean).join(" "));
+          facultyMap.set(key, {
+            slug: fslug,
+            institutionCode: course.institutionCode,
+            institutionName: course.institutionName,
+            courses: []
+          });
+        }
+      }
+      return {
+        slug: slugify(name),
+        name,
+        faculties: Array.from(facultyMap.values()).sort((a, b) => a.institutionName.localeCompare(b.institutionName, "pt")),
+        courseCount: districtCourses.length
+      };
+    })
+    .sort((a, b) => a.name.localeCompare(b.name, "pt"));
+}
+
+export function getDistrictBySlug(slug: string): District | undefined {
+  return getAllDistricts().find((d) => d.slug === slug);
+}
+
+export function getCoursesByDistrict(slug: string): Course[] {
+  const district = getDistrictBySlug(slug);
+  if (!district) return [];
+  return getAllCourses().filter((c) => c.distrito && slugify(c.distrito) === slug);
 }

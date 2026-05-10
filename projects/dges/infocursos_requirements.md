@@ -59,6 +59,18 @@ If a specific chart exists but has no rows for the requested scope, use:
 }
 ```
 
+## Description field
+
+### course_description
+
+For large-scale fills, derive `course_description` from official DGES course-detail fields in `detalhes_do_curso`.
+
+Preferred concise shape:
+
+- `<grau> de <duração> e <ects> ECTS na área <Área CNAEF>.`
+
+This keeps the text factual and avoids inventing marketing copy when an institution-specific presentation page is not being scraped.
+
 ## Field-specific requirements
 
 ### IEFP unemployment

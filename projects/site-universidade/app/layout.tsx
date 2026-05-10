@@ -4,6 +4,13 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { siteConfig } from "@/lib/site";
 
+const ogImage = {
+  url: "/og/universidade-og.png",
+  width: 1536,
+  height: 1024,
+  alt: "Universidade.pt"
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
@@ -26,7 +33,14 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     siteName: siteConfig.name,
     title: `${siteConfig.name} — cursos do ensino superior em Portugal`,
-    description: siteConfig.description
+    description: siteConfig.description,
+    images: [ogImage]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.name} — cursos do ensino superior em Portugal`,
+    description: siteConfig.description,
+    images: [ogImage.url]
   },
   alternates: {
     canonical: "/"

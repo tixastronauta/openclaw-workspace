@@ -42,7 +42,7 @@ export default async function FacultyPage({ params }: PageProps) {
           <span className="rounded-full bg-slate-100 px-3 py-1">{faculty.courses.length} curso{faculty.courses.length === 1 ? "" : "s"}</span>
         </div>
         <p className="mt-4 max-w-3xl text-slate-700">
-          Cursos desta instituição disponíveis no Universidade.pt. Confirma sempre detalhes atualizados nas páginas oficiais indicadas em cada curso.
+          Cursos desta instituição disponíveis no Universidade.pt.
         </p>
       </section>
 

@@ -20,6 +20,8 @@ Started: 2026-05-10
 - `/cursos/[slug]/` — static course detail pages generated from CSV rows
 - `/faculdades/` — faculty/institution index generated from institution fields
 - `/faculdades/[slug]/` — static faculty pages listing that institution's courses
+- `/distritos/` — district index with counts for institutions and courses
+- `/distritos/[slug]/` — static district pages listing institutions and courses in that district
 - `/sobre/`
 - `/contacto/`
 - `/privacidade/`
@@ -37,7 +39,7 @@ The v0.1 source of truth is `data/courses.csv`, exported from this Google Sheet:
 Current spreadsheet columns:
 
 ```csv
-course_code,course_name,cycle,institution_code,institution_name,institution_sigla,reference,estatisticas_do_curso,detalhes_do_curso,nota_ult_col_2023_1a,nota_ult_col_2023_2a,nota_ult_col_2024_1a,nota_ult_col_2024_2a,nota_ult_col_2025_1a,nota_ult_col_2025_2a
+updated_at,course_code,course_name,cycle,institution_code,institution_name,institution_sigla,reference,estatisticas_do_curso,detalhes_do_curso,nota_ult_col_2023_1a,nota_ult_col_2023_2a,nota_ult_col_2024_1a,nota_ult_col_2024_2a,nota_ult_col_2025_1a,nota_ult_col_2025_2a,infocursos_iefp_desemprego_json,infocursos_taxa_conclusao_json,infocursos_classificacoes_finais_json,infocursos_sexo_curso_json,infocursos_nacionalidade_curso_json,infocursos_idades_json,course_description,nota_ult_col_json,cidade,distrito,morada
 ```
 
 The loader also accepts common aliases for the course name and official URL columns. Grade columns are detected when they follow the DGES spreadsheet format `nota_ult_col_YYYY_1a` / `nota_ult_col_YYYY_2a`, or simpler fallback patterns such as `entryGrade2024`, `entry_grade2024`, `grade2024`, `nota2024`, or `nota_entrada2024`.
@@ -78,8 +80,10 @@ At build time, `lib/courses.ts` reads `data/courses.csv`, normalizes rows into a
 - `getRelatedCourses()` for internal links prioritizing same course name, same institution, and same cycle
 - `getAllFaculties()` for the faculty index, sitemap, and static params
 - `getFacultyBySlug()` for faculty detail pages
+- `getAllDistricts()` for district pages, sitemap, and the homepage map
+- `getDistrictBySlug()` / `getCoursesByDistrict()` for district detail pages
 
-Course and faculty pages are generated statically via `generateStaticParams()`.
+Course, faculty, cycle, and district pages are generated statically via `generateStaticParams()`.
 
 ## SEO basics included
 
