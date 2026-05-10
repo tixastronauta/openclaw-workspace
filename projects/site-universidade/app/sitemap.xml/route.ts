@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site";
 export const dynamic = "force-static";
 
 export function GET() {
-  const staticRoutes = ["", "/cursos", "/faculdades", "/ciclos", "/distritos", "/quem-somos", "/privacidade", "/termos", "/fontes-oficiais"];
+  const staticRoutes = ["", "/cursos", "/faculdades", "/ciclos", "/distritos", "/top-10", "/quem-somos", "/privacidade", "/termos", "/fontes-oficiais"];
   const courseRoutes = getAllCourses().map((course) => `/cursos/${course.slug}`);
   const facultyRoutes = getAllFaculties().map((faculty) => `/faculdades/${faculty.slug}`);
   const cycleRoutes = getCycles().map((cycle) => `/ciclos/${slugify(cycle)}`);

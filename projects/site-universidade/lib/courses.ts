@@ -9,6 +9,15 @@ export type AdmissionGrade = {
   grade: string;
 };
 
+export type CourseMetrics = {
+  unemploymentRate?: number;
+  finalAverage?: number;
+  menShare?: number;
+  womenShare?: number;
+  foreignerShare?: number;
+  ageAverage?: number;
+};
+
 export type Course = {
   slug: string;
   courseCode?: string;
@@ -27,6 +36,7 @@ export type Course = {
   courseDescription?: string;
   infoCursosUrl?: string;
   dgesUrl?: string;
+  metrics?: CourseMetrics;
 };
 
 type CsvRow = Record<string, string | undefined>;
@@ -84,6 +94,96 @@ function extractGrades(row: CsvRow): AdmissionGrade[] {
   }
 }
 
+function parseJsonObject(value: string | undefined): Record<string, unknown> | undefined {
+  const raw = clean(value);
+  if (!raw) return undefined;
+
+  try {
+    const parsed = JSON.parse(raw) as unknown;
+    if (typeof parsed === "object" && parsed !== null && !Array.isArray(parsed)) return parsed as Record<string, unknown>;
+  } catch {
+    return undefined;
+  }
+
+  return undefined;
+}
+
+function rowsFromJson(value: string | undefined): Record<string, unknown>[] {
+  const parsed = parseJsonObject(value);
+  const rows = parsed?.rows;
+  if (!Array.isArray(rows)) return [];
+  return rows.filter((row): row is Record<string, unknown> => typeof row === "object" && row !== null && !Array.isArray(row));
+}
+
+function numberValue(value: unknown): number | undefined {
+  if (typeof value === "number" && Number.isFinite(value)) return value;
+  if (typeof value === "string") {
+    const parsed = Number.parseFloat(value.replace(",", "."));
+    if (Number.isFinite(parsed)) return parsed;
+  }
+  return undefined;
+}
+
+function weightedFinalAverage(row: CsvRow): number | undefined {
+  const rows = rowsFromJson(row.infocursos_classificacoes_finais_json);
+  let totalWeight = 0;
+  let total = 0;
+
+  for (const item of rows) {
+    const grade = numberValue(item["Nota final"]);
+    const students = numberValue(item.Alunos);
+    const percentage = numberValue(item.Percentagem);
+    const weight = students && students > 0 ? students : percentage;
+    if (grade === undefined || weight === undefined || weight <= 0) continue;
+    total += grade * weight;
+    totalWeight += weight;
+  }
+
+  return totalWeight > 0 ? total / totalWeight : undefined;
+}
+
+function ageMidpoint(age: unknown): number | undefined {
+  if (typeof age !== "string") return undefined;
+  if (age === "<=18") return 18;
+  if (age === ">=40") return 40;
+  const range = age.match(/^(\d+)-(\d+)$/);
+  if (range) return (Number(range[1]) + Number(range[2])) / 2;
+  return numberValue(age);
+}
+
+function weightedAgeAverage(row: CsvRow): number | undefined {
+  const rows = rowsFromJson(row.infocursos_idades_json);
+  let totalWeight = 0;
+  let total = 0;
+
+  for (const item of rows) {
+    const age = ageMidpoint(item.Idade);
+    const students = numberValue(item.Alunos);
+    const percentage = numberValue(item.Percentagem);
+    const weight = students && students > 0 ? students : percentage;
+    if (age === undefined || weight === undefined || weight <= 0) continue;
+    total += age * weight;
+    totalWeight += weight;
+  }
+
+  return totalWeight > 0 ? total / totalWeight : undefined;
+}
+
+function extractMetrics(row: CsvRow): CourseMetrics {
+  const unemployment = rowsFromJson(row.infocursos_iefp_desemprego_json).find((item) => item.Desemprego === "Curso");
+  const sex = rowsFromJson(row.infocursos_sexo_curso_json).find((item) => item.Sexo === "Curso");
+  const nationality = rowsFromJson(row.infocursos_nacionalidade_curso_json).find((item) => item.Nacionalidade === "Curso");
+
+  return {
+    unemploymentRate: numberValue(unemployment?.Taxa),
+    finalAverage: weightedFinalAverage(row),
+    menShare: numberValue(sex?.Homens),
+    womenShare: numberValue(sex?.Mulheres),
+    foreignerShare: numberValue(nationality?.Estrangeiros),
+    ageAverage: weightedAgeAverage(row)
+  };
+}
+
 function uniqueSlugs(courses: Omit<Course, "slug">[]): Course[] {
   const seen = new Map<string, number>();
 
@@ -128,7 +228,8 @@ export function getAllCourses(): Course[] {
       grades: extractGrades(row),
       courseDescription: getFirst(row, ["courseDescription", "course_description"]),
       infoCursosUrl: getFirst(row, ["infoCursosUrl", "infocursosUrl", "info_cursos_url", "InfoCursos", "estatisticas_do_curso"]),
-      dgesUrl: getFirst(row, ["dgesUrl", "dges_url", "DGES", "detalhes_do_curso"])
+      dgesUrl: getFirst(row, ["dgesUrl", "dges_url", "DGES", "detalhes_do_curso"]),
+      metrics: extractMetrics(row)
     });
   }
 
