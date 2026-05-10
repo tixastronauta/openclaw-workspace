@@ -29,3 +29,16 @@ docker compose up -d --build
 ```
 
 The POC binds to `127.0.0.1:4317` by default.
+
+If the Projects page is empty, the sidecar is probably not seeing the host workspace path. Set the host paths explicitly before starting:
+
+```bash
+cat > .env <<'EOF'
+WORKSPACE_HOST_DIR=/actual/host/path/to/.openclaw/workspace
+OPENCLAW_HOST_DIR=/actual/host/path/to/.openclaw
+EOF
+
+docker compose up -d --build
+```
+
+Inside the container, `WORKSPACE_DIR` remains `/workspace`; the `.env` variables only control the host-side bind mounts.

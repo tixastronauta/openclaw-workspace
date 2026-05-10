@@ -137,8 +137,9 @@ export async function collectProjects(workspaceDir, config = DEFAULT_CONFIG) {
   const projectsDir = path.join(workspaceDir, 'projects');
   try {
     const entries = await fs.readdir(projectsDir, { withFileTypes: true });
+    const projectDirs = entries.filter((item) => item.isDirectory()).sort((a, b) => a.name.localeCompare(b.name));
     const projects = [];
-    for (const entry of entries.filter((item) => item.isDirectory()).sort((a, b) => a.name.localeCompare(b.name))) {
+    for (const entry of projectDirs) {
       const dir = path.join(projectsDir, entry.name);
       const projectJsonPath = path.join(dir, 'project.json');
       let projectJson = null;
@@ -172,9 +173,15 @@ export async function collectProjects(workspaceDir, config = DEFAULT_CONFIG) {
         risks: stale ? [`Sem atualização há mais de ${config.staleActiveProjectDays} dias`] : []
       });
     }
-    return { source: sourceOk('workspace projects', `${projects.length} projects`), projects };
+    const detail = projectDirs.length
+      ? `${projects.length} projects from ${projectsDir}`
+      : `0 project directories found in ${projectsDir}; check Docker bind mount / WORKSPACE_DIR`;
+    const source = sourceOk('workspace projects', detail);
+    if (!projectDirs.length) source.status = 'Aviso';
+    return { source, projects };
   } catch (error) {
-    return { source: sourceError('workspace projects', error), projects: [] };
+    const enriched = new Error(`${error.message} (workspaceDir=${workspaceDir}, projectsDir=${projectsDir})`);
+    return { source: sourceError('workspace projects', enriched), projects: [] };
   }
 }
 

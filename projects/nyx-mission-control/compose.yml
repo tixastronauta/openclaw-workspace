@@ -12,6 +12,6 @@ services:
       - CACHE_DIR=/app/data
       - REFRESH_MS=30000
     volumes:
-      - /data/.openclaw/workspace:/workspace:ro
-      - /data/.openclaw:/openclaw:ro
+      - ${WORKSPACE_HOST_DIR:-/data/.openclaw/workspace}:/workspace:ro
+      - ${OPENCLAW_HOST_DIR:-/data/.openclaw}:/openclaw:ro
       - ./data:/app/data
