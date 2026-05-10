@@ -4,7 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { EventCache } from './cache.js';
 import { DEFAULT_CONFIG, collectApprovals, collectCrons, collectLogs, collectProjects, summarize } from './collectors.js';
-import { updateProjectOverride } from './project-overrides.js';
+import { readProjectJson, writeProjectJson } from './project-json.js';
 import { createTask, deleteTask, getTaskBoard, updateTask } from './tasks.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -33,7 +33,7 @@ async function buildSnapshot() {
   try {
     const [cronData, projectData, approvalData, logData] = await Promise.all([
       collectCrons(),
-      collectProjects(workspaceDir, config, cacheDir),
+      collectProjects(workspaceDir, config),
       collectApprovals(),
       collectLogs(openclawDir, cacheDir, config)
     ]);
@@ -111,9 +111,11 @@ const server = http.createServer(async (req, res) => {
     const taskMatch = url.pathname.match(/^\/api\/tasks\/([^/]+)$/);
     if (taskMatch && req.method === 'PATCH') return sendJson(res, 200, await updateTask(cacheDir, taskMatch[1], await readJsonBody(req)));
     if (taskMatch && req.method === 'DELETE') return sendJson(res, 200, await deleteTask(cacheDir, taskMatch[1]));
-    const projectMatch = url.pathname.match(/^\/api\/projects\/([^/]+)$/);
-    if (projectMatch && req.method === 'PATCH') {
-      const result = await updateProjectOverride(cacheDir, decodeURIComponent(projectMatch[1]), await readJsonBody(req));
+    const projectJsonMatch = url.pathname.match(/^\/api\/projects\/([^/]+)\/json$/);
+    if (projectJsonMatch && req.method === 'GET') return sendJson(res, 200, await readProjectJson(workspaceDir, decodeURIComponent(projectJsonMatch[1])));
+    if (projectJsonMatch && (req.method === 'PUT' || req.method === 'PATCH')) {
+      const body = await readJsonBody(req);
+      const result = await writeProjectJson(workspaceDir, decodeURIComponent(projectJsonMatch[1]), body.json ?? body);
       await buildSnapshot();
       return sendJson(res, 200, result);
     }

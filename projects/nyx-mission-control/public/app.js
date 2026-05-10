@@ -61,16 +61,19 @@ function renderTasks() {
   bindTaskEvents();
 }
 
-function projectStatusOptions(value) {
-  return ['active', 'blocked', 'done', 'paused', 'unknown'].map((status) => `<option value="${status}" ${value === status ? 'selected' : ''}>${status}</option>`).join('');
-}
-
-function projectOrgOptions(value) {
-  return ['OK', 'precisa de organização'].map((org) => `<option value="${org}" ${value === org ? 'selected' : ''}>${org}</option>`).join('');
+function projectJsonTemplate(project) {
+  return JSON.stringify({
+    name: project.name || project.slug,
+    status: project.status || 'active',
+    updatedAt: new Date().toISOString().slice(0, 10),
+    nextAction: project.nextAction === 'project.json em falta ou incompleto' ? '' : (project.nextAction || ''),
+    owner: 'Nyx',
+    priority: 'normal'
+  }, null, 2);
 }
 
 function renderProjects() {
-  $('projects').innerHTML = `<div class="card"><div class="section-head"><div><h2>Projects</h2><p>Organiza projetos aqui: estado, próxima ação e nota ficam guardados no Mission Control.</p></div><span class="badge OK">Editable</span></div><div class="project-list">${(snapshot.projects || []).map((p) => `<form class="project-card" data-project-slug="${esc(p.slug)}"><div class="project-main"><div><strong>${esc(p.name)}</strong><div class="detail">${esc(p.slug)} · updated ${fmt(p.updatedAt)}</div><div class="detail">Files: ${esc((p.importantFiles || []).join(', ') || '-')}</div></div><div>${badge(p.severity, p.status)}</div></div><div class="project-controls"><label>Status<select name="status">${projectStatusOptions(p.status)}</select></label><label>Organização<select name="organization">${projectOrgOptions(p.organization)}</select></label><label>Próxima ação<input name="nextAction" value="${esc(p.nextAction || '')}" placeholder="O que é preciso fazer a seguir?" /></label><label>Nota<textarea name="note" placeholder="Nota opcional de organização">${esc(p.organizationNote || '')}</textarea></label><button type="submit">Save</button></div></form>`).join('') || empty('Sem projetos.')}</div></div>`;
+  $('projects').innerHTML = `<div class="card"><div class="section-head"><div><h2>Projects</h2><p>Vista limpa por defeito. Usa “Edit project.json” só no projeto que queres organizar.</p></div><span class="badge OK">project.json</span></div><div class="project-list">${(snapshot.projects || []).map((p) => `<div class="project-card" data-project-slug="${esc(p.slug)}"><div class="project-main"><div><strong>${esc(p.name)}</strong><div class="detail">${esc(p.slug)} · updated ${fmt(p.updatedAt)}</div><div class="detail">Next: ${esc(p.nextAction || '-')}</div><div class="detail">Files: ${esc((p.importantFiles || []).join(', ') || '-')}</div></div><div class="project-badges">${badge(p.severity, p.status)}${p.hasProjectJson ? badge('OK', 'project.json') : badge('Aviso', 'missing project.json')}</div></div><details class="project-editor"><summary>Edit project.json</summary><form><textarea name="json" spellcheck="false">${esc(projectJsonTemplate(p))}</textarea><div class="project-editor-actions"><button type="button" data-load-json>Reload from disk</button><button type="submit">Save project.json</button></div><div class="project-save-status"></div></form></details></div>`).join('') || empty('Sem projetos.')}</div></div>`;
   bindProjectEvents();
 }
 
@@ -120,19 +123,40 @@ async function load() {
   render();
 }
 
+async function loadProjectJson(card) {
+  const slug = card.dataset.projectSlug;
+  const textarea = card.querySelector('textarea[name="json"]');
+  const status = card.querySelector('.project-save-status');
+  status.textContent = 'Loading project.json…';
+  const res = await fetch(`/api/projects/${encodeURIComponent(slug)}/json`);
+  const data = await res.json();
+  textarea.value = JSON.stringify(data.json, null, 2);
+  status.textContent = data.exists ? 'Loaded from disk.' : 'No project.json yet — template loaded.';
+}
+
 function bindProjectEvents() {
-  document.querySelectorAll('[data-project-slug]').forEach((form) => form.addEventListener('submit', async (event) => {
-    event.preventDefault();
-    const submit = form.querySelector('button[type="submit"]');
-    submit.disabled = true;
-    const data = Object.fromEntries(new FormData(form).entries());
-    try {
-      await fetch(`/api/projects/${encodeURIComponent(form.dataset.projectSlug)}`, { method: 'PATCH', headers: { 'content-type': 'application/json' }, body: JSON.stringify(data) });
-      await load();
-    } finally {
-      submit.disabled = false;
-    }
-  }));
+  document.querySelectorAll('[data-project-slug]').forEach((card) => {
+    const details = card.querySelector('details');
+    details.addEventListener('toggle', () => { if (details.open) loadProjectJson(card).catch((error) => { card.querySelector('.project-save-status').textContent = error.message; }); });
+    card.querySelector('[data-load-json]').addEventListener('click', () => loadProjectJson(card));
+    card.querySelector('form').addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const submit = card.querySelector('button[type="submit"]');
+      const status = card.querySelector('.project-save-status');
+      const textarea = card.querySelector('textarea[name="json"]');
+      submit.disabled = true;
+      try {
+        const parsed = JSON.parse(textarea.value);
+        await fetch(`/api/projects/${encodeURIComponent(card.dataset.projectSlug)}/json`, { method: 'PUT', headers: { 'content-type': 'application/json' }, body: JSON.stringify(parsed) });
+        status.textContent = 'Saved.';
+        await load();
+      } catch (error) {
+        status.textContent = `Error: ${error.message}`;
+      } finally {
+        submit.disabled = false;
+      }
+    });
+  });
 }
 
 function bindTaskEvents() {

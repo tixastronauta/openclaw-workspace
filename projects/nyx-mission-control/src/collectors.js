@@ -2,7 +2,6 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
-import { readProjectOverrides } from './project-overrides.js';
 
 const execFileAsync = promisify(execFile);
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -304,9 +303,8 @@ async function latestMtime(dir) {
   return latest || Date.now();
 }
 
-export async function collectProjects(workspaceDir, config = DEFAULT_CONFIG, cacheDir = null) {
+export async function collectProjects(workspaceDir, config = DEFAULT_CONFIG) {
   const projectsDir = path.join(workspaceDir, 'projects');
-  const overrides = cacheDir ? await readProjectOverrides(cacheDir) : {};
   try {
     const entries = await fs.readdir(projectsDir, { withFileTypes: true });
     const projectDirs = entries.filter((item) => item.isDirectory()).sort((a, b) => a.name.localeCompare(b.name));
@@ -325,10 +323,9 @@ export async function collectProjects(workspaceDir, config = DEFAULT_CONFIG, cac
       ]);
       const combined = [projectJson ? JSON.stringify(projectJson) : '', doc?.content || ''].join('\n');
       const latest = await latestMtime(dir);
-      const override = overrides[entry.name] || {};
-      const status = override.status || inferStatus(projectJson, combined, latest, config);
-      const nextAction = override.nextAction || projectJson?.nextAction || findNextAction(combined) || 'não definido / precisa de organização';
-      const hasMetadata = Boolean(projectJson) || Boolean(await exists(path.join(dir, 'README.md')));
+      const status = inferStatus(projectJson, combined, latest, config);
+      const nextAction = projectJson?.nextAction || findNextAction(combined) || 'project.json em falta ou incompleto';
+      const hasReadme = Boolean(await exists(path.join(dir, 'README.md')));
       const importantFiles = [];
       for (const name of ['project.json', 'README.md', 'TODO.md', 'todo.md', 'data/state.json']) {
         if (await exists(path.join(dir, name))) importantFiles.push(name);
@@ -342,9 +339,9 @@ export async function collectProjects(workspaceDir, config = DEFAULT_CONFIG, cac
         updatedAt: new Date(latest).toISOString(),
         nextAction,
         importantFiles,
-        organization: override.organization || (hasMetadata && projectJson ? 'OK' : 'precisa de organização'),
-        organizationNote: override.note || '',
-        editable: true,
+        hasProjectJson: Boolean(projectJson),
+        hasReadme,
+        needsProjectJson: !projectJson,
         risks: stale ? [`Sem atualização há mais de ${config.staleActiveProjectDays} dias`] : []
       });
     }
@@ -426,7 +423,7 @@ export function summarize(snapshot, cachedEvents) {
     if (cron.severity !== 'OK') attention.push({ severity: cron.severity, title: `Cron: ${cron.name}`, detail: cron.raw });
   }
   for (const project of snapshot.projects) {
-    if (project.severity !== 'OK' || project.organization !== 'OK') attention.push({ severity: project.severity === 'Erro' ? 'Erro' : 'Aviso', title: `Projeto: ${project.name}`, detail: project.risks[0] || project.organization });
+    if (project.severity !== 'OK' || project.needsProjectJson) attention.push({ severity: project.severity === 'Erro' ? 'Erro' : 'Aviso', title: `Projeto: ${project.name}`, detail: project.risks[0] || 'project.json em falta ou incompleto' });
   }
   for (const event of snapshot.logErrors.slice(0, 20)) {
     attention.push({ severity: event.severity, title: event.title, detail: event.detail });
