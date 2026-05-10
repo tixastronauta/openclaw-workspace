@@ -155,8 +155,6 @@ export default async function CourseDetailPage({ params }: PageProps) {
             {course.cycle && (
               <Link href={`/ciclos/${slugify(course.cycle)}/`} className="rounded-full bg-slate-100 px-3 py-1 hover:bg-brand-100 hover:text-brand-700">{course.cycle}</Link>
             )}
-            {course.courseCode && <span className="rounded-full bg-slate-100 px-3 py-1">Curso {course.courseCode}</span>}
-            {course.reference && <span className="rounded-full bg-slate-100 px-3 py-1">Ref. {course.reference}</span>}
           </div>
 
           {course.courseDescription && (
