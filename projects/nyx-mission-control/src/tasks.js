@@ -46,7 +46,7 @@ function sanitizeTask(input, existing = {}) {
     owner,
     status,
     description: String(input.description ?? existing.description ?? '').trim(),
-    project: String(input.project ?? existing.project ?? '').trim(),
+
     priority: String(input.priority ?? existing.priority ?? 'normal').trim() || 'normal',
     executionStartedAt: input.executionStartedAt ?? existing.executionStartedAt,
     executionFinishedAt: input.executionFinishedAt ?? existing.executionFinishedAt,

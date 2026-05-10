@@ -51,13 +51,13 @@ function ownerBadge(owner) {
 
 function taskCard(task) {
   const execution = [task.lastRunSummary ? `<div class="task-run">Last run: ${esc(task.lastRunSummary)}</div>` : '', task.blockedReason ? `<div class="task-blocked">Blocked: ${esc(task.blockedReason)}</div>` : ''].join('');
-  return `<div class="task-card owner-${esc(task.owner)}" data-task-id="${esc(task.id)}"><div class="task-card-top">${ownerBadge(task.owner)}<span class="priority-pill">${esc(task.priority || 'normal')}</span></div><div class="task-title">${esc(task.title)}</div><div class="task-meta">${task.project ? `Project: ${esc(task.project)}` : 'No project'}${task.runId ? ` · ${esc(task.runId)}` : ''}</div>${task.description ? `<div class="task-desc">${esc(task.description)}</div>` : ''}${execution}<div class="task-actions"><button data-move="backlog">Backlog</button><button data-move="todo">To do</button><button data-move="in_progress">Doing</button><button data-move="blocked">Blocked</button><button data-move="done">Done</button><button class="danger" data-delete="true">Delete</button></div></div>`;
+  return `<div class="task-card owner-${esc(task.owner)}" data-task-id="${esc(task.id)}"><div class="task-card-top">${ownerBadge(task.owner)}<span class="priority-pill">${esc(task.priority || 'normal')}</span></div><div class="task-title">${esc(task.title)}</div><div class="task-meta">${task.runId ? esc(task.runId) : 'No run'}</div>${task.description ? `<div class="task-desc">${esc(task.description)}</div>` : ''}${execution}<div class="task-actions"><button data-move="backlog">Backlog</button><button data-move="todo">To do</button><button data-move="in_progress">Doing</button><button data-move="blocked">Blocked</button><button data-move="done">Done</button><button class="danger" data-delete="true">Delete</button></div></div>`;
 }
 
 function renderTasks() {
   const columns = taskBoard?.columns || [];
   const counts = (taskBoard?.tasks || []).reduce((acc, task) => ({ ...acc, [task.owner]: (acc[task.owner] || 0) + 1 }), {});
-  $('tasks').innerHTML = `<div class="card"><div class="section-head"><div><h2>Tasks</h2><p>Kanban operacional. Moves notificam <code>#nyx</code>.</p><div class="owner-legend">${ownerBadge('tiago')} <span>${counts.tiago || 0}</span>${ownerBadge('nyx')} <span>${counts.nyx || 0}</span></div></div><span class="badge OK">Kanban</span></div><form id="taskForm" class="task-form"><input name="title" required placeholder="New task…" /><select name="owner"><option value="tiago">Tiago</option><option value="nyx">Nyx</option></select><select name="status"><option value="backlog">Backlog</option><option value="todo">To do</option><option value="in_progress">In progress</option></select><input name="project" placeholder="Project optional" /><button type="submit">Create</button><textarea name="description" placeholder="Description optional"></textarea></form><div class="kanban">${columns.map((column) => `<div class="kanban-col"><div class="kanban-head"><strong>${esc(column.title)}</strong><span>${column.tasks.length}</span></div><div class="kanban-list">${column.tasks.map(taskCard).join('') || '<div class="no-events">No tasks</div>'}</div></div>`).join('')}</div></div>`;
+  $('tasks').innerHTML = `<div class="card"><div class="section-head"><div><h2>Tasks</h2><p>Kanban operacional. Moves notificam <code>#nyx</code>.</p><div class="owner-legend">${ownerBadge('tiago')} <span>${counts.tiago || 0}</span>${ownerBadge('nyx')} <span>${counts.nyx || 0}</span></div></div><span class="badge OK">Kanban</span></div><form id="taskForm" class="task-form"><input name="title" required placeholder="New task…" /><select name="owner"><option value="tiago">Tiago</option><option value="nyx">Nyx</option></select><select name="status"><option value="backlog">Backlog</option><option value="todo">To do</option><option value="in_progress">In progress</option></select><button type="submit">Create</button><textarea name="description" placeholder="Description optional"></textarea></form><div class="kanban">${columns.map((column) => `<div class="kanban-col"><div class="kanban-head"><strong>${esc(column.title)}</strong><span>${column.tasks.length}</span></div><div class="kanban-list">${column.tasks.map(taskCard).join('') || '<div class="no-events">No tasks</div>'}</div></div>`).join('')}</div></div>`;
   bindTaskEvents();
 }
 
@@ -77,9 +77,20 @@ function renderSettings() {
   $('settings').innerHTML = `<div class="card"><h2>Settings</h2><p>Read-only POC config. Future tweakable knobs live here.</p><pre>${esc(JSON.stringify(snapshot.config, null, 2))}</pre><h3>Sources</h3><pre>${esc(JSON.stringify(snapshot.sources, null, 2))}</pre></div>`;
 }
 
+function shouldPreserveTaskDraft() {
+  const form = document.getElementById('taskForm');
+  if (!form) return false;
+  const title = form.querySelector('[name="title"]')?.value.trim();
+  const description = form.querySelector('[name="description"]')?.value.trim();
+  return form.contains(document.activeElement) || Boolean(title || description);
+}
+
 function render() {
   if (!snapshot) return;
-  renderHealth(); renderHome(); renderCrons(); renderCalendar(); renderTasks(); renderProjects(); renderActivity(); renderLogs(); renderSettings();
+  const preserveTaskDraft = shouldPreserveTaskDraft();
+  renderHealth(); renderHome(); renderCrons(); renderCalendar();
+  if (!preserveTaskDraft) renderTasks();
+  renderProjects(); renderActivity(); renderLogs(); renderSettings();
 }
 
 async function loadTasks() {
