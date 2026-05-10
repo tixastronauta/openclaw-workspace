@@ -2,17 +2,27 @@
 
 Started: 2026-05-10
 
-A read-only, local-only Mission Control POC for Nyx/OpenClaw. It is meant to give Tiago a global cockpit for what is active, what needs attention, what ran well or badly, and how project work can be resumed without digging through chat history.
+A read-only, local-only Mission Control POC for Nyx/OpenClaw. It gives Tiago a global cockpit for what is active, what needs attention, what ran well or badly, and how project work can be resumed without digging through chat history.
+
+## Architecture decision
+
+Primary mode is **embedded in the same container/environment where the OpenClaw Gateway runs**.
+
+That environment already has the real OpenClaw CLI, workspace, logs, cron scheduler access, and runtime paths. Running Mission Control there avoids fragile sidecar bind mounts and missing CLI/tooling.
+
+Docker sidecar remains only as a development/fallback option.
 
 ## POC scope
 
 - Dark web dashboard, local-only.
 - Read-only: no approvals, command execution, cron edits, messages, or project edits.
-- Sources: OpenClaw cron CLI when available, workspace `projects/*`, OpenClaw logs, and local activity signals.
+- Sources: `openclaw cron list`, workspace `projects/*`, OpenClaw logs, and local activity signals.
 - Realtime updates via SSE.
 - Small local cache under `data/` for normalized events. The cache is an index, not the source of truth.
 
-## Run locally
+## Embedded run
+
+Inside the same container/environment where the OpenClaw Gateway runs:
 
 ```bash
 cd /data/.openclaw/workspace/projects/nyx-mission-control
@@ -21,45 +31,78 @@ npm start
 
 Open: <http://127.0.0.1:4317>
 
-## Docker sidecar
+Useful environment variables:
+
+```bash
+NYX_MC_HOST=0.0.0.0
+NYX_MC_PORT=4317
+WORKSPACE_DIR=/data/.openclaw/workspace
+OPENCLAW_DIR=/data/.openclaw
+CACHE_DIR=/data/.openclaw/workspace/projects/nyx-mission-control/data
+REFRESH_MS=30000
+```
+
+## Embedded background service
+
+For the custom OpenClaw image/entrypoint, start Mission Control as a separate background process:
+
+```bash
+/data/.openclaw/workspace/projects/nyx-mission-control/scripts/start-embedded.sh
+```
+
+Status and stop:
+
+```bash
+/data/.openclaw/workspace/projects/nyx-mission-control/scripts/status-embedded.sh
+/data/.openclaw/workspace/projects/nyx-mission-control/scripts/stop-embedded.sh
+```
+
+Entrypoint/supervisor integration example:
+
+```sh
+# Start OpenClaw/Gateway however the image already does it, then also start:
+/data/.openclaw/workspace/projects/nyx-mission-control/scripts/start-embedded.sh
+```
+
+The script writes:
+
+- PID: `data/mission-control.pid`
+- logs: `data/mission-control.log`
+
+## Health and diagnostics
+
+```bash
+curl http://127.0.0.1:4317/healthz
+curl http://127.0.0.1:4317/api/snapshot
+curl http://127.0.0.1:4317/api/diagnostic
+```
+
+## Expected runtime checks
+
+These should work in the embedded environment:
+
+```bash
+which openclaw
+openclaw cron list | head
+ls -la /data/.openclaw/workspace/projects
+ls -la /data/.openclaw/logs
+node -v
+npm -v
+```
+
+## Docker sidecar fallback / dev only
 
 ```bash
 cd /data/.openclaw/workspace/projects/nyx-mission-control
 docker compose up -d --build
 ```
 
-The POC binds to `127.0.0.1:4317` by default.
-
-If the Projects page is empty, the sidecar is probably not seeing the host workspace path. Set the host paths explicitly before starting:
+If using the sidecar mode, configure host bind mounts in `.env`:
 
 ```bash
-cat > .env <<'EOF'
 WORKSPACE_HOST_DIR=/actual/host/path/to/.openclaw/workspace
 OPENCLAW_HOST_DIR=/actual/host/path/to/.openclaw
-EOF
-
-docker compose up -d --build
-```
-
-Inside the container, `WORKSPACE_DIR` remains `/workspace`; the `.env` variables only control the host-side bind mounts.
-
-## Cron collector note
-
-The Crons page uses the `openclaw cron list` CLI. The default sidecar base image is `node:24-alpine`, which does not include the OpenClaw CLI, so the Crons page will show the cron source as unavailable.
-
-If you have a custom OpenClaw image that includes Node and the `openclaw` CLI, build with it:
-
-```bash
-cat >> .env <<'EOF'
 NYX_MC_BASE_IMAGE=your-openclaw-image:tag
-EOF
-
-docker compose up -d --build
 ```
 
-Quick check:
-
-```bash
-docker exec nyx-mission-control which openclaw
-docker exec nyx-mission-control openclaw cron list
-```
+Sidecar mode is not the recommended production path for this project.

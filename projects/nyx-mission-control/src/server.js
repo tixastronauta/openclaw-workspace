@@ -11,7 +11,8 @@ const publicDir = path.join(rootDir, 'public');
 const workspaceDir = process.env.WORKSPACE_DIR || '/data/.openclaw/workspace';
 const openclawDir = process.env.OPENCLAW_DIR || '/data/.openclaw';
 const cacheDir = process.env.CACHE_DIR || path.join(rootDir, 'data');
-const port = Number(process.env.PORT || 4317);
+const port = Number(process.env.PORT || process.env.NYX_MC_PORT || 4317);
+const host = process.env.HOST || process.env.NYX_MC_HOST || '0.0.0.0';
 const config = { ...DEFAULT_CONFIG, refreshMs: Number(process.env.REFRESH_MS || DEFAULT_CONFIG.refreshMs) };
 
 const clients = new Set();
@@ -90,8 +91,9 @@ async function sendStatic(req, res) {
 const server = http.createServer(async (req, res) => {
   try {
     const url = new URL(req.url, `http://${req.headers.host}`);
+    if (url.pathname === '/healthz') return sendJson(res, 200, { ok: true, generatedAt: latestSnapshot?.generatedAt || null, sources: latestSnapshot?.sources || [] });
     if (url.pathname === '/api/snapshot') return sendJson(res, 200, latestSnapshot || await buildSnapshot());
-    if (url.pathname === '/api/diagnostic') return sendJson(res, 200, { snapshot: latestSnapshot || await buildSnapshot(), env: { workspaceDir, openclawDir, cacheDir, port }, note: 'Read-only diagnostic bundle.' });
+    if (url.pathname === '/api/diagnostic') return sendJson(res, 200, { snapshot: latestSnapshot || await buildSnapshot(), env: { workspaceDir, openclawDir, cacheDir, host, port }, note: 'Read-only diagnostic bundle.' });
     if (url.pathname === '/api/refresh' && req.method === 'POST') return sendJson(res, 200, await buildSnapshot());
     if (url.pathname === '/events') {
       res.writeHead(200, {
@@ -113,10 +115,11 @@ const server = http.createServer(async (req, res) => {
 });
 
 await cache.init();
-await log('mission-control starting', { level: 'info', port, workspaceDir, openclawDir });
+await log('mission-control starting', { level: 'info', host, port, workspaceDir, openclawDir });
 await buildSnapshot();
 setInterval(() => buildSnapshot().catch(() => {}), config.refreshMs);
 
-server.listen(port, '0.0.0.0', () => {
-  console.log(`Nyx Mission Control listening on http://127.0.0.1:${port}`);
+server.listen(port, host, () => {
+  const displayHost = host === '0.0.0.0' ? '127.0.0.1' : host;
+  console.log(`Nyx Mission Control listening on http://${displayHost}:${port}`);
 });
