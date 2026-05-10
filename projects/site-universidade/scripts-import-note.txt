@@ -1,0 +1,2 @@
+The canonical v0.1 input is data/courses.csv exported from the Google Sheet.
+Spreadsheet URL: https://docs.google.com/spreadsheets/d/1m7LzrYoYTrCHYr3vBiaeK62ZOw-4GQVCbXse6d5FE6E/edit?gid=13716#gid=13716
