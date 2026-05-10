@@ -3,7 +3,6 @@ import { ADS_ENABLED, AdSlot } from "@/components/AdSlot";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Container } from "@/components/Container";
 import { CourseCard } from "@/components/CourseCard";
-import { SearchBox } from "@/components/SearchBox";
 import { getAllCourses } from "@/lib/courses";
 
 export const metadata: Metadata = {
@@ -23,15 +22,12 @@ export default function CoursesPage() {
   return (
     <Container className="py-10">
       <Breadcrumbs items={[{ label: "Cursos" }]} />
-      <div className="grid gap-8 lg:grid-cols-[1fr_360px]">
-        <section>
-          <h1 className="text-4xl font-bold tracking-tight text-slate-950">Cursos</h1>
-          <p className="mt-4 max-w-3xl text-slate-700">
-            Pesquisa cursos do ensino superior em Portugal, consulta notas de entrada disponíveis e acede rapidamente às fontes oficiais.
-          </p>
-        </section>
-        <SearchBox courses={courses} placeholder="Filtrar por nome do curso..." />
-      </div>
+      <section>
+        <h1 className="text-4xl font-bold tracking-tight text-slate-950">Cursos</h1>
+        <p className="mt-4 max-w-3xl text-slate-700">
+          Pesquisa cursos do ensino superior em Portugal, consulta notas de entrada disponíveis e acede rapidamente às fontes oficiais.
+        </p>
+      </section>
 
       {ADS_ENABLED && (
         <div className="mt-10">

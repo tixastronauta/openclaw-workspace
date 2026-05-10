@@ -1,32 +1,30 @@
 import Link from "next/link";
 import { ADS_ENABLED, AdSlot } from "@/components/AdSlot";
 import { Container } from "@/components/Container";
-import { SearchBox } from "@/components/SearchBox";
-import { getAllCourses, getCourseInitials, getCycles } from "@/lib/courses";
+import { getCourseInitials, getCycles } from "@/lib/courses";
 
 export default function HomePage() {
-  const courses = getAllCourses();
   const initials = getCourseInitials();
   const cycles = getCycles();
 
   return (
     <Container className="py-12 sm:py-16">
-      <section className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-wide text-brand-700">Diretório independente</p>
-          <h1 className="mt-3 max-w-3xl text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl">
-            Cursos do ensino superior em Portugal, reunidos num só sítio.
-          </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-700">
-            Pesquisa cursos, consulta notas de entrada disponíveis e segue rapidamente para as fontes oficiais DGES e InfoCursos. A informação deve ser sempre confirmada nos organismos oficiais.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/cursos/" className="rounded-xl bg-brand-700 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-brand-900">
-              Ver todos os cursos
-            </Link>
-          </div>
+      <section className="max-w-3xl">
+        <p className="text-sm font-semibold uppercase tracking-wide text-brand-700">Diretório independente</p>
+        <h1 className="mt-3 text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl">
+          Cursos do ensino superior em Portugal, reunidos num só sítio.
+        </h1>
+        <p className="mt-5 text-lg leading-8 text-slate-700">
+          Pesquisa cursos, consulta notas de entrada disponíveis e segue rapidamente para as fontes oficiais DGES e InfoCursos. A informação deve ser sempre confirmada nos organismos oficiais.
+        </p>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <Link href="/cursos/" className="rounded-xl bg-brand-700 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-brand-900">
+            Ver todos os cursos
+          </Link>
+          <Link href="/faculdades/" className="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 hover:border-brand-600 hover:text-brand-700">
+            Ver faculdades
+          </Link>
         </div>
-        <SearchBox courses={courses} />
       </section>
 
       {ADS_ENABLED && (
@@ -38,7 +36,6 @@ export default function HomePage() {
       <section className="mt-12 grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
           <h2 className="text-xl font-semibold text-slate-950">Explorar por inicial</h2>
-          <p className="mt-2 text-sm text-slate-600">Agrupamento simples gerado a partir dos nomes dos cursos disponíveis.</p>
           <div className="mt-5 flex flex-wrap gap-2">
             {initials.map((initial) => (
               <Link key={initial} href={`/cursos/#${initial}`} className="rounded-lg border border-slate-200 px-3 py-2 text-sm font-semibold text-slate-700 hover:border-brand-600 hover:text-brand-700">

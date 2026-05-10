@@ -167,6 +167,11 @@ export function getAllFaculties(): Faculty[] {
     .sort((a, b) => a.institutionName.localeCompare(b.institutionName, "pt"));
 }
 
+export function getFacultySlugByInstitution(institutionName?: string, institutionCode?: string): string | undefined {
+  if (!institutionName) return undefined;
+  return slugify([institutionName, institutionCode].filter(Boolean).join(" "));
+}
+
 export function getFacultyBySlug(slug: string): Faculty | undefined {
   return getAllFaculties().find((faculty) => faculty.slug === slug);
 }
