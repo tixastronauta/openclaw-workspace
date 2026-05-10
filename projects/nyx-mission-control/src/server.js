@@ -3,7 +3,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { EventCache } from './cache.js';
-import { DEFAULT_CONFIG, collectApprovals, collectCrons, collectLogs, collectProjects, summarize } from './collectors.js';
+import { DEFAULT_CONFIG, buildScheduleCalendar, collectApprovals, collectCrons, collectLogs, collectProjects, summarize } from './collectors.js';
+import { annotateCronsWithProjects, readCronProjectMap, updateCronProject } from './cron-projects.js';
 import { readProjectJson, writeProjectJson } from './project-json.js';
 import { createTask, deleteTask, getTaskBoard, updateTask } from './tasks.js';
 
@@ -31,12 +32,15 @@ async function buildSnapshot() {
   if (collecting) return latestSnapshot;
   collecting = true;
   try {
-    const [cronData, projectData, approvalData, logData] = await Promise.all([
+    const [cronData, projectData, approvalData, logData, cronProjectMap] = await Promise.all([
       collectCrons(),
       collectProjects(workspaceDir, config),
       collectApprovals(),
-      collectLogs(openclawDir, cacheDir, config)
+      collectLogs(openclawDir, cacheDir, config),
+      readCronProjectMap(cacheDir)
     ]);
+    cronData.crons = annotateCronsWithProjects(cronData.crons, projectData.projects, cronProjectMap);
+    cronData.calendar = buildScheduleCalendar(cronData.crons);
     const sourceEvents = [...cronData.events, ...logData.logEvents];
     await cache.append(sourceEvents);
     const events = await cache.read(1000);
@@ -116,6 +120,13 @@ const server = http.createServer(async (req, res) => {
     if (projectJsonMatch && (req.method === 'PUT' || req.method === 'PATCH')) {
       const body = await readJsonBody(req);
       const result = await writeProjectJson(workspaceDir, decodeURIComponent(projectJsonMatch[1]), body.json ?? body);
+      await buildSnapshot();
+      return sendJson(res, 200, result);
+    }
+    const cronProjectMatch = url.pathname.match(/^\/api\/crons\/([^/]+)\/project$/);
+    if (cronProjectMatch && (req.method === 'PUT' || req.method === 'PATCH')) {
+      const body = await readJsonBody(req);
+      const result = await updateCronProject(cacheDir, decodeURIComponent(cronProjectMatch[1]), body.projectSlug || '');
       await buildSnapshot();
       return sendJson(res, 200, result);
     }

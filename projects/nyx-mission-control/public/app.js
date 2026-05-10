@@ -1,5 +1,6 @@
 let snapshot = null;
 let taskBoard = null;
+let calendarProjectFilter = new Set();
 
 const $ = (id) => document.getElementById(id);
 const esc = (value) => String(value ?? '').replace(/[&<>'"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[c]));
@@ -37,11 +38,34 @@ function renderCrons() {
   $('crons').innerHTML = `<div class="card"><h2>Crons & Reminders</h2><table class="table"><thead><tr><th>Status</th><th>Name</th><th>Schedule</th><th>Next</th><th>Last</th></tr></thead><tbody>${(snapshot.crons || []).map((c) => `<tr><td>${badge(c.severity, c.status)}</td><td>${esc(c.name)}<div class="detail">${esc(c.description || '')}</div></td><td><code>${esc(c.scheduleText || '')}</code></td><td>${fmt(c.nextRunAt)}</td><td>${fmt(c.lastRunAt)}</td></tr>`).join('')}</tbody></table>${!snapshot.crons?.length ? empty('Cron source unavailable or no jobs parsed.') : ''}</div>`;
 }
 
+function calendarProjectKey(item) {
+  return item.projectSlug || '__unassigned';
+}
+
+function calendarItemVisible(item) {
+  return !calendarProjectFilter.size || calendarProjectFilter.has(calendarProjectKey(item));
+}
+
+function cronProjectSelect(item) {
+  const options = [`<option value="" ${!item.projectSlug ? 'selected' : ''}>Unassigned</option>`].concat((snapshot.projects || []).map((project) => `<option value="${esc(project.slug)}" ${item.projectSlug === project.slug ? 'selected' : ''}>${esc(project.name)}</option>`));
+  return `<select class="cron-project-select" data-cron-id="${esc(item.jobId || item.id)}" title="Associar cron a projeto">${options.join('')}</select>`;
+}
+
+function calendarProjectFilters() {
+  const items = [{ slug: '__unassigned', name: 'Unassigned' }, ...(snapshot.projects || []).map((project) => ({ slug: project.slug, name: project.name }))];
+  return `<div class="calendar-filters"><button type="button" data-calendar-all>All</button>${items.map((item) => `<label><input type="checkbox" value="${esc(item.slug)}" ${calendarProjectFilter.has(item.slug) ? 'checked' : ''} />${esc(item.name)}</label>`).join('')}</div>`;
+}
+
 function renderCalendar() {
   const calendar = snapshot.calendar || { alwaysRunning: [], days: [] };
-  const chips = (calendar.alwaysRunning || []).map((item) => `<span class="task-chip ${esc(item.color)}">${esc(item.title)} · ${esc(item.scheduleText)}</span>`).join('');
-  const days = (calendar.days || []).map((day) => `<div class="calendar-day"><div class="day-head"><strong>${esc(day.label)}</strong><small>${fmt(day.date).split(',')[0]}</small></div><div class="day-events">${(day.events || []).map((event) => `<div class="cal-event ${esc(event.color)} ${esc(event.severity)}"><strong>${esc(event.title)}</strong><span>${esc(event.time)} · ${esc(event.status)}</span></div>`).join('') || '<div class="no-events">—</div>'}</div></div>`).join('');
-  $('calendar').innerHTML = `<div class="card"><div class="section-head"><div><h2>Scheduled Tasks</h2><p>Nyx automated routines and reminders, mapped by week.</p></div><span class="badge OK">Week</span></div><div class="always"><h3>⚡ Always Running</h3><div class="chips">${chips || '<span class="muted">No interval jobs detected.</span>'}</div></div><div class="calendar-grid">${days}</div></div>`;
+  const running = (calendar.alwaysRunning || []).filter(calendarItemVisible);
+  const chips = running.map((item) => `<span class="task-chip ${esc(item.color)}" title="${esc(item.fullTitle || item.title)}\n${esc(item.scheduleText)}\nProjeto: ${esc(item.projectName || 'Unassigned')}"><strong>${esc(item.title)}</strong><small>${esc(item.projectName || 'Unassigned')} · ${esc(item.scheduleText)}</small>${cronProjectSelect(item)}</span>`).join('');
+  const days = (calendar.days || []).map((day) => {
+    const events = (day.events || []).filter(calendarItemVisible);
+    return `<div class="calendar-day"><div class="day-head"><strong>${esc(day.label)}</strong><small>${fmt(day.date).split(',')[0]}</small></div><div class="day-events">${events.map((event) => `<div class="cal-event ${esc(event.color)} ${esc(event.severity)}" title="${esc(event.fullTitle || event.title)}\n${esc(event.scheduleText)}\nProjeto: ${esc(event.projectName || 'Unassigned')}"><strong>${esc(event.title)}</strong><span>${esc(event.time)} · ${esc(event.status)} · ${esc(event.projectName || 'Unassigned')}</span>${cronProjectSelect(event)}</div>`).join('') || '<div class="no-events">—</div>'}</div></div>`;
+  }).join('');
+  $('calendar').innerHTML = `<div class="card"><div class="section-head"><div><h2>Scheduled Tasks</h2><p>Nyx automated routines and reminders, mapped by week.</p></div><span class="badge OK">Week</span></div>${calendarProjectFilters()}<div class="always"><h3>⚡ Always Running</h3><div class="chips">${chips || '<span class="muted">No interval jobs detected for selected projects.</span>'}</div></div><div class="calendar-grid">${days}</div></div>`;
+  bindCalendarEvents();
 }
 
 function ownerBadge(owner) {
@@ -121,6 +145,24 @@ async function load() {
   const [snapshotRes] = await Promise.all([fetch('/api/snapshot'), loadTasks()]);
   snapshot = await snapshotRes.json();
   render();
+}
+
+function bindCalendarEvents() {
+  const container = $('calendar');
+  container.querySelector('[data-calendar-all]')?.addEventListener('click', () => {
+    calendarProjectFilter = new Set();
+    renderCalendar();
+  });
+  container.querySelectorAll('.calendar-filters input[type="checkbox"]').forEach((input) => input.addEventListener('change', () => {
+    if (input.checked) calendarProjectFilter.add(input.value);
+    else calendarProjectFilter.delete(input.value);
+    renderCalendar();
+  }));
+  container.querySelectorAll('.cron-project-select').forEach((select) => select.addEventListener('change', async () => {
+    select.disabled = true;
+    await fetch(`/api/crons/${encodeURIComponent(select.dataset.cronId)}/project`, { method: 'PUT', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ projectSlug: select.value }) });
+    await load();
+  }));
 }
 
 async function loadProjectJson(card) {

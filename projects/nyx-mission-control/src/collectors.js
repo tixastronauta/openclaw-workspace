@@ -137,6 +137,16 @@ function jobColor(name = '') {
   return colors[Math.abs(hash) % colors.length];
 }
 
+function calendarJobFields(job) {
+  return {
+    projectSlug: job.projectSlug || '',
+    projectName: job.projectName || '',
+    projectSource: job.projectSource || 'none',
+    fullTitle: job.name,
+    description: job.description || ''
+  };
+}
+
 function makeCalendarEvent(job, date) {
   return {
     id: `${job.id}:${date.toISOString()}`,
@@ -148,11 +158,12 @@ function makeCalendarEvent(job, date) {
     color: jobColor(job.name),
     scheduleText: job.scheduleText,
     status: job.status,
-    enabled: job.enabled !== false
+    enabled: job.enabled !== false,
+    ...calendarJobFields(job)
   };
 }
 
-function buildScheduleCalendar(crons) {
+export function buildScheduleCalendar(crons) {
   const weekStart = startOfWeek();
   const days = Array.from({ length: 7 }, (_, index) => {
     const date = new Date(weekStart);
@@ -164,7 +175,7 @@ function buildScheduleCalendar(crons) {
   for (const job of crons.filter((cron) => cron.enabled !== false)) {
     const schedule = job.schedule || {};
     if (schedule.kind === 'every') {
-      alwaysRunning.push({ id: job.id, title: job.name, scheduleText: job.scheduleText, severity: job.severity, color: jobColor(job.name) });
+      alwaysRunning.push({ id: job.id, jobId: job.id, title: job.name, scheduleText: job.scheduleText, severity: job.severity, color: jobColor(job.name), ...calendarJobFields(job) });
       continue;
     }
     if (schedule.kind === 'at' && schedule.at) {

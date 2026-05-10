@@ -59,8 +59,15 @@ pre { background: #070a0f; border: 1px solid var(--line); border-radius: 12px; p
 .always { background: rgba(255,255,255,.035); border: 1px solid var(--line); border-radius: 14px; padding: 12px; margin-bottom: 14px; }
 .always h3 { margin: 0 0 10px; font-size: 14px; color: var(--muted); }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
-.task-chip { display: inline-flex; padding: 7px 10px; border-radius: 9px; font-size: 12px; border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.06); }
+.task-chip { display: inline-grid; gap: 4px; padding: 7px 10px; border-radius: 9px; font-size: 12px; border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.06); max-width: 320px; }
+.task-chip strong, .task-chip small { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.task-chip small { color: var(--muted); }
 .muted { color: var(--muted); }
+.calendar-filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 14px; padding: 10px; border: 1px solid var(--line); border-radius: 12px; background: rgba(255,255,255,.025); }
+.calendar-filters label, .calendar-filters button { color: var(--muted); border: 1px solid var(--line); background: rgba(255,255,255,.04); border-radius: 999px; padding: 6px 9px; font-size: 12px; }
+.calendar-filters button { cursor: pointer; color: var(--text); }
+.calendar-filters input { margin-right: 5px; }
+.cron-project-select { width: 100%; max-width: 180px; background: rgba(0,0,0,.25); border: 1px solid rgba(255,255,255,.14); color: var(--text); border-radius: 7px; padding: 4px 6px; font-size: 11px; }
 .calendar-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; width: 100%; overflow: hidden; }
 .calendar-day { min-width: 0; min-height: 520px; background: rgba(255,255,255,.025); border: 1px solid var(--line); border-radius: 14px; padding: 8px; overflow: hidden; }
 .day-head { display: flex; justify-content: space-between; align-items: center; gap: 6px; color: var(--muted); padding: 4px 4px 8px; border-bottom: 1px solid rgba(255,255,255,.06); margin-bottom: 8px; }
@@ -70,6 +77,7 @@ pre { background: #070a0f; border: 1px solid var(--line); border-radius: 12px; p
 .cal-event { min-width: 0; max-width: 100%; border-radius: 9px; padding: 8px; border: 1px solid rgba(255,255,255,.10); background: rgba(255,255,255,.06); min-height: 52px; overflow: hidden; }
 .cal-event strong { display: block; width: 100%; min-width: 0; font-size: 12px; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .cal-event span { display: block; width: 100%; color: rgba(231,237,246,.72); font-size: 11px; margin-top: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cal-event .cron-project-select { margin-top: 6px; }
 .no-events { color: var(--muted); text-align: center; padding: 20px 0; }
 .orange { background-color: rgba(249,115,22,.20); border-color: rgba(249,115,22,.38); }
 .blue { background-color: rgba(59,130,246,.20); border-color: rgba(59,130,246,.38); }
