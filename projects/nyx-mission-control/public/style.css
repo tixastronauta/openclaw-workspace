@@ -122,11 +122,17 @@ pre { background: #070a0f; border: 1px solid var(--line); border-radius: 12px; p
 .project-badges { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px; }
 .project-editor { margin-top: 12px; border-top: 1px solid rgba(255,255,255,.07); padding-top: 10px; }
 .project-editor summary { cursor: pointer; color: var(--accent-2); }
-.project-editor textarea { width: 100%; min-height: 260px; margin-top: 10px; background: #070a0f; border: 1px solid var(--line); color: var(--text); border-radius: 10px; padding: 10px; font: 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; resize: vertical; }
+.project-field-grid { display: grid; grid-template-columns: repeat(4, minmax(130px, 1fr)); gap: 10px; margin-top: 10px; }
+.project-field-grid label { display: grid; gap: 5px; color: var(--muted); font-size: 12px; }
+.project-field-grid .wide { grid-column: span 4; }
+.project-field-grid input, .project-field-grid select { width: 100%; background: rgba(255,255,255,.05); border: 1px solid var(--line); color: var(--text); border-radius: 10px; padding: 9px; font: inherit; }
+.advanced-json { margin-top: 10px; }
+.advanced-json summary { color: var(--muted); }
+.project-editor textarea { width: 100%; min-height: 220px; margin-top: 10px; background: #070a0f; border: 1px solid var(--line); color: var(--text); border-radius: 10px; padding: 10px; font: 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; resize: vertical; }
 .project-editor-actions { display: flex; gap: 8px; margin-top: 8px; }
 .project-editor button { cursor: pointer; background: rgba(255,255,255,.05); border: 1px solid var(--line); color: var(--text); border-radius: 10px; padding: 9px; font: inherit; }
 .project-editor button[type="submit"] { background: linear-gradient(135deg, rgba(139,92,246,.75), rgba(34,211,238,.45)); }
 .project-editor button:disabled { opacity: .5; cursor: wait; }
 .project-save-status { color: var(--muted); font-size: 12px; margin-top: 6px; }
-@media (max-width: 1180px) { .calendar-grid { grid-template-columns: repeat(7, 170px); overflow-x: auto; padding-bottom: 8px; } .task-form { grid-template-columns: 1fr 120px; } }
+@media (max-width: 1180px) { .calendar-grid { grid-template-columns: repeat(7, 170px); overflow-x: auto; padding-bottom: 8px; } .task-form { grid-template-columns: 1fr 120px; } .project-field-grid { grid-template-columns: 1fr 1fr; } .project-field-grid .wide { grid-column: span 2; } }
 @media (max-width: 980px) { .sidebar { position: static; width: auto; } main { margin-left: 0; } .topbar { display: block; } .span-8,.span-6,.span-4 { grid-column: span 12; } .kpis { grid-template-columns: repeat(2, 1fr); } }
