@@ -16,7 +16,7 @@ function CycleIcon({ cycle }: { cycle?: string }) {
   const label = kind === "licenciatura" ? "Licenciatura" : kind === "mestrado" ? "Mestrado" : "Preparatório";
 
   return (
-    <span className="relative inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-500" title={label} aria-label={label}>
+    <span className="relative inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-500" title={label} aria-label={label}>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" aria-hidden="true">
         {kind === "licenciatura" && (
           <>
@@ -51,9 +51,11 @@ export function CourseCard({ course }: { course: Course }) {
 
   return (
     <Link href={`/cursos/${course.slug}/`} className="group block rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
-      <h2 className="flex items-start gap-3 text-lg font-semibold text-slate-950">
-        <CycleIcon cycle={course.cycle} />
-        <span className="hover:text-brand-700">{course.courseName}</span>
+      <h2 className="text-lg font-semibold text-slate-950">
+        <span className="inline-flex items-center gap-2 hover:text-brand-700">
+          <span>{course.courseName}</span>
+          <CycleIcon cycle={course.cycle} />
+        </span>
       </h2>
       {institutionLabel && <p className="mt-2 text-sm text-slate-600">{institutionLabel}</p>}
       <span className="mt-4 inline-flex text-sm font-semibold text-brand-700 hover:text-brand-900">
