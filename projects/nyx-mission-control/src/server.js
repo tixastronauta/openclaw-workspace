@@ -4,6 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { EventCache } from './cache.js';
 import { DEFAULT_CONFIG, collectApprovals, collectCrons, collectLogs, collectProjects, summarize } from './collectors.js';
+import { updateProjectOverride } from './project-overrides.js';
 import { createTask, deleteTask, getTaskBoard, updateTask } from './tasks.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -32,7 +33,7 @@ async function buildSnapshot() {
   try {
     const [cronData, projectData, approvalData, logData] = await Promise.all([
       collectCrons(),
-      collectProjects(workspaceDir, config),
+      collectProjects(workspaceDir, config, cacheDir),
       collectApprovals(),
       collectLogs(openclawDir, cacheDir, config)
     ]);
@@ -110,6 +111,12 @@ const server = http.createServer(async (req, res) => {
     const taskMatch = url.pathname.match(/^\/api\/tasks\/([^/]+)$/);
     if (taskMatch && req.method === 'PATCH') return sendJson(res, 200, await updateTask(cacheDir, taskMatch[1], await readJsonBody(req)));
     if (taskMatch && req.method === 'DELETE') return sendJson(res, 200, await deleteTask(cacheDir, taskMatch[1]));
+    const projectMatch = url.pathname.match(/^\/api\/projects\/([^/]+)$/);
+    if (projectMatch && req.method === 'PATCH') {
+      const result = await updateProjectOverride(cacheDir, decodeURIComponent(projectMatch[1]), await readJsonBody(req));
+      await buildSnapshot();
+      return sendJson(res, 200, result);
+    }
     if (url.pathname === '/events') {
       res.writeHead(200, {
         'content-type': 'text/event-stream; charset=utf-8',

@@ -61,8 +61,17 @@ function renderTasks() {
   bindTaskEvents();
 }
 
+function projectStatusOptions(value) {
+  return ['active', 'blocked', 'done', 'paused', 'unknown'].map((status) => `<option value="${status}" ${value === status ? 'selected' : ''}>${status}</option>`).join('');
+}
+
+function projectOrgOptions(value) {
+  return ['OK', 'precisa de organização'].map((org) => `<option value="${org}" ${value === org ? 'selected' : ''}>${org}</option>`).join('');
+}
+
 function renderProjects() {
-  $('projects').innerHTML = `<div class="card"><h2>Projects</h2><table class="table"><thead><tr><th>Status</th><th>Project</th><th>Updated</th><th>Next action</th><th>Files</th><th>Org</th></tr></thead><tbody>${(snapshot.projects || []).map((p) => `<tr><td>${badge(p.severity, p.status)}</td><td>${esc(p.name)}<div class="detail">${esc(p.slug)}</div></td><td>${fmt(p.updatedAt)}</td><td>${esc(p.nextAction)}</td><td>${esc((p.importantFiles || []).join(', ') || '-')}</td><td>${esc(p.organization)}</td></tr>`).join('')}</tbody></table></div>`;
+  $('projects').innerHTML = `<div class="card"><div class="section-head"><div><h2>Projects</h2><p>Organiza projetos aqui: estado, próxima ação e nota ficam guardados no Mission Control.</p></div><span class="badge OK">Editable</span></div><div class="project-list">${(snapshot.projects || []).map((p) => `<form class="project-card" data-project-slug="${esc(p.slug)}"><div class="project-main"><div><strong>${esc(p.name)}</strong><div class="detail">${esc(p.slug)} · updated ${fmt(p.updatedAt)}</div><div class="detail">Files: ${esc((p.importantFiles || []).join(', ') || '-')}</div></div><div>${badge(p.severity, p.status)}</div></div><div class="project-controls"><label>Status<select name="status">${projectStatusOptions(p.status)}</select></label><label>Organização<select name="organization">${projectOrgOptions(p.organization)}</select></label><label>Próxima ação<input name="nextAction" value="${esc(p.nextAction || '')}" placeholder="O que é preciso fazer a seguir?" /></label><label>Nota<textarea name="note" placeholder="Nota opcional de organização">${esc(p.organizationNote || '')}</textarea></label><button type="submit">Save</button></div></form>`).join('') || empty('Sem projetos.')}</div></div>`;
+  bindProjectEvents();
 }
 
 function renderActivity() {
@@ -85,12 +94,19 @@ function shouldPreserveTaskDraft() {
   return form.contains(document.activeElement) || Boolean(title || description);
 }
 
+function shouldPreserveProjectEdit() {
+  const activeProjectForm = document.activeElement?.closest?.('[data-project-slug]');
+  return Boolean(activeProjectForm);
+}
+
 function render() {
   if (!snapshot) return;
   const preserveTaskDraft = shouldPreserveTaskDraft();
+  const preserveProjectEdit = shouldPreserveProjectEdit();
   renderHealth(); renderHome(); renderCrons(); renderCalendar();
   if (!preserveTaskDraft) renderTasks();
-  renderProjects(); renderActivity(); renderLogs(); renderSettings();
+  if (!preserveProjectEdit) renderProjects();
+  renderActivity(); renderLogs(); renderSettings();
 }
 
 async function loadTasks() {
@@ -102,6 +118,21 @@ async function load() {
   const [snapshotRes] = await Promise.all([fetch('/api/snapshot'), loadTasks()]);
   snapshot = await snapshotRes.json();
   render();
+}
+
+function bindProjectEvents() {
+  document.querySelectorAll('[data-project-slug]').forEach((form) => form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const submit = form.querySelector('button[type="submit"]');
+    submit.disabled = true;
+    const data = Object.fromEntries(new FormData(form).entries());
+    try {
+      await fetch(`/api/projects/${encodeURIComponent(form.dataset.projectSlug)}`, { method: 'PATCH', headers: { 'content-type': 'application/json' }, body: JSON.stringify(data) });
+      await load();
+    } finally {
+      submit.disabled = false;
+    }
+  }));
 }
 
 function bindTaskEvents() {

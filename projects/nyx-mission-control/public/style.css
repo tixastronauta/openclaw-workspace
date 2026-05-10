@@ -108,5 +108,14 @@ pre { background: #070a0f; border: 1px solid var(--line); border-radius: 12px; p
 .task-actions button.danger { color: #ffb4c2; border-color: rgba(255,92,122,.35); }
 .task-actions button.danger:hover { color: #fff; background: rgba(255,92,122,.16); border-color: rgba(255,92,122,.75); }
 .task-form button:disabled, .task-actions button:disabled { opacity: .5; cursor: wait; }
-@media (max-width: 1180px) { .calendar-grid { grid-template-columns: repeat(7, 170px); overflow-x: auto; padding-bottom: 8px; } .task-form { grid-template-columns: 1fr 120px; } }
+.project-list { display: grid; gap: 12px; }
+.project-card { background: rgba(255,255,255,.03); border: 1px solid var(--line); border-radius: 14px; padding: 12px; }
+.project-main { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
+.project-controls { display: grid; grid-template-columns: 130px 190px minmax(220px, 1fr) minmax(220px, 1fr) auto; gap: 8px; align-items: end; }
+.project-controls label { display: grid; gap: 5px; color: var(--muted); font-size: 12px; }
+.project-controls input, .project-controls select, .project-controls textarea, .project-controls button { width: 100%; background: rgba(255,255,255,.05); border: 1px solid var(--line); color: var(--text); border-radius: 10px; padding: 9px; font: inherit; }
+.project-controls textarea { min-height: 42px; resize: vertical; }
+.project-controls button { cursor: pointer; background: linear-gradient(135deg, rgba(139,92,246,.75), rgba(34,211,238,.45)); }
+.project-controls button:disabled { opacity: .5; cursor: wait; }
+@media (max-width: 1180px) { .calendar-grid { grid-template-columns: repeat(7, 170px); overflow-x: auto; padding-bottom: 8px; } .task-form { grid-template-columns: 1fr 120px; } .project-controls { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 980px) { .sidebar { position: static; width: auto; } main { margin-left: 0; } .topbar { display: block; } .span-8,.span-6,.span-4 { grid-column: span 12; } .kpis { grid-template-columns: repeat(2, 1fr); } }

@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
+import { readProjectOverrides } from './project-overrides.js';
 
 const execFileAsync = promisify(execFile);
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -303,8 +304,9 @@ async function latestMtime(dir) {
   return latest || Date.now();
 }
 
-export async function collectProjects(workspaceDir, config = DEFAULT_CONFIG) {
+export async function collectProjects(workspaceDir, config = DEFAULT_CONFIG, cacheDir = null) {
   const projectsDir = path.join(workspaceDir, 'projects');
+  const overrides = cacheDir ? await readProjectOverrides(cacheDir) : {};
   try {
     const entries = await fs.readdir(projectsDir, { withFileTypes: true });
     const projectDirs = entries.filter((item) => item.isDirectory()).sort((a, b) => a.name.localeCompare(b.name));
@@ -323,8 +325,9 @@ export async function collectProjects(workspaceDir, config = DEFAULT_CONFIG) {
       ]);
       const combined = [projectJson ? JSON.stringify(projectJson) : '', doc?.content || ''].join('\n');
       const latest = await latestMtime(dir);
-      const status = inferStatus(projectJson, combined, latest, config);
-      const nextAction = projectJson?.nextAction || findNextAction(combined) || 'não definido / precisa de organização';
+      const override = overrides[entry.name] || {};
+      const status = override.status || inferStatus(projectJson, combined, latest, config);
+      const nextAction = override.nextAction || projectJson?.nextAction || findNextAction(combined) || 'não definido / precisa de organização';
       const hasMetadata = Boolean(projectJson) || Boolean(await exists(path.join(dir, 'README.md')));
       const importantFiles = [];
       for (const name of ['project.json', 'README.md', 'TODO.md', 'todo.md', 'data/state.json']) {
@@ -339,7 +342,9 @@ export async function collectProjects(workspaceDir, config = DEFAULT_CONFIG) {
         updatedAt: new Date(latest).toISOString(),
         nextAction,
         importantFiles,
-        organization: hasMetadata && projectJson ? 'OK' : 'precisa de organização',
+        organization: override.organization || (hasMetadata && projectJson ? 'OK' : 'precisa de organização'),
+        organizationNote: override.note || '',
+        editable: true,
         risks: stale ? [`Sem atualização há mais de ${config.staleActiveProjectDays} dias`] : []
       });
     }
