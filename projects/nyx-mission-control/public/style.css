@@ -79,5 +79,20 @@ pre { background: #070a0f; border: 1px solid var(--line); border-radius: 12px; p
 .slate { background-color: rgba(100,116,139,.20); border-color: rgba(100,116,139,.38); }
 .cal-event.Erro { box-shadow: inset 3px 0 0 var(--err); }
 .cal-event.Aviso { box-shadow: inset 3px 0 0 var(--warn); }
-@media (max-width: 1180px) { .calendar-grid { grid-template-columns: repeat(7, 170px); overflow-x: auto; padding-bottom: 8px; } }
+.task-form { display: grid; grid-template-columns: 2fr 120px 140px 1fr auto; gap: 8px; margin-bottom: 16px; }
+.task-form input, .task-form select, .task-form textarea, .task-form button { background: rgba(255,255,255,.05); border: 1px solid var(--line); color: var(--text); border-radius: 10px; padding: 10px; font: inherit; }
+.task-form textarea { grid-column: 1 / -1; min-height: 70px; resize: vertical; }
+.task-form button { cursor: pointer; background: linear-gradient(135deg, rgba(139,92,246,.75), rgba(34,211,238,.45)); }
+.kanban { display: grid; grid-template-columns: repeat(5, minmax(190px, 1fr)); gap: 10px; overflow-x: auto; padding-bottom: 8px; }
+.kanban-col { min-width: 190px; background: rgba(255,255,255,.025); border: 1px solid var(--line); border-radius: 14px; padding: 10px; }
+.kanban-head { display: flex; justify-content: space-between; color: var(--muted); margin-bottom: 10px; }
+.kanban-head strong { color: var(--text); }
+.kanban-list { display: grid; gap: 8px; }
+.task-card { background: rgba(255,255,255,.055); border: 1px solid rgba(255,255,255,.10); border-radius: 12px; padding: 10px; }
+.task-title { font-weight: 700; line-height: 1.25; }
+.task-meta, .task-desc { color: var(--muted); font-size: 12px; margin-top: 5px; }
+.task-actions { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
+.task-actions button { cursor: pointer; border: 1px solid var(--line); background: rgba(0,0,0,.18); color: var(--muted); border-radius: 8px; padding: 5px 7px; font-size: 11px; }
+.task-actions button:hover { color: var(--text); border-color: rgba(139,92,246,.7); }
+@media (max-width: 1180px) { .calendar-grid { grid-template-columns: repeat(7, 170px); overflow-x: auto; padding-bottom: 8px; } .task-form { grid-template-columns: 1fr 120px; } }
 @media (max-width: 980px) { .sidebar { position: static; width: auto; } main { margin-left: 0; } .topbar { display: block; } .span-8,.span-6,.span-4 { grid-column: span 12; } .kpis { grid-template-columns: repeat(2, 1fr); } }

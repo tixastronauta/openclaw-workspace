@@ -4,6 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { EventCache } from './cache.js';
 import { DEFAULT_CONFIG, collectApprovals, collectCrons, collectLogs, collectProjects, summarize } from './collectors.js';
+import { createTask, getTaskBoard, updateTask } from './tasks.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
@@ -72,6 +73,14 @@ function sendJson(res, status, data) {
   res.end(JSON.stringify(data, null, 2));
 }
 
+async function readJsonBody(req) {
+  const chunks = [];
+  for await (const chunk of req) chunks.push(chunk);
+  const raw = Buffer.concat(chunks).toString('utf8');
+  if (!raw.trim()) return {};
+  return JSON.parse(raw);
+}
+
 async function sendStatic(req, res) {
   const url = new URL(req.url, `http://${req.headers.host}`);
   const requested = url.pathname === '/' ? '/index.html' : decodeURIComponent(url.pathname);
@@ -94,8 +103,12 @@ const server = http.createServer(async (req, res) => {
     const url = new URL(req.url, `http://${req.headers.host}`);
     if (url.pathname === '/healthz') return sendJson(res, 200, { ok: true, generatedAt: latestSnapshot?.generatedAt || null, sources: latestSnapshot?.sources || [] });
     if (url.pathname === '/api/snapshot') return sendJson(res, 200, latestSnapshot || await buildSnapshot());
-    if (url.pathname === '/api/diagnostic') return sendJson(res, 200, { snapshot: latestSnapshot || await buildSnapshot(), env: { workspaceDir, openclawDir, cacheDir, host, port }, note: 'Read-only diagnostic bundle.' });
+    if (url.pathname === '/api/diagnostic') return sendJson(res, 200, { snapshot: latestSnapshot || await buildSnapshot(), env: { workspaceDir, openclawDir, cacheDir, host, port }, note: 'Diagnostic bundle.' });
     if (url.pathname === '/api/refresh' && req.method === 'POST') return sendJson(res, 200, await buildSnapshot());
+    if (url.pathname === '/api/tasks' && req.method === 'GET') return sendJson(res, 200, await getTaskBoard(cacheDir));
+    if (url.pathname === '/api/tasks' && req.method === 'POST') return sendJson(res, 201, await createTask(cacheDir, await readJsonBody(req)));
+    const taskMatch = url.pathname.match(/^\/api\/tasks\/([^/]+)$/);
+    if (taskMatch && req.method === 'PATCH') return sendJson(res, 200, await updateTask(cacheDir, taskMatch[1], await readJsonBody(req)));
     if (url.pathname === '/events') {
       res.writeHead(200, {
         'content-type': 'text/event-stream; charset=utf-8',

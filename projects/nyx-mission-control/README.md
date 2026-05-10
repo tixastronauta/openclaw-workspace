@@ -15,8 +15,9 @@ Docker sidecar remains only as a development/fallback option.
 ## POC scope
 
 - Dark web dashboard, local-only.
-- Read-only: no approvals, command execution, cron edits, messages, or project edits.
-- Sources: `openclaw cron list --json`, workspace `projects/*`, OpenClaw logs, and local activity signals.
+- Operational Tasks/Kanban with local persistence and Discord notifications on card moves.
+- Still no approvals, command execution, cron edits, or project edits from the UI.
+- Sources: `openclaw cron list --json`, workspace `projects/*`, OpenClaw logs, local activity signals, and `data/tasks.json`.
 - Calendar-style Scheduled Tasks view inspired by the Mission Control video: weekly cron map plus always-running interval routines.
 - Realtime updates via SSE.
 - Small local cache under `data/` for normalized events. The cache is an index, not the source of truth.

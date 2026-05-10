@@ -10,7 +10,7 @@
     "embedded:start": "./scripts/start-embedded.sh",
     "embedded:stop": "./scripts/stop-embedded.sh",
     "embedded:status": "./scripts/status-embedded.sh",
-    "check": "node --check src/server.js && node --check src/collectors.js && node --check src/cache.js"
+    "check": "node --check src/server.js && node --check src/collectors.js && node --check src/cache.js && node --check src/tasks.js"
   },
   "engines": {
     "node": ">=22"
