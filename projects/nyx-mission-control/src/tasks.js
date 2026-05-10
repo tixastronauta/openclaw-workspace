@@ -103,6 +103,9 @@ async function notifyDiscord(event) {
   } else if (event.kind === 'task_updated') {
     lines.push(`✏️ **Task atualizada**: ${task.title}`);
     lines.push(`Responsável: **${ownerLabel(task.owner)}** · Estado: **${statusLabel(task.status)}**`);
+  } else if (event.kind === 'task_deleted') {
+    lines.push(`🗑️ **Task apagada**: ${task.title}`);
+    lines.push(`Responsável era: **${ownerLabel(task.owner)}** · Estado era: **${statusLabel(task.status)}**`);
   }
   if (task.project) lines.push(`Projeto: ${task.project}`);
   if (task.owner === 'nyx' && event.kind === 'task_created') {
@@ -167,6 +170,17 @@ export async function updateTask(cacheDir, id, patch) {
   }
   await audit(cacheDir, { ...event, notification: { ok: true, skipped: 'not a move' } });
   return { task: next, notification: { ok: true, skipped: 'not a move' } };
+}
+
+export async function deleteTask(cacheDir, id) {
+  const tasks = await readTasks(cacheDir);
+  const index = tasks.findIndex((task) => task.id === id);
+  if (index === -1) throw new Error('Task not found');
+  const [task] = tasks.splice(index, 1);
+  await writeTasks(cacheDir, tasks);
+  const event = { ts: nowIso(), kind: 'task_deleted', task };
+  queueNotifyAndAudit(cacheDir, event);
+  return { task, notification: { queued: true } };
 }
 
 export async function getTaskBoard(cacheDir) {

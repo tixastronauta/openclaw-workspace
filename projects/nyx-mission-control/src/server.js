@@ -4,7 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { EventCache } from './cache.js';
 import { DEFAULT_CONFIG, collectApprovals, collectCrons, collectLogs, collectProjects, summarize } from './collectors.js';
-import { createTask, getTaskBoard, updateTask } from './tasks.js';
+import { createTask, deleteTask, getTaskBoard, updateTask } from './tasks.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
@@ -109,6 +109,7 @@ const server = http.createServer(async (req, res) => {
     if (url.pathname === '/api/tasks' && req.method === 'POST') return sendJson(res, 201, await createTask(cacheDir, await readJsonBody(req)));
     const taskMatch = url.pathname.match(/^\/api\/tasks\/([^/]+)$/);
     if (taskMatch && req.method === 'PATCH') return sendJson(res, 200, await updateTask(cacheDir, taskMatch[1], await readJsonBody(req)));
+    if (taskMatch && req.method === 'DELETE') return sendJson(res, 200, await deleteTask(cacheDir, taskMatch[1]));
     if (url.pathname === '/events') {
       res.writeHead(200, {
         'content-type': 'text/event-stream; charset=utf-8',

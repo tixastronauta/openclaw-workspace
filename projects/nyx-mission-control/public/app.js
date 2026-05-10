@@ -50,7 +50,7 @@ function ownerBadge(owner) {
 }
 
 function taskCard(task) {
-  return `<div class="task-card owner-${esc(task.owner)}" data-task-id="${esc(task.id)}"><div class="task-card-top">${ownerBadge(task.owner)}<span class="priority-pill">${esc(task.priority || 'normal')}</span></div><div class="task-title">${esc(task.title)}</div><div class="task-meta">${task.project ? `Project: ${esc(task.project)}` : 'No project'}</div>${task.description ? `<div class="task-desc">${esc(task.description)}</div>` : ''}<div class="task-actions"><button data-move="backlog">Backlog</button><button data-move="todo">To do</button><button data-move="in_progress">Doing</button><button data-move="blocked">Blocked</button><button data-move="done">Done</button></div></div>`;
+  return `<div class="task-card owner-${esc(task.owner)}" data-task-id="${esc(task.id)}"><div class="task-card-top">${ownerBadge(task.owner)}<span class="priority-pill">${esc(task.priority || 'normal')}</span></div><div class="task-title">${esc(task.title)}</div><div class="task-meta">${task.project ? `Project: ${esc(task.project)}` : 'No project'}</div>${task.description ? `<div class="task-desc">${esc(task.description)}</div>` : ''}<div class="task-actions"><button data-move="backlog">Backlog</button><button data-move="todo">To do</button><button data-move="in_progress">Doing</button><button data-move="blocked">Blocked</button><button data-move="done">Done</button><button class="danger" data-delete="true">Delete</button></div></div>`;
 }
 
 function renderTasks() {
@@ -112,6 +112,15 @@ function bindTaskEvents() {
     const card = button.closest('[data-task-id]');
     card.classList.add('moving');
     await fetch(`/api/tasks/${card.dataset.taskId}`, { method: 'PATCH', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ status: button.dataset.move }) });
+    await loadTasks();
+    renderTasks();
+  }));
+  document.querySelectorAll('[data-task-id] [data-delete]').forEach((button) => button.addEventListener('click', async () => {
+    const card = button.closest('[data-task-id]');
+    const title = card.querySelector('.task-title')?.textContent || 'this task';
+    if (!confirm(`Delete task: ${title}?`)) return;
+    card.classList.add('moving');
+    await fetch(`/api/tasks/${card.dataset.taskId}`, { method: 'DELETE' });
     await loadTasks();
     renderTasks();
   }));
