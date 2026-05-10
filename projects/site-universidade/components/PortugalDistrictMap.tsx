@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { PORTUGAL_DISTRICT_PATHS } from "@/lib/portugalDistrictPaths";
 
 type DistrictSummary = {
@@ -16,15 +16,28 @@ function plural(value: number, one: string, many: string) {
 
 export function PortugalDistrictMap({ districts }: { districts: DistrictSummary[] }) {
   const byName = useMemo(() => new Map(districts.map((district) => [district.name, district])), [districts]);
+  const [autoIndex, setAutoIndex] = useState(0);
   const [hovered, setHovered] = useState<DistrictSummary | null>(null);
+  const [paused, setPaused] = useState(false);
+  const activeDistrict = hovered ?? districts[autoIndex % Math.max(districts.length, 1)] ?? null;
+
+  useEffect(() => {
+    if (paused || districts.length === 0) return;
+
+    const timer = window.setInterval(() => {
+      setAutoIndex((current) => (current + 1) % districts.length);
+    }, 1800);
+
+    return () => window.clearInterval(timer);
+  }, [districts.length, paused]);
 
   return (
     <div className="relative w-full">
-      {hovered && (
+      {activeDistrict && (
         <div className="absolute right-2 top-2 z-10 rounded-2xl border border-brand-100 bg-white/95 px-4 py-3 text-right text-sm shadow-lg backdrop-blur">
-          <p className="font-semibold text-brand-900">{hovered.name}</p>
-          <p className="text-brand-800">{plural(hovered.facultyCount, "instituição", "instituições")}</p>
-          <p className="text-brand-800">{plural(hovered.courseCount, "curso", "cursos")}</p>
+          <p className="font-semibold text-brand-900">{activeDistrict.name}</p>
+          <p className="text-brand-800">{plural(activeDistrict.facultyCount, "instituição", "instituições")}</p>
+          <p className="text-brand-800">{plural(activeDistrict.courseCount, "curso", "cursos")}</p>
         </div>
       )}
 
@@ -37,17 +50,29 @@ export function PortugalDistrictMap({ districts }: { districts: DistrictSummary[
         <g filter="url(#mapShadow)">
           {PORTUGAL_DISTRICT_PATHS.map((shape) => {
             const district = byName.get(shape.name);
-            const active = hovered?.name === shape.name;
+            const active = activeDistrict?.name === shape.name;
             const hasData = Boolean(district);
 
             return (
               <a
                 key={shape.name}
                 href={district ? `/distritos/${district.slug}/` : "/distritos/"}
-                onMouseEnter={() => setHovered(district ?? null)}
-                onMouseLeave={() => setHovered(null)}
-                onFocus={() => setHovered(district ?? null)}
-                onBlur={() => setHovered(null)}
+                onMouseEnter={() => {
+                  setPaused(true);
+                  setHovered(district ?? null);
+                }}
+                onMouseLeave={() => {
+                  setHovered(null);
+                  setPaused(false);
+                }}
+                onFocus={() => {
+                  setPaused(true);
+                  setHovered(district ?? null);
+                }}
+                onBlur={() => {
+                  setHovered(null);
+                  setPaused(false);
+                }}
                 aria-label={district ? `${district.name}: ${plural(district.facultyCount, "instituição", "instituições")}, ${plural(district.courseCount, "curso", "cursos")}` : shape.name}
                 className="outline-none"
               >

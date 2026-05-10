@@ -38,25 +38,18 @@ export default function FacultiesPage() {
       <section className="mt-10 grid gap-10">
         {Object.entries(grouped).map(([initial, items]) => (
           <div key={initial} id={initial}>
-            <h2 className="mb-4 border-b border-slate-200 pb-2 text-2xl font-semibold text-slate-950">{initial}</h2>
+            <h2 className="sticky top-16 z-20 -mx-2 mb-4 border-b border-slate-200 bg-slate-50/95 px-2 py-2 text-2xl font-semibold text-slate-950 backdrop-blur">{initial}</h2>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {items.map((faculty) => (
-                <article key={faculty.slug} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+                <Link key={faculty.slug} href={`/faculdades/${faculty.slug}/`} className="block rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
                   <h2 className="text-lg font-semibold text-slate-950">
-                    <Link href={`/faculdades/${faculty.slug}/`} className="hover:text-brand-700">
-                      {faculty.institutionName}
-                    </Link>
+                    <span className="hover:text-brand-700">{faculty.institutionName}{faculty.institutionSigla ? ` (${faculty.institutionSigla})` : ""}</span>
                   </h2>
-                  {faculty.institutionSigla && (
-                    <div className="mt-2 flex flex-wrap gap-2 text-xs font-medium uppercase tracking-wide text-slate-500">
-                      <span className="rounded-full bg-slate-100 px-3 py-1">{faculty.institutionSigla}</span>
-                    </div>
-                  )}
                   <p className="mt-2 text-sm text-slate-600">{faculty.courses.length} curso{faculty.courses.length === 1 ? "" : "s"} {faculty.courses.length === 1 ? "disponível" : "disponíveis"}</p>
-                  <Link href={`/faculdades/${faculty.slug}/`} className="mt-4 inline-flex text-sm font-semibold text-brand-700 hover:text-brand-900">
+                  <span className="mt-4 inline-flex text-sm font-semibold text-brand-700 hover:text-brand-900">
                     Ver cursos →
-                  </Link>
-                </article>
+                  </span>
+                </Link>
               ))}
             </div>
           </div>

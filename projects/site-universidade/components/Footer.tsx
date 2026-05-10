@@ -7,7 +7,7 @@ export function Footer() {
       <Container className="grid gap-4 py-8 text-sm text-slate-600 sm:grid-cols-2">
         <p>Universidade.pt é um diretório independente. Confirma sempre a informação nas fontes oficiais.</p>
         <nav className="flex flex-wrap gap-4 sm:justify-end">
-          <Link href="/contacto/" className="hover:text-brand-700">Contacto</Link>
+          <Link href="/quem-somos/" className="hover:text-brand-700">Quem somos</Link>
           <Link href="/privacidade/" className="hover:text-brand-700">Privacidade</Link>
           <Link href="/termos/" className="hover:text-brand-700">Termos</Link>
         </nav>

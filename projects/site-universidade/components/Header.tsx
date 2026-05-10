@@ -8,7 +8,7 @@ const nav = [
   { href: "/cursos/", label: "Cursos" },
   { href: "/faculdades/", label: "Faculdades" },
   { href: "/ciclos/", label: "Ciclos" },
-  { href: "/sobre/", label: "Sobre" }
+  { href: "/quem-somos/", label: "Quem somos" }
 ];
 
 export function Header() {

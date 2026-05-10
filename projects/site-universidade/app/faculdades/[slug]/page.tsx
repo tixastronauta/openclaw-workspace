@@ -47,10 +47,7 @@ export default async function FacultyPage({ params }: PageProps) {
     <Container className="py-10">
       <Breadcrumbs items={[{ label: "Faculdades", href: "/faculdades/" }, { label: faculty.institutionName }]} />
       <section>
-        <div className="flex flex-wrap items-center gap-3">
-          <h1 className="text-4xl font-bold tracking-tight text-slate-950">{faculty.institutionName}</h1>
-          {faculty.institutionSigla && <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium uppercase tracking-wide text-slate-500">{faculty.institutionSigla}</span>}
-        </div>
+        <h1 className="text-4xl font-bold tracking-tight text-slate-950">{faculty.institutionName}{faculty.institutionSigla ? ` (${faculty.institutionSigla})` : ""}</h1>
         <div className="mt-3 flex flex-wrap gap-2 text-xs font-medium uppercase tracking-wide text-slate-500">
           <span className="rounded-full bg-slate-100 px-3 py-1">{faculty.courses.length} curso{faculty.courses.length === 1 ? "" : "s"}</span>
         </div>

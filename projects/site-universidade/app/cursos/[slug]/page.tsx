@@ -147,9 +147,8 @@ export default async function CourseDetailPage({ params }: PageProps) {
           {course.institutionName && (
             <div className="mt-3 flex flex-wrap items-center gap-2">
               {facultySlug
-                ? <Link href={`/faculdades/${facultySlug}/`} className="text-lg font-medium text-slate-700 hover:text-brand-700">{course.institutionName}</Link>
-                : <p className="text-lg font-medium text-slate-700">{course.institutionName}</p>}
-              {course.institutionSigla && <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium uppercase tracking-wide text-slate-500">{course.institutionSigla}</span>}
+                ? <Link href={`/faculdades/${facultySlug}/`} className="text-lg font-medium text-slate-700 hover:text-brand-700">{institutionLabel}</Link>
+                : <p className="text-lg font-medium text-slate-700">{institutionLabel}</p>}
             </div>
           )}
           <div className="mt-3 flex flex-wrap gap-2 text-xs font-medium uppercase tracking-wide text-slate-500">
@@ -166,11 +165,11 @@ export default async function CourseDetailPage({ params }: PageProps) {
             </blockquote>
           )}
 
-          <p className="mt-5 max-w-3xl text-slate-700">
-            Consulta as notas de entrada disponíveis para este curso e confirma sempre a informação atualizada nas fontes oficiais.
-          </p>
           <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="text-2xl font-semibold text-slate-950">Notas de entrada</h2>
+            <p className="mt-3 max-w-3xl text-slate-700">
+              Consulta as notas de entrada disponíveis para este curso e confirma sempre a informação atualizada nas fontes oficiais.
+            </p>
             {course.grades.length > 0 ? (
               <>
                 <GradesChart grades={course.grades} />

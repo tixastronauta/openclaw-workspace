@@ -54,14 +54,14 @@ export default async function DistritoPage({ params }: PageProps) {
         {institutions.map(([institutionName, institutionCourses]) => {
           const first = institutionCourses[0];
           const facultySlug = getFacultySlugByInstitution(first?.institutionName, first?.institutionCode);
+          const institutionLabel = [institutionName, first?.institutionSigla ? `(${first.institutionSigla})` : undefined].filter(Boolean).join(" ");
 
           return (
             <div key={institutionName}>
-              <h2 className="mb-2 border-b border-slate-200 pb-2 text-2xl font-semibold text-slate-950">
+              <h2 className="sticky top-16 z-20 -mx-2 mb-2 border-b border-slate-200 bg-slate-50/95 px-2 py-2 text-2xl font-semibold text-slate-950 backdrop-blur">
                 {facultySlug ? (
-                  <Link href={`/faculdades/${facultySlug}/`} className="hover:text-brand-700">{institutionName}</Link>
-                ) : institutionName}
-                {first?.institutionSigla && <span className="ml-3 align-middle rounded-full bg-slate-100 px-3 py-1 text-xs font-medium uppercase tracking-wide text-slate-500">{first.institutionSigla}</span>}
+                  <Link href={`/faculdades/${facultySlug}/`} className="hover:text-brand-700">{institutionLabel}</Link>
+                ) : institutionLabel}
               </h2>
               {(first?.cidade || first?.morada) && (
                 <p className="mb-4 text-sm text-slate-500">

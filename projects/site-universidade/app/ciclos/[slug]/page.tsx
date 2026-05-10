@@ -38,7 +38,7 @@ export default async function CyclePage({ params }: PageProps) {
       <section>
         <h1 className="text-4xl font-bold tracking-tight text-slate-950">{cycle}</h1>
         <p className="mt-4 max-w-3xl text-slate-700">
-          {courses.length} curso{courses.length === 1 ? "" : "s"} disponível{courses.length === 1 ? "" : "eis"} neste ciclo.
+          {courses.length} curso{courses.length === 1 ? "" : "s"} {courses.length === 1 ? "disponível" : "disponíveis"} neste ciclo.
         </p>
       </section>
 
