@@ -88,11 +88,21 @@ pre { background: #070a0f; border: 1px solid var(--line); border-radius: 12px; p
 .kanban-head { display: flex; justify-content: space-between; color: var(--muted); margin-bottom: 10px; }
 .kanban-head strong { color: var(--text); }
 .kanban-list { display: grid; gap: 8px; }
-.task-card { background: rgba(255,255,255,.055); border: 1px solid rgba(255,255,255,.10); border-radius: 12px; padding: 10px; }
+.task-card { position: relative; background: rgba(255,255,255,.055); border: 1px solid rgba(255,255,255,.10); border-radius: 12px; padding: 10px; transition: opacity .15s ease, transform .15s ease; }
+.task-card.owner-nyx { border-color: rgba(139,92,246,.55); box-shadow: inset 4px 0 0 var(--accent); }
+.task-card.owner-tiago { border-color: rgba(34,211,238,.50); box-shadow: inset 4px 0 0 var(--accent-2); }
+.task-card.moving { opacity: .55; transform: scale(.98); }
+.task-card-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 8px; }
+.owner-pill, .priority-pill { display: inline-flex; align-items: center; border-radius: 999px; padding: 4px 8px; font-size: 11px; border: 1px solid rgba(255,255,255,.14); }
+.owner-pill.owner-nyx { color: #d8c7ff; background: rgba(139,92,246,.24); border-color: rgba(139,92,246,.55); }
+.owner-pill.owner-tiago { color: #b9f2ff; background: rgba(34,211,238,.18); border-color: rgba(34,211,238,.50); }
+.priority-pill { color: var(--muted); background: rgba(255,255,255,.04); }
+.owner-legend { display: flex; align-items: center; gap: 8px; margin-top: 8px; color: var(--muted); font-size: 12px; }
 .task-title { font-weight: 700; line-height: 1.25; }
 .task-meta, .task-desc { color: var(--muted); font-size: 12px; margin-top: 5px; }
 .task-actions { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
 .task-actions button { cursor: pointer; border: 1px solid var(--line); background: rgba(0,0,0,.18); color: var(--muted); border-radius: 8px; padding: 5px 7px; font-size: 11px; }
 .task-actions button:hover { color: var(--text); border-color: rgba(139,92,246,.7); }
+.task-form button:disabled, .task-actions button:disabled { opacity: .5; cursor: wait; }
 @media (max-width: 1180px) { .calendar-grid { grid-template-columns: repeat(7, 170px); overflow-x: auto; padding-bottom: 8px; } .task-form { grid-template-columns: 1fr 120px; } }
 @media (max-width: 980px) { .sidebar { position: static; width: auto; } main { margin-left: 0; } .topbar { display: block; } .span-8,.span-6,.span-4 { grid-column: span 12; } .kpis { grid-template-columns: repeat(2, 1fr); } }

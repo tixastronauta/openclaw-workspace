@@ -44,14 +44,19 @@ function renderCalendar() {
   $('calendar').innerHTML = `<div class="card"><div class="section-head"><div><h2>Scheduled Tasks</h2><p>Nyx automated routines and reminders, mapped by week.</p></div><span class="badge OK">Week</span></div><div class="always"><h3>⚡ Always Running</h3><div class="chips">${chips || '<span class="muted">No interval jobs detected.</span>'}</div></div><div class="calendar-grid">${days}</div></div>`;
 }
 
+function ownerBadge(owner) {
+  const label = owner === 'nyx' ? '😼 Nyx' : '👤 Tiago';
+  return `<span class="owner-pill owner-${esc(owner)}">${label}</span>`;
+}
+
 function taskCard(task) {
-  const owner = task.owner === 'nyx' ? 'Nyx' : 'Tiago';
-  return `<div class="task-card" data-task-id="${esc(task.id)}"><div class="task-title">${esc(task.title)}</div><div class="task-meta">${esc(owner)} · ${esc(task.priority || 'normal')}${task.project ? ` · ${esc(task.project)}` : ''}</div>${task.description ? `<div class="task-desc">${esc(task.description)}</div>` : ''}<div class="task-actions"><button data-move="backlog">Backlog</button><button data-move="todo">To do</button><button data-move="in_progress">Doing</button><button data-move="blocked">Blocked</button><button data-move="done">Done</button></div></div>`;
+  return `<div class="task-card owner-${esc(task.owner)}" data-task-id="${esc(task.id)}"><div class="task-card-top">${ownerBadge(task.owner)}<span class="priority-pill">${esc(task.priority || 'normal')}</span></div><div class="task-title">${esc(task.title)}</div><div class="task-meta">${task.project ? `Project: ${esc(task.project)}` : 'No project'}</div>${task.description ? `<div class="task-desc">${esc(task.description)}</div>` : ''}<div class="task-actions"><button data-move="backlog">Backlog</button><button data-move="todo">To do</button><button data-move="in_progress">Doing</button><button data-move="blocked">Blocked</button><button data-move="done">Done</button></div></div>`;
 }
 
 function renderTasks() {
   const columns = taskBoard?.columns || [];
-  $('tasks').innerHTML = `<div class="card"><div class="section-head"><div><h2>Tasks</h2><p>Kanban operacional. Tasks atribuídas à Nyx são responsabilidade dela; movimentos notificam <code>#nyx</code>.</p></div><span class="badge OK">Kanban</span></div><form id="taskForm" class="task-form"><input name="title" required placeholder="New task…" /><select name="owner"><option value="tiago">Tiago</option><option value="nyx">Nyx</option></select><select name="status"><option value="backlog">Backlog</option><option value="todo">To do</option><option value="in_progress">In progress</option></select><input name="project" placeholder="Project optional" /><button type="submit">Create</button><textarea name="description" placeholder="Description optional"></textarea></form><div class="kanban">${columns.map((column) => `<div class="kanban-col"><div class="kanban-head"><strong>${esc(column.title)}</strong><span>${column.tasks.length}</span></div><div class="kanban-list">${column.tasks.map(taskCard).join('') || '<div class="no-events">No tasks</div>'}</div></div>`).join('')}</div></div>`;
+  const counts = (taskBoard?.tasks || []).reduce((acc, task) => ({ ...acc, [task.owner]: (acc[task.owner] || 0) + 1 }), {});
+  $('tasks').innerHTML = `<div class="card"><div class="section-head"><div><h2>Tasks</h2><p>Kanban operacional. Moves notificam <code>#nyx</code>.</p><div class="owner-legend">${ownerBadge('tiago')} <span>${counts.tiago || 0}</span>${ownerBadge('nyx')} <span>${counts.nyx || 0}</span></div></div><span class="badge OK">Kanban</span></div><form id="taskForm" class="task-form"><input name="title" required placeholder="New task…" /><select name="owner"><option value="tiago">Tiago</option><option value="nyx">Nyx</option></select><select name="status"><option value="backlog">Backlog</option><option value="todo">To do</option><option value="in_progress">In progress</option></select><input name="project" placeholder="Project optional" /><button type="submit">Create</button><textarea name="description" placeholder="Description optional"></textarea></form><div class="kanban">${columns.map((column) => `<div class="kanban-col"><div class="kanban-head"><strong>${esc(column.title)}</strong><span>${column.tasks.length}</span></div><div class="kanban-list">${column.tasks.map(taskCard).join('') || '<div class="no-events">No tasks</div>'}</div></div>`).join('')}</div></div>`;
   bindTaskEvents();
 }
 
@@ -92,13 +97,20 @@ function bindTaskEvents() {
   if (form) form.addEventListener('submit', async (event) => {
     event.preventDefault();
     const data = Object.fromEntries(new FormData(form).entries());
-    await fetch('/api/tasks', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(data) });
-    form.reset();
-    await loadTasks();
-    renderTasks();
+    const submit = form.querySelector('button[type="submit"]');
+    submit.disabled = true;
+    try {
+      await fetch('/api/tasks', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(data) });
+      form.reset();
+      await loadTasks();
+      renderTasks();
+    } finally {
+      submit.disabled = false;
+    }
   });
   document.querySelectorAll('[data-task-id] [data-move]').forEach((button) => button.addEventListener('click', async () => {
     const card = button.closest('[data-task-id]');
+    card.classList.add('moving');
     await fetch(`/api/tasks/${card.dataset.taskId}`, { method: 'PATCH', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ status: button.dataset.move }) });
     await loadTasks();
     renderTasks();

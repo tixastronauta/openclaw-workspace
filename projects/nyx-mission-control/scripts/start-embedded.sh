@@ -29,7 +29,7 @@ WORKSPACE_DIR="$WORKSPACE_DIR" \
 OPENCLAW_DIR="$OPENCLAW_DIR" \
 CACHE_DIR="$CACHE_DIR" \
 REFRESH_MS="$REFRESH_MS" \
-nohup npm start >> "$LOG_FILE" 2>&1 &
+nohup node src/server.js >> "$LOG_FILE" 2>&1 &
 
 PID="$!"
 echo "$PID" > "$PID_FILE"

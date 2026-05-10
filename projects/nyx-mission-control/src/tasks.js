@@ -80,6 +80,17 @@ function statusLabel(status) {
   return TASK_COLUMNS.find((column) => column.id === status)?.title || status;
 }
 
+async function notifyAndAudit(cacheDir, event) {
+  const notification = await notifyDiscord(event);
+  await audit(cacheDir, { ...event, notification });
+}
+
+function queueNotifyAndAudit(cacheDir, event) {
+  notifyAndAudit(cacheDir, event).catch((error) => {
+    console.warn('[tasks] notification/audit failed:', error instanceof Error ? error.message : String(error));
+  });
+}
+
 async function notifyDiscord(event) {
   const task = event.task;
   const lines = [];
@@ -124,9 +135,8 @@ export async function createTask(cacheDir, input) {
   tasks.unshift(task);
   await writeTasks(cacheDir, tasks);
   const event = { ts: nowIso(), kind: 'task_created', task };
-  const notification = await notifyDiscord(event);
-  await audit(cacheDir, { ...event, notification });
-  return { task, notification };
+  queueNotifyAndAudit(cacheDir, event);
+  return { task, notification: { queued: true } };
 }
 
 export async function updateTask(cacheDir, id, patch) {
@@ -151,9 +161,12 @@ export async function updateTask(cacheDir, id, patch) {
   tasks[index] = next;
   await writeTasks(cacheDir, tasks);
   const event = { ts: nowIso(), kind, from: before.status, to: next.status, task: next };
-  const notification = before.status !== next.status ? await notifyDiscord(event) : { ok: true, skipped: 'not a move' };
-  await audit(cacheDir, { ...event, notification });
-  return { task: next, notification };
+  if (before.status !== next.status) {
+    queueNotifyAndAudit(cacheDir, event);
+    return { task: next, notification: { queued: true } };
+  }
+  await audit(cacheDir, { ...event, notification: { ok: true, skipped: 'not a move' } });
+  return { task: next, notification: { ok: true, skipped: 'not a move' } };
 }
 
 export async function getTaskBoard(cacheDir) {
