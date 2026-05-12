@@ -5,6 +5,8 @@ import { ADS_ENABLED, AdSlot } from "@/components/AdSlot";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Container } from "@/components/Container";
 import { GradesChart } from "@/components/GradesChart";
+import { InfoCursosBarChart } from "@/components/InfoCursosBarChart";
+import { InfoCursosPieChart } from "@/components/InfoCursosPieChart";
 import { MapEmbed } from "@/components/MapEmbed";
 import { getAllCourses, getCourseBySlug, getFacultySlugByInstitution, getRelatedCourses } from "@/lib/courses";
 import { slugify } from "@/lib/slug";
@@ -24,10 +26,22 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!course) return {};
 
   const description = `Notas de entrada disponíveis para ${course.courseName}${course.institutionName ? ` em ${course.institutionName}` : ""} e ligações para fontes oficiais DGES e InfoCursos.`;
+  const keywordTerms = [
+    course.courseName,
+    course.institutionName,
+    course.cycle,
+    ...course.courseName
+      .split(/[^A-Za-z0-9À-ÿ]+/)
+      .map((word) => word.trim())
+      .filter((word) => word.length > 2),
+  ].filter((term): term is string => Boolean(term));
+
+  const keywords = Array.from(new Set(keywordTerms.map((term) => term.toLocaleLowerCase("pt-PT"))));
 
   return {
     title: course.institutionName ? `${course.courseName} - ${course.institutionName}` : course.courseName,
     description,
+    keywords,
     alternates: { canonical: `/cursos/${course.slug}/` },
     openGraph: {
       title: `${course.courseName} | ${siteConfig.name}`,
@@ -111,6 +125,14 @@ export default async function CourseDetailPage({ params }: PageProps) {
   if (!course) notFound();
 
   const relatedCourses = getRelatedCourses(course);
+  const sameInstitutionCourses = getAllCourses()
+    .filter((item) =>
+      item.slug !== course.slug &&
+      item.institutionName &&
+      item.institutionName === course.institutionName &&
+      item.institutionCode === course.institutionCode,
+    )
+    .slice(0, 4);
   const facultySlug = getFacultySlugByInstitution(course.institutionName, course.institutionCode);
   const institutionLabel = [course.institutionName, course.institutionSigla ? `(${course.institutionSigla})` : undefined].filter(Boolean).join(" ");
   const mapQuery = [course.morada, course.cidade, course.distrito, course.institutionName].filter(Boolean).join(", ");
@@ -163,35 +185,34 @@ export default async function CourseDetailPage({ params }: PageProps) {
             </blockquote>
           )}
 
+          {/* Unemployment rate */}
+          {course.metrics?.unemploymentRate !== undefined && (
+            <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h2 className="text-2xl font-semibold text-slate-950">Taxa de desemprego</h2>
+              <p className="mt-3 text-slate-700">
+                Segundo os dados do IEFP, a taxa de desemprego dos diplomados neste curso é de{" "}
+                <span className="font-bold text-brand-700">
+                  {(course.metrics.unemploymentRate * 100).toFixed(1)}%
+                </span>
+                {course.metrics.graduatesCount !== undefined && (
+                  <span>
+                    {" "}(baseada em {Math.round(course.metrics.graduatesCount)} diplomados
+                    {course.metrics.unemployedCount !== undefined &&
+                      `, cerca de ${course.metrics.unemployedCount.toFixed(1)} desempregados`}
+                    ).
+                  </span>
+                )}
+              </p>
+            </section>
+          )}
+
           <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="text-2xl font-semibold text-slate-950">Notas de entrada</h2>
             <p className="mt-3 max-w-3xl text-slate-700">
               Consulta as notas de entrada disponíveis para este curso e confirma sempre a informação atualizada nas fontes oficiais.
             </p>
             {course.grades.length > 0 ? (
-              <>
-                <GradesChart grades={course.grades} />
-                <div className="mt-6 overflow-x-auto">
-                  <table className="w-full min-w-72 text-left text-sm">
-                    <thead className="bg-slate-50 text-slate-700">
-                      <tr>
-                        <th className="rounded-l-lg px-4 py-3 font-semibold">Ano</th>
-                        <th className="px-4 py-3 font-semibold">Fase</th>
-                        <th className="rounded-r-lg px-4 py-3 font-semibold">Nota</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-slate-100">
-                      {course.grades.map((grade) => (
-                        <tr key={`${grade.year}-${grade.phase ?? "sem-fase"}`}>
-                          <td className="px-4 py-3 text-slate-700">{grade.year}</td>
-                          <td className="px-4 py-3 text-slate-700">{grade.phase ?? "—"}</td>
-                          <td className="px-4 py-3 font-semibold text-slate-950">{grade.grade}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </>
+              <GradesChart grades={course.grades} />
             ) : (
               <p className="mt-4 text-sm text-slate-600">Não existem notas de entrada disponíveis para este curso.</p>
             )}
@@ -200,6 +221,85 @@ export default async function CourseDetailPage({ params }: PageProps) {
           {ADS_ENABLED && (
             <section className="mt-8">
               <AdSlot label="Página de curso — conteúdo intermédio" />
+            </section>
+          )}
+
+          {/* Final grades distribution */}
+          {course.finalGradesDistribution && course.finalGradesDistribution.length > 0 && (
+            <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h2 className="text-2xl font-semibold text-slate-950">Distribuição das classificações finais</h2>
+              <p className="mt-1 text-sm text-slate-500">Percentagem de alunos por nota final de curso</p>
+              <div className="mt-4">
+                <InfoCursosBarChart
+                  data={course.finalGradesDistribution.map((item) => ({
+                    label: item.grade,
+                    value: Math.round(item.percentage * 1000) / 10
+                  }))}
+                  unit="%"
+                />
+              </div>
+            </section>
+          )}
+
+          {/* Gender and nationality */}
+          {(course.genderData || course.nationalityData) && (
+            <div className="mt-8 grid gap-6 sm:grid-cols-2">
+              {course.genderData && (
+                <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                  <h2 className="text-lg font-semibold text-slate-950">Género dos alunos</h2>
+                  <InfoCursosPieChart
+                    data={[
+                      { name: "Homens", value: Math.round(course.genderData.men * 1000) / 10, color: "#2563eb" },
+                      { name: "Mulheres", value: Math.round(course.genderData.women * 1000) / 10, color: "#db2777" }
+                    ]}
+                    unit="%"
+                  />
+                </section>
+              )}
+              {course.nationalityData && (
+                <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                  <h2 className="text-lg font-semibold text-slate-950">Nacionalidade dos alunos</h2>
+                  <InfoCursosPieChart
+                    data={[
+                      { name: "Portugueses", value: Math.round(course.nationalityData.portuguese * 1000) / 10, color: "#16a34a" },
+                      { name: "Estrangeiros", value: Math.round(course.nationalityData.foreign * 1000) / 10, color: "#ea580c" }
+                    ]}
+                    unit="%"
+                  />
+                </section>
+              )}
+            </div>
+          )}
+
+          {/* Age distribution */}
+          {course.ageDistribution && course.ageDistribution.length > 0 && (
+            <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h2 className="text-2xl font-semibold text-slate-950">Distribuição por idades</h2>
+              <p className="mt-1 text-sm text-slate-500">Percentagem de alunos por grupo etário</p>
+              <div className="mt-4">
+                <InfoCursosBarChart
+                  data={course.ageDistribution.map((item) => ({
+                    label: item.age,
+                    value: Math.round(item.percentage * 1000) / 10
+                  }))}
+                  unit="%"
+                  color="#7c3aed"
+                />
+              </div>
+            </section>
+          )}
+
+          {sameInstitutionCourses.length > 0 && (
+            <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h2 className="text-2xl font-semibold text-slate-950">Outros cursos da mesma instituição</h2>
+              <div className="mt-4 grid gap-2 sm:grid-cols-2">
+                {sameInstitutionCourses.map((sameCourse) => (
+                  <Link key={sameCourse.slug} href={`/cursos/${sameCourse.slug}/`} className="rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700">
+                    <span className="block">{sameCourse.courseName}</span>
+                    {sameCourse.cycle && <span className="block text-xs font-normal text-slate-500">{sameCourse.cycle}</span>}
+                  </Link>
+                ))}
+              </div>
             </section>
           )}
 

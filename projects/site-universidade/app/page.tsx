@@ -2,12 +2,84 @@ import Link from "next/link";
 import { ADS_ENABLED, AdSlot } from "@/components/AdSlot";
 import { Container } from "@/components/Container";
 import { PortugalDistrictMap } from "@/components/PortugalDistrictMap";
+import { Top10CuriositiesCarousel } from "@/components/Top10CuriositiesCarousel";
 import { getAllDistricts, getCourseInitials, getCycles } from "@/lib/courses";
 import { slugify } from "@/lib/slug";
+import { getTop10Metrics } from "@/lib/top10";
+
+const DISTRICT_PREFIX: Record<string, string> = {
+  "Aveiro": "em",
+  "Beja": "em",
+  "Braga": "em",
+  "Bragança": "em",
+  "Castelo Branco": "em",
+  "Coimbra": "em",
+  "Évora": "em",
+  "Faro": "em",
+  "Guarda": "na",
+  "Leiria": "em",
+  "Lisboa": "em",
+  "Portalegre": "em",
+  "Porto": "no",
+  "Santarém": "em",
+  "Setúbal": "em",
+  "Viana do Castelo": "em",
+  "Vila Real": "em",
+  "Viseu": "em",
+  "Açores": "nos",
+  "Madeira": "na"
+};
+
+function districtWithPrefix(district?: string): string | undefined {
+  if (!district) return undefined;
+  return `${DISTRICT_PREFIX[district] ?? "em"} ${district}`;
+}
+
+function metricLead(metricId: string): string {
+  switch (metricId) {
+    case "mais-estrangeiros":
+      return "O curso com mais estrangeiros é";
+    case "mais-homens":
+      return "O curso com mais homens é";
+    case "mais-mulheres":
+      return "O curso com mais mulheres é";
+    case "media-mais-alta":
+      return "O curso com a média final mais alta é";
+    case "media-mais-baixa":
+      return "O curso com a média final mais baixa é";
+    case "melhor-empregabilidade":
+      return "O curso com melhor empregabilidade é";
+    case "pior-empregabilidade":
+      return "O curso com pior empregabilidade é";
+    case "perfil-etario-mais-elevado":
+      return "O curso com perfil etário mais elevado é";
+    default:
+      return "o destaque dos rankings é";
+  }
+}
 
 export default function HomePage() {
   const initials = getCourseInitials();
   const cycles = getCycles();
+  const top10Facts = getTop10Metrics()
+    .map((metric) => {
+      const first = metric.items[0]?.course;
+      if (!first) return undefined;
+
+      const where = districtWithPrefix(first.distrito);
+      const sigla = first.institutionSigla ? ` (${first.institutionSigla})` : "";
+      const location = where ? `${where}${sigla}` : `${first.institutionName ?? "instituição não identificada"}${sigla}`;
+
+      return {
+        id: metric.id,
+        href: `/top-10/#${metric.id}`,
+        lead: metricLead(metric.id),
+        courseName: first.courseName,
+        location
+      };
+    })
+    .filter((fact): fact is { id: string; href: string; lead: string; courseName: string; location: string } => Boolean(fact));
+
   const districts = getAllDistricts().map((district) => ({
     slug: district.slug,
     name: district.name,
@@ -71,6 +143,8 @@ export default function HomePage() {
           </div>
         )}
       </section>
+
+      <Top10CuriositiesCarousel facts={top10Facts} />
 
       <section className="mt-8">
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">

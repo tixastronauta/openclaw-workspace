@@ -22,9 +22,9 @@
 - When only code correction is requested, return only the corrected code.
 - Use English for code comments.
 - Prefer `vim` over `nano`.
-- Prefer Docker Compose without `version:`.
 - Do not proactively mention workspace git commits; only mention commits if Tiago asks.
 - Avoid creating, changing, moving, or deleting files outside the workspace by default unless Tiago explicitly asks.
+- When Tiago asks to send something via Telegram, use the existing Telegram channel (already configured with his chat ID) — no need to specify target.
 - When Tiago asks for a "ponto de situação"/status update about incentives, energy, solar, panels, photovoltaic, autoconsumo, or related house-energy topics, always check the workspace project `projects/solar-incentives-monitor/` and its `data/state.json` before answering; do not rely only on memory search.
 
 ## Work

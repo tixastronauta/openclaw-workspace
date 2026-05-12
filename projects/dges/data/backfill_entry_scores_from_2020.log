@@ -1,0 +1,858 @@
+[2026-05-10 20:26:19 WEST] candidate rows: 1
+[2026-05-10 20:26:19 WEST] [1/1] row 78 :: 1105/9540 :: Bioengenharia
+[2026-05-10 20:26:21 WEST] row 78 updated
+[2026-05-10 20:26:21 WEST] done :: updated=1 errors=0
+[2026-05-10 20:26:37 WEST] candidate rows: 11
+[2026-05-10 20:26:37 WEST] [1/11] row 78 :: 1105/9540 :: Bioengenharia
+[2026-05-10 20:26:52 WEST] row 78 updated
+[2026-05-10 20:26:52 WEST] sleeping 7.5s before next row
+[2026-05-10 20:26:59 WEST] [2/11] row 444 :: 1105/L221 :: Engenharia Aeroespacial
+[2026-05-10 20:27:11 WEST] row 444 updated
+[2026-05-10 20:27:11 WEST] sleeping 5.7s before next row
+[2026-05-10 20:27:17 WEST] [3/11] row 461 :: 1105/9099 :: Engenharia do Ambiente
+[2026-05-10 20:27:32 WEST] row 461 updated
+[2026-05-10 20:27:32 WEST] sleeping 5.7s before next row
+[2026-05-10 20:27:37 WEST] [4/11] row 498 :: 1105/9089 :: Engenharia Civil
+[2026-05-10 20:27:50 WEST] row 498 updated
+[2026-05-10 20:27:50 WEST] sleeping 7.0s before next row
+[2026-05-10 20:27:57 WEST] [5/11] row 528 :: 1105/L209 :: Engenharia Eletrotécnica e de Computadores
+[2026-05-10 20:28:10 WEST] row 528 updated
+[2026-05-10 20:28:10 WEST] sleeping 7.7s before next row
+[2026-05-10 20:28:17 WEST] [6/11] row 568 :: 1105/9104 :: Engenharia e Gestão Industrial
+[2026-05-10 20:28:33 WEST] row 568 updated
+[2026-05-10 20:28:33 WEST] sleeping 4.4s before next row
+[2026-05-10 20:28:37 WEST] [7/11] row 599 :: 1105/L224 :: Engenharia Informática e Computação
+[2026-05-10 20:28:52 WEST] row 599 updated
+[2026-05-10 20:28:52 WEST] sleeping 7.2s before next row
+[2026-05-10 20:28:59 WEST] [8/11] row 614 :: 1105/9096 :: Engenharia de Materiais
+[2026-05-10 20:29:14 WEST] row 614 updated
+[2026-05-10 20:29:14 WEST] sleeping 5.2s before next row
+[2026-05-10 20:29:19 WEST] [9/11] row 631 :: 1105/9123 :: Engenharia Mecânica
+[2026-05-10 20:29:34 WEST] row 631 updated
+[2026-05-10 20:29:34 WEST] sleeping 5.8s before next row
+[2026-05-10 20:29:40 WEST] [10/11] row 641 :: 1105/L236 :: Engenharia de Minas e Geo-Ambiente
+[2026-05-10 20:29:54 WEST] row 641 updated
+[2026-05-10 20:29:54 WEST] sleeping 5.4s before next row
+[2026-05-10 20:30:00 WEST] [11/11] row 652 :: 1105/9125 :: Engenharia Química
+[2026-05-10 20:30:15 WEST] row 652 updated
+[2026-05-10 20:30:15 WEST] done :: updated=11 errors=0
+[2026-05-10 20:31:28 WEST] candidate rows: 1
+[2026-05-10 20:31:28 WEST] [1/1] row 2 :: 3054/9002 :: Administração Pública
+[2026-05-10 20:31:29 WEST] row 2 updated
+[2026-05-10 20:31:29 WEST] done :: updated=1 errors=0
+[2026-05-10 21:01:52 WEST] candidate rows: 5
+[2026-05-10 21:01:52 WEST] [1/5] row 2 :: 3054/9002 :: Administração Pública
+[2026-05-10 21:02:06 WEST] row 2 updated
+[2026-05-10 21:02:06 WEST] sleeping 9.3s before next row
+[2026-05-10 21:02:15 WEST] [2/5] row 3 :: 3102/9002 :: Administração Pública
+[2026-05-10 21:02:28 WEST] row 3 updated
+[2026-05-10 21:02:28 WEST] sleeping 5.4s before next row
+[2026-05-10 21:02:33 WEST] [3/5] row 4 :: 300/9002 :: Administração Pública
+[2026-05-10 21:02:45 WEST] row 4 updated
+[2026-05-10 21:02:45 WEST] sleeping 8.4s before next row
+[2026-05-10 21:02:53 WEST] [4/5] row 5 :: 502/9002 :: Administração Pública
+[2026-05-10 21:03:07 WEST] row 5 updated
+[2026-05-10 21:03:07 WEST] sleeping 5.7s before next row
+[2026-05-10 21:03:12 WEST] [5/5] row 6 :: 1516/9002 :: Administração Pública
+[2026-05-10 21:03:24 WEST] row 6 updated
+[2026-05-10 21:03:24 WEST] done :: updated=5 errors=0
+[2026-05-10 21:31:28 WEST] candidate rows: 5
+[2026-05-10 21:31:28 WEST] [1/5] row 7 :: 1000/9002 :: Administração Pública
+[2026-05-10 21:31:43 WEST] row 7 updated
+[2026-05-10 21:31:43 WEST] sleeping 6.2s before next row
+[2026-05-10 21:31:49 WEST] [2/5] row 8 :: 1516/8102 :: Administração Pública (regime pós-laboral)
+[2026-05-10 21:32:02 WEST] row 8 updated
+[2026-05-10 21:32:02 WEST] sleeping 5.7s before next row
+[2026-05-10 21:32:08 WEST] [3/5] row 9 :: 1516/8363 :: Administração Pública e Políticas do Território (regime pós-laboral)
+[2026-05-10 21:32:23 WEST] row 9 updated
+[2026-05-10 21:32:23 WEST] sleeping 9.7s before next row
+[2026-05-10 21:32:33 WEST] [4/5] row 10 :: 3124/9670 :: Administração de Publicidade e Marketing
+[2026-05-10 21:32:46 WEST] row 10 updated
+[2026-05-10 21:32:46 WEST] sleeping 6.7s before next row
+[2026-05-10 21:32:53 WEST] [5/5] row 11 :: 3021/9003 :: Agronomia
+[2026-05-10 21:33:07 WEST] row 11 updated
+[2026-05-10 21:33:07 WEST] done :: updated=5 errors=0
+[2026-05-10 22:01:20 WEST] candidate rows: 5
+[2026-05-10 22:01:20 WEST] [1/5] row 12 :: 3051/9003 :: Agronomia
+[2026-05-10 22:01:33 WEST] row 12 updated
+[2026-05-10 22:01:33 WEST] sleeping 5.1s before next row
+[2026-05-10 22:01:38 WEST] [2/5] row 13 :: 3061/9003 :: Agronomia
+[2026-05-10 22:01:52 WEST] row 13 updated
+[2026-05-10 22:01:52 WEST] sleeping 7.0s before next row
+[2026-05-10 22:01:59 WEST] [3/5] row 14 :: 3125/9003 :: Agronomia
+[2026-05-10 22:02:13 WEST] row 14 updated
+[2026-05-10 22:02:13 WEST] sleeping 6.0s before next row
+[2026-05-10 22:02:19 WEST] [4/5] row 15 :: 3141/9003 :: Agronomia
+[2026-05-10 22:02:33 WEST] row 15 updated
+[2026-05-10 22:02:33 WEST] sleeping 6.5s before next row
+[2026-05-10 22:02:39 WEST] [5/5] row 16 :: 3161/9003 :: Agronomia
+[2026-05-10 22:02:53 WEST] row 16 updated
+[2026-05-10 22:02:53 WEST] done :: updated=5 errors=0
+[2026-05-10 23:01:33 WEST] candidate rows: 5
+[2026-05-10 23:01:33 WEST] [1/5] row 22 :: 3042/9933 :: Animação e Produção Artística
+[2026-05-10 23:01:44 WEST] row 22 updated
+[2026-05-10 23:01:44 WEST] sleeping 7.1s before next row
+[2026-05-10 23:01:51 WEST] [2/5] row 23 :: 3091/9005 :: Animação Sociocultural
+[2026-05-10 23:02:05 WEST] row 23 updated
+[2026-05-10 23:02:05 WEST] sleeping 5.5s before next row
+[2026-05-10 23:02:11 WEST] [3/5] row 24 :: 3112/9005 :: Animação Sociocultural
+[2026-05-10 23:02:24 WEST] row 24 updated
+[2026-05-10 23:02:24 WEST] sleeping 7.0s before next row
+[2026-05-10 23:02:31 WEST] [4/5] row 25 :: 3151/9005 :: Animação Sociocultural
+[2026-05-10 23:02:45 WEST] row 25 updated
+[2026-05-10 23:02:45 WEST] sleeping 6.5s before next row
+[2026-05-10 23:02:52 WEST] [5/5] row 26 :: 1202/9005 :: Animação Sociocultural
+[2026-05-10 23:03:06 WEST] row 26 updated
+[2026-05-10 23:03:06 WEST] done :: updated=5 errors=0
+[2026-05-10 23:32:02 WEST] candidate rows: 5
+[2026-05-10 23:32:02 WEST] [1/5] row 27 :: 3062/9675 :: Animação Socioeducativa
+[2026-05-10 23:32:17 WEST] row 27 updated
+[2026-05-10 23:32:17 WEST] sleeping 5.9s before next row
+[2026-05-10 23:32:23 WEST] [2/5] row 28 :: 3062/8093 :: Animação Socioeducativa (regime pós-laboral)
+[2026-05-10 23:32:39 WEST] row 28 updated
+[2026-05-10 23:32:39 WEST] sleeping 7.2s before next row
+[2026-05-10 23:32:46 WEST] [3/5] row 29 :: 3105/9848 :: Animação Turística
+[2026-05-10 23:33:01 WEST] row 29 updated
+[2026-05-10 23:33:01 WEST] sleeping 9.7s before next row
+[2026-05-10 23:33:10 WEST] [4/5] row 30 :: 6800/9448 :: Antropologia
+[2026-05-10 23:33:23 WEST] row 30 updated
+[2026-05-10 23:33:23 WEST] sleeping 5.7s before next row
+[2026-05-10 23:33:28 WEST] [5/5] row 31 :: 501/9448 :: Antropologia
+[2026-05-10 23:33:41 WEST] row 31 updated
+[2026-05-10 23:33:41 WEST] done :: updated=5 errors=0
+[2026-05-11 00:01:47 WEST] candidate rows: 5
+[2026-05-11 00:01:47 WEST] [1/5] row 32 :: 1516/9448 :: Antropologia
+[2026-05-11 00:02:00 WEST] row 32 updated
+[2026-05-11 00:02:00 WEST] sleeping 8.2s before next row
+[2026-05-11 00:02:08 WEST] [2/5] row 33 :: 902/9448 :: Antropologia
+[2026-05-11 00:02:22 WEST] row 33 updated
+[2026-05-11 00:02:22 WEST] sleeping 7.2s before next row
+[2026-05-11 00:02:29 WEST] [3/5] row 34 :: 505/9006 :: Arqueologia
+[2026-05-11 00:02:42 WEST] row 34 updated
+[2026-05-11 00:02:42 WEST] sleeping 7.0s before next row
+[2026-05-11 00:02:49 WEST] [4/5] row 35 :: 1506/9006 :: Arqueologia
+[2026-05-11 00:03:03 WEST] row 35 updated
+[2026-05-11 00:03:03 WEST] sleeping 9.2s before next row
+[2026-05-11 00:03:12 WEST] [5/5] row 36 :: 1000/9006 :: Arqueologia
+[2026-05-11 00:03:27 WEST] row 36 updated
+[2026-05-11 00:03:27 WEST] done :: updated=5 errors=0
+[2026-05-11 00:31:35 WEST] candidate rows: 5
+[2026-05-11 00:31:35 WEST] [1/5] row 37 :: 1107/9006 :: Arqueologia
+[2026-05-11 00:31:47 WEST] row 37 updated
+[2026-05-11 00:31:47 WEST] sleeping 8.5s before next row
+[2026-05-11 00:31:56 WEST] [2/5] row 38 :: 902/9006 :: Arqueologia
+[2026-05-11 00:32:09 WEST] row 38 updated
+[2026-05-11 00:32:09 WEST] sleeping 7.2s before next row
+[2026-05-11 00:32:16 WEST] [3/5] row 39 :: 6800/9257 :: Arquitetura
+[2026-05-11 00:32:30 WEST] row 39 updated
+[2026-05-11 00:32:30 WEST] sleeping 9.3s before next row
+[2026-05-11 00:32:39 WEST] [4/5] row 40 :: 400/9257 :: Arquitetura
+[2026-05-11 00:32:53 WEST] row 40 updated
+[2026-05-11 00:32:53 WEST] sleeping 9.4s before next row
+[2026-05-11 00:33:02 WEST] [5/5] row 41 :: 501/9257 :: Arquitetura
+[2026-05-11 00:33:17 WEST] row 41 updated
+[2026-05-11 00:33:17 WEST] done :: updated=5 errors=0
+[2026-05-11 01:02:09 WEST] candidate rows: 5
+[2026-05-11 01:02:09 WEST] [1/5] row 42 :: 603/9257 :: Arquitetura
+[2026-05-11 01:02:22 WEST] row 42 updated
+[2026-05-11 01:02:22 WEST] sleeping 8.7s before next row
+[2026-05-11 01:02:31 WEST] [2/5] row 43 :: 1501/9257 :: Arquitetura
+[2026-05-11 01:02:45 WEST] row 43 updated
+[2026-05-11 01:02:45 WEST] sleeping 6.3s before next row
+[2026-05-11 01:02:51 WEST] [3/5] row 44 :: 1518/9257 :: Arquitetura
+[2026-05-11 01:03:03 WEST] row 44 updated
+[2026-05-11 01:03:03 WEST] sleeping 5.6s before next row
+[2026-05-11 01:03:08 WEST] [4/5] row 45 :: 1000/9257 :: Arquitetura
+[2026-05-11 01:03:23 WEST] row 45 updated
+[2026-05-11 01:03:23 WEST] sleeping 9.7s before next row
+[2026-05-11 01:03:33 WEST] [5/5] row 46 :: 1102/9257 :: Arquitetura
+[2026-05-11 01:03:45 WEST] row 46 updated
+[2026-05-11 01:03:45 WEST] done :: updated=5 errors=0
+[2026-05-11 01:31:20 WEST] candidate rows: 5
+[2026-05-11 01:31:20 WEST] [1/5] row 47 :: 1515/8258 :: Arquitetura Paisagista
+[2026-05-11 01:31:32 WEST] row 47 updated
+[2026-05-11 01:31:32 WEST] sleeping 9.6s before next row
+[2026-05-11 01:31:42 WEST] [2/5] row 48 :: 203/8258 :: Arquitetura Paisagista
+[2026-05-11 01:31:54 WEST] row 48 updated
+[2026-05-11 01:31:54 WEST] sleeping 8.8s before next row
+[2026-05-11 01:32:03 WEST] [3/5] row 49 :: 1103/8258 :: Arquitetura Paisagista
+[2026-05-11 01:32:16 WEST] row 49 updated
+[2026-05-11 01:32:16 WEST] sleeping 9.4s before next row
+[2026-05-11 01:32:26 WEST] [4/5] row 50 :: 3042/9898 :: Arte e Design
+[2026-05-11 01:32:38 WEST] row 50 updated
+[2026-05-11 01:32:38 WEST] sleeping 7.6s before next row
+[2026-05-11 01:32:45 WEST] [5/5] row 51 :: 3062/9898 :: Arte e Design
+[2026-05-11 01:33:00 WEST] row 51 updated
+[2026-05-11 01:33:00 WEST] done :: updated=5 errors=0
+[2026-05-11 02:01:31 WEST] candidate rows: 5
+[2026-05-11 02:01:31 WEST] [1/5] row 52 :: 1502/9904 :: Arte Multimédia
+[2026-05-11 02:01:46 WEST] row 52 updated
+[2026-05-11 02:01:46 WEST] sleeping 7.1s before next row
+[2026-05-11 02:01:53 WEST] [2/5] row 53 :: 3162/L284 :: Artes e Cinema Digital
+[2026-05-11 02:02:07 WEST] row 53 updated
+[2026-05-11 02:02:07 WEST] sleeping 8.8s before next row
+[2026-05-11 02:02:16 WEST] [3/5] row 54 :: 1506/8413 :: Artes e Humanidades
+[2026-05-11 02:02:30 WEST] row 54 updated
+[2026-05-11 02:02:30 WEST] sleeping 6.3s before next row
+[2026-05-11 02:02:36 WEST] [4/5] row 55 :: 3181/9681 :: Artes Performativas
+[2026-05-11 02:02:48 WEST] row 55 updated
+[2026-05-11 02:02:48 WEST] sleeping 8.6s before next row
+[2026-05-11 02:02:57 WEST] [5/5] row 56 :: 3103/9007 :: Artes Plásticas
+[2026-05-11 02:03:10 WEST] row 56 updated
+[2026-05-11 02:03:10 WEST] done :: updated=5 errors=0
+[2026-05-11 02:31:44 WEST] candidate rows: 5
+[2026-05-11 02:31:44 WEST] [1/5] row 57 :: 5402/9007 :: Artes Plásticas
+[2026-05-11 02:31:58 WEST] row 57 updated
+[2026-05-11 02:31:58 WEST] sleeping 7.3s before next row
+[2026-05-11 02:32:06 WEST] [2/5] row 58 :: 3181/9347 :: Artes Plásticas e Multimédia
+[2026-05-11 02:32:18 WEST] row 58 updated
+[2026-05-11 02:32:18 WEST] sleeping 6.8s before next row
+[2026-05-11 02:32:25 WEST] [3/5] row 59 :: 603/9347 :: Artes Plásticas e Multimédia
+[2026-05-11 02:32:38 WEST] row 59 updated
+[2026-05-11 02:32:38 WEST] sleeping 6.5s before next row
+[2026-05-11 02:32:45 WEST] [4/5] row 60 :: 3162/L122 :: Artes Plásticas e Tecnologias Artísticas
+[2026-05-11 02:32:58 WEST] row 60 updated
+[2026-05-11 02:32:58 WEST] sleeping 9.4s before next row
+[2026-05-11 02:33:07 WEST] [5/5] row 61 :: 1306/9817 :: Artes Visuais
+[2026-05-11 02:33:21 WEST] row 61 updated
+[2026-05-11 02:33:21 WEST] done :: updated=5 errors=0
+[2026-05-11 03:01:43 WEST] candidate rows: 5
+[2026-05-11 03:01:43 WEST] [1/5] row 62 :: 201/9817 :: Artes Visuais
+[2026-05-11 03:01:58 WEST] row 62 updated
+[2026-05-11 03:01:58 WEST] sleeping 7.7s before next row
+[2026-05-11 03:02:05 WEST] [2/5] row 63 :: 1000/9817 :: Artes Visuais
+[2026-05-11 03:02:18 WEST] row 63 updated
+[2026-05-11 03:02:18 WEST] sleeping 6.0s before next row
+[2026-05-11 03:02:24 WEST] [3/5] row 64 :: 3112/8307 :: Artes Visuais e Tecnologias
+[2026-05-11 03:02:36 WEST] row 64 updated
+[2026-05-11 03:02:36 WEST] sleeping 5.6s before next row
+[2026-05-11 03:02:41 WEST] [4/5] row 65 :: 3131/8264 :: Artes Visuais e Tecnologias Artísticas
+[2026-05-11 03:02:55 WEST] row 65 updated
+[2026-05-11 03:02:55 WEST] sleeping 9.7s before next row
+[2026-05-11 03:03:05 WEST] [5/5] row 66 :: 3063/8276 :: Assessoria de Direção
+[2026-05-11 03:03:19 WEST] row 66 updated
+[2026-05-11 03:03:19 WEST] done :: updated=5 errors=0
+[2026-05-11 03:31:18 WEST] candidate rows: 5
+[2026-05-11 03:31:18 WEST] [1/5] row 67 :: 3134/9009 :: Assessoria e Tradução
+[2026-05-11 03:31:30 WEST] row 67 updated
+[2026-05-11 03:31:30 WEST] sleeping 8.4s before next row
+[2026-05-11 03:31:38 WEST] [2/5] row 68 :: 3134/9829 :: Assessoria e Tradução (regime pós-laboral)
+[2026-05-11 03:31:51 WEST] row 68 updated
+[2026-05-11 03:31:51 WEST] sleeping 8.8s before next row
+[2026-05-11 03:31:59 WEST] [3/5] row 69 :: 3145/L008 :: Atividade Física e Estilos de Vida Saudáveis
+[2026-05-11 03:32:12 WEST] row 69 updated
+[2026-05-11 03:32:12 WEST] sleeping 6.6s before next row
+[2026-05-11 03:32:18 WEST] [4/5] row 70 :: 7210/8141 :: Audiologia
+[2026-05-11 03:32:32 WEST] row 70 updated
+[2026-05-11 03:32:32 WEST] sleeping 5.3s before next row
+[2026-05-11 03:32:37 WEST] [5/5] row 71 :: 7230/8141 :: Audiologia
+[2026-05-11 03:32:51 WEST] row 71 updated
+[2026-05-11 03:32:51 WEST] done :: updated=5 errors=0
+[2026-05-11 04:02:15 WEST] candidate rows: 5
+[2026-05-11 04:02:15 WEST] [1/5] row 72 :: 3022/9010 :: Audiovisual e Multimédia
+[2026-05-11 04:02:30 WEST] row 72 updated
+[2026-05-11 04:02:30 WEST] sleeping 5.7s before next row
+[2026-05-11 04:02:35 WEST] [2/5] row 73 :: 3113/9010 :: Audiovisual e Multimédia
+[2026-05-11 04:02:48 WEST] row 73 updated
+[2026-05-11 04:02:48 WEST] sleeping 7.3s before next row
+[2026-05-11 04:02:56 WEST] [3/5] row 74 :: 3014/L299 :: Automação e Sistemas de Produção
+[2026-05-11 04:03:09 WEST] row 74 updated
+[2026-05-11 04:03:09 WEST] sleeping 8.0s before next row
+[2026-05-11 04:03:17 WEST] [4/5] row 75 :: 3064/9540 :: Bioengenharia
+[2026-05-11 04:03:32 WEST] row 75 updated
+[2026-05-11 04:03:32 WEST] sleeping 8.8s before next row
+[2026-05-11 04:03:41 WEST] [5/5] row 76 :: 1204/9540 :: Bioengenharia
+[2026-05-11 04:03:55 WEST] row 76 updated
+[2026-05-11 04:03:55 WEST] done :: updated=5 errors=0
+[2026-05-11 04:31:33 WEST] candidate rows: 5
+[2026-05-11 04:31:33 WEST] [1/5] row 77 :: 203/9540 :: Bioengenharia
+[2026-05-11 04:31:46 WEST] row 77 updated
+[2026-05-11 04:31:46 WEST] sleeping 9.0s before next row
+[2026-05-11 04:31:55 WEST] [2/5] row 79 :: 3154/9687 :: Bioinformática
+[2026-05-11 04:32:08 WEST] row 79 updated
+[2026-05-11 04:32:08 WEST] sleeping 9.0s before next row
+[2026-05-11 04:32:17 WEST] [3/5] row 80 :: 1103/9687 :: Bioinformática
+[2026-05-11 04:32:30 WEST] row 80 updated
+[2026-05-11 04:32:30 WEST] sleeping 7.0s before next row
+[2026-05-11 04:32:37 WEST] [4/5] row 81 :: 1309/9011 :: Biologia
+[2026-05-11 04:32:51 WEST] row 81 updated
+[2026-05-11 04:32:51 WEST] sleeping 6.3s before next row
+[2026-05-11 04:32:57 WEST] [5/5] row 82 :: 300/9011 :: Biologia
+[2026-05-11 04:33:12 WEST] row 82 updated
+[2026-05-11 04:33:12 WEST] done :: updated=5 errors=0
+[2026-05-11 05:01:25 WEST] candidate rows: 5
+[2026-05-11 05:01:25 WEST] [1/5] row 83 :: 501/9011 :: Biologia
+[2026-05-11 05:01:39 WEST] row 83 updated
+[2026-05-11 05:01:39 WEST] sleeping 7.6s before next row
+[2026-05-11 05:01:47 WEST] [2/5] row 84 :: 602/9011 :: Biologia
+[2026-05-11 05:01:59 WEST] row 84 updated
+[2026-05-11 05:01:59 WEST] sleeping 9.3s before next row
+[2026-05-11 05:02:08 WEST] [3/5] row 85 :: 1503/9011 :: Biologia
+[2026-05-11 05:02:21 WEST] row 85 updated
+[2026-05-11 05:02:21 WEST] sleeping 6.7s before next row
+[2026-05-11 05:02:28 WEST] [4/5] row 86 :: 1515/9011 :: Biologia
+[2026-05-11 05:02:42 WEST] row 86 updated
+[2026-05-11 05:02:42 WEST] sleeping 6.0s before next row
+[2026-05-11 05:02:48 WEST] [5/5] row 87 :: 1204/9011 :: Biologia
+[2026-05-11 05:03:02 WEST] row 87 updated
+[2026-05-11 05:03:02 WEST] done :: updated=5 errors=0
+[2026-05-11 05:31:34 WEST] candidate rows: 5
+[2026-05-11 05:31:34 WEST] [1/5] row 88 :: 203/9011 :: Biologia
+[2026-05-11 05:31:48 WEST] row 88 updated
+[2026-05-11 05:31:48 WEST] sleeping 7.2s before next row
+[2026-05-11 05:31:55 WEST] [2/5] row 89 :: 1103/9011 :: Biologia
+[2026-05-11 05:32:10 WEST] row 89 updated
+[2026-05-11 05:32:10 WEST] sleeping 9.5s before next row
+[2026-05-11 05:32:20 WEST] [3/5] row 90 :: 160/9011 :: Biologia
+[2026-05-11 05:32:33 WEST] row 90 updated
+[2026-05-11 05:32:33 WEST] sleeping 8.0s before next row
+[2026-05-11 05:32:41 WEST] [4/5] row 91 :: 1000/9688 :: Biologia Aplicada
+[2026-05-11 05:32:54 WEST] row 91 updated
+[2026-05-11 05:32:54 WEST] sleeping 9.3s before next row
+[2026-05-11 05:33:04 WEST] [5/5] row 92 :: 3041/L029 :: Biologia e Biotecnologia
+[2026-05-11 05:33:17 WEST] row 92 updated
+[2026-05-11 05:33:17 WEST] done :: updated=5 errors=0
+[2026-05-11 06:01:28 WEST] candidate rows: 5
+[2026-05-11 06:01:28 WEST] [1/5] row 93 :: 3141/L259 :: Biologia e Biotecnologia Alimentar
+[2026-05-11 06:01:42 WEST] row 93 updated
+[2026-05-11 06:01:42 WEST] sleeping 7.6s before next row
+[2026-05-11 06:01:50 WEST] [2/5] row 94 :: 903/9348 :: Biologia Celular e Molecular
+[2026-05-11 06:02:05 WEST] row 94 updated
+[2026-05-11 06:02:05 WEST] sleeping 5.1s before next row
+[2026-05-11 06:02:10 WEST] [3/5] row 95 :: 300/9012 :: Biologia e Geologia
+[2026-05-11 06:02:23 WEST] row 95 updated
+[2026-05-11 06:02:23 WEST] sleeping 9.7s before next row
+[2026-05-11 06:02:32 WEST] [4/5] row 96 :: 602/9012 :: Biologia e Geologia
+[2026-05-11 06:02:46 WEST] row 96 updated
+[2026-05-11 06:02:46 WEST] sleeping 9.3s before next row
+[2026-05-11 06:02:55 WEST] [5/5] row 97 :: 1204/9012 :: Biologia e Geologia
+[2026-05-11 06:03:10 WEST] row 97 updated
+[2026-05-11 06:03:10 WEST] done :: updated=5 errors=0
+[2026-05-11 07:04:20 WEST] candidate rows: 5
+[2026-05-11 07:04:20 WEST] [1/5] row 98 :: 1000/9012 :: Biologia e Geologia
+[2026-05-11 07:04:36 WEST] row 98 updated
+[2026-05-11 07:04:36 WEST] sleeping 9.9s before next row
+[2026-05-11 07:04:46 WEST] [2/5] row 99 :: 602/8262 :: Biologia Humana
+[2026-05-11 07:04:59 WEST] row 99 updated
+[2026-05-11 07:04:59 WEST] sleeping 6.5s before next row
+[2026-05-11 07:05:05 WEST] [3/5] row 100 :: 3105/9013 :: Biologia Marinha
+[2026-05-11 07:05:18 WEST] row 100 updated
+[2026-05-11 07:05:18 WEST] sleeping 5.3s before next row
+[2026-05-11 07:05:24 WEST] [4/5] row 101 :: 521/9013 :: Biologia Marinha
+[2026-05-11 07:05:37 WEST] row 101 updated
+[2026-05-11 07:05:37 WEST] sleeping 9.2s before next row
+[2026-05-11 07:05:46 WEST] [5/5] row 102 :: 203/9013 :: Biologia Marinha
+[2026-05-11 07:06:00 WEST] row 102 updated
+[2026-05-11 07:06:00 WEST] done :: updated=5 errors=0
+[2026-05-11 07:34:05 WEST] candidate rows: 5
+[2026-05-11 07:34:05 WEST] [1/5] row 103 :: 3102/9690 :: Biomecânica
+[2026-05-11 07:34:17 WEST] row 103 updated
+[2026-05-11 07:34:17 WEST] sleeping 6.8s before next row
+[2026-05-11 07:34:24 WEST] [2/5] row 104 :: 400/9015 :: Bioquímica
+[2026-05-11 07:34:37 WEST] row 104 updated
+[2026-05-11 07:34:37 WEST] sleeping 5.4s before next row
+[2026-05-11 07:34:42 WEST] [3/5] row 105 :: 1307/9015 :: Bioquímica
+[2026-05-11 07:34:56 WEST] row 105 updated
+[2026-05-11 07:34:56 WEST] sleeping 6.0s before next row
+[2026-05-11 07:35:02 WEST] [4/5] row 106 :: 300/9015 :: Bioquímica
+[2026-05-11 07:35:17 WEST] row 106 updated
+[2026-05-11 07:35:17 WEST] sleeping 8.9s before next row
+[2026-05-11 07:35:26 WEST] [5/5] row 107 :: 501/9015 :: Bioquímica
+[2026-05-11 07:35:39 WEST] row 107 updated
+[2026-05-11 07:35:39 WEST] done :: updated=5 errors=0
+[2026-05-11 08:04:09 WEST] candidate rows: 5
+[2026-05-11 08:04:09 WEST] [1/5] row 108 :: 602/9015 :: Bioquímica
+[2026-05-11 08:04:24 WEST] row 108 updated
+[2026-05-11 08:04:24 WEST] sleeping 9.2s before next row
+[2026-05-11 08:04:33 WEST] [2/5] row 109 :: 1503/9015 :: Bioquímica
+[2026-05-11 08:04:47 WEST] row 109 updated
+[2026-05-11 08:04:47 WEST] sleeping 9.8s before next row
+[2026-05-11 08:04:57 WEST] [3/5] row 110 :: 1204/9015 :: Bioquímica
+[2026-05-11 08:05:11 WEST] row 110 updated
+[2026-05-11 08:05:11 WEST] sleeping 5.1s before next row
+[2026-05-11 08:05:16 WEST] [4/5] row 111 :: 203/9015 :: Bioquímica
+[2026-05-11 08:05:30 WEST] row 111 updated
+[2026-05-11 08:05:30 WEST] sleeping 9.8s before next row
+[2026-05-11 08:05:40 WEST] [5/5] row 112 :: 1000/9015 :: Bioquímica
+[2026-05-11 08:05:54 WEST] row 112 updated
+[2026-05-11 08:05:54 WEST] done :: updated=5 errors=0
+[2026-05-11 08:35:28 WEST] candidate rows: 5
+[2026-05-11 08:35:28 WEST] [1/5] row 113 :: 1103/9015 :: Bioquímica
+[2026-05-11 08:35:41 WEST] row 113 updated
+[2026-05-11 08:35:41 WEST] sleeping 6.0s before next row
+[2026-05-11 08:35:47 WEST] [2/5] row 114 :: 903/9015 :: Bioquímica
+[2026-05-11 08:35:59 WEST] row 114 updated
+[2026-05-11 08:35:59 WEST] sleeping 8.6s before next row
+[2026-05-11 08:36:08 WEST] [3/5] row 115 :: 3135/L089 :: Biorrecursos
+[2026-05-11 08:36:21 WEST] row 115 updated
+[2026-05-11 08:36:21 WEST] sleeping 7.8s before next row
+[2026-05-11 08:36:29 WEST] [4/5] row 116 :: 3061/9016 :: Biotecnologia
+[2026-05-11 08:36:45 WEST] row 116 updated
+[2026-05-11 08:36:45 WEST] sleeping 8.0s before next row
+[2026-05-11 08:36:53 WEST] [5/5] row 117 :: 3105/9016 :: Biotecnologia
+[2026-05-11 08:37:05 WEST] row 117 updated
+[2026-05-11 08:37:05 WEST] done :: updated=5 errors=0
+[2026-05-11 09:04:13 WEST] candidate rows: 5
+[2026-05-11 09:04:13 WEST] [1/5] row 118 :: 3154/9016 :: Biotecnologia
+[2026-05-11 09:04:26 WEST] row 118 updated
+[2026-05-11 09:04:26 WEST] sleeping 9.4s before next row
+[2026-05-11 09:04:35 WEST] [2/5] row 119 :: 3161/9016 :: Biotecnologia
+[2026-05-11 09:04:50 WEST] row 119 updated
+[2026-05-11 09:04:50 WEST] sleeping 5.9s before next row
+[2026-05-11 09:04:55 WEST] [3/5] row 120 :: 3185/9016 :: Biotecnologia
+[2026-05-11 09:05:11 WEST] row 120 updated
+[2026-05-11 09:05:11 WEST] sleeping 9.1s before next row
+[2026-05-11 09:05:20 WEST] [4/5] row 121 :: 400/9016 :: Biotecnologia
+[2026-05-11 09:05:32 WEST] row 121 updated
+[2026-05-11 09:05:32 WEST] sleeping 7.8s before next row
+[2026-05-11 09:05:39 WEST] [5/5] row 122 :: 300/9016 :: Biotecnologia
+[2026-05-11 09:05:54 WEST] row 122 updated
+[2026-05-11 09:05:54 WEST] done :: updated=5 errors=0
+[2026-05-11 09:34:07 WEST] candidate rows: 5
+[2026-05-11 09:34:07 WEST] [1/5] row 123 :: 602/9016 :: Biotecnologia
+[2026-05-11 09:34:22 WEST] row 123 updated
+[2026-05-11 09:34:22 WEST] sleeping 7.4s before next row
+[2026-05-11 09:34:29 WEST] [2/5] row 124 :: 203/9016 :: Biotecnologia
+[2026-05-11 09:34:44 WEST] row 124 updated
+[2026-05-11 09:34:44 WEST] sleeping 9.7s before next row
+[2026-05-11 09:34:53 WEST] [3/5] row 125 :: 140/L390 :: Biotecnologia
+[2026-05-11 09:35:09 WEST] row 125 updated
+[2026-05-11 09:35:09 WEST] sleeping 7.4s before next row
+[2026-05-11 09:35:16 WEST] [4/5] row 126 :: 3051/L093 :: Biotecnologia Alimentar
+[2026-05-11 09:35:29 WEST] row 126 updated
+[2026-05-11 09:35:29 WEST] sleeping 7.3s before next row
+[2026-05-11 09:35:37 WEST] [5/5] row 127 :: 7040/L101 :: Biotecnologia Medicinal
+[2026-05-11 09:35:51 WEST] row 127 updated
+[2026-05-11 09:35:51 WEST] done :: updated=5 errors=0
+[2026-05-11 10:04:39 WEST] candidate rows: 5
+[2026-05-11 10:04:39 WEST] [1/5] row 128 :: 7230/L101 :: Biotecnologia Medicinal
+[2026-05-11 10:04:54 WEST] row 128 updated
+[2026-05-11 10:04:54 WEST] sleeping 8.7s before next row
+[2026-05-11 10:05:03 WEST] [2/5] row 129 :: 1309/8083 :: Ciclo Básico de Medicina
+[2026-05-11 10:05:18 WEST] row 129 updated
+[2026-05-11 10:05:18 WEST] sleeping 9.1s before next row
+[2026-05-11 10:05:27 WEST] [3/5] row 130 :: 160/8083 :: Ciclo Básico de Medicina
+[2026-05-11 10:05:39 WEST] row 130 updated
+[2026-05-11 10:05:39 WEST] sleeping 9.1s before next row
+[2026-05-11 10:05:48 WEST] [4/5] row 131 :: 400/L406 :: Cidades e Comunidades Sustentáveis Inteligentes
+[2026-05-11 10:06:02 WEST] row 131 updated
+[2026-05-11 10:06:02 WEST] sleeping 10.0s before next row
+[2026-05-11 10:06:12 WEST] [5/5] row 132 :: 160/8571 :: Ciênc de Engenharia-Eng Mecânica; Eng Eletrotécnica e de Computadores (Pre)
+[2026-05-11 10:06:26 WEST] row 132 updated
+[2026-05-11 10:06:26 WEST] done :: updated=5 errors=0
+[2026-05-11 10:34:08 WEST] candidate rows: 5
+[2026-05-11 10:34:08 WEST] [1/5] row 133 :: 1201/L352 :: Ciência Animal
+[2026-05-11 10:34:21 WEST] row 133 updated
+[2026-05-11 10:34:21 WEST] sleeping 6.2s before next row
+[2026-05-11 10:34:28 WEST] [2/5] row 134 :: 1103/9696 :: Ciência de Computadores
+[2026-05-11 10:34:41 WEST] row 134 updated
+[2026-05-11 10:34:41 WEST] sleeping 8.5s before next row
+[2026-05-11 10:34:50 WEST] [3/5] row 135 :: 6800/L188 :: Ciência de Dados
+[2026-05-11 10:35:03 WEST] row 135 updated
+[2026-05-11 10:35:03 WEST] sleeping 9.0s before next row
+[2026-05-11 10:35:13 WEST] [4/5] row 136 :: 1000/L188 :: Ciência de Dados
+[2026-05-11 10:35:26 WEST] row 136 updated
+[2026-05-11 10:35:26 WEST] sleeping 7.3s before next row
+[2026-05-11 10:35:33 WEST] [5/5] row 137 :: 906/L188 :: Ciência de Dados
+[2026-05-11 10:35:47 WEST] row 137 updated
+[2026-05-11 10:35:47 WEST] done :: updated=5 errors=0
+[2026-05-11 11:04:05 WEST] candidate rows: 5
+[2026-05-11 11:04:05 WEST] [1/5] row 138 :: 1503/L405 :: Ciência de Dados
+[2026-05-11 11:04:18 WEST] row 138 updated
+[2026-05-11 11:04:18 WEST] sleeping 7.0s before next row
+[2026-05-11 11:04:25 WEST] [2/5] row 139 :: 3092/L283 :: Ciência de Dados e Inteligência Artificial
+[2026-05-11 11:04:38 WEST] row 139 updated
+[2026-05-11 11:04:38 WEST] sleeping 8.8s before next row
+[2026-05-11 11:04:47 WEST] [3/5] row 140 :: 3063/L310 :: Ciência de Dados para a Gestão
+[2026-05-11 11:05:02 WEST] row 140 updated
+[2026-05-11 11:05:02 WEST] sleeping 7.4s before next row
+[2026-05-11 11:05:09 WEST] [4/5] row 141 :: 6800/L189 :: Ciência de Dados (regime pós-laboral)
+[2026-05-11 11:05:25 WEST] row 141 updated
+[2026-05-11 11:05:25 WEST] sleeping 9.7s before next row
+[2026-05-11 11:05:35 WEST] [5/5] row 142 :: 505/9694 :: Ciência da Informação
+[2026-05-11 11:05:48 WEST] row 142 updated
+[2026-05-11 11:05:48 WEST] done :: updated=5 errors=0
+[2026-05-11 11:34:18 WEST] candidate rows: 5
+[2026-05-11 11:34:18 WEST] [1/5] row 143 :: 1107/9694 :: Ciência da Informação
+[2026-05-11 11:34:34 WEST] row 143 updated
+[2026-05-11 11:34:34 WEST] sleeping 6.1s before next row
+[2026-05-11 11:34:40 WEST] [2/5] row 144 :: 6800/9019 :: Ciência Política
+[2026-05-11 11:34:53 WEST] row 144 updated
+[2026-05-11 11:34:53 WEST] sleeping 9.7s before next row
+[2026-05-11 11:35:02 WEST] [3/5] row 145 :: 1516/9019 :: Ciência Política
+[2026-05-11 11:35:15 WEST] row 145 updated
+[2026-05-11 11:35:15 WEST] sleeping 7.2s before next row
+[2026-05-11 11:35:22 WEST] [4/5] row 146 :: 1000/9019 :: Ciência Política
+[2026-05-11 11:35:36 WEST] row 146 updated
+[2026-05-11 11:35:36 WEST] sleeping 5.0s before next row
+[2026-05-11 11:35:41 WEST] [5/5] row 147 :: 400/9020 :: Ciência Política e Relações Internacionais
+[2026-05-11 11:35:54 WEST] row 147 updated
+[2026-05-11 11:35:54 WEST] done :: updated=5 errors=0
+[2026-05-11 12:03:56 WEST] candidate rows: 5
+[2026-05-11 12:03:56 WEST] [1/5] row 148 :: 902/9020 :: Ciência Política e Relações Internacionais
+[2026-05-11 12:04:09 WEST] row 148 updated
+[2026-05-11 12:04:09 WEST] sleeping 7.5s before next row
+[2026-05-11 12:04:16 WEST] [2/5] row 149 :: 3021/9350 :: Ciência e Tecnologia dos Alimentos
+[2026-05-11 12:04:30 WEST] row 149 updated
+[2026-05-11 12:04:30 WEST] sleeping 5.7s before next row
+[2026-05-11 12:04:36 WEST] [3/5] row 150 :: 602/9818 :: Ciência e Tecnologia Animal
+[2026-05-11 12:04:49 WEST] row 150 updated
+[2026-05-11 12:04:49 WEST] sleeping 8.5s before next row
+[2026-05-11 12:04:58 WEST] [4/5] row 151 :: 140/9022 :: Ciências Agrárias
+[2026-05-11 12:05:11 WEST] row 151 updated
+[2026-05-11 12:05:11 WEST] sleeping 7.6s before next row
+[2026-05-11 12:05:19 WEST] [5/5] row 152 :: 1204/9379 :: Ciências do Ambiente
+[2026-05-11 12:05:32 WEST] row 152 updated
+[2026-05-11 12:05:32 WEST] done :: updated=5 errors=0
+[2026-05-11 12:34:05 WEST] candidate rows: 5
+[2026-05-11 12:34:05 WEST] [1/5] row 2 :: 7110/9076 :: Direção e Gestão Hoteleira
+[2026-05-11 12:34:19 WEST] row 2 updated
+[2026-05-11 12:34:19 WEST] sleeping 6.0s before next row
+[2026-05-11 12:34:25 WEST] [2/5] row 3 :: 7110/9163 :: Gestão do Lazer e Animação Turística
+[2026-05-11 12:34:39 WEST] row 3 updated
+[2026-05-11 12:34:39 WEST] sleeping 9.8s before next row
+[2026-05-11 12:34:49 WEST] [3/5] row 4 :: 7110/9177 :: Gestão Turística
+[2026-05-11 12:35:02 WEST] row 4 updated
+[2026-05-11 12:35:02 WEST] sleeping 5.2s before next row
+[2026-05-11 12:35:07 WEST] [4/5] row 5 :: 7110/9183 :: Informação Turística
+[2026-05-11 12:35:19 WEST] row 5 updated
+[2026-05-11 12:35:19 WEST] sleeping 9.5s before next row
+[2026-05-11 12:35:28 WEST] [5/5] row 6 :: 7110/9217 :: Produção Alimentar em Restauração
+[2026-05-11 12:35:42 WEST] row 6 updated
+[2026-05-11 12:35:42 WEST] done :: updated=5 errors=0
+[2026-05-11 13:03:52 WEST] candidate rows: 5
+[2026-05-11 13:03:52 WEST] [1/5] row 2 :: 3186/9179 :: Gestão Turística, Cultural e Patrimonial
+[2026-05-11 13:04:07 WEST] row 2 updated
+[2026-05-11 13:04:07 WEST] sleeping 7.6s before next row
+[2026-05-11 13:04:14 WEST] [2/5] row 3 :: 3181/9084 :: Educação Social
+[2026-05-11 13:04:27 WEST] row 3 updated
+[2026-05-11 13:04:27 WEST] sleeping 5.8s before next row
+[2026-05-11 13:04:33 WEST] [3/5] row 5 :: 3042/9084 :: Educação Social
+[2026-05-11 13:04:45 WEST] row 5 updated
+[2026-05-11 13:04:45 WEST] sleeping 9.7s before next row
+[2026-05-11 13:04:55 WEST] [4/5] row 6 :: 3055/L158 :: Design de Comunicação e Audiovisual
+[2026-05-11 13:05:07 WEST] row 6 updated
+[2026-05-11 13:05:07 WEST] sleeping 8.1s before next row
+[2026-05-11 13:05:15 WEST] [5/5] row 7 :: 3121/9773 :: Jornalismo e Comunicação
+[2026-05-11 13:05:28 WEST] row 7 updated
+[2026-05-11 13:05:28 WEST] done :: updated=5 errors=0
+[2026-05-11 13:34:12 WEST] candidate rows: 5
+[2026-05-11 13:34:12 WEST] [1/5] row 2 :: 3131/8002 :: Línguas e Culturas Estrangeiras
+[2026-05-11 13:34:26 WEST] row 2 updated
+[2026-05-11 13:34:26 WEST] sleeping 7.5s before next row
+[2026-05-11 13:34:33 WEST] [2/5] row 3 :: 3011/8005 :: Marketing (regime pós-laboral)
+[2026-05-11 13:34:46 WEST] row 3 updated
+[2026-05-11 13:34:46 WEST] sleeping 5.9s before next row
+[2026-05-11 13:34:52 WEST] [3/5] row 4 :: 3134/8005 :: Marketing (regime pós-laboral)
+[2026-05-11 13:35:07 WEST] row 4 updated
+[2026-05-11 13:35:07 WEST] sleeping 9.8s before next row
+[2026-05-11 13:35:16 WEST] [4/5] row 5 :: 6800/8014 :: Serviço Social (regime pós-laboral)
+[2026-05-11 13:35:29 WEST] row 5 updated
+[2026-05-11 13:35:29 WEST] sleeping 8.2s before next row
+[2026-05-11 13:35:37 WEST] [5/5] row 6 :: 1516/8014 :: Serviço Social (regime pós-laboral)
+[2026-05-11 13:35:51 WEST] row 6 updated
+[2026-05-11 13:35:51 WEST] done :: updated=5 errors=0
+[2026-05-11 14:03:52 WEST] candidate rows: 5
+[2026-05-11 14:03:52 WEST] [1/5] row 7 :: 3101/8014 :: Serviço Social (regime pós-laboral)
+[2026-05-11 14:04:08 WEST] row 7 updated
+[2026-05-11 14:04:08 WEST] sleeping 8.8s before next row
+[2026-05-11 14:04:16 WEST] [2/5] row 8 :: 3138/8015 :: Solicitadoria (regime pós-laboral)
+[2026-05-11 14:04:30 WEST] row 8 updated
+[2026-05-11 14:04:30 WEST] sleeping 5.4s before next row
+[2026-05-11 14:04:35 WEST] [3/5] row 9 :: 3117/8015 :: Solicitadoria (regime pós-laboral)
+[2026-05-11 14:04:50 WEST] row 9 updated
+[2026-05-11 14:04:50 WEST] sleeping 9.3s before next row
+[2026-05-11 14:04:59 WEST] [4/5] row 10 :: 3031/8015 :: Solicitadoria (regime pós-laboral)
+[2026-05-11 14:05:12 WEST] row 10 updated
+[2026-05-11 14:05:12 WEST] sleeping 6.4s before next row
+[2026-05-11 14:05:18 WEST] [5/5] row 11 :: 3102/8015 :: Solicitadoria (regime pós-laboral)
+[2026-05-11 14:05:32 WEST] row 11 updated
+[2026-05-11 14:05:32 WEST] done :: updated=5 errors=0
+[2026-05-11 14:34:00 WEST] candidate rows: 5
+[2026-05-11 14:34:00 WEST] [1/5] row 12 :: 3132/8026 :: Teatro, variante de Cenografia
+[2026-05-11 14:34:14 WEST] row 12 updated
+[2026-05-11 14:34:14 WEST] sleeping 6.1s before next row
+[2026-05-11 14:34:20 WEST] [2/5] row 13 :: 3132/8027 :: Teatro, variante de Figurino
+[2026-05-11 14:34:33 WEST] row 13 updated
+[2026-05-11 14:34:33 WEST] sleeping 9.6s before next row
+[2026-05-11 14:34:43 WEST] [3/5] row 14 :: 3063/8029 :: Finanças e Contabilidade
+[2026-05-11 14:34:58 WEST] row 14 updated
+[2026-05-11 14:34:58 WEST] sleeping 7.3s before next row
+[2026-05-11 14:35:05 WEST] [4/5] row 15 :: 6800/8029 :: Finanças e Contabilidade
+[2026-05-11 14:35:18 WEST] row 15 updated
+[2026-05-11 14:35:18 WEST] sleeping 7.0s before next row
+[2026-05-11 14:35:25 WEST] [5/5] row 16 :: 140/8031 :: Ciências Farmacêuticas (Preparatórios)
+[2026-05-11 14:35:39 WEST] row 16 updated
+[2026-05-11 14:35:39 WEST] done :: updated=5 errors=0
+[2026-05-11 15:04:28 WEST] candidate rows: 5
+[2026-05-11 15:04:28 WEST] [1/5] row 17 :: 903/8036 :: Conservação - Restauro
+[2026-05-11 15:04:43 WEST] row 17 updated
+[2026-05-11 15:04:43 WEST] sleeping 5.6s before next row
+[2026-05-11 15:04:48 WEST] [2/5] row 20 :: 140/8086 :: Medicina Veterinária (Preparatórios)
+[2026-05-11 15:05:00 WEST] row 20 updated
+[2026-05-11 15:05:00 WEST] sleeping 8.2s before next row
+[2026-05-11 15:05:09 WEST] [3/5] row 22 :: 3138/8097 :: Ciências Empresariais (regime pós-laboral)
+[2026-05-11 15:05:23 WEST] row 22 updated
+[2026-05-11 15:05:23 WEST] sleeping 5.3s before next row
+[2026-05-11 15:05:29 WEST] [4/5] row 24 :: 6800/8109 :: Sociologia (regime pós-laboral)
+[2026-05-11 15:05:44 WEST] row 24 updated
+[2026-05-11 15:05:44 WEST] sleeping 5.2s before next row
+[2026-05-11 15:05:50 WEST] [5/5] row 25 :: 1516/8109 :: Sociologia (regime pós-laboral)
+[2026-05-11 15:06:01 WEST] row 25 updated
+[2026-05-11 15:06:01 WEST] done :: updated=5 errors=0
+[2026-05-11 15:33:56 WEST] candidate rows: 5
+[2026-05-11 15:33:56 WEST] [1/5] row 26 :: 3153/8111 :: Gestão de Recursos Humanos (regime pós-laboral)
+[2026-05-11 15:34:11 WEST] row 26 updated
+[2026-05-11 15:34:11 WEST] sleeping 6.1s before next row
+[2026-05-11 15:34:17 WEST] [2/5] row 27 :: 1516/8111 :: Gestão de Recursos Humanos (regime pós-laboral)
+[2026-05-11 15:34:29 WEST] row 27 updated
+[2026-05-11 15:34:29 WEST] sleeping 8.6s before next row
+[2026-05-11 15:34:38 WEST] [3/5] row 28 :: 3062/8114 :: Turismo (regime pós-laboral)
+[2026-05-11 15:34:53 WEST] row 28 updated
+[2026-05-11 15:34:53 WEST] sleeping 7.5s before next row
+[2026-05-11 15:35:01 WEST] [4/5] row 29 :: 3103/8126 :: Design Gráfico e Multimédia (regime pós-laboral)
+[2026-05-11 15:35:13 WEST] row 29 updated
+[2026-05-11 15:35:13 WEST] sleeping 7.1s before next row
+[2026-05-11 15:35:20 WEST] [5/5] row 30 :: 7230/8138 :: Terapia Ocupacional
+[2026-05-11 15:35:34 WEST] row 30 updated
+[2026-05-11 15:35:34 WEST] done :: updated=5 errors=0
+[2026-05-11 16:04:19 WEST] candidate rows: 5
+[2026-05-11 16:04:19 WEST] [1/5] row 31 :: 7045/8138 :: Terapia Ocupacional
+[2026-05-11 16:04:34 WEST] row 31 updated
+[2026-05-11 16:04:34 WEST] sleeping 5.9s before next row
+[2026-05-11 16:04:40 WEST] [2/5] row 32 :: 7005/8138 :: Terapia Ocupacional
+[2026-05-11 16:04:52 WEST] row 32 updated
+[2026-05-11 16:04:52 WEST] sleeping 5.2s before next row
+[2026-05-11 16:04:58 WEST] [3/5] row 33 :: 7210/8138 :: Terapia Ocupacional
+[2026-05-11 16:05:12 WEST] row 33 updated
+[2026-05-11 16:05:12 WEST] sleeping 8.6s before next row
+[2026-05-11 16:05:20 WEST] [4/5] row 36 :: 7230/8143 :: Ortóptica
+[2026-05-11 16:05:33 WEST] row 36 updated
+[2026-05-11 16:05:33 WEST] sleeping 7.5s before next row
+[2026-05-11 16:05:41 WEST] [5/5] row 37 :: 7250/8149 :: Dietética e Nutrição
+[2026-05-11 16:05:55 WEST] row 37 updated
+[2026-05-11 16:05:55 WEST] done :: updated=5 errors=0
+[2026-05-11 16:33:58 WEST] candidate rows: 5
+[2026-05-11 16:33:58 WEST] [1/5] row 38 :: 7210/8149 :: Dietética e Nutrição
+[2026-05-11 16:34:13 WEST] row 38 updated
+[2026-05-11 16:34:13 WEST] sleeping 7.0s before next row
+[2026-05-11 16:34:20 WEST] [2/5] row 39 :: 7045/8149 :: Dietética e Nutrição
+[2026-05-11 16:34:35 WEST] row 39 updated
+[2026-05-11 16:34:35 WEST] sleeping 9.3s before next row
+[2026-05-11 16:34:45 WEST] [3/5] row 40 :: 7035/8149 :: Dietética e Nutrição
+[2026-05-11 16:34:59 WEST] row 40 updated
+[2026-05-11 16:34:59 WEST] sleeping 6.3s before next row
+[2026-05-11 16:35:06 WEST] [4/5] row 41 :: 7015/8149 :: Dietética e Nutrição
+[2026-05-11 16:35:20 WEST] row 41 updated
+[2026-05-11 16:35:20 WEST] sleeping 7.1s before next row
+[2026-05-11 16:35:27 WEST] [5/5] row 42 :: 7250/8152 :: Ortoprotesia
+[2026-05-11 16:35:40 WEST] row 42 updated
+[2026-05-11 16:35:40 WEST] done :: updated=5 errors=0
+[2026-05-11 17:04:02 WEST] candidate rows: 5
+[2026-05-11 17:04:02 WEST] [1/5] row 43 :: 3034/8156 :: Gestão de Atividades Turísticas
+[2026-05-11 17:04:17 WEST] row 43 updated
+[2026-05-11 17:04:17 WEST] sleeping 5.7s before next row
+[2026-05-11 17:04:22 WEST] [2/5] row 44 :: 1000/8183 :: Geografia e Planeamento
+[2026-05-11 17:04:36 WEST] row 44 updated
+[2026-05-11 17:04:36 WEST] sleeping 9.2s before next row
+[2026-05-11 17:04:45 WEST] [3/5] row 45 :: 1000/8184 :: Optometria e Ciências da Visão
+[2026-05-11 17:05:00 WEST] row 45 updated
+[2026-05-11 17:05:00 WEST] sleeping 8.9s before next row
+[2026-05-11 17:05:08 WEST] [4/5] row 46 :: 400/8184 :: Optometria e Ciências da Visão
+[2026-05-11 17:05:23 WEST] row 46 updated
+[2026-05-11 17:05:23 WEST] sleeping 5.8s before next row
+[2026-05-11 17:05:28 WEST] [5/5] row 47 :: 7710/8215 :: Tecnologias Militares Navais
+[2026-05-11 17:05:41 WEST] row 47 updated
+[2026-05-11 17:05:41 WEST] done :: updated=5 errors=0
+[2026-05-11 17:34:02 WEST] candidate rows: 5
+[2026-05-11 17:34:02 WEST] [1/5] row 48 :: 604/8251 :: História e Arqueologia
+[2026-05-11 17:34:15 WEST] row 48 updated
+[2026-05-11 17:34:15 WEST] sleeping 8.6s before next row
+[2026-05-11 17:34:23 WEST] [2/5] row 52 :: 906/8259 :: Sistemas e Tecnologias de Informação
+[2026-05-11 17:34:36 WEST] row 52 updated
+[2026-05-11 17:34:36 WEST] sleeping 9.2s before next row
+[2026-05-11 17:34:46 WEST] [3/5] row 56 :: 3182/8296 :: Gestão Industrial
+[2026-05-11 17:35:00 WEST] row 56 updated
+[2026-05-11 17:35:00 WEST] sleeping 5.7s before next row
+[2026-05-11 17:35:06 WEST] [4/5] row 58 :: 3045/8309 :: Design de Jogos Digitais
+[2026-05-11 17:35:19 WEST] row 58 updated
+[2026-05-11 17:35:19 WEST] sleeping 5.5s before next row
+[2026-05-11 17:35:25 WEST] [5/5] row 59 :: 3032/8311 :: Engenharia em Desenvolvimento de Jogos Digitais
+[2026-05-11 17:35:38 WEST] row 59 updated
+[2026-05-11 17:35:38 WEST] done :: updated=5 errors=0
+[2026-05-11 18:03:58 WEST] candidate rows: 5
+[2026-05-11 18:03:58 WEST] [1/5] row 8 :: 3182/9205 :: Marketing
+[2026-05-11 18:04:10 WEST] row 8 updated
+[2026-05-11 18:04:10 WEST] sleeping 8.2s before next row
+[2026-05-11 18:04:18 WEST] [2/5] row 9 :: 3242/9645 :: Fotografia
+[2026-05-11 18:04:32 WEST] row 9 updated
+[2026-05-11 18:04:32 WEST] sleeping 10.0s before next row
+[2026-05-11 18:04:42 WEST] [3/5] row 11 :: 3033/9074 :: Design Industrial
+[2026-05-11 18:04:55 WEST] row 11 updated
+[2026-05-11 18:04:55 WEST] sleeping 8.1s before next row
+[2026-05-11 18:05:03 WEST] [4/5] row 12 :: 3181/9850 :: Desporto e Atividade Física
+[2026-05-11 18:05:17 WEST] row 12 updated
+[2026-05-11 18:05:17 WEST] sleeping 6.1s before next row
+[2026-05-11 18:05:23 WEST] [5/5] row 13 :: 3118/L119 :: Engenharia Informática, Redes e Telecomunicações
+[2026-05-11 18:05:36 WEST] row 13 updated
+[2026-05-11 18:05:36 WEST] done :: updated=5 errors=0
+[2026-05-11 18:34:06 WEST] candidate rows: 5
+[2026-05-11 18:34:06 WEST] [1/5] row 14 :: 3092/9205 :: Marketing
+[2026-05-11 18:34:21 WEST] row 14 updated
+[2026-05-11 18:34:21 WEST] sleeping 7.2s before next row
+[2026-05-11 18:34:28 WEST] [2/5] row 15 :: 1202/9023 :: Ciências da Comunicação
+[2026-05-11 18:34:41 WEST] row 15 updated
+[2026-05-11 18:34:41 WEST] sleeping 5.6s before next row
+[2026-05-11 18:34:46 WEST] [3/5] row 16 :: 3055/9725 :: Design de Interiores e Equipamento
+[2026-05-11 18:35:00 WEST] row 16 updated
+[2026-05-11 18:35:00 WEST] sleeping 8.6s before next row
+[2026-05-11 18:35:08 WEST] [4/5] row 17 :: 3042/8323 :: Línguas Estrangeiras: Inglês e Espanhol
+[2026-05-11 18:35:22 WEST] row 17 updated
+[2026-05-11 18:35:22 WEST] sleeping 5.4s before next row
+[2026-05-11 18:35:27 WEST] [5/5] row 19 :: 3062/9054 :: Comunicação Social
+[2026-05-11 18:35:38 WEST] row 19 updated
+[2026-05-11 18:35:38 WEST] done :: updated=5 errors=0
+[2026-05-12 08:49:49 WEST] candidate rows: 5
+[2026-05-12 08:49:49 WEST] [1/5] row 20 :: 3101/L099 :: Comunicação e Media
+[2026-05-12 08:50:04 WEST] row 20 updated
+[2026-05-12 08:50:04 WEST] sleeping 7.0s before next row
+[2026-05-12 08:50:11 WEST] [2/5] row 22 :: 1000/L078 :: Criminologia e Justiça Criminal
+[2026-05-12 08:50:25 WEST] row 22 updated
+[2026-05-12 08:50:25 WEST] sleeping 7.5s before next row
+[2026-05-12 08:50:32 WEST] [3/5] row 23 :: 3014/L138 :: Design de Produto e Tecnologia
+[2026-05-12 08:50:46 WEST] row 23 updated
+[2026-05-12 08:50:46 WEST] sleeping 9.4s before next row
+[2026-05-12 08:50:55 WEST] [4/5] row 24 :: 1202/9204 :: Línguas, Literaturas e Culturas
+[2026-05-12 08:51:09 WEST] row 24 updated
+[2026-05-12 08:51:09 WEST] sleeping 8.1s before next row
+[2026-05-12 08:51:17 WEST] [5/5] row 25 :: 3045/9165 :: Gestão e Administração Pública
+[2026-05-12 08:51:31 WEST] row 25 updated
+[2026-05-12 08:51:31 WEST] done :: updated=5 errors=0
+[2026-05-12 09:19:57 WEST] candidate rows: 5
+[2026-05-12 09:19:57 WEST] [1/5] row 26 :: 3081/8337 :: Imagem Animada
+[2026-05-12 09:20:08 WEST] row 26 updated
+[2026-05-12 09:20:08 WEST] sleeping 5.3s before next row
+[2026-05-12 09:20:13 WEST] [2/5] row 27 :: 3331/9213 :: Multimédia
+[2026-05-12 09:20:27 WEST] row 27 updated
+[2026-05-12 09:20:27 WEST] sleeping 6.8s before next row
+[2026-05-12 09:20:34 WEST] [3/5] row 29 :: 1000/9499 :: Design e Marketing de Moda
+[2026-05-12 09:20:49 WEST] row 29 updated
+[2026-05-12 09:20:49 WEST] sleeping 6.5s before next row
+[2026-05-12 09:20:55 WEST] [4/5] row 30 :: 3043/9123 :: Engenharia Mecânica
+[2026-05-12 09:21:11 WEST] row 30 updated
+[2026-05-12 09:21:11 WEST] sleeping 8.0s before next row
+[2026-05-12 09:21:19 WEST] [5/5] row 31 :: 3331/9069 :: Design
+[2026-05-12 09:21:34 WEST] row 31 updated
+[2026-05-12 09:21:34 WEST] done :: updated=5 errors=0
+[2026-05-12 09:50:23 WEST] candidate rows: 5
+[2026-05-12 09:50:23 WEST] [1/5] row 32 :: 1000/8494 :: Design de Produto
+[2026-05-12 09:50:37 WEST] row 32 updated
+[2026-05-12 09:50:37 WEST] sleeping 9.7s before next row
+[2026-05-12 09:50:47 WEST] [2/5] row 33 :: 1202/9196 :: Línguas e Relações Empresariais
+[2026-05-12 09:51:02 WEST] row 33 updated
+[2026-05-12 09:51:02 WEST] sleeping 7.6s before next row
+[2026-05-12 09:51:09 WEST] [3/5] row 34 :: 3041/9085 :: Enfermagem Veterinária
+[2026-05-12 09:51:23 WEST] row 34 updated
+[2026-05-12 09:51:23 WEST] sleeping 8.1s before next row
+[2026-05-12 09:51:31 WEST] [4/5] row 38 :: 3138/9045 :: Ciências Empresariais
+[2026-05-12 09:51:43 WEST] row 38 updated
+[2026-05-12 09:51:43 WEST] sleeping 9.2s before next row
+[2026-05-12 09:51:52 WEST] [5/5] row 39 :: 1203/9052 :: Comunicação e Multimédia
+[2026-05-12 09:52:08 WEST] row 39 updated
+[2026-05-12 09:52:08 WEST] done :: updated=5 errors=0
+[2026-05-12 10:20:28 WEST] candidate rows: 5
+[2026-05-12 10:20:28 WEST] [1/5] row 40 :: 3042/9563 :: Desporto
+[2026-05-12 10:20:45 WEST] row 40 updated
+[2026-05-12 10:20:45 WEST] sleeping 6.5s before next row
+[2026-05-12 10:20:51 WEST] [2/5] row 41 :: 3163/9723 :: Design de Ambientes
+[2026-05-12 10:21:05 WEST] row 41 updated
+[2026-05-12 10:21:05 WEST] sleeping 8.2s before next row
+[2026-05-12 10:21:13 WEST] [3/5] row 44 :: 7015/9833 :: Gerontologia
+[2026-05-12 10:21:26 WEST] row 44 updated
+[2026-05-12 10:21:26 WEST] sleeping 5.9s before next row
+[2026-05-12 10:21:32 WEST] [4/5] row 45 :: 1000/9139 :: Filosofia
+[2026-05-12 10:21:46 WEST] row 45 updated
+[2026-05-12 10:21:46 WEST] sleeping 8.1s before next row
+[2026-05-12 10:21:54 WEST] [5/5] row 46 :: 3091/9652 :: Comunicação e Relações Públicas
+[2026-05-12 10:22:08 WEST] row 46 updated
+[2026-05-12 10:22:08 WEST] done :: updated=5 errors=0
+[2026-05-12 10:50:12 WEST] candidate rows: 5
+[2026-05-12 10:50:12 WEST] [1/5] row 47 :: 3103/9074 :: Design Industrial
+[2026-05-12 10:50:27 WEST] row 47 updated
+[2026-05-12 10:50:27 WEST] sleeping 5.8s before next row
+[2026-05-12 10:50:33 WEST] [2/5] row 48 :: 3091/8339 :: Comunicação Multimédia
+[2026-05-12 10:50:48 WEST] row 48 updated
+[2026-05-12 10:50:48 WEST] sleeping 5.2s before next row
+[2026-05-12 10:50:53 WEST] [3/5] row 49 :: 3134/9053 :: Comunicação Empresarial
+[2026-05-12 10:51:07 WEST] row 49 updated
+[2026-05-12 10:51:07 WEST] sleeping 6.5s before next row
+[2026-05-12 10:51:14 WEST] [4/5] row 50 :: 3134/9867 :: Comunicação Empresarial (regime pós-laboral)
+[2026-05-12 10:51:27 WEST] row 50 updated
+[2026-05-12 10:51:27 WEST] sleeping 8.4s before next row
+[2026-05-12 10:51:36 WEST] [5/5] row 51 :: 3031/9152 :: Gestão de Empresas
+[2026-05-12 10:51:50 WEST] row 51 updated
+[2026-05-12 10:51:50 WEST] done :: updated=5 errors=0
+[2026-05-12 11:20:05 WEST] candidate rows: 5
+[2026-05-12 11:20:05 WEST] [1/5] row 52 :: 3031/9994 :: Gestão de Empresas (regime pós-laboral)
+[2026-05-12 11:20:19 WEST] row 52 updated
+[2026-05-12 11:20:19 WEST] sleeping 6.9s before next row
+[2026-05-12 11:20:26 WEST] [2/5] row 55 :: 3045/9205 :: Marketing
+[2026-05-12 11:20:40 WEST] row 55 updated
+[2026-05-12 11:20:40 WEST] sleeping 6.8s before next row
+[2026-05-12 11:20:47 WEST] [3/5] row 56 :: 3012/L140 :: Gestão Pública
+[2026-05-12 11:21:02 WEST] row 56 updated
+[2026-05-12 11:21:02 WEST] sleeping 7.1s before next row
+[2026-05-12 11:21:10 WEST] [4/5] row 58 :: 3105/8514 :: Gestão de Eventos
+[2026-05-12 11:21:23 WEST] row 58 updated
+[2026-05-12 11:21:23 WEST] sleeping 8.9s before next row
+[2026-05-12 11:21:32 WEST] [5/5] row 59 :: 3062/8342 :: Comunicação Organizacional (regime pós-laboral)
+[2026-05-12 11:21:44 WEST] row 59 updated
+[2026-05-12 11:21:44 WEST] done :: updated=5 errors=0
+[2026-05-12 11:50:16 WEST] candidate rows: 5
+[2026-05-12 11:50:16 WEST] [1/5] row 60 :: 3062/9717 :: Comunicação Organizacional
+[2026-05-12 11:50:30 WEST] row 60 updated
+[2026-05-12 11:50:30 WEST] sleeping 9.7s before next row
+[2026-05-12 11:50:39 WEST] [2/5] row 61 :: 1202/9081 :: Economia
+[2026-05-12 11:50:54 WEST] row 61 updated
+[2026-05-12 11:50:54 WEST] sleeping 6.5s before next row
+[2026-05-12 11:51:00 WEST] [3/5] row 62 :: 3182/9056 :: Contabilidade
+[2026-05-12 11:51:14 WEST] row 62 updated
+[2026-05-12 11:51:14 WEST] sleeping 6.0s before next row
+[2026-05-12 11:51:20 WEST] [4/5] row 64 :: 3041/9086 :: Engenharia Agronómica
+[2026-05-12 11:51:34 WEST] row 64 updated
+[2026-05-12 11:51:34 WEST] sleeping 8.0s before next row
+[2026-05-12 11:51:42 WEST] [5/5] row 65 :: 3112/L134 :: Mediação Artística e Cultural
+[2026-05-12 11:51:55 WEST] row 65 updated
+[2026-05-12 11:51:55 WEST] done :: updated=5 errors=0
+[2026-05-12 12:21:20 WEST] candidate rows: 5
+[2026-05-12 12:21:20 WEST] [1/5] row 66 :: 3103/8525 :: Design de Produto - Cerâmica e Vidro
+[2026-05-12 12:21:37 WEST] row 66 updated
+[2026-05-12 12:21:37 WEST] sleeping 8.3s before next row
+[2026-05-12 12:21:45 WEST] [2/5] row 67 :: 1107/9040 :: Ciências da Linguagem
+[2026-05-12 12:22:00 WEST] row 67 updated
+[2026-05-12 12:22:00 WEST] sleeping 6.2s before next row
+[2026-05-12 12:22:06 WEST] [3/5] row 68 :: 3062/9894 :: Comunicação e Design Multimédia
+[2026-05-12 12:22:23 WEST] row 68 updated
+[2026-05-12 12:22:23 WEST] sleeping 8.7s before next row
+[2026-05-12 12:22:32 WEST] [4/5] row 69 :: 3142/9084 :: Educação Social
+[2026-05-12 12:22:45 WEST] row 69 updated
+[2026-05-12 12:22:45 WEST] sleeping 6.4s before next row
+[2026-05-12 12:22:52 WEST] [5/5] row 70 :: 3103/L257 :: Design de Espaços
+[2026-05-12 12:23:06 WEST] row 70 updated
+[2026-05-12 12:23:06 WEST] done :: updated=5 errors=0
+[2026-05-12 12:51:22 WEST] candidate rows: 5
+[2026-05-12 12:51:22 WEST] [1/5] row 71 :: 1202/9853 :: Educação Básica
+[2026-05-12 12:51:36 WEST] row 71 updated
+[2026-05-12 12:51:36 WEST] sleeping 7.6s before next row
+[2026-05-12 12:51:44 WEST] [2/5] row 72 :: 3063/L023 :: Marketing e Negócios Internacionais
+[2026-05-12 12:51:59 WEST] row 72 updated
+[2026-05-12 12:51:59 WEST] sleeping 5.2s before next row
+[2026-05-12 12:52:05 WEST] [3/5] row 73 :: 3091/9563 :: Desporto
+[2026-05-12 12:52:20 WEST] row 73 updated
+[2026-05-12 12:52:20 WEST] sleeping 7.2s before next row
+[2026-05-12 12:52:27 WEST] [4/5] row 74 :: 3145/9763 :: Gestão das Organizações Desportivas
+[2026-05-12 12:52:41 WEST] row 74 updated
+[2026-05-12 12:52:41 WEST] sleeping 9.5s before next row
+[2026-05-12 12:52:50 WEST] [5/5] row 75 :: 3134/9043 :: Ciências e Tecnologias da Documentação e Informação
+[2026-05-12 12:53:02 WEST] row 75 updated
+[2026-05-12 12:53:02 WEST] done :: updated=5 errors=0

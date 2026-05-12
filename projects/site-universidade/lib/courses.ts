@@ -11,11 +11,35 @@ export type AdmissionGrade = {
 
 export type CourseMetrics = {
   unemploymentRate?: number;
+  unemployedCount?: number;
+  graduatesCount?: number;
   finalAverage?: number;
   menShare?: number;
   womenShare?: number;
   foreignerShare?: number;
   ageAverage?: number;
+};
+
+export type GradeDistributionItem = {
+  grade: string;
+  students: number;
+  percentage: number;
+};
+
+export type AgeDistributionItem = {
+  age: string;
+  students: number;
+  percentage: number;
+};
+
+export type GenderData = {
+  men: number;
+  women: number;
+};
+
+export type NationalityData = {
+  portuguese: number;
+  foreign: number;
 };
 
 export type Course = {
@@ -37,6 +61,10 @@ export type Course = {
   infoCursosUrl?: string;
   dgesUrl?: string;
   metrics?: CourseMetrics;
+  finalGradesDistribution?: GradeDistributionItem[];
+  ageDistribution?: AgeDistributionItem[];
+  genderData?: GenderData;
+  nationalityData?: NationalityData;
 };
 
 type CsvRow = Record<string, string | undefined>;
@@ -169,6 +197,50 @@ function weightedAgeAverage(row: CsvRow): number | undefined {
   return totalWeight > 0 ? total / totalWeight : undefined;
 }
 
+function extractFinalGradesDistribution(row: CsvRow): GradeDistributionItem[] | undefined {
+  const rows = rowsFromJson(row.infocursos_classificacoes_finais_json);
+  if (rows.length === 0) return undefined;
+  const items: GradeDistributionItem[] = rows
+    .map((item) => ({
+      grade: String(item["Nota final"] ?? ""),
+      students: numberValue(item.Alunos) ?? 0,
+      percentage: numberValue(item.Percentagem) ?? 0
+    }))
+    .filter((item) => item.grade !== "");
+  return items.length > 0 ? items : undefined;
+}
+
+function extractAgeDistribution(row: CsvRow): AgeDistributionItem[] | undefined {
+  const rows = rowsFromJson(row.infocursos_idades_json);
+  if (rows.length === 0) return undefined;
+  const items: AgeDistributionItem[] = rows
+    .map((item) => ({
+      age: String(item.Idade ?? ""),
+      students: numberValue(item.Alunos) ?? 0,
+      percentage: numberValue(item.Percentagem) ?? 0
+    }))
+    .filter((item) => item.age !== "");
+  return items.length > 0 ? items : undefined;
+}
+
+function extractGenderData(row: CsvRow): GenderData | undefined {
+  const sexRow = rowsFromJson(row.infocursos_sexo_curso_json).find((item) => item.Sexo === "Curso");
+  if (!sexRow) return undefined;
+  const men = numberValue(sexRow.Homens);
+  const women = numberValue(sexRow.Mulheres);
+  if (men === undefined && women === undefined) return undefined;
+  return { men: men ?? 0, women: women ?? 0 };
+}
+
+function extractNationalityData(row: CsvRow): NationalityData | undefined {
+  const natRow = rowsFromJson(row.infocursos_nacionalidade_curso_json).find((item) => item.Nacionalidade === "Curso");
+  if (!natRow) return undefined;
+  const portuguese = numberValue(natRow.Portugueses);
+  const foreign = numberValue(natRow.Estrangeiros);
+  if (portuguese === undefined && foreign === undefined) return undefined;
+  return { portuguese: portuguese ?? 0, foreign: foreign ?? 0 };
+}
+
 function extractMetrics(row: CsvRow): CourseMetrics {
   const unemployment = rowsFromJson(row.infocursos_iefp_desemprego_json).find((item) => item.Desemprego === "Curso");
   const sex = rowsFromJson(row.infocursos_sexo_curso_json).find((item) => item.Sexo === "Curso");
@@ -176,6 +248,8 @@ function extractMetrics(row: CsvRow): CourseMetrics {
 
   return {
     unemploymentRate: numberValue(unemployment?.Taxa),
+    unemployedCount: numberValue(unemployment?.Desempregados),
+    graduatesCount: numberValue(unemployment?.Diplomados),
     finalAverage: weightedFinalAverage(row),
     menShare: numberValue(sex?.Homens),
     womenShare: numberValue(sex?.Mulheres),
@@ -229,7 +303,11 @@ export function getAllCourses(): Course[] {
       courseDescription: getFirst(row, ["courseDescription", "course_description"]),
       infoCursosUrl: getFirst(row, ["infoCursosUrl", "infocursosUrl", "info_cursos_url", "InfoCursos", "estatisticas_do_curso"]),
       dgesUrl: getFirst(row, ["dgesUrl", "dges_url", "DGES", "detalhes_do_curso"]),
-      metrics: extractMetrics(row)
+      metrics: extractMetrics(row),
+      finalGradesDistribution: extractFinalGradesDistribution(row),
+      ageDistribution: extractAgeDistribution(row),
+      genderData: extractGenderData(row),
+      nationalityData: extractNationalityData(row)
     });
   }
 

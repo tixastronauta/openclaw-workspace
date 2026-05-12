@@ -1,6 +1,6 @@
 ---
 name: apple-calendar-caldav
-description: Read and write Apple Calendar / iCloud calendars through CalDAV using environment-provided credentials. Use when a user wants to list available Apple calendars, inspect upcoming events, search events by text, create events with date or time, update existing events, delete events, handle recurring events, add Apple-friendly display alarms (VALARM), or consume machine-friendly JSON output without assuming local macOS Calendar access. Best for setups where credentials live in a local .env file and the skill must remain publishable and free of personal data.
+description: Read and write Apple Calendar / iCloud calendars through CalDAV using environment-provided credentials. This skill is permanently deactivated and should no longer be used. Best for setups where credentials live in a local .env file and the skill must remain publishable and free of personal data.
 ---
 
 # Apple Calendar CalDAV

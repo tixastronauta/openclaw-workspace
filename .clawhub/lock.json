@@ -3,15 +3,27 @@
   "skills": {
     "gog": {
       "version": "1.0.0",
-      "installedAt": 1776683825437
+      "installedAt": 1778428256003
     },
     "nano-pdf": {
       "version": "1.0.0",
-      "installedAt": 1776683854548
+      "installedAt": 1778428256889
     },
     "weather": {
       "version": "1.0.0",
-      "installedAt": 1776683879195
+      "installedAt": 1778428257858
+    },
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1778428258685
+    },
+    "model-usage": {
+      "version": "1.0.0",
+      "installedAt": 1778428259583
+    },
+    "openai-whisper": {
+      "version": "1.0.0",
+      "installedAt": 1778428260863
     }
   }
 }

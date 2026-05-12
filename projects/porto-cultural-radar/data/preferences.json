@@ -8,19 +8,54 @@
     "drum and bass",
     "rock",
     "metal",
-    "selected exhibitions"
+    "selected exhibitions",
+    "cultural events promoted by Porto municipality or relevant local entities",
+    "urban culture",
+    "contemporary art",
+    "architecture/design/open studios",
+    "talks or guided visits only when culturally strong and not framed as theatre/cinema/cycles"
   ],
   "exclude": [
     "gastronomy",
     "family events",
     "theatre",
     "cinema",
-    "cycles",
+    "generic cycles",
     "classical music",
     "world music",
     "photography-focused events"
   ],
-  "curation": "tight",
+  "curation": "tight, but include one broader cultural section so the radar does not become only nightlife/music",
   "priceSensitivity": "ignore price",
-  "delivery": "Telegram"
+  "delivery": "Telegram",
+  "sourcePriorities": [
+    "Agenda Porto / Câmara Municipal do Porto",
+    "Porto Cultura",
+    "Ágora Porto",
+    "Museu da Cidade / Cultura em Expansão when profile-fit",
+    "Serralves",
+    "Galeria Municipal do Porto",
+    "Maus Hábitos",
+    "Hard Club",
+    "Plano B",
+    "Pérola Negra",
+    "Resident Advisor",
+    "Shotgun",
+    "Eventbrite",
+    "Viral Agenda",
+    "Time Out Porto"
+  ],
+  "formatting": {
+    "structure": "Group recommendations by event type section, then list events inside each section.",
+    "sectionOrder": [
+      "electronic / drum and bass / clubbing",
+      "rock / metal / alternative",
+      "culture / art / city",
+      "exhibitions",
+      "later highlights"
+    ],
+    "indentation": "Use clean indentation with short bullet subitems for date, place, why it fits, and source/link.",
+    "emojis": "Use a few practical emojis in section titles and key fields to improve readability without overdoing it.",
+    "culturalSectionRule": "Include a 🏛️ Cultura / Arte / Cidade section with 2-4 strong picks from municipal and cultural-entity sources, as long as they are not excluded categories."
+  }
 }

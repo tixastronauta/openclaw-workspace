@@ -1,0 +1,29 @@
+{
+  "status": "completed",
+  "sheet_id": "1m7LzrYoYTrCHYr3vBiaeK62ZOw-4GQVCbXse6d5FE6E",
+  "tab": "dges_cursos_2026",
+  "header_positions": {
+    "updated_at": 1,
+    "infocursos_iefp_desemprego_json": 12,
+    "infocursos_classificacoes_finais_json": 13,
+    "infocursos_sexo_curso_json": 14,
+    "infocursos_nacionalidade_curso_json": 15,
+    "infocursos_idades_json": 16
+  },
+  "candidates": 690,
+  "processed": 690,
+  "changed_rows": 182,
+  "field_fills": {
+    "infocursos_iefp_desemprego_json": 114,
+    "infocursos_classificacoes_finais_json": 169,
+    "infocursos_sexo_curso_json": 136,
+    "infocursos_nacionalidade_curso_json": 136,
+    "infocursos_idades_json": 136
+  },
+  "errors": 0,
+  "remaining": 0,
+  "finishedAt": "2026-05-11 18:19:57 WEST",
+  "log_path": "/data/.openclaw/workspace/projects/dges/data/fill_missing_infocursos_json.log",
+  "cache_path": "/data/.openclaw/workspace/projects/dges/data/fill_missing_infocursos_json_cache.json",
+  "dryRun": false
+}

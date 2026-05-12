@@ -16,10 +16,16 @@ type MetricKey = NonNullable<Course["metrics"]> extends infer Metrics
   ? keyof NonNullable<Metrics>
   : never;
 
-function rankCourses(courses: Course[], key: MetricKey, direction: "asc" | "desc") {
+function rankCourses(
+  courses: Course[],
+  key: MetricKey,
+  direction: "asc" | "desc",
+  include?: (item: { course: Course; value: number }) => boolean,
+) {
   return courses
     .map((course) => ({ course, value: course.metrics?.[key] }))
     .filter((item): item is { course: Course; value: number } => typeof item.value === "number" && Number.isFinite(item.value))
+    .filter((item) => (include ? include(item) : true))
     .sort((a, b) => direction === "asc" ? a.value - b.value : b.value - a.value)
     .slice(0, 10);
 }
@@ -41,7 +47,7 @@ export function getTop10Metrics(): Top10Metric[] {
       title: "Top 10 cursos com mais estrangeiros",
       description: "Cursos com maior percentagem de estudantes estrangeiros.",
       valueLabel: "Estrangeiros",
-      items: rankCourses(courses, "foreignerShare", "desc")
+      items: rankCourses(courses, "foreignerShare", "desc", ({ value }) => value < 1)
     },
     {
       id: "mais-homens",

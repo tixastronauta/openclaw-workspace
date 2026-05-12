@@ -1,0 +1,44 @@
+[2026-05-10 21:46:46 WEST] candidate rows: 299
+[2026-05-10 21:46:46 WEST] [1/299] row 5 :: Universidade de Coimbra - Faculdade de Direito
+[2026-05-10 21:46:47 WEST] row 5 updated :: institution_url=False course_url=False
+[2026-05-10 21:46:47 WEST] sleeping 0.3s before next row
+[2026-05-10 21:46:47 WEST] [2/299] row 17 :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-10 21:46:48 WEST] row 17 updated :: institution_url=False course_url=False
+[2026-05-10 21:46:48 WEST] sleeping 0.2s before next row
+[2026-05-10 21:46:48 WEST] [3/299] row 21 :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-10 21:46:49 WEST] row 21 updated :: institution_url=False course_url=False
+[2026-05-10 21:46:49 WEST] sleeping 0.2s before next row
+[2026-05-10 21:46:49 WEST] [4/299] row 29 :: Instituto Politécnico de Leiria - Escola Superior de Turismo e Tecnologia do Mar
+[2026-05-10 21:46:52 WEST] row 29 updated :: institution_url=True course_url=True
+[2026-05-10 21:46:52 WEST] sleeping 0.1s before next row
+[2026-05-10 21:46:53 WEST] [5/299] row 33 :: Universidade Nova de Lisboa - Faculdade de Ciências Sociais e Humanas
+[2026-05-10 21:46:53 WEST] row 33 updated :: institution_url=False course_url=False
+[2026-05-10 21:46:53 WEST] sleeping 0.2s before next row
+[2026-05-10 21:46:54 WEST] [6/299] row 37 :: Universidade do Porto - Faculdade de Letras
+[2026-05-10 21:46:57 WEST] row 37 updated :: institution_url=True course_url=True
+[2026-05-10 21:46:57 WEST] sleeping 0.1s before next row
+[2026-05-10 21:46:57 WEST] [7/299] row 41 :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-10 21:46:58 WEST] row 41 updated :: institution_url=False course_url=False
+[2026-05-10 21:46:58 WEST] sleeping 0.2s before next row
+[2026-05-10 21:46:58 WEST] [8/299] row 45 :: Universidade do Minho
+[2026-05-10 21:47:02 WEST] row 45 updated :: institution_url=True course_url=True
+[2026-05-10 21:47:02 WEST] sleeping 0.2s before next row
+[2026-05-10 21:47:02 WEST] [9/299] row 49 :: Universidade do Porto - Faculdade de Ciências
+[2026-05-10 21:47:05 WEST] row 49 updated :: institution_url=True course_url=True
+[2026-05-10 21:47:05 WEST] sleeping 0.2s before next row
+[2026-05-10 21:47:05 WEST] [10/299] row 53 :: Instituto Politécnico de Viana do Castelo - Escola Superior de Educação
+[2026-05-10 21:47:17 WEST] row 53 error: CalledProcessError(7, ['gog', 'sheets', '--account', 'tiago.carvalho@gmail.com', 'update', '1m7LzrYoYTrCHYr3vBiaeK62ZOw-4GQVCbXse6d5FE6E', 'dges_cursos_2026!A53:A53', '--values-json', '[["2026-05-10 21:47:08 WEST"]]', '--input', 'USER_ENTERED', '--no-input'])
+[2026-05-10 21:47:17 WEST] sleeping 0.2s before next row
+[2026-05-10 21:47:17 WEST] [11/299] row 57 :: Universidade do Porto - Faculdade de Belas-Artes
+[2026-05-10 21:47:27 WEST] row 57 error: CalledProcessError(7, ['gog', 'sheets', '--account', 'tiago.carvalho@gmail.com', 'update', '1m7LzrYoYTrCHYr3vBiaeK62ZOw-4GQVCbXse6d5FE6E', 'dges_cursos_2026!AB57:AB57', '--values-json', '[["http://www.fba.up.pt/"]]', '--input', 'USER_ENTERED', '--no-input'])
+[2026-05-10 21:47:27 WEST] sleeping 0.2s before next row
+[2026-05-10 21:47:27 WEST] [12/299] row 61 :: Universidade da Madeira - Faculdade de Artes e Humanidades
+[2026-05-10 21:47:38 WEST] row 61 error: CalledProcessError(7, ['gog', 'sheets', '--account', 'tiago.carvalho@gmail.com', 'update', '1m7LzrYoYTrCHYr3vBiaeK62ZOw-4GQVCbXse6d5FE6E', 'dges_cursos_2026!AB61:AB61', '--values-json', '[["https://www.uma.pt/sobre/faculdades-e-escolas/artes-e-humanidades/"]]', '--input', 'USER_ENTERED', '--no-input'])
+[2026-05-10 21:47:38 WEST] sleeping 0.3s before next row
+[2026-05-10 21:47:39 WEST] [13/299] row 65 :: Instituto Politécnico do Porto - Escola Superior de Educação
+[2026-05-10 21:47:48 WEST] row 65 error: CalledProcessError(7, ['gog', 'sheets', '--account', 'tiago.carvalho@gmail.com', 'update', '1m7LzrYoYTrCHYr3vBiaeK62ZOw-4GQVCbXse6d5FE6E', 'dges_cursos_2026!AB65:AB65', '--values-json', '[["http://www.ese.ipp.pt"]]', '--input', 'USER_ENTERED', '--no-input'])
+[2026-05-10 21:47:48 WEST] sleeping 0.1s before next row
+[2026-05-10 21:47:48 WEST] [14/299] row 69 :: Instituto Politécnico de Santarém - Escola Superior de Desporto de Rio Maior
+[2026-05-10 21:47:51 WEST] row 69 updated :: institution_url=True course_url=True
+[2026-05-10 21:47:51 WEST] sleeping 0.3s before next row
+[2026-05-10 21:47:51 WEST] [15/299] row 73 :: Instituto Politécnico de Lisboa - Escola Superior de Comunicação Social

@@ -1,0 +1,1517 @@
+[2026-05-11T13:23:54+01:00] progress initialized
+[2026-05-11 13:27:09 WEST] live header mapping: {"updated_at": 1, "cidade": 18, "distrito": 19, "morada": 20, "institution_url": 21, "course_url": 22}
+[2026-05-11 13:27:09 WEST] candidate rows: 5
+[2026-05-11 13:27:09 WEST] [1/5] row 2 :: 3131/8002 :: Línguas e Culturas Estrangeiras :: Instituto Politécnico do Porto - Escola Superior de Educação
+[2026-05-11 13:27:10 WEST] row 2 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:27:10 WEST] [2/5] row 3 :: 3011/8005 :: Marketing (regime pós-laboral) :: Universidade de Aveiro - Instituto Superior de Contabilidade e Administração de Aveiro
+[2026-05-11 13:27:11 WEST] row 3 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:27:11 WEST] [3/5] row 4 :: 3134/8005 :: Marketing (regime pós-laboral) :: Instituto Politécnico do Porto - Instituto Superior de Contabilidade e Administração do Porto
+[2026-05-11 13:27:12 WEST] row 4 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:27:12 WEST] [4/5] row 14 :: 3063/8029 :: Finanças e Contabilidade :: Instituto Politécnico de Coimbra - Instituto Superior de Contabilidade e Administração de Coimbra
+[2026-05-11 13:27:14 WEST] row 14 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:27:14 WEST] [5/5] row 15 :: 6800/8029 :: Finanças e Contabilidade :: ISCTE - Instituto Universitário de Lisboa
+[2026-05-11 13:27:15 WEST] row 15 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:27:15 WEST] done :: processed=5 changed=5 errors=0
+[2026-05-11 13:27:26 WEST] live header mapping: {"updated_at": 1, "cidade": 18, "distrito": 19, "morada": 20, "institution_url": 21, "course_url": 22}
+[2026-05-11 13:27:26 WEST] candidate rows: 745
+[2026-05-11 13:27:26 WEST] [1/745] row 2 :: 3131/8002 :: Línguas e Culturas Estrangeiras :: Instituto Politécnico do Porto - Escola Superior de Educação
+[2026-05-11 13:27:26 WEST] row 2 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:27:26 WEST] [2/745] row 3 :: 3011/8005 :: Marketing (regime pós-laboral) :: Universidade de Aveiro - Instituto Superior de Contabilidade e Administração de Aveiro
+[2026-05-11 13:27:26 WEST] row 3 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:27:26 WEST] [3/745] row 4 :: 3134/8005 :: Marketing (regime pós-laboral) :: Instituto Politécnico do Porto - Instituto Superior de Contabilidade e Administração do Porto
+[2026-05-11 13:27:26 WEST] row 4 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:27:26 WEST] [4/745] row 14 :: 3063/8029 :: Finanças e Contabilidade :: Instituto Politécnico de Coimbra - Instituto Superior de Contabilidade e Administração de Coimbra
+[2026-05-11 13:27:26 WEST] row 14 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:27:26 WEST] [5/745] row 15 :: 6800/8029 :: Finanças e Contabilidade :: ISCTE - Instituto Universitário de Lisboa
+[2026-05-11 13:27:26 WEST] row 15 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:27:27 WEST] [6/745] row 16 :: 140/8031 :: Ciências Farmacêuticas (Preparatórios) :: Universidade dos Açores - Faculdade de Ciências Agrárias e do Ambiente
+[2026-05-11 13:27:28 WEST] row 16 unchanged
+[2026-05-11 13:27:28 WEST] [7/745] row 17 :: 903/8036 :: Conservação - Restauro :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:27:29 WEST] row 17 unchanged
+[2026-05-11 13:27:29 WEST] [8/745] row 19 :: 160/8083 :: Ciclo Básico de Medicina :: Universidade dos Açores - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:27:31 WEST] row 19 unchanged
+[2026-05-11 13:27:31 WEST] [9/745] row 20 :: 140/8086 :: Medicina Veterinária (Preparatórios) :: Universidade dos Açores - Faculdade de Ciências Agrárias e do Ambiente
+[2026-05-11 13:27:33 WEST] row 20 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:27:33 WEST] [10/745] row 26 :: 3153/8111 :: Gestão de Recursos Humanos (regime pós-laboral) :: Instituto Politécnico de Setúbal - Escola Superior de Ciências Empresariais
+[2026-05-11 13:27:34 WEST] row 26 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:27:34 WEST] [11/745] row 27 :: 1516/8111 :: Gestão de Recursos Humanos (regime pós-laboral) :: Universidade de Lisboa - Instituto Superior de Ciências Sociais e Políticas
+[2026-05-11 13:27:35 WEST] row 27 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:27:35 WEST] [12/745] row 31 :: 7045/8138 :: Terapia Ocupacional :: Instituto Politécnico de Leiria - Escola Superior de Saúde
+[2026-05-11 13:27:36 WEST] row 31 unchanged
+[2026-05-11 13:27:36 WEST] [13/745] row 33 :: 7210/8138 :: Terapia Ocupacional :: Instituto Politécnico de Coimbra - Escola Superior de Tecnologia da Saúde de Coimbra
+[2026-05-11 13:27:37 WEST] row 33 unchanged
+[2026-05-11 13:27:37 WEST] [14/745] row 37 :: 7250/8149 :: Dietética e Nutrição :: Instituto Politécnico de Lisboa - Escola Superior de Saúde de Lisboa
+[2026-05-11 13:27:38 WEST] row 37 unchanged
+[2026-05-11 13:27:38 WEST] [15/745] row 39 :: 7045/8149 :: Dietética e Nutrição :: Instituto Politécnico de Leiria - Escola Superior de Saúde
+[2026-05-11 13:27:39 WEST] row 39 unchanged
+[2026-05-11 13:27:39 WEST] [16/745] row 41 :: 7015/8149 :: Dietética e Nutrição :: Instituto Politécnico de Bragança - Escola Superior de Saúde de Bragança
+[2026-05-11 13:27:40 WEST] row 41 unchanged
+[2026-05-11 13:27:40 WEST] [17/745] row 42 :: 7250/8152 :: Ortoprotesia :: Instituto Politécnico de Lisboa - Escola Superior de Saúde de Lisboa
+[2026-05-11 13:27:42 WEST] row 42 unchanged
+[2026-05-11 13:27:42 WEST] [18/745] row 43 :: 3034/8156 :: Gestão de Atividades Turísticas :: Instituto Politécnico do Cávado e do Ave - Escola Superior de Hotelaria e Turismo
+[2026-05-11 13:27:43 WEST] row 43 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:27:43 WEST] [19/745] row 44 :: 1000/8183 :: Geografia e Planeamento :: Universidade do Minho
+[2026-05-11 13:27:44 WEST] row 44 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:27:44 WEST] [20/745] row 46 :: 400/8184 :: Optometria e Ciências da Visão :: Universidade da Beira Interior
+[2026-05-11 13:27:46 WEST] row 46 unchanged
+[2026-05-11 13:27:46 WEST] [21/745] row 47 :: 7710/8215 :: Tecnologias Militares Navais :: Instituto Universitário Militar - Escola Naval
+[2026-05-11 13:27:46 WEST] row 47 unchanged
+[2026-05-11 13:27:46 WEST] [22/745] row 48 :: 604/8251 :: História e Arqueologia :: Universidade de Évora - Escola de Ciências Sociais
+[2026-05-11 13:27:48 WEST] row 48 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:27:48 WEST] [23/745] row 51 :: 203/8258 :: Arquitetura Paisagista :: Universidade do Algarve - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:27:50 WEST] row 51 unchanged
+[2026-05-11 13:27:50 WEST] [24/745] row 52 :: 906/8259 :: Sistemas e Tecnologias de Informação :: Universidade Nova de Lisboa - Instituto Superior de Estatística e Gestão de Informação
+[2026-05-11 13:27:52 WEST] row 52 unchanged
+[2026-05-11 13:27:52 WEST] [25/745] row 53 :: 602/8262 :: Biologia Humana :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-11 13:27:53 WEST] row 53 unchanged
+[2026-05-11 13:27:53 WEST] [26/745] row 56 :: 3182/8296 :: Gestão Industrial :: Instituto Politécnico de Viseu - Escola Superior de Tecnologia e Gestão de Viseu
+[2026-05-11 13:27:54 WEST] row 56 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:27:54 WEST] [27/745] row 59 :: 3032/8311 :: Engenharia em Desenvolvimento de Jogos Digitais :: Instituto Politécnico do Cávado e do Ave - Escola Superior de Tecnologia
+[2026-05-11 13:27:56 WEST] row 59 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:27:56 WEST] [28/745] row 60 :: 3135/8316 :: Engenharia de Sistemas :: Instituto Politécnico do Porto - Instituto Superior de Engenharia do Porto
+[2026-05-11 13:27:58 WEST] row 60 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:27:58 WEST] [29/745] row 61 :: 3042/8323 :: Línguas Estrangeiras: Inglês e Espanhol :: Instituto Politécnico de Bragança - Escola Superior de Educação de Bragança
+[2026-05-11 13:27:59 WEST] row 61 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:27:59 WEST] [30/745] row 62 :: 3081/8337 :: Imagem Animada :: Universidade do Algarve - Escola Superior de Educação e Comunicação
+[2026-05-11 13:28:00 WEST] row 62 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:28:00 WEST] [31/745] row 64 :: 3034/8341 :: Gestão de Atividades Turísticas (regime pós-laboral) :: Instituto Politécnico do Cávado e do Ave - Escola Superior de Hotelaria e Turismo
+[2026-05-11 13:28:01 WEST] row 64 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:28:01 WEST] [32/745] row 72 :: 6800/8366 :: Informática e Gestão de Empresas (regime pós-laboral) :: ISCTE - Instituto Universitário de Lisboa
+[2026-05-11 13:28:02 WEST] row 72 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:28:02 WEST] [33/745] row 73 :: 3042/8374 :: Línguas para Relações Internacionais :: Instituto Politécnico de Bragança - Escola Superior de Educação de Bragança
+[2026-05-11 13:28:03 WEST] row 73 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:28:03 WEST] [34/745] row 74 :: 1515/8377 :: Engenharia Florestal e dos Recursos Naturais :: Universidade de Lisboa - Instituto Superior de Agronomia
+[2026-05-11 13:28:04 WEST] row 74 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:28:04 WEST] [35/745] row 75 :: 505/8393 :: Português :: Universidade de Coimbra - Faculdade de Letras
+[2026-05-11 13:28:06 WEST] row 75 unchanged
+[2026-05-11 13:28:06 WEST] [36/745] row 76 :: 3051/8397 :: Engenharia de Proteção Civil :: Instituto Politécnico de Castelo Branco - Escola Superior Agrária de Castelo Branco
+[2026-05-11 13:28:07 WEST] row 76 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:28:07 WEST] [37/745] row 80 :: 3012/8405 :: Gestão da Qualidade :: Universidade de Aveiro - Escola Superior de Tecnologia e Gestão de Águeda
+[2026-05-11 13:28:07 WEST] row 80 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:28:08 WEST] [38/745] row 81 :: 3163/8407 :: Engenharia da Computação Gráfica e Multimédia :: Instituto Politécnico de Viana do Castelo - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:28:09 WEST] row 81 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:28:09 WEST] [39/745] row 82 :: 501/8408 :: Química Medicinal :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:28:10 WEST] row 82 unchanged
+[2026-05-11 13:28:10 WEST] [40/745] row 83 :: 3032/8409 :: Engenharia de Sistemas Informáticos :: Instituto Politécnico do Cávado e do Ave - Escola Superior de Tecnologia
+[2026-05-11 13:28:11 WEST] row 83 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:28:11 WEST] [41/745] row 86 :: 3032/8417 :: Engenharia de Sistemas Informáticos (regime pós- laboral) :: Instituto Politécnico do Cávado e do Ave - Escola Superior de Tecnologia
+[2026-05-11 13:28:13 WEST] row 86 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:28:13 WEST] [42/745] row 91 :: 1506/8458 :: Estudos Gerais :: Universidade de Lisboa - Faculdade de Letras
+[2026-05-11 13:28:13 WEST] row 91 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:28:13 WEST] [43/745] row 92 :: 3053/8463 :: Engenharia das Energias Renováveis :: Instituto Politécnico de Castelo Branco - Escola Superior de Tecnologia de Castelo Branco
+[2026-05-11 13:28:16 WEST] row 92 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:28:16 WEST] [44/745] row 93 :: 3164/8464 :: Gestão da Distribuição e Logística :: Instituto Politécnico de Viana do Castelo - Escola Superior de Ciências Empresariais
+[2026-05-11 13:28:17 WEST] row 93 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:28:17 WEST] [45/745] row 95 :: 201/8509 :: Património Cultural e Arqueologia :: Universidade do Algarve - Faculdade de Ciências Humanas e Sociais
+[2026-05-11 13:28:19 WEST] row 95 unchanged
+[2026-05-11 13:28:19 WEST] [46/745] row 96 :: 3105/8514 :: Gestão de Eventos :: Instituto Politécnico de Leiria - Escola Superior de Turismo e Tecnologia do Mar
+[2026-05-11 13:28:20 WEST] row 96 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:28:20 WEST] [47/745] row 100 :: 160/8524 :: Proteção Civil e Gestão de Riscos :: Universidade dos Açores - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:28:22 WEST] row 100 unchanged
+[2026-05-11 13:28:22 WEST] [48/745] row 102 :: 160/8571 :: Ciênc de Engenharia-Eng Mecânica; Eng Eletrotécnica e de Computadores (Pre) :: Universidade dos Açores - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:28:23 WEST] row 102 unchanged
+[2026-05-11 13:28:23 WEST] [49/745] row 107 :: 300/9002 :: Administração Pública :: Universidade de Aveiro
+[2026-05-11 13:28:24 WEST] row 107 unchanged
+[2026-05-11 13:28:24 WEST] [50/745] row 108 :: 502/9002 :: Administração Pública :: Universidade de Coimbra - Faculdade de Direito
+[2026-05-11 13:28:26 WEST] row 108 unchanged
+[2026-05-11 13:28:26 WEST] [51/745] row 116 :: 602/9003 :: Agronomia :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-11 13:28:28 WEST] row 116 unchanged
+[2026-05-11 13:28:28 WEST] [52/745] row 117 :: 203/9003 :: Agronomia :: Universidade do Algarve - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:28:29 WEST] row 117 unchanged
+[2026-05-11 13:28:29 WEST] [53/745] row 125 :: 505/9006 :: Arqueologia :: Universidade de Coimbra - Faculdade de Letras
+[2026-05-11 13:28:31 WEST] row 125 unchanged
+[2026-05-11 13:28:31 WEST] [54/745] row 126 :: 902/9006 :: Arqueologia :: Universidade Nova de Lisboa - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:28:33 WEST] row 126 unchanged
+[2026-05-11 13:28:33 WEST] [55/745] row 137 :: 300/9011 :: Biologia :: Universidade de Aveiro
+[2026-05-11 13:28:34 WEST] row 137 unchanged
+[2026-05-11 13:28:34 WEST] [56/745] row 138 :: 501/9011 :: Biologia :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:28:36 WEST] row 138 unchanged
+[2026-05-11 13:28:36 WEST] [57/745] row 139 :: 602/9011 :: Biologia :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-11 13:28:38 WEST] row 139 unchanged
+[2026-05-11 13:28:38 WEST] [58/745] row 140 :: 203/9011 :: Biologia :: Universidade do Algarve - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:28:39 WEST] row 140 unchanged
+[2026-05-11 13:28:39 WEST] [59/745] row 141 :: 160/9011 :: Biologia :: Universidade dos Açores - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:28:41 WEST] row 141 unchanged
+[2026-05-11 13:28:41 WEST] [60/745] row 144 :: 300/9012 :: Biologia e Geologia :: Universidade de Aveiro
+[2026-05-11 13:28:43 WEST] row 144 unchanged
+[2026-05-11 13:28:43 WEST] [61/745] row 145 :: 602/9012 :: Biologia e Geologia :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-11 13:28:44 WEST] row 145 unchanged
+[2026-05-11 13:28:45 WEST] [62/745] row 147 :: 521/9013 :: Biologia Marinha :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia (Campus Figueira da Foz)
+[2026-05-11 13:28:46 WEST] row 147 unchanged
+[2026-05-11 13:28:46 WEST] [63/745] row 148 :: 203/9013 :: Biologia Marinha :: Universidade do Algarve - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:28:48 WEST] row 148 unchanged
+[2026-05-11 13:28:48 WEST] [64/745] row 154 :: 400/9015 :: Bioquímica :: Universidade da Beira Interior
+[2026-05-11 13:28:50 WEST] row 154 unchanged
+[2026-05-11 13:28:50 WEST] [65/745] row 155 :: 300/9015 :: Bioquímica :: Universidade de Aveiro
+[2026-05-11 13:28:52 WEST] row 155 unchanged
+[2026-05-11 13:28:52 WEST] [66/745] row 156 :: 501/9015 :: Bioquímica :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:28:54 WEST] row 156 unchanged
+[2026-05-11 13:28:54 WEST] [67/745] row 157 :: 602/9015 :: Bioquímica :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-11 13:28:56 WEST] row 157 unchanged
+[2026-05-11 13:28:56 WEST] [68/745] row 158 :: 203/9015 :: Bioquímica :: Universidade do Algarve - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:28:58 WEST] row 158 unchanged
+[2026-05-11 13:28:58 WEST] [69/745] row 159 :: 903/9015 :: Bioquímica :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:29:00 WEST] row 159 unchanged
+[2026-05-11 13:29:00 WEST] [70/745] row 165 :: 400/9016 :: Biotecnologia :: Universidade da Beira Interior
+[2026-05-11 13:29:01 WEST] row 165 unchanged
+[2026-05-11 13:29:01 WEST] [71/745] row 166 :: 300/9016 :: Biotecnologia :: Universidade de Aveiro
+[2026-05-11 13:29:03 WEST] row 166 unchanged
+[2026-05-11 13:29:03 WEST] [72/745] row 167 :: 602/9016 :: Biotecnologia :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-11 13:29:04 WEST] row 167 unchanged
+[2026-05-11 13:29:04 WEST] [73/745] row 168 :: 203/9016 :: Biotecnologia :: Universidade do Algarve - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:29:06 WEST] row 168 unchanged
+[2026-05-11 13:29:06 WEST] [74/745] row 172 :: 400/9020 :: Ciência Política e Relações Internacionais :: Universidade da Beira Interior
+[2026-05-11 13:29:08 WEST] row 172 unchanged
+[2026-05-11 13:29:08 WEST] [75/745] row 173 :: 902/9020 :: Ciência Política e Relações Internacionais :: Universidade Nova de Lisboa - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:29:10 WEST] row 173 unchanged
+[2026-05-11 13:29:10 WEST] [76/745] row 174 :: 140/9022 :: Ciências Agrárias :: Universidade dos Açores - Faculdade de Ciências Agrárias e do Ambiente
+[2026-05-11 13:29:12 WEST] row 174 unchanged
+[2026-05-11 13:29:12 WEST] [77/745] row 180 :: 400/9023 :: Ciências da Comunicação :: Universidade da Beira Interior
+[2026-05-11 13:29:15 WEST] row 180 unchanged
+[2026-05-11 13:29:15 WEST] [78/745] row 181 :: 902/9023 :: Ciências da Comunicação :: Universidade Nova de Lisboa - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:29:16 WEST] row 181 unchanged
+[2026-05-11 13:29:16 WEST] [79/745] row 182 :: 400/9025 :: Ciências da Cultura :: Universidade da Beira Interior
+[2026-05-11 13:29:18 WEST] row 182 unchanged
+[2026-05-11 13:29:18 WEST] [80/745] row 185 :: 507/9026 :: Ciências da Educação :: Universidade de Coimbra - Faculdade de Psicologia e de Ciências da Educação
+[2026-05-11 13:29:20 WEST] row 185 unchanged
+[2026-05-11 13:29:25 WEST] flushed target columns after 80 processed rows
+[2026-05-11 13:29:25 WEST] [81/745] row 186 :: 604/9026 :: Ciências da Educação :: Universidade de Évora - Escola de Ciências Sociais
+[2026-05-11 13:29:27 WEST] row 186 unchanged
+[2026-05-11 13:29:27 WEST] [82/745] row 189 :: 902/9040 :: Ciências da Linguagem :: Universidade Nova de Lisboa - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:29:28 WEST] row 189 unchanged
+[2026-05-11 13:29:28 WEST] [83/745] row 190 :: 300/9041 :: Ciências do Mar :: Universidade de Aveiro
+[2026-05-11 13:29:30 WEST] row 190 unchanged
+[2026-05-11 13:29:30 WEST] [84/745] row 193 :: 902/9046 :: Ciências Musicais :: Universidade Nova de Lisboa - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:29:32 WEST] row 193 unchanged
+[2026-05-11 13:29:32 WEST] [85/745] row 195 :: 400/9048 :: Cinema :: Universidade da Beira Interior
+[2026-05-11 13:29:33 WEST] row 195 unchanged
+[2026-05-11 13:29:33 WEST] [86/745] row 206 :: 3092/9056 :: Contabilidade :: Instituto Politécnico da Guarda - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:29:34 WEST] row 206 unchanged
+[2026-05-11 13:29:35 WEST] [87/745] row 218 :: 300/9069 :: Design :: Universidade de Aveiro
+[2026-05-11 13:29:36 WEST] row 218 unchanged
+[2026-05-11 13:29:36 WEST] [88/745] row 219 :: 603/9069 :: Design :: Universidade de Évora - Escola de Artes
+[2026-05-11 13:29:38 WEST] row 219 unchanged
+[2026-05-11 13:29:38 WEST] [89/745] row 225 :: 400/9071 :: Design de Moda :: Universidade da Beira Interior
+[2026-05-11 13:29:39 WEST] row 225 unchanged
+[2026-05-11 13:29:39 WEST] [90/745] row 229 :: 400/9074 :: Design Industrial :: Universidade da Beira Interior
+[2026-05-11 13:29:41 WEST] row 229 unchanged
+[2026-05-11 13:29:41 WEST] [91/745] row 230 :: 400/9075 :: Design Multimédia :: Universidade da Beira Interior
+[2026-05-11 13:29:43 WEST] row 230 unchanged
+[2026-05-11 13:29:43 WEST] [92/745] row 237 :: 502/9078 :: Direito :: Universidade de Coimbra - Faculdade de Direito
+[2026-05-11 13:29:44 WEST] row 237 unchanged
+[2026-05-11 13:29:44 WEST] [93/745] row 238 :: 911/9078 :: Direito :: Universidade Nova de Lisboa - Faculdade de Direito
+[2026-05-11 13:29:46 WEST] row 238 unchanged
+[2026-05-11 13:29:46 WEST] [94/745] row 245 :: 400/9081 :: Economia :: Universidade da Beira Interior
+[2026-05-11 13:29:48 WEST] row 245 unchanged
+[2026-05-11 13:29:48 WEST] [95/745] row 246 :: 300/9081 :: Economia :: Universidade de Aveiro
+[2026-05-11 13:29:50 WEST] row 246 unchanged
+[2026-05-11 13:29:50 WEST] [96/745] row 247 :: 503/9081 :: Economia :: Universidade de Coimbra - Faculdade de Economia
+[2026-05-11 13:29:51 WEST] row 247 unchanged
+[2026-05-11 13:29:51 WEST] [97/745] row 248 :: 604/9081 :: Economia :: Universidade de Évora - Escola de Ciências Sociais
+[2026-05-11 13:29:53 WEST] row 248 unchanged
+[2026-05-11 13:29:53 WEST] [98/745] row 249 :: 204/9081 :: Economia :: Universidade do Algarve - Faculdade de Economia
+[2026-05-11 13:29:55 WEST] row 249 unchanged
+[2026-05-11 13:29:55 WEST] [99/745] row 250 :: 170/9081 :: Economia :: Universidade dos Açores - Faculdade de Economia e Gestão
+[2026-05-11 13:29:56 WEST] row 250 unchanged
+[2026-05-11 13:29:56 WEST] [100/745] row 251 :: 904/9081 :: Economia :: Universidade Nova de Lisboa - Faculdade de Economia
+[2026-05-11 13:29:58 WEST] row 251 unchanged
+[2026-05-11 13:29:58 WEST] [101/745] row 265 :: 3161/9085 :: Enfermagem Veterinária :: Instituto Politécnico de Viana do Castelo - Escola Superior Agrária
+[2026-05-11 13:29:59 WEST] row 265 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:29:59 WEST] [102/745] row 266 :: 3185/9085 :: Enfermagem Veterinária :: Instituto Politécnico de Viseu - Escola Superior Agrária de Viseu
+[2026-05-11 13:30:00 WEST] row 266 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:00 WEST] [103/745] row 267 :: 3185/9086 :: Engenharia Agronómica :: Instituto Politécnico de Viseu - Escola Superior Agrária de Viseu
+[2026-05-11 13:30:01 WEST] row 267 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:01 WEST] [104/745] row 268 :: 1103/9086 :: Engenharia Agronómica :: Universidade do Porto - Faculdade de Ciências
+[2026-05-11 13:30:02 WEST] row 268 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:02 WEST] [105/745] row 269 :: 3041/9086 :: Engenharia Agronómica :: Instituto Politécnico de Bragança - Escola Superior Agrária de Bragança
+[2026-05-11 13:30:03 WEST] row 269 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:03 WEST] [106/745] row 270 :: 1515/9086 :: Engenharia Agronómica :: Universidade de Lisboa - Instituto Superior de Agronomia
+[2026-05-11 13:30:04 WEST] row 270 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:04 WEST] [107/745] row 271 :: 3185/9087 :: Engenharia Alimentar :: Instituto Politécnico de Viseu - Escola Superior Agrária de Viseu
+[2026-05-11 13:30:05 WEST] row 271 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:05 WEST] [108/745] row 272 :: 3041/9087 :: Engenharia Alimentar :: Instituto Politécnico de Bragança - Escola Superior Agrária de Bragança
+[2026-05-11 13:30:06 WEST] row 272 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:06 WEST] [109/745] row 273 :: 1515/9087 :: Engenharia Alimentar :: Universidade de Lisboa - Instituto Superior de Agronomia
+[2026-05-11 13:30:07 WEST] row 273 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:07 WEST] [110/745] row 275 :: 3154/9089 :: Engenharia Civil :: Instituto Politécnico de Setúbal - Escola Superior de Tecnologia do Barreiro
+[2026-05-11 13:30:08 WEST] row 275 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:08 WEST] [111/745] row 276 :: 3092/9089 :: Engenharia Civil :: Instituto Politécnico da Guarda - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:30:10 WEST] row 276 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=True
+[2026-05-11 13:30:10 WEST] [112/745] row 277 :: 3242/9089 :: Engenharia Civil :: Instituto Politécnico de Tomar - Escola Superior de Tecnologia de Tomar
+[2026-05-11 13:30:11 WEST] row 277 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:11 WEST] [113/745] row 278 :: 1518/9089 :: Engenharia Civil :: Universidade de Lisboa - Instituto Superior Técnico
+[2026-05-11 13:30:12 WEST] row 278 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:12 WEST] [114/745] row 279 :: 3102/9089 :: Engenharia Civil :: Instituto Politécnico de Leiria - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:30:13 WEST] row 279 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:13 WEST] [115/745] row 280 :: 3118/9089 :: Engenharia Civil :: Instituto Politécnico de Lisboa - Instituto Superior de Engenharia de Lisboa
+[2026-05-11 13:30:14 WEST] row 280 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:14 WEST] [116/745] row 281 :: 1000/9089 :: Engenharia Civil :: Universidade do Minho
+[2026-05-11 13:30:15 WEST] row 281 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:15 WEST] [117/745] row 282 :: 3135/9089 :: Engenharia Civil :: Instituto Politécnico do Porto - Instituto Superior de Engenharia do Porto
+[2026-05-11 13:30:16 WEST] row 282 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:16 WEST] [118/745] row 283 :: 3182/9089 :: Engenharia Civil :: Instituto Politécnico de Viseu - Escola Superior de Tecnologia e Gestão de Viseu
+[2026-05-11 13:30:18 WEST] row 283 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:18 WEST] [119/745] row 284 :: 1307/9089 :: Engenharia Civil :: Universidade da Madeira - Faculdade de Ciências Exatas e da Engenharia
+[2026-05-11 13:30:18 WEST] row 284 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:18 WEST] [120/745] row 285 :: 3043/9089 :: Engenharia Civil :: Instituto Politécnico de Bragança - Escola Superior de Tecnologia e de Gestão de Bragança
+[2026-05-11 13:30:19 WEST] row 285 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:20 WEST] [121/745] row 286 :: 3053/9089 :: Engenharia Civil :: Instituto Politécnico de Castelo Branco - Escola Superior de Tecnologia de Castelo Branco
+[2026-05-11 13:30:21 WEST] row 286 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:21 WEST] [122/745] row 287 :: 3064/9089 :: Engenharia Civil :: Instituto Politécnico de Coimbra - Instituto Superior de Engenharia de Coimbra
+[2026-05-11 13:30:22 WEST] row 287 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:22 WEST] [123/745] row 288 :: 3083/9089 :: Engenharia Civil :: Universidade do Algarve - Instituto Superior de Engenharia
+[2026-05-11 13:30:24 WEST] row 288 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:24 WEST] [124/745] row 289 :: 1203/9089 :: Engenharia Civil :: Universidade de Trás-os-Montes e Alto Douro - Escola de Ciências e Tecnologia
+[2026-05-11 13:30:25 WEST] row 289 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:25 WEST] [125/745] row 290 :: 3124/9089 :: Engenharia Civil :: Instituto Politécnico de Portalegre - Escola Superior de Tecnologia, Gestão e Design
+[2026-05-11 13:30:26 WEST] row 290 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:26 WEST] [126/745] row 291 :: 400/9089 :: Engenharia Civil :: Universidade da Beira Interior
+[2026-05-11 13:30:28 WEST] row 291 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:30:28 WEST] [127/745] row 292 :: 300/9089 :: Engenharia Civil :: Universidade de Aveiro
+[2026-05-11 13:30:29 WEST] row 292 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:30:29 WEST] [128/745] row 293 :: 501/9089 :: Engenharia Civil :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:30:31 WEST] row 293 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:30:31 WEST] [129/745] row 294 :: 903/9089 :: Engenharia Civil :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:30:33 WEST] row 294 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:30:33 WEST] [130/745] row 295 :: 3152/9092 :: Engenharia de Automação, Controlo e Instrumentação :: Instituto Politécnico de Setúbal - Escola Superior de Tecnologia de Setúbal
+[2026-05-11 13:30:34 WEST] row 295 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:34 WEST] [131/745] row 297 :: 1000/9096 :: Engenharia de Materiais :: Universidade do Minho
+[2026-05-11 13:30:35 WEST] row 297 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:35 WEST] [132/745] row 298 :: 1518/9096 :: Engenharia de Materiais :: Universidade de Lisboa - Instituto Superior Técnico
+[2026-05-11 13:30:36 WEST] row 298 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:36 WEST] [133/745] row 299 :: 300/9096 :: Engenharia de Materiais :: Universidade de Aveiro
+[2026-05-11 13:30:38 WEST] row 299 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:30:38 WEST] [134/745] row 300 :: 903/9096 :: Engenharia de Materiais :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:30:40 WEST] row 300 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:30:40 WEST] [135/745] row 301 :: 1000/9098 :: Engenharia de Telecomunicações e Informática :: Universidade do Minho
+[2026-05-11 13:30:41 WEST] row 301 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:41 WEST] [136/745] row 302 :: 3135/9098 :: Engenharia de Telecomunicações e Informática :: Instituto Politécnico do Porto - Instituto Superior de Engenharia do Porto
+[2026-05-11 13:30:42 WEST] row 302 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:42 WEST] [137/745] row 303 :: 1519/9098 :: Engenharia de Telecomunicações e Informática :: Universidade de Lisboa - Instituto Superior Técnico (Tagus Park)
+[2026-05-11 13:30:44 WEST] row 303 prepared :: cidade=True distrito=False morada=True institution_url=True course_url=True
+[2026-05-11 13:30:44 WEST] [138/745] row 304 :: 6800/9098 :: Engenharia de Telecomunicações e Informática :: ISCTE - Instituto Universitário de Lisboa
+[2026-05-11 13:30:45 WEST] row 304 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:45 WEST] [139/745] row 306 :: 3041/9099 :: Engenharia do Ambiente :: Instituto Politécnico de Bragança - Escola Superior Agrária de Bragança
+[2026-05-11 13:30:46 WEST] row 306 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:46 WEST] [140/745] row 307 :: 1515/9099 :: Engenharia do Ambiente :: Universidade de Lisboa - Instituto Superior de Agronomia
+[2026-05-11 13:30:47 WEST] row 307 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:48 WEST] [141/745] row 308 :: 1518/9099 :: Engenharia do Ambiente :: Universidade de Lisboa - Instituto Superior Técnico
+[2026-05-11 13:30:48 WEST] row 308 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:48 WEST] [142/745] row 309 :: 3021/9099 :: Engenharia do Ambiente :: Instituto Politécnico de Beja - Escola Superior Agrária
+[2026-05-11 13:30:49 WEST] row 309 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:49 WEST] [143/745] row 310 :: 300/9099 :: Engenharia do Ambiente :: Universidade de Aveiro
+[2026-05-11 13:30:51 WEST] row 310 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:30:51 WEST] [144/745] row 311 :: 501/9099 :: Engenharia do Ambiente :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:30:53 WEST] row 311 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:30:53 WEST] [145/745] row 312 :: 903/9099 :: Engenharia do Ambiente :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:30:55 WEST] row 312 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:30:55 WEST] [146/745] row 314 :: 3043/9104 :: Engenharia e Gestão Industrial :: Instituto Politécnico de Bragança - Escola Superior de Tecnologia e de Gestão de Bragança
+[2026-05-11 13:30:56 WEST] row 314 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:56 WEST] [147/745] row 315 :: 3053/9104 :: Engenharia e Gestão Industrial :: Instituto Politécnico de Castelo Branco - Escola Superior de Tecnologia de Castelo Branco
+[2026-05-11 13:30:57 WEST] row 315 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:57 WEST] [148/745] row 316 :: 3032/9104 :: Engenharia e Gestão Industrial :: Instituto Politécnico do Cávado e do Ave - Escola Superior de Tecnologia
+[2026-05-11 13:30:58 WEST] row 316 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:58 WEST] [149/745] row 317 :: 1203/9104 :: Engenharia e Gestão Industrial :: Universidade de Trás-os-Montes e Alto Douro - Escola de Ciências e Tecnologia
+[2026-05-11 13:30:59 WEST] row 317 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:30:59 WEST] [150/745] row 318 :: 3064/9104 :: Engenharia e Gestão Industrial :: Instituto Politécnico de Coimbra - Instituto Superior de Engenharia de Coimbra
+[2026-05-11 13:31:00 WEST] row 318 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:00 WEST] [151/745] row 319 :: 3135/9104 :: Engenharia e Gestão Industrial :: Instituto Politécnico do Porto - Instituto Superior de Engenharia do Porto
+[2026-05-11 13:31:01 WEST] row 319 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:01 WEST] [152/745] row 320 :: 3102/9104 :: Engenharia e Gestão Industrial :: Instituto Politécnico de Leiria - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:31:03 WEST] row 320 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:03 WEST] [153/745] row 321 :: 1000/9104 :: Engenharia e Gestão Industrial :: Universidade do Minho
+[2026-05-11 13:31:04 WEST] row 321 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:04 WEST] [154/745] row 322 :: 1519/9104 :: Engenharia e Gestão Industrial :: Universidade de Lisboa - Instituto Superior Técnico (Tagus Park)
+[2026-05-11 13:31:06 WEST] row 322 prepared :: cidade=True distrito=False morada=True institution_url=True course_url=True
+[2026-05-11 13:31:06 WEST] [155/745] row 323 :: 400/9104 :: Engenharia e Gestão Industrial :: Universidade da Beira Interior
+[2026-05-11 13:31:07 WEST] row 323 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:31:07 WEST] [156/745] row 324 :: 300/9104 :: Engenharia e Gestão Industrial :: Universidade de Aveiro
+[2026-05-11 13:31:09 WEST] row 324 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:31:09 WEST] [157/745] row 325 :: 501/9104 :: Engenharia e Gestão Industrial :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:31:11 WEST] row 325 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:31:11 WEST] [158/745] row 326 :: 903/9104 :: Engenharia e Gestão Industrial :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:31:12 WEST] row 326 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:31:12 WEST] [159/745] row 327 :: 3064/9105 :: Engenharia Eletromecânica :: Instituto Politécnico de Coimbra - Instituto Superior de Engenharia de Coimbra
+[2026-05-11 13:31:13 WEST] row 327 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:13 WEST] [160/745] row 328 :: 400/9105 :: Engenharia Eletromecânica :: Universidade da Beira Interior
+[2026-05-11 13:31:15 WEST] row 328 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:31:19 WEST] flushed target columns after 160 processed rows
+[2026-05-11 13:31:20 WEST] [161/745] row 329 :: 1307/9107 :: Engenharia Eletrónica e Telecomunicações :: Universidade da Madeira - Faculdade de Ciências Exatas e da Engenharia
+[2026-05-11 13:31:20 WEST] row 329 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:21 WEST] [162/745] row 330 :: 3118/9108 :: Engenharia Eletrónica e Telecomunicações e de Computadores :: Instituto Politécnico de Lisboa - Instituto Superior de Engenharia de Lisboa
+[2026-05-11 13:31:22 WEST] row 330 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:22 WEST] [163/745] row 331 :: 3182/9109 :: Engenharia Eletrotécnica :: Instituto Politécnico de Viseu - Escola Superior de Tecnologia e Gestão de Viseu
+[2026-05-11 13:31:23 WEST] row 331 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:23 WEST] [164/745] row 332 :: 3118/9109 :: Engenharia Eletrotécnica :: Instituto Politécnico de Lisboa - Instituto Superior de Engenharia de Lisboa
+[2026-05-11 13:31:24 WEST] row 332 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:24 WEST] [165/745] row 333 :: 3135/9110 :: Engenharia Eletrotécnica - Sistemas Elétricos de Energia :: Instituto Politécnico do Porto - Instituto Superior de Engenharia do Porto
+[2026-05-11 13:31:25 WEST] row 333 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:25 WEST] [166/745] row 334 :: 3053/9111 :: Engenharia Eletrotécnica e das Telecomunicações :: Instituto Politécnico de Castelo Branco - Escola Superior de Tecnologia de Castelo Branco
+[2026-05-11 13:31:26 WEST] row 334 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:26 WEST] [167/745] row 335 :: 3135/9112 :: Engenharia Eletrotécnica e de Computadores :: Instituto Politécnico do Porto - Instituto Superior de Engenharia do Porto
+[2026-05-11 13:31:27 WEST] row 335 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:27 WEST] [168/745] row 336 :: 3102/9112 :: Engenharia Eletrotécnica e de Computadores :: Instituto Politécnico de Leiria - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:31:28 WEST] row 336 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:28 WEST] [169/745] row 337 :: 3032/9112 :: Engenharia Eletrotécnica e de Computadores :: Instituto Politécnico do Cávado e do Ave - Escola Superior de Tecnologia
+[2026-05-11 13:31:29 WEST] row 337 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:29 WEST] [170/745] row 338 :: 3242/9112 :: Engenharia Eletrotécnica e de Computadores :: Instituto Politécnico de Tomar - Escola Superior de Tecnologia de Tomar
+[2026-05-11 13:31:31 WEST] row 338 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:31 WEST] [171/745] row 339 :: 3152/9112 :: Engenharia Eletrotécnica e de Computadores :: Instituto Politécnico de Setúbal - Escola Superior de Tecnologia de Setúbal
+[2026-05-11 13:31:31 WEST] row 339 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:31 WEST] [172/745] row 340 :: 400/9112 :: Engenharia Eletrotécnica e de Computadores :: Universidade da Beira Interior
+[2026-05-11 13:31:33 WEST] row 340 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:31:33 WEST] [173/745] row 341 :: 1000/9113 :: Engenharia Física :: Universidade do Minho
+[2026-05-11 13:31:35 WEST] row 341 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:35 WEST] [174/745] row 342 :: 1503/9113 :: Engenharia Física :: Universidade de Lisboa - Faculdade de Ciências
+[2026-05-11 13:31:36 WEST] row 342 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:36 WEST] [175/745] row 343 :: 1203/9113 :: Engenharia Física :: Universidade de Trás-os-Montes e Alto Douro - Escola de Ciências e Tecnologia
+[2026-05-11 13:31:37 WEST] row 343 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:37 WEST] [176/745] row 344 :: 1103/9113 :: Engenharia Física :: Universidade do Porto - Faculdade de Ciências
+[2026-05-11 13:31:38 WEST] row 344 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:38 WEST] [177/745] row 345 :: 300/9113 :: Engenharia Física :: Universidade de Aveiro
+[2026-05-11 13:31:39 WEST] row 345 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:31:40 WEST] [178/745] row 346 :: 501/9113 :: Engenharia Física :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:31:41 WEST] row 346 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:31:41 WEST] [179/745] row 347 :: 903/9113 :: Engenharia Física :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:31:43 WEST] row 347 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:31:43 WEST] [180/745] row 348 :: 3135/9117 :: Engenharia Geotécnica e Geoambiente :: Instituto Politécnico do Porto - Instituto Superior de Engenharia do Porto
+[2026-05-11 13:31:44 WEST] row 348 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:44 WEST] [181/745] row 349 :: 1203/9119 :: Engenharia Informática :: Universidade de Trás-os-Montes e Alto Douro - Escola de Ciências e Tecnologia
+[2026-05-11 13:31:46 WEST] row 349 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:46 WEST] [182/745] row 350 :: 3023/9119 :: Engenharia Informática :: Instituto Politécnico de Beja - Escola Superior de Tecnologia e de Gestão
+[2026-05-11 13:31:47 WEST] row 350 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:47 WEST] [183/745] row 351 :: 3124/9119 :: Engenharia Informática :: Instituto Politécnico de Portalegre - Escola Superior de Tecnologia, Gestão e Design
+[2026-05-11 13:31:48 WEST] row 351 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:48 WEST] [184/745] row 352 :: 1000/9119 :: Engenharia Informática :: Universidade do Minho
+[2026-05-11 13:31:49 WEST] row 352 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:49 WEST] [185/745] row 353 :: 3065/9119 :: Engenharia Informática :: Instituto Politécnico de Coimbra - Escola Superior de Tecnologia e Gestão de Oliveira do Hospital
+[2026-05-11 13:31:50 WEST] row 353 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:50 WEST] [186/745] row 354 :: 3135/9119 :: Engenharia Informática :: Instituto Politécnico do Porto - Instituto Superior de Engenharia do Porto
+[2026-05-11 13:31:51 WEST] row 354 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:51 WEST] [187/745] row 355 :: 3092/9119 :: Engenharia Informática :: Instituto Politécnico da Guarda - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:31:52 WEST] row 355 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=True
+[2026-05-11 13:31:52 WEST] [188/745] row 356 :: 3053/9119 :: Engenharia Informática :: Instituto Politécnico de Castelo Branco - Escola Superior de Tecnologia de Castelo Branco
+[2026-05-11 13:31:54 WEST] row 356 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:54 WEST] [189/745] row 357 :: 3242/9119 :: Engenharia Informática :: Instituto Politécnico de Tomar - Escola Superior de Tecnologia de Tomar
+[2026-05-11 13:31:54 WEST] row 357 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:54 WEST] [190/745] row 358 :: 3138/9119 :: Engenharia Informática :: Instituto Politécnico do Porto - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:31:55 WEST] row 358 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:56 WEST] [191/745] row 359 :: 3043/9119 :: Engenharia Informática :: Instituto Politécnico de Bragança - Escola Superior de Tecnologia e de Gestão de Bragança
+[2026-05-11 13:31:56 WEST] row 359 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:56 WEST] [192/745] row 360 :: 3152/9119 :: Engenharia Informática :: Instituto Politécnico de Setúbal - Escola Superior de Tecnologia de Setúbal
+[2026-05-11 13:31:57 WEST] row 360 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:57 WEST] [193/745] row 361 :: 3182/9119 :: Engenharia Informática :: Instituto Politécnico de Viseu - Escola Superior de Tecnologia e Gestão de Viseu
+[2026-05-11 13:31:59 WEST] row 361 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:31:59 WEST] [194/745] row 362 :: 6800/9119 :: Engenharia Informática :: ISCTE - Instituto Universitário de Lisboa
+[2026-05-11 13:32:00 WEST] row 362 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:00 WEST] [195/745] row 363 :: 1307/9119 :: Engenharia Informática :: Universidade da Madeira - Faculdade de Ciências Exatas e da Engenharia
+[2026-05-11 13:32:01 WEST] row 363 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:01 WEST] [196/745] row 364 :: 3163/9119 :: Engenharia Informática :: Instituto Politécnico de Viana do Castelo - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:32:02 WEST] row 364 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:02 WEST] [197/745] row 365 :: 3102/9119 :: Engenharia Informática :: Instituto Politécnico de Leiria - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:32:03 WEST] row 365 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:03 WEST] [198/745] row 366 :: 1503/9119 :: Engenharia Informática :: Universidade de Lisboa - Faculdade de Ciências
+[2026-05-11 13:32:04 WEST] row 366 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:05 WEST] [199/745] row 367 :: 3064/9119 :: Engenharia Informática :: Instituto Politécnico de Coimbra - Instituto Superior de Engenharia de Coimbra
+[2026-05-11 13:32:06 WEST] row 367 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:06 WEST] [200/745] row 368 :: 3143/9119 :: Engenharia Informática :: Instituto Politécnico de Santarém - Escola Superior de Gestão e Tecnologia de Santarém
+[2026-05-11 13:32:07 WEST] row 368 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:32:07 WEST] [201/745] row 369 :: 400/9119 :: Engenharia Informática :: Universidade da Beira Interior
+[2026-05-11 13:32:09 WEST] row 369 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:32:09 WEST] [202/745] row 370 :: 300/9119 :: Engenharia Informática :: Universidade de Aveiro
+[2026-05-11 13:32:11 WEST] row 370 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:32:11 WEST] [203/745] row 371 :: 501/9119 :: Engenharia Informática :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:32:12 WEST] row 371 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:32:12 WEST] [204/745] row 372 :: 602/9119 :: Engenharia Informática :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-11 13:32:13 WEST] row 372 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:32:13 WEST] [205/745] row 373 :: 203/9119 :: Engenharia Informática :: Universidade do Algarve - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:32:15 WEST] row 373 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:32:15 WEST] [206/745] row 374 :: 903/9119 :: Engenharia Informática :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:32:16 WEST] row 374 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:32:16 WEST] [207/745] row 375 :: 1518/9121 :: Engenharia Informática e de Computadores :: Universidade de Lisboa - Instituto Superior Técnico
+[2026-05-11 13:32:17 WEST] row 375 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:17 WEST] [208/745] row 376 :: 7105/9121 :: Engenharia Informática e de Computadores :: Escola Superior Náutica Infante D. Henrique
+[2026-05-11 13:32:19 WEST] row 376 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:19 WEST] [209/745] row 377 :: 1519/9121 :: Engenharia Informática e de Computadores :: Universidade de Lisboa - Instituto Superior Técnico (Tagus Park)
+[2026-05-11 13:32:21 WEST] row 377 prepared :: cidade=True distrito=False morada=True institution_url=True course_url=True
+[2026-05-11 13:32:21 WEST] [210/745] row 378 :: 3118/9121 :: Engenharia Informática e de Computadores :: Instituto Politécnico de Lisboa - Instituto Superior de Engenharia de Lisboa
+[2026-05-11 13:32:22 WEST] row 378 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:22 WEST] [211/745] row 379 :: 3186/9122 :: Engenharia Informática e Telecomunicações :: Instituto Politécnico de Viseu - Escola Superior de Tecnologia e Gestão de Lamego
+[2026-05-11 13:32:23 WEST] row 379 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:23 WEST] [212/745] row 381 :: 3243/9123 :: Engenharia Mecânica :: Instituto Politécnico de Tomar - Escola Superior de Tecnologia de Abrantes
+[2026-05-11 13:32:24 WEST] row 381 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:24 WEST] [213/745] row 382 :: 3083/9123 :: Engenharia Mecânica :: Universidade do Algarve - Instituto Superior de Engenharia
+[2026-05-11 13:32:25 WEST] row 382 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:25 WEST] [214/745] row 383 :: 3135/9123 :: Engenharia Mecânica :: Instituto Politécnico do Porto - Instituto Superior de Engenharia do Porto
+[2026-05-11 13:32:26 WEST] row 383 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:26 WEST] [215/745] row 384 :: 3102/9123 :: Engenharia Mecânica :: Instituto Politécnico de Leiria - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:32:27 WEST] row 384 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:27 WEST] [216/745] row 385 :: 3152/9123 :: Engenharia Mecânica :: Instituto Politécnico de Setúbal - Escola Superior de Tecnologia de Setúbal
+[2026-05-11 13:32:28 WEST] row 385 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:28 WEST] [217/745] row 386 :: 3182/9123 :: Engenharia Mecânica :: Instituto Politécnico de Viseu - Escola Superior de Tecnologia e Gestão de Viseu
+[2026-05-11 13:32:30 WEST] row 386 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:30 WEST] [218/745] row 387 :: 1518/9123 :: Engenharia Mecânica :: Universidade de Lisboa - Instituto Superior Técnico
+[2026-05-11 13:32:31 WEST] row 387 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:31 WEST] [219/745] row 388 :: 3043/9123 :: Engenharia Mecânica :: Instituto Politécnico de Bragança - Escola Superior de Tecnologia e de Gestão de Bragança
+[2026-05-11 13:32:32 WEST] row 388 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:32 WEST] [220/745] row 389 :: 3163/9123 :: Engenharia Mecânica :: Instituto Politécnico de Viana do Castelo - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:32:33 WEST] row 389 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:33 WEST] [221/745] row 390 :: 1203/9123 :: Engenharia Mecânica :: Universidade de Trás-os-Montes e Alto Douro - Escola de Ciências e Tecnologia
+[2026-05-11 13:32:34 WEST] row 390 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:34 WEST] [222/745] row 391 :: 3064/9123 :: Engenharia Mecânica :: Instituto Politécnico de Coimbra - Instituto Superior de Engenharia de Coimbra
+[2026-05-11 13:32:35 WEST] row 391 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:35 WEST] [223/745] row 392 :: 3118/9123 :: Engenharia Mecânica :: Instituto Politécnico de Lisboa - Instituto Superior de Engenharia de Lisboa
+[2026-05-11 13:32:36 WEST] row 392 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:36 WEST] [224/745] row 393 :: 1000/9123 :: Engenharia Mecânica :: Universidade do Minho
+[2026-05-11 13:32:37 WEST] row 393 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:37 WEST] [225/745] row 394 :: 300/9123 :: Engenharia Mecânica :: Universidade de Aveiro
+[2026-05-11 13:32:39 WEST] row 394 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:32:39 WEST] [226/745] row 395 :: 501/9123 :: Engenharia Mecânica :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:32:40 WEST] row 395 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:32:40 WEST] [227/745] row 396 :: 903/9123 :: Engenharia Mecânica :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:32:42 WEST] row 396 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:32:42 WEST] [228/745] row 398 :: 3043/9125 :: Engenharia Química :: Instituto Politécnico de Bragança - Escola Superior de Tecnologia e de Gestão de Bragança
+[2026-05-11 13:32:43 WEST] row 398 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:43 WEST] [229/745] row 399 :: 3135/9125 :: Engenharia Química :: Instituto Politécnico do Porto - Instituto Superior de Engenharia do Porto
+[2026-05-11 13:32:44 WEST] row 399 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:44 WEST] [230/745] row 400 :: 1518/9125 :: Engenharia Química :: Universidade de Lisboa - Instituto Superior Técnico
+[2026-05-11 13:32:45 WEST] row 400 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:45 WEST] [231/745] row 401 :: 300/9125 :: Engenharia Química :: Universidade de Aveiro
+[2026-05-11 13:32:47 WEST] row 401 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:32:47 WEST] [232/745] row 402 :: 501/9125 :: Engenharia Química :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:32:49 WEST] row 402 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:32:49 WEST] [233/745] row 403 :: 3118/9126 :: Engenharia Química e Biológica :: Instituto Politécnico de Lisboa - Instituto Superior de Engenharia de Lisboa
+[2026-05-11 13:32:50 WEST] row 403 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:50 WEST] [234/745] row 404 :: 1000/9126 :: Engenharia Química e Biológica :: Universidade do Minho
+[2026-05-11 13:32:51 WEST] row 404 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:51 WEST] [235/745] row 405 :: 3124/9126 :: Engenharia Química e Biológica :: Instituto Politécnico de Portalegre - Escola Superior de Tecnologia, Gestão e Design
+[2026-05-11 13:32:52 WEST] row 405 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:32:52 WEST] [236/745] row 406 :: 903/9126 :: Engenharia Química e Biológica :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:32:53 WEST] row 406 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:32:54 WEST] [237/745] row 407 :: 1000/9127 :: Engenharia Têxtil :: Universidade do Minho
+[2026-05-11 13:32:55 WEST] row 407 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:55 WEST] [238/745] row 408 :: 3092/9128 :: Engenharia Topográfica :: Instituto Politécnico da Guarda - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:32:57 WEST] row 408 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=True
+[2026-05-11 13:32:57 WEST] [239/745] row 409 :: 3041/9129 :: Engenharia Zootécnica :: Instituto Politécnico de Bragança - Escola Superior Agrária de Bragança
+[2026-05-11 13:32:58 WEST] row 409 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:32:58 WEST] [240/745] row 410 :: 3185/9129 :: Engenharia Zootécnica :: Instituto Politécnico de Viseu - Escola Superior Agrária de Viseu
+[2026-05-11 13:32:59 WEST] row 410 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:04 WEST] flushed target columns after 240 processed rows
+[2026-05-11 13:33:04 WEST] [241/745] row 411 :: 1515/9129 :: Engenharia Zootécnica :: Universidade de Lisboa - Instituto Superior de Agronomia
+[2026-05-11 13:33:04 WEST] row 411 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:04 WEST] [242/745] row 412 :: 3125/9130 :: Equinicultura :: Instituto Politécnico de Portalegre - Escola Superior de Biociências de Elvas
+[2026-05-11 13:33:06 WEST] row 412 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:06 WEST] [243/745] row 413 :: 1506/9131 :: Estudos Africanos :: Universidade de Lisboa - Faculdade de Letras
+[2026-05-11 13:33:07 WEST] row 413 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:07 WEST] [244/745] row 414 :: 1506/9132 :: Estudos Artísticos :: Universidade de Lisboa - Faculdade de Letras
+[2026-05-11 13:33:08 WEST] row 414 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:08 WEST] [245/745] row 415 :: 505/9132 :: Estudos Artísticos :: Universidade de Coimbra - Faculdade de Letras
+[2026-05-11 13:33:10 WEST] row 415 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:33:10 WEST] [246/745] row 416 :: 1506/9133 :: Estudos Clássicos :: Universidade de Lisboa - Faculdade de Letras
+[2026-05-11 13:33:11 WEST] row 416 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:11 WEST] [247/745] row 417 :: 505/9133 :: Estudos Clássicos :: Universidade de Coimbra - Faculdade de Letras
+[2026-05-11 13:33:12 WEST] row 417 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:33:12 WEST] [248/745] row 418 :: 1000/9134 :: Estudos Culturais :: Universidade do Minho
+[2026-05-11 13:33:14 WEST] row 418 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:14 WEST] [249/745] row 419 :: 1506/9135 :: Estudos Europeus :: Universidade de Lisboa - Faculdade de Letras
+[2026-05-11 13:33:15 WEST] row 419 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:15 WEST] [250/745] row 420 :: 505/9135 :: Estudos Europeus :: Universidade de Coimbra - Faculdade de Letras
+[2026-05-11 13:33:17 WEST] row 420 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:33:17 WEST] [251/745] row 421 :: 150/9135 :: Estudos Europeus :: Universidade dos Açores - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:33:18 WEST] row 421 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:33:18 WEST] [252/745] row 422 :: 1000/9139 :: Filosofia :: Universidade do Minho
+[2026-05-11 13:33:19 WEST] row 422 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:19 WEST] [253/745] row 423 :: 1506/9139 :: Filosofia :: Universidade de Lisboa - Faculdade de Letras
+[2026-05-11 13:33:20 WEST] row 423 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:20 WEST] [254/745] row 424 :: 1107/9139 :: Filosofia :: Universidade do Porto - Faculdade de Letras
+[2026-05-11 13:33:21 WEST] row 424 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:21 WEST] [255/745] row 425 :: 400/9139 :: Filosofia :: Universidade da Beira Interior
+[2026-05-11 13:33:23 WEST] row 425 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:33:23 WEST] [256/745] row 426 :: 505/9139 :: Filosofia :: Universidade de Coimbra - Faculdade de Letras
+[2026-05-11 13:33:24 WEST] row 426 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:33:24 WEST] [257/745] row 427 :: 902/9139 :: Filosofia :: Universidade Nova de Lisboa - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:33:25 WEST] row 427 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:33:26 WEST] [258/745] row 428 :: 3011/9140 :: Finanças :: Universidade de Aveiro - Instituto Superior de Contabilidade e Administração de Aveiro
+[2026-05-11 13:33:26 WEST] row 428 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:26 WEST] [259/745] row 429 :: 3031/9140 :: Finanças :: Instituto Politécnico do Cávado e do Ave - Escola Superior de Gestão
+[2026-05-11 13:33:28 WEST] row 429 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:28 WEST] [260/745] row 430 :: 1000/9141 :: Física :: Universidade do Minho
+[2026-05-11 13:33:29 WEST] row 430 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:29 WEST] [261/745] row 431 :: 1503/9141 :: Física :: Universidade de Lisboa - Faculdade de Ciências
+[2026-05-11 13:33:30 WEST] row 431 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:30 WEST] [262/745] row 432 :: 1103/9141 :: Física :: Universidade do Porto - Faculdade de Ciências
+[2026-05-11 13:33:31 WEST] row 432 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:31 WEST] [263/745] row 433 :: 300/9141 :: Física :: Universidade de Aveiro
+[2026-05-11 13:33:33 WEST] row 433 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:33:33 WEST] [264/745] row 434 :: 501/9141 :: Física :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:33:34 WEST] row 434 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:33:34 WEST] [265/745] row 435 :: 1107/9143 :: Geografia :: Universidade do Porto - Faculdade de Letras
+[2026-05-11 13:33:35 WEST] row 435 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:35 WEST] [266/745] row 436 :: 1514/9143 :: Geografia :: Universidade de Lisboa - Instituto de Geografia e Ordenamento do Território
+[2026-05-11 13:33:36 WEST] row 436 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:36 WEST] [267/745] row 437 :: 505/9143 :: Geografia :: Universidade de Coimbra - Faculdade de Letras
+[2026-05-11 13:33:38 WEST] row 437 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:33:38 WEST] [268/745] row 438 :: 602/9143 :: Geografia :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-11 13:33:40 WEST] row 438 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:33:40 WEST] [269/745] row 439 :: 902/9145 :: Geografia e Planeamento Regional :: Universidade Nova de Lisboa - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:33:42 WEST] row 439 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:33:42 WEST] [270/745] row 440 :: 1103/9146 :: Geologia :: Universidade do Porto - Faculdade de Ciências
+[2026-05-11 13:33:43 WEST] row 440 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:43 WEST] [271/745] row 441 :: 1503/9146 :: Geologia :: Universidade de Lisboa - Faculdade de Ciências
+[2026-05-11 13:33:44 WEST] row 441 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:44 WEST] [272/745] row 442 :: 1000/9146 :: Geologia :: Universidade do Minho
+[2026-05-11 13:33:45 WEST] row 442 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:45 WEST] [273/745] row 443 :: 300/9146 :: Geologia :: Universidade de Aveiro
+[2026-05-11 13:33:47 WEST] row 443 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:33:47 WEST] [274/745] row 444 :: 501/9146 :: Geologia :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:33:49 WEST] row 444 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:33:49 WEST] [275/745] row 445 :: 3065/9147 :: Gestão :: Instituto Politécnico de Coimbra - Escola Superior de Tecnologia e Gestão de Oliveira do Hospital
+[2026-05-11 13:33:50 WEST] row 445 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:50 WEST] [276/745] row 446 :: 1517/9147 :: Gestão :: Universidade de Lisboa - Instituto Superior de Economia e Gestão
+[2026-05-11 13:33:51 WEST] row 446 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:51 WEST] [277/745] row 447 :: 3054/9147 :: Gestão :: Instituto Politécnico de Castelo Branco - Escola Superior de Gestão de Idanha-a-Nova
+[2026-05-11 13:33:52 WEST] row 447 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:52 WEST] [278/745] row 448 :: 6800/9147 :: Gestão :: ISCTE - Instituto Universitário de Lisboa
+[2026-05-11 13:33:53 WEST] row 448 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:53 WEST] [279/745] row 449 :: 3087/9147 :: Gestão :: Universidade do Algarve - Escola Superior de Gestão, Hotelaria e Turismo (Portimão)
+[2026-05-11 13:33:53 WEST] row 449 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:53 WEST] [280/745] row 450 :: 1104/9147 :: Gestão :: Universidade do Porto - Faculdade de Economia
+[2026-05-11 13:33:54 WEST] row 450 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:54 WEST] [281/745] row 451 :: 3124/9147 :: Gestão :: Instituto Politécnico de Portalegre - Escola Superior de Tecnologia, Gestão e Design
+[2026-05-11 13:33:55 WEST] row 451 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:56 WEST] [282/745] row 452 :: 3092/9147 :: Gestão :: Instituto Politécnico da Guarda - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:33:57 WEST] row 452 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=True
+[2026-05-11 13:33:57 WEST] [283/745] row 453 :: 3163/9147 :: Gestão :: Instituto Politécnico de Viana do Castelo - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:33:58 WEST] row 453 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:58 WEST] [284/745] row 454 :: 1308/9147 :: Gestão :: Universidade da Madeira - Faculdade de Ciências Sociais
+[2026-05-11 13:33:59 WEST] row 454 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:33:59 WEST] [285/745] row 455 :: 3082/9147 :: Gestão :: Universidade do Algarve - Escola Superior de Gestão, Hotelaria e Turismo
+[2026-05-11 13:34:00 WEST] row 455 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:00 WEST] [286/745] row 456 :: 1202/9147 :: Gestão :: Universidade de Trás-os-Montes e Alto Douro - Escola de Ciências Humanas e Sociais
+[2026-05-11 13:34:01 WEST] row 456 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:01 WEST] [287/745] row 457 :: 3102/9147 :: Gestão :: Instituto Politécnico de Leiria - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:34:03 WEST] row 457 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:03 WEST] [288/745] row 458 :: 3043/9147 :: Gestão :: Instituto Politécnico de Bragança - Escola Superior de Tecnologia e de Gestão de Bragança
+[2026-05-11 13:34:04 WEST] row 458 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:04 WEST] [289/745] row 459 :: 3117/9147 :: Gestão :: Instituto Politécnico de Lisboa - Instituto Superior de Contabilidade e Administração de Lisboa
+[2026-05-11 13:34:05 WEST] row 459 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:05 WEST] [290/745] row 460 :: 1000/9147 :: Gestão :: Universidade do Minho
+[2026-05-11 13:34:05 WEST] row 460 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:06 WEST] [291/745] row 461 :: 3143/9147 :: Gestão :: Instituto Politécnico de Santarém - Escola Superior de Gestão e Tecnologia de Santarém
+[2026-05-11 13:34:06 WEST] row 461 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:06 WEST] [292/745] row 462 :: 3134/9147 :: Gestão :: Instituto Politécnico do Porto - Instituto Superior de Contabilidade e Administração do Porto
+[2026-05-11 13:34:07 WEST] row 462 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:34:07 WEST] [293/745] row 463 :: 400/9147 :: Gestão :: Universidade da Beira Interior
+[2026-05-11 13:34:09 WEST] row 463 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:34:09 WEST] [294/745] row 464 :: 300/9147 :: Gestão :: Universidade de Aveiro
+[2026-05-11 13:34:10 WEST] row 464 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:34:10 WEST] [295/745] row 465 :: 503/9147 :: Gestão :: Universidade de Coimbra - Faculdade de Economia
+[2026-05-11 13:34:12 WEST] row 465 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:34:12 WEST] [296/745] row 466 :: 604/9147 :: Gestão :: Universidade de Évora - Escola de Ciências Sociais
+[2026-05-11 13:34:14 WEST] row 466 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:34:14 WEST] [297/745] row 467 :: 170/9147 :: Gestão :: Universidade dos Açores - Faculdade de Economia e Gestão
+[2026-05-11 13:34:16 WEST] row 467 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:34:16 WEST] [298/745] row 468 :: 904/9147 :: Gestão :: Universidade Nova de Lisboa - Faculdade de Economia
+[2026-05-11 13:34:17 WEST] row 468 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:34:17 WEST] [299/745] row 469 :: 3082/9148 :: Gestão (regime noturno) :: Universidade do Algarve - Escola Superior de Gestão, Hotelaria e Turismo
+[2026-05-11 13:34:18 WEST] row 469 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:18 WEST] [300/745] row 470 :: 3163/9148 :: Gestão (regime noturno) :: Instituto Politécnico de Viana do Castelo - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:34:19 WEST] row 470 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:20 WEST] [301/745] row 471 :: 3087/9148 :: Gestão (regime noturno) :: Universidade do Algarve - Escola Superior de Gestão, Hotelaria e Turismo (Portimão)
+[2026-05-11 13:34:21 WEST] row 471 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:21 WEST] [302/745] row 472 :: 3023/9152 :: Gestão de Empresas :: Instituto Politécnico de Beja - Escola Superior de Tecnologia e de Gestão
+[2026-05-11 13:34:22 WEST] row 472 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:22 WEST] [303/745] row 473 :: 3241/9152 :: Gestão de Empresas :: Instituto Politécnico de Tomar - Escola Superior de Gestão de Tomar
+[2026-05-11 13:34:23 WEST] row 473 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:24 WEST] [304/745] row 474 :: 3031/9152 :: Gestão de Empresas :: Instituto Politécnico do Cávado e do Ave - Escola Superior de Gestão
+[2026-05-11 13:34:25 WEST] row 474 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:25 WEST] [305/745] row 475 :: 3182/9152 :: Gestão de Empresas :: Instituto Politécnico de Viseu - Escola Superior de Tecnologia e Gestão de Viseu
+[2026-05-11 13:34:26 WEST] row 475 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:26 WEST] [306/745] row 476 :: 3063/9152 :: Gestão de Empresas :: Instituto Politécnico de Coimbra - Instituto Superior de Contabilidade e Administração de Coimbra
+[2026-05-11 13:34:27 WEST] row 476 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:27 WEST] [307/745] row 477 :: 204/9152 :: Gestão de Empresas :: Universidade do Algarve - Faculdade de Economia
+[2026-05-11 13:34:29 WEST] row 477 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:34:29 WEST] [308/745] row 478 :: 906/9155 :: Gestão de Informação :: Universidade Nova de Lisboa - Instituto Superior de Estatística e Gestão de Informação
+[2026-05-11 13:34:31 WEST] row 478 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:34:31 WEST] [309/745] row 479 :: 3143/9156 :: Gestão de Marketing :: Instituto Politécnico de Santarém - Escola Superior de Gestão e Tecnologia de Santarém
+[2026-05-11 13:34:32 WEST] row 479 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:32 WEST] [310/745] row 480 :: 6800/9156 :: Gestão de Marketing :: ISCTE - Instituto Universitário de Lisboa
+[2026-05-11 13:34:33 WEST] row 480 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:33 WEST] [311/745] row 481 :: 3092/9157 :: Gestão de Recursos Humanos :: Instituto Politécnico da Guarda - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:34:35 WEST] row 481 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=True
+[2026-05-11 13:34:35 WEST] [312/745] row 482 :: 6800/9157 :: Gestão de Recursos Humanos :: ISCTE - Instituto Universitário de Lisboa
+[2026-05-11 13:34:36 WEST] row 482 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:36 WEST] [313/745] row 483 :: 3153/9157 :: Gestão de Recursos Humanos :: Instituto Politécnico de Setúbal - Escola Superior de Ciências Empresariais
+[2026-05-11 13:34:37 WEST] row 483 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:37 WEST] [314/745] row 484 :: 1516/9157 :: Gestão de Recursos Humanos :: Universidade de Lisboa - Instituto Superior de Ciências Sociais e Políticas
+[2026-05-11 13:34:38 WEST] row 484 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:38 WEST] [315/745] row 485 :: 3063/9157 :: Gestão de Recursos Humanos :: Instituto Politécnico de Coimbra - Instituto Superior de Contabilidade e Administração de Coimbra
+[2026-05-11 13:34:39 WEST] row 485 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:34:39 WEST] [316/745] row 486 :: 3124/9157 :: Gestão de Recursos Humanos :: Instituto Politécnico de Portalegre - Escola Superior de Tecnologia, Gestão e Design
+[2026-05-11 13:34:40 WEST] row 486 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:34:40 WEST] [317/745] row 487 :: 1510/9162 :: Gestão do Desporto :: Universidade de Lisboa - Faculdade de Motricidade Humana
+[2026-05-11 13:34:41 WEST] row 487 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:41 WEST] [318/745] row 488 :: 7110/9163 :: Gestão do Lazer e Animação Turística :: Escola Superior de Hotelaria e Turismo do Estoril
+[2026-05-11 13:34:42 WEST] row 488 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:42 WEST] [319/745] row 489 :: 3139/9164 :: Gestão e Administração Hoteleira :: Instituto Politécnico do Porto - Escola Superior de Hotelaria e Turismo
+[2026-05-11 13:34:44 WEST] row 489 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:44 WEST] [320/745] row 490 :: 3045/9165 :: Gestão e Administração Pública :: Instituto Politécnico de Bragança - Escola Superior de Comunicação, Administração e Turismo de Mirandela
+[2026-05-11 13:34:45 WEST] row 490 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:50 WEST] flushed target columns after 320 processed rows
+[2026-05-11 13:34:50 WEST] [321/745] row 491 :: 3186/9168 :: Gestão e Informática :: Instituto Politécnico de Viseu - Escola Superior de Tecnologia e Gestão de Lamego
+[2026-05-11 13:34:51 WEST] row 491 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:51 WEST] [322/745] row 492 :: 3034/9173 :: Gestão Hoteleira :: Instituto Politécnico do Cávado e do Ave - Escola Superior de Hotelaria e Turismo
+[2026-05-11 13:34:52 WEST] row 492 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:52 WEST] [323/745] row 493 :: 3082/9173 :: Gestão Hoteleira :: Universidade do Algarve - Escola Superior de Gestão, Hotelaria e Turismo
+[2026-05-11 13:34:53 WEST] row 493 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:53 WEST] [324/745] row 494 :: 3095/9173 :: Gestão Hoteleira :: Instituto Politécnico da Guarda - Escola Superior de Turismo e Hotelaria
+[2026-05-11 13:34:54 WEST] row 494 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:54 WEST] [325/745] row 495 :: 7110/9177 :: Gestão Turística :: Escola Superior de Hotelaria e Turismo do Estoril
+[2026-05-11 13:34:55 WEST] row 495 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:55 WEST] [326/745] row 496 :: 3105/9178 :: Gestão Turística e Hoteleira :: Instituto Politécnico de Leiria - Escola Superior de Turismo e Tecnologia do Mar
+[2026-05-11 13:34:56 WEST] row 496 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:57 WEST] [327/745] row 497 :: 3186/9179 :: Gestão Turística, Cultural e Patrimonial :: Instituto Politécnico de Viseu - Escola Superior de Tecnologia e Gestão de Lamego
+[2026-05-11 13:34:58 WEST] row 497 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:58 WEST] [328/745] row 498 :: 1000/9181 :: História :: Universidade do Minho
+[2026-05-11 13:34:59 WEST] row 498 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:34:59 WEST] [329/745] row 499 :: 1506/9181 :: História :: Universidade de Lisboa - Faculdade de Letras
+[2026-05-11 13:35:00 WEST] row 499 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:00 WEST] [330/745] row 500 :: 1107/9181 :: História :: Universidade do Porto - Faculdade de Letras
+[2026-05-11 13:35:01 WEST] row 500 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:02 WEST] [331/745] row 501 :: 505/9181 :: História :: Universidade de Coimbra - Faculdade de Letras
+[2026-05-11 13:35:03 WEST] row 501 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:35:03 WEST] [332/745] row 502 :: 150/9181 :: História :: Universidade dos Açores - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:35:05 WEST] row 502 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:35:05 WEST] [333/745] row 503 :: 902/9181 :: História :: Universidade Nova de Lisboa - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:35:06 WEST] row 503 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:35:06 WEST] [334/745] row 504 :: 1506/9182 :: História da Arte :: Universidade de Lisboa - Faculdade de Letras
+[2026-05-11 13:35:07 WEST] row 504 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:07 WEST] [335/745] row 505 :: 1107/9182 :: História da Arte :: Universidade do Porto - Faculdade de Letras
+[2026-05-11 13:35:08 WEST] row 505 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:08 WEST] [336/745] row 506 :: 505/9182 :: História da Arte :: Universidade de Coimbra - Faculdade de Letras
+[2026-05-11 13:35:10 WEST] row 506 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:35:10 WEST] [337/745] row 507 :: 902/9182 :: História da Arte :: Universidade Nova de Lisboa - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:35:11 WEST] row 507 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:35:11 WEST] [338/745] row 508 :: 7110/9183 :: Informação Turística :: Escola Superior de Hotelaria e Turismo do Estoril
+[2026-05-11 13:35:12 WEST] row 508 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:12 WEST] [339/745] row 509 :: 160/9185 :: Informática :: Universidade dos Açores - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:35:14 WEST] row 509 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:35:14 WEST] [340/745] row 510 :: 3063/9186 :: Informática de Gestão :: Instituto Politécnico de Coimbra - Instituto Superior de Contabilidade e Administração de Coimbra
+[2026-05-11 13:35:15 WEST] row 510 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:15 WEST] [341/745] row 511 :: 3045/9188 :: Informática e Comunicações :: Instituto Politécnico de Bragança - Escola Superior de Comunicação, Administração e Turismo de Mirandela
+[2026-05-11 13:35:16 WEST] row 511 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:16 WEST] [342/745] row 512 :: 6800/9189 :: Informática e Gestão de Empresas :: ISCTE - Instituto Universitário de Lisboa
+[2026-05-11 13:35:17 WEST] row 512 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:17 WEST] [343/745] row 513 :: 3113/9191 :: Jornalismo :: Instituto Politécnico de Lisboa - Escola Superior de Comunicação Social
+[2026-05-11 13:35:18 WEST] row 513 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:18 WEST] [344/745] row 514 :: 1000/9192 :: Línguas Aplicadas :: Universidade do Minho
+[2026-05-11 13:35:19 WEST] row 514 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:19 WEST] [345/745] row 515 :: 1107/9192 :: Línguas Aplicadas :: Universidade do Porto - Faculdade de Letras
+[2026-05-11 13:35:21 WEST] row 515 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:21 WEST] [346/745] row 516 :: 300/9194 :: Línguas e Estudos Editoriais :: Universidade de Aveiro
+[2026-05-11 13:35:22 WEST] row 516 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:35:22 WEST] [347/745] row 517 :: 1000/9195 :: Línguas e Literaturas Europeias :: Universidade do Minho
+[2026-05-11 13:35:23 WEST] row 517 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:24 WEST] [348/745] row 518 :: 1306/9196 :: Línguas e Relações Empresariais :: Universidade da Madeira - Faculdade de Artes e Humanidades
+[2026-05-11 13:35:25 WEST] row 518 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:25 WEST] [349/745] row 519 :: 1202/9196 :: Línguas e Relações Empresariais :: Universidade de Trás-os-Montes e Alto Douro - Escola de Ciências Humanas e Sociais
+[2026-05-11 13:35:26 WEST] row 519 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:26 WEST] [350/745] row 520 :: 300/9196 :: Línguas e Relações Empresariais :: Universidade de Aveiro
+[2026-05-11 13:35:28 WEST] row 520 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:35:28 WEST] [351/745] row 521 :: 1107/9197 :: Línguas e Relações Internacionais :: Universidade do Porto - Faculdade de Letras
+[2026-05-11 13:35:28 WEST] row 521 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:28 WEST] [352/745] row 522 :: 1506/9204 :: Línguas, Literaturas e Culturas :: Universidade de Lisboa - Faculdade de Letras
+[2026-05-11 13:35:29 WEST] row 522 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:29 WEST] [353/745] row 523 :: 1202/9204 :: Línguas, Literaturas e Culturas :: Universidade de Trás-os-Montes e Alto Douro - Escola de Ciências Humanas e Sociais
+[2026-05-11 13:35:30 WEST] row 523 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:30 WEST] [354/745] row 524 :: 1107/9204 :: Línguas, Literaturas e Culturas :: Universidade do Porto - Faculdade de Letras
+[2026-05-11 13:35:31 WEST] row 524 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:31 WEST] [355/745] row 525 :: 300/9204 :: Línguas, Literaturas e Culturas :: Universidade de Aveiro
+[2026-05-11 13:35:33 WEST] row 525 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:35:33 WEST] [356/745] row 526 :: 201/9204 :: Línguas, Literaturas e Culturas :: Universidade do Algarve - Faculdade de Ciências Humanas e Sociais
+[2026-05-11 13:35:34 WEST] row 526 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:35:34 WEST] [357/745] row 527 :: 902/9204 :: Línguas, Literaturas e Culturas :: Universidade Nova de Lisboa - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:35:36 WEST] row 527 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:35:36 WEST] [358/745] row 528 :: 3092/9205 :: Marketing :: Instituto Politécnico da Guarda - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:35:38 WEST] row 528 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=True
+[2026-05-11 13:35:38 WEST] [359/745] row 529 :: 3065/9205 :: Marketing :: Instituto Politécnico de Coimbra - Escola Superior de Tecnologia e Gestão de Oliveira do Hospital
+[2026-05-11 13:35:39 WEST] row 529 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:39 WEST] [360/745] row 530 :: 3011/9205 :: Marketing :: Universidade de Aveiro - Instituto Superior de Contabilidade e Administração de Aveiro
+[2026-05-11 13:35:40 WEST] row 530 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:40 WEST] [361/745] row 531 :: 3045/9205 :: Marketing :: Instituto Politécnico de Bragança - Escola Superior de Comunicação, Administração e Turismo de Mirandela
+[2026-05-11 13:35:41 WEST] row 531 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:41 WEST] [362/745] row 532 :: 3182/9205 :: Marketing :: Instituto Politécnico de Viseu - Escola Superior de Tecnologia e Gestão de Viseu
+[2026-05-11 13:35:42 WEST] row 532 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:42 WEST] [363/745] row 533 :: 3082/9205 :: Marketing :: Universidade do Algarve - Escola Superior de Gestão, Hotelaria e Turismo
+[2026-05-11 13:35:43 WEST] row 533 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:43 WEST] [364/745] row 534 :: 3102/9205 :: Marketing :: Instituto Politécnico de Leiria - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:35:45 WEST] row 534 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:45 WEST] [365/745] row 535 :: 3153/9205 :: Marketing :: Instituto Politécnico de Setúbal - Escola Superior de Ciências Empresariais
+[2026-05-11 13:35:46 WEST] row 535 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:46 WEST] [366/745] row 536 :: 1000/9205 :: Marketing :: Universidade do Minho
+[2026-05-11 13:35:47 WEST] row 536 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:47 WEST] [367/745] row 537 :: 3134/9205 :: Marketing :: Instituto Politécnico do Porto - Instituto Superior de Contabilidade e Administração do Porto
+[2026-05-11 13:35:48 WEST] row 537 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:48 WEST] [368/745] row 538 :: 400/9205 :: Marketing :: Universidade da Beira Interior
+[2026-05-11 13:35:49 WEST] row 538 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:35:49 WEST] [369/745] row 539 :: 3105/9207 :: Marketing Turístico :: Instituto Politécnico de Leiria - Escola Superior de Turismo e Tecnologia do Mar
+[2026-05-11 13:35:50 WEST] row 539 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:50 WEST] [370/745] row 540 :: 1000/9209 :: Matemática :: Universidade do Minho
+[2026-05-11 13:35:51 WEST] row 540 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:51 WEST] [371/745] row 541 :: 1503/9209 :: Matemática :: Universidade de Lisboa - Faculdade de Ciências
+[2026-05-11 13:35:52 WEST] row 541 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:52 WEST] [372/745] row 542 :: 1103/9209 :: Matemática :: Universidade do Porto - Faculdade de Ciências
+[2026-05-11 13:35:53 WEST] row 542 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:53 WEST] [373/745] row 543 :: 1307/9209 :: Matemática :: Universidade da Madeira - Faculdade de Ciências Exatas e da Engenharia
+[2026-05-11 13:35:55 WEST] row 543 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:35:55 WEST] [374/745] row 544 :: 300/9209 :: Matemática :: Universidade de Aveiro
+[2026-05-11 13:35:56 WEST] row 544 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:35:56 WEST] [375/745] row 545 :: 501/9209 :: Matemática :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:35:58 WEST] row 545 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:35:58 WEST] [376/745] row 546 :: 602/9209 :: Matemática :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-11 13:36:00 WEST] row 546 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:36:00 WEST] [377/745] row 547 :: 903/9209 :: Matemática :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:36:02 WEST] row 547 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:36:02 WEST] [378/745] row 548 :: 1517/9210 :: Matemática Aplicada à Economia e à Gestão :: Universidade de Lisboa - Instituto Superior de Economia e Gestão
+[2026-05-11 13:36:03 WEST] row 548 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:36:03 WEST] [379/745] row 549 :: 602/9210 :: Matemática Aplicada à Economia e à Gestão :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-11 13:36:05 WEST] row 549 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:36:05 WEST] [380/745] row 550 :: 203/9210 :: Matemática Aplicada à Economia e à Gestão :: Universidade do Algarve - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:36:07 WEST] row 550 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:36:07 WEST] [381/745] row 551 :: 1503/9212 :: Meteorologia, Oceanografia e Geofísica :: Universidade de Lisboa - Faculdade de Ciências
+[2026-05-11 13:36:08 WEST] row 551 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:36:08 WEST] [382/745] row 552 :: 3331/9213 :: Multimédia :: Instituto Politécnico do Porto - Escola Superior de Media Artes e Design
+[2026-05-11 13:36:09 WEST] row 552 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:36:10 WEST] [383/745] row 553 :: 3045/9213 :: Multimédia :: Instituto Politécnico de Bragança - Escola Superior de Comunicação, Administração e Turismo de Mirandela
+[2026-05-11 13:36:11 WEST] row 553 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:36:11 WEST] [384/745] row 554 :: 1000/9214 :: Música :: Universidade do Minho
+[2026-05-11 13:36:12 WEST] row 554 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:36:12 WEST] [385/745] row 555 :: 300/9214 :: Música :: Universidade de Aveiro
+[2026-05-11 13:36:14 WEST] row 555 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:36:14 WEST] [386/745] row 556 :: 603/9214 :: Música :: Universidade de Évora - Escola de Artes
+[2026-05-11 13:36:15 WEST] row 556 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:36:15 WEST] [387/745] row 564 :: 400/9219 :: Psicologia :: Universidade da Beira Interior
+[2026-05-11 13:36:17 WEST] row 564 unchanged
+[2026-05-11 13:36:17 WEST] [388/745] row 565 :: 300/9219 :: Psicologia :: Universidade de Aveiro
+[2026-05-11 13:36:18 WEST] row 565 unchanged
+[2026-05-11 13:36:19 WEST] [389/745] row 566 :: 507/9219 :: Psicologia :: Universidade de Coimbra - Faculdade de Psicologia e de Ciências da Educação
+[2026-05-11 13:36:20 WEST] row 566 unchanged
+[2026-05-11 13:36:20 WEST] [390/745] row 567 :: 604/9219 :: Psicologia :: Universidade de Évora - Escola de Ciências Sociais
+[2026-05-11 13:36:22 WEST] row 567 unchanged
+[2026-05-11 13:36:23 WEST] [391/745] row 568 :: 201/9219 :: Psicologia :: Universidade do Algarve - Faculdade de Ciências Humanas e Sociais
+[2026-05-11 13:36:24 WEST] row 568 unchanged
+[2026-05-11 13:36:25 WEST] [392/745] row 569 :: 150/9219 :: Psicologia :: Universidade dos Açores - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:36:26 WEST] row 569 unchanged
+[2026-05-11 13:36:27 WEST] [393/745] row 574 :: 300/9223 :: Química :: Universidade de Aveiro
+[2026-05-11 13:36:28 WEST] row 574 unchanged
+[2026-05-11 13:36:28 WEST] [394/745] row 575 :: 501/9223 :: Química :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:36:30 WEST] row 575 unchanged
+[2026-05-11 13:36:30 WEST] [395/745] row 576 :: 903/9224 :: Química Aplicada :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:36:32 WEST] row 576 unchanged
+[2026-05-11 13:36:32 WEST] [396/745] row 577 :: 400/9225 :: Química Industrial :: Universidade da Beira Interior
+[2026-05-11 13:36:34 WEST] row 577 unchanged
+[2026-05-11 13:36:34 WEST] [397/745] row 582 :: 503/9229 :: Relações Internacionais :: Universidade de Coimbra - Faculdade de Economia
+[2026-05-11 13:36:36 WEST] row 582 unchanged
+[2026-05-11 13:36:36 WEST] [398/745] row 583 :: 604/9229 :: Relações Internacionais :: Universidade de Évora - Escola de Ciências Sociais
+[2026-05-11 13:36:37 WEST] row 583 unchanged
+[2026-05-11 13:36:37 WEST] [399/745] row 594 :: 507/9238 :: Serviço Social :: Universidade de Coimbra - Faculdade de Psicologia e de Ciências da Educação
+[2026-05-11 13:36:39 WEST] row 594 unchanged
+[2026-05-11 13:36:40 WEST] [400/745] row 595 :: 150/9238 :: Serviço Social :: Universidade dos Açores - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:36:41 WEST] row 595 unchanged
+[2026-05-11 13:36:45 WEST] flushed target columns after 400 processed rows
+[2026-05-11 13:36:45 WEST] [401/745] row 600 :: 400/9240 :: Sociologia :: Universidade da Beira Interior
+[2026-05-11 13:36:46 WEST] row 600 unchanged
+[2026-05-11 13:36:46 WEST] [402/745] row 601 :: 503/9240 :: Sociologia :: Universidade de Coimbra - Faculdade de Economia
+[2026-05-11 13:36:48 WEST] row 601 unchanged
+[2026-05-11 13:36:48 WEST] [403/745] row 602 :: 604/9240 :: Sociologia :: Universidade de Évora - Escola de Ciências Sociais
+[2026-05-11 13:36:50 WEST] row 602 unchanged
+[2026-05-11 13:36:50 WEST] [404/745] row 603 :: 204/9240 :: Sociologia :: Universidade do Algarve - Faculdade de Economia
+[2026-05-11 13:36:52 WEST] row 603 unchanged
+[2026-05-11 13:36:52 WEST] [405/745] row 604 :: 150/9240 :: Sociologia :: Universidade dos Açores - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:36:54 WEST] row 604 unchanged
+[2026-05-11 13:36:54 WEST] [406/745] row 605 :: 902/9240 :: Sociologia :: Universidade Nova de Lisboa - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:36:55 WEST] row 605 unchanged
+[2026-05-11 13:36:55 WEST] [407/745] row 616 :: 603/9243 :: Teatro :: Universidade de Évora - Escola de Artes
+[2026-05-11 13:36:57 WEST] row 616 unchanged
+[2026-05-11 13:36:57 WEST] [408/745] row 618 :: 300/9252 :: Tradução :: Universidade de Aveiro
+[2026-05-11 13:36:59 WEST] row 618 unchanged
+[2026-05-11 13:36:59 WEST] [409/745] row 619 :: 902/9252 :: Tradução :: Universidade Nova de Lisboa - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:37:01 WEST] row 619 unchanged
+[2026-05-11 13:37:01 WEST] [410/745] row 631 :: 604/9254 :: Turismo :: Universidade de Évora - Escola de Ciências Sociais
+[2026-05-11 13:37:03 WEST] row 631 unchanged
+[2026-05-11 13:37:03 WEST] [411/745] row 632 :: 170/9254 :: Turismo :: Universidade dos Açores - Faculdade de Economia e Gestão
+[2026-05-11 13:37:04 WEST] row 632 unchanged
+[2026-05-11 13:37:04 WEST] [412/745] row 639 :: 400/9257 :: Arquitetura :: Universidade da Beira Interior
+[2026-05-11 13:37:06 WEST] row 639 unchanged
+[2026-05-11 13:37:06 WEST] [413/745] row 640 :: 501/9257 :: Arquitetura :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:37:08 WEST] row 640 unchanged
+[2026-05-11 13:37:08 WEST] [414/745] row 641 :: 603/9257 :: Arquitetura :: Universidade de Évora - Escola de Artes
+[2026-05-11 13:37:10 WEST] row 641 unchanged
+[2026-05-11 13:37:10 WEST] [415/745] row 642 :: 1518/9345 :: Matemática Aplicada e Computação :: Universidade de Lisboa - Instituto Superior Técnico
+[2026-05-11 13:37:11 WEST] row 642 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:37:11 WEST] [416/745] row 643 :: 300/9345 :: Matemática Aplicada e Computação :: Universidade de Aveiro
+[2026-05-11 13:37:13 WEST] row 643 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:37:13 WEST] [417/745] row 645 :: 603/9347 :: Artes Plásticas e Multimédia :: Universidade de Évora - Escola de Artes
+[2026-05-11 13:37:15 WEST] row 645 unchanged
+[2026-05-11 13:37:15 WEST] [418/745] row 646 :: 903/9348 :: Biologia Celular e Molecular :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:37:16 WEST] row 646 unchanged
+[2026-05-11 13:37:16 WEST] [419/745] row 649 :: 400/9351 :: Ciências Biomédicas :: Universidade da Beira Interior
+[2026-05-11 13:37:18 WEST] row 649 unchanged
+[2026-05-11 13:37:18 WEST] [420/745] row 650 :: 300/9351 :: Ciências Biomédicas :: Universidade de Aveiro
+[2026-05-11 13:37:19 WEST] row 650 unchanged
+[2026-05-11 13:37:19 WEST] [421/745] row 651 :: 206/9351 :: Ciências Biomédicas :: Universidade do Algarve - Faculdade de Medicina e Ciências Biomédicas
+[2026-05-11 13:37:21 WEST] row 651 unchanged
+[2026-05-11 13:37:21 WEST] [422/745] row 656 :: 1000/9381 :: Estatística Aplicada :: Universidade do Minho
+[2026-05-11 13:37:22 WEST] row 656 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:37:22 WEST] [423/745] row 657 :: 1503/9381 :: Estatística Aplicada :: Universidade de Lisboa - Faculdade de Ciências
+[2026-05-11 13:37:23 WEST] row 657 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:37:23 WEST] [424/745] row 658 :: 1103/9385 :: Matemática Aplicada :: Universidade do Porto - Faculdade de Ciências
+[2026-05-11 13:37:24 WEST] row 658 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:37:24 WEST] [425/745] row 659 :: 1503/9385 :: Matemática Aplicada :: Universidade de Lisboa - Faculdade de Ciências
+[2026-05-11 13:37:25 WEST] row 659 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:37:25 WEST] [426/745] row 663 :: 501/9448 :: Antropologia :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:37:26 WEST] row 663 unchanged
+[2026-05-11 13:37:27 WEST] [427/745] row 664 :: 902/9448 :: Antropologia :: Universidade Nova de Lisboa - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:37:29 WEST] row 664 unchanged
+[2026-05-11 13:37:29 WEST] [428/745] row 665 :: 3064/9455 :: Engenharia Biomédica :: Instituto Politécnico de Coimbra - Instituto Superior de Engenharia de Coimbra
+[2026-05-11 13:37:30 WEST] row 665 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:37:30 WEST] [429/745] row 666 :: 3118/9455 :: Engenharia Biomédica :: Instituto Politécnico de Lisboa - Instituto Superior de Engenharia de Lisboa
+[2026-05-11 13:37:31 WEST] row 666 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:37:31 WEST] [430/745] row 667 :: 1203/9455 :: Engenharia Biomédica :: Universidade de Trás-os-Montes e Alto Douro - Escola de Ciências e Tecnologia
+[2026-05-11 13:37:32 WEST] row 667 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:37:32 WEST] [431/745] row 668 :: 3135/9455 :: Engenharia Biomédica :: Instituto Politécnico do Porto - Instituto Superior de Engenharia do Porto
+[2026-05-11 13:37:33 WEST] row 668 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:37:33 WEST] [432/745] row 669 :: 1000/9455 :: Engenharia Biomédica :: Universidade do Minho
+[2026-05-11 13:37:34 WEST] row 669 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:37:34 WEST] [433/745] row 670 :: 1518/9455 :: Engenharia Biomédica :: Universidade de Lisboa - Instituto Superior Técnico
+[2026-05-11 13:37:35 WEST] row 670 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:37:35 WEST] [434/745] row 671 :: 1307/9455 :: Engenharia Biomédica :: Universidade da Madeira - Faculdade de Ciências Exatas e da Engenharia
+[2026-05-11 13:37:36 WEST] row 671 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:37:36 WEST] [435/745] row 672 :: 300/9455 :: Engenharia Biomédica :: Universidade de Aveiro
+[2026-05-11 13:37:38 WEST] row 672 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:37:38 WEST] [436/745] row 673 :: 501/9455 :: Engenharia Biomédica :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:37:39 WEST] row 673 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:37:39 WEST] [437/745] row 674 :: 903/9455 :: Engenharia Biomédica :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:37:41 WEST] row 674 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:37:41 WEST] [438/745] row 676 :: 3124/9457 :: Som e Imagem :: Instituto Politécnico de Portalegre - Escola Superior de Tecnologia, Gestão e Design
+[2026-05-11 13:37:42 WEST] row 676 unchanged
+[2026-05-11 13:37:42 WEST] [439/745] row 679 :: 1518/9474 :: Engenharia Biológica :: Universidade de Lisboa - Instituto Superior Técnico
+[2026-05-11 13:37:43 WEST] row 679 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:37:43 WEST] [440/745] row 680 :: 3117/9476 :: Finanças Empresariais :: Instituto Politécnico de Lisboa - Instituto Superior de Contabilidade e Administração de Lisboa
+[2026-05-11 13:37:44 WEST] row 680 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:37:44 WEST] [441/745] row 687 :: 400/9494 :: Ciências Farmacêuticas :: Universidade da Beira Interior
+[2026-05-11 13:37:46 WEST] row 687 unchanged
+[2026-05-11 13:37:46 WEST] [442/745] row 688 :: 504/9494 :: Ciências Farmacêuticas :: Universidade de Coimbra - Faculdade de Farmácia
+[2026-05-11 13:37:48 WEST] row 688 unchanged
+[2026-05-11 13:37:48 WEST] [443/745] row 689 :: 605/9494 :: Ciências Farmacêuticas :: Universidade de Évora - Escola de Saúde e Desenvolvimento Humano
+[2026-05-11 13:37:49 WEST] row 689 unchanged
+[2026-05-11 13:37:50 WEST] [444/745] row 690 :: 203/9494 :: Ciências Farmacêuticas :: Universidade do Algarve - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:37:52 WEST] row 690 unchanged
+[2026-05-11 13:37:52 WEST] [445/745] row 698 :: 7260/9500 :: Enfermagem :: Universidade de Lisboa - Escola Superior de Enfermagem
+[2026-05-11 13:37:53 WEST] row 698 unchanged
+[2026-05-11 13:37:53 WEST] [446/745] row 703 :: 7015/9500 :: Enfermagem :: Instituto Politécnico de Bragança - Escola Superior de Saúde de Bragança
+[2026-05-11 13:37:53 WEST] row 703 unchanged
+[2026-05-11 13:37:53 WEST] [447/745] row 705 :: 7045/9500 :: Enfermagem :: Instituto Politécnico de Leiria - Escola Superior de Saúde
+[2026-05-11 13:37:54 WEST] row 705 unchanged
+[2026-05-11 13:37:54 WEST] [448/745] row 709 :: 7093/9500 :: Enfermagem :: Universidade dos Açores - Escola Superior de Saúde - Ponta Delgada
+[2026-05-11 13:37:55 WEST] row 709 unchanged
+[2026-05-11 13:37:55 WEST] [449/745] row 712 :: 7092/9500 :: Enfermagem :: Universidade dos Açores - Escola Superior de Saúde - Angra do Heroísmo
+[2026-05-11 13:37:56 WEST] row 712 unchanged
+[2026-05-11 13:37:56 WEST] [450/745] row 713 :: 7270/9500 :: Enfermagem :: Universidade do Porto - Escola Superior de Enfermagem
+[2026-05-11 13:37:57 WEST] row 713 unchanged
+[2026-05-11 13:37:57 WEST] [451/745] row 715 :: 7015/9501 :: Enfermagem (entrada no 2.º semestre) :: Instituto Politécnico de Bragança - Escola Superior de Saúde de Bragança
+[2026-05-11 13:37:58 WEST] row 715 unchanged
+[2026-05-11 13:37:58 WEST] [452/745] row 716 :: 7035/9504 :: Fisioterapia :: Universidade do Algarve - Escola Superior de Saúde
+[2026-05-11 13:37:59 WEST] row 716 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:37:59 WEST] [453/745] row 717 :: 7020/9504 :: Fisioterapia :: Instituto Politécnico de Castelo Branco - Escola Superior de Saúde Dr. Lopes Dias
+[2026-05-11 13:38:00 WEST] row 717 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:00 WEST] [454/745] row 718 :: 7045/9504 :: Fisioterapia :: Instituto Politécnico de Leiria - Escola Superior de Saúde
+[2026-05-11 13:38:02 WEST] row 718 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=True
+[2026-05-11 13:38:02 WEST] [455/745] row 719 :: 3155/9504 :: Fisioterapia :: Instituto Politécnico de Setúbal - Escola Superior de Saúde
+[2026-05-11 13:38:03 WEST] row 719 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:03 WEST] [456/745] row 720 :: 3013/9504 :: Fisioterapia :: Universidade de Aveiro - Escola Superior de Saúde de Aveiro
+[2026-05-11 13:38:05 WEST] row 720 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:05 WEST] [457/745] row 721 :: 7210/9504 :: Fisioterapia :: Instituto Politécnico de Coimbra - Escola Superior de Tecnologia da Saúde de Coimbra
+[2026-05-11 13:38:05 WEST] row 721 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:06 WEST] [458/745] row 722 :: 7230/9504 :: Fisioterapia :: Instituto Politécnico do Porto - Escola Superior de Saúde
+[2026-05-11 13:38:07 WEST] row 722 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:07 WEST] [459/745] row 723 :: 7016/9504 :: Fisioterapia :: Instituto Politécnico de Bragança - Escola Superior de Saúde de Bragança (Chaves)
+[2026-05-11 13:38:08 WEST] row 723 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=True
+[2026-05-11 13:38:09 WEST] [460/745] row 724 :: 7055/9504 :: Fisioterapia :: Instituto Politécnico de Portalegre - Escola Superior de Saúde
+[2026-05-11 13:38:10 WEST] row 724 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:10 WEST] [461/745] row 725 :: 7250/9504 :: Fisioterapia :: Instituto Politécnico de Lisboa - Escola Superior de Saúde de Lisboa
+[2026-05-11 13:38:11 WEST] row 725 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:38:11 WEST] [462/745] row 726 :: 7065/9504 :: Fisioterapia :: Instituto Politécnico de Santarém - Escola Superior de Saúde de Santarém
+[2026-05-11 13:38:12 WEST] row 726 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:38:12 WEST] [463/745] row 727 :: 7075/9504 :: Fisioterapia :: Instituto Politécnico de Viana do Castelo - Escola Superior de Saúde
+[2026-05-11 13:38:13 WEST] row 727 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:38:13 WEST] [464/745] row 728 :: 7085/9504 :: Fisioterapia :: Instituto Politécnico de Viseu - Escola Superior de Saúde de Viseu
+[2026-05-11 13:38:14 WEST] row 728 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:38:14 WEST] [465/745] row 732 :: 203/9540 :: Bioengenharia :: Universidade do Algarve - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:38:16 WEST] row 732 unchanged
+[2026-05-11 13:38:16 WEST] [466/745] row 733 :: 1508/9548 :: Medicina Dentária :: Universidade de Lisboa - Faculdade de Medicina Dentária
+[2026-05-11 13:38:17 WEST] row 733 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:18 WEST] [467/745] row 734 :: 1113/9548 :: Medicina Dentária :: Universidade do Porto - Faculdade de Medicina Dentária
+[2026-05-11 13:38:19 WEST] row 734 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=True
+[2026-05-11 13:38:19 WEST] [468/745] row 735 :: 506/9548 :: Medicina Dentária :: Universidade de Coimbra - Faculdade de Medicina
+[2026-05-11 13:38:21 WEST] row 735 unchanged
+[2026-05-11 13:38:21 WEST] [469/745] row 736 :: 7035/9549 :: Farmácia :: Universidade do Algarve - Escola Superior de Saúde
+[2026-05-11 13:38:22 WEST] row 736 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:22 WEST] [470/745] row 737 :: 7040/9549 :: Farmácia :: Instituto Politécnico da Guarda - Escola Superior de Saúde da Guarda
+[2026-05-11 13:38:23 WEST] row 737 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:23 WEST] [471/745] row 738 :: 7015/9549 :: Farmácia :: Instituto Politécnico de Bragança - Escola Superior de Saúde de Bragança
+[2026-05-11 13:38:25 WEST] row 738 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=True
+[2026-05-11 13:38:25 WEST] [472/745] row 739 :: 7210/9549 :: Farmácia :: Instituto Politécnico de Coimbra - Escola Superior de Tecnologia da Saúde de Coimbra
+[2026-05-11 13:38:26 WEST] row 739 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:26 WEST] [473/745] row 740 :: 7230/9549 :: Farmácia :: Instituto Politécnico do Porto - Escola Superior de Saúde
+[2026-05-11 13:38:27 WEST] row 740 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:27 WEST] [474/745] row 741 :: 7250/9549 :: Farmácia :: Instituto Politécnico de Lisboa - Escola Superior de Saúde de Lisboa
+[2026-05-11 13:38:28 WEST] row 741 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:38:28 WEST] [475/745] row 745 :: 901/9554 :: Ciências da Nutrição :: Universidade Nova de Lisboa - Faculdade de Ciências Médicas
+[2026-05-11 13:38:30 WEST] row 745 unchanged
+[2026-05-11 13:38:30 WEST] [476/745] row 746 :: 1508/9556 :: Higiene Oral :: Universidade de Lisboa - Faculdade de Medicina Dentária
+[2026-05-11 13:38:30 WEST] row 746 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:31 WEST] [477/745] row 747 :: 7055/9556 :: Higiene Oral :: Instituto Politécnico de Portalegre - Escola Superior de Saúde
+[2026-05-11 13:38:32 WEST] row 747 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:32 WEST] [478/745] row 759 :: 3153/9629 :: Gestão da Distribuição e da Logística :: Instituto Politécnico de Setúbal - Escola Superior de Ciências Empresariais
+[2026-05-11 13:38:33 WEST] row 759 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:33 WEST] [479/745] row 760 :: 3153/9630 :: Gestão de Sistemas de Informação :: Instituto Politécnico de Setúbal - Escola Superior de Ciências Empresariais
+[2026-05-11 13:38:34 WEST] row 760 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:34 WEST] [480/745] row 762 :: 3241/9640 :: Gestão de Recursos Humanos e Comportamento Organizacional :: Instituto Politécnico de Tomar - Escola Superior de Gestão de Tomar
+[2026-05-11 13:38:35 WEST] row 762 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:40 WEST] flushed target columns after 480 processed rows
+[2026-05-11 13:38:40 WEST] [481/745] row 764 :: 3331/9645 :: Fotografia :: Instituto Politécnico do Porto - Escola Superior de Media Artes e Design
+[2026-05-11 13:38:41 WEST] row 764 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:41 WEST] [482/745] row 765 :: 3242/9645 :: Fotografia :: Instituto Politécnico de Tomar - Escola Superior de Tecnologia de Tomar
+[2026-05-11 13:38:42 WEST] row 765 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:42 WEST] [483/745] row 767 :: 150/9652 :: Comunicação e Relações Públicas :: Universidade dos Açores - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:38:43 WEST] row 767 unchanged
+[2026-05-11 13:38:44 WEST] [484/745] row 776 :: 505/9694 :: Ciência da Informação :: Universidade de Coimbra - Faculdade de Letras
+[2026-05-11 13:38:45 WEST] row 776 unchanged
+[2026-05-11 13:38:45 WEST] [485/745] row 781 :: 400/9707 :: Ciências do Desporto :: Universidade da Beira Interior
+[2026-05-11 13:38:47 WEST] row 781 unchanged
+[2026-05-11 13:38:47 WEST] [486/745] row 782 :: 508/9707 :: Ciências do Desporto :: Universidade de Coimbra - Faculdade de Ciências do Desporto e Educação Física
+[2026-05-11 13:38:49 WEST] row 782 unchanged
+[2026-05-11 13:38:49 WEST] [487/745] row 783 :: 605/9707 :: Ciências do Desporto :: Universidade de Évora - Escola de Saúde e Desenvolvimento Humano
+[2026-05-11 13:38:51 WEST] row 783 unchanged
+[2026-05-11 13:38:51 WEST] [488/745] row 799 :: 3165/9731 :: Desporto e Lazer :: Instituto Politécnico de Viana do Castelo - Escola Superior de Desporto e Lazer
+[2026-05-11 13:38:52 WEST] row 799 unchanged
+[2026-05-11 13:38:52 WEST] [489/745] row 801 :: 400/9740 :: Engenharia Aeronáutica :: Universidade da Beira Interior
+[2026-05-11 13:38:54 WEST] row 801 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:38:54 WEST] [490/745] row 802 :: 3102/9741 :: Engenharia Automóvel :: Instituto Politécnico de Leiria - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:38:55 WEST] row 802 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:55 WEST] [491/745] row 803 :: 3163/9743 :: Engenharia Civil e do Ambiente :: Instituto Politécnico de Viana do Castelo - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:38:56 WEST] row 803 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:56 WEST] [492/745] row 804 :: 7105/9745 :: Engenharia de Máquinas Marítimas :: Escola Superior Náutica Infante D. Henrique
+[2026-05-11 13:38:58 WEST] row 804 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:58 WEST] [493/745] row 805 :: 3163/9751 :: Engenharia Mecatrónica :: Instituto Politécnico de Viana do Castelo - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:38:59 WEST] row 805 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:38:59 WEST] [494/745] row 806 :: 602/9751 :: Engenharia Mecatrónica :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-11 13:39:01 WEST] row 806 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:39:01 WEST] [495/745] row 807 :: 3041/9752 :: Enologia :: Instituto Politécnico de Bragança - Escola Superior Agrária de Bragança
+[2026-05-11 13:39:02 WEST] row 807 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:39:02 WEST] [496/745] row 808 :: 1201/9752 :: Enologia :: Universidade de Trás-os-Montes e Alto Douro - Escola de Ciências Agrárias e Veterinárias
+[2026-05-11 13:39:03 WEST] row 808 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:39:03 WEST] [497/745] row 809 :: 602/9752 :: Enologia :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-11 13:39:05 WEST] row 809 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:39:05 WEST] [498/745] row 810 :: 1502/9754 :: Escultura :: Universidade de Lisboa - Faculdade de Belas-Artes
+[2026-05-11 13:39:06 WEST] row 810 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:39:06 WEST] [499/745] row 811 :: 3031/9759 :: Fiscalidade :: Instituto Politécnico do Cávado e do Ave - Escola Superior de Gestão
+[2026-05-11 13:39:07 WEST] row 811 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:39:07 WEST] [500/745] row 812 :: 602/9760 :: Física e Química :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-11 13:39:09 WEST] row 812 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:39:09 WEST] [501/745] row 813 :: 1204/9761 :: Genética e Biotecnologia :: Universidade de Trás-os-Montes e Alto Douro - Escola de Ciências da Vida e do Ambiente
+[2026-05-11 13:39:10 WEST] row 813 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:39:10 WEST] [502/745] row 814 :: 3145/9763 :: Gestão das Organizações Desportivas :: Instituto Politécnico de Santarém - Escola Superior de Desporto de Rio Maior
+[2026-05-11 13:39:10 WEST] row 814 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:39:11 WEST] [503/745] row 815 :: 3064/9770 :: Engenharia Informática (Curso Europeu) :: Instituto Politécnico de Coimbra - Instituto Superior de Engenharia de Coimbra
+[2026-05-11 13:39:12 WEST] row 815 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:39:12 WEST] [504/745] row 816 :: 3121/9773 :: Jornalismo e Comunicação :: Instituto Politécnico de Portalegre - Escola Superior de Educação e Ciências Sociais
+[2026-05-11 13:39:13 WEST] row 816 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:39:13 WEST] [505/745] row 817 :: 3045/9773 :: Jornalismo e Comunicação :: Instituto Politécnico de Bragança - Escola Superior de Comunicação, Administração e Turismo de Mirandela
+[2026-05-11 13:39:14 WEST] row 817 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:39:14 WEST] [506/745] row 818 :: 505/9773 :: Jornalismo e Comunicação :: Universidade de Coimbra - Faculdade de Letras
+[2026-05-11 13:39:16 WEST] row 818 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:39:16 WEST] [507/745] row 819 :: 3062/9774 :: Língua Gestual Portuguesa :: Instituto Politécnico de Coimbra - Escola Superior de Educação de Coimbra
+[2026-05-11 13:39:17 WEST] row 819 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:39:17 WEST] [508/745] row 820 :: 505/9779 :: Línguas Modernas :: Universidade de Coimbra - Faculdade de Letras
+[2026-05-11 13:39:19 WEST] row 820 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:39:19 WEST] [509/745] row 822 :: 3055/9784 :: Música, variante de Instrumento :: Instituto Politécnico de Castelo Branco - Escola Superior de Artes Aplicadas
+[2026-05-11 13:39:20 WEST] row 822 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:39:20 WEST] [510/745] row 825 :: 604/9787 :: Património Cultural :: Universidade de Évora - Escola de Ciências Sociais
+[2026-05-11 13:39:21 WEST] row 825 unchanged
+[2026-05-11 13:39:21 WEST] [511/745] row 834 :: 1000/9813 :: Medicina :: Universidade do Minho
+[2026-05-11 13:39:23 WEST] row 834 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:39:23 WEST] [512/745] row 835 :: 1110/9813 :: Medicina :: Universidade do Porto - Instituto de Ciências Biomédicas Abel Salazar
+[2026-05-11 13:39:24 WEST] row 835 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:39:25 WEST] [513/745] row 836 :: 1507/9813 :: Medicina :: Universidade de Lisboa - Faculdade de Medicina
+[2026-05-11 13:39:27 WEST] row 836 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:39:27 WEST] [514/745] row 837 :: 1108/9813 :: Medicina :: Universidade do Porto - Faculdade de Medicina
+[2026-05-11 13:39:29 WEST] row 837 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:39:29 WEST] [515/745] row 838 :: 1204/9813 :: Medicina :: Universidade de Trás-os-Montes e Alto Douro - Escola de Ciências da Vida e do Ambiente
+[2026-05-11 13:39:30 WEST] row 838 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:39:30 WEST] [516/745] row 839 :: 400/9813 :: Medicina :: Universidade da Beira Interior
+[2026-05-11 13:39:31 WEST] row 839 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:39:31 WEST] [517/745] row 840 :: 300/9813 :: Medicina :: Universidade de Aveiro
+[2026-05-11 13:39:32 WEST] row 840 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:39:33 WEST] [518/745] row 841 :: 506/9813 :: Medicina :: Universidade de Coimbra - Faculdade de Medicina
+[2026-05-11 13:39:34 WEST] row 841 unchanged
+[2026-05-11 13:39:34 WEST] [519/745] row 842 :: 901/9813 :: Medicina :: Universidade Nova de Lisboa - Faculdade de Ciências Médicas
+[2026-05-11 13:39:36 WEST] row 842 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:39:36 WEST] [520/745] row 846 :: 201/9817 :: Artes Visuais :: Universidade do Algarve - Faculdade de Ciências Humanas e Sociais
+[2026-05-11 13:39:37 WEST] row 846 unchanged
+[2026-05-11 13:39:37 WEST] [521/745] row 847 :: 602/9818 :: Ciência e Tecnologia Animal :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-11 13:39:39 WEST] row 847 unchanged
+[2026-05-11 13:39:39 WEST] [522/745] row 848 :: 504/9819 :: Ciências Bioanalíticas :: Universidade de Coimbra - Faculdade de Farmácia
+[2026-05-11 13:39:41 WEST] row 848 unchanged
+[2026-05-11 13:39:41 WEST] [523/745] row 849 :: 201/9821 :: Ciências da Educação e da Formação :: Universidade do Algarve - Faculdade de Ciências Humanas e Sociais
+[2026-05-11 13:39:42 WEST] row 849 unchanged
+[2026-05-11 13:39:42 WEST] [524/745] row 851 :: 504/9832 :: Farmácia Biomédica :: Universidade de Coimbra - Faculdade de Farmácia
+[2026-05-11 13:39:45 WEST] row 851 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:39:45 WEST] [525/745] row 852 :: 7015/9833 :: Gerontologia :: Instituto Politécnico de Bragança - Escola Superior de Saúde de Bragança
+[2026-05-11 13:39:47 WEST] row 852 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=True
+[2026-05-11 13:39:47 WEST] [526/745] row 853 :: 400/9835 :: Matemática e Aplicações :: Universidade da Beira Interior
+[2026-05-11 13:39:48 WEST] row 853 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:39:48 WEST] [527/745] row 860 :: 605/9841 :: Reabilitação Psicomotora :: Universidade de Évora - Escola de Saúde e Desenvolvimento Humano
+[2026-05-11 13:39:49 WEST] row 860 unchanged
+[2026-05-11 13:39:50 WEST] [528/745] row 862 :: 1110/9847 :: Medicina Veterinária :: Universidade do Porto - Instituto de Ciências Biomédicas Abel Salazar
+[2026-05-11 13:39:51 WEST] row 862 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:39:51 WEST] [529/745] row 863 :: 1201/9847 :: Medicina Veterinária :: Universidade de Trás-os-Montes e Alto Douro - Escola de Ciências Agrárias e Veterinárias
+[2026-05-11 13:39:53 WEST] row 863 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:39:53 WEST] [530/745] row 864 :: 1509/9847 :: Medicina Veterinária :: Universidade de Lisboa - Faculdade de Medicina Veterinária
+[2026-05-11 13:39:55 WEST] row 864 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:39:55 WEST] [531/745] row 865 :: 602/9847 :: Medicina Veterinária :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-11 13:39:56 WEST] row 865 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:39:57 WEST] [532/745] row 887 :: 300/9853 :: Educação Básica :: Universidade de Aveiro
+[2026-05-11 13:39:58 WEST] row 887 unchanged
+[2026-05-11 13:39:58 WEST] [533/745] row 888 :: 604/9853 :: Educação Básica :: Universidade de Évora - Escola de Ciências Sociais
+[2026-05-11 13:40:00 WEST] row 888 unchanged
+[2026-05-11 13:40:00 WEST] [534/745] row 889 :: 150/9853 :: Educação Básica :: Universidade dos Açores - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:40:02 WEST] row 889 unchanged
+[2026-05-11 13:40:02 WEST] [535/745] row 890 :: 3092/9855 :: Energia e Ambiente :: Instituto Politécnico da Guarda - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:40:02 WEST] row 890 unchanged
+[2026-05-11 13:40:02 WEST] [536/745] row 891 :: 7250/9861 :: Saúde Ambiental :: Instituto Politécnico de Lisboa - Escola Superior de Saúde de Lisboa
+[2026-05-11 13:40:03 WEST] row 891 unchanged
+[2026-05-11 13:40:03 WEST] [537/745] row 903 :: 3151/9876 :: Educação Básica (regime pós-laboral) :: Instituto Politécnico de Setúbal - Escola Superior de Educação
+[2026-05-11 13:40:04 WEST] row 903 unchanged
+[2026-05-11 13:40:04 WEST] [538/745] row 906 :: 3154/9881 :: Engenharia Civil (regime pós-laboral) :: Instituto Politécnico de Setúbal - Escola Superior de Tecnologia do Barreiro
+[2026-05-11 13:40:05 WEST] row 906 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:40:05 WEST] [539/745] row 907 :: 3102/9885 :: Engenharia Informática (regime pós-laboral) :: Instituto Politécnico de Leiria - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:40:06 WEST] row 907 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:06 WEST] [540/745] row 908 :: 6800/9885 :: Engenharia Informática (regime pós-laboral) :: ISCTE - Instituto Universitário de Lisboa
+[2026-05-11 13:40:07 WEST] row 908 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:07 WEST] [541/745] row 909 :: 3064/9885 :: Engenharia Informática (regime pós-laboral) :: Instituto Politécnico de Coimbra - Instituto Superior de Engenharia de Coimbra
+[2026-05-11 13:40:08 WEST] row 909 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:08 WEST] [542/745] row 910 :: 3102/9886 :: Engenharia Mecânica (regime pós-laboral) :: Instituto Politécnico de Leiria - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:40:09 WEST] row 910 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:09 WEST] [543/745] row 911 :: 3011/9888 :: Finanças (regime pós-laboral) :: Universidade de Aveiro - Instituto Superior de Contabilidade e Administração de Aveiro
+[2026-05-11 13:40:10 WEST] row 911 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:10 WEST] [544/745] row 912 :: 3117/9889 :: Finanças Empresariais (regime pós-laboral) :: Instituto Politécnico de Lisboa - Instituto Superior de Contabilidade e Administração de Lisboa
+[2026-05-11 13:40:11 WEST] row 912 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:11 WEST] [545/745] row 916 :: 7045/9890 :: Terapia da Fala :: Instituto Politécnico de Leiria - Escola Superior de Saúde
+[2026-05-11 13:40:12 WEST] row 916 unchanged
+[2026-05-11 13:40:12 WEST] [546/745] row 918 :: 501/9891 :: Design e Multimédia :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:40:14 WEST] row 918 unchanged
+[2026-05-11 13:40:14 WEST] [547/745] row 920 :: 3065/9895 :: Gestão do Território :: Instituto Politécnico de Coimbra - Escola Superior de Tecnologia e Gestão de Oliveira do Hospital
+[2026-05-11 13:40:15 WEST] row 920 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:15 WEST] [548/745] row 925 :: 3043/9910 :: Engenharia de Energias Renováveis :: Instituto Politécnico de Bragança - Escola Superior de Tecnologia e de Gestão de Bragança
+[2026-05-11 13:40:16 WEST] row 925 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:16 WEST] [549/745] row 926 :: 602/9910 :: Engenharia de Energias Renováveis :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-11 13:40:17 WEST] row 926 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:40:17 WEST] [550/745] row 927 :: 1519/9912 :: Engenharia Eletrónica :: Universidade de Lisboa - Instituto Superior Técnico (Tagus Park)
+[2026-05-11 13:40:19 WEST] row 927 prepared :: cidade=True distrito=False morada=True institution_url=True course_url=True
+[2026-05-11 13:40:19 WEST] [551/745] row 928 :: 1506/9914 :: Estudos Asiáticos :: Universidade de Lisboa - Faculdade de Letras
+[2026-05-11 13:40:21 WEST] row 928 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:21 WEST] [552/745] row 929 :: 1000/9917 :: Estudos Portugueses :: Universidade do Minho
+[2026-05-11 13:40:22 WEST] row 929 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:22 WEST] [553/745] row 930 :: 1506/9917 :: Estudos Portugueses :: Universidade de Lisboa - Faculdade de Letras
+[2026-05-11 13:40:23 WEST] row 930 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:23 WEST] [554/745] row 931 :: 902/9917 :: Estudos Portugueses :: Universidade Nova de Lisboa - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:40:25 WEST] row 931 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:40:25 WEST] [555/745] row 932 :: 400/9918 :: Estudos Portugueses e Espanhóis :: Universidade da Beira Interior
+[2026-05-11 13:40:26 WEST] row 932 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:40:26 WEST] [556/745] row 933 :: 3139/9921 :: Gestão das Atividades Turísticas :: Instituto Politécnico do Porto - Escola Superior de Hotelaria e Turismo
+[2026-05-11 13:40:27 WEST] row 933 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:27 WEST] [557/745] row 934 :: 7105/9924 :: Gestão de Transportes e Logística :: Escola Superior Náutica Infante D. Henrique
+[2026-05-11 13:40:28 WEST] row 934 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:28 WEST] [558/745] row 935 :: 7105/9926 :: Gestão Portuária :: Escola Superior Náutica Infante D. Henrique
+[2026-05-11 13:40:29 WEST] row 935 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:29 WEST] [559/745] row 936 :: 6800/9927 :: História Moderna e Contemporânea :: ISCTE - Instituto Universitário de Lisboa
+[2026-05-11 13:40:30 WEST] row 936 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:30 WEST] [560/745] row 939 :: 3135/9936 :: Engenharia Mecânica Automóvel :: Instituto Politécnico do Porto - Instituto Superior de Engenharia do Porto
+[2026-05-11 13:40:31 WEST] row 939 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:36 WEST] flushed target columns after 560 processed rows
+[2026-05-11 13:40:36 WEST] [561/745] row 940 :: 3031/9990 :: Fiscalidade (regime pós-laboral) :: Instituto Politécnico do Cávado e do Ave - Escola Superior de Gestão
+[2026-05-11 13:40:37 WEST] row 940 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:37 WEST] [562/745] row 941 :: 3102/9991 :: Gestão (regime pós-laboral) :: Instituto Politécnico de Leiria - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:40:38 WEST] row 941 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:38 WEST] [563/745] row 942 :: 3117/9991 :: Gestão (regime pós-laboral) :: Instituto Politécnico de Lisboa - Instituto Superior de Contabilidade e Administração de Lisboa
+[2026-05-11 13:40:39 WEST] row 942 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:39 WEST] [564/745] row 943 :: 3143/9991 :: Gestão (regime pós-laboral) :: Instituto Politécnico de Santarém - Escola Superior de Gestão e Tecnologia de Santarém
+[2026-05-11 13:40:39 WEST] row 943 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:39 WEST] [565/745] row 944 :: 3153/9993 :: Gestão da Distribuição e da Logística (regime pós- laboral) :: Instituto Politécnico de Setúbal - Escola Superior de Ciências Empresariais
+[2026-05-11 13:40:41 WEST] row 944 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:41 WEST] [566/745] row 945 :: 3023/9994 :: Gestão de Empresas (regime pós-laboral) :: Instituto Politécnico de Beja - Escola Superior de Tecnologia e de Gestão
+[2026-05-11 13:40:42 WEST] row 945 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:42 WEST] [567/745] row 946 :: 3182/9994 :: Gestão de Empresas (regime pós-laboral) :: Instituto Politécnico de Viseu - Escola Superior de Tecnologia e Gestão de Viseu
+[2026-05-11 13:40:43 WEST] row 946 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:43 WEST] [568/745] row 947 :: 3031/9994 :: Gestão de Empresas (regime pós-laboral) :: Instituto Politécnico do Cávado e do Ave - Escola Superior de Gestão
+[2026-05-11 13:40:44 WEST] row 947 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:44 WEST] [569/745] row 948 :: 1517/A001 :: Gestão (ensino em Inglês) :: Universidade de Lisboa - Instituto Superior de Economia e Gestão
+[2026-05-11 13:40:45 WEST] row 948 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:45 WEST] [570/745] row 949 :: 1104/A001 :: Gestão (ensino em Inglês) :: Universidade do Porto - Faculdade de Economia
+[2026-05-11 13:40:46 WEST] row 949 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:40:46 WEST] [571/745] row 951 :: 1104/A006 :: Economia (ensino em Inglês) :: Universidade do Porto - Faculdade de Economia
+[2026-05-11 13:40:47 WEST] row 951 unchanged
+[2026-05-11 13:40:47 WEST] [572/745] row 952 :: 1517/A013 :: Finanças (ensino em inglês) :: Universidade de Lisboa - Instituto Superior de Economia e Gestão
+[2026-05-11 13:40:48 WEST] row 952 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:48 WEST] [573/745] row 953 :: 3102/A014 :: Jogos Digitais e Multimédia (ensino em inglês) :: Instituto Politécnico de Leiria - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:40:49 WEST] row 953 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:49 WEST] [574/745] row 956 :: 160/A017 :: Ciências do Oceano (ensino em inglês) :: Universidade dos Açores - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:40:51 WEST] row 956 unchanged
+[2026-05-11 13:40:51 WEST] [575/745] row 957 :: 1517/A018 :: Matemática Aplicada à Economia e à Gestão (ensino em inglês) :: Universidade de Lisboa - Instituto Superior de Economia e Gestão
+[2026-05-11 13:40:52 WEST] row 957 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:40:52 WEST] [576/745] row 958 :: 3043/A019 :: Gestão de Negócios Internacionais (ensino em Inglês) :: Instituto Politécnico de Bragança - Escola Superior de Tecnologia e de Gestão de Bragança
+[2026-05-11 13:40:52 WEST] row 958 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:40:52 WEST] [577/745] row 959 :: 1000/A020 :: Economia + Gestão :: Universidade do Minho
+[2026-05-11 13:40:54 WEST] row 959 unchanged
+[2026-05-11 13:40:54 WEST] [578/745] row 960 :: 1000/A021 :: Economia + Negócios Internacionais :: Universidade do Minho
+[2026-05-11 13:40:54 WEST] row 960 unchanged
+[2026-05-11 13:40:54 WEST] [579/745] row 961 :: 1000/A022 :: Gestão + Negócios Internacionais :: Universidade do Minho
+[2026-05-11 13:40:55 WEST] row 961 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:40:55 WEST] [580/745] row 962 :: 1000/A023 :: Matemática + Física :: Universidade do Minho
+[2026-05-11 13:40:56 WEST] row 962 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:40:56 WEST] [581/745] row 963 :: 1000/A024 :: Física + Química :: Universidade do Minho
+[2026-05-11 13:40:57 WEST] row 963 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:40:57 WEST] [582/745] row 964 :: 908/A025 :: Saúde Pública Global (ensino em inglês) :: Universidade Nova de Lisboa - Escola Nacional de Saúde Pública
+[2026-05-11 13:40:59 WEST] row 964 unchanged
+[2026-05-11 13:40:59 WEST] [583/745] row 965 :: 6800/A026 :: Estudos Internacionais (ensino em inglês) :: ISCTE - Instituto Universitário de Lisboa
+[2026-05-11 13:41:00 WEST] row 965 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:41:00 WEST] [584/745] row 968 :: 3117/L007 :: Comércio e Negócios Internacionais :: Instituto Politécnico de Lisboa - Instituto Superior de Contabilidade e Administração de Lisboa
+[2026-05-11 13:41:01 WEST] row 968 unchanged
+[2026-05-11 13:41:01 WEST] [585/745] row 972 :: 3114/L012 :: Música, variante de Composição, Direção e Formação Musical :: Instituto Politécnico de Lisboa - Escola Superior de Música
+[2026-05-11 13:41:02 WEST] row 972 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:02 WEST] [586/745] row 974 :: 3186/L021 :: Gestão Comercial :: Instituto Politécnico de Viseu - Escola Superior de Tecnologia e Gestão de Lamego
+[2026-05-11 13:41:03 WEST] row 974 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:03 WEST] [587/745] row 975 :: 3012/L021 :: Gestão Comercial :: Universidade de Aveiro - Escola Superior de Tecnologia e Gestão de Águeda
+[2026-05-11 13:41:03 WEST] row 975 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:03 WEST] [588/745] row 976 :: 3054/L021 :: Gestão Comercial :: Instituto Politécnico de Castelo Branco - Escola Superior de Gestão de Idanha-a-Nova
+[2026-05-11 13:41:05 WEST] row 976 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:05 WEST] [589/745] row 977 :: 3063/L023 :: Marketing e Negócios Internacionais :: Instituto Politécnico de Coimbra - Instituto Superior de Contabilidade e Administração de Coimbra
+[2026-05-11 13:41:06 WEST] row 977 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:06 WEST] [590/745] row 979 :: 3138/L030 :: Gestão Industrial e Logística :: Instituto Politécnico do Porto - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:41:07 WEST] row 979 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:07 WEST] [591/745] row 980 :: 6800/L030 :: Gestão Industrial e Logística :: ISCTE - Instituto Universitário de Lisboa
+[2026-05-11 13:41:08 WEST] row 980 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:08 WEST] [592/745] row 985 :: 150/L041 :: Estudos Portugueses e Ingleses :: Universidade dos Açores - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:41:10 WEST] row 985 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:41:10 WEST] [593/745] row 986 :: 604/L047 :: Línguas e Literaturas :: Universidade de Évora - Escola de Ciências Sociais
+[2026-05-11 13:41:11 WEST] row 986 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:41:11 WEST] [594/745] row 987 :: 3118/L052 :: Engenharia Informática e Multimédia :: Instituto Politécnico de Lisboa - Instituto Superior de Engenharia de Lisboa
+[2026-05-11 13:41:12 WEST] row 987 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:12 WEST] [595/745] row 989 :: 3095/L061 :: Gestão do Turismo e da Hospitalidade :: Instituto Politécnico da Guarda - Escola Superior de Turismo e Hotelaria
+[2026-05-11 13:41:13 WEST] row 989 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:13 WEST] [596/745] row 990 :: 7020/L066 :: Imagem Médica e Radioterapia :: Instituto Politécnico de Castelo Branco - Escola Superior de Saúde Dr. Lopes Dias
+[2026-05-11 13:41:14 WEST] row 990 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:14 WEST] [597/745] row 991 :: 3013/L066 :: Imagem Médica e Radioterapia :: Universidade de Aveiro - Escola Superior de Saúde de Aveiro
+[2026-05-11 13:41:15 WEST] row 991 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:15 WEST] [598/745] row 992 :: 7035/L066 :: Imagem Médica e Radioterapia :: Universidade do Algarve - Escola Superior de Saúde
+[2026-05-11 13:41:16 WEST] row 992 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:16 WEST] [599/745] row 993 :: 7210/L066 :: Imagem Médica e Radioterapia :: Instituto Politécnico de Coimbra - Escola Superior de Tecnologia da Saúde de Coimbra
+[2026-05-11 13:41:17 WEST] row 993 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:17 WEST] [600/745] row 994 :: 7230/L066 :: Imagem Médica e Radioterapia :: Instituto Politécnico do Porto - Escola Superior de Saúde
+[2026-05-11 13:41:18 WEST] row 994 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:18 WEST] [601/745] row 995 :: 7250/L066 :: Imagem Médica e Radioterapia :: Instituto Politécnico de Lisboa - Escola Superior de Saúde de Lisboa
+[2026-05-11 13:41:19 WEST] row 995 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:41:19 WEST] [602/745] row 996 :: 7020/L067 :: Fisiologia Clínica :: Instituto Politécnico de Castelo Branco - Escola Superior de Saúde Dr. Lopes Dias
+[2026-05-11 13:41:20 WEST] row 996 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:20 WEST] [603/745] row 997 :: 7210/L067 :: Fisiologia Clínica :: Instituto Politécnico de Coimbra - Escola Superior de Tecnologia da Saúde de Coimbra
+[2026-05-11 13:41:21 WEST] row 997 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:21 WEST] [604/745] row 998 :: 7230/L067 :: Fisiologia Clínica :: Instituto Politécnico do Porto - Escola Superior de Saúde
+[2026-05-11 13:41:22 WEST] row 998 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:22 WEST] [605/745] row 999 :: 7250/L067 :: Fisiologia Clínica :: Instituto Politécnico de Lisboa - Escola Superior de Saúde de Lisboa
+[2026-05-11 13:41:23 WEST] row 999 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:41:23 WEST] [606/745] row 1002 :: 7250/L068 :: Ciências Biomédicas Laboratoriais :: Instituto Politécnico de Lisboa - Escola Superior de Saúde de Lisboa
+[2026-05-11 13:41:25 WEST] row 1002 unchanged
+[2026-05-11 13:41:25 WEST] [607/745] row 1005 :: 7015/L068 :: Ciências Biomédicas Laboratoriais :: Instituto Politécnico de Bragança - Escola Superior de Saúde de Bragança
+[2026-05-11 13:41:26 WEST] row 1005 unchanged
+[2026-05-11 13:41:26 WEST] [608/745] row 1016 :: 602/L090 :: Ecologia e Ambiente :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-11 13:41:28 WEST] row 1016 unchanged
+[2026-05-11 13:41:28 WEST] [609/745] row 1019 :: 3062/L095 :: Gastronomia :: Instituto Politécnico de Coimbra - Escola Superior de Educação de Coimbra
+[2026-05-11 13:41:28 WEST] row 1019 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:29 WEST] [610/745] row 1020 :: 1503/L096 :: Engenharia Geoespacial :: Universidade de Lisboa - Faculdade de Ciências
+[2026-05-11 13:41:30 WEST] row 1020 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:30 WEST] [611/745] row 1021 :: 1103/L096 :: Engenharia Geoespacial :: Universidade do Porto - Faculdade de Ciências
+[2026-05-11 13:41:31 WEST] row 1021 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:31 WEST] [612/745] row 1022 :: 1506/L097 :: Estudos Comparatistas :: Universidade de Lisboa - Faculdade de Letras
+[2026-05-11 13:41:32 WEST] row 1022 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:32 WEST] [613/745] row 1027 :: 505/L109 :: Turismo, Território e Patrimónios :: Universidade de Coimbra - Faculdade de Letras
+[2026-05-11 13:41:34 WEST] row 1027 unchanged
+[2026-05-11 13:41:34 WEST] [614/745] row 1030 :: 3118/L117 :: Matemática Aplicada à Tecnologia e à Empresa :: Instituto Politécnico de Lisboa - Instituto Superior de Engenharia de Lisboa
+[2026-05-11 13:41:35 WEST] row 1030 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:35 WEST] [615/745] row 1031 :: 7105/L118 :: Engenharia Eletrotécnica Marítima :: Escola Superior Náutica Infante D. Henrique
+[2026-05-11 13:41:36 WEST] row 1031 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:36 WEST] [616/745] row 1032 :: 3118/L119 :: Engenharia Informática, Redes e Telecomunicações :: Instituto Politécnico de Lisboa - Instituto Superior de Engenharia de Lisboa
+[2026-05-11 13:41:37 WEST] row 1032 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:37 WEST] [617/745] row 1034 :: 203/L123 :: Gestão Marinha e Costeira :: Universidade do Algarve - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:41:38 WEST] row 1034 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:41:38 WEST] [618/745] row 1038 :: 3139/L131 :: Gestão da Restauração e Catering :: Instituto Politécnico do Porto - Escola Superior de Hotelaria e Turismo
+[2026-05-11 13:41:39 WEST] row 1038 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:40 WEST] [619/745] row 1039 :: 3105/L131 :: Gestão da Restauração e Catering :: Instituto Politécnico de Leiria - Escola Superior de Turismo e Tecnologia do Mar
+[2026-05-11 13:41:40 WEST] row 1039 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:40 WEST] [620/745] row 1040 :: 3112/L134 :: Mediação Artística e Cultural :: Instituto Politécnico de Lisboa - Escola Superior de Educação
+[2026-05-11 13:41:41 WEST] row 1040 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:41 WEST] [621/745] row 1044 :: 3012/L140 :: Gestão Pública :: Universidade de Aveiro - Escola Superior de Tecnologia e Gestão de Águeda
+[2026-05-11 13:41:42 WEST] row 1044 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:42 WEST] [622/745] row 1045 :: 3031/L140 :: Gestão Pública :: Instituto Politécnico do Cávado e do Ave - Escola Superior de Gestão
+[2026-05-11 13:41:43 WEST] row 1045 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:43 WEST] [623/745] row 1047 :: 3243/L143 :: Informática e Tecnologias Multimédia :: Instituto Politécnico de Tomar - Escola Superior de Tecnologia de Abrantes
+[2026-05-11 13:41:45 WEST] row 1047 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:45 WEST] [624/745] row 1048 :: 1000/L147 :: Estudos Orientais: Estudos Chineses e Japoneses :: Universidade do Minho
+[2026-05-11 13:41:46 WEST] row 1048 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:46 WEST] [625/745] row 1049 :: 1306/L150 :: Estudos de Cultura :: Universidade da Madeira - Faculdade de Artes e Humanidades
+[2026-05-11 13:41:47 WEST] row 1049 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:47 WEST] [626/745] row 1050 :: 3163/L153 :: Engenharia de Redes e Sistemas de Computadores :: Instituto Politécnico de Viana do Castelo - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:41:48 WEST] row 1050 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:48 WEST] [627/745] row 1051 :: 3064/L155 :: Gestão Sustentável das Cidades :: Instituto Politécnico de Coimbra - Instituto Superior de Engenharia de Coimbra
+[2026-05-11 13:41:49 WEST] row 1051 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:50 WEST] [628/745] row 1053 :: 7250/L161 :: Ortóptica e Ciências da Visão :: Instituto Politécnico de Lisboa - Escola Superior de Saúde de Lisboa
+[2026-05-11 13:41:51 WEST] row 1053 unchanged
+[2026-05-11 13:41:51 WEST] [629/745] row 1054 :: 1518/L162 :: Engenharia Naval e Oceânica :: Universidade de Lisboa - Instituto Superior Técnico
+[2026-05-11 13:41:52 WEST] row 1054 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:52 WEST] [630/745] row 1055 :: 3062/L163 :: Estudos Musicais Aplicados :: Instituto Politécnico de Coimbra - Escola Superior de Educação de Coimbra
+[2026-05-11 13:41:53 WEST] row 1055 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:53 WEST] [631/745] row 1056 :: 3161/L164 :: Engenharia do Ambiente e Geoinformática :: Instituto Politécnico de Viana do Castelo - Escola Superior Agrária
+[2026-05-11 13:41:54 WEST] row 1056 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:54 WEST] [632/745] row 1057 :: 903/L167 :: Matemática Aplicada à Gestão do Risco :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:41:56 WEST] row 1057 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:41:56 WEST] [633/745] row 1058 :: 3042/L175 :: Música em Contextos Comunitários :: Instituto Politécnico de Bragança - Escola Superior de Educação de Bragança
+[2026-05-11 13:41:57 WEST] row 1058 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:57 WEST] [634/745] row 1061 :: 3055/L184 :: Música, variante de Formação Musical, Direção Coral e Instrumental :: Instituto Politécnico de Castelo Branco - Escola Superior de Artes Aplicadas
+[2026-05-11 13:41:58 WEST] row 1061 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:58 WEST] [635/745] row 1062 :: 3242/L186 :: Gestão da Edificação e Obras :: Instituto Politécnico de Tomar - Escola Superior de Tecnologia de Tomar
+[2026-05-11 13:41:59 WEST] row 1062 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:41:59 WEST] [636/745] row 1063 :: 300/L187 :: Gestão e Planeamento em Turismo :: Universidade de Aveiro
+[2026-05-11 13:42:01 WEST] row 1063 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:42:01 WEST] [637/745] row 1066 :: 906/L188 :: Ciência de Dados :: Universidade Nova de Lisboa - Instituto Superior de Estatística e Gestão de Informação
+[2026-05-11 13:42:02 WEST] row 1066 unchanged
+[2026-05-11 13:42:02 WEST] [638/745] row 1068 :: 1203/L193 :: Matemática Aplicada e Ciência de Dados :: Universidade de Trás-os-Montes e Alto Douro - Escola de Ciências e Tecnologia
+[2026-05-11 13:42:03 WEST] row 1068 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:42:03 WEST] [639/745] row 1070 :: 7711/L195 :: Ciências Militares, no Ramo de Administração :: Instituto Universitário Militar - Academia Militar
+[2026-05-11 13:42:04 WEST] row 1070 unchanged
+[2026-05-11 13:42:04 WEST] [640/745] row 1071 :: 3092/L196 :: Mecânica e Informática Industrial :: Instituto Politécnico da Guarda - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:42:06 WEST] row 1071 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=True
+[2026-05-11 13:42:10 WEST] flushed target columns after 640 processed rows
+[2026-05-11 13:42:10 WEST] [641/745] row 1072 :: 7710/L201 :: Ciências Militares Navais, ramo de Administração Naval :: Instituto Universitário Militar - Escola Naval
+[2026-05-11 13:42:11 WEST] row 1072 unchanged
+[2026-05-11 13:42:11 WEST] [642/745] row 1073 :: 300/L202 :: Engenharia de Automação Industrial :: Universidade de Aveiro
+[2026-05-11 13:42:13 WEST] row 1073 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:42:13 WEST] [643/745] row 1074 :: 1503/L204 :: Engenharia Biomédica e Biofísica :: Universidade de Lisboa - Faculdade de Ciências
+[2026-05-11 13:42:14 WEST] row 1074 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:42:14 WEST] [644/745] row 1075 :: 400/L205 :: Física e Aplicações :: Universidade da Beira Interior
+[2026-05-11 13:42:15 WEST] row 1075 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:42:15 WEST] [645/745] row 1076 :: 7712/L206 :: Ciências Militares Aeronáuticas, especialidade de Administração Aeronáutica :: Instituto Universitário Militar - Academia da Força Aérea
+[2026-05-11 13:42:16 WEST] row 1076 unchanged
+[2026-05-11 13:42:16 WEST] [646/745] row 1079 :: 3064/L209 :: Engenharia Eletrotécnica e de Computadores :: Instituto Politécnico de Coimbra - Instituto Superior de Engenharia de Coimbra
+[2026-05-11 13:42:17 WEST] row 1079 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:42:17 WEST] [647/745] row 1080 :: 1203/L209 :: Engenharia Eletrotécnica e de Computadores :: Universidade de Trás-os-Montes e Alto Douro - Escola de Ciências e Tecnologia
+[2026-05-11 13:42:18 WEST] row 1080 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:42:18 WEST] [648/745] row 1081 :: 1518/L209 :: Engenharia Eletrotécnica e de Computadores :: Universidade de Lisboa - Instituto Superior Técnico
+[2026-05-11 13:42:20 WEST] row 1081 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:42:20 WEST] [649/745] row 1082 :: 3083/L209 :: Engenharia Eletrotécnica e de Computadores :: Universidade do Algarve - Instituto Superior de Engenharia
+[2026-05-11 13:42:21 WEST] row 1082 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:42:21 WEST] [650/745] row 1083 :: 3043/L209 :: Engenharia Eletrotécnica e de Computadores :: Instituto Politécnico de Bragança - Escola Superior de Tecnologia e de Gestão de Bragança
+[2026-05-11 13:42:22 WEST] row 1083 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:42:22 WEST] [651/745] row 1084 :: 300/L209 :: Engenharia Eletrotécnica e de Computadores :: Universidade de Aveiro
+[2026-05-11 13:42:23 WEST] row 1084 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:42:23 WEST] [652/745] row 1085 :: 501/L209 :: Engenharia Eletrotécnica e de Computadores :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:42:25 WEST] row 1085 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:42:26 WEST] [653/745] row 1086 :: 903/L209 :: Engenharia Eletrotécnica e de Computadores :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:42:28 WEST] row 1086 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:42:28 WEST] [654/745] row 1088 :: 3118/L213 :: Engenharia Física Aplicada :: Instituto Politécnico de Lisboa - Instituto Superior de Engenharia de Lisboa
+[2026-05-11 13:42:29 WEST] row 1088 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:42:29 WEST] [655/745] row 1089 :: 3135/L213 :: Engenharia Física Aplicada :: Instituto Politécnico do Porto - Instituto Superior de Engenharia do Porto
+[2026-05-11 13:42:30 WEST] row 1089 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:42:30 WEST] [656/745] row 1090 :: 1503/L214 :: Engenharia da Energia e Ambiente :: Universidade de Lisboa - Faculdade de Ciências
+[2026-05-11 13:42:30 WEST] row 1090 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:42:31 WEST] [657/745] row 1091 :: 1000/L215 :: Engenharia e Gestão de Sistemas de Informação :: Universidade do Minho
+[2026-05-11 13:42:32 WEST] row 1091 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:42:32 WEST] [658/745] row 1092 :: 7710/L216 :: Ciências Militares Navais, ramo de Engenharia Naval :: Instituto Universitário Militar - Escola Naval
+[2026-05-11 13:42:33 WEST] row 1092 unchanged
+[2026-05-11 13:42:33 WEST] [659/745] row 1093 :: 300/L217 :: Engenharia de Computadores e Informática :: Universidade de Aveiro
+[2026-05-11 13:42:34 WEST] row 1093 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:42:34 WEST] [660/745] row 1094 :: 1000/L218 :: Engenharia Eletrónica Industrial e Computadores :: Universidade do Minho
+[2026-05-11 13:42:35 WEST] row 1094 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:42:35 WEST] [661/745] row 1095 :: 7712/L219 :: Ciências Militares Aeronáuticas, Especialidade de Engenharia :: Instituto Universitário Militar - Academia da Força Aérea
+[2026-05-11 13:42:36 WEST] row 1095 unchanged
+[2026-05-11 13:42:36 WEST] [662/745] row 1097 :: 1518/L221 :: Engenharia Aeroespacial :: Universidade de Lisboa - Instituto Superior Técnico
+[2026-05-11 13:42:37 WEST] row 1097 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:42:37 WEST] [663/745] row 1098 :: 1000/L221 :: Engenharia Aeroespacial :: Universidade do Minho
+[2026-05-11 13:42:38 WEST] row 1098 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:42:39 WEST] [664/745] row 1099 :: 300/L221 :: Engenharia Aeroespacial :: Universidade de Aveiro
+[2026-05-11 13:42:40 WEST] row 1099 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:42:41 WEST] [665/745] row 1100 :: 602/L221 :: Engenharia Aeroespacial :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-11 13:42:42 WEST] row 1100 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:42:42 WEST] [666/745] row 1101 :: 903/L221 :: Engenharia Aeroespacial :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:42:44 WEST] row 1101 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:42:44 WEST] [667/745] row 1102 :: 7711/L222 :: Engenharia Mecânica Militar :: Instituto Universitário Militar - Academia Militar
+[2026-05-11 13:42:45 WEST] row 1102 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:42:45 WEST] [668/745] row 1103 :: 300/L223 :: Engenharia Computacional :: Universidade de Aveiro
+[2026-05-11 13:42:46 WEST] row 1103 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:42:46 WEST] [669/745] row 1105 :: 3064/L226 :: Informática Industrial :: Instituto Politécnico de Coimbra - Instituto Superior de Engenharia de Coimbra
+[2026-05-11 13:42:47 WEST] row 1105 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:42:47 WEST] [670/745] row 1106 :: 1103/L227 :: Inteligência Artificial e Ciência de Dados :: Universidade do Porto - Faculdade de Ciências
+[2026-05-11 13:42:48 WEST] row 1106 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:42:48 WEST] [671/745] row 1107 :: 400/L227 :: Inteligência Artificial e Ciência de Dados :: Universidade da Beira Interior
+[2026-05-11 13:42:50 WEST] row 1107 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:42:50 WEST] [672/745] row 1108 :: 501/L227 :: Inteligência Artificial e Ciência de Dados :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:42:51 WEST] row 1108 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:42:51 WEST] [673/745] row 1109 :: 602/L227 :: Inteligência Artificial e Ciência de Dados :: Universidade de Évora - Escola de Ciências e Tecnologia
+[2026-05-11 13:42:53 WEST] row 1109 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:42:53 WEST] [674/745] row 1110 :: 7711/L228 :: Engenharia Militar :: Instituto Universitário Militar - Academia Militar
+[2026-05-11 13:42:54 WEST] row 1110 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:42:55 WEST] [675/745] row 1111 :: 1000/L229 :: Engenharia de Polímeros :: Universidade do Minho
+[2026-05-11 13:42:56 WEST] row 1111 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:42:56 WEST] [676/745] row 1112 :: 903/L231 :: Engenharia de Micro e Nanotecnologias :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:42:58 WEST] row 1112 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:42:58 WEST] [677/745] row 1113 :: 1518/L233 :: Engenharia Física Tecnológica :: Universidade de Lisboa - Instituto Superior Técnico
+[2026-05-11 13:42:59 WEST] row 1113 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:42:59 WEST] [678/745] row 1115 :: 7711/L238 :: Engenharia Eletrotécnica Militar :: Instituto Universitário Militar - Academia Militar
+[2026-05-11 13:43:01 WEST] row 1115 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:43:01 WEST] [679/745] row 1116 :: 1518/L239 :: Engenharia de Minas e Recursos Energéticos :: Universidade de Lisboa - Instituto Superior Técnico
+[2026-05-11 13:43:02 WEST] row 1116 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:43:02 WEST] [680/745] row 1117 :: 3132/L240 :: Música, variante de Instrumento e Canto :: Instituto Politécnico do Porto - Escola Superior de Música e Artes do Espectáculo
+[2026-05-11 13:43:02 WEST] row 1117 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:43:03 WEST] [681/745] row 1119 :: 7530/L243 :: Ciências Policiais :: Instituto Superior de Ciências Policiais e Segurança Interna
+[2026-05-11 13:43:03 WEST] row 1119 unchanged
+[2026-05-11 13:43:03 WEST] [682/745] row 1120 :: 3131/L246 :: Gestão do Património Cultural :: Instituto Politécnico do Porto - Escola Superior de Educação
+[2026-05-11 13:43:04 WEST] row 1120 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:43:04 WEST] [683/745] row 1121 :: 1107/L251 :: Literatura e Estudos Interartes :: Universidade do Porto - Faculdade de Letras
+[2026-05-11 13:43:05 WEST] row 1121 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:43:05 WEST] [684/745] row 1122 :: 201/L252 :: Línguas e Comunicação Intercultural :: Universidade do Algarve - Faculdade de Ciências Humanas e Sociais
+[2026-05-11 13:43:07 WEST] row 1122 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:43:07 WEST] [685/745] row 1124 :: 300/L254 :: Multimédia e Tecnologias da Comunicação :: Universidade de Aveiro
+[2026-05-11 13:43:09 WEST] row 1124 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:43:09 WEST] [686/745] row 1125 :: 605/L256 :: Ciências Biomédicas e da Saúde :: Universidade de Évora - Escola de Saúde e Desenvolvimento Humano
+[2026-05-11 13:43:11 WEST] row 1125 unchanged
+[2026-05-11 13:43:11 WEST] [687/745] row 1127 :: 400/L258 :: Tecnologia e Produto de Moda Sustentável :: Universidade da Beira Interior
+[2026-05-11 13:43:13 WEST] row 1127 unchanged
+[2026-05-11 13:43:13 WEST] [688/745] row 1130 :: 3163/L261 :: Gastronomia e Artes Culinárias :: Instituto Politécnico de Viana do Castelo - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:43:14 WEST] row 1130 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:43:14 WEST] [689/745] row 1131 :: 3102/L266 :: Engenharia Eletrotécnica e de Computadores (regime noturno) :: Instituto Politécnico de Leiria - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:43:15 WEST] row 1131 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:43:15 WEST] [690/745] row 1132 :: 3083/L269 :: Engenharia de Sistemas e Tecnologias Informáticas :: Universidade do Algarve - Instituto Superior de Engenharia
+[2026-05-11 13:43:16 WEST] row 1132 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:43:16 WEST] [691/745] row 1136 :: 3053/L275 :: Informática e Multimédia :: Instituto Politécnico de Castelo Branco - Escola Superior de Tecnologia de Castelo Branco
+[2026-05-11 13:43:17 WEST] row 1136 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:43:17 WEST] [692/745] row 1142 :: 3092/L283 :: Ciência de Dados e Inteligência Artificial :: Instituto Politécnico da Guarda - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:43:18 WEST] row 1142 unchanged
+[2026-05-11 13:43:18 WEST] [693/745] row 1144 :: 501/L285 :: Gestão de Cidades Sustentáveis e Inteligentes :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:43:20 WEST] row 1144 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:43:20 WEST] [694/745] row 1145 :: 903/L286 :: Tecnologia Agro-Industrial :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:43:22 WEST] row 1145 unchanged
+[2026-05-11 13:43:22 WEST] [695/745] row 1146 :: 1506/L288 :: Estudos de Cultura e Comunicação Intercultural :: Universidade de Lisboa - Faculdade de Letras
+[2026-05-11 13:43:23 WEST] row 1146 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:43:23 WEST] [696/745] row 1147 :: 7712/L289 :: Ciências Militares Aeronáuticas, especialidade de Piloto Aviador :: Instituto Universitário Militar - Academia da Força Aérea
+[2026-05-11 13:43:24 WEST] row 1147 unchanged
+[2026-05-11 13:43:24 WEST] [697/745] row 1148 :: 400/L295 :: Engenharia Mecânica Computacional :: Universidade da Beira Interior
+[2026-05-11 13:43:25 WEST] row 1148 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:43:25 WEST] [698/745] row 1150 :: 300/L298 :: Meteorologia, Oceanografia e Clima :: Universidade de Aveiro
+[2026-05-11 13:43:27 WEST] row 1150 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:43:27 WEST] [699/745] row 1152 :: 400/L303 :: Informática Web, Móvel e na Nuvem :: Universidade da Beira Interior
+[2026-05-11 13:43:28 WEST] row 1152 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:43:28 WEST] [700/745] row 1154 :: 3065/L305 :: Gestão e Biociências :: Instituto Politécnico de Coimbra - Escola Superior de Tecnologia e Gestão de Oliveira do Hospital
+[2026-05-11 13:43:29 WEST] row 1154 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:43:29 WEST] [701/745] row 1161 :: 904/L313 :: Estudos do Mar :: Universidade Nova de Lisboa - Faculdade de Economia
+[2026-05-11 13:43:30 WEST] row 1161 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:43:30 WEST] [702/745] row 1162 :: 6810/L321 :: Matemática Aplicada e Tecnologias Digitais :: ISCTE - Instituto Universitário de Lisboa (Sintra)
+[2026-05-11 13:43:31 WEST] row 1162 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:43:31 WEST] [703/745] row 1163 :: 7711/L323 :: Ciências Militares, ramo Exército :: Instituto Universitário Militar - Academia Militar
+[2026-05-11 13:43:32 WEST] row 1163 unchanged
+[2026-05-11 13:43:32 WEST] [704/745] row 1164 :: 7711/L324 :: Ciências Militares, ramo Segurança :: Instituto Universitário Militar - Academia Militar
+[2026-05-11 13:43:33 WEST] row 1164 unchanged
+[2026-05-11 13:43:33 WEST] [705/745] row 1165 :: 7710/L325 :: Ciências Militares Navais, ramo de Marinha e Fuzileiros :: Instituto Universitário Militar - Escola Naval
+[2026-05-11 13:43:34 WEST] row 1165 unchanged
+[2026-05-11 13:43:34 WEST] [706/745] row 1167 :: 400/L331 :: Computação Criativa e Realidade Virtual :: Universidade da Beira Interior
+[2026-05-11 13:43:36 WEST] row 1167 unchanged
+[2026-05-11 13:43:36 WEST] [707/745] row 1168 :: 3092/L335 :: Design de Equipamento e Ambientes :: Instituto Politécnico da Guarda - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:43:36 WEST] row 1168 unchanged
+[2026-05-11 13:43:36 WEST] [708/745] row 1169 :: 1518/L343 :: Engenharia Geral (GENI) (ensino em inglês) :: Universidade de Lisboa - Instituto Superior Técnico
+[2026-05-11 13:43:37 WEST] row 1169 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:43:37 WEST] [709/745] row 1170 :: 140/L344 :: Guias de Natureza e Património :: Universidade dos Açores - Faculdade de Ciências Agrárias e do Ambiente
+[2026-05-11 13:43:39 WEST] row 1170 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:43:39 WEST] [710/745] row 1171 :: 3012/L346 :: Engenharia Informática Aplicada :: Universidade de Aveiro - Escola Superior de Tecnologia e Gestão de Águeda
+[2026-05-11 13:43:40 WEST] row 1171 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:43:40 WEST] [711/745] row 1172 :: 903/L347 :: Análise e Engenharia de Dados :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:43:41 WEST] row 1172 unchanged
+[2026-05-11 13:43:42 WEST] [712/745] row 1175 :: 7230/L354 :: Física Aplicada à Saúde :: Instituto Politécnico do Porto - Escola Superior de Saúde
+[2026-05-11 13:43:43 WEST] row 1175 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:43:43 WEST] [713/745] row 1176 :: 903/L358 :: Engenharia de Comunicações e de Informação :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:43:44 WEST] row 1176 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:43:44 WEST] [714/745] row 1179 :: 604/L365 :: Filosofia e Cultura Contemporânea :: Universidade de Évora - Escola de Ciências Sociais
+[2026-05-11 13:43:46 WEST] row 1179 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:43:46 WEST] [715/745] row 1180 :: 3164/L366 :: Marketing e Comunicação Empresariais :: Instituto Politécnico de Viana do Castelo - Escola Superior de Ciências Empresariais
+[2026-05-11 13:43:47 WEST] row 1180 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:43:47 WEST] [716/745] row 1181 :: 1307/L367 :: Engenharia Física e Computacional :: Universidade da Madeira - Faculdade de Ciências Exatas e da Engenharia
+[2026-05-11 13:43:48 WEST] row 1181 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=True
+[2026-05-11 13:43:48 WEST] [717/745] row 1182 :: 903/L370 :: Geologia para a Sustentabilidade :: Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:43:50 WEST] row 1182 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:43:50 WEST] [718/745] row 1185 :: 3034/L373 :: Gastronomia e Sustentabilidade Alimentar :: Instituto Politécnico do Cávado e do Ave - Escola Superior de Hotelaria e Turismo
+[2026-05-11 13:43:51 WEST] row 1185 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:43:51 WEST] [719/745] row 1186 :: 3062/L380 :: Gerontologia :: Instituto Politécnico de Coimbra - Escola Superior de Educação de Coimbra
+[2026-05-11 13:43:52 WEST] row 1186 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:43:52 WEST] [720/745] row 1187 :: 3331/L381 :: Tecnologias e Desenvolvimento Web :: Instituto Politécnico do Porto - Escola Superior de Media Artes e Design
+[2026-05-11 13:43:54 WEST] row 1187 unchanged
+[2026-05-11 13:43:58 WEST] flushed target columns after 720 processed rows
+[2026-05-11 13:43:58 WEST] [721/745] row 1188 :: 3052/L386 :: Treino Desportivo e Preparação Física :: Instituto Politécnico de Castelo Branco - Escola Superior de Educação de Castelo Branco
+[2026-05-11 13:43:59 WEST] row 1188 unchanged
+[2026-05-11 13:43:59 WEST] [722/745] row 1189 :: 3162/L388 :: Gerontologia :: Instituto Politécnico de Viana do Castelo - Escola Superior de Educação
+[2026-05-11 13:44:00 WEST] row 1189 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:44:00 WEST] [723/745] row 1190 :: 3105/L389 :: Sistemas Alimentares Sustentáveis :: Instituto Politécnico de Leiria - Escola Superior de Turismo e Tecnologia do Mar
+[2026-05-11 13:44:01 WEST] row 1190 unchanged
+[2026-05-11 13:44:01 WEST] [724/745] row 1191 :: 140/L390 :: Biotecnologia :: Universidade dos Açores - Faculdade de Ciências Agrárias e do Ambiente
+[2026-05-11 13:44:03 WEST] row 1191 unchanged
+[2026-05-11 13:44:03 WEST] [725/745] row 1192 :: 6800/L391 :: Matemática Aplicada à Economia e às Finanças :: ISCTE - Instituto Universitário de Lisboa
+[2026-05-11 13:44:04 WEST] row 1192 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:44:04 WEST] [726/745] row 1193 :: 3102/L393 :: Gestão Sustentável das Cidades e da Indústria :: Instituto Politécnico de Leiria - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:44:05 WEST] row 1193 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:44:05 WEST] [727/745] row 1194 :: 3032/L394 :: Engenharia de Dados e Inteligência Artificial :: Instituto Politécnico do Cávado e do Ave - Escola Superior de Tecnologia
+[2026-05-11 13:44:06 WEST] row 1194 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:44:06 WEST] [728/745] row 1195 :: 1204/L399 :: Psicomotricidade :: Universidade de Trás-os-Montes e Alto Douro - Escola de Ciências da Vida e do Ambiente
+[2026-05-11 13:44:06 WEST] row 1195 unchanged
+[2026-05-11 13:44:06 WEST] [729/745] row 1196 :: 3121/L401 :: Línguas Aplicadas em Comunicação Digital :: Instituto Politécnico de Portalegre - Escola Superior de Educação e Ciências Sociais
+[2026-05-11 13:44:07 WEST] row 1196 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:44:07 WEST] [730/745] row 1197 :: 6800/L402 :: Direito :: ISCTE - Instituto Universitário de Lisboa
+[2026-05-11 13:44:08 WEST] row 1197 unchanged
+[2026-05-11 13:44:08 WEST] [731/745] row 1198 :: 501/L403 :: Engenharia Aeroespacial :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:44:10 WEST] row 1198 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:44:10 WEST] [732/745] row 1199 :: 1503/L405 :: Ciência de Dados :: Universidade de Lisboa - Faculdade de Ciências
+[2026-05-11 13:44:10 WEST] row 1199 unchanged
+[2026-05-11 13:44:10 WEST] [733/745] row 1200 :: 400/L406 :: Cidades e Comunidades Sustentáveis Inteligentes :: Universidade da Beira Interior
+[2026-05-11 13:44:12 WEST] row 1200 unchanged
+[2026-05-11 13:44:12 WEST] [734/745] row 1201 :: 1108/L407 :: Ciências da Saúde Pública :: Universidade do Porto - Faculdade de Medicina
+[2026-05-11 13:44:13 WEST] row 1201 unchanged
+[2026-05-11 13:44:13 WEST] [735/745] row 1202 :: 3105/L411 :: Tecnologias Digitais Aplicadas ao Turismo :: Instituto Politécnico de Leiria - Escola Superior de Turismo e Tecnologia do Mar
+[2026-05-11 13:44:14 WEST] row 1202 unchanged
+[2026-05-11 13:44:14 WEST] [736/745] row 1203 :: 1201/L412 :: Tecnologia dos Espaços Verdes :: Universidade de Trás-os-Montes e Alto Douro - Escola de Ciências Agrárias e Veterinárias
+[2026-05-11 13:44:15 WEST] row 1203 unchanged
+[2026-05-11 13:44:15 WEST] [737/745] row 1204 :: 501/L413 :: Construção Digital :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:44:17 WEST] row 1204 unchanged
+[2026-05-11 13:44:17 WEST] [738/745] row 1205 :: 3095/L415 :: Marketing e Inovação no Turismo :: Instituto Politécnico da Guarda - Escola Superior de Turismo e Hotelaria
+[2026-05-11 13:44:18 WEST] row 1205 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:44:18 WEST] [739/745] row 1206 :: 3118/L416 :: Engenharia de Sistemas de Computadores :: Instituto Politécnico de Lisboa - Instituto Superior de Engenharia de Lisboa
+[2026-05-11 13:44:19 WEST] row 1206 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:44:19 WEST] [740/745] row 1207 :: 3014/L417 :: Engenharia de Software Industrial :: Universidade de Aveiro - Escola Superior de Design, Gestão e Tecnologia da Produção de Aveiro-Norte
+[2026-05-11 13:44:20 WEST] row 1207 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:44:20 WEST] [741/745] row 1208 :: 3118/L419 :: Informática e Economia dos Dados :: Instituto Politécnico de Lisboa - Instituto Superior de Engenharia de Lisboa
+[2026-05-11 13:44:21 WEST] row 1208 prepared :: cidade=True distrito=True morada=True institution_url=True course_url=False
+[2026-05-11 13:44:21 WEST] [742/745] row 1209 :: 3043/L423 :: Tecnologias Digitais e Gestão :: Instituto Politécnico de Bragança - Escola Superior de Tecnologia e de Gestão de Bragança
+[2026-05-11 13:44:22 WEST] row 1209 unchanged
+[2026-05-11 13:44:22 WEST] [743/745] row 1210 :: 902/L424 :: Ciências Sociais (regime pós-laboral) :: Universidade Nova de Lisboa - Faculdade de Ciências Sociais e Humanas
+[2026-05-11 13:44:24 WEST] row 1210 unchanged
+[2026-05-11 13:44:24 WEST] [744/745] row 1211 :: 501/L426 :: Engenharia Naval e Oceânica :: Universidade de Coimbra - Faculdade de Ciências e Tecnologia
+[2026-05-11 13:44:26 WEST] row 1211 prepared :: cidade=True distrito=True morada=True institution_url=False course_url=False
+[2026-05-11 13:44:26 WEST] [745/745] row 1212 :: 3138/L429 :: Sistemas de Informação para a Gestão :: Instituto Politécnico do Porto - Escola Superior de Tecnologia e Gestão
+[2026-05-11 13:44:27 WEST] row 1212 unchanged
+[2026-05-11 13:44:32 WEST] final flush complete after 745 processed rows
+[2026-05-11 13:44:32 WEST] done :: processed=745 changed=559 errors=0

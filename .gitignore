@@ -10,6 +10,8 @@
 *.tmp
 *.temp
 scratch/
+__pycache__/
+tmp/
 
 # Local assistant runtime state inside workspace
 .openclaw/

@@ -34,7 +34,7 @@ export function PortugalDistrictMap({ districts }: { districts: DistrictSummary[
   return (
     <div className="relative w-full">
       {activeDistrict && (
-        <div className="absolute right-2 top-2 z-10 rounded-2xl border border-brand-100 bg-white/95 px-4 py-3 text-right text-sm shadow-lg backdrop-blur">
+        <div className="absolute z-10 rounded-2xl border border-brand-100 bg-white/95 px-4 py-3 text-center text-sm shadow-lg backdrop-blur" style={{ left: 100, top: 110, width: 160 }}>
           <p className="font-semibold text-brand-900">{activeDistrict.name}</p>
           <p className="text-brand-800">{plural(activeDistrict.facultyCount, "instituição", "instituições")}</p>
           <p className="text-brand-800">{plural(activeDistrict.courseCount, "curso", "cursos")}</p>

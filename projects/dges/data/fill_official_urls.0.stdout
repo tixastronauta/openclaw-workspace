@@ -1,0 +1,54 @@
+[2026-05-10 21:46:46 WEST] candidate rows: 297
+[2026-05-10 21:46:46 WEST] [1/297] row 4 :: Universidade de Aveiro
+[2026-05-10 21:46:47 WEST] row 4 updated :: institution_url=False course_url=False
+[2026-05-10 21:46:47 WEST] sleeping 0.3s before next row
+[2026-05-10 21:46:47 WEST] [2/297] row 32 :: Universidade de Lisboa - Instituto Superior de Ciências Sociais e Políticas
+Updated 1 cells in dges_cursos_2026!AB32
+Updated 1 cells in dges_cursos_2026!AC32
+Updated 1 cells in dges_cursos_2026!A32
+[2026-05-10 21:46:51 WEST] row 32 updated :: institution_url=True course_url=True
+[2026-05-10 21:46:51 WEST] sleeping 0.1s before next row
+[2026-05-10 21:46:51 WEST] [3/297] row 36 :: Universidade do Minho
+Updated 1 cells in dges_cursos_2026!AB36
+Updated 1 cells in dges_cursos_2026!AC36
+Updated 1 cells in dges_cursos_2026!A36
+[2026-05-10 21:46:54 WEST] row 36 updated :: institution_url=True course_url=True
+[2026-05-10 21:46:54 WEST] sleeping 0.2s before next row
+[2026-05-10 21:46:54 WEST] [4/297] row 40 :: Universidade da Beira Interior
+[2026-05-10 21:46:55 WEST] row 40 updated :: institution_url=False course_url=False
+[2026-05-10 21:46:55 WEST] sleeping 0.3s before next row
+[2026-05-10 21:46:56 WEST] [5/297] row 44 :: Universidade de Lisboa - Instituto Superior Técnico
+Updated 1 cells in dges_cursos_2026!AB44
+Updated 1 cells in dges_cursos_2026!AC44
+Updated 1 cells in dges_cursos_2026!A44
+[2026-05-10 21:46:59 WEST] row 44 updated :: institution_url=True course_url=True
+[2026-05-10 21:46:59 WEST] sleeping 0.1s before next row
+[2026-05-10 21:46:59 WEST] [6/297] row 48 :: Universidade do Algarve - Faculdade de Ciências e Tecnologia
+[2026-05-10 21:47:00 WEST] row 48 updated :: institution_url=False course_url=False
+[2026-05-10 21:47:00 WEST] sleeping 0.2s before next row
+[2026-05-10 21:47:00 WEST] [7/297] row 52 :: Universidade de Lisboa - Faculdade de Belas-Artes
+Updated 1 cells in dges_cursos_2026!AB52
+Updated 1 cells in dges_cursos_2026!AC52
+Updated 1 cells in dges_cursos_2026!A52
+[2026-05-10 21:47:03 WEST] row 52 updated :: institution_url=True course_url=True
+[2026-05-10 21:47:03 WEST] sleeping 0.3s before next row
+[2026-05-10 21:47:03 WEST] [8/297] row 56 :: Instituto Politécnico de Leiria - Escola Superior de Artes e Design
+Updated 1 cells in dges_cursos_2026!AB56
+Updated 1 cells in dges_cursos_2026!AC56
+Updated 1 cells in dges_cursos_2026!A56
+[2026-05-10 21:47:06 WEST] row 56 updated :: institution_url=True course_url=True
+[2026-05-10 21:47:06 WEST] sleeping 0.2s before next row
+[2026-05-10 21:47:07 WEST] [9/297] row 60 :: Instituto Politécnico de Viana do Castelo - Escola Superior de Educação
+Updated 1 cells in dges_cursos_2026!AB60
+Google API error (429 rateLimitExceeded): Quota exceeded for quota metric 'Write requests' and limit 'Write requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:636103938903'.
+[2026-05-10 21:47:17 WEST] row 60 error: CalledProcessError(7, ['gog', 'sheets', '--account', 'tiago.carvalho@gmail.com', 'update', '1m7LzrYoYTrCHYr3vBiaeK62ZOw-4GQVCbXse6d5FE6E', 'dges_cursos_2026!AC60:AC60', '--values-json', '[["http://www.ipvc.pt/artes-plasticas-tecnologias-artisticas"]]', '--input', 'USER_ENTERED', '--no-input'])
+[2026-05-10 21:47:17 WEST] sleeping 0.2s before next row
+[2026-05-10 21:47:17 WEST] [10/297] row 64 :: Instituto Politécnico de Lisboa - Escola Superior de Educação
+Google API error (429 rateLimitExceeded): Quota exceeded for quota metric 'Write requests' and limit 'Write requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:636103938903'.
+[2026-05-10 21:47:27 WEST] row 64 error: CalledProcessError(7, ['gog', 'sheets', '--account', 'tiago.carvalho@gmail.com', 'update', '1m7LzrYoYTrCHYr3vBiaeK62ZOw-4GQVCbXse6d5FE6E', 'dges_cursos_2026!AB64:AB64', '--values-json', '[["http://www.eselx.ipl.pt"]]', '--input', 'USER_ENTERED', '--no-input'])
+[2026-05-10 21:47:27 WEST] sleeping 0.2s before next row
+[2026-05-10 21:47:27 WEST] [11/297] row 68 :: Instituto Politécnico do Porto - Instituto Superior de Contabilidade e Administração do Porto
+Google API error (429 rateLimitExceeded): Quota exceeded for quota metric 'Write requests' and limit 'Write requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:636103938903'.
+[2026-05-10 21:47:40 WEST] row 68 error: CalledProcessError(7, ['gog', 'sheets', '--account', 'tiago.carvalho@gmail.com', 'update', '1m7LzrYoYTrCHYr3vBiaeK62ZOw-4GQVCbXse6d5FE6E', 'dges_cursos_2026!AB68:AB68', '--values-json', '[["http://www.iscap.ipp.pt"]]', '--input', 'USER_ENTERED', '--no-input'])
+[2026-05-10 21:47:40 WEST] sleeping 0.3s before next row
+[2026-05-10 21:47:40 WEST] [12/297] row 72 :: Instituto Politécnico de Beja - Escola Superior de Educação

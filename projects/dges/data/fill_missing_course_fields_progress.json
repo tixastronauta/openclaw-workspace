@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "sheet_id": "1m7LzrYoYTrCHYr3vBiaeK62ZOw-4GQVCbXse6d5FE6E",
+  "tab": "dges_cursos_2026",
+  "header_positions": {
+    "updated_at": 1,
+    "cidade": 18,
+    "distrito": 19,
+    "morada": 20,
+    "institution_url": 21,
+    "course_url": 22
+  },
+  "candidates": 745,
+  "processed": 745,
+  "changed": 559,
+  "errors": 0,
+  "remaining": 0,
+  "finishedAt": "2026-05-11 13:44:32 WEST",
+  "log_path": "/data/.openclaw/workspace/projects/dges/data/fill_missing_course_fields.log",
+  "cache_path": "/data/.openclaw/workspace/projects/dges/data/fill_missing_course_fields_cache.json",
+  "dryRun": false
+}

@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "sheet_id": "1m7LzrYoYTrCHYr3vBiaeK62ZOw-4GQVCbXse6d5FE6E",
+  "tab": "dges_cursos_2026",
+  "header_positions": {
+    "course_description": 4
+  },
+  "candidates": 760,
+  "remaining": 0,
+  "processed": 760,
+  "prepared": 760,
+  "written": 760,
+  "no_data": 0,
+  "errors": 0,
+  "skipped_already_filled": 0,
+  "finishedAt": "2026-05-12 12:13:25 WEST",
+  "dryRun": false,
+  "log_path": "/data/.openclaw/workspace/projects/dges/data/fill_missing_course_descriptions.log",
+  "cache_path": "/data/.openclaw/workspace/projects/dges/data/fill_missing_course_descriptions_cache.json"
+}

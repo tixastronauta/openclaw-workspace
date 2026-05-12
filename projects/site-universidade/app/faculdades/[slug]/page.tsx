@@ -64,9 +64,8 @@ export default async function FacultyPage({ params }: PageProps) {
 
       <section className="mt-10 grid gap-8 lg:grid-cols-[1fr_300px]">
         <div>
-          <div className="mb-5 flex items-center justify-between gap-4">
+          <div className="mb-5">
             <h2 className="text-2xl font-semibold text-slate-950">Cursos</h2>
-            <Link href="/faculdades/" className="text-sm font-semibold text-brand-700 hover:text-brand-900">Ver todas as faculdades</Link>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
             {faculty.courses.map((course) => <CourseCard key={course.slug} course={course} />)}

@@ -1,0 +1,2532 @@
+{
+  "details": {
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8031&code=140": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8036&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8083&code=160": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8086&code=140": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8138&code=7045": {
+      "morada": "Morro do Lena - Alto do Vieiro, Apartado 4137, 2411-901 LEIRIA",
+      "cidade": "Leiria",
+      "distrito": "Leiria",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8149&code=7045": {
+      "morada": "Morro do Lena - Alto do Vieiro, Apartado 4137, 2411-901 LEIRIA",
+      "cidade": "Leiria",
+      "distrito": "Leiria",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8149&code=7015": {
+      "morada": "Av. D. Afonso V, 5300-121 BRAGANÇA",
+      "cidade": "Bragança",
+      "distrito": "Bragança",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8156&code=3034": {
+      "morada": "Campus do IPCA, Vila Frescaínha S. Martinho, 4750-810 BARCELOS",
+      "cidade": "Barcelos",
+      "distrito": "Braga",
+      "institution_url": "https://esht.ipca.pt/"
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8184&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8251&code=604": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8258&code=203": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8259&code=906": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8262&code=602": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8311&code=3032": {
+      "morada": "Campus do IPCA, Vila Frescaínha S. Martinho, 4750-810 BARCELOS",
+      "cidade": "Barcelos",
+      "distrito": "Braga",
+      "institution_url": "http://www.est.ipca.pt"
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8393&code=505": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8408&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8463&code=3053": {
+      "morada": "Av. do Empresário, Campus da Talagueira, 6000-767 CASTELO BRANCO",
+      "cidade": "Castelo Branco",
+      "distrito": "Castelo Branco",
+      "institution_url": "http://www.ipcb.pt/EST"
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8509&code=201": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8524&code=160": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=8571&code=160": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9002&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9002&code=502": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9003&code=602": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9003&code=203": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9006&code=505": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9006&code=902": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9011&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9011&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9011&code=602": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9011&code=203": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9011&code=160": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9012&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9012&code=602": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9013&code=521": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9013&code=203": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9015&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9015&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9015&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9015&code=602": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9015&code=203": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9015&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9016&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9016&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9016&code=602": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9016&code=203": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9020&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9020&code=902": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9022&code=140": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9023&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9023&code=902": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9025&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9026&code=507": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9026&code=604": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9040&code=902": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9041&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9046&code=902": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9048&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9056&code=3092": {
+      "morada": "Av. Dr. Francisco Sá Carneiro, 50, 6300-559 GUARDA",
+      "cidade": "Guarda",
+      "distrito": "Guarda",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9069&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9069&code=603": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9071&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9074&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9075&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9078&code=502": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9078&code=911": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9081&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9081&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9081&code=503": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9081&code=604": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9081&code=204": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9081&code=170": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9081&code=904": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9089&code=3092": {
+      "morada": "Av. Dr. Francisco Sá Carneiro, 50, 6300-559 GUARDA",
+      "cidade": "Guarda",
+      "distrito": "Guarda",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9089&code=3083": {
+      "morada": "Estrada da Penha,, Campus da Penha, 8005-139 FARO",
+      "cidade": "Faro",
+      "distrito": "Faro",
+      "institution_url": "http://ise.ualg.pt/"
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9089&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9089&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9089&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9089&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9096&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9096&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9098&code=1519": {
+      "morada": "Av. Prof. Dr. Cavaco Silva, 2744-016 Porto Salvo",
+      "cidade": "Porto Salvo",
+      "distrito": "",
+      "institution_url": "http://www.tecnico.ulisboa.pt"
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9099&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9099&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9099&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9104&code=1519": {
+      "morada": "Av. Prof. Dr. Cavaco Silva, 2744-016 Porto Salvo",
+      "cidade": "Porto Salvo",
+      "distrito": "",
+      "institution_url": "http://www.tecnico.ulisboa.pt"
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9104&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9104&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9104&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9104&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9105&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9112&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9113&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9113&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9113&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9119&code=3092": {
+      "morada": "Av. Dr. Francisco Sá Carneiro, 50, 6300-559 GUARDA",
+      "cidade": "Guarda",
+      "distrito": "Guarda",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9119&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9119&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9119&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9119&code=602": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9119&code=203": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9119&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9121&code=1519": {
+      "morada": "Av. Prof. Dr. Cavaco Silva, 2744-016 Porto Salvo",
+      "cidade": "Porto Salvo",
+      "distrito": "",
+      "institution_url": "http://www.tecnico.ulisboa.pt"
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9123&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9123&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9123&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9125&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9125&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9126&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9128&code=3092": {
+      "morada": "Av. Dr. Francisco Sá Carneiro, 50, 6300-559 GUARDA",
+      "cidade": "Guarda",
+      "distrito": "Guarda",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9132&code=505": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9133&code=505": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9135&code=505": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9135&code=150": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9139&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9139&code=505": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9139&code=902": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9141&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9141&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9143&code=505": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9143&code=602": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9145&code=902": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9146&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9146&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9147&code=3092": {
+      "morada": "Av. Dr. Francisco Sá Carneiro, 50, 6300-559 GUARDA",
+      "cidade": "Guarda",
+      "distrito": "Guarda",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9147&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9147&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9147&code=503": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9147&code=604": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9147&code=170": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9147&code=904": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9152&code=204": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9155&code=906": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9157&code=3092": {
+      "morada": "Av. Dr. Francisco Sá Carneiro, 50, 6300-559 GUARDA",
+      "cidade": "Guarda",
+      "distrito": "Guarda",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9164&code=3139": {
+      "morada": "Rua D. Sancho I, 981, 4480-876 VILA DO CONDE",
+      "cidade": "Vila do Conde",
+      "distrito": "Porto",
+      "institution_url": "http://www.esht.ipp.pt"
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9181&code=505": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9181&code=150": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9181&code=902": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9182&code=505": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9182&code=902": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9185&code=160": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9194&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9196&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9204&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9204&code=201": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9204&code=902": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9205&code=3092": {
+      "morada": "Av. Dr. Francisco Sá Carneiro, 50, 6300-559 GUARDA",
+      "cidade": "Guarda",
+      "distrito": "Guarda",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9205&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9209&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9209&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9209&code=602": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9209&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9210&code=602": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9210&code=203": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9214&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9214&code=603": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9219&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9219&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9219&code=507": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9219&code=604": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9219&code=201": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9219&code=150": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9223&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9223&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9224&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9225&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9229&code=503": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9229&code=604": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9238&code=507": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9238&code=150": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9240&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9240&code=503": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9240&code=604": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9240&code=204": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9240&code=150": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9240&code=902": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9243&code=603": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9252&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9252&code=902": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9254&code=604": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9254&code=170": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9257&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9257&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9257&code=603": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9345&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9347&code=603": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9348&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9351&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9351&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9351&code=206": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9448&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9448&code=902": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9455&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9455&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9455&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9494&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9494&code=504": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9494&code=605": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9494&code=203": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9500&code=7015": {
+      "morada": "Av. D. Afonso V, 5300-121 BRAGANÇA",
+      "cidade": "Bragança",
+      "distrito": "Bragança",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9500&code=7045": {
+      "morada": "Morro do Lena - Alto do Vieiro, Apartado 4137, 2411-901 LEIRIA",
+      "cidade": "Leiria",
+      "distrito": "Leiria",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9500&code=7093": {
+      "morada": "Rua da Mãe de Deus, 9500-321 PONTA DELGADA",
+      "cidade": "Ponta Delgada",
+      "distrito": "Açores",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9500&code=7092": {
+      "morada": "Rua Capitão João D'Ávila, 9700-042 ANGRA DO HEROÍSMO",
+      "cidade": "Angra do Heroísmo",
+      "distrito": "Açores",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9500&code=7270": {
+      "morada": "Rua Dr. Bernardino de Almeida,, 830, 844 e 856, 4200-072 PORTO",
+      "cidade": "Porto",
+      "distrito": "Porto",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9501&code=7015": {
+      "morada": "Av. D. Afonso V, 5300-121 BRAGANÇA",
+      "cidade": "Bragança",
+      "distrito": "Bragança",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9504&code=7045": {
+      "morada": "Morro do Lena - Alto do Vieiro, Apartado 4137, 2411-901 LEIRIA",
+      "cidade": "Leiria",
+      "distrito": "Leiria",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9504&code=7016": {
+      "morada": "Rua Dr. Júlio Martins, n.º 1, 5400-342 CHAVES",
+      "cidade": "Chaves",
+      "distrito": "Vila Real",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9540&code=203": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9548&code=1113": {
+      "morada": "Rua Dr. Manuel Pereira da Silva s/n, 4200-393 PORTO",
+      "cidade": "Porto",
+      "distrito": "Porto",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9548&code=506": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9549&code=7015": {
+      "morada": "Av. D. Afonso V, 5300-121 BRAGANÇA",
+      "cidade": "Bragança",
+      "distrito": "Bragança",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9554&code=901": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9652&code=150": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9694&code=505": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9707&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9707&code=508": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9707&code=605": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9731&code=3165": {
+      "morada": "Complexo Desportivo e de Lazer, Comendador Rui Solheiro, 4960-320 Melgaço",
+      "cidade": "Melgaço",
+      "distrito": "Viana do Castelo",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9740&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9751&code=602": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9752&code=602": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9760&code=602": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9773&code=505": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9779&code=505": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9787&code=604": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9813&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9813&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9813&code=506": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9813&code=901": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9817&code=201": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9818&code=602": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9819&code=504": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9821&code=201": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9832&code=504": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9833&code=7015": {
+      "morada": "Av. D. Afonso V, 5300-121 BRAGANÇA",
+      "cidade": "Bragança",
+      "distrito": "Bragança",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9835&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9841&code=605": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9847&code=1509": {
+      "morada": "Av. da Univ. Técnica de Lisboa, Pólo Universitário do Alto da Ajuda, 1300-477 LISBOA",
+      "cidade": "Lisboa",
+      "distrito": "Lisboa",
+      "institution_url": "http://www.fmv.ulisboa.pt"
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9847&code=602": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9853&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9853&code=604": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9853&code=150": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9855&code=3092": {
+      "morada": "Av. Dr. Francisco Sá Carneiro, 50, 6300-559 GUARDA",
+      "cidade": "Guarda",
+      "distrito": "Guarda",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9890&code=7045": {
+      "morada": "Morro do Lena - Alto do Vieiro, Apartado 4137, 2411-901 LEIRIA",
+      "cidade": "Leiria",
+      "distrito": "Leiria",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9891&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9910&code=602": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9912&code=1519": {
+      "morada": "Av. Prof. Dr. Cavaco Silva, 2744-016 Porto Salvo",
+      "cidade": "Porto Salvo",
+      "distrito": "",
+      "institution_url": "http://www.tecnico.ulisboa.pt"
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9917&code=902": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9918&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=A017&code=160": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=A025&code=908": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L041&code=150": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L047&code=604": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L068&code=7015": {
+      "morada": "Av. D. Afonso V, 5300-121 BRAGANÇA",
+      "cidade": "Bragança",
+      "distrito": "Bragança",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L090&code=602": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L109&code=505": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L123&code=203": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L167&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L187&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L188&code=906": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L196&code=3092": {
+      "morada": "Av. Dr. Francisco Sá Carneiro, 50, 6300-559 GUARDA",
+      "cidade": "Guarda",
+      "distrito": "Guarda",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L202&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L205&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L209&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L209&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L209&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L217&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L221&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L221&code=602": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L221&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L223&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L227&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L227&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L227&code=602": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L231&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L252&code=201": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L254&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L256&code=605": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L258&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L283&code=3092": {
+      "morada": "Av. Dr. Francisco Sá Carneiro, 50, 6300-559 GUARDA",
+      "cidade": "Guarda",
+      "distrito": "Guarda",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L285&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L286&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L295&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L298&code=300": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L303&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L313&code=904": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L331&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L335&code=3092": {
+      "morada": "Av. Dr. Francisco Sá Carneiro, 50, 6300-559 GUARDA",
+      "cidade": "Guarda",
+      "distrito": "Guarda",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L344&code=140": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L347&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L358&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L365&code=604": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L370&code=903": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L390&code=140": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L403&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L406&code=400": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L413&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L424&code=902": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    },
+    "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=L426&code=501": {
+      "morada": "",
+      "cidade": "",
+      "distrito": "",
+      "institution_url": ""
+    }
+  },
+  "course_url": {
+    "https://infocursos.medu.pt/dges.asp?code=3131&codc=8002": "https://www.ese.ipp.pt/cursos/licenciatura/30001432",
+    "https://infocursos.medu.pt/dges.asp?code=3011&codc=8005": "https://www.ua.pt/pt/isca/",
+    "https://infocursos.medu.pt/dges.asp?code=3134&codc=8005": "https://www.iscap.ipp.pt/cursos/licenciatura/20000147",
+    "https://infocursos.medu.pt/dges.asp?code=3063&codc=8029": "http://www.iscac.pt",
+    "https://infocursos.medu.pt/dges.asp?code=6800&codc=8029": "https://www.iscte-iul.pt/curso/28/licenciatura-financas-contabilidade",
+    "https://infocursos.medu.pt/dges.asp?code=140&codc=8031": "",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=8036": "",
+    "https://infocursos.medu.pt/dges.asp?code=160&codc=8083": "",
+    "https://infocursos.medu.pt/dges.asp?code=140&codc=8086": "",
+    "https://infocursos.medu.pt/dges.asp?code=3153&codc=8111": "https://www.esce.ips.pt/cursos/licenciaturas/grhpl",
+    "https://infocursos.medu.pt/dges.asp?code=1516&codc=8111": "https://www.iscsp.ulisboa.pt/pt/cursos/oferta-graduada/licenciaturas/gestao-de-recursos-humanos-pos-laboral",
+    "https://infocursos.medu.pt/dges.asp?code=7210&codc=8138": "",
+    "https://infocursos.medu.pt/dges.asp?code=7250&codc=8149": "",
+    "https://infocursos.medu.pt/dges.asp?code=7250&codc=8152": "",
+    "https://infocursos.medu.pt/dges.asp?code=3034&codc=8156": "https://esht.ipca.pt/curso/gestao-de-atividades-turisticas/",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=8183": "https://www.uminho.pt/PT/ensino/oferta-educativa",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=8184": "",
+    "https://infocursos.medu.pt/dges.asp?code=7710&codc=8215": "",
+    "https://infocursos.medu.pt/dges.asp?code=604&codc=8251": "",
+    "https://infocursos.medu.pt/dges.asp?code=203&codc=8258": "",
+    "https://infocursos.medu.pt/dges.asp?code=906&codc=8259": "",
+    "https://infocursos.medu.pt/dges.asp?code=602&codc=8262": "",
+    "https://infocursos.medu.pt/dges.asp?code=3182&codc=8296": "http://www.estgv.ipv.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3032&codc=8311": "https://est.ipca.pt/curso/desenvolvimento-de-jogos-digitais/",
+    "https://infocursos.medu.pt/dges.asp?code=3135&codc=8316": "https://www.isep.ipp.pt/Course/Course/53",
+    "https://infocursos.medu.pt/dges.asp?code=3042&codc=8323": "http://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=3042&cod_curso=8323",
+    "https://infocursos.medu.pt/dges.asp?code=3081&codc=8337": "https://www.ualg.pt/pt/curso/1670",
+    "https://infocursos.medu.pt/dges.asp?code=3034&codc=8341": "https://esht.ipca.pt/curso/gestao-de-atividades-turisticas/",
+    "https://infocursos.medu.pt/dges.asp?code=6800&codc=8366": "https://www.iscte-iul.pt/curso/6/licenciatura-informatica-gestao-de-empresas",
+    "https://infocursos.medu.pt/dges.asp?code=3042&codc=8374": "http://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=3042&cod_curso=8374",
+    "https://infocursos.medu.pt/dges.asp?code=1515&codc=8377": "https://fenix-edu.isa.ulisboa.pt/degrees/lefrn",
+    "https://infocursos.medu.pt/dges.asp?code=505&codc=8393": "",
+    "https://infocursos.medu.pt/dges.asp?code=3051&codc=8397": "https://www.ipcb.pt/esacb/ensino/licenciatura-em-engenharia-de-proteccao-civil",
+    "https://infocursos.medu.pt/dges.asp?code=3012&codc=8405": "https://www.ua.pt/pt/estga/",
+    "https://infocursos.medu.pt/dges.asp?code=3163&codc=8407": "http://www.ipvc.pt/engenharia-computacao-grafica-multimedia",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=8408": "",
+    "https://infocursos.medu.pt/dges.asp?code=3032&codc=8409": "https://est.ipca.pt/curso/engenharia-de-sistemas-informaticos/",
+    "https://infocursos.medu.pt/dges.asp?code=3032&codc=8417": "https://est.ipca.pt/curso/engenharia-de-sistemas-informaticos/",
+    "https://infocursos.medu.pt/dges.asp?code=1506&codc=8458": "https://www.letras.ulisboa.pt/pt/cursos/licenciaturas-1-ciclo",
+    "https://infocursos.medu.pt/dges.asp?code=3053&codc=8463": "https://www.ipcb.pt/estcb/ensino/licenciatura-em-engenharia-das-energias-renovaveis",
+    "https://infocursos.medu.pt/dges.asp?code=3164&codc=8464": "http://www.ipvc.pt/gestao-distribuicao-logisitica",
+    "https://infocursos.medu.pt/dges.asp?code=201&codc=8509": "",
+    "https://infocursos.medu.pt/dges.asp?code=3105&codc=8514": "https://www.ipleiria.pt/cursos/course/licenciatura-em-gestao-de-eventos/",
+    "https://infocursos.medu.pt/dges.asp?code=160&codc=8524": "",
+    "https://infocursos.medu.pt/dges.asp?code=160&codc=8571": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9002": "",
+    "https://infocursos.medu.pt/dges.asp?code=502&codc=9002": "",
+    "https://infocursos.medu.pt/dges.asp?code=602&codc=9003": "",
+    "https://infocursos.medu.pt/dges.asp?code=203&codc=9003": "",
+    "https://infocursos.medu.pt/dges.asp?code=505&codc=9006": "",
+    "https://infocursos.medu.pt/dges.asp?code=902&codc=9006": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9011": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=9011": "",
+    "https://infocursos.medu.pt/dges.asp?code=602&codc=9011": "",
+    "https://infocursos.medu.pt/dges.asp?code=203&codc=9011": "",
+    "https://infocursos.medu.pt/dges.asp?code=160&codc=9011": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9012": "",
+    "https://infocursos.medu.pt/dges.asp?code=602&codc=9012": "",
+    "https://infocursos.medu.pt/dges.asp?code=521&codc=9013": "",
+    "https://infocursos.medu.pt/dges.asp?code=203&codc=9013": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9015": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9015": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=9015": "",
+    "https://infocursos.medu.pt/dges.asp?code=602&codc=9015": "",
+    "https://infocursos.medu.pt/dges.asp?code=203&codc=9015": "",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=9015": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9016": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9016": "",
+    "https://infocursos.medu.pt/dges.asp?code=602&codc=9016": "",
+    "https://infocursos.medu.pt/dges.asp?code=203&codc=9016": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9020": "",
+    "https://infocursos.medu.pt/dges.asp?code=902&codc=9020": "",
+    "https://infocursos.medu.pt/dges.asp?code=140&codc=9022": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9023": "",
+    "https://infocursos.medu.pt/dges.asp?code=902&codc=9023": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9025": "",
+    "https://infocursos.medu.pt/dges.asp?code=507&codc=9026": "",
+    "https://infocursos.medu.pt/dges.asp?code=604&codc=9026": "",
+    "https://infocursos.medu.pt/dges.asp?code=902&codc=9040": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9041": "",
+    "https://infocursos.medu.pt/dges.asp?code=902&codc=9046": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9048": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9069": "",
+    "https://infocursos.medu.pt/dges.asp?code=603&codc=9069": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9071": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9074": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9075": "",
+    "https://infocursos.medu.pt/dges.asp?code=502&codc=9078": "",
+    "https://infocursos.medu.pt/dges.asp?code=911&codc=9078": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9081": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9081": "",
+    "https://infocursos.medu.pt/dges.asp?code=503&codc=9081": "",
+    "https://infocursos.medu.pt/dges.asp?code=604&codc=9081": "",
+    "https://infocursos.medu.pt/dges.asp?code=204&codc=9081": "",
+    "https://infocursos.medu.pt/dges.asp?code=170&codc=9081": "",
+    "https://infocursos.medu.pt/dges.asp?code=904&codc=9081": "",
+    "https://infocursos.medu.pt/dges.asp?code=3161&codc=9085": "http://www.ipvc.pt/enfermagem-veterinaria",
+    "https://infocursos.medu.pt/dges.asp?code=3185&codc=9085": "https://www.esav.ipv.pt/index.php/cursos/licenciaturas?id=19",
+    "https://infocursos.medu.pt/dges.asp?code=3185&codc=9086": "https://www.esav.ipv.pt/index.php/cursos/licenciaturas",
+    "https://infocursos.medu.pt/dges.asp?code=1103&codc=9086": "http://www.fc.up.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3041&codc=9086": "http://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=3041&cod_curso=9086",
+    "https://infocursos.medu.pt/dges.asp?code=1515&codc=9086": "https://fenix-edu.isa.ulisboa.pt/degrees/lea",
+    "https://infocursos.medu.pt/dges.asp?code=3185&codc=9087": "https://www.esav.ipv.pt/index.php/cursos/licenciaturas?id=20",
+    "https://infocursos.medu.pt/dges.asp?code=3041&codc=9087": "http://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=3041&cod_curso=9087",
+    "https://infocursos.medu.pt/dges.asp?code=1515&codc=9087": "https://fenix-edu.isa.ulisboa.pt/degrees/lealim",
+    "https://infocursos.medu.pt/dges.asp?code=3154&codc=9089": "https://www.estbarreiro.ips.pt/cursos/licenciaturas/lec",
+    "https://infocursos.medu.pt/dges.asp?code=3092&codc=9089": "https://cloud.sysnovare.pt/ipg/cursos_geral.FormView?P_CUR_SIGLA=LEC",
+    "https://infocursos.medu.pt/dges.asp?code=3242&codc=9089": "http://www.estt.ipt.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1518&codc=9089": "https://tecnico.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3102&codc=9089": "https://www.ipleiria.pt/cursos/course/licenciatura-em-engenharia-civil/",
+    "https://infocursos.medu.pt/dges.asp?code=3118&codc=9089": "https://www.isel.pt/cursos/licenciaturas/engenharia-civil",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9089": "http://www.uminho.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3135&codc=9089": "https://www.isep.ipp.pt/Course/Course/35",
+    "https://infocursos.medu.pt/dges.asp?code=3182&codc=9089": "http://www.estgv.ipv.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1307&codc=9089": "https://www.uma.pt/ensino/1o-ciclo/licenciatura-em-engenharia-civil/",
+    "https://infocursos.medu.pt/dges.asp?code=3043&codc=9089": "http://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=3043&cod_curso=9089",
+    "https://infocursos.medu.pt/dges.asp?code=3053&codc=9089": "https://www.ipcb.pt/estcb/ensino/licenciatura-em-engenharia-civil",
+    "https://infocursos.medu.pt/dges.asp?code=3064&codc=9089": "https://www.isec.pt/PT/estudar/licenciaturas/EngCivil/",
+    "https://infocursos.medu.pt/dges.asp?code=3083&codc=9089": "https://www.ualg.pt/pt/curso/1449",
+    "https://infocursos.medu.pt/dges.asp?code=1203&codc=9089": "https://www.utad.pt/estudar/cursos/engenharia-civil/",
+    "https://infocursos.medu.pt/dges.asp?code=3124&codc=9089": "http://www.estgp.pt",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9089": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9089": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=9089": "",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=9089": "",
+    "https://infocursos.medu.pt/dges.asp?code=3152&codc=9092": "https://www.estsetubal.ips.pt/cursos/licenciaturas/eaci",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9096": "http://www.uminho.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1518&codc=9096": "https://tecnico.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9096": "",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=9096": "",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9098": "http://www.uminho.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3135&codc=9098": "http://www.isep.ipp.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1519&codc=9098": "https://tecnico.ulisboa.pt/pt/ensino/cursos/licenciaturas/engenharia-de-telecomunicacoes-e-informatica/",
+    "https://infocursos.medu.pt/dges.asp?code=6800&codc=9098": "https://www.iscte-iul.pt/curso/2/licenciatura-engenharia-de-telecomunicacoes-informatica",
+    "https://infocursos.medu.pt/dges.asp?code=3041&codc=9099": "http://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=3041&cod_curso=9099",
+    "https://infocursos.medu.pt/dges.asp?code=1515&codc=9099": "https://fenix-edu.isa.ulisboa.pt/degrees/leamb",
+    "https://infocursos.medu.pt/dges.asp?code=1518&codc=9099": "https://tecnico.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3021&codc=9099": "https://www.ipbeja.pt/cursos/esa-engamb/Paginas/default.aspx",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9099": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=9099": "",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=9099": "",
+    "https://infocursos.medu.pt/dges.asp?code=3043&codc=9104": "http://www.estig.ipb.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3053&codc=9104": "https://www.ipcb.pt/escolas/tecnologia/",
+    "https://infocursos.medu.pt/dges.asp?code=3032&codc=9104": "https://est.ipca.pt/curso/engenharia-e-gestao-industrial/",
+    "https://infocursos.medu.pt/dges.asp?code=1203&codc=9104": "https://www.utad.pt/ect/",
+    "https://infocursos.medu.pt/dges.asp?code=3064&codc=9104": "https://www.isec.pt/PT/estudar/licenciaturas/EngGI/",
+    "https://infocursos.medu.pt/dges.asp?code=3135&codc=9104": "https://www.isep.ipp.pt/Course/Course/92",
+    "https://infocursos.medu.pt/dges.asp?code=3102&codc=9104": "https://www.ipleiria.pt/cursos/course/licenciatura-em-engenharia-e-gestao-industrial/",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9104": "http://www.uminho.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1519&codc=9104": "https://tecnico.ulisboa.pt/pt/ensino/cursos/licenciaturas/engenharia-e-gestao-industrial/",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9104": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9104": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=9104": "",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=9104": "",
+    "https://infocursos.medu.pt/dges.asp?code=3064&codc=9105": "https://www.isec.pt/pt/estudar/licenciaturas/EngElectromecanica/",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9105": "",
+    "https://infocursos.medu.pt/dges.asp?code=1307&codc=9107": "https://www.uma.pt/ensino/1o-ciclo/licenciatura-em-electronica-e-telecomunicacoes/",
+    "https://infocursos.medu.pt/dges.asp?code=3118&codc=9108": "https://www.isel.pt/cursos/licenciaturas/engenharia-electronica-e-telecomunicacoes-e-de-computadores",
+    "https://infocursos.medu.pt/dges.asp?code=3182&codc=9109": "http://www.estgv.ipv.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3118&codc=9109": "https://www.isel.pt/cursos/licenciaturas/engenharia-eletrotecnica",
+    "https://infocursos.medu.pt/dges.asp?code=3135&codc=9110": "https://www.isep.ipp.pt/Course/Course/24",
+    "https://infocursos.medu.pt/dges.asp?code=3053&codc=9111": "https://www.ipcb.pt/estcb/ensino/licenciatura-em-engenharia-electrotecnica-e-das-telecomunicacoes",
+    "https://infocursos.medu.pt/dges.asp?code=3135&codc=9112": "https://www.isep.ipp.pt/Course/Course/23",
+    "https://infocursos.medu.pt/dges.asp?code=3102&codc=9112": "https://www.ipleiria.pt/cursos/course/licenciatura-em-engenharia-eletrotecnica-e-de-computadores/",
+    "https://infocursos.medu.pt/dges.asp?code=3032&codc=9112": "https://est.ipca.pt/curso/electrotecnica-e-de-computadores/",
+    "https://infocursos.medu.pt/dges.asp?code=3242&codc=9112": "http://www.estt.ipt.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3152&codc=9112": "https://www.estsetubal.ips.pt/cursos/licenciaturas/eec",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9112": "",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9113": "http://www.uminho.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1503&codc=9113": "https://ciencias.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1203&codc=9113": "https://www.utad.pt/ect/",
+    "https://infocursos.medu.pt/dges.asp?code=1103&codc=9113": "http://www.fc.up.pt",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9113": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=9113": "",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=9113": "",
+    "https://infocursos.medu.pt/dges.asp?code=3135&codc=9117": "https://www.isep.ipp.pt/Course/Course/25",
+    "https://infocursos.medu.pt/dges.asp?code=1203&codc=9119": "https://www.utad.pt/estudar/cursos/engenharia-informatica/",
+    "https://infocursos.medu.pt/dges.asp?code=3023&codc=9119": "https://www.ipbeja.pt/cursos/estig-ei/Paginas/default.aspx",
+    "https://infocursos.medu.pt/dges.asp?code=3124&codc=9119": "https://www.ipportalegre.pt/pt/oferta-formativa/engenharia-informatica",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9119": "http://www.uminho.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3065&codc=9119": "http://websrv2.estgoh.ipc.pt/portal2/oferta-formativa-2/licenciaturas-2/engenharia-inform-tica-2/",
+    "https://infocursos.medu.pt/dges.asp?code=3135&codc=9119": "https://www.isep.ipp.pt/Course/Course/26",
+    "https://infocursos.medu.pt/dges.asp?code=3092&codc=9119": "https://cloud.sysnovare.pt/ipg/cursos_geral.FormView?P_CUR_SIGLA=LEI",
+    "https://infocursos.medu.pt/dges.asp?code=3053&codc=9119": "https://www.ipcb.pt/estcb/ensino/licenciatura-em-engenharia-informatica",
+    "https://infocursos.medu.pt/dges.asp?code=3242&codc=9119": "http://www.estt.ipt.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3138&codc=9119": "https://www.estg.ipp.pt/cursos/licenciatura/80001640",
+    "https://infocursos.medu.pt/dges.asp?code=3043&codc=9119": "http://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=3043&cod_curso=9119",
+    "https://infocursos.medu.pt/dges.asp?code=3152&codc=9119": "https://www.estsetubal.ips.pt/cursos/licenciaturas/ei",
+    "https://infocursos.medu.pt/dges.asp?code=3182&codc=9119": "http://www.estgv.ipv.pt",
+    "https://infocursos.medu.pt/dges.asp?code=6800&codc=9119": "https://www.iscte-iul.pt/curso/3/licenciatura-engenharia-informatica",
+    "https://infocursos.medu.pt/dges.asp?code=1307&codc=9119": "https://www.uma.pt/ensino/1o-ciclo/licenciatura-em-engenharia-informatica/",
+    "https://infocursos.medu.pt/dges.asp?code=3163&codc=9119": "http://www.ipvc.pt/engenharia-informatica",
+    "https://infocursos.medu.pt/dges.asp?code=3102&codc=9119": "https://www.ipleiria.pt/cursos/course/licenciatura-em-engenharia-informatica/",
+    "https://infocursos.medu.pt/dges.asp?code=1503&codc=9119": "https://ciencias.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3064&codc=9119": "https://www.isec.pt/pt/estudar/licenciaturas/EngInfor/",
+    "https://infocursos.medu.pt/dges.asp?code=3143&codc=9119": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9119": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9119": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=9119": "",
+    "https://infocursos.medu.pt/dges.asp?code=602&codc=9119": "",
+    "https://infocursos.medu.pt/dges.asp?code=203&codc=9119": "",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=9119": "",
+    "https://infocursos.medu.pt/dges.asp?code=1518&codc=9121": "https://tecnico.ulisboa.pt/pt/ensino/cursos/licenciaturas/engenharia-informatica-e-de-computadores/",
+    "https://infocursos.medu.pt/dges.asp?code=7105&codc=9121": "http://www.enautica.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1519&codc=9121": "https://tecnico.ulisboa.pt/pt/ensino/cursos/licenciaturas/engenharia-informatica-e-de-computadores/",
+    "https://infocursos.medu.pt/dges.asp?code=3118&codc=9121": "https://www.isel.pt/cursos/licenciaturas/engenharia-informatica-e-computadores",
+    "https://infocursos.medu.pt/dges.asp?code=3186&codc=9122": "https://www.estgl.ipv.pt/eit.htm",
+    "https://infocursos.medu.pt/dges.asp?code=3243&codc=9123": "http://www.esta.ipt.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3083&codc=9123": "https://www.ualg.pt/pt/curso/1441",
+    "https://infocursos.medu.pt/dges.asp?code=3135&codc=9123": "https://www.isep.ipp.pt/Course/Course/27",
+    "https://infocursos.medu.pt/dges.asp?code=3102&codc=9123": "https://www.ipleiria.pt/cursos/course/licenciatura-em-engenharia-mecanica/",
+    "https://infocursos.medu.pt/dges.asp?code=3152&codc=9123": "https://www.estsetubal.ips.pt/cursos/licenciaturas/em",
+    "https://infocursos.medu.pt/dges.asp?code=3182&codc=9123": "http://www.estgv.ipv.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1518&codc=9123": "https://tecnico.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3043&codc=9123": "http://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=3043&cod_curso=9123",
+    "https://infocursos.medu.pt/dges.asp?code=3163&codc=9123": "http://www.ipvc.pt/engenharia-mecanica",
+    "https://infocursos.medu.pt/dges.asp?code=1203&codc=9123": "https://www.utad.pt/estudar/cursos/engenharia-mecanica/",
+    "https://infocursos.medu.pt/dges.asp?code=3064&codc=9123": "https://www.isec.pt/pt/estudar/licenciaturas/EngMecanica/",
+    "https://infocursos.medu.pt/dges.asp?code=3118&codc=9123": "https://www.isel.pt/cursos/licenciaturas/engenharia-mecanica",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9123": "http://www.uminho.pt",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9123": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=9123": "",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=9123": "",
+    "https://infocursos.medu.pt/dges.asp?code=3043&codc=9125": "http://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=3043&cod_curso=9125",
+    "https://infocursos.medu.pt/dges.asp?code=3135&codc=9125": "https://www.isep.ipp.pt/Course/Course/28",
+    "https://infocursos.medu.pt/dges.asp?code=1518&codc=9125": "https://tecnico.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9125": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=9125": "",
+    "https://infocursos.medu.pt/dges.asp?code=3118&codc=9126": "https://www.isel.pt/cursos/licenciaturas/engenharia-quimica-e-biologica",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9126": "http://www.uminho.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3124&codc=9126": "",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=9126": "",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9127": "http://www.uminho.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3092&codc=9128": "https://cloud.sysnovare.pt/ipg/cursos_geral.FormView?P_CUR_SIGLA=LET",
+    "https://infocursos.medu.pt/dges.asp?code=3041&codc=9129": "http://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=3041&cod_curso=9129",
+    "https://infocursos.medu.pt/dges.asp?code=3185&codc=9129": "https://www.esav.ipv.pt/index.php/cursos/licenciaturas?id=21",
+    "https://infocursos.medu.pt/dges.asp?code=1515&codc=9129": "https://fenix-edu.isa.ulisboa.pt/degrees/lez",
+    "https://infocursos.medu.pt/dges.asp?code=3125&codc=9130": "https://www.ipportalegre.pt/pt/oferta-formativa/equinicultura",
+    "https://infocursos.medu.pt/dges.asp?code=1506&codc=9131": "https://www.letras.ulisboa.pt/pt/cursos/licenciaturas-1-ciclo",
+    "https://infocursos.medu.pt/dges.asp?code=1506&codc=9132": "http://www.letras.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=505&codc=9132": "",
+    "https://infocursos.medu.pt/dges.asp?code=1506&codc=9133": "https://www.letras.ulisboa.pt/pt/cursos/licenciaturas-1-ciclo",
+    "https://infocursos.medu.pt/dges.asp?code=505&codc=9133": "",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9134": "https://www.uminho.pt/PT/ensino/oferta-educativa",
+    "https://infocursos.medu.pt/dges.asp?code=1506&codc=9135": "https://www.letras.ulisboa.pt/pt/cursos/licenciaturas-1-ciclo",
+    "https://infocursos.medu.pt/dges.asp?code=505&codc=9135": "",
+    "https://infocursos.medu.pt/dges.asp?code=150&codc=9135": "",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9139": "https://www.uminho.pt/PT/ensino/oferta-educativa",
+    "https://infocursos.medu.pt/dges.asp?code=1506&codc=9139": "https://www.letras.ulisboa.pt/pt/cursos/licenciaturas-1-ciclo",
+    "https://infocursos.medu.pt/dges.asp?code=1107&codc=9139": "https://sigarra.up.pt/flup/pt/cur_geral.cur_view?pv_ano_lectivo=2018&pv_origem=CUR&pv_tipo_cur_sigla=L&pv_curso_id=340",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9139": "",
+    "https://infocursos.medu.pt/dges.asp?code=505&codc=9139": "",
+    "https://infocursos.medu.pt/dges.asp?code=902&codc=9139": "",
+    "https://infocursos.medu.pt/dges.asp?code=3011&codc=9140": "https://www.ua.pt/pt/isca/",
+    "https://infocursos.medu.pt/dges.asp?code=3031&codc=9140": "https://esg.ipca.pt/curso/financas/",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9141": "https://www.uminho.pt/PT/ensino/oferta-educativa",
+    "https://infocursos.medu.pt/dges.asp?code=1503&codc=9141": "https://ciencias.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1103&codc=9141": "https://sigarra.up.pt/fcup/pt/cur_geral.cur_inicio",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9141": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=9141": "",
+    "https://infocursos.medu.pt/dges.asp?code=1107&codc=9143": "https://sigarra.up.pt/flup/pt/cur_geral.cur_view?pv_ano_lectivo=2018&pv_origem=CUR&pv_tipo_cur_sigla=L&pv_curso_id=341",
+    "https://infocursos.medu.pt/dges.asp?code=1514&codc=9143": "http://www.igot.ulisboa.pt/ensino/licenciatura-em-geografia/",
+    "https://infocursos.medu.pt/dges.asp?code=505&codc=9143": "",
+    "https://infocursos.medu.pt/dges.asp?code=602&codc=9143": "",
+    "https://infocursos.medu.pt/dges.asp?code=902&codc=9145": "",
+    "https://infocursos.medu.pt/dges.asp?code=1103&codc=9146": "https://sigarra.up.pt/fcup/pt/cur_geral.cur_inicio",
+    "https://infocursos.medu.pt/dges.asp?code=1503&codc=9146": "https://ciencias.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9146": "https://www.uminho.pt/PT/ensino/oferta-educativa",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9146": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=9146": "",
+    "https://infocursos.medu.pt/dges.asp?code=3065&codc=9147": "http://websrv2.estgoh.ipc.pt/portal2/oferta-formativa-2/licenciaturas-2/gest-o/",
+    "https://infocursos.medu.pt/dges.asp?code=1517&codc=9147": "https://www.iseg.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3054&codc=9147": "https://www.ipcb.pt/esgin/ensino/licenciatura-em-gestao",
+    "https://infocursos.medu.pt/dges.asp?code=6800&codc=9147": "https://www.iscte-iul.pt/curso/4/licenciatura-gestao",
+    "https://infocursos.medu.pt/dges.asp?code=3087&codc=9147": "https://www.ualg.pt/pt/curso/1420",
+    "https://infocursos.medu.pt/dges.asp?code=1104&codc=9147": "https://sigarra.up.pt/fep/pt/web_base.gera_pagina?p_pagina=1023931",
+    "https://infocursos.medu.pt/dges.asp?code=3124&codc=9147": "https://www.ipportalegre.pt/pt/oferta-formativa/gestao",
+    "https://infocursos.medu.pt/dges.asp?code=3092&codc=9147": "https://cloud.sysnovare.pt/ipg/cursos_geral.FormView?P_CUR_SIGLA=LG",
+    "https://infocursos.medu.pt/dges.asp?code=3163&codc=9147": "http://www.ipvc.pt/gestao",
+    "https://infocursos.medu.pt/dges.asp?code=1308&codc=9147": "https://www.uma.pt/ensino/1o-ciclo/gestao/",
+    "https://infocursos.medu.pt/dges.asp?code=3082&codc=9147": "https://www.ualg.pt/pt/curso/1418",
+    "https://infocursos.medu.pt/dges.asp?code=1202&codc=9147": "https://www.utad.pt/estudar/cursos/gestao/",
+    "https://infocursos.medu.pt/dges.asp?code=3102&codc=9147": "https://www.ipleiria.pt/cursos/course/licenciatura-em-gestao/",
+    "https://infocursos.medu.pt/dges.asp?code=3043&codc=9147": "http://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=3043&cod_curso=9147",
+    "https://infocursos.medu.pt/dges.asp?code=3117&codc=9147": "https://www.iscal.ipl.pt/pt/cursos/licenciatura/gestao",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9147": "https://www.uminho.pt/PT/ensino/oferta-educativa",
+    "https://infocursos.medu.pt/dges.asp?code=3143&codc=9147": "https://www.ipsantarem.pt/",
+    "https://infocursos.medu.pt/dges.asp?code=3134&codc=9147": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9147": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9147": "",
+    "https://infocursos.medu.pt/dges.asp?code=503&codc=9147": "",
+    "https://infocursos.medu.pt/dges.asp?code=604&codc=9147": "",
+    "https://infocursos.medu.pt/dges.asp?code=170&codc=9147": "",
+    "https://infocursos.medu.pt/dges.asp?code=904&codc=9147": "",
+    "https://infocursos.medu.pt/dges.asp?code=3082&codc=9148": "https://www.ualg.pt/pt/curso/1419",
+    "https://infocursos.medu.pt/dges.asp?code=3163&codc=9148": "http://www.ipvc.pt/gestao",
+    "https://infocursos.medu.pt/dges.asp?code=3087&codc=9148": "https://www.ualg.pt/pt/curso/1421",
+    "https://infocursos.medu.pt/dges.asp?code=3023&codc=9152": "https://www.ipbeja.pt/cursos/estig-ge/Paginas/default.aspx",
+    "https://infocursos.medu.pt/dges.asp?code=3241&codc=9152": "http://www.esgt.ipt.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3031&codc=9152": "https://esg.ipca.pt/curso/gestao-empresarial/",
+    "https://infocursos.medu.pt/dges.asp?code=3182&codc=9152": "http://www.estgv.ipv.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3063&codc=9152": "http://www.iscac.pt/index.php?m=4_18&curso=9152&lang=PT",
+    "https://infocursos.medu.pt/dges.asp?code=204&codc=9152": "",
+    "https://infocursos.medu.pt/dges.asp?code=906&codc=9155": "",
+    "https://infocursos.medu.pt/dges.asp?code=3143&codc=9156": "https://www.ipsantarem.pt/",
+    "https://infocursos.medu.pt/dges.asp?code=6800&codc=9156": "https://www.iscte-iul.pt/curso/59/licenciatura-gestao-de-marketing",
+    "https://infocursos.medu.pt/dges.asp?code=3092&codc=9157": "https://cloud.sysnovare.pt/ipg/cursos_geral.FormView?P_CUR_SIGLA=LGRH",
+    "https://infocursos.medu.pt/dges.asp?code=6800&codc=9157": "https://www.iscte-iul.pt/curso/5/licenciatura-gestao-de-recursos-humanos",
+    "https://infocursos.medu.pt/dges.asp?code=3153&codc=9157": "https://www.esce.ips.pt/cursos/licenciaturas/grh",
+    "https://infocursos.medu.pt/dges.asp?code=1516&codc=9157": "https://www.iscsp.ulisboa.pt/pt/cursos/oferta-graduada/licenciaturas/gestao-de-recursos-humanos",
+    "https://infocursos.medu.pt/dges.asp?code=3063&codc=9157": "",
+    "https://infocursos.medu.pt/dges.asp?code=3124&codc=9157": "",
+    "https://infocursos.medu.pt/dges.asp?code=1510&codc=9162": "http://www.fmh.utl.pt/pt/licenciaturas/gestao-do-desporto",
+    "https://infocursos.medu.pt/dges.asp?code=7110&codc=9163": "http://www.eshte.pt/pt/cursos/licenciaturas/gestao-do-lazer-em-animacao-turistica",
+    "https://infocursos.medu.pt/dges.asp?code=3139&codc=9164": "https://www.esht.ipp.pt/cursos/licenciatura/410001417",
+    "https://infocursos.medu.pt/dges.asp?code=3045&codc=9165": "http://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=3045&cod_curso=9165",
+    "https://infocursos.medu.pt/dges.asp?code=3186&codc=9168": "https://www.estgl.ipv.pt/gi.htm",
+    "https://infocursos.medu.pt/dges.asp?code=3034&codc=9173": "https://esht.ipca.pt/",
+    "https://infocursos.medu.pt/dges.asp?code=3082&codc=9173": "https://www.ualg.pt/pt/curso/1417",
+    "https://infocursos.medu.pt/dges.asp?code=3095&codc=9173": "https://cloud.sysnovare.pt/ipg/cursos_geral.FormView?P_CUR_SIGLA=LGH",
+    "https://infocursos.medu.pt/dges.asp?code=7110&codc=9177": "http://www.eshte.pt/pt/cursos/licenciaturas/gestao-turistica",
+    "https://infocursos.medu.pt/dges.asp?code=3105&codc=9178": "https://www.ipleiria.pt/cursos/course/licenciatura-em-gestao-turistica-e-hoteleira/",
+    "https://infocursos.medu.pt/dges.asp?code=3186&codc=9179": "https://www.estgl.ipv.pt/gtcp.htm",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9181": "https://www.uminho.pt/PT/ensino/oferta-educativa",
+    "https://infocursos.medu.pt/dges.asp?code=1506&codc=9181": "https://www.letras.ulisboa.pt/pt/cursos/licenciaturas-1-ciclo",
+    "https://infocursos.medu.pt/dges.asp?code=1107&codc=9181": "https://sigarra.up.pt/flup/pt/cur_geral.cur_view?pv_ano_lectivo=2018&pv_origem=CUR&pv_tipo_cur_sigla=L&pv_curso_id=342",
+    "https://infocursos.medu.pt/dges.asp?code=505&codc=9181": "",
+    "https://infocursos.medu.pt/dges.asp?code=150&codc=9181": "",
+    "https://infocursos.medu.pt/dges.asp?code=902&codc=9181": "",
+    "https://infocursos.medu.pt/dges.asp?code=1506&codc=9182": "https://www.letras.ulisboa.pt/pt/cursos/licenciaturas-1-ciclo",
+    "https://infocursos.medu.pt/dges.asp?code=1107&codc=9182": "https://sigarra.up.pt/flup/pt/cur_geral.cur_view?pv_ano_lectivo=2018&pv_origem=CUR&pv_tipo_cur_sigla=L&pv_curso_id=453",
+    "https://infocursos.medu.pt/dges.asp?code=505&codc=9182": "",
+    "https://infocursos.medu.pt/dges.asp?code=902&codc=9182": "",
+    "https://infocursos.medu.pt/dges.asp?code=7110&codc=9183": "http://www.eshte.pt/pt/cursos/licenciaturas/informacao-turistica",
+    "https://infocursos.medu.pt/dges.asp?code=160&codc=9185": "",
+    "https://infocursos.medu.pt/dges.asp?code=3063&codc=9186": "http://www.iscac.pt/index.php?m=4_18&curso=9186&lang=PT",
+    "https://infocursos.medu.pt/dges.asp?code=3045&codc=9188": "http://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=3045&cod_curso=9188",
+    "https://infocursos.medu.pt/dges.asp?code=6800&codc=9189": "https://www.iscte-iul.pt/curso/6/licenciatura-informatica-gestao-de-empresas",
+    "https://infocursos.medu.pt/dges.asp?code=3113&codc=9191": "https://www.escs.ipl.pt/cursos/licenciaturas/jornalismo",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9192": "https://www.uminho.pt/PT/ensino/oferta-educativa",
+    "https://infocursos.medu.pt/dges.asp?code=1107&codc=9192": "https://sigarra.up.pt/flup/pt/cur_geral.cur_view?pv_ano_lectivo=2018&pv_origem=CUR&pv_tipo_cur_sigla=L&pv_curso_id=456",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9194": "",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9195": "https://www.uminho.pt/PT/ensino/oferta-educativa",
+    "https://infocursos.medu.pt/dges.asp?code=1306&codc=9196": "https://www.uma.pt/ensino/1o-ciclo/licenciatura-em-linguas-e-relacoes-empresariais/",
+    "https://infocursos.medu.pt/dges.asp?code=1202&codc=9196": "https://www.utad.pt/estudar/cursos/linguas-e-relacoes-empresariais/",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9196": "",
+    "https://infocursos.medu.pt/dges.asp?code=1107&codc=9197": "https://sigarra.up.pt/flup/pt/cur_geral.cur_view?pv_ano_lectivo=2018&pv_origem=CUR&pv_tipo_cur_sigla=L&pv_curso_id=458",
+    "https://infocursos.medu.pt/dges.asp?code=1506&codc=9204": "https://www.letras.ulisboa.pt/pt/cursos/licenciaturas-1-ciclo",
+    "https://infocursos.medu.pt/dges.asp?code=1202&codc=9204": "https://www.utad.pt/estudar/cursos/linguas-literaturas-e-culturas/",
+    "https://infocursos.medu.pt/dges.asp?code=1107&codc=9204": "https://sigarra.up.pt/flup/pt/cur_geral.cur_view?pv_ano_lectivo=2018&pv_origem=CUR&pv_tipo_cur_sigla=L&pv_curso_id=457",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9204": "",
+    "https://infocursos.medu.pt/dges.asp?code=201&codc=9204": "",
+    "https://infocursos.medu.pt/dges.asp?code=902&codc=9204": "",
+    "https://infocursos.medu.pt/dges.asp?code=3092&codc=9205": "https://cloud.sysnovare.pt/ipg/cursos_geral.FormView?P_CUR_SIGLA=LM",
+    "https://infocursos.medu.pt/dges.asp?code=3065&codc=9205": "http://www.estgoh.ipc.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3011&codc=9205": "https://www.ua.pt/pt/isca/",
+    "https://infocursos.medu.pt/dges.asp?code=3045&codc=9205": "http://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=3045&cod_curso=9205",
+    "https://infocursos.medu.pt/dges.asp?code=3182&codc=9205": "http://www.estgv.ipv.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3082&codc=9205": "https://www.ualg.pt/pt/curso/1516",
+    "https://infocursos.medu.pt/dges.asp?code=3102&codc=9205": "https://www.ipleiria.pt/cursos/course/licenciatura-em-marketing/",
+    "https://infocursos.medu.pt/dges.asp?code=3153&codc=9205": "https://www.esce.ips.pt/cursos/licenciaturas/mkt",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9205": "http://www.uminho.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3134&codc=9205": "https://www.iscap.ipp.pt/cursos/licenciatura/20000125",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9205": "",
+    "https://infocursos.medu.pt/dges.asp?code=3105&codc=9207": "https://www.ipleiria.pt/cursos/course/licenciatura-em-marketing-turistico/",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9209": "https://www.uminho.pt/PT/ensino/oferta-educativa",
+    "https://infocursos.medu.pt/dges.asp?code=1503&codc=9209": "https://ciencias.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1103&codc=9209": "https://sigarra.up.pt/fcup/pt/cur_geral.cur_inicio",
+    "https://infocursos.medu.pt/dges.asp?code=1307&codc=9209": "https://www.uma.pt/ensino/1o-ciclo/licenciatura-em-matematica/",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9209": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=9209": "",
+    "https://infocursos.medu.pt/dges.asp?code=602&codc=9209": "",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=9209": "",
+    "https://infocursos.medu.pt/dges.asp?code=1517&codc=9210": "https://www.iseg.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=602&codc=9210": "",
+    "https://infocursos.medu.pt/dges.asp?code=203&codc=9210": "",
+    "https://infocursos.medu.pt/dges.asp?code=1503&codc=9212": "https://ciencias.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3331&codc=9213": "https://www.esmad.ipp.pt/cursos/licenciatura/400001599",
+    "https://infocursos.medu.pt/dges.asp?code=3045&codc=9213": "http://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=3045&cod_curso=9213",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9214": "http://www.uminho.pt",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9214": "",
+    "https://infocursos.medu.pt/dges.asp?code=603&codc=9214": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9219": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9219": "",
+    "https://infocursos.medu.pt/dges.asp?code=507&codc=9219": "",
+    "https://infocursos.medu.pt/dges.asp?code=604&codc=9219": "",
+    "https://infocursos.medu.pt/dges.asp?code=201&codc=9219": "",
+    "https://infocursos.medu.pt/dges.asp?code=150&codc=9219": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9223": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=9223": "",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=9224": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9225": "",
+    "https://infocursos.medu.pt/dges.asp?code=503&codc=9229": "",
+    "https://infocursos.medu.pt/dges.asp?code=604&codc=9229": "",
+    "https://infocursos.medu.pt/dges.asp?code=507&codc=9238": "",
+    "https://infocursos.medu.pt/dges.asp?code=150&codc=9238": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9240": "",
+    "https://infocursos.medu.pt/dges.asp?code=503&codc=9240": "",
+    "https://infocursos.medu.pt/dges.asp?code=604&codc=9240": "",
+    "https://infocursos.medu.pt/dges.asp?code=204&codc=9240": "",
+    "https://infocursos.medu.pt/dges.asp?code=150&codc=9240": "",
+    "https://infocursos.medu.pt/dges.asp?code=902&codc=9240": "",
+    "https://infocursos.medu.pt/dges.asp?code=603&codc=9243": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9252": "",
+    "https://infocursos.medu.pt/dges.asp?code=902&codc=9252": "",
+    "https://infocursos.medu.pt/dges.asp?code=604&codc=9254": "",
+    "https://infocursos.medu.pt/dges.asp?code=170&codc=9254": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9257": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=9257": "",
+    "https://infocursos.medu.pt/dges.asp?code=603&codc=9257": "",
+    "https://infocursos.medu.pt/dges.asp?code=1518&codc=9345": "https://tecnico.ulisboa.pt/pt/ensino/cursos/licenciaturas/matematica-aplicada-e-computacao/",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9345": "",
+    "https://infocursos.medu.pt/dges.asp?code=603&codc=9347": "",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=9348": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9351": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9351": "",
+    "https://infocursos.medu.pt/dges.asp?code=206&codc=9351": "",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9381": "https://www.uminho.pt/PT/ensino/oferta-educativa",
+    "https://infocursos.medu.pt/dges.asp?code=1503&codc=9381": "https://ciencias.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1103&codc=9385": "http://www.fc.up.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1503&codc=9385": "https://ciencias.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=9448": "",
+    "https://infocursos.medu.pt/dges.asp?code=902&codc=9448": "",
+    "https://infocursos.medu.pt/dges.asp?code=3064&codc=9455": "http://www.isec.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3118&codc=9455": "https://www.isel.pt/cursos/licenciaturas/engenharia-biomedica",
+    "https://infocursos.medu.pt/dges.asp?code=1203&codc=9455": "https://www.utad.pt/estudar/cursos/engenharia-biomedica/",
+    "https://infocursos.medu.pt/dges.asp?code=3135&codc=9455": "https://www.isep.ipp.pt/Course/Course/93",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9455": "http://www.uminho.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1518&codc=9455": "https://tecnico.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1307&codc=9455": "http://www.uma.pt",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9455": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=9455": "",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=9455": "",
+    "https://infocursos.medu.pt/dges.asp?code=3124&codc=9457": "",
+    "https://infocursos.medu.pt/dges.asp?code=1518&codc=9474": "https://tecnico.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3117&codc=9476": "https://www.iscal.ipl.pt/pt/cursos/licenciatura/financas-empresariais",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9494": "",
+    "https://infocursos.medu.pt/dges.asp?code=504&codc=9494": "",
+    "https://infocursos.medu.pt/dges.asp?code=605&codc=9494": "",
+    "https://infocursos.medu.pt/dges.asp?code=203&codc=9494": "",
+    "https://infocursos.medu.pt/dges.asp?code=7260&codc=9500": "",
+    "https://infocursos.medu.pt/dges.asp?code=7035&codc=9504": "https://ess.ualg.pt/pt",
+    "https://infocursos.medu.pt/dges.asp?code=7020&codc=9504": "https://www.ipcb.pt/esald/ensino/licenciatura-em-fisioterapia",
+    "https://infocursos.medu.pt/dges.asp?code=7045&codc=9504": "https://www.ipleiria.pt/cursos/course/licenciatura-em-fisioterapia/",
+    "https://infocursos.medu.pt/dges.asp?code=3155&codc=9504": "https://www.ess.ips.pt/cursos/licenciaturas/lf",
+    "https://infocursos.medu.pt/dges.asp?code=3013&codc=9504": "https://www.ua.pt/pt/essua",
+    "https://infocursos.medu.pt/dges.asp?code=7210&codc=9504": "http://www.estescoimbra.pt/pt/cursos/detalhe/id/114",
+    "https://infocursos.medu.pt/dges.asp?code=7230&codc=9504": "https://www.ess.ipp.pt/cursos/licenciatura/100001512",
+    "https://infocursos.medu.pt/dges.asp?code=7016&codc=9504": "https://essa.ipb.pt/",
+    "https://infocursos.medu.pt/dges.asp?code=7055&codc=9504": "http://www.essp.pt",
+    "https://infocursos.medu.pt/dges.asp?code=7250&codc=9504": "",
+    "https://infocursos.medu.pt/dges.asp?code=7065&codc=9504": "",
+    "https://infocursos.medu.pt/dges.asp?code=7075&codc=9504": "",
+    "https://infocursos.medu.pt/dges.asp?code=7085&codc=9504": "",
+    "https://infocursos.medu.pt/dges.asp?code=203&codc=9540": "",
+    "https://infocursos.medu.pt/dges.asp?code=1508&codc=9548": "http://www.fmd.ulisboa.pt/portal/page?_pageid=408,1100456&_dad=portal&_schema=PORTAL",
+    "https://infocursos.medu.pt/dges.asp?code=1113&codc=9548": "https://sigarra.up.pt/fmdup/pt/cur_geral.cur_view?pv_ano_lectivo=2018&pv_origem=CUR&pv_tipo_cur_sigla=MI&pv_curso_id=1220",
+    "https://infocursos.medu.pt/dges.asp?code=506&codc=9548": "",
+    "https://infocursos.medu.pt/dges.asp?code=7035&codc=9549": "https://www.ualg.pt/pt/curso/1520",
+    "https://infocursos.medu.pt/dges.asp?code=7040&codc=9549": "https://cloud.sysnovare.pt/ipg/cursos_geral.FormView?P_CUR_SIGLA=LF",
+    "https://infocursos.medu.pt/dges.asp?code=7015&codc=9549": "http://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=7015&cod_curso=9549",
+    "https://infocursos.medu.pt/dges.asp?code=7210&codc=9549": "http://www.estescoimbra.pt/pt/cursos/detalhe/id/112",
+    "https://infocursos.medu.pt/dges.asp?code=7230&codc=9549": "https://www.ess.ipp.pt/cursos/licenciatura/100000070",
+    "https://infocursos.medu.pt/dges.asp?code=7250&codc=9549": "",
+    "https://infocursos.medu.pt/dges.asp?code=901&codc=9554": "",
+    "https://infocursos.medu.pt/dges.asp?code=1508&codc=9556": "http://www.fmd.ulisboa.pt/portal/page?_pageid=408,1100443&_dad=portal&_schema=PORTAL",
+    "https://infocursos.medu.pt/dges.asp?code=7055&codc=9556": "https://www.ipportalegre.pt/pt/oferta-formativa/higiene-oral",
+    "https://infocursos.medu.pt/dges.asp?code=3153&codc=9629": "https://www.esce.ips.pt/cursos/licenciaturas/gdl",
+    "https://infocursos.medu.pt/dges.asp?code=3153&codc=9630": "https://www.esce.ips.pt/cursos/licenciaturas/gsi",
+    "https://infocursos.medu.pt/dges.asp?code=3241&codc=9640": "http://www.esgt.ipt.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3331&codc=9645": "https://www.esmad.ipp.pt/cursos/licenciatura/400001734",
+    "https://infocursos.medu.pt/dges.asp?code=3242&codc=9645": "http://www.estt.ipt.pt",
+    "https://infocursos.medu.pt/dges.asp?code=150&codc=9652": "",
+    "https://infocursos.medu.pt/dges.asp?code=505&codc=9694": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9707": "",
+    "https://infocursos.medu.pt/dges.asp?code=508&codc=9707": "",
+    "https://infocursos.medu.pt/dges.asp?code=605&codc=9707": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9740": "",
+    "https://infocursos.medu.pt/dges.asp?code=3102&codc=9741": "https://www.ipleiria.pt/cursos/course/licenciatura-em-engenharia-automovel/",
+    "https://infocursos.medu.pt/dges.asp?code=3163&codc=9743": "http://www.ipvc.pt/engenharia-civil-ambiente",
+    "https://infocursos.medu.pt/dges.asp?code=7105&codc=9745": "http://www.enautica.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3163&codc=9751": "http://www.ipvc.pt/engenharia-mecatronica",
+    "https://infocursos.medu.pt/dges.asp?code=602&codc=9751": "",
+    "https://infocursos.medu.pt/dges.asp?code=3041&codc=9752": "http://www.esa.ipb.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1201&codc=9752": "https://www.utad.pt/estudar/cursos/enologia/",
+    "https://infocursos.medu.pt/dges.asp?code=602&codc=9752": "",
+    "https://infocursos.medu.pt/dges.asp?code=1502&codc=9754": "http://www.belasartes.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3031&codc=9759": "https://esg.ipca.pt/curso/fiscalidade-licenciatura/",
+    "https://infocursos.medu.pt/dges.asp?code=602&codc=9760": "",
+    "https://infocursos.medu.pt/dges.asp?code=1204&codc=9761": "https://www.utad.pt/estudar/cursos/genetica-e-biotecnologia/",
+    "https://infocursos.medu.pt/dges.asp?code=3145&codc=9763": "https://siesdrm.ipsantarem.pt/esdrm/cursos_geral.FormView?P_CUR_SIGLA=LLGO1",
+    "https://infocursos.medu.pt/dges.asp?code=3064&codc=9770": "https://www.isec.pt/pt/estudar/licenciaturas/EngInforCE/",
+    "https://infocursos.medu.pt/dges.asp?code=3121&codc=9773": "https://www.ipportalegre.pt/pt/oferta-formativa/jornalismo-e-comunicacao",
+    "https://infocursos.medu.pt/dges.asp?code=3045&codc=9773": "http://www.esact.ipb.pt",
+    "https://infocursos.medu.pt/dges.asp?code=505&codc=9773": "",
+    "https://infocursos.medu.pt/dges.asp?code=3062&codc=9774": "https://www.esec.pt/estudar/cursos/lingua-gestual-portuguesa",
+    "https://infocursos.medu.pt/dges.asp?code=505&codc=9779": "",
+    "https://infocursos.medu.pt/dges.asp?code=3055&codc=9784": "https://www.ipcb.pt/esart/ensino/licenciatura-em-musica-variante-de-instrumento",
+    "https://infocursos.medu.pt/dges.asp?code=604&codc=9787": "",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9813": "https://www.uminho.pt/PT/ensino/oferta-educativa",
+    "https://infocursos.medu.pt/dges.asp?code=1110&codc=9813": "https://sigarra.up.pt/icbas/pt/cur_geral.cur_view?pv_ano_lectivo=2018&pv_origem=CUR&pv_tipo_cur_sigla=MI&pv_curso_id=1289",
+    "https://infocursos.medu.pt/dges.asp?code=1507&codc=9813": "http://www.medicina.ulisboa.pt/ensino/mestrado-integrado-em-medicina/",
+    "https://infocursos.medu.pt/dges.asp?code=1108&codc=9813": "https://sigarra.up.pt/fmup/pt/cur_geral.cur_view?pv_ano_lectivo=2018&pv_origem=CAND&pv_tipo_cur_sigla=MI&pv_curso_id=1201",
+    "https://infocursos.medu.pt/dges.asp?code=1204&codc=9813": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9813": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9813": "",
+    "https://infocursos.medu.pt/dges.asp?code=506&codc=9813": "",
+    "https://infocursos.medu.pt/dges.asp?code=901&codc=9813": "",
+    "https://infocursos.medu.pt/dges.asp?code=201&codc=9817": "",
+    "https://infocursos.medu.pt/dges.asp?code=602&codc=9818": "",
+    "https://infocursos.medu.pt/dges.asp?code=504&codc=9819": "",
+    "https://infocursos.medu.pt/dges.asp?code=201&codc=9821": "",
+    "https://infocursos.medu.pt/dges.asp?code=504&codc=9832": "",
+    "https://infocursos.medu.pt/dges.asp?code=7015&codc=9833": "http://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=7015&cod_curso=9833",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9835": "",
+    "https://infocursos.medu.pt/dges.asp?code=605&codc=9841": "",
+    "https://infocursos.medu.pt/dges.asp?code=1110&codc=9847": "https://sigarra.up.pt/icbas/pt/cur_geral.cur_view?pv_ano_lectivo=2018&pv_origem=CUR&pv_tipo_cur_sigla=MI&pv_curso_id=1290",
+    "https://infocursos.medu.pt/dges.asp?code=1201&codc=9847": "https://www.utad.pt/estudar/cursos/medicina-veterinaria/",
+    "https://infocursos.medu.pt/dges.asp?code=1509&codc=9847": "http://www.fmv.ulisboa.pt/pt/ensino/mestrados/mestrado-integrado-em-medicina-veterinaria",
+    "https://infocursos.medu.pt/dges.asp?code=602&codc=9847": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=9853": "",
+    "https://infocursos.medu.pt/dges.asp?code=604&codc=9853": "",
+    "https://infocursos.medu.pt/dges.asp?code=150&codc=9853": "",
+    "https://infocursos.medu.pt/dges.asp?code=7250&codc=9861": "",
+    "https://infocursos.medu.pt/dges.asp?code=3151&codc=9876": "",
+    "https://infocursos.medu.pt/dges.asp?code=3154&codc=9881": "",
+    "https://infocursos.medu.pt/dges.asp?code=3102&codc=9885": "http://www.estg.ipleiria.pt",
+    "https://infocursos.medu.pt/dges.asp?code=6800&codc=9885": "https://www.iscte-iul.pt/curso/3/licenciatura-engenharia-informatica",
+    "https://infocursos.medu.pt/dges.asp?code=3064&codc=9885": "https://www.isec.pt/pt/estudar/licenciaturas/EngInforPL/",
+    "https://infocursos.medu.pt/dges.asp?code=3102&codc=9886": "https://www.ipleiria.pt/cursos/course/licenciatura-em-engenharia-mecanica/",
+    "https://infocursos.medu.pt/dges.asp?code=3011&codc=9888": "https://www.ua.pt/pt/isca/",
+    "https://infocursos.medu.pt/dges.asp?code=3117&codc=9889": "https://www.iscal.ipl.pt/pt/cursos/licenciatura/financas-empresariais",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=9891": "",
+    "https://infocursos.medu.pt/dges.asp?code=3065&codc=9895": "http://www.estgoh.ipc.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3043&codc=9910": "http://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=3043&cod_curso=9910",
+    "https://infocursos.medu.pt/dges.asp?code=602&codc=9910": "",
+    "https://infocursos.medu.pt/dges.asp?code=1519&codc=9912": "https://fenix.tecnico.ulisboa.pt/cursos/lee",
+    "https://infocursos.medu.pt/dges.asp?code=1506&codc=9914": "https://www.letras.ulisboa.pt/pt/cursos/licenciaturas-1-ciclo",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=9917": "http://www.uminho.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1506&codc=9917": "https://www.letras.ulisboa.pt/pt/cursos/licenciaturas-1-ciclo",
+    "https://infocursos.medu.pt/dges.asp?code=902&codc=9917": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=9918": "",
+    "https://infocursos.medu.pt/dges.asp?code=3139&codc=9921": "https://www.esht.ipp.pt/cursos/licenciatura/410001429",
+    "https://infocursos.medu.pt/dges.asp?code=7105&codc=9924": "http://www.enautica.pt",
+    "https://infocursos.medu.pt/dges.asp?code=7105&codc=9926": "http://www.enautica.pt",
+    "https://infocursos.medu.pt/dges.asp?code=6800&codc=9927": "https://www.iscte-iul.pt/curso/49/licenciatura-historia-moderna-contemporanea",
+    "https://infocursos.medu.pt/dges.asp?code=3135&codc=9936": "https://www.isep.ipp.pt/Course/Course/50",
+    "https://infocursos.medu.pt/dges.asp?code=3031&codc=9990": "https://esg.ipca.pt/curso/fiscalidade-licenciatura/",
+    "https://infocursos.medu.pt/dges.asp?code=3102&codc=9991": "https://www.ipleiria.pt/cursos/course/licenciatura-em-gestao/",
+    "https://infocursos.medu.pt/dges.asp?code=3117&codc=9991": "https://www.iscal.ipl.pt/pt/cursos/licenciatura/gestao",
+    "https://infocursos.medu.pt/dges.asp?code=3143&codc=9991": "https://www.ipsantarem.pt/",
+    "https://infocursos.medu.pt/dges.asp?code=3153&codc=9993": "https://www.esce.ips.pt/cursos/licenciaturas/gdlpl",
+    "https://infocursos.medu.pt/dges.asp?code=3023&codc=9994": "https://www.ipbeja.pt/cursos/estig-ge/Paginas/default.aspx",
+    "https://infocursos.medu.pt/dges.asp?code=3182&codc=9994": "http://www.estgv.ipv.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3031&codc=9994": "https://esg.ipca.pt/curso/gestao-empresarial/",
+    "https://infocursos.medu.pt/dges.asp?code=1517&codc=A001": "https://www.iseg.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1104&codc=A001": "",
+    "https://infocursos.medu.pt/dges.asp?code=1104&codc=A006": "",
+    "https://infocursos.medu.pt/dges.asp?code=1517&codc=A013": "https://www.iseg.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3102&codc=A014": "http://www.estg.ipleiria.pt",
+    "https://infocursos.medu.pt/dges.asp?code=160&codc=A017": "",
+    "https://infocursos.medu.pt/dges.asp?code=1517&codc=A018": "https://www.iseg.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3043&codc=A019": "",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=A020": "",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=A021": "",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=A022": "",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=A023": "",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=A024": "",
+    "https://infocursos.medu.pt/dges.asp?code=908&codc=A025": "",
+    "https://infocursos.medu.pt/dges.asp?code=6800&codc=A026": "",
+    "https://infocursos.medu.pt/dges.asp?code=3117&codc=L007": "",
+    "https://infocursos.medu.pt/dges.asp?code=3114&codc=L012": "https://www.esml.ipl.pt/index.php/cursos/licenciaturas/licenciatura-em-musica",
+    "https://infocursos.medu.pt/dges.asp?code=3186&codc=L021": "http://www.estgl.ipv.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3012&codc=L021": "https://www.ua.pt/pt/estga/",
+    "https://infocursos.medu.pt/dges.asp?code=3054&codc=L021": "https://www.ipcb.pt/esgin/ensino/licenciatura-em-gestao-comercial",
+    "https://infocursos.medu.pt/dges.asp?code=3063&codc=L023": "http://www.iscac.pt/index.php?m=4_18&curso=23&lang=PT",
+    "https://infocursos.medu.pt/dges.asp?code=3138&codc=L030": "https://www.estg.ipp.pt/cursos/licenciatura/80001721",
+    "https://infocursos.medu.pt/dges.asp?code=6800&codc=L030": "https://www.iscte-iul.pt/curso/99/licenciatura-gestao-industrial-logistica",
+    "https://infocursos.medu.pt/dges.asp?code=150&codc=L041": "",
+    "https://infocursos.medu.pt/dges.asp?code=604&codc=L047": "",
+    "https://infocursos.medu.pt/dges.asp?code=3118&codc=L052": "https://www.isel.pt/cursos/licenciaturas/engenharia-informatica-e-multimedia",
+    "https://infocursos.medu.pt/dges.asp?code=3095&codc=L061": "https://cloud.sysnovare.pt/ipg/cursos_geral.FormView?P_CUR_SIGLA=LGTH",
+    "https://infocursos.medu.pt/dges.asp?code=7020&codc=L066": "https://www.ipcb.pt/esald/ensino/licenciatura-em-imagem-medica-e-radioterapia",
+    "https://infocursos.medu.pt/dges.asp?code=3013&codc=L066": "https://www.ua.pt/pt/essua",
+    "https://infocursos.medu.pt/dges.asp?code=7035&codc=L066": "https://www.ualg.pt/pt/curso/1752",
+    "https://infocursos.medu.pt/dges.asp?code=7210&codc=L066": "http://www.estescoimbra.pt/pt/cursos/detalhe/id/162",
+    "https://infocursos.medu.pt/dges.asp?code=7230&codc=L066": "https://www.ess.ipp.pt/cursos/licenciatura/100001219",
+    "https://infocursos.medu.pt/dges.asp?code=7250&codc=L066": "",
+    "https://infocursos.medu.pt/dges.asp?code=7020&codc=L067": "https://www.ipcb.pt/esald/ensino/licenciatura-em-fisiologia-clinica",
+    "https://infocursos.medu.pt/dges.asp?code=7210&codc=L067": "http://www.estescoimbra.pt/pt/cursos/detalhe/id/161",
+    "https://infocursos.medu.pt/dges.asp?code=7230&codc=L067": "https://www.ess.ipp.pt/cursos/licenciatura/100001220",
+    "https://infocursos.medu.pt/dges.asp?code=7250&codc=L067": "",
+    "https://infocursos.medu.pt/dges.asp?code=7250&codc=L068": "",
+    "https://infocursos.medu.pt/dges.asp?code=602&codc=L090": "",
+    "https://infocursos.medu.pt/dges.asp?code=3062&codc=L095": "https://www.esec.pt/estudar/cursos/gastronomia-0",
+    "https://infocursos.medu.pt/dges.asp?code=1503&codc=L096": "https://fenix.ciencias.ulisboa.pt/degrees/engenharia-geoespacial-564500436615267",
+    "https://infocursos.medu.pt/dges.asp?code=1103&codc=L096": "http://www.fc.up.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1506&codc=L097": "https://www.letras.ulisboa.pt/pt/cursos/licenciaturas-1-ciclo",
+    "https://infocursos.medu.pt/dges.asp?code=505&codc=L109": "",
+    "https://infocursos.medu.pt/dges.asp?code=3118&codc=L117": "https://www.isel.pt/cursos/licenciaturas/matematica-aplicada-a-tecnologia-e-a-empresa",
+    "https://infocursos.medu.pt/dges.asp?code=7105&codc=L118": "http://www.enautica.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3118&codc=L119": "https://www.isel.pt/cursos/licenciaturas/engenharia-informatica-redes-e-telecomunicacoes",
+    "https://infocursos.medu.pt/dges.asp?code=203&codc=L123": "",
+    "https://infocursos.medu.pt/dges.asp?code=3139&codc=L131": "https://www.esht.ipp.pt/cursos/licenciatura/410001404",
+    "https://infocursos.medu.pt/dges.asp?code=3105&codc=L131": "https://www.ipleiria.pt/cursos/course/licenciatura-em-restauracao-e-catering/",
+    "https://infocursos.medu.pt/dges.asp?code=3112&codc=L134": "https://www.eselx.ipl.pt/oferta-formativa/licenciaturas/mediacao-artistica-e-cultural",
+    "https://infocursos.medu.pt/dges.asp?code=3012&codc=L140": "https://www.ua.pt/pt/estga/",
+    "https://infocursos.medu.pt/dges.asp?code=3031&codc=L140": "https://esg.ipca.pt/curso/gestao-publica-ensino-a-distancia/",
+    "https://infocursos.medu.pt/dges.asp?code=3243&codc=L143": "http://www.esta.ipt.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=L147": "https://www.uminho.pt/PT/ensino/oferta-educativa",
+    "https://infocursos.medu.pt/dges.asp?code=1306&codc=L150": "https://www.uma.pt/ensino/1o-ciclo/licenciatura-em-estudos-de-cultura/",
+    "https://infocursos.medu.pt/dges.asp?code=3163&codc=L153": "http://www.ipvc.pt/engenharia-redes-sistemas-computadores",
+    "https://infocursos.medu.pt/dges.asp?code=3064&codc=L155": "https://www.isec.pt/pt/estudar/licenciaturas/GestaoSustentaveldasCidades/",
+    "https://infocursos.medu.pt/dges.asp?code=7250&codc=L161": "",
+    "https://infocursos.medu.pt/dges.asp?code=1518&codc=L162": "https://tecnico.ulisboa.pt/pt/ensino/cursos/licenciaturas/engenharia-naval-e-oceanica/",
+    "https://infocursos.medu.pt/dges.asp?code=3062&codc=L163": "https://www.esec.pt/estudar/cursos/estudos-musicais-aplicados",
+    "https://infocursos.medu.pt/dges.asp?code=3161&codc=L164": "http://www.ipvc.pt/engenharia-ambiente-geoinformatica",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=L167": "",
+    "https://infocursos.medu.pt/dges.asp?code=3042&codc=L175": "http://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=3042&cod_curso=9175",
+    "https://infocursos.medu.pt/dges.asp?code=3055&codc=L184": "https://www.ipcb.pt/escolas/artes-aplicadas/",
+    "https://infocursos.medu.pt/dges.asp?code=3242&codc=L186": "http://www.estt.ipt.pt",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=L187": "",
+    "https://infocursos.medu.pt/dges.asp?code=906&codc=L188": "",
+    "https://infocursos.medu.pt/dges.asp?code=1203&codc=L193": "https://www.utad.pt/ect/",
+    "https://infocursos.medu.pt/dges.asp?code=7711&codc=L195": "",
+    "https://infocursos.medu.pt/dges.asp?code=3092&codc=L196": "https://cloud.sysnovare.pt/ipg/cursos_geral.FormView?P_CUR_SIGLA=LMII",
+    "https://infocursos.medu.pt/dges.asp?code=7710&codc=L201": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=L202": "",
+    "https://infocursos.medu.pt/dges.asp?code=1503&codc=L204": "https://ciencias.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=L205": "",
+    "https://infocursos.medu.pt/dges.asp?code=7712&codc=L206": "",
+    "https://infocursos.medu.pt/dges.asp?code=3064&codc=L209": "http://www.isec.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1203&codc=L209": "https://www.utad.pt/ect/",
+    "https://infocursos.medu.pt/dges.asp?code=1518&codc=L209": "https://tecnico.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3083&codc=L209": "https://ise.ualg.pt/pt",
+    "https://infocursos.medu.pt/dges.asp?code=3043&codc=L209": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=L209": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=L209": "",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=L209": "",
+    "https://infocursos.medu.pt/dges.asp?code=3118&codc=L213": "http://www.isel.pt/",
+    "https://infocursos.medu.pt/dges.asp?code=3135&codc=L213": "",
+    "https://infocursos.medu.pt/dges.asp?code=1503&codc=L214": "https://ciencias.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=L215": "http://www.uminho.pt",
+    "https://infocursos.medu.pt/dges.asp?code=7710&codc=L216": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=L217": "",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=L218": "http://www.uminho.pt",
+    "https://infocursos.medu.pt/dges.asp?code=7712&codc=L219": "",
+    "https://infocursos.medu.pt/dges.asp?code=1518&codc=L221": "https://tecnico.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=L221": "http://www.uminho.pt",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=L221": "",
+    "https://infocursos.medu.pt/dges.asp?code=602&codc=L221": "",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=L221": "",
+    "https://infocursos.medu.pt/dges.asp?code=7711&codc=L222": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=L223": "",
+    "https://infocursos.medu.pt/dges.asp?code=3064&codc=L226": "http://www.isec.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1103&codc=L227": "http://www.fc.up.pt",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=L227": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=L227": "",
+    "https://infocursos.medu.pt/dges.asp?code=602&codc=L227": "",
+    "https://infocursos.medu.pt/dges.asp?code=7711&codc=L228": "",
+    "https://infocursos.medu.pt/dges.asp?code=1000&codc=L229": "http://www.uminho.pt",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=L231": "",
+    "https://infocursos.medu.pt/dges.asp?code=1518&codc=L233": "https://tecnico.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=7711&codc=L238": "",
+    "https://infocursos.medu.pt/dges.asp?code=1518&codc=L239": "https://tecnico.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3132&codc=L240": "http://www.esmae-ipp.pt",
+    "https://infocursos.medu.pt/dges.asp?code=7530&codc=L243": "",
+    "https://infocursos.medu.pt/dges.asp?code=3131&codc=L246": "http://www.ese.ipp.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1107&codc=L251": "http://www.letras.up.pt",
+    "https://infocursos.medu.pt/dges.asp?code=201&codc=L252": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=L254": "",
+    "https://infocursos.medu.pt/dges.asp?code=605&codc=L256": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=L258": "",
+    "https://infocursos.medu.pt/dges.asp?code=3163&codc=L261": "http://www.estg.ipvc.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3102&codc=L266": "http://www.estg.ipleiria.pt",
+    "https://infocursos.medu.pt/dges.asp?code=3083&codc=L269": "https://ise.ualg.pt/pt",
+    "https://infocursos.medu.pt/dges.asp?code=3053&codc=L275": "https://www.ipcb.pt/escolas/tecnologia/",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=L285": "",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=L286": "",
+    "https://infocursos.medu.pt/dges.asp?code=1506&codc=L288": "http://www.letras.ulisboa.pt",
+    "https://infocursos.medu.pt/dges.asp?code=7712&codc=L289": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=L295": "",
+    "https://infocursos.medu.pt/dges.asp?code=300&codc=L298": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=L303": "",
+    "https://infocursos.medu.pt/dges.asp?code=3065&codc=L305": "http://www.estgoh.ipc.pt",
+    "https://infocursos.medu.pt/dges.asp?code=904&codc=L313": "",
+    "https://infocursos.medu.pt/dges.asp?code=6810&codc=L321": "http://www.iscte-iul.pt",
+    "https://infocursos.medu.pt/dges.asp?code=7711&codc=L323": "",
+    "https://infocursos.medu.pt/dges.asp?code=7711&codc=L324": "",
+    "https://infocursos.medu.pt/dges.asp?code=7710&codc=L325": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=L331": "",
+    "https://infocursos.medu.pt/dges.asp?code=1518&codc=L343": "",
+    "https://infocursos.medu.pt/dges.asp?code=140&codc=L344": "",
+    "https://infocursos.medu.pt/dges.asp?code=3012&codc=L346": "https://www.ua.pt/pt/estga/",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=L347": "",
+    "https://infocursos.medu.pt/dges.asp?code=7230&codc=L354": "",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=L358": "",
+    "https://infocursos.medu.pt/dges.asp?code=604&codc=L365": "",
+    "https://infocursos.medu.pt/dges.asp?code=3164&codc=L366": "http://www.esce.ipvc.pt",
+    "https://infocursos.medu.pt/dges.asp?code=1307&codc=L367": "http://www.uma.pt",
+    "https://infocursos.medu.pt/dges.asp?code=903&codc=L370": "",
+    "https://infocursos.medu.pt/dges.asp?code=3034&codc=L373": "",
+    "https://infocursos.medu.pt/dges.asp?code=3062&codc=L380": "",
+    "https://infocursos.medu.pt/dges.asp?code=3331&codc=L381": "",
+    "https://infocursos.medu.pt/dges.asp?code=3052&codc=L386": "",
+    "https://infocursos.medu.pt/dges.asp?code=3162&codc=L388": "",
+    "https://infocursos.medu.pt/dges.asp?code=3105&codc=L389": "",
+    "https://infocursos.medu.pt/dges.asp?code=140&codc=L390": "",
+    "https://infocursos.medu.pt/dges.asp?code=6800&codc=L391": "",
+    "https://infocursos.medu.pt/dges.asp?code=3102&codc=L393": "",
+    "https://infocursos.medu.pt/dges.asp?code=3032&codc=L394": "",
+    "https://infocursos.medu.pt/dges.asp?code=1204&codc=L399": "",
+    "https://infocursos.medu.pt/dges.asp?code=3121&codc=L401": "",
+    "https://infocursos.medu.pt/dges.asp?code=6800&codc=L402": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=L403": "",
+    "https://infocursos.medu.pt/dges.asp?code=1503&codc=L405": "",
+    "https://infocursos.medu.pt/dges.asp?code=400&codc=L406": "",
+    "https://infocursos.medu.pt/dges.asp?code=1108&codc=L407": "",
+    "https://infocursos.medu.pt/dges.asp?code=3105&codc=L411": "",
+    "https://infocursos.medu.pt/dges.asp?code=1201&codc=L412": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=L413": "",
+    "https://infocursos.medu.pt/dges.asp?code=3095&codc=L415": "",
+    "https://infocursos.medu.pt/dges.asp?code=3118&codc=L416": "",
+    "https://infocursos.medu.pt/dges.asp?code=3014&codc=L417": "",
+    "https://infocursos.medu.pt/dges.asp?code=3118&codc=L419": "",
+    "https://infocursos.medu.pt/dges.asp?code=3043&codc=L423": "",
+    "https://infocursos.medu.pt/dges.asp?code=902&codc=L424": "",
+    "https://infocursos.medu.pt/dges.asp?code=501&codc=L426": "",
+    "https://infocursos.medu.pt/dges.asp?code=3138&codc=L429": ""
+  },
+  "institution_url": {
+    "3034": "https://esht.ipca.pt/",
+    "3032": "http://www.est.ipca.pt",
+    "3053": "http://www.ipcb.pt/EST",
+    "3083": "http://ise.ualg.pt/",
+    "1519": "http://www.tecnico.ulisboa.pt",
+    "3139": "http://www.esht.ipp.pt",
+    "1509": "http://www.fmv.ulisboa.pt"
+  }
+}
