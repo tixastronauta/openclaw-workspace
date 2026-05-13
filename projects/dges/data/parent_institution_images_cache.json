@@ -1,0 +1,226 @@
+{
+  "Escola Superior Náutica Infante D. Henrique": {
+    "logo_url": "https://www.enautica.pt/imgs/logo2.png",
+    "photo_url": "https://www.enautica.pt/imgs/semimagem.jpg",
+    "qid": "Q10274375",
+    "source": "logo:official_site;photo:official_site_meta",
+    "website": "https://www.enautica.pt/"
+  },
+  "Escola Superior de Hotelaria e Turismo do Estoril": {
+    "logo_url": "https://www.eshte.pt/contents/global/logo-site-cabecalho.png",
+    "photo_url": "http://www.eshte.pt/contents/sitemetatagsanalytics/share.jpg",
+    "qid": "Q10274496",
+    "source": "manual:official_site_or_vetted_commons;wikidata_error:HTTPError",
+    "website": "https://www.eshte.pt/"
+  },
+  "ISCTE - Instituto Universitário de Lisboa": {
+    "logo_url": "https://www.iscte-iul.pt/assets/assets/logos/svg/iscte_main_positive.svg",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/CID_Aerial.jpg?width=1200",
+    "qid": "Q1431066",
+    "source": "photo:wikidata:Q1431066:P18;logo:official_site",
+    "website": "https://www.iscte-iul.pt/"
+  },
+  "Instituto Politécnico da Guarda": {
+    "logo_url": "https://politecnicoguarda.pt/storage/2025/11/desktop-logo-f.svg",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Intradermal_injection.jpg?width=1200",
+    "qid": "Q10302254",
+    "source": "photo:wikidata:Q10302254:P18;logo:official_site",
+    "website": "https://politecnicoguarda.pt/"
+  },
+  "Instituto Politécnico de Beja": {
+    "logo_url": "https://www.ipbeja.pt/PublishingImages/Logo-IPBejaI.png",
+    "photo_url": "https://www.ipbeja.pt/PublishingImages/BannerIPBejaSite-2019.jpg",
+    "qid": "Q10302085",
+    "source": "manual:official_site_or_vetted_commons;wikidata_error:HTTPError",
+    "website": "https://www.ipbeja.pt/"
+  },
+  "Instituto Politécnico de Bragança": {
+    "logo_url": "https://portal3.ipb.pt/templates/ipb-template-home/images/logo.png",
+    "photo_url": "https://portal3.ipb.pt/images/ipb/banner_geral_IPB_202011.png",
+    "qid": "Q10302635",
+    "source": "manual:official_site_or_vetted_commons",
+    "website": "https://portal3.ipb.pt/"
+  },
+  "Instituto Politécnico de Castelo Branco": {
+    "logo_url": "https://www.ipcb.pt/media/4joj0kgw/logo-upcb.svg",
+    "photo_url": "https://www.ipcb.pt/media/hrld12ct/destaque-1.jpg",
+    "qid": "Q10302131",
+    "source": "logo:official_site;photo:official_site_meta",
+    "website": "https://www.ipcb.pt/"
+  },
+  "Instituto Politécnico de Coimbra": {
+    "logo_url": "https://www.ipc.pt/wp-content/uploads/2020/03/svg_logo.svg",
+    "photo_url": "https://www.ipc.pt/wp-content/uploads/2021/07/1-300x200-1.jpg",
+    "qid": "Q2103165",
+    "source": "manual:official_site_or_vetted_commons;wikidata_error:HTTPError",
+    "website": "https://www.ipc.pt/"
+  },
+  "Instituto Politécnico de Leiria": {
+    "logo_url": "https://www.ipleiria.pt/wp-content/themes/wp-theme--ipleiria/assets/img/favicon/favicon.svg",
+    "photo_url": "https://www.ipleiria.pt/wp-content/uploads/2021/03/politecnico_menu.jpg",
+    "qid": "Q7227031",
+    "source": "manual:official_site_or_vetted_commons;wikidata_error:HTTPError",
+    "website": "https://www.ipleiria.pt/"
+  },
+  "Instituto Politécnico de Lisboa": {
+    "logo_url": "https://www.ipl.pt/modules/custom/javali/images/ipl_logo_2.svg",
+    "photo_url": "https://www.ipl.pt/sites/default/files/img_banner_site_0.jpg",
+    "qid": "Q10302370",
+    "source": "manual:official_site_or_vetted_commons;wikidata_error:HTTPError;logo:official_site",
+    "website": "https://www.ipl.pt/"
+  },
+  "Instituto Politécnico de Portalegre": {
+    "logo_url": "https://www.ipportalegre.pt/static/ippimages/Logo_upportalegre_cor_header_v2.svg",
+    "photo_url": "https://www.ipportalegre.pt/media/filer_public_thumbnails/filer_public/04/d4/04d4eb7f-69ae-4291-bd87-5017279f8ba8/a-escolha-certa-2026_banner.jpg__1920x677_q85_crop-center_subsampling-2.jpg",
+    "qid": "Q10302503",
+    "source": "manual:official_site_or_vetted_commons",
+    "website": "https://www.ipportalegre.pt/"
+  },
+  "Instituto Politécnico de Santarém": {
+    "logo_url": "https://www.ipsantarem.pt/wp-content/uploads/2021/08/cropped-PolitSantarem_Logo-01.png",
+    "photo_url": "https://www.ipsantarem.pt/wp-content/uploads/2026/04/TA9A9961-1-630x420.webp",
+    "qid": "Q10302555",
+    "source": "manual:official_site_or_vetted_commons;wikidata_error:HTTPError;logo:official_site",
+    "website": "https://www.ipsantarem.pt/"
+  },
+  "Instituto Politécnico de Setúbal": {
+    "logo_url": "https://ips.pt/wp-content/uploads/2022/03/eudres_logo_white.png",
+    "photo_url": "https://ips.pt/wp-content/uploads/2025/03/BannerSiteIPS_TalentoSemLimites_mar25-5.png",
+    "qid": "Q10302572",
+    "source": "logo:official_site;photo:official_site_meta",
+    "website": "https://www.ips.pt/"
+  },
+  "Instituto Politécnico de Tomar": {
+    "logo_url": "https://portal2.ipt.pt/img/logo_v2.png?v=3",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Campus%20do%20IPT%20em%202019.jpg?width=1200",
+    "qid": "Q29565528",
+    "source": "manual:official_site_or_vetted_commons",
+    "website": "https://portal2.ipt.pt/"
+  },
+  "Instituto Politécnico de Viana do Castelo": {
+    "logo_url": "https://www.ipvc.pt/wp-content/uploads/2026/01/logo_ipvc_svg2-sunrise.svg",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polytechnic%20Institute%20of%20Viana%20do%20Castelo.jpg?width=1200",
+    "qid": "Q7227039",
+    "source": "manual:official_site_or_vetted_commons;wikidata_error:HTTPError",
+    "website": "https://www.ipvc.pt/"
+  },
+  "Instituto Politécnico de Viseu": {
+    "logo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/IPV.png?width=500",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Politecnico_Viseu-IMG_20251121_160329.jpg?width=1200",
+    "qid": "Q10302641",
+    "source": "logo:wikidata:Q10302641:P154;photo:wikidata:Q10302641:P18",
+    "website": "https://www.ipv.pt/"
+  },
+  "Instituto Politécnico do Cávado e do Ave": {
+    "logo_url": "https://ipca.pt/wp-content/uploads/2023/11/ipca_logo_pt.svg",
+    "photo_url": "https://ipca.pt/wp-content/uploads/2026/05/1-1-scaled.jpg",
+    "qid": "Q10302640",
+    "source": "manual:official_site_or_vetted_commons",
+    "website": "https://ipca.pt/"
+  },
+  "Instituto Politécnico do Porto": {
+    "logo_url": "https://www.ipp.pt/logo-ipp.png",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Presid%C3%AAncia%20do%20Polit%C3%A9cnico%20do%20Porto.jpg?width=1200",
+    "qid": "Q4348556",
+    "source": "manual:official_site_or_vetted_commons;wikidata_error:HTTPError",
+    "website": "https://www.ipp.pt/"
+  },
+  "Instituto Superior de Ciências Policiais e Segurança Interna": {
+    "logo_url": "http://www.iscpsi.pt/Style%20Library/iscpsi/images/logoISCPSI.png",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/PSP%20INSTITUTO%20SUPERIOR%20DE%20CI%C3%8ANCIAS%20POLICIAIS%20E%20SEGURAN%C3%87A%20INTERNA.png?width=1200",
+    "qid": "Q6041513",
+    "source": "manual:official_site_or_vetted_commons;wikidata_error:HTTPError",
+    "website": "https://www.iscpsi.pt/"
+  },
+  "Instituto Universitário Militar": {
+    "logo_url": "https://www.ium.pt/images/website/logo_white.png",
+    "photo_url": "https://www.ium.pt/images/website/IUM_400.png",
+    "qid": "Q24939561",
+    "source": "manual:official_site_or_vetted_commons;wikidata_error:HTTPError;logo:official_site",
+    "website": "https://www.ium.pt/"
+  },
+  "Universidade Nova de Lisboa": {
+    "logo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Universidade%20NOVA%20de%20Lisboa%20logo%20logotipo%202021.png?width=500",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ReitoriaUNL.jpg?width=1200",
+    "qid": "Q1979891",
+    "source": "manual:official_site_or_vetted_commons;wikidata_error:HTTPError",
+    "website": "https://www.unl.pt/"
+  },
+  "Universidade da Beira Interior": {
+    "logo_url": "https://www.ubi.pt/assets/img/2016/logotipo-ubi-2016.svg",
+    "photo_url": "https://www.ubi.pt/Ficheiros/SlideShow/492/banner%20vive_1920%20480.jpg",
+    "qid": "Q1955890",
+    "source": "manual:official_site_or_vetted_commons;wikidata_error:HTTPError;logo:official_site",
+    "website": "https://www.ubi.pt/"
+  },
+  "Universidade da Madeira": {
+    "logo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/UMa.png?width=500",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Universidade%20da%20Madeira.jpg?width=1200",
+    "qid": "Q1434847",
+    "source": "manual:official_site_or_vetted_commons;wikidata_error:HTTPError",
+    "website": "https://www.uma.pt/"
+  },
+  "Universidade de Aveiro": {
+    "logo_url": "https://www.ua.pt/imgs/icons/icon-512x512.png",
+    "photo_url": "https://static.ua.pt/images/ua/sm-campus.png",
+    "qid": "Q29671",
+    "source": "manual:official_site_or_vetted_commons;wikidata_error:HTTPError",
+    "website": "https://www.ua.pt/"
+  },
+  "Universidade de Coimbra": {
+    "logo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Seal%20of%20the%20University%20of%20Coimbra.svg?width=500",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Coimbra%20December%202011-19a.jpg?width=1200",
+    "qid": "Q368643",
+    "source": "manual:official_site_or_vetted_commons;wikidata_error:HTTPError",
+    "website": "https://www.uc.pt/"
+  },
+  "Universidade de Lisboa": {
+    "logo_url": "https://www.ulisboa.pt/themes/custom/ulisboa/logo.svg",
+    "photo_url": "https://www.ulisboa.pt/sites/default/files/styles/image_base/public/images/base_image/2025-08/53-1314655f527946b3d0a40b59c15237bb.jpg?itok=wsN1qemu",
+    "qid": "Q1552759",
+    "source": "logo:official_site;photo:official_site_meta",
+    "website": "https://www.ulisboa.pt/"
+  },
+  "Universidade de Trás-os-Montes e Alto Douro": {
+    "logo_url": "https://www.utad.pt/wp-content/uploads/2017/11/logo_utad.png",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stollenmundloch_Altenberg.JPG?width=1200",
+    "qid": "Q1549847",
+    "source": "photo:wikidata:Q1549847:P18;logo:official_site",
+    "website": "https://www.utad.pt/"
+  },
+  "Universidade de Évora": {
+    "logo_url": "https://www.uevora.pt/extension/uepages/design/ueresponsive_layout1/images/layout/logotipo_site_pt_cor_cinquentenario.svg",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Universidade%20de%20%C3%89vora%20-%20Claustro%20geral%20dos%20Estudos%20%282%29.jpg?width=1200",
+    "qid": "Q1557861",
+    "source": "manual:official_site_or_vetted_commons;wikidata_error:HTTPError;logo:official_site",
+    "website": "https://www.uevora.pt/"
+  },
+  "Universidade do Algarve": {
+    "logo_url": "https://www.ualg.pt/sites/default/files/theme-logos/ualg_branco.svg",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/W._Wintgens_%28cropped%29.jpg?width=1200",
+    "qid": "Q1928343",
+    "source": "photo:wikidata:Q1928343:P18;logo:official_site",
+    "website": "https://www.ualg.pt/"
+  },
+  "Universidade do Minho": {
+    "logo_url": "https://www.uminho.pt/_layouts/15/UMinho.PortalUM.UI/images/portal-logo.png?rev=23",
+    "photo_url": "https://www.uminho.pt/PT/PublishingImages/escolas%20e%20institutos.jpg",
+    "qid": "Q1551958",
+    "source": "logo:official_site;photo:official_site_meta",
+    "website": "https://www.uminho.pt/"
+  },
+  "Universidade do Porto": {
+    "logo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Logoup.jpg?width=500",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cl%C3%A9rigos_%2853939838503%29.jpg?width=1200",
+    "qid": "Q1422903",
+    "source": "logo:wikidata:Q1422903:P154;photo:wikidata:Q1422903:P18",
+    "website": "https://www.up.pt/"
+  },
+  "Universidade dos Açores": {
+    "logo_url": "https://uac.pt/sites/all/themes/uac_theme/logo.png",
+    "photo_url": "https://uac.pt/sites/all/themes/uac_theme/images/global/favicon152.png",
+    "qid": "Q588147",
+    "source": "wikidata_error:HTTPError;logo:official_site;photo:official_site_meta",
+    "website": "https://uac.pt/"
+  }
+}
