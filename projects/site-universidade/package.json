@@ -7,7 +7,8 @@
     "build": "node scripts/generate-search-index.mjs && next build",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "import:sheet": "node scripts/import-google-sheet.mjs"
+    "import:sheet": "node scripts/sync-courses-from-sheet.mjs",
+    "sync:courses": "node scripts/sync-courses-from-sheet.mjs"
   },
   "dependencies": {
     "@types/node": "^22.15.17",

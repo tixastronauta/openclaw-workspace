@@ -141,7 +141,7 @@ export function GlobalSearch() {
   }, []);
 
   return (
-    <div ref={containerRef} className="relative w-full max-w-xs sm:max-w-sm">
+    <div ref={containerRef} className="relative w-full sm:max-w-sm">
       <label className="sr-only" htmlFor="global-search">Pesquisar cursos e instituições</label>
       <div className="relative">
         <svg

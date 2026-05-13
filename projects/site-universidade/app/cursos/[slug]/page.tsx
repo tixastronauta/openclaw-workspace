@@ -52,6 +52,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
+function renderMarkdown(text: string): string {
+  return text
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g, "<em>$1</em>")
+    .replace(/_(.+?)_/g, "<em>$1</em>")
+    .replace(/\n/g, "<br>");
+}
+
 // Icon: external link (opens in new tab)
 function ExternalLinkIcon() {
   return (
@@ -158,14 +167,14 @@ export default async function CourseDetailPage({ params }: PageProps) {
   ];
 
   return (
-    <Container className="py-10">
+    <Container className="py-6 sm:py-10">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Breadcrumbs items={breadcrumbs} />
 
       <article className="grid gap-8 lg:grid-cols-[1fr_300px]">
         {/* Left column */}
-        <div>
-          <h1 className="text-4xl font-bold tracking-tight text-slate-950">{course.courseName}</h1>
+        <div className="min-w-0">
+          <h1 className="text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl lg:text-4xl">{course.courseName}</h1>
           {course.institutionName && (
             <div className="mt-3 flex flex-wrap items-center gap-2">
               {facultySlug
@@ -180,8 +189,8 @@ export default async function CourseDetailPage({ params }: PageProps) {
           </div>
 
           {course.courseDescription && (
-            <blockquote className="mt-6 rounded-2xl border-l-4 border-brand-600 bg-brand-50 px-6 py-5">
-              <p className="text-base leading-7 text-slate-800">{course.courseDescription}</p>
+            <blockquote className="mt-6 rounded-2xl border-l-4 border-brand-600 bg-brand-50 px-4 py-4 sm:px-6 sm:py-5">
+              <p className="text-base leading-7 text-slate-800" dangerouslySetInnerHTML={{ __html: renderMarkdown(course.courseDescription) }} />
             </blockquote>
           )}
 

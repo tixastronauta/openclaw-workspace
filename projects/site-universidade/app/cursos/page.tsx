@@ -38,7 +38,7 @@ export default function CoursesPage() {
       <section className="mt-10 grid gap-10">
         {Object.entries(grouped).map(([initial, items]) => (
           <div key={initial} id={initial}>
-            <h2 className="sticky top-16 z-20 -mx-2 mb-4 border-b border-slate-200 bg-slate-50/95 px-2 py-2 text-2xl font-semibold text-slate-950 backdrop-blur">{initial}</h2>
+            <h2 className="sticky top-[6.5rem] z-20 -mx-2 mb-4 border-b border-slate-200 bg-slate-50/95 px-2 py-2 text-2xl font-semibold text-slate-950 backdrop-blur sm:top-16">{initial}</h2>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {items.map((course) => <CourseCard key={course.slug} course={course} />)}
             </div>

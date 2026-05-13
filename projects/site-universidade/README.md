@@ -57,19 +57,21 @@ Open <http://localhost:3000>.
 
 ## Updating spreadsheet data
 
-Use `gog` to read the Google Sheet through OAuth and update `data/courses.csv`:
+Use `gog` to read the Google Sheet through OAuth, update `data/courses.csv`, validate `course_description`, and regenerate `public/search-index.json`:
 
 ```bash
-npm run import:sheet
+npm run sync:courses
 ```
+
+`npm run import:sheet` is kept as an alias for the same sync.
 
 Optional overrides:
 
 ```bash
-GOG_ACCOUNT="you@example.com" GOOGLE_SHEET_ID="..." GOOGLE_SHEET_NAME="dges_cursos_2026" npm run import:sheet
+GOG_ACCOUNT="you@example.com" GOOGLE_SHEET_ID="..." GOOGLE_SHEET_NAME="dges_cursos_2026" npm run sync:courses
 ```
 
-If `gog` is not available in an environment, export/download the sheet manually as CSV and replace `data/courses.csv`.
+If `gog` is not available in an environment, export/download the sheet manually as CSV and replace `data/courses.csv`, then run `node scripts/generate-search-index.mjs`.
 
 ## Page generation
 
@@ -121,14 +123,44 @@ The static site is emitted to `out/`.
 
 ## Cloudflare Pages deployment
 
-Recommended Cloudflare Pages settings:
+### First-time setup (once per machine)
 
-- Framework preset: Next.js (static export) or None
+```bash
+npm install -g wrangler
+wrangler login                          # opens browser, saves credentials locally
+wrangler pages project create site-universidade   # when prompted, set production branch to: main
+```
+
+### Deploy to staging
+
+Staging deploys go to a preview URL (`https://staging.site-universidade.pages.dev`). The final domain is not affected.
+
+```bash
+npm run build
+wrangler pages deploy out --branch staging
+```
+
+The deploy command prints the preview URL on completion.
+
+### Deploy to production
+
+Production deploys go to the `main` branch, which serves the custom domain once it is wired up in the Cloudflare Pages dashboard.
+
+```bash
+npm run build
+wrangler pages deploy out --branch main
+```
+
+### Cloudflare Pages dashboard settings
+
+If building via the dashboard instead of Wrangler CLI:
+
+- Framework preset: **None** (static export, not Next.js SSR)
 - Build command: `npm run build`
 - Build output directory: `out`
-- Node version: `22`
+- Node.js version: `22`
 
-`wrangler.toml` includes:
+`wrangler.toml` is already configured:
 
 ```toml
 name = "site-universidade"
@@ -136,4 +168,4 @@ pages_build_output_dir = "out"
 compatibility_date = "2026-05-10"
 ```
 
-No runtime database, authentication, API server, SSR, or long-running process is required for v0.1.
+No runtime database, authentication, API server, SSR, or long-running process is required.

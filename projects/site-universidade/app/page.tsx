@@ -88,7 +88,7 @@ export default function HomePage() {
   }));
 
   return (
-    <Container className="py-12 sm:py-16">
+    <Container className="pb-12 pt-8 sm:pb-16 sm:pt-8">
       <section className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(420px,560px)] lg:items-center">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-wide text-brand-700">Diretório independente</p>

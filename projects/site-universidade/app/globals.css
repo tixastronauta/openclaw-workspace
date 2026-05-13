@@ -13,6 +13,7 @@ html {
 body {
   background: #f8fafc;
   color: #0f172a;
+  overflow-x: hidden;
 }
 
 input[type="search"]::-webkit-search-cancel-button {
