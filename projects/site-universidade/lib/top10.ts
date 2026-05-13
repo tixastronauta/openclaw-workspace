@@ -81,8 +81,8 @@ export function getTop10Metrics(): Top10Metric[] {
       id: "melhor-empregabilidade",
       title: "Top 10 cursos com melhor empregabilidade",
       description: "Ranking derivado da menor taxa de desemprego registada no IEFP.",
-      valueLabel: "Desemprego",
-      items: rankCourses(courses, "unemploymentRate", "asc")
+      valueLabel: "Empregabilidade",
+      items: rankCourses(courses, "unemploymentRate", "asc").map((item) => ({ ...item, value: 1 - item.value }))
     },
     {
       id: "pior-empregabilidade",

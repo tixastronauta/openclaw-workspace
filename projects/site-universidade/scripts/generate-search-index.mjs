@@ -92,6 +92,8 @@ for (const row of rows) {
   const institutionSigla = row["institution_sigla"]?.trim();
   const institutionCode = row["institution_code"]?.trim();
   const courseCode = row["course_code"]?.trim();
+  const parentName = row["parent_institution_name"]?.trim();
+  const parentAcronym = row["parent_institution_acronym"]?.trim();
 
   if (!courseName) continue;
 
@@ -107,6 +109,8 @@ for (const row of rows) {
     ...(institutionName ? { i: institutionName } : {}),
     ...(institutionSigla ? { s: institutionSigla } : {}),
     ...(institutionCode ? { ic: institutionCode } : {}),
+    ...(parentName ? { pi: parentName } : {}),
+    ...(parentAcronym ? { pa: parentAcronym } : {}),
   });
 }
 

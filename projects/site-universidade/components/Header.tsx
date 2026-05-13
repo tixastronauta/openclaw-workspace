@@ -6,7 +6,7 @@ import { MobileNav } from "./MobileNav";
 
 const nav = [
   { href: "/cursos/", label: "Cursos" },
-  { href: "/faculdades/", label: "Faculdades" },
+  { href: "/universidades/", label: "Universidades" },
   { href: "/ciclos/", label: "Ciclos" },
   { href: "/top-10/", label: "Top 10" },
 ];

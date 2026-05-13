@@ -1,6 +1,8 @@
 import Link from "next/link";
 
-export function Breadcrumbs({ items }: { items: { label: string; href?: string }[] }) {
+type BreadcrumbItem = { label: string; href?: string; title?: string };
+
+export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
   return (
     <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate-500">
       <ol className="flex flex-wrap gap-2">
@@ -8,7 +10,9 @@ export function Breadcrumbs({ items }: { items: { label: string; href?: string }
         {items.map((item) => (
           <li key={item.label} className="flex gap-2">
             <span>/</span>
-            {item.href ? <Link href={item.href} className="hover:text-brand-700">{item.label}</Link> : <span>{item.label}</span>}
+            {item.href
+              ? <Link href={item.href} title={item.title} className="hover:text-brand-700">{item.label}</Link>
+              : <span title={item.title}>{item.label}</span>}
           </li>
         ))}
       </ol>

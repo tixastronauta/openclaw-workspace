@@ -102,8 +102,8 @@ export default function HomePage() {
             <Link href="/cursos/" className="rounded-xl bg-brand-700 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-brand-900">
               Ver todos os cursos
             </Link>
-            <Link href="/faculdades/" className="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 hover:border-brand-600 hover:text-brand-700">
-              Ver faculdades
+            <Link href="/universidades/" className="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 hover:border-brand-600 hover:text-brand-700">
+              Ver universidades
             </Link>
             <Link href="/distritos/" className="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 hover:border-brand-600 hover:text-brand-700">
               Ver distritos

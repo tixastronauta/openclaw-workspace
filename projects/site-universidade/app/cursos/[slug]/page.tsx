@@ -8,7 +8,7 @@ import { GradesChart } from "@/components/GradesChart";
 import { InfoCursosBarChart } from "@/components/InfoCursosBarChart";
 import { InfoCursosPieChart } from "@/components/InfoCursosPieChart";
 import { MapEmbed } from "@/components/MapEmbed";
-import { getAllCourses, getCourseBySlug, getFacultySlugByInstitution, getRelatedCourses } from "@/lib/courses";
+import { getAllCourses, getCourseBySlug, getFacultyBySlug, getFacultySlugByInstitution, getRelatedCourses, getUniversityForFaculty } from "@/lib/courses";
 import { slugify } from "@/lib/slug";
 import { siteConfig } from "@/lib/site";
 
@@ -133,7 +133,7 @@ export default async function CourseDetailPage({ params }: PageProps) {
   const course = getCourseBySlug(slug);
   if (!course) notFound();
 
-  const relatedCourses = getRelatedCourses(course);
+  const relatedCourses = getRelatedCourses(course, 5);
   const sameInstitutionCourses = getAllCourses()
     .filter((item) =>
       item.slug !== course.slug &&
@@ -141,8 +141,10 @@ export default async function CourseDetailPage({ params }: PageProps) {
       item.institutionName === course.institutionName &&
       item.institutionCode === course.institutionCode,
     )
-    .slice(0, 4);
+    .slice(0, 5);
   const facultySlug = getFacultySlugByInstitution(course.institutionName, course.institutionCode);
+  const faculty = facultySlug ? getFacultyBySlug(facultySlug) : undefined;
+  const university = faculty ? getUniversityForFaculty(faculty) : undefined;
   const institutionLabel = [course.institutionName, course.institutionSigla ? `(${course.institutionSigla})` : undefined].filter(Boolean).join(" ");
   const mapQuery = [course.morada, course.cidade, course.distrito, course.institutionName].filter(Boolean).join(", ");
 
@@ -160,8 +162,15 @@ export default async function CourseDetailPage({ params }: PageProps) {
 
   const breadcrumbs = [
     { label: "Cursos", href: "/cursos/" },
+    // University crumb: use acronym as short label, full name as tooltip
+    ...(university
+      ? [{ label: university.acronym ?? university.name, title: university.name, href: `/universidades/${university.slug}/` }]
+      : []),
+    // Faculty crumb: use sigla as short label if distinct from course (i.e. has a parent university)
     ...(course.institutionName && facultySlug
-      ? [{ label: institutionLabel, href: `/faculdades/${facultySlug}/` }]
+      ? course.parentInstitutionName
+        ? [{ label: faculty?.institutionSigla ?? course.institutionName, title: course.institutionName, href: `/faculdades/${facultySlug}/` }]
+        : [{ label: institutionLabel, href: `/faculdades/${facultySlug}/` }]
       : []),
     { label: course.courseName }
   ];
@@ -174,24 +183,32 @@ export default async function CourseDetailPage({ params }: PageProps) {
       <article className="grid gap-8 lg:grid-cols-[1fr_300px]">
         {/* Left column */}
         <div className="min-w-0">
-          <h1 className="text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl lg:text-4xl">{course.courseName}</h1>
+          <div className="sticky top-16 z-10 -mx-4 flex flex-wrap items-baseline gap-x-3 gap-y-2 bg-slate-50/90 px-4 py-2 backdrop-blur sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+            <h1 className="text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl lg:text-4xl">{course.courseName}</h1>
+            {course.cycle && (
+              <Link href={`/ciclos/${slugify(course.cycle)}/`} className="shrink-0 rounded-full bg-slate-100 px-3 py-1 text-xs font-medium uppercase tracking-wide text-slate-500 hover:bg-brand-100 hover:text-brand-700">{course.cycle}</Link>
+            )}
+          </div>
           {course.institutionName && (
-            <div className="mt-3 flex flex-wrap items-center gap-2">
+            <div className="mt-3">
               {facultySlug
                 ? <Link href={`/faculdades/${facultySlug}/`} className="text-lg font-medium text-slate-700 hover:text-brand-700">{institutionLabel}</Link>
                 : <p className="text-lg font-medium text-slate-700">{institutionLabel}</p>}
+              {course.parentInstitutionName && university && (
+                <p className="mt-0.5 text-base text-slate-500">
+                  <Link href={`/universidades/${university.slug}/`} className="hover:text-brand-700">
+                    {course.parentInstitutionName}
+                  </Link>
+                </p>
+              )}
             </div>
           )}
-          <div className="mt-3 flex flex-wrap gap-2 text-xs font-medium uppercase tracking-wide text-slate-500">
-            {course.cycle && (
-              <Link href={`/ciclos/${slugify(course.cycle)}/`} className="rounded-full bg-slate-100 px-3 py-1 hover:bg-brand-100 hover:text-brand-700">{course.cycle}</Link>
-            )}
-          </div>
 
           {course.courseDescription && (
-            <blockquote className="mt-6 rounded-2xl border-l-4 border-brand-600 bg-brand-50 px-4 py-4 sm:px-6 sm:py-5">
-              <p className="text-base leading-7 text-slate-800" dangerouslySetInnerHTML={{ __html: renderMarkdown(course.courseDescription) }} />
-            </blockquote>
+            <div className="mt-6 rounded-2xl border border-slate-200 bg-white px-6 py-5 shadow-sm">
+              <h2 className="text-2xl font-semibold text-slate-950">Sobre este curso</h2>
+              <p className="mt-3 text-base leading-7 text-slate-700" dangerouslySetInnerHTML={{ __html: renderMarkdown(course.courseDescription) }} />
+            </div>
           )}
 
           {/* Unemployment rate */}
@@ -298,10 +315,31 @@ export default async function CourseDetailPage({ params }: PageProps) {
             </section>
           )}
 
+        </div>
+
+        {/* Right column */}
+        <aside className="grid content-start gap-6">
+          <UsefulLinks course={course} />
+          <MapEmbed query={mapQuery} title={`Localização de ${institutionLabel || course.courseName}`} />
+
+          {relatedCourses.length > 0 && (
+            <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h2 className="text-lg font-semibold text-slate-950">Cursos relacionados</h2>
+              <div className="mt-3 flex flex-col gap-1">
+                {relatedCourses.map((related) => (
+                  <Link key={related.slug} href={`/cursos/${related.slug}/`} className="rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700">
+                    <span className="block">{related.courseName}</span>
+                    {related.institutionName && <span className="block text-xs font-normal text-slate-500">{related.institutionName}</span>}
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
           {sameInstitutionCourses.length > 0 && (
-            <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h2 className="text-2xl font-semibold text-slate-950">Outros cursos da mesma instituição</h2>
-              <div className="mt-4 grid gap-2 sm:grid-cols-2">
+            <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h2 className="text-lg font-semibold text-slate-950">Outros cursos da mesma instituição</h2>
+              <div className="mt-3 flex flex-col gap-1">
                 {sameInstitutionCourses.map((sameCourse) => (
                   <Link key={sameCourse.slug} href={`/cursos/${sameCourse.slug}/`} className="rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700">
                     <span className="block">{sameCourse.courseName}</span>
@@ -312,25 +350,6 @@ export default async function CourseDetailPage({ params }: PageProps) {
             </section>
           )}
 
-          {relatedCourses.length > 0 && (
-            <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h2 className="text-2xl font-semibold text-slate-950">Cursos relacionados</h2>
-              <div className="mt-4 grid gap-2 sm:grid-cols-2">
-                {relatedCourses.map((related) => (
-                  <Link key={related.slug} href={`/cursos/${related.slug}/`} className="rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700">
-                    <span className="block">{related.courseName}</span>
-                    {related.institutionName && <span className="block text-xs font-normal text-slate-500">{related.institutionName}</span>}
-                  </Link>
-                ))}
-              </div>
-            </section>
-          )}
-        </div>
-
-        {/* Right column */}
-        <aside className="grid content-start gap-6">
-          <UsefulLinks course={course} />
-          <MapEmbed query={mapQuery} title={`Localização de ${institutionLabel || course.courseName}`} />
           {ADS_ENABLED && <AdSlot label="Página de curso — lateral" />}
         </aside>
       </article>

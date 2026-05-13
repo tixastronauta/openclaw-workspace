@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Container } from "@/components/Container";
 import { CourseCard } from "@/components/CourseCard";
+import { DistrictMiniMap } from "@/components/DistrictMiniMap";
 import { getAllDistricts, getCoursesByDistrict, getDistrictBySlug, getFacultySlugByInstitution } from "@/lib/courses";
 
 type PageProps = { params: Promise<{ slug: string }> };
@@ -39,12 +40,16 @@ export default async function DistritoPage({ params }: PageProps) {
   const institutions = Array.from(byInstitution.entries()).sort(([a], [b]) => a.localeCompare(b, "pt"));
 
   return (
-    <Container className="py-10">
+    <Container className="relative overflow-hidden py-10">
+      <div className="pointer-events-none fixed right-32 top-[60px] z-0 hidden opacity-40 lg:block">
+        <DistrictMiniMap districtName={district.name} className="h-[700px]" />
+      </div>
+      <div className="relative z-10">
       <Breadcrumbs items={[{ label: "Distritos", href: "/distritos/" }, { label: district.name }]} />
 
-      <section>
+      <section className="flex flex-wrap items-baseline gap-x-4 gap-y-2">
         <h1 className="text-4xl font-bold tracking-tight text-slate-950">Distrito de {district.name}</h1>
-        <div className="mt-3 flex flex-wrap gap-3 text-sm text-slate-600">
+        <div className="flex flex-wrap gap-3 text-sm text-slate-600">
           <span className="rounded-full bg-slate-100 px-3 py-1 font-medium">{district.faculties.length} institui{district.faculties.length === 1 ? "ção" : "ções"}</span>
           <span className="rounded-full bg-slate-100 px-3 py-1 font-medium">{district.courseCount} curso{district.courseCount === 1 ? "" : "s"}</span>
         </div>
@@ -58,7 +63,7 @@ export default async function DistritoPage({ params }: PageProps) {
 
           return (
             <div key={institutionName}>
-              <h2 className="sticky top-16 z-20 -mx-2 mb-2 border-b border-slate-200 bg-slate-50/95 px-2 py-2 text-2xl font-semibold text-slate-950 backdrop-blur">
+              <h2 className="sticky top-16 z-20 -mx-2 mb-2 px-2 py-2 text-2xl font-semibold text-slate-950">
                 {facultySlug ? (
                   <Link href={`/faculdades/${facultySlug}/`} className="hover:text-brand-700">{institutionLabel}</Link>
                 ) : institutionLabel}
@@ -75,6 +80,7 @@ export default async function DistritoPage({ params }: PageProps) {
           );
         })}
       </section>
+      </div>
     </Container>
   );
 }

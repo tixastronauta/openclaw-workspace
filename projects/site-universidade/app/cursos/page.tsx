@@ -24,7 +24,7 @@ export default function CoursesPage() {
       <Breadcrumbs items={[{ label: "Cursos" }]} />
       <section>
         <h1 className="text-4xl font-bold tracking-tight text-slate-950">Cursos</h1>
-        <p className="mt-4 max-w-3xl text-slate-700">
+        <p className="mt-4 text-slate-700">
           Pesquisa cursos do ensino superior em Portugal, consulta notas de entrada disponíveis e acede rapidamente às fontes oficiais.
         </p>
       </section>

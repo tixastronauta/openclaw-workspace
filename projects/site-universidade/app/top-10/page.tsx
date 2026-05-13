@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Trophy } from "lucide-react";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Container } from "@/components/Container";
+import { DistrictMiniMap } from "@/components/DistrictMiniMap";
 import { getFacultySlugByInstitution } from "@/lib/courses";
 import { formatTop10Value, getTop10Metrics } from "@/lib/top10";
 
@@ -19,7 +21,7 @@ export default function Top10Page() {
       <Breadcrumbs items={[{ label: "Top 10" }]} />
       <section>
         <h1 className="text-4xl font-bold tracking-tight text-slate-950">Top 10 cursos</h1>
-        <p className="mt-4 max-w-3xl text-slate-700">
+        <p className="mt-4 text-slate-700">
           Rankings calculados a partir dos dados estatísticos disponíveis para cada curso. Quando não há dados suficientes, o curso não entra nesse ranking.
         </p>
       </section>
@@ -47,8 +49,25 @@ export default function Top10Page() {
                   const institutionLabel = [course.institutionName, course.institutionSigla ? `(${course.institutionSigla})` : undefined].filter(Boolean).join(" ");
 
                   return (
-                    <li key={course.slug} className="grid gap-3 py-4 sm:grid-cols-[3rem_1fr_auto] sm:items-center">
-                      <span className="text-2xl font-bold tabular-nums text-slate-300">{index + 1}</span>
+                    <li key={course.slug} className="grid gap-3 rounded-xl px-2 py-4 transition-colors hover:bg-slate-50 sm:grid-cols-[3rem_1fr_auto_auto] sm:items-center">
+                      {index === 0 ? (
+                        <div className="flex flex-col items-center gap-0.5">
+                          <Trophy className="h-6 w-6 text-yellow-400" strokeWidth={1.5} />
+                          <span className="text-xs font-bold text-yellow-400">1</span>
+                        </div>
+                      ) : index === 1 ? (
+                        <div className="flex flex-col items-center gap-0.5">
+                          <Trophy className="h-6 w-6 text-slate-400" strokeWidth={1.5} />
+                          <span className="text-xs font-bold text-slate-400">2</span>
+                        </div>
+                      ) : index === 2 ? (
+                        <div className="flex flex-col items-center gap-0.5">
+                          <Trophy className="h-6 w-6 text-amber-600" strokeWidth={1.5} />
+                          <span className="text-xs font-bold text-amber-600">3</span>
+                        </div>
+                      ) : (
+                        <span className="block text-center text-[20px] font-bold tabular-nums text-slate-300">{index + 1}</span>
+                      )}
                       <div>
                         <Link href={`/cursos/${course.slug}/`} className="font-semibold text-slate-950 hover:text-brand-700">
                           {course.courseName}
@@ -61,6 +80,7 @@ export default function Top10Page() {
                           </p>
                         )}
                       </div>
+                      <DistrictMiniMap districtName={course.distrito} />
                       <div className="rounded-xl bg-brand-50 px-3 py-2 text-left sm:text-right">
                         <p className="text-xs font-medium uppercase tracking-wide text-brand-700">{metric.valueLabel}</p>
                         <p className="text-lg font-bold tabular-nums text-brand-900">{formatTop10Value(metric.id, value)}</p>

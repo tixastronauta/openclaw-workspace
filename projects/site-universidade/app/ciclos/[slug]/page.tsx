@@ -37,7 +37,7 @@ export default async function CyclePage({ params }: PageProps) {
       <Breadcrumbs items={[{ label: "Ciclos", href: "/ciclos/" }, { label: cycle }]} />
       <section>
         <h1 className="text-4xl font-bold tracking-tight text-slate-950">{cycle}</h1>
-        <p className="mt-4 max-w-3xl text-slate-700">
+        <p className="mt-4 text-slate-700">
           {courses.length} curso{courses.length === 1 ? "" : "s"} {courses.length === 1 ? "disponível" : "disponíveis"} neste ciclo.
         </p>
       </section>

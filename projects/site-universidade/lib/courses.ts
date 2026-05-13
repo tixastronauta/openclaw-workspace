@@ -65,6 +65,8 @@ export type Course = {
   ageDistribution?: AgeDistributionItem[];
   genderData?: GenderData;
   nationalityData?: NationalityData;
+  parentInstitutionName?: string;
+  parentInstitutionAcronym?: string;
 };
 
 type CsvRow = Record<string, string | undefined>;
@@ -295,6 +297,8 @@ export function getAllCourses(): Course[] {
       institutionSigla: getFirst(row, ["institutionSigla", "institution_sigla", "sigla"]),
       institutionUrl: getFirst(row, ["institutionUrl", "institution_url", "url_instituicao"]),
       courseUrl: getFirst(row, ["courseUrl", "course_url", "url_curso"]),
+      parentInstitutionName: getFirst(row, ["parent_institution_name", "parentInstitutionName"]),
+      parentInstitutionAcronym: getFirst(row, ["parent_institution_acronym", "parentInstitutionAcronym"]),
       cidade: getFirst(row, ["cidade"]),
       distrito: getFirst(row, ["distrito"]),
       morada: getFirst(row, ["morada"]),
@@ -355,6 +359,17 @@ export type Faculty = {
   distrito?: string;
   morada?: string;
   courses: Course[];
+  parentInstitutionName?: string;
+  parentInstitutionAcronym?: string;
+};
+
+export type University = {
+  slug: string;
+  name: string;
+  acronym?: string;
+  url?: string;
+  faculties: Faculty[];
+  courses: Course[];
 };
 
 export function getAllFaculties(): Faculty[] {
@@ -378,7 +393,9 @@ export function getAllFaculties(): Faculty[] {
         cidade: first.cidade,
         distrito: first.distrito,
         morada: first.morada,
-        courses: courses.sort((a, b) => a.courseName.localeCompare(b.courseName, "pt"))
+        courses: courses.sort((a, b) => a.courseName.localeCompare(b.courseName, "pt")),
+        parentInstitutionName: first.parentInstitutionName,
+        parentInstitutionAcronym: first.parentInstitutionAcronym
       };
     })
     .sort((a, b) => a.institutionName.localeCompare(b.institutionName, "pt"));
@@ -391,6 +408,66 @@ export function getFacultySlugByInstitution(institutionName?: string, institutio
 
 export function getFacultyBySlug(slug: string): Faculty | undefined {
   return getAllFaculties().find((faculty) => faculty.slug === slug);
+}
+
+// ── Universities ─────────────────────────────────────────────────────────────
+
+export function getAllUniversities(): University[] {
+  const faculties = getAllFaculties();
+  const grouped = new Map<string, { name: string; acronym?: string; url?: string; faculties: Faculty[] }>();
+
+  for (const faculty of faculties) {
+    if (faculty.parentInstitutionName) {
+      const key = faculty.parentInstitutionName;
+      if (!grouped.has(key)) {
+        grouped.set(key, { name: key, acronym: faculty.parentInstitutionAcronym, url: faculty.institutionUrl, faculties: [] });
+      }
+      grouped.get(key)!.faculties.push(faculty);
+    } else {
+      // standalone institution — is its own university
+      const key = `__standalone__${faculty.slug}`;
+      grouped.set(key, { name: faculty.institutionName, acronym: faculty.institutionSigla, url: faculty.institutionUrl, faculties: [] });
+    }
+  }
+
+  // Assign slugs with dedup counter
+  const seen = new Map<string, number>();
+  const universities: University[] = [];
+
+  for (const [key, group] of grouped) {
+    const baseSlug = key.startsWith("__standalone__")
+      ? key.slice("__standalone__".length) // reuse existing faculty slug for standalone
+      : slugify(group.name);
+    const count = seen.get(baseSlug) ?? 0;
+    seen.set(baseSlug, count + 1);
+    const slug = count === 0 ? baseSlug : `${baseSlug}-${count + 1}`;
+
+    const standaloneKey = key.startsWith("__standalone__") ? key.slice("__standalone__".length) : null;
+    const standaloneFaculty = standaloneKey ? faculties.find((f) => f.slug === standaloneKey) : undefined;
+
+    universities.push({
+      slug,
+      name: group.name,
+      acronym: group.acronym,
+      url: group.url,
+      faculties: group.faculties.sort((a, b) => a.institutionName.localeCompare(b.institutionName, "pt")),
+      courses: standaloneFaculty ? standaloneFaculty.courses : []
+    });
+  }
+
+  return universities.sort((a, b) => a.name.localeCompare(b.name, "pt"));
+}
+
+export function getUniversityBySlug(slug: string): University | undefined {
+  return getAllUniversities().find((u) => u.slug === slug);
+}
+
+export function getUniversityForFaculty(faculty: Faculty): University | undefined {
+  return getAllUniversities().find((u) =>
+    faculty.parentInstitutionName
+      ? u.name === faculty.parentInstitutionName
+      : u.slug === faculty.slug
+  );
 }
 
 // ── Districts ────────────────────────────────────────────────────────────────

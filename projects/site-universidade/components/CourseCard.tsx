@@ -16,7 +16,7 @@ function CycleIcon({ cycle }: { cycle?: string }) {
   const label = kind === "licenciatura" ? "Licenciatura" : kind === "mestrado" ? "Mestrado" : "Preparatório";
 
   return (
-    <span className="relative inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-500" title={label} aria-label={label}>
+    <span className="group/badge relative inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-500" title={label} aria-label={label}>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" aria-hidden="true">
         {kind === "licenciatura" && (
           <>
@@ -39,7 +39,7 @@ function CycleIcon({ cycle }: { cycle?: string }) {
           </>
         )}
       </svg>
-      <span className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-2 hidden -translate-x-1/2 whitespace-nowrap rounded-lg bg-slate-950 px-2 py-1 text-xs font-medium text-white shadow-lg group-hover:inline-flex group-focus-visible:inline-flex">
+      <span className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-2 hidden -translate-x-1/2 whitespace-nowrap rounded-lg bg-slate-950 px-2 py-1 text-xs font-medium text-white shadow-lg group-hover/badge:inline-flex group-focus-visible/badge:inline-flex">
         {label}
       </span>
     </span>
@@ -47,20 +47,24 @@ function CycleIcon({ cycle }: { cycle?: string }) {
 }
 
 export function CourseCard({ course }: { course: Course }) {
-  const institutionLabel = [course.institutionName, course.institutionSigla ? `(${course.institutionSigla})` : undefined].filter(Boolean).join(" ");
-
   return (
     <Link href={`/cursos/${course.slug}/`} className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
       <div>
-        <h2 className="text-lg font-semibold text-slate-950">
-          <span className="inline-flex items-center gap-2 group-hover:text-brand-700">
-            <span>{course.courseName}</span>
-            <CycleIcon cycle={course.cycle} />
-          </span>
-        </h2>
-        {institutionLabel && <p className="mt-2 text-sm text-slate-600">{institutionLabel}</p>}
+        <h2 className="text-lg font-semibold text-slate-950 group-hover:text-brand-700">{course.courseName}</h2>
+        {course.institutionName && (
+          <div className="mt-2 text-sm text-slate-600">
+            <p>
+              {course.institutionName}
+              {course.institutionSigla ? ` (${course.institutionSigla})` : null}
+            </p>
+            {course.parentInstitutionName && course.parentInstitutionName !== course.institutionName && (
+              <p className="text-slate-400">{course.parentInstitutionName}</p>
+            )}
+          </div>
+        )}
       </div>
-      <div className="mt-auto pt-4 text-right">
+      <div className="mt-auto flex items-center justify-between pt-4">
+        <CycleIcon cycle={course.cycle} />
         <span className="text-sm font-semibold text-brand-700 group-hover:text-brand-900">Ver detalhes →</span>
       </div>
     </Link>

@@ -24,7 +24,7 @@ export default function FacultiesPage() {
       <Breadcrumbs items={[{ label: "Faculdades" }]} />
       <section>
         <h1 className="text-4xl font-bold tracking-tight text-slate-950">Faculdades e instituições</h1>
-        <p className="mt-4 max-w-3xl text-slate-700">
+        <p className="mt-4 text-slate-700">
           Consulta instituições de ensino superior e vê os cursos disponíveis em cada uma.
         </p>
       </section>
@@ -43,7 +43,10 @@ export default function FacultiesPage() {
               {items.map((faculty) => (
                 <Link key={faculty.slug} href={`/faculdades/${faculty.slug}/`} className="block rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
                   <h2 className="text-lg font-semibold text-slate-950">
-                    <span className="hover:text-brand-700">{faculty.institutionName}{faculty.institutionSigla ? ` (${faculty.institutionSigla})` : ""}</span>
+                    <span className="hover:text-brand-700">
+                      {faculty.institutionName}
+                      {faculty.institutionSigla ? <span className="ml-1.5 font-semibold text-slate-400">({faculty.institutionSigla})</span> : null}
+                    </span>
                   </h2>
                   <p className="mt-2 text-sm text-slate-600">{faculty.courses.length} curso{faculty.courses.length === 1 ? "" : "s"} {faculty.courses.length === 1 ? "disponível" : "disponíveis"}</p>
                   <span className="mt-4 inline-flex text-sm font-semibold text-brand-700 hover:text-brand-900">

@@ -19,7 +19,7 @@ export default function CyclesPage() {
       <Breadcrumbs items={[{ label: "Ciclos" }]} />
       <section>
         <h1 className="text-4xl font-bold tracking-tight text-slate-950">Ciclos de estudo</h1>
-        <p className="mt-4 max-w-3xl text-slate-700">
+        <p className="mt-4 text-slate-700">
           Explora cursos do ensino superior em Portugal por tipo de ciclo.
         </p>
       </section>

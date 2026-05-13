@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { ADS_ENABLED, AdSlot } from "@/components/AdSlot";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Container } from "@/components/Container";
 import { CourseCard } from "@/components/CourseCard";
 import { MapEmbed } from "@/components/MapEmbed";
-import { getAllFaculties, getFacultyBySlug } from "@/lib/courses";
+import { getAllFaculties, getFacultyBySlug, getUniversityForFaculty } from "@/lib/courses";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -42,17 +42,37 @@ export default async function FacultyPage({ params }: PageProps) {
   if (!faculty) notFound();
 
   const mapQuery = [faculty.morada, faculty.cidade, faculty.distrito, faculty.institutionName].filter(Boolean).join(", ");
+  const university = getUniversityForFaculty(faculty);
+
+  const breadcrumbs = [
+    { label: "Universidades", href: "/universidades/" },
+    // Only show university crumb when faculty has a distinct parent (not standalone)
+    ...(faculty.parentInstitutionName && university
+      ? [{ label: university.acronym ?? university.name, title: university.name, href: `/universidades/${university.slug}/` }]
+      : []),
+    { label: faculty.institutionName }
+  ];
 
   return (
     <Container className="py-6 sm:py-10">
-      <Breadcrumbs items={[{ label: "Faculdades", href: "/faculdades/" }, { label: faculty.institutionName }]} />
+      <Breadcrumbs items={breadcrumbs} />
       <section>
-        <h1 className="text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl lg:text-4xl">{faculty.institutionName}{faculty.institutionSigla ? ` (${faculty.institutionSigla})` : ""}</h1>
+        <h1 className="text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl lg:text-4xl">
+          {faculty.institutionName}
+          {faculty.institutionSigla ? <span className="ml-2 text-base font-semibold text-slate-500">({faculty.institutionSigla})</span> : null}
+        </h1>
+        {faculty.parentInstitutionName && university && (
+          <p className="mt-1 text-base text-slate-500">
+            <Link href={`/universidades/${university.slug}/`} className="hover:text-brand-700">
+              {faculty.parentInstitutionName}
+            </Link>
+          </p>
+        )}
         <div className="mt-3 flex flex-wrap gap-2 text-xs font-medium uppercase tracking-wide text-slate-500">
           <span className="rounded-full bg-slate-100 px-3 py-1">{faculty.courses.length} curso{faculty.courses.length === 1 ? "" : "s"}</span>
         </div>
-        <p className="mt-4 max-w-3xl text-slate-700">
-          Cursos desta instituição disponíveis no Universidade.pt.
+        <p className="mt-4 text-slate-700">
+          Cursos desta instituição de ensino superior.
         </p>
       </section>
 
@@ -64,9 +84,6 @@ export default async function FacultyPage({ params }: PageProps) {
 
       <section className="mt-10 grid gap-8 lg:grid-cols-[1fr_300px]">
         <div className="min-w-0">
-          <div className="mb-5">
-            <h2 className="text-2xl font-semibold text-slate-950">Cursos</h2>
-          </div>
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
             {faculty.courses.map((course) => <CourseCard key={course.slug} course={course} />)}
           </div>
