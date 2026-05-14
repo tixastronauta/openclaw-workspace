@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "total": 1211,
+  "remaining": 0,
+  "processed": 1211,
+  "prepared": 1211,
+  "errors": 0,
+  "with_institution_text": 343,
+  "written": 1211,
+  "finishedAt": "2026-05-14 23:34:40 WEST",
+  "log_path": "/data/.openclaw/workspace/projects/dges/data/rewrite_course_descriptions.log",
+  "cache_path": "/data/.openclaw/workspace/projects/dges/data/rewrite_course_descriptions_cache.json",
+  "output_path": "/data/.openclaw/workspace/projects/dges/data/rewrite_course_descriptions_output.json"
+}
