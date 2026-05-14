@@ -4,6 +4,16 @@ Started: 2026-04-22
 
 Project for DGES-related crawling, extraction, and processing work. It contains the project scripts plus the source and generated data used to analyze DGES course and admissions materials.
 
+## Working spreadsheet
+
+The crawl/enrichment work writes to the shared Google Sheets spreadsheet used as the working data store:
+
+- Spreadsheet: `1m7LzrYoYTrCHYr3vBiaeK62ZOw-4GQVCbXse6d5FE6E`
+- Main sheet/range used by the scripts: `dges_cursos_2026`
+- URL: <https://docs.google.com/spreadsheets/d/1m7LzrYoYTrCHYr3vBiaeK62ZOw-4GQVCbXse6d5FE6E/edit?gid=13716>
+
+When updating it from scripts, prefer narrow row/column range updates and avoid overwriting entire rows, because other processes may be enriching different columns at the same time.
+
 ## InfoCursos enrichment
 
 InfoCursos scraping requirements are documented in `infocursos_requirements.md`.
