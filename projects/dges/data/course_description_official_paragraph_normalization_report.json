@@ -1,0 +1,248 @@
+{
+  "generated": "2026-05-15 09:59:31 WEST",
+  "write": true,
+  "rows": 29,
+  "prepared": 29,
+  "counters": {
+    "processed": 29,
+    "prepared": 29,
+    "errors": 0,
+    "flagged_after": 1
+  },
+  "details": {
+    "35": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1311
+    },
+    "46": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1220
+    },
+    "30": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1181
+    },
+    "83": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1149
+    },
+    "135": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1182
+    },
+    "60": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1210
+    },
+    "181": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1270
+    },
+    "299": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1319
+    },
+    "197": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1304
+    },
+    "373": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1175
+    },
+    "381": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1160
+    },
+    "396": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1313
+    },
+    "438": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1359
+    },
+    "481": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1211
+    },
+    "496": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1193
+    },
+    "520": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1265
+    },
+    "535": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1138
+    },
+    "534": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1156
+    },
+    "528": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1270
+    },
+    "536": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1228
+    },
+    "540": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1206
+    },
+    "543": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1170
+    },
+    "944": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1262
+    },
+    "923": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1133
+    },
+    "991": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1213
+    },
+    "1014": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1196
+    },
+    "1089": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1214
+    },
+    "982": {
+      "before_flags": [
+        "bad_fragment"
+      ],
+      "after_flags": [
+        "bad_fragment"
+      ],
+      "error": "validation failed attempt 3: ['bad_fragment']",
+      "chars": 1211
+    },
+    "1168": {
+      "before_flags": [
+        "too_long"
+      ],
+      "after_flags": [],
+      "error": null,
+      "chars": 1202
+    }
+  }
+}

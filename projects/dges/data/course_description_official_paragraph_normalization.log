@@ -1,0 +1,522 @@
+[2026-05-15 09:41:39 WEST] starting paragraph normalization rows=5 write=False workers=2 model=openai/gpt-4.1-mini
+[2026-05-15 09:41:46 WEST] [1/5] row 12 chars=1382 before=['paragraphs_2'] after=[]
+[2026-05-15 09:41:47 WEST] [2/5] row 8 chars=1131 before=['paragraphs_2'] after=[]
+[2026-05-15 09:41:54 WEST] [3/5] row 15 chars=1297 before=['paragraphs_2'] after=[]
+[2026-05-15 09:41:58 WEST] [4/5] row 14 chars=1394 before=['paragraphs_1'] after=[]
+[2026-05-15 09:41:59 WEST] [5/5] row 21 chars=1163 before=['paragraphs_2'] after=[]
+[2026-05-15 09:41:59 WEST] done :: {"processed": 5, "prepared": 5, "errors": 0, "flagged_after": 0}
+[2026-05-15 09:42:08 WEST] starting paragraph normalization rows=252 write=True workers=4 model=openai/gpt-4.1-mini
+[2026-05-15 09:42:13 WEST] [1/252] row 8 chars=1247 before=['paragraphs_2'] after=[]
+[2026-05-15 09:42:13 WEST] [2/252] row 14 chars=1374 before=['paragraphs_1'] after=[]
+[2026-05-15 09:42:14 WEST] [3/252] row 12 chars=1391 before=['paragraphs_2'] after=[]
+[2026-05-15 09:42:19 WEST] [4/252] row 24 chars=1299 before=['paragraphs_1'] after=[]
+[2026-05-15 09:42:21 WEST] [5/252] row 21 chars=1083 before=['paragraphs_2'] after=[]
+[2026-05-15 09:42:23 WEST] [6/252] row 27 chars=1400 before=['paragraphs_1'] after=[]
+[2026-05-15 09:42:25 WEST] [7/252] row 15 chars=1397 before=['paragraphs_2'] after=[]
+[2026-05-15 09:42:28 WEST] [8/252] row 36 chars=1312 before=['paragraphs_1'] after=[]
+[2026-05-15 09:42:35 WEST] [9/252] row 43 chars=1340 before=['paragraphs_1'] after=[]
+[2026-05-15 09:42:36 WEST] [10/252] row 38 chars=1219 before=['paragraphs_2'] after=[]
+[2026-05-15 09:42:40 WEST] [11/252] row 44 chars=1296 before=['paragraphs_2'] after=[]
+[2026-05-15 09:42:43 WEST] [12/252] row 30 chars=1500 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:42:45 WEST] [13/252] row 35 chars=1543 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:42:45 WEST] [14/252] row 50 chars=1341 before=['paragraphs_2'] after=[]
+[2026-05-15 09:42:50 WEST] [15/252] row 57 chars=1362 before=['paragraphs_1'] after=[]
+[2026-05-15 09:42:50 WEST] [16/252] row 55 chars=1298 before=['paragraphs_1'] after=[]
+[2026-05-15 09:42:56 WEST] [17/252] row 66 chars=1372 before=['paragraphs_1'] after=[]
+[2026-05-15 09:42:56 WEST] [18/252] row 73 chars=1170 before=['paragraphs_2'] after=[]
+[2026-05-15 09:42:56 WEST] [19/252] row 46 chars=1411 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:43:02 WEST] [20/252] row 104 chars=1138 before=['paragraphs_2'] after=[]
+[2026-05-15 09:43:02 WEST] [21/252] row 84 chars=1375 before=['paragraphs_2'] after=[]
+[2026-05-15 09:43:06 WEST] [22/252] row 60 chars=1474 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:43:06 WEST] [23/252] row 110 chars=1195 before=['paragraphs_1'] after=[]
+[2026-05-15 09:43:11 WEST] [24/252] row 114 chars=1262 before=['paragraphs_2'] after=[]
+[2026-05-15 09:43:16 WEST] [25/252] row 118 chars=1235 before=['paragraphs_2'] after=[]
+[2026-05-15 09:43:16 WEST] [26/252] row 83 chars=1418 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:43:19 WEST] [27/252] row 112 chars=1315 before=['paragraphs_1'] after=[]
+[2026-05-15 09:43:19 WEST] [28/252] row 127 chars=1311 before=['paragraphs_1'] after=[]
+[2026-05-15 09:43:21 WEST] [29/252] row 125 chars=1228 before=['paragraphs_1'] after=[]
+[2026-05-15 09:43:25 WEST] [30/252] row 129 chars=1164 before=['paragraphs_2'] after=[]
+[2026-05-15 09:43:26 WEST] [31/252] row 117 chars=1331 before=['paragraphs_2'] after=[]
+[2026-05-15 09:43:29 WEST] [32/252] row 136 chars=1197 before=['paragraphs_1'] after=[]
+[2026-05-15 09:43:29 WEST] [33/252] row 128 chars=1392 before=['paragraphs_1'] after=[]
+[2026-05-15 09:43:32 WEST] [34/252] row 144 chars=1300 before=['paragraphs_2'] after=[]
+[2026-05-15 09:43:33 WEST] [35/252] row 150 chars=1178 before=['paragraphs_1'] after=[]
+[2026-05-15 09:43:36 WEST] [36/252] row 145 chars=1241 before=['paragraphs_1'] after=[]
+[2026-05-15 09:43:37 WEST] [37/252] row 155 chars=1296 before=['paragraphs_1'] after=[]
+[2026-05-15 09:43:38 WEST] [38/252] row 153 chars=1159 before=['paragraphs_2'] after=[]
+[2026-05-15 09:43:40 WEST] [39/252] row 163 chars=1347 before=['paragraphs_1'] after=[]
+[2026-05-15 09:43:41 WEST] [40/252] row 135 chars=1469 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:43:42 WEST] [41/252] row 156 chars=1218 before=['paragraphs_1'] after=[]
+[2026-05-15 09:43:42 WEST] [42/252] row 165 chars=1397 before=['paragraphs_1'] after=[]
+[2026-05-15 09:43:46 WEST] [43/252] row 177 chars=1161 before=['paragraphs_2'] after=[]
+[2026-05-15 09:43:47 WEST] [44/252] row 184 chars=1342 before=['paragraphs_2'] after=[]
+[2026-05-15 09:43:48 WEST] [45/252] row 191 chars=1389 before=['paragraphs_2'] after=[]
+[2026-05-15 09:43:52 WEST] [46/252] row 205 chars=1278 before=['paragraphs_1'] after=[]
+[2026-05-15 09:43:52 WEST] [47/252] row 206 chars=1205 before=['paragraphs_1'] after=[]
+[2026-05-15 09:43:57 WEST] [48/252] row 218 chars=1379 before=['paragraphs_1'] after=[]
+[2026-05-15 09:43:58 WEST] [49/252] row 208 chars=1233 before=['paragraphs_1'] after=[]
+[2026-05-15 09:44:00 WEST] [50/252] row 222 chars=1334 before=['paragraphs_2'] after=[]
+[2026-05-15 09:44:04 WEST] [51/252] row 197 chars=1543 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:44:04 WEST] [52/252] row 181 chars=1521 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:44:04 WEST] [53/252] row 224 chars=1356 before=['paragraphs_1'] after=[]
+[2026-05-15 09:44:05 WEST] [54/252] row 237 chars=1347 before=['paragraphs_1'] after=[]
+[2026-05-15 09:44:09 WEST] [55/252] row 247 chars=1345 before=['paragraphs_1'] after=[]
+[2026-05-15 09:44:09 WEST] [56/252] row 241 chars=1278 before=['paragraphs_2'] after=[]
+[2026-05-15 09:44:10 WEST] [57/252] row 252 chars=1267 before=['paragraphs_1'] after=[]
+[2026-05-15 09:44:14 WEST] [58/252] row 256 chars=1353 before=['paragraphs_1'] after=[]
+[2026-05-15 09:44:18 WEST] [59/252] row 240 chars=1376 before=['paragraphs_1'] after=[]
+[2026-05-15 09:44:25 WEST] [60/252] row 254 chars=1354 before=['paragraphs_1'] after=[]
+[2026-05-15 09:44:26 WEST] [61/252] row 257 chars=1189 before=['paragraphs_1'] after=[]
+[2026-05-15 09:44:30 WEST] [62/252] row 270 chars=1269 before=['paragraphs_1'] after=[]
+[2026-05-15 09:44:31 WEST] [63/252] row 268 chars=1383 before=['paragraphs_2'] after=[]
+[2026-05-15 09:44:35 WEST] [64/252] row 279 chars=1084 before=['paragraphs_2'] after=[]
+[2026-05-15 09:44:35 WEST] [65/252] row 277 chars=1231 before=['paragraphs_1'] after=[]
+[2026-05-15 09:44:37 WEST] [66/252] row 278 chars=1287 before=['paragraphs_1'] after=[]
+[2026-05-15 09:44:37 WEST] [67/252] row 267 chars=1349 before=['paragraphs_1'] after=[]
+[2026-05-15 09:44:40 WEST] [68/252] row 284 chars=1218 before=['paragraphs_1'] after=[]
+[2026-05-15 09:44:41 WEST] [69/252] row 296 chars=1236 before=['paragraphs_2'] after=[]
+[2026-05-15 09:44:43 WEST] [70/252] row 294 chars=1364 before=['paragraphs_1'] after=[]
+[2026-05-15 09:44:43 WEST] [71/252] row 297 chars=1163 before=['paragraphs_2'] after=[]
+[2026-05-15 09:44:44 WEST] [72/252] row 290 chars=1216 before=['paragraphs_1'] after=[]
+[2026-05-15 09:44:49 WEST] [73/252] row 300 chars=1113 before=['paragraphs_2'] after=[]
+[2026-05-15 09:44:49 WEST] [74/252] row 304 chars=1168 before=['paragraphs_1'] after=[]
+[2026-05-15 09:44:49 WEST] [75/252] row 302 chars=1358 before=['paragraphs_2'] after=[]
+[2026-05-15 09:44:54 WEST] [76/252] row 307 chars=1374 before=['paragraphs_2'] after=[]
+[2026-05-15 09:44:54 WEST] [77/252] row 306 chars=1320 before=['paragraphs_1'] after=[]
+[2026-05-15 09:44:55 WEST] [78/252] row 309 chars=1172 before=['paragraphs_1'] after=[]
+[2026-05-15 09:44:59 WEST] [79/252] row 312 chars=1301 before=['paragraphs_2'] after=[]
+[2026-05-15 09:45:01 WEST] [80/252] row 299 chars=1481 before=['paragraphs_2'] after=['too_long']
+[2026-05-15 09:45:04 WEST] [81/252] row 315 chars=1301 before=['paragraphs_1'] after=[]
+[2026-05-15 09:45:06 WEST] [82/252] row 325 chars=1364 before=['paragraphs_1'] after=[]
+[2026-05-15 09:45:06 WEST] [83/252] row 324 chars=1230 before=['paragraphs_2'] after=[]
+[2026-05-15 09:45:10 WEST] [84/252] row 332 chars=1222 before=['paragraphs_1'] after=[]
+[2026-05-15 09:45:11 WEST] [85/252] row 345 chars=1291 before=['paragraphs_1'] after=[]
+[2026-05-15 09:45:12 WEST] [86/252] row 338 chars=1375 before=['paragraphs_1'] after=[]
+[2026-05-15 09:45:13 WEST] [87/252] row 316 chars=1327 before=['paragraphs_1'] after=[]
+[2026-05-15 09:45:15 WEST] [88/252] row 347 chars=1291 before=['paragraphs_1'] after=[]
+[2026-05-15 09:45:16 WEST] [89/252] row 348 chars=1271 before=['paragraphs_1'] after=[]
+[2026-05-15 09:45:17 WEST] [90/252] row 349 chars=1290 before=['paragraphs_2'] after=[]
+[2026-05-15 09:45:18 WEST] [91/252] row 355 chars=1390 before=['paragraphs_1'] after=[]
+[2026-05-15 09:45:19 WEST] [92/252] row 359 chars=1363 before=['paragraphs_1'] after=[]
+[2026-05-15 09:45:21 WEST] [93/252] row 371 chars=1151 before=['paragraphs_2'] after=[]
+[2026-05-15 09:45:25 WEST] [94/252] row 374 chars=1286 before=['paragraphs_2'] after=[]
+[2026-05-15 09:45:27 WEST] [95/252] row 375 chars=1260 before=['paragraphs_1'] after=[]
+[2026-05-15 09:45:29 WEST] [96/252] row 360 chars=1332 before=['paragraphs_2'] after=[]
+[2026-05-15 09:45:31 WEST] [97/252] row 380 chars=1184 before=['paragraphs_2'] after=[]
+[2026-05-15 09:45:35 WEST] [98/252] row 373 chars=1431 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:45:40 WEST] [99/252] row 377 chars=1340 before=['paragraphs_1'] after=[]
+[2026-05-15 09:45:40 WEST] [100/252] row 388 chars=1259 before=['paragraphs_1'] after=[]
+[2026-05-15 09:45:43 WEST] [101/252] row 382 chars=1400 before=['paragraphs_1'] after=[]
+[2026-05-15 09:45:45 WEST] [102/252] row 389 chars=1362 before=['paragraphs_1'] after=[]
+[2026-05-15 09:45:46 WEST] [103/252] row 391 chars=1356 before=['paragraphs_2'] after=[]
+[2026-05-15 09:45:48 WEST] [104/252] row 381 chars=1418 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:45:49 WEST] [105/252] row 392 chars=1318 before=['paragraphs_1'] after=[]
+[2026-05-15 09:45:52 WEST] [106/252] row 403 chars=1398 before=['paragraphs_1'] after=[]
+[2026-05-15 09:45:53 WEST] [107/252] row 399 chars=1295 before=['paragraphs_2'] after=[]
+[2026-05-15 09:45:54 WEST] [108/252] row 405 chars=1154 before=['paragraphs_1'] after=[]
+[2026-05-15 09:45:59 WEST] [109/252] row 416 chars=1171 before=['paragraphs_2'] after=[]
+[2026-05-15 09:46:00 WEST] [110/252] row 411 chars=1387 before=['paragraphs_1'] after=[]
+[2026-05-15 09:46:01 WEST] [111/252] row 418 chars=1256 before=['paragraphs_2'] after=[]
+[2026-05-15 09:46:03 WEST] [112/252] row 423 chars=1118 before=['paragraphs_1'] after=[]
+[2026-05-15 09:46:06 WEST] [113/252] row 396 chars=1559 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:46:07 WEST] [114/252] row 428 chars=1241 before=['paragraphs_1'] after=[]
+[2026-05-15 09:46:08 WEST] [115/252] row 431 chars=1230 before=['paragraphs_1'] after=[]
+[2026-05-15 09:46:11 WEST] [116/252] row 435 chars=1397 before=['paragraphs_2'] after=[]
+[2026-05-15 09:46:12 WEST] [117/252] row 422 chars=1371 before=['paragraphs_1'] after=[]
+[2026-05-15 09:46:13 WEST] [118/252] row 442 chars=1371 before=['paragraphs_1'] after=[]
+[2026-05-15 09:46:16 WEST] [119/252] row 449 chars=1189 before=['paragraphs_2'] after=[]
+[2026-05-15 09:46:18 WEST] [120/252] row 454 chars=1280 before=['paragraphs_1'] after=[]
+[2026-05-15 09:46:19 WEST] [121/252] row 452 chars=1367 before=['paragraphs_1'] after=[]
+[2026-05-15 09:46:21 WEST] [122/252] row 458 chars=1273 before=['paragraphs_1'] after=[]
+[2026-05-15 09:46:26 WEST] [123/252] row 470 chars=1312 before=['paragraphs_2'] after=[]
+[2026-05-15 09:46:27 WEST] [124/252] row 461 chars=1315 before=['paragraphs_1'] after=[]
+[2026-05-15 09:46:28 WEST] [125/252] row 438 chars=1421 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:46:28 WEST] [126/252] row 467 chars=1391 before=['paragraphs_1'] after=[]
+[2026-05-15 09:46:31 WEST] [127/252] row 474 chars=1280 before=['paragraphs_1'] after=[]
+[2026-05-15 09:46:32 WEST] [128/252] row 479 chars=1166 before=['paragraphs_2'] after=[]
+[2026-05-15 09:46:33 WEST] [129/252] row 480 chars=1310 before=['paragraphs_2'] after=[]
+[2026-05-15 09:46:33 WEST] [130/252] row 472 chars=1344 before=['paragraphs_1'] after=[]
+[2026-05-15 09:46:36 WEST] [131/252] row 482 chars=1355 before=['paragraphs_2'] after=[]
+[2026-05-15 09:46:37 WEST] [132/252] row 484 chars=1190 before=['paragraphs_1'] after=[]
+[2026-05-15 09:46:40 WEST] [133/252] row 483 chars=1151 before=['paragraphs_1'] after=[]
+[2026-05-15 09:46:41 WEST] [134/252] row 491 chars=1391 before=['paragraphs_1'] after=[]
+[2026-05-15 09:46:42 WEST] [135/252] row 487 chars=1392 before=['paragraphs_2'] after=[]
+[2026-05-15 09:46:44 WEST] [136/252] row 492 chars=1187 before=['paragraphs_2'] after=[]
+[2026-05-15 09:46:46 WEST] [137/252] row 481 chars=1414 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:46:51 WEST] [138/252] row 493 chars=1271 before=['paragraphs_1'] after=[]
+[2026-05-15 09:46:54 WEST] [139/252] row 506 chars=1256 before=['paragraphs_2'] after=[]
+[2026-05-15 09:46:54 WEST] [140/252] row 504 chars=1311 before=['paragraphs_1'] after=[]
+[2026-05-15 09:46:56 WEST] [141/252] row 503 chars=1337 before=['paragraphs_1'] after=[]
+[2026-05-15 09:46:56 WEST] [142/252] row 496 chars=1420 before=['paragraphs_2'] after=['too_long']
+[2026-05-15 09:46:59 WEST] [143/252] row 515 chars=1234 before=['paragraphs_2'] after=[]
+[2026-05-15 09:47:00 WEST] [144/252] row 518 chars=1365 before=['paragraphs_1'] after=[]
+[2026-05-15 09:47:01 WEST] [145/252] row 522 chars=1274 before=['paragraphs_2'] after=[]
+[2026-05-15 09:47:03 WEST] [146/252] row 526 chars=1340 before=['paragraphs_1'] after=[]
+[2026-05-15 09:47:04 WEST] [147/252] row 524 chars=1173 before=['paragraphs_2'] after=[]
+[2026-05-15 09:47:05 WEST] [148/252] row 527 chars=1169 before=['paragraphs_2'] after=[]
+[2026-05-15 09:47:09 WEST] [149/252] row 531 chars=1392 before=['paragraphs_1'] after=[]
+[2026-05-15 09:47:09 WEST] [150/252] row 533 chars=1386 before=['paragraphs_1'] after=[]
+[2026-05-15 09:47:15 WEST] [151/252] row 520 chars=1472 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:47:22 WEST] [152/252] row 528 chars=1517 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:47:27 WEST] [153/252] row 534 chars=1454 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:47:33 WEST] [154/252] row 536 chars=1490 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:47:35 WEST] [155/252] row 535 chars=1450 before=['paragraphs_2'] after=['too_long']
+[2026-05-15 09:47:39 WEST] [156/252] row 561 chars=1261 before=['paragraphs_1'] after=[]
+[2026-05-15 09:47:41 WEST] [157/252] row 540 chars=1478 before=['paragraphs_2'] after=['too_long']
+[2026-05-15 09:47:44 WEST] [158/252] row 569 chars=1288 before=['paragraphs_1'] after=[]
+[2026-05-15 09:47:45 WEST] [159/252] row 585 chars=1376 before=['paragraphs_1'] after=[]
+[2026-05-15 09:47:45 WEST] [160/252] row 543 chars=1499 before=['paragraphs_2'] after=['too_long']
+[2026-05-15 09:47:47 WEST] [161/252] row 589 chars=1269 before=['paragraphs_1'] after=[]
+[2026-05-15 09:47:48 WEST] [162/252] row 590 chars=1138 before=['paragraphs_1'] after=[]
+[2026-05-15 09:47:49 WEST] [163/252] row 592 chars=1172 before=['paragraphs_2'] after=[]
+[2026-05-15 09:47:54 WEST] [164/252] row 597 chars=1300 before=['paragraphs_1'] after=[]
+[2026-05-15 09:47:54 WEST] [165/252] row 559 chars=1398 before=['paragraphs_1'] after=[]
+[2026-05-15 09:47:54 WEST] [166/252] row 609 chars=1202 before=['paragraphs_1'] after=[]
+[2026-05-15 09:47:54 WEST] [167/252] row 606 chars=1400 before=['paragraphs_1'] after=[]
+[2026-05-15 09:47:57 WEST] [168/252] row 629 chars=1084 before=['paragraphs_2'] after=[]
+[2026-05-15 09:47:58 WEST] [169/252] row 637 chars=1124 before=['paragraphs_2'] after=[]
+[2026-05-15 09:47:58 WEST] [170/252] row 622 chars=1085 before=['paragraphs_2'] after=[]
+[2026-05-15 09:47:59 WEST] [171/252] row 630 chars=1349 before=['paragraphs_1'] after=[]
+[2026-05-15 09:48:03 WEST] [172/252] row 670 chars=1242 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:03 WEST] [173/252] row 661 chars=1378 before=['paragraphs_1'] after=[]
+[2026-05-15 09:48:03 WEST] [174/252] row 676 chars=1113 before=['paragraphs_1'] after=[]
+[2026-05-15 09:48:03 WEST] [175/252] row 673 chars=1166 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:06 WEST] [176/252] row 690 chars=1062 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:07 WEST] [177/252] row 718 chars=1062 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:07 WEST] [178/252] row 696 chars=1204 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:09 WEST] [179/252] row 688 chars=1236 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:11 WEST] [180/252] row 732 chars=1134 before=['paragraphs_1'] after=[]
+[2026-05-15 09:48:11 WEST] [181/252] row 727 chars=1173 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:14 WEST] [182/252] row 735 chars=1200 before=['paragraphs_1'] after=[]
+[2026-05-15 09:48:15 WEST] [183/252] row 742 chars=1107 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:16 WEST] [184/252] row 740 chars=1098 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:19 WEST] [185/252] row 760 chars=1317 before=['paragraphs_1'] after=[]
+[2026-05-15 09:48:19 WEST] [186/252] row 737 chars=1354 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:19 WEST] [187/252] row 775 chars=1359 before=['paragraphs_1'] after=[]
+[2026-05-15 09:48:19 WEST] [188/252] row 782 chars=1213 before=['paragraphs_1'] after=[]
+[2026-05-15 09:48:22 WEST] [189/252] row 790 chars=1157 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:23 WEST] [190/252] row 823 chars=1257 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:24 WEST] [191/252] row 784 chars=1062 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:26 WEST] [192/252] row 821 chars=1151 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:27 WEST] [193/252] row 824 chars=1291 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:28 WEST] [194/252] row 853 chars=1117 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:28 WEST] [195/252] row 827 chars=1262 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:31 WEST] [196/252] row 859 chars=1044 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:32 WEST] [197/252] row 861 chars=1071 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:32 WEST] [198/252] row 860 chars=1370 before=['paragraphs_1'] after=[]
+[2026-05-15 09:48:35 WEST] [199/252] row 870 chars=1051 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:36 WEST] [200/252] row 877 chars=1281 before=['paragraphs_1'] after=[]
+[2026-05-15 09:48:37 WEST] [201/252] row 884 chars=1229 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:43 WEST] [202/252] row 906 chars=1160 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:45 WEST] [203/252] row 900 chars=1206 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:45 WEST] [204/252] row 856 chars=1162 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:46 WEST] [205/252] row 912 chars=1095 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:49 WEST] [206/252] row 901 chars=1374 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:49 WEST] [207/252] row 917 chars=1274 before=['paragraphs_1'] after=[]
+[2026-05-15 09:48:49 WEST] [208/252] row 915 chars=1207 before=['paragraphs_1'] after=[]
+[2026-05-15 09:48:54 WEST] [209/252] row 942 chars=1256 before=['paragraphs_2'] after=[]
+[2026-05-15 09:48:55 WEST] [210/252] row 928 chars=1307 before=['paragraphs_1'] after=[]
+[2026-05-15 09:48:59 WEST] [211/252] row 945 chars=1138 before=['paragraphs_2'] after=[]
+[2026-05-15 09:49:02 WEST] [212/252] row 923 chars=1430 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:49:04 WEST] [213/252] row 953 chars=1227 before=['paragraphs_2'] after=[]
+[2026-05-15 09:49:07 WEST] [214/252] row 947 chars=1397 before=['paragraphs_1'] after=[]
+[2026-05-15 09:49:08 WEST] [215/252] row 966 chars=1345 before=['paragraphs_1'] after=[]
+[2026-05-15 09:49:08 WEST] [216/252] row 944 chars=1454 before=['paragraphs_2'] after=['too_long']
+[2026-05-15 09:49:08 WEST] [217/252] row 970 chars=1088 before=['paragraphs_2'] after=[]
+[2026-05-15 09:49:11 WEST] [218/252] row 972 chars=944 before=['paragraphs_2'] after=[]
+[2026-05-15 09:49:12 WEST] [219/252] row 974 chars=1071 before=['paragraphs_2'] after=[]
+[2026-05-15 09:49:15 WEST] [220/252] row 979 chars=1223 before=['paragraphs_2'] after=[]
+[2026-05-15 09:49:16 WEST] [221/252] row 980 chars=1392 before=['paragraphs_2'] after=[]
+[2026-05-15 09:49:23 WEST] [222/252] row 981 chars=1240 before=['paragraphs_1'] after=[]
+[2026-05-15 09:49:27 WEST] [223/252] row 994 chars=1335 before=['paragraphs_1'] after=[]
+[2026-05-15 09:49:33 WEST] [224/252] row 1003 chars=1392 before=['paragraphs_1'] after=[]
+[2026-05-15 09:49:35 WEST] [225/252] row 1008 chars=1368 before=['paragraphs_1'] after=[]
+[2026-05-15 09:49:36 WEST] [226/252] row 982 chars=1215 before=['paragraphs_2', 'bad_fragment'] after=['bad_fragment']
+[2026-05-15 09:49:40 WEST] [227/252] row 1010 chars=1386 before=['paragraphs_1'] after=[]
+[2026-05-15 09:49:41 WEST] [228/252] row 1020 chars=1214 before=['paragraphs_1'] after=[]
+[2026-05-15 09:49:43 WEST] [229/252] row 991 chars=1479 before=['paragraphs_2'] after=['too_long']
+[2026-05-15 09:49:45 WEST] [230/252] row 1048 chars=1302 before=['paragraphs_1'] after=[]
+[2026-05-15 09:49:45 WEST] [231/252] row 1047 chars=1226 before=['paragraphs_2'] after=[]
+[2026-05-15 09:49:46 WEST] [232/252] row 1060 chars=1081 before=['paragraphs_2'] after=[]
+[2026-05-15 09:49:49 WEST] [233/252] row 1061 chars=1147 before=['paragraphs_2'] after=[]
+[2026-05-15 09:49:50 WEST] [234/252] row 1066 chars=1317 before=['paragraphs_1'] after=[]
+[2026-05-15 09:49:52 WEST] [235/252] row 1086 chars=1361 before=['paragraphs_1'] after=[]
+[2026-05-15 09:49:55 WEST] [236/252] row 1093 chars=1336 before=['paragraphs_1'] after=[]
+[2026-05-15 09:49:57 WEST] [237/252] row 1014 chars=1442 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:49:58 WEST] [238/252] row 1100 chars=1145 before=['paragraphs_2'] after=[]
+[2026-05-15 09:49:59 WEST] [239/252] row 1113 chars=1263 before=['paragraphs_1'] after=[]
+[2026-05-15 09:50:02 WEST] [240/252] row 1120 chars=1166 before=['paragraphs_2'] after=[]
+[2026-05-15 09:50:03 WEST] [241/252] row 1157 chars=1312 before=['paragraphs_1'] after=[]
+[2026-05-15 09:50:04 WEST] [242/252] row 1132 chars=1123 before=['paragraphs_2'] after=[]
+[2026-05-15 09:50:08 WEST] [243/252] row 1166 chars=1284 before=['paragraphs_1'] after=[]
+[2026-05-15 09:50:08 WEST] [244/252] row 1179 chars=1130 before=['paragraphs_1'] after=[]
+[2026-05-15 09:50:12 WEST] [245/252] row 1089 chars=1492 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:50:12 WEST] [246/252] row 1184 chars=1178 before=['paragraphs_2'] after=[]
+[2026-05-15 09:50:15 WEST] [247/252] row 1194 chars=1185 before=['paragraphs_1'] after=[]
+[2026-05-15 09:50:18 WEST] [248/252] row 1191 chars=1370 before=['paragraphs_2'] after=[]
+[2026-05-15 09:50:21 WEST] [249/252] row 1196 chars=1292 before=['paragraphs_1'] after=[]
+[2026-05-15 09:50:22 WEST] [250/252] row 1187 chars=1383 before=['paragraphs_1'] after=[]
+[2026-05-15 09:50:23 WEST] [251/252] row 1201 chars=1213 before=['paragraphs_1'] after=[]
+[2026-05-15 09:50:30 WEST] [252/252] row 1168 chars=1489 before=['paragraphs_1'] after=['too_long']
+[2026-05-15 09:50:30 WEST] writing 252 cells to Y
+[2026-05-15 09:50:31 WEST] updated dges_cursos_2026!Y8:Y8 (1 rows)
+[2026-05-15 09:50:33 WEST] updated dges_cursos_2026!Y12:Y12 (1 rows)
+[2026-05-15 09:50:35 WEST] updated dges_cursos_2026!Y14:Y15 (2 rows)
+[2026-05-15 09:50:36 WEST] updated dges_cursos_2026!Y21:Y21 (1 rows)
+[2026-05-15 09:50:38 WEST] updated dges_cursos_2026!Y24:Y24 (1 rows)
+[2026-05-15 09:50:39 WEST] updated dges_cursos_2026!Y27:Y27 (1 rows)
+[2026-05-15 09:50:41 WEST] updated dges_cursos_2026!Y30:Y30 (1 rows)
+[2026-05-15 09:50:42 WEST] updated dges_cursos_2026!Y35:Y36 (2 rows)
+[2026-05-15 09:50:44 WEST] updated dges_cursos_2026!Y38:Y38 (1 rows)
+[2026-05-15 09:50:46 WEST] updated dges_cursos_2026!Y43:Y44 (2 rows)
+[2026-05-15 09:50:47 WEST] updated dges_cursos_2026!Y46:Y46 (1 rows)
+[2026-05-15 09:50:49 WEST] updated dges_cursos_2026!Y50:Y50 (1 rows)
+[2026-05-15 09:50:51 WEST] updated dges_cursos_2026!Y55:Y55 (1 rows)
+[2026-05-15 09:50:53 WEST] updated dges_cursos_2026!Y57:Y57 (1 rows)
+[2026-05-15 09:50:54 WEST] updated dges_cursos_2026!Y60:Y60 (1 rows)
+[2026-05-15 09:50:56 WEST] updated dges_cursos_2026!Y66:Y66 (1 rows)
+[2026-05-15 09:50:58 WEST] updated dges_cursos_2026!Y73:Y73 (1 rows)
+[2026-05-15 09:51:00 WEST] updated dges_cursos_2026!Y83:Y84 (2 rows)
+[2026-05-15 09:51:01 WEST] updated dges_cursos_2026!Y104:Y104 (1 rows)
+[2026-05-15 09:51:03 WEST] updated dges_cursos_2026!Y110:Y110 (1 rows)
+[2026-05-15 09:51:05 WEST] updated dges_cursos_2026!Y112:Y112 (1 rows)
+[2026-05-15 09:51:07 WEST] updated dges_cursos_2026!Y114:Y114 (1 rows)
+[2026-05-15 09:51:08 WEST] updated dges_cursos_2026!Y117:Y118 (2 rows)
+[2026-05-15 09:51:10 WEST] updated dges_cursos_2026!Y125:Y125 (1 rows)
+[2026-05-15 09:51:12 WEST] updated dges_cursos_2026!Y127:Y129 (3 rows)
+[2026-05-15 09:51:14 WEST] updated dges_cursos_2026!Y135:Y136 (2 rows)
+[2026-05-15 09:51:15 WEST] updated dges_cursos_2026!Y144:Y145 (2 rows)
+[2026-05-15 09:51:17 WEST] updated dges_cursos_2026!Y150:Y150 (1 rows)
+[2026-05-15 09:51:19 WEST] updated dges_cursos_2026!Y153:Y153 (1 rows)
+[2026-05-15 09:51:20 WEST] updated dges_cursos_2026!Y155:Y156 (2 rows)
+[2026-05-15 09:51:22 WEST] updated dges_cursos_2026!Y163:Y163 (1 rows)
+[2026-05-15 09:51:23 WEST] updated dges_cursos_2026!Y165:Y165 (1 rows)
+[2026-05-15 09:51:25 WEST] updated dges_cursos_2026!Y177:Y177 (1 rows)
+[2026-05-15 09:51:27 WEST] updated dges_cursos_2026!Y181:Y181 (1 rows)
+[2026-05-15 09:51:28 WEST] updated dges_cursos_2026!Y184:Y184 (1 rows)
+[2026-05-15 09:51:30 WEST] updated dges_cursos_2026!Y191:Y191 (1 rows)
+[2026-05-15 09:51:32 WEST] updated dges_cursos_2026!Y197:Y197 (1 rows)
+[2026-05-15 09:51:33 WEST] updated dges_cursos_2026!Y205:Y206 (2 rows)
+[2026-05-15 09:51:35 WEST] updated dges_cursos_2026!Y208:Y208 (1 rows)
+[2026-05-15 09:51:37 WEST] updated dges_cursos_2026!Y218:Y218 (1 rows)
+[2026-05-15 09:51:39 WEST] updated dges_cursos_2026!Y222:Y222 (1 rows)
+[2026-05-15 09:51:40 WEST] updated dges_cursos_2026!Y224:Y224 (1 rows)
+[2026-05-15 09:51:42 WEST] updated dges_cursos_2026!Y237:Y237 (1 rows)
+[2026-05-15 09:51:43 WEST] updated dges_cursos_2026!Y240:Y241 (2 rows)
+[2026-05-15 09:51:45 WEST] updated dges_cursos_2026!Y247:Y247 (1 rows)
+[2026-05-15 09:51:46 WEST] updated dges_cursos_2026!Y252:Y252 (1 rows)
+[2026-05-15 09:51:48 WEST] updated dges_cursos_2026!Y254:Y254 (1 rows)
+[2026-05-15 09:51:49 WEST] updated dges_cursos_2026!Y256:Y257 (2 rows)
+[2026-05-15 09:51:50 WEST] updated dges_cursos_2026!Y267:Y268 (2 rows)
+[2026-05-15 09:51:52 WEST] updated dges_cursos_2026!Y270:Y270 (1 rows)
+[2026-05-15 09:51:53 WEST] updated dges_cursos_2026!Y277:Y279 (3 rows)
+[2026-05-15 09:51:55 WEST] updated dges_cursos_2026!Y284:Y284 (1 rows)
+[2026-05-15 09:51:57 WEST] updated dges_cursos_2026!Y290:Y290 (1 rows)
+[2026-05-15 09:51:58 WEST] updated dges_cursos_2026!Y294:Y294 (1 rows)
+[2026-05-15 09:52:00 WEST] updated dges_cursos_2026!Y296:Y297 (2 rows)
+[2026-05-15 09:52:01 WEST] updated dges_cursos_2026!Y299:Y300 (2 rows)
+[2026-05-15 09:52:03 WEST] updated dges_cursos_2026!Y302:Y302 (1 rows)
+[2026-05-15 09:52:04 WEST] updated dges_cursos_2026!Y304:Y304 (1 rows)
+[2026-05-15 09:52:06 WEST] updated dges_cursos_2026!Y306:Y307 (2 rows)
+[2026-05-15 09:52:07 WEST] updated dges_cursos_2026!Y309:Y309 (1 rows)
+[2026-05-15 09:52:09 WEST] updated dges_cursos_2026!Y312:Y312 (1 rows)
+[2026-05-15 09:52:10 WEST] updated dges_cursos_2026!Y315:Y316 (2 rows)
+[2026-05-15 09:52:12 WEST] updated dges_cursos_2026!Y324:Y325 (2 rows)
+[2026-05-15 09:52:14 WEST] updated dges_cursos_2026!Y332:Y332 (1 rows)
+[2026-05-15 09:52:15 WEST] updated dges_cursos_2026!Y338:Y338 (1 rows)
+[2026-05-15 09:52:17 WEST] updated dges_cursos_2026!Y345:Y345 (1 rows)
+[2026-05-15 09:52:18 WEST] updated dges_cursos_2026!Y347:Y349 (3 rows)
+[2026-05-15 09:52:20 WEST] updated dges_cursos_2026!Y355:Y355 (1 rows)
+[2026-05-15 09:52:22 WEST] updated dges_cursos_2026!Y359:Y360 (2 rows)
+[2026-05-15 09:52:23 WEST] updated dges_cursos_2026!Y371:Y371 (1 rows)
+[2026-05-15 09:52:25 WEST] updated dges_cursos_2026!Y373:Y375 (3 rows)
+[2026-05-15 09:52:26 WEST] updated dges_cursos_2026!Y377:Y377 (1 rows)
+[2026-05-15 09:52:28 WEST] updated dges_cursos_2026!Y380:Y382 (3 rows)
+[2026-05-15 09:52:29 WEST] updated dges_cursos_2026!Y388:Y389 (2 rows)
+[2026-05-15 09:52:31 WEST] updated dges_cursos_2026!Y391:Y392 (2 rows)
+[2026-05-15 09:52:32 WEST] updated dges_cursos_2026!Y396:Y396 (1 rows)
+[2026-05-15 09:52:34 WEST] updated dges_cursos_2026!Y399:Y399 (1 rows)
+[2026-05-15 09:52:35 WEST] updated dges_cursos_2026!Y403:Y403 (1 rows)
+[2026-05-15 09:52:37 WEST] updated dges_cursos_2026!Y405:Y405 (1 rows)
+[2026-05-15 09:52:38 WEST] updated dges_cursos_2026!Y411:Y411 (1 rows)
+[2026-05-15 09:52:40 WEST] updated dges_cursos_2026!Y416:Y416 (1 rows)
+[2026-05-15 09:52:41 WEST] updated dges_cursos_2026!Y418:Y418 (1 rows)
+[2026-05-15 09:52:43 WEST] updated dges_cursos_2026!Y422:Y423 (2 rows)
+[2026-05-15 09:52:45 WEST] updated dges_cursos_2026!Y428:Y428 (1 rows)
+[2026-05-15 09:52:46 WEST] updated dges_cursos_2026!Y431:Y431 (1 rows)
+[2026-05-15 09:52:48 WEST] updated dges_cursos_2026!Y435:Y435 (1 rows)
+[2026-05-15 09:52:49 WEST] updated dges_cursos_2026!Y438:Y438 (1 rows)
+[2026-05-15 09:52:51 WEST] updated dges_cursos_2026!Y442:Y442 (1 rows)
+[2026-05-15 09:52:52 WEST] updated dges_cursos_2026!Y449:Y449 (1 rows)
+[2026-05-15 09:52:54 WEST] updated dges_cursos_2026!Y452:Y452 (1 rows)
+[2026-05-15 09:52:55 WEST] updated dges_cursos_2026!Y454:Y454 (1 rows)
+[2026-05-15 09:52:56 WEST] updated dges_cursos_2026!Y458:Y458 (1 rows)
+[2026-05-15 09:52:58 WEST] updated dges_cursos_2026!Y461:Y461 (1 rows)
+[2026-05-15 09:52:59 WEST] updated dges_cursos_2026!Y467:Y467 (1 rows)
+[2026-05-15 09:53:00 WEST] updated dges_cursos_2026!Y470:Y470 (1 rows)
+[2026-05-15 09:53:02 WEST] updated dges_cursos_2026!Y472:Y472 (1 rows)
+[2026-05-15 09:53:03 WEST] updated dges_cursos_2026!Y474:Y474 (1 rows)
+[2026-05-15 09:53:04 WEST] updated dges_cursos_2026!Y479:Y484 (6 rows)
+[2026-05-15 09:53:06 WEST] updated dges_cursos_2026!Y487:Y487 (1 rows)
+[2026-05-15 09:53:08 WEST] updated dges_cursos_2026!Y491:Y493 (3 rows)
+[2026-05-15 09:53:09 WEST] updated dges_cursos_2026!Y496:Y496 (1 rows)
+[2026-05-15 09:53:11 WEST] updated dges_cursos_2026!Y503:Y504 (2 rows)
+[2026-05-15 09:53:12 WEST] updated dges_cursos_2026!Y506:Y506 (1 rows)
+[2026-05-15 09:53:14 WEST] updated dges_cursos_2026!Y515:Y515 (1 rows)
+[2026-05-15 09:53:15 WEST] updated dges_cursos_2026!Y518:Y518 (1 rows)
+[2026-05-15 09:53:16 WEST] updated dges_cursos_2026!Y520:Y520 (1 rows)
+[2026-05-15 09:53:18 WEST] updated dges_cursos_2026!Y522:Y522 (1 rows)
+[2026-05-15 09:53:19 WEST] updated dges_cursos_2026!Y524:Y524 (1 rows)
+[2026-05-15 09:53:21 WEST] updated dges_cursos_2026!Y526:Y528 (3 rows)
+[2026-05-15 09:53:23 WEST] updated dges_cursos_2026!Y531:Y531 (1 rows)
+[2026-05-15 09:53:24 WEST] updated dges_cursos_2026!Y533:Y536 (4 rows)
+[2026-05-15 09:53:26 WEST] updated dges_cursos_2026!Y540:Y540 (1 rows)
+[2026-05-15 09:53:27 WEST] updated dges_cursos_2026!Y543:Y543 (1 rows)
+[2026-05-15 09:53:29 WEST] updated dges_cursos_2026!Y559:Y559 (1 rows)
+[2026-05-15 09:53:30 WEST] updated dges_cursos_2026!Y561:Y561 (1 rows)
+[2026-05-15 09:53:32 WEST] updated dges_cursos_2026!Y569:Y569 (1 rows)
+[2026-05-15 09:53:33 WEST] updated dges_cursos_2026!Y585:Y585 (1 rows)
+[2026-05-15 09:53:35 WEST] updated dges_cursos_2026!Y589:Y590 (2 rows)
+[2026-05-15 09:53:37 WEST] updated dges_cursos_2026!Y592:Y592 (1 rows)
+[2026-05-15 09:53:38 WEST] updated dges_cursos_2026!Y597:Y597 (1 rows)
+[2026-05-15 09:53:40 WEST] updated dges_cursos_2026!Y606:Y606 (1 rows)
+[2026-05-15 09:53:41 WEST] updated dges_cursos_2026!Y609:Y609 (1 rows)
+[2026-05-15 09:53:43 WEST] updated dges_cursos_2026!Y622:Y622 (1 rows)
+[2026-05-15 09:53:45 WEST] updated dges_cursos_2026!Y629:Y630 (2 rows)
+[2026-05-15 09:53:46 WEST] updated dges_cursos_2026!Y637:Y637 (1 rows)
+[2026-05-15 09:53:48 WEST] updated dges_cursos_2026!Y661:Y661 (1 rows)
+[2026-05-15 09:53:50 WEST] updated dges_cursos_2026!Y670:Y670 (1 rows)
+[2026-05-15 09:53:51 WEST] updated dges_cursos_2026!Y673:Y673 (1 rows)
+[2026-05-15 09:53:52 WEST] updated dges_cursos_2026!Y676:Y676 (1 rows)
+[2026-05-15 09:53:54 WEST] updated dges_cursos_2026!Y688:Y688 (1 rows)
+[2026-05-15 09:53:55 WEST] updated dges_cursos_2026!Y690:Y690 (1 rows)
+[2026-05-15 09:53:57 WEST] updated dges_cursos_2026!Y696:Y696 (1 rows)
+[2026-05-15 09:53:58 WEST] updated dges_cursos_2026!Y718:Y718 (1 rows)
+[2026-05-15 09:53:59 WEST] updated dges_cursos_2026!Y727:Y727 (1 rows)
+[2026-05-15 09:54:01 WEST] updated dges_cursos_2026!Y732:Y732 (1 rows)
+[2026-05-15 09:54:02 WEST] updated dges_cursos_2026!Y735:Y735 (1 rows)
+[2026-05-15 09:54:03 WEST] updated dges_cursos_2026!Y737:Y737 (1 rows)
+[2026-05-15 09:54:05 WEST] updated dges_cursos_2026!Y740:Y740 (1 rows)
+[2026-05-15 09:54:07 WEST] updated dges_cursos_2026!Y742:Y742 (1 rows)
+[2026-05-15 09:54:08 WEST] updated dges_cursos_2026!Y760:Y760 (1 rows)
+[2026-05-15 09:54:10 WEST] updated dges_cursos_2026!Y775:Y775 (1 rows)
+[2026-05-15 09:54:11 WEST] updated dges_cursos_2026!Y782:Y782 (1 rows)
+[2026-05-15 09:54:13 WEST] updated dges_cursos_2026!Y784:Y784 (1 rows)
+[2026-05-15 09:54:14 WEST] updated dges_cursos_2026!Y790:Y790 (1 rows)
+[2026-05-15 09:54:16 WEST] updated dges_cursos_2026!Y821:Y821 (1 rows)
+[2026-05-15 09:54:17 WEST] updated dges_cursos_2026!Y823:Y824 (2 rows)
+[2026-05-15 09:54:18 WEST] updated dges_cursos_2026!Y827:Y827 (1 rows)
+[2026-05-15 09:54:19 WEST] updated dges_cursos_2026!Y853:Y853 (1 rows)
+[2026-05-15 09:54:21 WEST] updated dges_cursos_2026!Y856:Y856 (1 rows)
+[2026-05-15 09:54:22 WEST] updated dges_cursos_2026!Y859:Y861 (3 rows)
+[2026-05-15 09:54:23 WEST] updated dges_cursos_2026!Y870:Y870 (1 rows)
+[2026-05-15 09:54:25 WEST] updated dges_cursos_2026!Y877:Y877 (1 rows)
+[2026-05-15 09:54:26 WEST] updated dges_cursos_2026!Y884:Y884 (1 rows)
+[2026-05-15 09:54:27 WEST] updated dges_cursos_2026!Y900:Y901 (2 rows)
+[2026-05-15 09:54:29 WEST] updated dges_cursos_2026!Y906:Y906 (1 rows)
+[2026-05-15 09:54:30 WEST] updated dges_cursos_2026!Y912:Y912 (1 rows)
+[2026-05-15 09:54:32 WEST] updated dges_cursos_2026!Y915:Y915 (1 rows)
+[2026-05-15 09:54:34 WEST] updated dges_cursos_2026!Y917:Y917 (1 rows)
+[2026-05-15 09:54:36 WEST] updated dges_cursos_2026!Y923:Y923 (1 rows)
+[2026-05-15 09:54:38 WEST] updated dges_cursos_2026!Y928:Y928 (1 rows)
+[2026-05-15 09:54:39 WEST] updated dges_cursos_2026!Y942:Y942 (1 rows)
+[2026-05-15 09:54:41 WEST] updated dges_cursos_2026!Y944:Y945 (2 rows)
+[2026-05-15 09:54:42 WEST] updated dges_cursos_2026!Y947:Y947 (1 rows)
+[2026-05-15 09:54:43 WEST] updated dges_cursos_2026!Y953:Y953 (1 rows)
+[2026-05-15 09:54:45 WEST] updated dges_cursos_2026!Y966:Y966 (1 rows)
+[2026-05-15 09:54:46 WEST] updated dges_cursos_2026!Y970:Y970 (1 rows)
+[2026-05-15 09:54:48 WEST] updated dges_cursos_2026!Y972:Y972 (1 rows)
+[2026-05-15 09:54:49 WEST] updated dges_cursos_2026!Y974:Y974 (1 rows)
+[2026-05-15 09:54:50 WEST] updated dges_cursos_2026!Y979:Y982 (4 rows)
+[2026-05-15 09:54:52 WEST] updated dges_cursos_2026!Y991:Y991 (1 rows)
+[2026-05-15 09:54:54 WEST] updated dges_cursos_2026!Y994:Y994 (1 rows)
+[2026-05-15 09:54:56 WEST] updated dges_cursos_2026!Y1003:Y1003 (1 rows)
+[2026-05-15 09:54:58 WEST] updated dges_cursos_2026!Y1008:Y1008 (1 rows)
+[2026-05-15 09:54:59 WEST] updated dges_cursos_2026!Y1010:Y1010 (1 rows)
+[2026-05-15 09:55:01 WEST] updated dges_cursos_2026!Y1014:Y1014 (1 rows)
+[2026-05-15 09:55:03 WEST] updated dges_cursos_2026!Y1020:Y1020 (1 rows)
+[2026-05-15 09:55:04 WEST] updated dges_cursos_2026!Y1047:Y1048 (2 rows)
+[2026-05-15 09:55:05 WEST] updated dges_cursos_2026!Y1060:Y1061 (2 rows)
+[2026-05-15 09:55:07 WEST] updated dges_cursos_2026!Y1066:Y1066 (1 rows)
+[2026-05-15 09:55:09 WEST] updated dges_cursos_2026!Y1086:Y1086 (1 rows)
+[2026-05-15 09:55:10 WEST] updated dges_cursos_2026!Y1089:Y1089 (1 rows)
+[2026-05-15 09:55:12 WEST] updated dges_cursos_2026!Y1093:Y1093 (1 rows)
+[2026-05-15 09:55:14 WEST] updated dges_cursos_2026!Y1100:Y1100 (1 rows)
+[2026-05-15 09:55:15 WEST] updated dges_cursos_2026!Y1113:Y1113 (1 rows)
+[2026-05-15 09:55:16 WEST] updated dges_cursos_2026!Y1120:Y1120 (1 rows)
+[2026-05-15 09:55:17 WEST] updated dges_cursos_2026!Y1132:Y1132 (1 rows)
+[2026-05-15 09:55:18 WEST] updated dges_cursos_2026!Y1157:Y1157 (1 rows)
+[2026-05-15 09:55:20 WEST] updated dges_cursos_2026!Y1166:Y1166 (1 rows)
+[2026-05-15 09:55:22 WEST] updated dges_cursos_2026!Y1168:Y1168 (1 rows)
+[2026-05-15 09:55:23 WEST] updated dges_cursos_2026!Y1179:Y1179 (1 rows)
+[2026-05-15 09:55:24 WEST] updated dges_cursos_2026!Y1184:Y1184 (1 rows)
+[2026-05-15 09:55:25 WEST] updated dges_cursos_2026!Y1187:Y1187 (1 rows)
+[2026-05-15 09:55:27 WEST] updated dges_cursos_2026!Y1191:Y1191 (1 rows)
+[2026-05-15 09:55:29 WEST] updated dges_cursos_2026!Y1194:Y1194 (1 rows)
+[2026-05-15 09:55:30 WEST] updated dges_cursos_2026!Y1196:Y1196 (1 rows)
+[2026-05-15 09:55:31 WEST] updated dges_cursos_2026!Y1201:Y1201 (1 rows)
+[2026-05-15 09:55:32 WEST] done :: {"processed": 252, "prepared": 252, "errors": 0, "flagged_after": 29}
+[2026-05-15 09:56:16 WEST] starting paragraph normalization rows=29 write=True workers=3 model=openai/gpt-4.1-mini
+[2026-05-15 09:56:34 WEST] [1/29] row 46 chars=1412 before=['too_long'] after=['too_long']
+[2026-05-15 09:56:35 WEST] [2/29] row 35 chars=1484 before=['too_long'] after=['too_long']
+[2026-05-15 09:56:36 WEST] [3/29] row 30 chars=1494 before=['too_long'] after=['too_long']
+[2026-05-15 09:56:50 WEST] [4/29] row 60 chars=1472 before=['too_long'] after=['too_long']
+[2026-05-15 09:57:22 WEST] starting paragraph normalization rows=29 write=True workers=3 model=openai/gpt-4.1-mini
+[2026-05-15 09:57:29 WEST] [1/29] row 35 chars=1311 before=['too_long'] after=[]
+[2026-05-15 09:57:30 WEST] [2/29] row 46 chars=1220 before=['too_long'] after=[]
+[2026-05-15 09:57:34 WEST] [3/29] row 30 chars=1181 before=['too_long'] after=[]
+[2026-05-15 09:57:38 WEST] [4/29] row 83 chars=1149 before=['too_long'] after=[]
+[2026-05-15 09:57:43 WEST] [5/29] row 135 chars=1182 before=['too_long'] after=[]
+[2026-05-15 09:57:44 WEST] [6/29] row 60 chars=1210 before=['too_long'] after=[]
+[2026-05-15 09:57:48 WEST] [7/29] row 181 chars=1270 before=['too_long'] after=[]
+[2026-05-15 09:57:52 WEST] [8/29] row 299 chars=1319 before=['too_long'] after=[]
+[2026-05-15 09:57:54 WEST] [9/29] row 197 chars=1304 before=['too_long'] after=[]
+[2026-05-15 09:58:00 WEST] [10/29] row 373 chars=1175 before=['too_long'] after=[]
+[2026-05-15 09:58:03 WEST] [11/29] row 381 chars=1160 before=['too_long'] after=[]
+[2026-05-15 09:58:06 WEST] [12/29] row 396 chars=1313 before=['too_long'] after=[]
+[2026-05-15 09:58:06 WEST] [13/29] row 438 chars=1359 before=['too_long'] after=[]
+[2026-05-15 09:58:10 WEST] [14/29] row 481 chars=1211 before=['too_long'] after=[]
+[2026-05-15 09:58:14 WEST] [15/29] row 496 chars=1193 before=['too_long'] after=[]
+[2026-05-15 09:58:14 WEST] [16/29] row 520 chars=1265 before=['too_long'] after=[]
+[2026-05-15 09:58:21 WEST] [17/29] row 535 chars=1138 before=['too_long'] after=[]
+[2026-05-15 09:58:24 WEST] [18/29] row 534 chars=1156 before=['too_long'] after=[]
+[2026-05-15 09:58:27 WEST] [19/29] row 528 chars=1270 before=['too_long'] after=[]
+[2026-05-15 09:58:28 WEST] [20/29] row 536 chars=1228 before=['too_long'] after=[]
+[2026-05-15 09:58:30 WEST] [21/29] row 540 chars=1206 before=['too_long'] after=[]
+[2026-05-15 09:58:34 WEST] [22/29] row 543 chars=1170 before=['too_long'] after=[]
+[2026-05-15 09:58:36 WEST] [23/29] row 944 chars=1262 before=['too_long'] after=[]
+[2026-05-15 09:58:36 WEST] [24/29] row 923 chars=1133 before=['too_long'] after=[]
+[2026-05-15 09:58:41 WEST] [25/29] row 991 chars=1213 before=['too_long'] after=[]
+[2026-05-15 09:58:44 WEST] [26/29] row 1014 chars=1196 before=['too_long'] after=[]
+[2026-05-15 09:58:47 WEST] [27/29] row 1089 chars=1214 before=['too_long'] after=[]
+[2026-05-15 09:58:52 WEST] [28/29] row 982 chars=1211 before=['bad_fragment'] after=['bad_fragment']
+[2026-05-15 09:58:54 WEST] [29/29] row 1168 chars=1202 before=['too_long'] after=[]
+[2026-05-15 09:58:54 WEST] writing 29 cells to Y
+[2026-05-15 09:58:54 WEST] updated dges_cursos_2026!Y30:Y30 (1 rows)
+[2026-05-15 09:58:56 WEST] updated dges_cursos_2026!Y35:Y35 (1 rows)
+[2026-05-15 09:58:58 WEST] updated dges_cursos_2026!Y46:Y46 (1 rows)
+[2026-05-15 09:59:00 WEST] updated dges_cursos_2026!Y60:Y60 (1 rows)
+[2026-05-15 09:59:01 WEST] updated dges_cursos_2026!Y83:Y83 (1 rows)
+[2026-05-15 09:59:02 WEST] updated dges_cursos_2026!Y135:Y135 (1 rows)
+[2026-05-15 09:59:03 WEST] updated dges_cursos_2026!Y181:Y181 (1 rows)
+[2026-05-15 09:59:04 WEST] updated dges_cursos_2026!Y197:Y197 (1 rows)
+[2026-05-15 09:59:05 WEST] updated dges_cursos_2026!Y299:Y299 (1 rows)
+[2026-05-15 09:59:07 WEST] updated dges_cursos_2026!Y373:Y373 (1 rows)
+[2026-05-15 09:59:08 WEST] updated dges_cursos_2026!Y381:Y381 (1 rows)
+[2026-05-15 09:59:09 WEST] updated dges_cursos_2026!Y396:Y396 (1 rows)
+[2026-05-15 09:59:10 WEST] updated dges_cursos_2026!Y438:Y438 (1 rows)
+[2026-05-15 09:59:12 WEST] updated dges_cursos_2026!Y481:Y481 (1 rows)
+[2026-05-15 09:59:14 WEST] updated dges_cursos_2026!Y496:Y496 (1 rows)
+[2026-05-15 09:59:15 WEST] updated dges_cursos_2026!Y520:Y520 (1 rows)
+[2026-05-15 09:59:17 WEST] updated dges_cursos_2026!Y528:Y528 (1 rows)
+[2026-05-15 09:59:18 WEST] updated dges_cursos_2026!Y534:Y536 (3 rows)
+[2026-05-15 09:59:20 WEST] updated dges_cursos_2026!Y540:Y540 (1 rows)
+[2026-05-15 09:59:21 WEST] updated dges_cursos_2026!Y543:Y543 (1 rows)
+[2026-05-15 09:59:22 WEST] updated dges_cursos_2026!Y923:Y923 (1 rows)
+[2026-05-15 09:59:23 WEST] updated dges_cursos_2026!Y944:Y944 (1 rows)
+[2026-05-15 09:59:25 WEST] updated dges_cursos_2026!Y982:Y982 (1 rows)
+[2026-05-15 09:59:26 WEST] updated dges_cursos_2026!Y991:Y991 (1 rows)
+[2026-05-15 09:59:27 WEST] updated dges_cursos_2026!Y1014:Y1014 (1 rows)
+[2026-05-15 09:59:28 WEST] updated dges_cursos_2026!Y1089:Y1089 (1 rows)
+[2026-05-15 09:59:30 WEST] updated dges_cursos_2026!Y1168:Y1168 (1 rows)
+[2026-05-15 09:59:31 WEST] done :: {"processed": 29, "prepared": 29, "errors": 0, "flagged_after": 1}
