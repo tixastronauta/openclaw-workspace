@@ -1,0 +1,2146 @@
+{
+  "3043::9147": {
+    "area": "Gestão e Administração",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "110"
+  },
+  "3012::L021": {
+    "area": "Gestão e Administração",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "30"
+  },
+  "3014::L138": {
+    "area": "Design",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "38"
+  },
+  "3031::9869": {
+    "area": "Contabilidade e Fiscalidade",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "25"
+  },
+  "3031::9056": {
+    "area": "Contabilidade e Fiscalidade",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "40"
+  },
+  "1204::9554": {
+    "area": "Terapia e Reabilitação",
+    "duration": "8 Semestres",
+    "ects": "240",
+    "teaching_type": "Ensino Superior Público Universitário",
+    "vacancies": "40"
+  },
+  "3043::9119": {
+    "area": "Eletrónica e Automação",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "90"
+  },
+  "1000::L078": {
+    "area": "Direito",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Universitário",
+    "vacancies": "35"
+  },
+  "3081::9023": {
+    "area": "Jornalismo e Reportagem",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "41"
+  },
+  "3131::L246": {
+    "area": "História e Arqueologia",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "44"
+  },
+  "3051::9085": {
+    "area": "Ciências Veterinárias",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "40"
+  },
+  "3113::9191": {
+    "area": "Jornalismo e Reportagem",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "61"
+  },
+  "1506::8458": {
+    "area": "Desconhecido ou não especificado",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Universitário",
+    "vacancies": "61"
+  },
+  "3182::8296": {
+    "area": "Gestão e Administração",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "35"
+  },
+  "7020::L068": {
+    "area": "Tecnologias de Diagnóstico e Terapêutica",
+    "duration": "8 Semestres",
+    "ects": "240",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "35"
+  },
+  "1000::9205": {
+    "area": "Marketing e Publicidade",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Universitário",
+    "vacancies": "48"
+  },
+  "3131::9563": {
+    "area": "Desporto",
+    "duration": "6 semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "25"
+  },
+  "1502::L010": {
+    "area": "Belas-Artes",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Universitário",
+    "vacancies": "25"
+  },
+  "7015::9549": {
+    "area": "Ciências Farmacêuticas",
+    "duration": "8 Semestres",
+    "ects": "240",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "55"
+  },
+  "3062::L095": {
+    "area": "Hotelaria e Restauração",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "20"
+  },
+  "3102::9741": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "3063::9152": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "3053::L275": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "1516::9002": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "1510::9162": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "1000::9192": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "3101::9851": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "3062::9731": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "1516::8102": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "1504::8358": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "1000::9119": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "1107::9192": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "140::8086": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "140::8031": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "140::9022": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "3135::8316": {
+    "area": "Engenharia e Técnicas Afins - programas não classificados noutra área de formação",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "42"
+  },
+  "1000::9813": {
+    "area": "Medicina",
+    "duration": "6 Anos",
+    "ects": "360",
+    "teaching_type": "Ensino Superior Público Universitário",
+    "vacancies": "122"
+  },
+  "140::L344": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "140::L390": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "7230::9549": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9002": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9011": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "7230::L068": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "1503::9141": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "3118::9108": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9012": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9015": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9041": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9016": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9069": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "3135::9119": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9104": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9089": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9096": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9113": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9099": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9119": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9123": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9081": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9125": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9146": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9147": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9141": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9209": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9196": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9204": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9194": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9219": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9214": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9345": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9813": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9853": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::L202": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::L187": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::L209": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::L221": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::L217": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9223": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::L223": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9351": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::L254": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9252": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::L298": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "300::9455": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "3032::L394": {
+    "area": "Informática",
+    "duration": "3 Anos",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "25"
+  },
+  "903::8036": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "1000::8184": {
+    "area": "Tecnologias de Diagnóstico e Terapêutica",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Universitário",
+    "vacancies": "32"
+  },
+  "903::9015": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "7005::8138": {
+    "area": "Terapia e Reabilitação",
+    "duration": "8 Semestres",
+    "ects": "240",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "28"
+  },
+  "903::9089": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "903::9096": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "903::9099": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "903::9119": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "903::9123": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "903::9113": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "903::9104": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "903::9209": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "903::9126": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "903::9224": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "903::9348": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "903::9455": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "903::L167": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "903::L209": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "903::L221": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "903::L231": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "903::L286": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "903::L358": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "903::L347": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "903::L370": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "904::9081": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "904::9147": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "904::L313": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "3055::9816": {
+    "area": "Artes do Espetáculo",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "13"
+  },
+  "3051::L093": {
+    "area": "Tecnologia dos Processos Químicos",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "18"
+  },
+  "3055::9836": {
+    "area": "Artes do Espetáculo",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "3"
+  },
+  "505::8393": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "3055::L184": {
+    "area": "Artes do Espetáculo",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "6"
+  },
+  "502::9078": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::9089": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::9099": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "503::9081": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::9104": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::9113": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::8408": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "3061::9003": {
+    "area": "Produção Agrícola e Animal",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "26"
+  },
+  "501::9119": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::9123": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::9125": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::9015": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "507::9026": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::9011": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "505::9132": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "502::9002": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "505::9006": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "505::9133": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "505::9135": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "505::9139": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "505::9143": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::9146": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "503::9147": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::9209": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "505::9182": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "505::9181": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::9141": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "507::9219": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::9223": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "503::9229": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "503::9240": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "507::9238": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "3062::9254": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "504::9819": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::9891": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "505::9779": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "505::L109": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "504::9832": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::9257": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::9455": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::L209": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::L227": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::9448": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "508::9707": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::L413": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::L285": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::L403": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "505::9694": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "504::9494": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "501::L426": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "505::9773": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9020": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9016": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9023": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::8184": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9025": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9015": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9048": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9075": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9089": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9081": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9074": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9071": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9105": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9104": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9112": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9139": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9119": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9147": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9205": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9225": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9219": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9707": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9494": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9740": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9835": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9813": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9918": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::L227": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::L205": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::L258": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9240": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9257": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::L295": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::L303": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::L331": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::9351": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "400::L406": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "602::8262": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "604::8251": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "602::9003": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "602::9012": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "602::9016": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "602::9011": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "603::9069": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "602::9015": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "602::9119": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "604::9026": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "604::9081": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "602::9143": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "604::9147": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "602::9209": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "602::9210": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "603::9214": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "604::9240": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "604::9219": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "604::9229": {
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+  },
+  "602::9760": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "602::9847": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "604::9853": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "602::9910": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "604::L047": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "602::L090": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "602::9818": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "602::L227": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "605::L256": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "604::L365": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "203::8258": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "201::8509": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "602::9752": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "605::9841": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "605::9707": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "604::9787": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "602::9751": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "203::9011": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "203::9013": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "204::9081": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "203::9015": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "203::9119": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "201::9204": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "204::9152": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "203::9210": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "201::9219": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "204::9240": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "206::9351": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "203::9494": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "203::9540": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "203::9016": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "201::9821": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "201::9817": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "203::L123": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "201::L252": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "3138::8015": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "906::8259": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "602::L221": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "203::9003": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "521::9013": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "902::9020": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "902::9006": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "902::9023": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "902::9040": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "902::9046": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "902::9145": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "911::9078": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "902::9139": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "906::9155": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "902::9181": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "902::9182": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "902::9240": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "902::9448": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "902::9204": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "902::9252": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "901::9554": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "3114::9782": {
+    "area": "Artes do Espetáculo",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Politécnico",
+    "vacancies": "94"
+  },
+  "1502::9790": {
+    "area": "Belas-Artes",
+    "duration": "8 Semestres",
+    "ects": "240",
+    "teaching_type": "Ensino Superior Público Universitário",
+    "vacancies": "50"
+  },
+  "901::9813": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "908::A025": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "1508::9791": {
+    "area": "Ciências Dentárias",
+    "duration": "6 Semestres",
+    "ects": "180",
+    "teaching_type": "Ensino Superior Público Universitário",
+    "vacancies": "27"
+  },
+  "3118::L416": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "906::L188": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "902::9917": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "7105::9121": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "3105::9013": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "902::L424": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "3105::9254": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "3105::L389": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "160::8571": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "160::8524": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "7712::L206": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "3105::L411": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "603::9347": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "604::9254": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "7712::L289": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "603::9257": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "160::9011": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "603::9243": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "605::9494": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "150::9135": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "170::9081": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "150::9181": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "170::9147": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "160::8083": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "150::9219": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "150::9238": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "160::9185": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "150::9240": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "150::9853": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "150::9652": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "170::9254": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "150::L041": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "506::9813": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "160::A017": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  },
+  "506::9548": {
+    "area": "",
+    "duration": "",
+    "ects": "",
+    "teaching_type": "",
+    "vacancies": ""
+  }
+}
