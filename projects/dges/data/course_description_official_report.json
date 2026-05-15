@@ -1,0 +1,371 @@
+{
+  "generated": "2026-05-15 08:21:11 WEST",
+  "write": true,
+  "rows": 11,
+  "prepared": 11,
+  "counters": {
+    "processed": 11,
+    "prepared": 11,
+    "errors": 0,
+    "flagged": 0
+  },
+  "details": {
+    "1205": {
+      "course": "Turismo",
+      "sources": [
+        {
+          "type": "official_course",
+          "url": "https://www.estgv.ipv.pt",
+          "excerpt_chars": 0
+        },
+        {
+          "type": "dges",
+          "url": "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9254&code=3182",
+          "meta": {
+            "area": "Turismo e Lazer.",
+            "duration": "6 Semestres.",
+            "ects": "180.",
+            "teaching_type": "Ensino Superior Público Politécnico.",
+            "vacancies": "47."
+          }
+        },
+        {
+          "type": "wikipedia",
+          "url": "https://pt.wikipedia.org/wiki/Escola_Superior_de_Tecnologia_e_Gest%C3%A3o_de_Viseu",
+          "excerpt_chars": 601
+        }
+      ],
+      "errors": [],
+      "updatedAt": "2026-05-15 08:20:36 WEST",
+      "description": "A **Licenciatura em Turismo** da **Escola Superior de Tecnologia e Gestão de Viseu (ESTGV)**, integrada no **Instituto Politécnico de Viseu**, é um curso público politécnico com a duração de 6 semestres e um total de 180 ECTS. Inserido na área de **Turismo e Lazer**, este curso visa formar profissionais capazes de compreender e intervir nos diversos setores do turismo, promovendo o desenvolvimento sustentável e a valorização dos recursos culturais e naturais.\n\nAo longo do curso, os estudantes adquirem competências em gestão, planeamento e promoção de atividades turísticas, bem como em análise de mercados e inovação no setor. A formação combina conhecimentos teóricos e práticos, preparando os alunos para responder aos desafios atuais do turismo, nomeadamente na organização de eventos, gestão de empreendimentos turísticos e desenvolvimento de produtos turísticos diversificados.\n\nLocalizado em **Viseu**, o curso oferece uma sólida base académica e técnica, adequada ao contexto regional e nacional. Com 47 vagas disponíveis para o ano letivo 2026/2027, esta licenciatura proporciona uma formação estruturada e reconhecida, que contribui para a qualificação de profissionais na área do turismo e lazer.",
+      "chars": 1212,
+      "quality": "dges_or_fallback",
+      "official_excerpt_chars": 0,
+      "official_excerpt_sample": "",
+      "official_pieces": [],
+      "quality_flags": [],
+      "model": "openai/gpt-4.1-mini"
+    },
+    "1202": {
+      "course": "Engenharia Alimentar",
+      "sources": [
+        {
+          "type": "official_course",
+          "url": "https://www.esav.ipv.pt/index.php/cursos/licenciaturas?id=20",
+          "excerpt_chars": 610
+        },
+        {
+          "type": "dges",
+          "url": "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9087&code=3185",
+          "meta": {
+            "area": "Indústrias Alimentares.",
+            "duration": "6 Semestres.",
+            "ects": "180.",
+            "teaching_type": "Ensino Superior Público Politécnico.",
+            "vacancies": "25."
+          }
+        }
+      ],
+      "errors": [],
+      "updatedAt": "2026-05-15 08:20:36 WEST",
+      "description": "**Engenharia Alimentar** na **Escola Superior Agrária de Viseu (ESAV)**, integrada no Instituto Politécnico de Viseu, é uma licenciatura de **1.º ciclo** com a duração de **6 semestres** e um total de **180 ECTS**. Este curso insere-se na área das **Indústrias Alimentares** e é ministrado em regime de ensino superior público politécnico, com uma oferta anual limitada a 25 vagas.\n\nO curso prepara os estudantes para compreender e atuar nos processos tecnológicos e científicos relacionados com a produção, transformação e controlo de qualidade dos alimentos. Desenvolve competências técnicas e científicas essenciais para a inovação e otimização dos sistemas alimentares, promovendo uma formação sólida que combina conhecimentos teóricos e práticos. A estrutura curricular visa dotar os futuros profissionais de capacidades para responder aos desafios da indústria alimentar, com enfoque na segurança, sustentabilidade e eficiência dos processos.\n\nAo concluir esta licenciatura, os diplomados estarão habilitados a prosseguir estudos em ciclos superiores ou a integrar-se em contextos profissionais ligados à engenharia e tecnologia alimentar, contribuindo para o desenvolvimento do setor agroalimentar na região de Viseu e além.",
+      "chars": 1231,
+      "quality": "official_course_page",
+      "official_excerpt_chars": 610,
+      "official_excerpt_sample": "Licenciaturas - Conheça a oferta da ESAV. No ensino superior politécnico, o ciclo de estudos conducente ao grau de licenciado corresponde ao 1.º grau de formação superior.\nNo ensino superior politécnico, o ciclo de estudos conducente ao grau de licenciado corresponde ao 1.º grau de formação superior e tem uma duração de seis semestres, que equivalem a 180 ECTS (Sistema Europeu de Transferência de Créditos) ou, excecionalmente, sete ou oito semestres, que equivalem a 240 créditos ECTS.\nO ingresso nos cursos de licenciatura no Politécnico de Viseu pressupõe que os candidatos reúnam os requisitos gerais de",
+      "official_pieces": [
+        "Licenciaturas - Conheça a oferta da ESAV. No ensino superior politécnico, o ciclo de estudos conducente ao grau de licenciado corresponde ao 1.º grau de formação superior.",
+        "No ensino superior politécnico, o ciclo de estudos conducente ao grau de licenciado corresponde ao 1.º grau de formação superior e tem uma duração de seis semestres, que equivalem a 180 ECTS (Sistema Europeu de Transferência de Créditos) ou, excecionalmente, sete ou oito semestres, que equivalem a 240 créditos ECTS.",
+        "O ingresso nos cursos de licenciatura no Politécnico de Viseu pressupõe que os candidatos reúnam os requisitos gerais de"
+      ],
+      "quality_flags": [],
+      "model": "openai/gpt-4.1-mini"
+    },
+    "1203": {
+      "course": "Engenharia Civil",
+      "sources": [
+        {
+          "type": "official_course",
+          "url": "http://www.estgv.ipv.pt",
+          "excerpt_chars": 0
+        },
+        {
+          "type": "dges",
+          "url": "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9089&code=3182",
+          "meta": {
+            "area": "Construção Civil e Engenharia Civil.",
+            "duration": "6 Semestres.",
+            "ects": "180.",
+            "teaching_type": "Ensino Superior Público Politécnico.",
+            "vacancies": "43."
+          }
+        },
+        {
+          "type": "wikipedia",
+          "url": "https://pt.wikipedia.org/wiki/Escola_Superior_de_Tecnologia_e_Gest%C3%A3o_de_Viseu",
+          "excerpt_chars": 601
+        }
+      ],
+      "errors": [],
+      "updatedAt": "2026-05-15 08:20:36 WEST",
+      "description": "A **Licenciatura em Engenharia Civil** da **Escola Superior de Tecnologia e Gestão de Viseu (ESTGV)**, integrada no **Instituto Politécnico de Viseu (IPV)**, é um curso público politécnico com a duração de **6 semestres** e um total de **180 ECTS**. Este curso insere-se na área de **Construção Civil e Engenharia Civil** e destina-se a formar profissionais capazes de intervir em diversas fases do planeamento, projeto, construção e manutenção de infraestruturas e edifícios.\n\nAo longo da formação, os estudantes desenvolvem competências técnicas e científicas fundamentais para a resolução de problemas de engenharia, abrangendo matérias como estruturas, materiais, hidráulica, geotecnia e gestão de obras. A preparação inclui também o domínio de ferramentas tecnológicas e a compreensão dos aspetos ambientais e normativos associados à construção civil. O curso oferece uma sólida base para a integração no setor da engenharia civil, promovendo uma visão prática e atualizada das necessidades do mercado.\n\nCom sede em **Viseu**, a ESTGV destaca-se pela ligação estreita à comunidade local e regional, contribuindo para o desenvolvimento científico e tecnológico da região. Para o ano letivo 2026/2027, estão disponíveis **43 vagas** para este curso, que se caracteriza por uma formação técnica de qualidade no âmbito do ensino superior público politécnico.",
+      "chars": 1359,
+      "quality": "dges_or_fallback",
+      "official_excerpt_chars": 0,
+      "official_excerpt_sample": "",
+      "official_pieces": [],
+      "quality_flags": [],
+      "model": "openai/gpt-4.1-mini"
+    },
+    "1204": {
+      "course": "Engenharia Zootécnica",
+      "sources": [
+        {
+          "type": "official_course",
+          "url": "https://www.esav.ipv.pt/index.php/cursos/licenciaturas?id=21",
+          "excerpt_chars": 610
+        },
+        {
+          "type": "dges",
+          "url": "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9129&code=3185",
+          "meta": {
+            "area": "Produção Agrícola e Animal.",
+            "duration": "6 Semestres.",
+            "ects": "180.",
+            "teaching_type": "Ensino Superior Público Politécnico.",
+            "vacancies": "25."
+          }
+        }
+      ],
+      "errors": [],
+      "updatedAt": "2026-05-15 08:20:36 WEST",
+      "description": "**Engenharia Zootécnica** na **Escola Superior Agrária de Viseu (ESAV)**, integrada no Instituto Politécnico de Viseu, é uma licenciatura de **1º ciclo** com a duração de **6 semestres** e um total de **180 ECTS**. Este curso insere-se na área de **Produção Agrícola e Animal** e é ministrado em regime de ensino superior público politécnico, com uma oferta anual de **25 vagas**.\n\nO curso prepara os estudantes para compreender e aplicar conhecimentos técnicos e científicos relacionados com a produção animal, gestão de explorações agropecuárias e melhoramento genético. Desenvolve competências nas áreas de nutrição, reprodução, saúde e bem-estar animal, promovendo uma formação sólida que alia teoria e prática, essencial para atuar em contextos ligados à zootecnia e à agricultura sustentável.\n\nAo concluir esta licenciatura, os diplomados estarão habilitados a integrar equipas técnicas em explorações agrícolas, empresas do setor agroalimentar e instituições ligadas à investigação e desenvolvimento na área da produção animal, beneficiando de uma formação reconhecida e estruturada segundo o quadro do ensino superior politécnico em Portugal.",
+      "chars": 1150,
+      "quality": "official_course_page",
+      "official_excerpt_chars": 610,
+      "official_excerpt_sample": "Licenciaturas - Conheça a oferta da ESAV. No ensino superior politécnico, o ciclo de estudos conducente ao grau de licenciado corresponde ao 1.º grau de formação superior.\nNo ensino superior politécnico, o ciclo de estudos conducente ao grau de licenciado corresponde ao 1.º grau de formação superior e tem uma duração de seis semestres, que equivalem a 180 ECTS (Sistema Europeu de Transferência de Créditos) ou, excecionalmente, sete ou oito semestres, que equivalem a 240 créditos ECTS.\nO ingresso nos cursos de licenciatura no Politécnico de Viseu pressupõe que os candidatos reúnam os requisitos gerais de",
+      "official_pieces": [
+        "Licenciaturas - Conheça a oferta da ESAV. No ensino superior politécnico, o ciclo de estudos conducente ao grau de licenciado corresponde ao 1.º grau de formação superior.",
+        "No ensino superior politécnico, o ciclo de estudos conducente ao grau de licenciado corresponde ao 1.º grau de formação superior e tem uma duração de seis semestres, que equivalem a 180 ECTS (Sistema Europeu de Transferência de Créditos) ou, excecionalmente, sete ou oito semestres, que equivalem a 240 créditos ECTS.",
+        "O ingresso nos cursos de licenciatura no Politécnico de Viseu pressupõe que os candidatos reúnam os requisitos gerais de"
+      ],
+      "quality_flags": [],
+      "model": "openai/gpt-4.1-mini"
+    },
+    "1209": {
+      "course": "Ciências e Tecnologia do Ambiente",
+      "sources": [
+        {
+          "type": "official_course",
+          "url": "https://sigarra.up.pt/fcup/pt/cur_geral.cur_inicio",
+          "excerpt_chars": 681
+        },
+        {
+          "type": "dges",
+          "url": "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9709&code=3182",
+          "meta": {
+            "area": "Ciências do Ambiente.",
+            "duration": "3 Anos.",
+            "ects": "180.",
+            "teaching_type": "Ensino Superior Público Politécnico.",
+            "vacancies": "35."
+          }
+        }
+      ],
+      "errors": [],
+      "updatedAt": "2026-05-15 08:20:46 WEST",
+      "description": "A **Licenciatura em Ciências e Tecnologia do Ambiente**, ministrada pela **Escola Superior de Tecnologia e Gestão de Viseu (ESTGV) do Instituto Politécnico de Viseu**, é um curso público politécnico com a duração de **3 anos** e um total de **180 ECTS**. Localizado na cidade de **Viseu**, este curso integra a área de **Ciências do Ambiente** e oferece uma formação sólida e prática sobre os processos naturais e as interações entre os sistemas ambientais.\n\nAo longo do curso, os estudantes desenvolvem competências técnicas e científicas essenciais para a análise, monitorização e gestão ambiental, com especial enfoque nas relações entre organismos e o seu meio, incluindo aspetos biológicos e tecnológicos. A formação inclui ainda o desenvolvimento de capacidades transversais em ciência e tecnologia, preparando os alunos para enfrentar desafios ambientais atuais e futuros.\n\nCom uma oferta anual de **35 vagas**, esta licenciatura proporciona uma base adequada para prosseguir estudos avançados, como mestrados e doutoramentos em áreas relacionadas com biotecnologia, biologia sintética, ciências do consumo alimentar e nutrição, entre outros. O curso privilegia a inovação educativa e a aplicação prática, promovendo uma aprendizagem integrada e orientada para a investigação científica e tecnológica no domínio ambiental.",
+      "chars": 1329,
+      "quality": "official_course_page",
+      "official_excerpt_chars": 681,
+      "official_excerpt_sample": "Apoio ao ensino-aprendizagem em ciências biológicas - formação prática sobre as interações hospedeiro-microorganismos.\nCompetências Transversais: SciTech - Desafios Transversais em Ciência e Tecnologia.\nOferta de ciclos de estudo em 2025/2026: Mestrado em Aplicações em Biotecnologia e Biologia Sintética.\nOferta de ciclos de estudo em 2025/2026: Doutoramento em Ciências do Consumo Alimentar e Nutrição.\nEspecialização em Ilustração Científica - Ilustração em Ciências Naturais da Universidade do Porto.\nInovação Educacional no Ensino da Biologia e da Geologia e das Ciências Naturais.\nOferta de cursos em 2025/2026: Curso de Estudos Avançados em Projeto Científico e Tecnológico.",
+      "official_pieces": [
+        "Apoio ao ensino-aprendizagem em ciências biológicas - formação prática sobre as interações hospedeiro-microorganismos.",
+        "Competências Transversais: SciTech - Desafios Transversais em Ciência e Tecnologia.",
+        "Oferta de ciclos de estudo em 2025/2026: Mestrado em Aplicações em Biotecnologia e Biologia Sintética.",
+        "Oferta de ciclos de estudo em 2025/2026: Doutoramento em Ciências do Consumo Alimentar e Nutrição.",
+        "Especialização em Ilustração Científica - Ilustração em Ciências Naturais da Universidade do Porto."
+      ],
+      "quality_flags": [],
+      "model": "openai/gpt-4.1-mini"
+    },
+    "1207": {
+      "course": "Fisioterapia",
+      "sources": [
+        {
+          "type": "dges",
+          "url": "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9504&code=7085",
+          "meta": {
+            "area": "Terapia e Reabilitação.",
+            "duration": "4 Anos.",
+            "ects": "240.",
+            "teaching_type": "Ensino Superior Público Politécnico.",
+            "vacancies": "18."
+          }
+        }
+      ],
+      "errors": [],
+      "updatedAt": "2026-05-15 08:20:46 WEST",
+      "description": "**Fisioterapia** é uma licenciatura de 1º ciclo com a duração de **4 anos** ministrada na **Escola Superior de Saúde de Viseu (ESSV) / Instituto Politécnico de Viseu (IPV)**. Inserida na área de **Terapia e Reabilitação**, esta formação tem como objetivo principal preparar profissionais capazes de atuar na promoção, manutenção e recuperação da saúde física dos utentes, através de técnicas específicas de fisioterapia.\n\nO curso desenvolve competências teóricas e práticas essenciais para a avaliação, diagnóstico funcional e intervenção terapêutica em diferentes contextos clínicos e comunitários. Os estudantes adquirem conhecimentos em anatomia, fisiologia, biomecânica, cinesiologia e métodos de reabilitação, permitindo-lhes intervir em situações de disfunção motora e dor, promovendo a melhoria da qualidade de vida dos pacientes.\n\nEsta licenciatura, de natureza pública e politécnica, confere um total de **240 ECTS** e disponibiliza **18 vagas para o ano letivo 2026/2027**. A formação em Fisioterapia na ESSV/IPV é estruturada para garantir uma sólida base científica e técnica, preparando os alunos para responder aos desafios da prática profissional na área da saúde.",
+      "chars": 1179,
+      "quality": "dges_or_fallback",
+      "official_excerpt_chars": 0,
+      "official_excerpt_sample": "",
+      "official_pieces": [],
+      "quality_flags": [],
+      "model": "openai/gpt-4.1-mini"
+    },
+    "1206": {
+      "course": "Tecnologias e Design de Multimédia",
+      "sources": [
+        {
+          "type": "official_course",
+          "url": "https://www.estgv.ipv.pt",
+          "excerpt_chars": 635
+        },
+        {
+          "type": "dges",
+          "url": "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9491&code=3182",
+          "meta": {
+            "area": "Áudio-Visuais e Produção dos Media.",
+            "duration": "6 Semestres.",
+            "ects": "180.",
+            "teaching_type": "Ensino Superior Público Politécnico.",
+            "vacancies": "48."
+          }
+        }
+      ],
+      "errors": [],
+      "updatedAt": "2026-05-15 08:20:45 WEST",
+      "description": "A **Licenciatura em Tecnologias e Design de Multimédia** ministrada pela **Escola Superior de Tecnologia e Gestão de Viseu (ESTGV) / IPV** é um curso de **1º ciclo com a duração de 6 semestres**, totalizando **180 ECTS**. Integrado na área de **Áudio-Visuais e Produção dos Media**, este curso público politécnico prepara os estudantes para a conceção, desenvolvimento e gestão de projetos multimédia, combinando competências técnicas e criativas.\n\nAo longo do curso, os alunos adquirem conhecimentos em tecnologias digitais, design gráfico, produção audiovisual e interação multimédia, promovendo uma formação sólida que alia teoria e prática. Esta preparação permite aos estudantes desenvolver soluções inovadoras para diferentes suportes e plataformas, com uma abordagem integrada que valoriza a criatividade e a funcionalidade.\n\nCom uma oferta anual de **48 vagas**, o curso decorre na cidade de **Viseu** e destina-se a quem pretende ingressar numa área em constante evolução, onde a tecnologia e o design se cruzam para responder às necessidades do mercado dos media e comunicação. A formação assegura uma base técnica e conceptual adequada para prosseguir estudos ou integrar equipas multidisciplinares no setor multimédia.",
+      "chars": 1230,
+      "quality": "official_course_page",
+      "official_excerpt_chars": 635,
+      "official_excerpt_sample": "Tecnologias e Design de Multimédia, uma exposição de projetos desenvolvidos por atuais estudantes e um escape.\nTema: Literacia Financeira em Tempos de Incerteza: o Papel do Banco de Portugal Data e hora: 13 de maio de 2026, 17:00h Local: sala 21 Duração prevista: 45/50 minutos Dinamizador: Banco de Portugal Destinatários: estudantes, docentes e funcionários da ESTGV.\nWebinar, Sustentabilidade Agroalimentar: dos Desafios às Soluções para a Sociedade Webinar, Sustentabilidade Agroalimentar: dos Desafios às Soluções para a Sociedade O CERNAS – Centro de Estudos em Recursos Naturais, Ambiente e Sociedade encontra-se a promover uma.",
+      "official_pieces": [
+        "Tecnologias e Design de Multimédia, uma exposição de projetos desenvolvidos por atuais estudantes e um escape.",
+        "Tema: Literacia Financeira em Tempos de Incerteza: o Papel do Banco de Portugal Data e hora: 13 de maio de 2026, 17:00h Local: sala 21 Duração prevista: 45/50 minutos Dinamizador: Banco de Portugal Destinatários: estudantes, docentes e funcionários da ESTGV.",
+        "Webinar, Sustentabilidade Agroalimentar: dos Desafios às Soluções para a Sociedade Webinar, Sustentabilidade Agroalimentar: dos Desafios às Soluções para a Sociedade O CERNAS – Centro de Estudos em Recursos Naturais, Ambiente e Sociedade encontra-se a promover uma."
+      ],
+      "quality_flags": [],
+      "model": "openai/gpt-4.1-mini"
+    },
+    "1208": {
+      "course": "Artes Performativas",
+      "sources": [
+        {
+          "type": "official_course",
+          "url": "https://www.esev.ipv.pt",
+          "excerpt_chars": 136
+        },
+        {
+          "type": "dges",
+          "url": "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9681&code=3181",
+          "meta": {
+            "area": "Artes do Espetáculo.",
+            "duration": "6 Semestres.",
+            "ects": "180.",
+            "teaching_type": "Ensino Superior Público Politécnico.",
+            "vacancies": "26."
+          }
+        }
+      ],
+      "errors": [],
+      "updatedAt": "2026-05-15 08:20:46 WEST",
+      "description": "A **Licenciatura em Artes Performativas** da **Escola Superior de Educação de Viseu (ESEV)**, integrada no Instituto Politécnico de Viseu, é um curso superior público politécnico com a duração de seis semestres e um total de 180 ECTS. Inserido na área de **Artes do Espetáculo**, este curso visa formar profissionais capazes de atuar em diversas vertentes das artes performativas, desenvolvendo competências técnicas, criativas e críticas essenciais para a prática artística contemporânea.\n\nAo longo do curso, os estudantes exploram diferentes linguagens e técnicas performativas, adquirindo conhecimentos teóricos e práticos que abrangem desde a interpretação e criação até a produção e gestão de projetos artísticos. Esta formação prepara os alunos para uma compreensão aprofundada das dinâmicas do espetáculo, promovendo a capacidade de inovação e adaptação em contextos culturais variados.\n\nCom uma oferta anual limitada a 26 vagas, a licenciatura em Artes Performativas em Viseu proporciona um ambiente académico dedicado e especializado, ideal para quem pretende desenvolver uma carreira nas áreas artísticas do espetáculo, com uma base sólida e reconhecida no ensino superior politécnico.",
+      "chars": 1195,
+      "quality": "dges_or_fallback",
+      "official_excerpt_chars": 136,
+      "official_excerpt_sample": "ESEV, Escola Superior de Educação de Viseu. Consulte a oferta formativa, Licenciaturas, Mestrados, Pós-Graduações, Formação Profissional",
+      "official_pieces": [
+        "ESEV, Escola Superior de Educação de Viseu. Consulte a oferta formativa, Licenciaturas, Mestrados, Pós-Graduações, Formação Profissional"
+      ],
+      "quality_flags": [],
+      "model": "openai/gpt-4.1-mini"
+    },
+    "1211": {
+      "course": "Medicina Dentária",
+      "sources": [
+        {
+          "type": "dges",
+          "url": "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9548&code=506",
+          "meta": {
+            "area": "",
+            "duration": "",
+            "ects": "",
+            "teaching_type": "",
+            "vacancies": ""
+          }
+        }
+      ],
+      "errors": [
+        "course_url=HTTPError: HTTP Error 403: Forbidden"
+      ],
+      "updatedAt": "2026-05-15 08:20:53 WEST",
+      "description": "O **Mestrado Integrado em Medicina Dentária** da **Faculdade de Medicina da Universidade de Coimbra (FMUC)** é uma formação superior que prepara profissionais para o exercício da medicina dentária, integrando conhecimentos científicos, técnicos e clínicos. Este curso desenvolve competências nas áreas da saúde oral, diagnóstico, prevenção e tratamento de doenças dentárias, promovendo uma abordagem integrada e centrada no doente.\n\nAo longo do curso, os estudantes adquirem uma sólida base teórica e prática, que inclui o domínio de técnicas clínicas, a utilização de tecnologias modernas e a compreensão dos aspetos éticos e legais da profissão. A formação visa capacitar os futuros médicos dentistas para atuarem em contextos diversos, com rigor científico e responsabilidade social.\n\nEste mestrado integrado é ministrado na cidade de **Coimbra** e corresponde a um ciclo de estudos que confere habilitação profissional reconhecida, conforme os parâmetros definidos pela Direção-Geral do Ensino Superior (DGES). A sua estrutura curricular está orientada para garantir uma preparação completa e atualizada, adequada às exigências do setor da saúde oral.",
+      "chars": 1155,
+      "quality": "dges_or_fallback",
+      "official_excerpt_chars": 0,
+      "official_excerpt_sample": "",
+      "official_pieces": [],
+      "quality_flags": [],
+      "model": "openai/gpt-4.1-mini"
+    },
+    "1210": {
+      "course": "Publicidade e Relações Públicas",
+      "sources": [
+        {
+          "type": "dges",
+          "url": "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9930&code=3181",
+          "meta": {
+            "area": "Marketing e Publicidade.",
+            "duration": "6 Semestres.",
+            "ects": "180.",
+            "teaching_type": "Ensino Superior Público Politécnico.",
+            "vacancies": "67."
+          }
+        }
+      ],
+      "errors": [
+        "course_url=HTTPError: HTTP Error 404: Not Found"
+      ],
+      "updatedAt": "2026-05-15 08:20:52 WEST",
+      "description": "A **Licenciatura em Publicidade e Relações Públicas** da **Escola Superior de Educação de Viseu (ESEV)**, integrada no Instituto Politécnico de Viseu, é um curso de **ensino superior público politécnico** com a duração de **6 semestres** e um total de **180 ECTS**. Este curso insere-se na área de **Marketing e Publicidade** e destina-se a formar profissionais capazes de atuar na conceção, planeamento e gestão de estratégias de comunicação e promoção em diversos contextos organizacionais.\n\nAo longo do curso, os estudantes desenvolvem competências nas áreas da publicidade, relações públicas, comunicação estratégica, marketing e gestão de marcas, preparando-se para responder aos desafios do mercado e das organizações contemporâneas. A formação combina conhecimentos teóricos com práticas que promovem a criatividade, a análise crítica e a capacidade de comunicação eficaz.\n\nCom uma oferta anual de **67 vagas**, esta licenciatura proporciona uma base sólida para quem pretende ingressar no setor da comunicação, publicidade e relações públicas, valorizando a inovação e a adaptação às dinâmicas do mercado. O curso é ministrado na cidade de **Viseu**, no distrito de Viseu, e enquadra-se no primeiro ciclo do ensino superior.",
+      "chars": 1232,
+      "quality": "dges_or_fallback",
+      "official_excerpt_chars": 0,
+      "official_excerpt_sample": "",
+      "official_pieces": [],
+      "quality_flags": [],
+      "model": "openai/gpt-4.1-mini"
+    },
+    "1212": {
+      "course": "Medicina",
+      "sources": [
+        {
+          "type": "dges",
+          "url": "https://www.dges.gov.pt/guias/detcursopi.asp?frame=1&codc=9813&code=506",
+          "meta": {
+            "area": "",
+            "duration": "",
+            "ects": "",
+            "teaching_type": "",
+            "vacancies": ""
+          }
+        }
+      ],
+      "errors": [
+        "course_url=HTTPError: HTTP Error 403: Forbidden"
+      ],
+      "updatedAt": "2026-05-15 08:20:53 WEST",
+      "description": "O **Mestrado Integrado em Medicina** da **Faculdade de Medicina da Universidade de Coimbra (FMUC)** é uma formação académica que prepara os estudantes para o exercício da medicina, integrando conhecimentos científicos, técnicos e humanísticos essenciais à prática clínica. Este curso visa desenvolver competências nas áreas da promoção da saúde, diagnóstico, tratamento e prevenção de doenças, assim como na investigação médica e na ética profissional.\n\nAo longo do curso, os alunos adquirem uma sólida base em ciências biomédicas, ciências clínicas e saúde pública, complementada por estágios práticos que permitem a aplicação dos conhecimentos em contextos reais de cuidados de saúde. A formação é orientada para a preparação de profissionais capazes de atuar em diferentes áreas da medicina, com uma visão crítica e humanista.\n\nEste mestrado integrado, lecionado na cidade de Coimbra, está estruturado de acordo com as normas da Direção-Geral do Ensino Superior, garantindo um percurso académico reconhecido e adequado às exigências do ensino médico em Portugal.",
+      "chars": 1065,
+      "quality": "dges_or_fallback",
+      "official_excerpt_chars": 0,
+      "official_excerpt_sample": "",
+      "official_pieces": [],
+      "quality_flags": [],
+      "model": "openai/gpt-4.1-mini"
+    }
+  }
+}
