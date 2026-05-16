@@ -22,3 +22,7 @@ The reusable updater script is `scrape_infocursos_to_sheet.py`; it updates only 
 ## Entry-score backfill
 
 `backfill_entry_scores_from_2020.py` extends `nota_ult_col_json` with official DGES last-admitted scores from 2020 onward, using the historical DGES statistical PDFs and keeping the legacy note columns untouched.
+
+## Course-detail backfill
+
+`backfill_course_details.py` enriches the working sheet from each `detalhes_do_curso` URL. It appends the requested course-detail columns at the end of `dges_cursos_2026`, updates only those columns plus `updated_at`, keeps resumable state in `data/`, and maintains the `area_cnaef` tab as a unique list of CNAEF areas.
