@@ -1,7 +1,7 @@
 {
   "topic": "Incentivos em Portugal para painéis solares/fotovoltaico/autoconsumo em habitação",
   "createdAt": "2026-04-27T15:05:00+01:00",
-  "lastCheckedAt": "2026-05-16T18:17:00+01:00",
+  "lastCheckedAt": "2026-05-17T00:19:00+01:00",
   "status": "monitoring",
   "activeIncentives": [],
   "watchSignals": [
@@ -9,7 +9,7 @@
       "level": "watch",
       "title": "Governo prepara novo programa de apoio a painéis solares com vouchers tipo E-LAR",
       "detectedAt": "2026-04-27T15:56:00+01:00",
-      "lastSeenAt": "2026-05-16T18:17:00+01:00",
+      "lastSeenAt": "2026-05-17T00:19:00+01:00",
       "source": "SIC Notícias/Observador/ECO/Idealista/Contas Poupança/Portal Energia/Goldenergy/ChargeGuru e outros sinais secundários; sem aviso oficial localizado",
       "url": "https://sicnoticias.pt/pais/ambiente/2026-04-24-video-governo-lanca-novos-apoios-a-compra-de-carros-eletricos-e-paineis-solares-ee3e9d23",
       "summary": "Mantem-se sinal de imprensa/retalho de futuro apoio/voucher para paineis solares/autoconsumo familiar, possivelmente com baterias e verbas PRR remanescentes. Pesquisas de 2026-05-16 18:17 continuam a devolver sobretudo fontes secundarias; nao foi encontrado aviso oficial, data/hora de abertura, regulamento, formulario ou pagina de candidatura no Fundo Ambiental/Agencia para o Clima, Portugal.gov.pt, DGEG, ADENE, Recuperar Portugal ou Portugal 2030.",
@@ -19,7 +19,7 @@
       "level": "watch",
       "title": "Instrumento financeiro para eficiência energética residencial e pobreza energética inclui fotovoltaico/baterias",
       "detectedAt": "2026-04-27T15:59:00+01:00",
-      "lastSeenAt": "2026-05-16T18:17:00+01:00",
+      "lastSeenAt": "2026-05-17T00:19:00+01:00",
       "source": "ADENE, 2025-12-16 / Portaria n.º 442-A/2025/1",
       "url": "https://www.adene.pt/publicadas-medidas-de-eficiencia-energetica-para-combate-a-pobreza-energetica/",
       "summary": "Apoio sob forma de empréstimo reembolsável, gerido pelo BPF e Agência para o Clima, para medidas de eficiência energética no residencial, incluindo produção renovável para autoconsumo (fotovoltaico, baterias). Não é candidatura direta/voucher solar habitacional universal.",
@@ -29,7 +29,7 @@
       "level": "info",
       "title": "DGEG: Despacho n.º 5825/2026 determina novos regulamentos técnicos do autoconsumo",
       "detectedAt": "2026-05-14T12:17:00+01:00",
-      "lastSeenAt": "2026-05-16T18:17:00+01:00",
+      "lastSeenAt": "2026-05-17T00:19:00+01:00",
       "source": "DGEG / Diário da República, 2026-05-06",
       "url": "https://www.dgeg.gov.pt/pt/destaques/despacho-n-%C2%BA-5825-2026-de-6-de-maio/",
       "summary": "A DGEG destaca o Despacho n.º 5825/2026, de 6 de maio, que determina a elaboração e aprovação do Regulamento Técnico das Instalações no Autoconsumo e do Regulamento de Inspeção e Certificação no Autoconsumo. É relevante para enquadramento regulatório, mas não constitui incentivo financeiro, candidatura, voucher ou apoio aberto a particulares.",
@@ -38,64 +38,70 @@
   ],
   "latestOfficialChecks": [
     {
-      "at": "2026-05-16T18:17:00+01:00",
+      "at": "2026-05-17T00:19:00+01:00",
       "source": "Fundo Ambiental / Agencia para o Clima",
       "url": "https://www.fundoambiental.pt/candidaturas/formularios.aspx",
       "finding": "Pagina de formularios PRR continua a indicar: 'Nao existem avisos abertos neste momento.' Sem novo aviso solar habitacional aberto."
     },
     {
-      "at": "2026-05-16T18:17:00+01:00",
+      "at": "2026-05-17T00:19:00+01:00",
       "source": "Fundo Ambiental - homepage/listagem de apoios",
       "url": "https://www.fundoambiental.pt/",
       "finding": "Apoios em destaque continuam a ser VEN 2025/2026, mobilidade verde, postos de carregamento, CELE, Vale Eficiencia 2021, Bioeconomia, Gases Renovaveis e outros apoios antigos; sem programa/voucher solar residencial novo."
     },
     {
-      "at": "2026-05-16T18:17:00+01:00",
+      "at": "2026-05-17T00:19:00+01:00",
       "source": "Fundo Ambiental - noticias/menu",
       "url": "https://www.fundoambiental.pt/listagem-noticias.aspx",
-      "finding": "Menu/listagem continua sem aviso novo para paineis solares, fotovoltaico ou autoconsumo residencial. Apoios 2026 visiveis continuam fora do alvo residencial privado, incluindo resiliência do SEN, Floresta Azul e OIGP."
+      "finding": "Menu/listagem continua sem aviso novo para paineis solares, fotovoltaico ou autoconsumo residencial. Apoios 2026 visiveis continuam fora do alvo residencial privado, incluindo resiliência do SEN, Floresta Azul, OIGP e CELE."
     },
     {
-      "at": "2026-05-16T18:17:00+01:00",
+      "at": "2026-05-17T00:19:00+01:00",
+      "source": "Fundo Ambiental - CER/autoconsumo coletivo",
+      "url": "https://www.fundoambiental.pt/apoios-prr/c13-eficiencia-energetica-em-edificios/c13-i01-02-03-apoio-a-concretizacao-de-comunidades-de-energia-renovavel-e-autoconsumo-coletivo.aspx",
+      "finding": "Pagina oficial mostra apenas informacoes de reforco/prorrogacao de aviso antigo para Comunidades de Energia Renovavel e Autoconsumo Coletivo; nao e nova candidatura direta universal para particulares/casa privada."
+    },
+    {
+      "at": "2026-05-17T00:19:00+01:00",
       "source": "DGEG",
       "url": "https://www.dgeg.gov.pt/",
       "finding": "Pesquisa especifica continua sem incentivo/candidatura residencial para paineis solares/autoconsumo; apenas enquadramento institucional/tecnico/regulatorio e registo UPAC."
     },
     {
-      "at": "2026-05-16T18:17:00+01:00",
+      "at": "2026-05-17T00:19:00+01:00",
       "source": "DGEG - autoconsumo e CER",
       "url": "https://www.dgeg.gov.pt/pt/areas-setoriais/energia/energia-eletrica/producao-de-energia-eletrica/producao-descentralizada-autoconsumo-e-upp-mp-mn/autoconsumo-e-cer/",
       "finding": "Pagina mantem informacao de licenciamento, registo e procedimentos UPAC/CER; sem incentivo financeiro, voucher ou candidatura aberta."
     },
     {
-      "at": "2026-05-16T18:17:00+01:00",
+      "at": "2026-05-17T00:19:00+01:00",
       "source": "ADENE",
       "url": "https://www.adene.pt/apoio_incentivo/apoios-e-incentivos-para-a-sua-casa/",
       "finding": "Pagina continua generica sobre conforto, reducao de consumos e beneficios associados ao certificado energetico; nao apresenta candidatura direta nova para fotovoltaico/paineis solares."
     },
     {
-      "at": "2026-05-16T18:17:00+01:00",
+      "at": "2026-05-17T00:19:00+01:00",
       "source": "Recuperar Portugal / PRR",
       "url": "https://recuperarportugal.gov.pt/candidaturas-prr/",
       "finding": "Extracao da pagina de candidaturas PRR nao revelou aviso individual novo para habitacao/paineis solares; pesquisas especificas continuam a apontar para sinais secundarios sem confirmacao oficial."
     },
     {
-      "at": "2026-05-16T18:17:00+01:00",
+      "at": "2026-05-17T00:19:00+01:00",
       "source": "Portugal 2030 - avisos",
       "url": "https://portugal2030.pt/avisos/",
       "finding": "Extracao direta continua limitada; pesquisas especificas nao localizaram aviso novo aberto para fotovoltaico/autoconsumo habitacional privado."
     },
     {
-      "at": "2026-05-16T18:17:00+01:00",
+      "at": "2026-05-17T00:19:00+01:00",
       "source": "Portugal 2030 - Plano Anual de Avisos",
       "url": "https://portugal2030.pt/plano-anual-de-avisos/",
       "finding": "Pesquisa continua a apontar para tipologias de energia/autoconsumo em planos/avisos, sem aviso novo aberto para particulares/casa privada localizado nesta verificacao."
     },
     {
-      "at": "2026-05-16T18:17:00+01:00",
+      "at": "2026-05-17T00:19:00+01:00",
       "source": "Portugal.gov.pt",
-      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/100-milhoes-para-casas-mais-eficientes-e-combate-a-pobreza-energetica",
-      "finding": "Continua a existir noticia/enquadramento oficial sobre E-LAR e Bairros + Sustentaveis, incluindo paineis solares em bairros, mas sem formulario, calendario ou aviso solar residencial aberto para particulares localizado."
+      "url": "https://portugal.gov.pt/gc25/governo/comunicados-do-conselho-de-ministros/718",
+      "finding": "Comunicado oficial de 19/03/2026 reforca medidas regulatorias de energia, incluindo dispensa de controlo previo para autoconsumo ate 800 W; nao e incentivo financeiro, candidatura, voucher ou aviso aberto."
     }
   ],
   "closedOrNotDirectlyRelevant": [
@@ -171,6 +177,10 @@
   ],
   "lastSearches": [
     {
+      "at": "2026-05-17T00:19:00+01:00",
+      "summary": "Pesquisas obrigatorias executadas e verificacoes oficiais diretas no Fundo Ambiental/Agencia para o Clima, pagina de formularios PRR, homepage/listagem de apoios/noticias, pagina CER/autoconsumo coletivo, DGEG, ADENE, Recuperar Portugal/PRR, Portugal.gov.pt e Portugal 2030. Nao foi localizado aviso oficial novo, candidatura aberta, data/hora de abertura, regulamento de apoio financeiro ou formulario/plataforma para apoio direto a paineis solares/fotovoltaico/autoconsumo em casa privada no continente. O Fundo Ambiental continua a indicar que nao existem avisos PRR abertos. Pesquisas continuam a devolver sinais secundarios sobre futuro voucher solar sem confirmacao oficial. Foram reconfirmados apoios/alteracoes nao diretamente aplicaveis: aviso antigo CER/autoconsumo coletivo com reforco/prorrogacao, regras regulatorias de autoconsumo ate 800 W, eficiencia energetica agricola via IFAP, E-LAR e tipologias Portugal 2030/PRR sem nova candidatura particular residencial."
+    },
+    {
       "at": "2026-05-16T18:17:00+01:00",
       "summary": "Pesquisas obrigatorias executadas e verificacoes oficiais diretas no Fundo Ambiental/Agencia para o Clima, pagina de formularios PRR, homepage/listagem de apoios/noticias, DGEG, ADENE, Recuperar Portugal/PRR, Portugal.gov.pt e Portugal 2030. Nao foi localizado aviso oficial novo, candidatura aberta, data/hora de abertura, regulamento de apoio financeiro ou formulario/plataforma para apoio direto a paineis solares/fotovoltaico/autoconsumo em casa privada no continente. O Fundo Ambiental continua a indicar que nao existem avisos PRR abertos. Pesquisas continuam a devolver sinais secundarios sobre futuro voucher solar sem confirmacao oficial. Foram reconfirmados apoios/planos nao diretamente aplicaveis: eficiencia energetica agricola via IFAP, Programa de Apoio a Bairros mais Sustentaveis, E-LAR e tipologias Portugal 2030/PRR sem nova candidatura particular residencial."
     },
@@ -197,10 +207,6 @@
     {
       "at": "2026-05-15T00:18:00+01:00",
       "summary": "Pesquisas obrigatórias executadas e verificações oficiais diretas no Fundo Ambiental/Agência para o Clima, página de formulários PRR, listagem de notícias, homepage, Portugal.gov.pt via pesquisas específicas, DGEG, ADENE, Recuperar Portugal/PRR e Portugal 2030. Não foi localizado aviso oficial novo, candidatura aberta, data/hora de abertura, regulamento de apoio financeiro ou formulário/plataforma para apoio direto a painéis solares/fotovoltaico/autoconsumo em casa privada no continente. O Fundo Ambiental continua a indicar que não existem avisos PRR abertos. DGEG mostra enquadramento institucional/técnico e UPP, incluindo Portaria n.º 218/2026/1 e Despacho n.º 5825/2026, mas não incentivo/candidatura. ADENE não mostra candidatura direta. Recuperar Portugal/Portugal 2030 não revelaram aviso individual. Pesquisas continuam a devolver sinais secundários sobre futuro voucher solar e alegações não confirmadas sobre Casa Eficiente/Casa Eficiente 2030, sem confirmação oficial. Um resultado de pesquisa agregada afirmou indevidamente candidaturas abertas/previsão, mas as citações eram secundárias e não houve confirmação oficial; não é alertável."
-    },
-    {
-      "at": "2026-05-14T18:17:00+01:00",
-      "summary": "Pesquisas obrigatórias executadas e verificações oficiais diretas no Fundo Ambiental/Agência para o Clima, página de formulários PRR, listagem de notícias, homepage, Portugal.gov.pt via pesquisas específicas, DGEG, ADENE, Recuperar Portugal/PRR e Portugal 2030. Não foi localizado aviso oficial novo, candidatura aberta, data/hora de abertura, regulamento de apoio financeiro ou formulário/plataforma para apoio direto a painéis solares/fotovoltaico/autoconsumo em casa privada no continente. O Fundo Ambiental continua a indicar que não existem avisos PRR abertos. DGEG mostra enquadramento institucional/técnico e UPP, incluindo Portaria n.º 218/2026/1 e Despacho n.º 5825/2026, mas não incentivo/candidatura. ADENE não mostra candidatura direta. Recuperar Portugal/Portugal 2030 não revelaram aviso individual. Pesquisas continuam a devolver sinais secundários sobre futuro voucher solar e alegações não confirmadas sobre Casa Eficiente/Casa Eficiente 2030, sem confirmação oficial."
     }
   ],
   "alertCriteria": [
@@ -216,7 +222,7 @@
     "telegramTo": "6384494297",
     "fallback": "Discord #nyx-tasks only if Telegram delivery fails"
   },
-  "lastFindingsSummary": "Nao encontrei candidatura oficial aberta para paineis solares habitacionais/casa privada nem data/hora oficial de abertura na verificacao de 2026-05-16 18:17. O Fundo Ambiental/Agencia para o Clima continua sem avisos PRR abertos e sem novo programa solar habitacional; homepage/listagem de apoios nao mostra voucher solar. DGEG mantem informacao tecnica/regulatoria de autoconsumo, sem incentivo financeiro. ADENE nao mostra candidatura direta. Recuperar Portugal e Portugal.gov.pt nao revelaram formulario/calendario novo. Portugal 2030 mantem referencias a tipologias de autoconsumo/CER em planos/avisos regionais, mas sem aviso novo aberto para particulares/casa privada. Mantem-se apenas sinais secundarios de futuro voucher solar, sem confirmacao oficial.",
+  "lastFindingsSummary": "Nao encontrei candidatura oficial aberta para paineis solares habitacionais/casa privada nem data/hora oficial de abertura na verificacao de 2026-05-17 00:19. O Fundo Ambiental/Agencia para o Clima continua sem avisos PRR abertos e sem novo programa solar habitacional; homepage/listagem de apoios nao mostra voucher solar. DGEG mantem informacao tecnica/regulatoria de autoconsumo, sem incentivo financeiro. ADENE nao mostra candidatura direta. Recuperar Portugal e Portugal.gov.pt nao revelaram formulario/calendario novo; o comunicado oficial encontrado e regulatorio e nao financeiro. Portugal 2030 mantem referencias a tipologias de autoconsumo/CER em planos/avisos, mas sem aviso novo aberto para particulares/casa privada. Mantem-se apenas sinais secundarios de futuro voucher solar, sem confirmacao oficial.",
   "checkedUrls": [
     "https://www.fundoambiental.pt/candidaturas/formularios.aspx",
     "https://www.fundoambiental.pt/",
@@ -233,6 +239,8 @@
     "https://www.fundoambiental.pt/apoios-prr/c13-eficiencia-energetica-em-edificios/11c13-i012025-programa-e-lar-2-fase.aspx",
     "https://www.fundoambiental.pt/apoios-prr/c21-repowereu1/01c21-i182026-flexibilidade-de-rede-e-armazenamento.aspx",
     "https://www.portugal.gov.pt/",
-    "https://alentejo.portugal2030.pt/2026/04/08/alentejo-2030-abre-candidaturas-para-reforco-da-eficiencia-energetica-na-habitacao-social/"
+    "https://alentejo.portugal2030.pt/2026/04/08/alentejo-2030-abre-candidaturas-para-reforco-da-eficiencia-energetica-na-habitacao-social/",
+    "https://www.fundoambiental.pt/apoios-prr/c13-eficiencia-energetica-em-edificios/c13-i01-02-03-apoio-a-concretizacao-de-comunidades-de-energia-renovavel-e-autoconsumo-coletivo.aspx",
+    "https://portugal.gov.pt/gc25/governo/comunicados-do-conselho-de-ministros/718"
   ]
 }
