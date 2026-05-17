@@ -50,7 +50,6 @@ export default async function ProvaSetPage({ params }: PageProps) {
                 : <NotebookPen className="size-4 shrink-0 text-slate-400" aria-hidden="true" />
               }
               <span className="font-medium text-slate-800">{prova.name}</span>
-              <span className="text-xs text-slate-400">({prova.code})</span>
             </div>
           ))}
         </div>

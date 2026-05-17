@@ -36,7 +36,6 @@ export default async function ProvaIngressoPage({ params }: PageProps) {
       <Breadcrumbs items={[{ label: "Provas de ingresso", href: "/provas-ingresso/" }, { label: prova.name }]} />
 
       <section>
-        <p className="mb-1 font-mono text-sm font-semibold text-slate-400">Prova {prova.code}</p>
         <h1 className="text-4xl font-bold tracking-tight text-slate-950">{prova.name}</h1>
         <p className="mt-3 text-slate-700">
           Podes-te candidatar a {courses.length} curso{courses.length === 1 ? "" : "s"} com esta prova de ingresso.
