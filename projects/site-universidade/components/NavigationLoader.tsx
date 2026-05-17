@@ -11,16 +11,20 @@ function NavigationLoaderInner() {
 
   useEffect(() => {
     function startLoader() {
-      timerRef.current = setTimeout(() => setLoading(true), 120);
+      if (timerRef.current) clearTimeout(timerRef.current);
+      timerRef.current = setTimeout(() => setLoading(true), 140);
     }
 
     function handleClick(e: MouseEvent) {
       const anchor = (e.target as HTMLElement).closest("a");
       if (!anchor || anchor.target === "_blank" || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
       const href = anchor.getAttribute("href");
-      if (!href || href.startsWith("#") || /^https?:\/\//.test(href) || href.startsWith("mailto:") || href.startsWith("tel:")) return;
-      const targetPath = href.split("?")[0].split("#")[0];
-      if (!targetPath || targetPath === window.location.pathname) return;
+      if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:")) return;
+
+      const target = new URL(href, window.location.href);
+      if (target.origin !== window.location.origin) return;
+      if (target.pathname === window.location.pathname && target.search === window.location.search) return;
+
       startLoader();
     }
 
@@ -41,9 +45,10 @@ function NavigationLoaderInner() {
   if (!loading) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-white/75 backdrop-blur-sm">
-      <div className="h-10 w-10 animate-spin rounded-full border-4 border-slate-200 border-t-brand-600" />
-    </div>
+    <div
+      className="navigation-progress fixed left-0 right-0 top-0 z-[9999] h-0.5 bg-brand-600 shadow-[0_0_12px_rgba(37,99,235,0.45)]"
+      aria-hidden="true"
+    />
   );
 }
 

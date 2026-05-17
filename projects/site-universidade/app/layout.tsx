@@ -6,6 +6,7 @@ import { ConsentBanner } from "@/components/ConsentBanner";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { NavigationLoader } from "@/components/NavigationLoader";
+import { PageTransition } from "@/components/PageTransition";
 import { siteConfig } from "@/lib/site";
 
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
@@ -86,7 +87,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <NavigationLoader />
         </Suspense>
         <Header />
-        <main>{children}</main>
+        <main>
+          <Suspense fallback={children}>
+            <PageTransition>{children}</PageTransition>
+          </Suspense>
+        </main>
         <Footer />
         <ConsentBanner />
       </body>
