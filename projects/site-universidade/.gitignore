@@ -9,3 +9,6 @@ node_modules/
 
 # generated at build time
 /public/search-index.json
+
+# Claude Code user-local settings
+.claude/settings.local.json
