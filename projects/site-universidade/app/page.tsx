@@ -3,8 +3,7 @@ import { ADS_ENABLED, AdSlot } from "@/components/AdSlot";
 import { Container } from "@/components/Container";
 import { PortugalDistrictMap } from "@/components/PortugalDistrictMap";
 import { Top10CuriositiesCarousel } from "@/components/Top10CuriositiesCarousel";
-import { getAllDistricts, getCourseInitials, getCycles } from "@/lib/courses";
-import { slugify } from "@/lib/slug";
+import { getAllDistricts } from "@/lib/courses";
 import { getTop10Metrics } from "@/lib/top10";
 
 const DISTRICT_PREFIX: Record<string, string> = {
@@ -59,8 +58,6 @@ function metricLead(metricId: string): string {
 }
 
 export default function HomePage() {
-  const initials = getCourseInitials();
-  const cycles = getCycles();
   const top10Facts = getTop10Metrics()
     .map((metric) => {
       const first = metric.items[0]?.course;
@@ -118,31 +115,6 @@ export default function HomePage() {
           <AdSlot label="Homepage — topo" />
         </section>
       )}
-
-      <section className="mt-12 grid gap-8 lg:grid-cols-2">
-        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-semibold text-slate-950">Explorar por inicial</h2>
-          <div className="mt-5 flex flex-wrap gap-2">
-            {initials.map((initial) => (
-              <Link key={initial} href={`/cursos/#${initial}`} className="rounded-lg border border-slate-200 px-3 py-2 text-sm font-semibold text-slate-700 hover:border-brand-600 hover:text-brand-700">
-                {initial}
-              </Link>
-            ))}
-          </div>
-        </div>
-        {cycles.length > 0 && (
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-semibold text-slate-950">Explorar por ciclos</h2>
-            <div className="mt-5 flex flex-wrap gap-2">
-              {cycles.map((cycle) => (
-                <Link key={cycle} href={`/ciclos/${slugify(cycle)}/`} className="rounded-lg border border-slate-200 px-3 py-2 text-sm font-semibold text-slate-700 hover:border-brand-600 hover:text-brand-700">
-                  {cycle}
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
-      </section>
 
       <Top10CuriositiesCarousel facts={top10Facts} />
 
