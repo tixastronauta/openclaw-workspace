@@ -139,7 +139,7 @@ Staging deploys go to a preview URL (`https://staging.site-universidade.pages.de
 
 ```bash
 NEXT_PUBLIC_SITE_URL=https://staging.site-universidade.pages.dev npm run build
-wrangler pages deploy out --branch staging
+wrangler pages deploy out --branch staging --commit-dirty=true
 ```
 
 `NEXT_PUBLIC_SITE_URL` must be set so that `og:image` and other absolute URLs resolve to the staging domain instead of production. The deploy command prints the preview URL on completion.

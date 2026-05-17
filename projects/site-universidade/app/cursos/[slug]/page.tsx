@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { existsSync } from "fs";
 import { join } from "path";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ADS_ENABLED, AdSlot } from "@/components/AdSlot";
@@ -74,7 +75,7 @@ function ExternalLinkIcon() {
   );
 }
 
-function UsefulLinks({ course, logoUrl, logoAlt }: { course: Awaited<ReturnType<typeof getCourseBySlug>>, logoUrl?: string | null, logoAlt?: string }) {
+function UsefulLinks({ course, logoUrl }: { course: Awaited<ReturnType<typeof getCourseBySlug>>, logoUrl?: string | null }) {
   if (!course) return null;
   const hasLinks = course.courseUrl || course.institutionUrl || course.infoCursosUrl || course.dgesUrl;
   if (!hasLinks && !logoUrl) return null;
@@ -240,8 +241,14 @@ export default async function CourseDetailPage({ params }: PageProps) {
             </div>
             {logoUrl && university && (
               <Link href={`/universidades/${university.slug}/`} className="hidden shrink-0 sm:block">
-                <img src={logoUrl} alt={university.name}
-                  className="w-auto object-contain brightness-0 invert opacity-60 transition hover:opacity-80" style={{ maxHeight: "60px" }} />
+                <Image
+                  src={logoUrl}
+                  alt={university.name}
+                  width={220}
+                  height={60}
+                  className="h-auto w-auto object-contain brightness-0 invert opacity-60 transition hover:opacity-80"
+                  style={{ maxHeight: "60px" }}
+                />
               </Link>
             )}
           </div>
@@ -465,7 +472,7 @@ export default async function CourseDetailPage({ params }: PageProps) {
               </dl>
             </section>
           )}
-          <UsefulLinks course={course} logoUrl={logoUrl} logoAlt={university?.name} />
+          <UsefulLinks course={course} logoUrl={logoUrl} />
           <MapEmbed query={mapQuery} title={`Localização de ${institutionLabel || course.courseName}`} />
 
           {relatedCourses.length > 0 && (

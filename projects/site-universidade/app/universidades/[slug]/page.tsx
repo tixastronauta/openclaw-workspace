@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { existsSync } from "fs";
 import { join } from "path";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ADS_ENABLED, AdSlot } from "@/components/AdSlot";
@@ -116,7 +117,13 @@ export default async function UniversityPage({ params }: PageProps) {
             <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
               {logoUrl && (
                 <div className={`flex items-center justify-center${university.url ? " mb-5" : ""}`}>
-                  <img src={logoUrl} alt={university.name} className="max-h-28 w-auto object-contain" />
+                  <Image
+                    src={logoUrl}
+                    alt={university.name}
+                    width={280}
+                    height={112}
+                    className="max-h-28 w-auto object-contain"
+                  />
                 </div>
               )}
               {university.url && (
