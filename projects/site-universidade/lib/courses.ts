@@ -85,6 +85,7 @@ export type Course = {
 type CsvRow = Record<string, string | undefined>;
 
 const CSV_PATH = path.join(process.cwd(), "data", "courses.csv");
+let allCoursesCache: Course[] | undefined;
 
 function clean(value: string | undefined): string | undefined {
   const trimmed = value?.trim();
@@ -378,6 +379,8 @@ function uniqueSlugs(courses: Omit<Course, "slug">[]): Course[] {
 }
 
 export function getAllCourses(): Course[] {
+  if (allCoursesCache) return allCoursesCache;
+
   const csv = fs.readFileSync(CSV_PATH, "utf8");
   const parsed = Papa.parse<CsvRow>(csv, {
     header: true,
@@ -428,7 +431,8 @@ export function getAllCourses(): Course[] {
     (a.institutionName ?? "").localeCompare(b.institutionName ?? "", "pt")
   );
 
-  return uniqueSlugs(courses);
+  allCoursesCache = uniqueSlugs(courses);
+  return allCoursesCache;
 }
 
 export function getCourseBySlug(slug: string): Course | undefined {
