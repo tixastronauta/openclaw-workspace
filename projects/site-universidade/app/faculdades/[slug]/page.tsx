@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { existsSync } from "fs";
+import { join } from "path";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ADS_ENABLED, AdSlot } from "@/components/AdSlot";
@@ -43,6 +45,11 @@ export default async function FacultyPage({ params }: PageProps) {
 
   const mapQuery = [faculty.morada, faculty.cidade, faculty.distrito, faculty.institutionName].filter(Boolean).join(", ");
   const university = getUniversityForFaculty(faculty);
+
+  const logoAcronym = university?.acronym ?? null;
+  const logoUrl = logoAcronym && existsSync(join(process.cwd(), "public", "logos", `${logoAcronym}.png`))
+    ? `/logos/${logoAcronym}.png`
+    : null;
 
   const breadcrumbs = [
     { label: "Universidades", href: "/universidades/" },
@@ -89,18 +96,24 @@ export default async function FacultyPage({ params }: PageProps) {
           </div>
         </div>
         <aside className="grid content-start gap-6">
-          {faculty.institutionUrl && (
+          {(logoUrl || faculty.institutionUrl) && (
             <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h2 className="text-lg font-semibold text-slate-950">Ligações úteis</h2>
-              <a
-                href={faculty.institutionUrl}
-                rel="nofollow noopener noreferrer"
-                target="_blank"
-                className="mt-4 flex items-center rounded-xl border border-slate-300 px-4 py-2.5 text-sm font-semibold text-slate-700 hover:border-brand-600 hover:text-brand-700"
-              >
-                Site da instituição
-                <ExternalLinkIcon />
-              </a>
+              {logoUrl && (
+                <div className={`flex items-center justify-center${faculty.institutionUrl ? " mb-5" : ""}`}>
+                  <img src={logoUrl} alt={university?.name ?? faculty.institutionName} className="max-h-28 w-auto object-contain" />
+                </div>
+              )}
+              {faculty.institutionUrl && (
+                <a
+                  href={faculty.institutionUrl}
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                  className="flex items-center rounded-xl border border-slate-300 px-4 py-2.5 text-sm font-semibold text-slate-700 hover:border-brand-600 hover:text-brand-700"
+                >
+                  Site da instituição
+                  <ExternalLinkIcon />
+                </a>
+              )}
             </section>
           )}
           <MapEmbed query={mapQuery} title={`Localização de ${faculty.institutionName}`} />

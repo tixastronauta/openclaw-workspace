@@ -36,10 +36,12 @@ The v0.1 source of truth is `data/courses.csv`, exported from this Google Sheet:
 
 <https://docs.google.com/spreadsheets/d/1m7LzrYoYTrCHYr3vBiaeK62ZOw-4GQVCbXse6d5FE6E/edit?gid=13716#gid=13716>
 
-Current spreadsheet columns:
+Current CSV columns are kept in this order. When the Google Sheet adds columns,
+the sync script appends those new columns to the end of `data/courses.csv`
+instead of reordering or renaming existing CSV columns:
 
 ```csv
-updated_at,course_code,course_name,cycle,institution_code,institution_name,institution_sigla,reference,estatisticas_do_curso,detalhes_do_curso,nota_ult_col_2023_1a,nota_ult_col_2023_2a,nota_ult_col_2024_1a,nota_ult_col_2024_2a,nota_ult_col_2025_1a,nota_ult_col_2025_2a,infocursos_iefp_desemprego_json,infocursos_taxa_conclusao_json,infocursos_classificacoes_finais_json,infocursos_sexo_curso_json,infocursos_nacionalidade_curso_json,infocursos_idades_json,course_description,nota_ult_col_json,cidade,distrito,morada
+updated_at,course_code,course_name,course_description,cycle,institution_code,parent_institution_name,parent_institution_acronym,institution_name,institution_sigla,institution_name_full,reference,estatisticas_do_curso,detalhes_do_curso,infocursos_iefp_desemprego_json,infocursos_classificacoes_finais_json,infocursos_sexo_curso_json,infocursos_nacionalidade_curso_json,infocursos_idades_json,nota_ult_col_json,cidade,distrito,morada,institution_url,course_url,Telefone,Area CNAEF,Duração,ECTS,Tipo de Ensino,Concurso,Vagas,Provas de Ingresso,Classificações Mínimas
 ```
 
 The loader also accepts common aliases for the course name and official URL columns. Grade columns are detected when they follow the DGES spreadsheet format `nota_ult_col_YYYY_1a` / `nota_ult_col_YYYY_2a`, or simpler fallback patterns such as `entryGrade2024`, `entry_grade2024`, `grade2024`, `nota2024`, or `nota_entrada2024`.
@@ -136,11 +138,11 @@ wrangler pages project create site-universidade   # when prompted, set productio
 Staging deploys go to a preview URL (`https://staging.site-universidade.pages.dev`). The final domain is not affected.
 
 ```bash
-npm run build
+NEXT_PUBLIC_SITE_URL=https://staging.site-universidade.pages.dev npm run build
 wrangler pages deploy out --branch staging
 ```
 
-The deploy command prints the preview URL on completion.
+`NEXT_PUBLIC_SITE_URL` must be set so that `og:image` and other absolute URLs resolve to the staging domain instead of production. The deploy command prints the preview URL on completion.
 
 ### Deploy to production
 

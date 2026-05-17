@@ -69,7 +69,8 @@ export default function UniversitiesPage() {
                           {faculty.institutionName}
                           {faculty.institutionSigla ? <span className="ml-1.5 text-slate-400">({faculty.institutionSigla})</span> : null}
                         </span>
-                        <span className="ml-4 shrink-0 text-xs text-slate-400">
+                        <span className="mx-3 min-w-4 flex-1 self-end border-b border-dotted border-slate-300 pb-[3px]" aria-hidden="true" />
+                        <span className="shrink-0 text-xs text-slate-400">
                           {faculty.courses.length} curso{faculty.courses.length === 1 ? "" : "s"}
                         </span>
                       </Link>

@@ -58,12 +58,7 @@ export default async function UniversityPage({ params }: PageProps) {
     : university.name;
 
   return (
-    <Container className="relative overflow-hidden py-6 sm:py-10">
-      {logoUrl && (
-        <div className="pointer-events-none absolute right-8 top-[60px] opacity-30">
-          <img src={logoUrl} alt="" className="h-auto w-[416px]" />
-        </div>
-      )}
+    <Container className="py-6 sm:py-10">
       <Breadcrumbs items={[{ label: "Universidades", href: "/universidades/" }, { label: university.name }]} />
 
       <section>
@@ -90,16 +85,18 @@ export default async function UniversityPage({ params }: PageProps) {
                   <Link
                     key={faculty.slug}
                     href={`/faculdades/${faculty.slug}/`}
-                    className="block rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                    className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
                   >
-                    <h3 className="text-base font-semibold text-slate-950 hover:text-brand-700">
-                      {faculty.institutionName}
-                      {faculty.institutionSigla ? <span className="ml-1.5 font-semibold text-slate-400">({faculty.institutionSigla})</span> : null}
-                    </h3>
-                    <p className="mt-2 text-sm text-slate-600">
-                      {faculty.courses.length} curso{faculty.courses.length === 1 ? "" : "s"}
-                    </p>
-                    <span className="mt-3 inline-flex text-sm font-semibold text-brand-700">Ver cursos →</span>
+                    <div>
+                      <h3 className="text-base font-semibold text-slate-950 group-hover:text-brand-700">
+                        {faculty.institutionName}
+                        {faculty.institutionSigla ? <span className="ml-1.5 font-semibold text-slate-400">({faculty.institutionSigla})</span> : null}
+                      </h3>
+                      <p className="mt-2 text-sm text-slate-600">
+                        {faculty.courses.length} curso{faculty.courses.length === 1 ? "" : "s"}
+                      </p>
+                    </div>
+                    <span className="mt-auto pt-4 text-sm font-semibold text-brand-700 group-hover:text-brand-900">Ver cursos →</span>
                   </Link>
                 ))}
               </div>
@@ -115,18 +112,24 @@ export default async function UniversityPage({ params }: PageProps) {
         </div>
 
         <aside className="grid content-start gap-6">
-          {university.url && (
+          {(logoUrl || university.url) && (
             <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h2 className="text-lg font-semibold text-slate-950">Ligações úteis</h2>
-              <a
-                href={university.url}
-                rel="nofollow noopener noreferrer"
-                target="_blank"
-                className="mt-4 flex items-center rounded-xl border border-slate-300 px-4 py-2.5 text-sm font-semibold text-slate-700 hover:border-brand-600 hover:text-brand-700"
-              >
-                Site da instituição
-                <ExternalLinkIcon />
-              </a>
+              {logoUrl && (
+                <div className={`flex items-center justify-center${university.url ? " mb-5" : ""}`}>
+                  <img src={logoUrl} alt={university.name} className="max-h-28 w-auto object-contain" />
+                </div>
+              )}
+              {university.url && (
+                <a
+                  href={university.url}
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                  className="flex items-center rounded-xl border border-slate-300 px-4 py-2.5 text-sm font-semibold text-slate-700 hover:border-brand-600 hover:text-brand-700"
+                >
+                  Site da instituição
+                  <ExternalLinkIcon />
+                </a>
+              )}
             </section>
           )}
           <MapEmbed query={mapQuery} title={`Localização de ${university.name}`} />

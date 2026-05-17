@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, useTransition } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { loadIndex, runSearch, type SearchResult } from "@/lib/search";
 
@@ -35,10 +36,13 @@ export function GlobalSearch() {
   const [results, setResults] = useState<SearchResult[]>([]);
   const [open, setOpen] = useState(false);
   const [hasValue, setHasValue] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(-1);
   const [, startTransition] = useTransition();
   const inputRef = useRef<HTMLInputElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const listRef = useRef<HTMLUListElement>(null);
   const pendingQuery = useRef<string | null>(null);
+  const router = useRouter();
 
   function updateDropdown(entries: Awaited<ReturnType<typeof loadIndex>>, raw: string) {
     const { universities, faculties, courses } = runSearch(entries, raw);
@@ -48,12 +52,13 @@ export function GlobalSearch() {
         ...faculties.slice(0, 3),
         ...courses,
       ].slice(0, 10));
+      setActiveIndex(-1);
     });
   }
 
   function search(raw: string) {
     setHasValue(raw.length > 0);
-    if (!raw.trim()) { setResults([]); return; }
+    if (!raw.trim()) { setResults([]); setActiveIndex(-1); return; }
     if (cachedEntries) {
       updateDropdown(cachedEntries, raw);
     } else {
@@ -75,8 +80,34 @@ export function GlobalSearch() {
     setResults([]);
     setHasValue(false);
     setOpen(false);
+    setActiveIndex(-1);
     pendingQuery.current = null;
     inputRef.current?.focus();
+  }
+
+  function scrollItemIntoView(index: number) {
+    const item = listRef.current?.children[index] as HTMLElement | undefined;
+    item?.scrollIntoView({ block: "nearest" });
+  }
+
+  function onKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
+    if (!open || results.length === 0) return;
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      const next = activeIndex < results.length - 1 ? activeIndex + 1 : 0;
+      setActiveIndex(next);
+      scrollItemIntoView(next);
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      const next = activeIndex > 0 ? activeIndex - 1 : results.length - 1;
+      setActiveIndex(next);
+      scrollItemIntoView(next);
+    } else if (e.key === "Enter" && activeIndex >= 0) {
+      e.preventDefault();
+      document.dispatchEvent(new Event("navigation-start"));
+      router.push(results[activeIndex].href);
+      clear();
+    }
   }
 
   useEffect(() => {
@@ -89,7 +120,13 @@ export function GlobalSearch() {
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (e.key === "Escape") { setOpen(false); inputRef.current?.blur(); }
+      if (e.key === "Escape") { setOpen(false); setActiveIndex(-1); inputRef.current?.blur(); }
+      if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
+        e.preventDefault();
+        inputRef.current?.focus();
+        inputRef.current?.select();
+        setOpen(true);
+      }
     }
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
@@ -111,8 +148,13 @@ export function GlobalSearch() {
             name="q"
             type="text"
             inputMode="search"
+            role="combobox"
+            aria-expanded={open && results.length > 0}
+            aria-controls="global-search-listbox"
+            aria-activedescendant={activeIndex >= 0 ? `search-result-${activeIndex}` : undefined}
             onFocus={onFocus}
             onInput={(e) => { search((e.target as HTMLInputElement).value); setOpen(true); }}
+            onKeyDown={onKeyDown}
             placeholder="Pesquisar cursos, faculdades..."
             autoComplete="off"
             autoCorrect="off"
@@ -131,11 +173,16 @@ export function GlobalSearch() {
       </form>
 
       {open && results.length > 0 && (
-        <div className="absolute left-0 right-0 top-[calc(100%+6px)] z-50 max-h-[70vh] overflow-y-auto rounded-2xl border border-slate-200 bg-white shadow-xl">
-          <ul role="listbox">
-            {results.map((result) => (
-              <li key={result.key} role="option" aria-selected="false">
-                <Link href={result.href} onClick={() => { clear(); }} className="flex items-start gap-2.5 px-4 py-3 text-sm hover:bg-brand-50">
+        <div className="absolute left-0 right-0 top-[calc(100%+6px)] z-50 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl">
+          <ul id="global-search-listbox" ref={listRef} role="listbox" className="max-h-[60vh] overflow-y-auto">
+            {results.map((result, i) => (
+              <li key={result.key} id={`search-result-${i}`} role="option" aria-selected={i === activeIndex}>
+                <Link
+                  href={result.href}
+                  onClick={() => { clear(); }}
+                  onMouseEnter={() => setActiveIndex(i)}
+                  className={`flex items-start gap-2.5 px-4 py-3 text-sm${i === activeIndex ? " bg-brand-50" : " hover:bg-brand-50"}`}
+                >
                   <span className="mt-0.5 text-slate-400" aria-hidden="true">
                     {result.type === "university" && <UniversityIcon />}
                     {result.type === "faculty" && <FacultyIcon />}
@@ -152,6 +199,21 @@ export function GlobalSearch() {
               </li>
             ))}
           </ul>
+          <div className="flex items-center gap-3 border-t border-slate-100 px-4 py-2 text-xs text-slate-400">
+            <span className="flex items-center gap-1">
+              <kbd className="rounded border border-slate-200 px-1 py-0.5 font-sans leading-none">↑</kbd>
+              <kbd className="rounded border border-slate-200 px-1 py-0.5 font-sans leading-none">↓</kbd>
+              navegar
+            </span>
+            <span className="flex items-center gap-1">
+              <kbd className="rounded border border-slate-200 px-1 py-0.5 font-sans leading-none">↵</kbd>
+              selecionar
+            </span>
+            <span className="flex items-center gap-1">
+              <kbd className="rounded border border-slate-200 px-1 py-0.5 font-sans leading-none">Esc</kbd>
+              fechar
+            </span>
+          </div>
         </div>
       )}
 

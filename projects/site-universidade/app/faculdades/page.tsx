@@ -41,15 +41,15 @@ export default function FacultiesPage() {
             <h2 className="sticky top-16 z-20 -mx-2 mb-4 border-b border-slate-200 bg-slate-50/95 px-2 py-2 text-2xl font-semibold text-slate-950 backdrop-blur">{initial}</h2>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {items.map((faculty) => (
-                <Link key={faculty.slug} href={`/faculdades/${faculty.slug}/`} className="block rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
-                  <h2 className="text-lg font-semibold text-slate-950">
-                    <span className="hover:text-brand-700">
+                <Link key={faculty.slug} href={`/faculdades/${faculty.slug}/`} className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+                  <div>
+                    <h2 className="text-lg font-semibold text-slate-950 group-hover:text-brand-700">
                       {faculty.institutionName}
                       {faculty.institutionSigla ? <span className="ml-1.5 font-semibold text-slate-400">({faculty.institutionSigla})</span> : null}
-                    </span>
-                  </h2>
-                  <p className="mt-2 text-sm text-slate-600">{faculty.courses.length} curso{faculty.courses.length === 1 ? "" : "s"} {faculty.courses.length === 1 ? "disponível" : "disponíveis"}</p>
-                  <span className="mt-4 inline-flex text-sm font-semibold text-brand-700 hover:text-brand-900">
+                    </h2>
+                    <p className="mt-2 text-sm text-slate-600">{faculty.courses.length} curso{faculty.courses.length === 1 ? "" : "s"} {faculty.courses.length === 1 ? "disponível" : "disponíveis"}</p>
+                  </div>
+                  <span className="mt-auto pt-4 text-sm font-semibold text-brand-700 group-hover:text-brand-900">
                     Ver cursos →
                   </span>
                 </Link>

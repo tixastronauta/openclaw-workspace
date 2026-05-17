@@ -50,4 +50,10 @@ Entity hierarchy: **Course** → grouped by institution into **Faculty** → gro
 
 ### Updating data
 
-Run `npm run import:sheet` (uses the `gog` CLI for Google Sheets OAuth). Alternatively, export the sheet manually as CSV and replace `data/courses.csv`. Default sheet: `dges_cursos_2026` in spreadsheet `1m7LzrYoYTrCHYr3vBiaeK62ZOw-4GQVCbXse6d5FE6E`.
+Do **not** run `npm run import:sheet` directly. The script requires the `gog` CLI and OAuth credentials only available inside the container. Always sync via:
+
+```bash
+docker compose exec openclaw-1 /usr/local/bin/node /data/.openclaw/workspace/projects/site-universidade/scripts/sync-courses-from-sheet.mjs
+```
+
+Default sheet: `dges_cursos_2026` in spreadsheet `1m7LzrYoYTrCHYr3vBiaeK62ZOw-4GQVCbXse6d5FE6E`.

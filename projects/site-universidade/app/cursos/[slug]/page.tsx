@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { existsSync } from "fs";
+import { join } from "path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ADS_ENABLED, AdSlot } from "@/components/AdSlot";
@@ -8,7 +10,9 @@ import { GradesChart } from "@/components/GradesChart";
 import { InfoCursosBarChart } from "@/components/InfoCursosBarChart";
 import { InfoCursosPieChart } from "@/components/InfoCursosPieChart";
 import { MapEmbed } from "@/components/MapEmbed";
-import { getAllCourses, getCourseBySlug, getFacultyBySlug, getFacultySlugByInstitution, getRelatedCourses, getUniversityForFaculty } from "@/lib/courses";
+import { VacanciesChart } from "@/components/VacanciesChart";
+import { NotebookPen } from "lucide-react";
+import { getAllCourses, getCourseBySlug, getFacultyBySlug, getFacultySlugByInstitution, getRelatedCourses, getUniversityForFaculty, provaSetSlug } from "@/lib/courses";
 import { slugify } from "@/lib/slug";
 import { siteConfig } from "@/lib/site";
 
@@ -70,15 +74,14 @@ function ExternalLinkIcon() {
   );
 }
 
-function UsefulLinks({ course }: { course: Awaited<ReturnType<typeof getCourseBySlug>> }) {
+function UsefulLinks({ course, logoUrl, logoAlt }: { course: Awaited<ReturnType<typeof getCourseBySlug>>, logoUrl?: string | null, logoAlt?: string }) {
   if (!course) return null;
   const hasLinks = course.courseUrl || course.institutionUrl || course.infoCursosUrl || course.dgesUrl;
-  if (!hasLinks) return null;
+  if (!hasLinks && !logoUrl) return null;
 
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-      <h2 className="text-lg font-semibold text-slate-950">Ligações úteis</h2>
-      <div className="mt-4 flex flex-col gap-2">
+      <div className="flex flex-col gap-2">
         {course.courseUrl && (
           <a
             href={course.courseUrl}
@@ -147,6 +150,10 @@ export default async function CourseDetailPage({ params }: PageProps) {
   const university = faculty ? getUniversityForFaculty(faculty) : undefined;
   const institutionLabel = [course.institutionName, course.institutionSigla ? `(${course.institutionSigla})` : undefined].filter(Boolean).join(" ");
   const mapQuery = [course.morada, course.cidade, course.distrito, course.institutionName].filter(Boolean).join(", ");
+  const logoAcronym = university?.acronym ?? null;
+  const logoUrl = logoAcronym && existsSync(join(process.cwd(), "public", "logos", `${logoAcronym}_mono.png`))
+    ? `/logos/${logoAcronym}_mono.png`
+    : null;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -176,36 +183,82 @@ export default async function CourseDetailPage({ params }: PageProps) {
   ];
 
   return (
-    <Container className="py-6 sm:py-10">
+    <Container className="pb-8 pt-4 sm:pt-6 lg:pt-8">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Breadcrumbs items={breadcrumbs} />
+
+      {/* ── Course Hero ─────────────────────────────────────────── */}
+      <section className="relative mt-4 overflow-hidden rounded-2xl bg-gradient-to-br from-blue-600 to-blue-900 p-6 pb-8 sm:px-12 sm:pb-8 sm:pt-12">
+        {/* Dot grid */}
+        <div className="pointer-events-none absolute inset-0"
+          style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
+        {/* Glows */}
+        <div className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-white opacity-10 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-20 -left-10 h-64 w-64 rounded-full bg-blue-950 opacity-40 blur-3xl" />
+        <div className="relative">
+          {/* Badges */}
+          <div className="flex flex-wrap gap-2">
+            {course.cycle && (
+              <Link href={`/ciclos/${slugify(course.cycle)}/`}
+                className="rounded-full bg-white/20 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white ring-1 ring-inset ring-white/30 hover:bg-white/30">
+                {course.cycle}
+              </Link>
+            )}
+            {course.distrito && (
+              <Link href={`/distritos/${slugify(course.distrito)}/`}
+                className="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white/70 ring-1 ring-inset ring-white/10 hover:bg-white/15 hover:text-white/90">
+                {course.distrito}
+              </Link>
+            )}
+            {course.cidade && course.distrito !== course.cidade && (
+              <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white/70 ring-1 ring-inset ring-white/10">
+                {course.cidade}
+              </span>
+            )}
+          </div>
+
+          {/* Course name */}
+          <p className="mt-4 max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            {course.courseName}
+          </p>
+
+          {/* Faculty + University + Logo */}
+          <div className="mt-5 flex items-center justify-between gap-x-4 border-t border-white/10 pt-5">
+            <div>
+              {facultySlug ? (
+                <Link href={`/faculdades/${facultySlug}/`} className="block text-sm font-semibold text-white/90 hover:text-white">
+                  {institutionLabel}
+                </Link>
+              ) : (
+                <p className="block text-sm font-semibold text-white/90">{institutionLabel}</p>
+              )}
+              {university && (
+                <Link href={`/universidades/${university.slug}/`} className="block text-xs text-white/50 hover:text-white/70">
+                  {university.name}
+                </Link>
+              )}
+            </div>
+            {logoUrl && university && (
+              <Link href={`/universidades/${university.slug}/`} className="hidden shrink-0 sm:block">
+                <img src={logoUrl} alt={university.name}
+                  className="w-auto object-contain brightness-0 invert opacity-60 transition hover:opacity-80" style={{ maxHeight: "60px" }} />
+              </Link>
+            )}
+          </div>
+        </div>
+
+        {/* Bottom accent line */}
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-brand-700/70 via-brand-600/30 to-transparent" />
+      </section>
+      {/* ── / Course Hero ────────────────────────────────────────── */}
+
 
       <article className="grid gap-8 lg:grid-cols-[1fr_300px]">
         {/* Left column */}
         <div className="min-w-0">
-          <div className="sticky top-16 z-10 -mx-4 flex flex-wrap items-baseline gap-x-3 gap-y-2 bg-slate-50/90 px-4 py-2 backdrop-blur sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
-            <h1 className="text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl lg:text-4xl">{course.courseName}</h1>
-            {course.cycle && (
-              <Link href={`/ciclos/${slugify(course.cycle)}/`} className="shrink-0 rounded-full bg-slate-100 px-3 py-1 text-xs font-medium uppercase tracking-wide text-slate-500 hover:bg-brand-100 hover:text-brand-700">{course.cycle}</Link>
-            )}
-          </div>
-          {course.institutionName && (
-            <div className="mt-3">
-              {facultySlug
-                ? <Link href={`/faculdades/${facultySlug}/`} className="text-lg font-medium text-slate-700 hover:text-brand-700">{institutionLabel}</Link>
-                : <p className="text-lg font-medium text-slate-700">{institutionLabel}</p>}
-              {course.parentInstitutionName && university && (
-                <p className="mt-0.5 text-base text-slate-500">
-                  <Link href={`/universidades/${university.slug}/`} className="hover:text-brand-700">
-                    {course.parentInstitutionName}
-                  </Link>
-                </p>
-              )}
-            </div>
-          )}
-
+          {/* Course description */}
           {course.courseDescription && (
-            <div className="mt-6 rounded-2xl border border-slate-200 bg-white px-6 py-5 shadow-sm">
+            <div className="mt-8 rounded-2xl border border-slate-200 bg-white px-6 py-5 shadow-sm">
               <h2 className="text-2xl font-semibold text-slate-950">Sobre este curso</h2>
               <p className="mt-3 text-base leading-7 text-slate-700" dangerouslySetInnerHTML={{ __html: renderMarkdown(course.courseDescription) }} />
             </div>
@@ -243,6 +296,16 @@ export default async function CourseDetailPage({ params }: PageProps) {
               <p className="mt-4 text-sm text-slate-600">Não existem notas de entrada disponíveis para este curso.</p>
             )}
           </section>
+
+          {course.vacancies && course.vacancies.length > 0 && (
+            <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h2 className="text-2xl font-semibold text-slate-950">Evolução das vagas</h2>
+              <p className="mt-3 max-w-3xl text-slate-700">
+                Consulta a evolução do número de vagas divulgadas para este curso ao longo dos últimos anos.
+              </p>
+              <VacanciesChart vacancies={course.vacancies} />
+            </section>
+          )}
 
           {ADS_ENABLED && (
             <section className="mt-8">
@@ -318,8 +381,91 @@ export default async function CourseDetailPage({ params }: PageProps) {
         </div>
 
         {/* Right column */}
-        <aside className="grid content-start gap-6">
-          <UsefulLinks course={course} />
+        <aside className="grid content-start gap-8 lg:mt-8">
+          {(course.areaCnaef || course.duracao || course.tipoEnsino || course.ects || course.provasIngresso) && (
+            <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <h2 className="text-xs font-semibold uppercase tracking-wide text-slate-400">Ficha do curso</h2>
+              <dl className="mt-3 grid gap-3">
+                {course.areaCnaef && (() => {
+                  const match = course.areaCnaef.match(/^(\d+)\s+(.+)$/);
+                  const name = match ? match[2] : course.areaCnaef;
+                  return (
+                    <div>
+                      <dt className="text-xs font-medium text-slate-400">Área de formação</dt>
+                      <dd className="mt-0.5">
+                        <Link href={`/areas/${slugify(course.areaCnaef)}/`} className="text-sm font-medium text-slate-800 hover:text-brand-700">
+                          {name}
+                        </Link>
+                      </dd>
+                    </div>
+                  );
+                })()}
+                {(course.duracao || course.ects) && (
+                  <div className="flex gap-6">
+                    {course.duracao && (
+                      <div>
+                        <dt className="text-xs font-medium text-slate-400">Duração</dt>
+                        <dd className="mt-0.5">
+                          <Link href={`/duracoes/${slugify(course.duracao)}/`} className="text-sm font-medium text-slate-800 hover:text-brand-700">
+                            {course.duracao}
+                          </Link>
+                        </dd>
+                      </div>
+                    )}
+                    {course.ects && (
+                      <div>
+                        <dt className="text-xs font-medium text-slate-400">ECTS</dt>
+                        <dd className="mt-0.5 text-sm font-medium text-slate-800">{course.ects}</dd>
+                      </div>
+                    )}
+                  </div>
+                )}
+                {course.tipoEnsino && (
+                  <div>
+                    <dt className="text-xs font-medium text-slate-400">Tipo de ensino</dt>
+                    <dd className="mt-0.5">
+                      <Link href={`/tipos-ensino/${slugify(course.tipoEnsino)}/`} className="text-sm font-medium text-slate-800 hover:text-brand-700">
+                        {course.tipoEnsino}
+                      </Link>
+                    </dd>
+                  </div>
+                )}
+                {course.provasIngresso && (
+                  <div>
+                    <dt className="text-xs font-medium text-slate-400">Provas de ingresso</dt>
+                    <dd className="mt-1.5 flex flex-col gap-2">
+                      {course.provasIngresso.sets.map((set, i) => (
+                        <div key={i} className="flex flex-col gap-2">
+                          {i > 0 && (
+                            <div className="flex items-center gap-2">
+                              <div className="h-px flex-1 bg-slate-200" />
+                              <span className="rounded-full border border-slate-200 bg-white px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-slate-400">ou</span>
+                              <div className="h-px flex-1 bg-slate-200" />
+                            </div>
+                          )}
+                          <Link
+                            href={set.length === 1 ? `/provas-ingresso/${slugify(set[0].name)}/` : `/provas-ingresso/conjunto/${provaSetSlug(set)}/`}
+                            className="block rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 transition hover:border-brand-300 hover:bg-brand-50"
+                          >
+                            {set.map((prova, j) => (
+                              <div key={prova.code} className={`flex items-center gap-2 text-xs ${j > 0 ? "mt-1.5" : ""}`}>
+                                {j > 0
+                                  ? <span className="inline-flex size-3 shrink-0 items-center justify-center text-[9px] font-black text-slate-400" aria-hidden="true">+</span>
+                                  : <NotebookPen className="size-3 shrink-0 text-slate-400" aria-hidden="true" />
+                                }
+                                <span className="font-medium text-slate-700">{prova.name}</span>
+                              </div>
+                            ))}
+                          </Link>
+                        </div>
+                      ))}
+                    </dd>
+                  </div>
+                )}
+              </dl>
+            </section>
+          )}
+          <UsefulLinks course={course} logoUrl={logoUrl} logoAlt={university?.name} />
           <MapEmbed query={mapQuery} title={`Localização de ${institutionLabel || course.courseName}`} />
 
           {relatedCourses.length > 0 && (

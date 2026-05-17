@@ -72,7 +72,7 @@ export default function HomePage() {
 
       return {
         id: metric.id,
-        href: `/top-10/#${metric.id}`,
+        href: `/top-10-cursos/${metric.id}/`,
         lead: metricLead(metric.id),
         courseName: first.courseName,
         location

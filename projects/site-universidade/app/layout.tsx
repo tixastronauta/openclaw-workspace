@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
+import Script from "next/script";
+import { Suspense } from "react";
 import "./globals.css";
+import { ConsentBanner } from "@/components/ConsentBanner";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { NavigationLoader } from "@/components/NavigationLoader";
 import { siteConfig } from "@/lib/site";
 
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
+
 const ogImage = {
-  url: "/og/universidade-og.png",
-  width: 1536,
-  height: 1024,
+  url: "/og/og-1200x630.png",
+  width: 1200,
+  height: 630,
   alt: "Universidade.pt"
 };
 
@@ -50,10 +56,39 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-PT">
+      <head>
+        {/* Consent Mode v2 defaults must be set before GTM loads */}
+        <script dangerouslySetInnerHTML={{ __html:
+          `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});`
+        }} />
+      </head>
       <body className="min-h-screen antialiased">
+        {GTM_ID && (
+          <>
+            <Script
+              id="gtm-script"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');`
+              }}
+            />
+            <noscript>
+              <iframe
+                src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+                height="0"
+                width="0"
+                style={{ display: "none", visibility: "hidden" }}
+              />
+            </noscript>
+          </>
+        )}
+        <Suspense fallback={null}>
+          <NavigationLoader />
+        </Suspense>
         <Header />
         <main>{children}</main>
         <Footer />
+        <ConsentBanner />
       </body>
     </html>
   );

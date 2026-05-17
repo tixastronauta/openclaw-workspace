@@ -4,6 +4,7 @@ import { getAllCourses } from "./courses";
 export type Top10Metric = {
   id: string;
   title: string;
+  shortTitle: string;
   description: string;
   valueLabel: string;
   items: Array<{
@@ -43,15 +44,25 @@ export function getTop10Metrics(): Top10Metric[] {
 
   return [
     {
-      id: "mais-estrangeiros",
-      title: "Top 10 cursos com mais estrangeiros",
-      description: "Cursos com maior percentagem de estudantes estrangeiros.",
-      valueLabel: "Estrangeiros",
-      items: rankCourses(courses, "foreignerShare", "desc", ({ value }) => value < 1)
+      id: "media-entrada-mais-alta",
+      title: "Top 10 cursos com média de entrada mais alta",
+      shortTitle: "Com média de entrada mais alta",
+      description: "Cursos com nota de entrada mais elevada, calculada a partir das notas do ano mais recente disponível.",
+      valueLabel: "Nota de entrada",
+      items: rankCourses(courses, "entryGradeAverage", "desc")
+    },
+    {
+      id: "media-entrada-mais-baixa",
+      title: "Top 10 cursos com média de entrada mais baixa",
+      shortTitle: "Com média de entrada mais baixa",
+      description: "Cursos com nota de entrada mais baixa, calculada a partir das notas do ano mais recente disponível.",
+      valueLabel: "Nota de entrada",
+      items: rankCourses(courses, "entryGradeAverage", "asc")
     },
     {
       id: "mais-homens",
       title: "Top 10 cursos com mais homens",
+      shortTitle: "Com mais homens",
       description: "Cursos com maior percentagem de estudantes homens.",
       valueLabel: "Homens",
       items: rankCourses(courses, "menShare", "desc")
@@ -59,6 +70,7 @@ export function getTop10Metrics(): Top10Metric[] {
     {
       id: "mais-mulheres",
       title: "Top 10 cursos com mais mulheres",
+      shortTitle: "Com mais mulheres",
       description: "Cursos com maior percentagem de estudantes mulheres.",
       valueLabel: "Mulheres",
       items: rankCourses(courses, "womenShare", "desc")
@@ -66,35 +78,48 @@ export function getTop10Metrics(): Top10Metric[] {
     {
       id: "media-mais-alta",
       title: "Top 10 cursos com média final mais alta",
-      description: "Cursos com média ponderada mais alta nas classificações finais disponíveis.",
+      shortTitle: "Com média final mais alta",
+      description: "Cursos com média ponderada mais alta nas classificações finais.",
       valueLabel: "Média final",
       items: rankCourses(courses, "finalAverage", "desc")
     },
     {
       id: "media-mais-baixa",
       title: "Top 10 cursos com média final mais baixa",
-      description: "Cursos com média ponderada mais baixa nas classificações finais disponíveis.",
+      shortTitle: "Com média final mais baixa",
+      description: "Cursos com média ponderada mais baixa nas classificações finais.",
       valueLabel: "Média final",
       items: rankCourses(courses, "finalAverage", "asc")
     },
     {
       id: "melhor-empregabilidade",
       title: "Top 10 cursos com melhor empregabilidade",
-      description: "Ranking derivado da menor taxa de desemprego registada no IEFP.",
+      shortTitle: "Com melhor empregabilidade",
+      description: "Cursos com a melhor taxa de empregabilidade registada no IEFP.",
       valueLabel: "Empregabilidade",
       items: rankCourses(courses, "unemploymentRate", "asc").map((item) => ({ ...item, value: 1 - item.value }))
     },
     {
       id: "pior-empregabilidade",
       title: "Top 10 cursos com pior empregabilidade",
-      description: "Ranking derivado da maior taxa de desemprego registada no IEFP.",
+      shortTitle: "Com pior empregabilidade",
+      description: "Cursos com a pior taxa de desemprego registada no IEFP.",
       valueLabel: "Desemprego",
       items: rankCourses(courses, "unemploymentRate", "desc")
     },
     {
+      id: "mais-estrangeiros",
+      title: "Top 10 cursos com mais estrangeiros",
+      shortTitle: "Com mais estrangeiros",
+      description: "Cursos com maior percentagem de estudantes estrangeiros.",
+      valueLabel: "Estrangeiros",
+      items: rankCourses(courses, "foreignerShare", "desc", ({ value }) => value < 1)
+    },
+    {
       id: "perfil-etario-mais-elevado",
       title: "Top 10 cursos com perfil etário mais elevado",
-      description: "Sugestão em vez de “idade de conclusão mais velha”: usa a idade média ponderada disponível nos dados de idades.",
+      shortTitle: "Com perfil etário mais elevado",
+      description: "Cursos com idade média dos alunos mais elevada.",
       valueLabel: "Idade média",
       items: rankCourses(courses, "ageAverage", "desc")
     }

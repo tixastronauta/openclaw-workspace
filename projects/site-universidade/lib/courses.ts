@@ -9,6 +9,12 @@ export type AdmissionGrade = {
   grade: string;
 };
 
+export type VacancyHistoryPoint = {
+  year: string;
+  phase: string;
+  vacancies: number;
+};
+
 export type CourseMetrics = {
   unemploymentRate?: number;
   unemployedCount?: number;
@@ -18,6 +24,7 @@ export type CourseMetrics = {
   womenShare?: number;
   foreignerShare?: number;
   ageAverage?: number;
+  entryGradeAverage?: number;
 };
 
 export type GradeDistributionItem = {
@@ -57,6 +64,7 @@ export type Course = {
   morada?: string;
   reference?: string;
   grades: AdmissionGrade[];
+  vacancies?: VacancyHistoryPoint[];
   courseDescription?: string;
   infoCursosUrl?: string;
   dgesUrl?: string;
@@ -67,6 +75,11 @@ export type Course = {
   nationalityData?: NationalityData;
   parentInstitutionName?: string;
   parentInstitutionAcronym?: string;
+  areaCnaef?: string;
+  duracao?: string;
+  tipoEnsino?: string;
+  ects?: string;
+  provasIngresso?: { sets: { code: string; name: string }[][] };
 };
 
 type CsvRow = Record<string, string | undefined>;
@@ -121,6 +134,48 @@ function extractGrades(row: CsvRow): AdmissionGrade[] {
       .sort((a, b) => Number(a.year) - Number(b.year) || (a.phase ?? "").localeCompare(b.phase ?? "", "pt"));
   } catch {
     return [];
+  }
+}
+
+function yearOrder(value: string): number {
+  const match = value.match(/\d{4}/);
+  return match ? Number(match[0]) : 0;
+}
+
+function extractVacancies(row: CsvRow): VacancyHistoryPoint[] | undefined {
+  const raw = clean(row.Vagas);
+  if (!raw) return undefined;
+
+  try {
+    const parsed = JSON.parse(raw) as {
+      current?: { year?: unknown; vagas?: unknown };
+      historical?: Record<string, Record<string, unknown> | unknown>;
+    };
+
+    const history: VacancyHistoryPoint[] = [];
+
+    if (parsed.historical && typeof parsed.historical === "object") {
+      for (const [year, phases] of Object.entries(parsed.historical)) {
+        if (!/^\d{4}$/.test(year) || typeof phases !== "object" || phases === null || Array.isArray(phases)) continue;
+
+        for (const [phase, value] of Object.entries(phases as Record<string, unknown>)) {
+          const vacancies = numberValue(value);
+          if (vacancies === undefined) continue;
+
+          history.push({
+            year,
+            phase: phaseLabel(phase),
+            vacancies
+          });
+        }
+      }
+    }
+
+    if (history.length === 0) return undefined;
+
+    return history.sort((a, b) => yearOrder(a.year) - yearOrder(b.year) || a.phase.localeCompare(b.phase, "pt"));
+  } catch {
+    return undefined;
   }
 }
 
@@ -234,6 +289,29 @@ function extractGenderData(row: CsvRow): GenderData | undefined {
   return { men: men ?? 0, women: women ?? 0 };
 }
 
+function latestEntryGradeAverage(row: CsvRow): number | undefined {
+  const raw = clean(row.nota_ult_col_json);
+  if (!raw) return undefined;
+  try {
+    const parsed = JSON.parse(raw) as Record<string, unknown>;
+    const years = Object.keys(parsed)
+      .filter((y) => /^\d{4}$/.test(y))
+      .sort((a, b) => Number(b) - Number(a));
+    for (const year of years) {
+      const phases = parsed[year];
+      if (typeof phases !== "object" || phases === null || Array.isArray(phases)) continue;
+      const values = Object.values(phases as Record<string, unknown>)
+        .map((v) => numberValue(String(v ?? "")))
+        .filter((v): v is number => v !== undefined && v > 0);
+      if (values.length === 0) continue;
+      return values.reduce((sum, v) => sum + v, 0) / values.length / 10;
+    }
+  } catch {
+    return undefined;
+  }
+  return undefined;
+}
+
 function extractNationalityData(row: CsvRow): NationalityData | undefined {
   const natRow = rowsFromJson(row.infocursos_nacionalidade_curso_json).find((item) => item.Nacionalidade === "Curso");
   if (!natRow) return undefined;
@@ -256,8 +334,32 @@ function extractMetrics(row: CsvRow): CourseMetrics {
     menShare: numberValue(sex?.Homens),
     womenShare: numberValue(sex?.Mulheres),
     foreignerShare: numberValue(nationality?.Estrangeiros),
-    ageAverage: weightedAgeAverage(row)
+    ageAverage: weightedAgeAverage(row),
+    entryGradeAverage: latestEntryGradeAverage(row)
   };
+}
+
+function extractProvasIngresso(row: CsvRow): { sets: { code: string; name: string }[][] } | undefined {
+  const raw = clean(row["Provas de Ingresso"]);
+  if (!raw) return undefined;
+  try {
+    const parsed = JSON.parse(raw) as { sets?: unknown };
+    if (!Array.isArray(parsed.sets) || parsed.sets.length === 0) return undefined;
+    const sets = (parsed.sets as unknown[][]).map((set) =>
+      (Array.isArray(set) ? set : []).filter(
+        (item): item is { code: string; name: string } =>
+          typeof item === "object" && item !== null && typeof (item as Record<string, unknown>).name === "string"
+      )
+    ).filter((set) => set.length > 0);
+    return sets.length > 0 ? { sets } : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+function normalizeDuracao(value: string | undefined): string | undefined {
+  if (!value) return undefined;
+  return value.replace(/\b\w/g, (c) => c.toLocaleUpperCase("pt"));
 }
 
 function uniqueSlugs(courses: Omit<Course, "slug">[]): Course[] {
@@ -304,6 +406,7 @@ export function getAllCourses(): Course[] {
       morada: getFirst(row, ["morada"]),
       reference: getFirst(row, ["reference", "referencia"]),
       grades: extractGrades(row),
+      vacancies: extractVacancies(row),
       courseDescription: getFirst(row, ["courseDescription", "course_description"]),
       infoCursosUrl: getFirst(row, ["infoCursosUrl", "infocursosUrl", "info_cursos_url", "InfoCursos", "estatisticas_do_curso"]),
       dgesUrl: getFirst(row, ["dgesUrl", "dges_url", "DGES", "detalhes_do_curso"]),
@@ -311,7 +414,12 @@ export function getAllCourses(): Course[] {
       finalGradesDistribution: extractFinalGradesDistribution(row),
       ageDistribution: extractAgeDistribution(row),
       genderData: extractGenderData(row),
-      nationalityData: extractNationalityData(row)
+      nationalityData: extractNationalityData(row),
+      areaCnaef: getFirst(row, ["Area CNAEF"]),
+      duracao: normalizeDuracao(getFirst(row, ["Duração"])),
+      tipoEnsino: getFirst(row, ["Tipo de Ensino"]),
+      ects: getFirst(row, ["ECTS"]),
+      provasIngresso: extractProvasIngresso(row)
     });
   }
 
@@ -529,4 +637,113 @@ export function getCoursesByDistrict(slug: string): Course[] {
   const district = getDistrictBySlug(slug);
   if (!district) return [];
   return getAllCourses().filter((c) => c.distrito && slugify(c.distrito) === slug);
+}
+
+// ── Área CNAEF ───────────────────────────────────────────────────────────────
+
+export function getAreas(): string[] {
+  return Array.from(
+    new Set(getAllCourses().map((c) => c.areaCnaef).filter((a): a is string => Boolean(a)))
+  ).sort((a, b) => a.localeCompare(b, "pt"));
+}
+
+export function getAreaBySlug(slug: string): string | undefined {
+  return getAreas().find((a) => slugify(a) === slug);
+}
+
+export function getCoursesByArea(slug: string): Course[] {
+  return getAllCourses().filter((c) => c.areaCnaef && slugify(c.areaCnaef) === slug);
+}
+
+// ── Duração ──────────────────────────────────────────────────────────────────
+
+export function getDuracoes(): string[] {
+  return Array.from(
+    new Set(getAllCourses().map((c) => c.duracao).filter((d): d is string => Boolean(d)))
+  ).sort((a, b) => a.localeCompare(b, "pt"));
+}
+
+export function getDuracaoBySlug(slug: string): string | undefined {
+  return getDuracoes().find((d) => slugify(d) === slug);
+}
+
+export function getCoursesByDuracao(slug: string): Course[] {
+  return getAllCourses().filter((c) => c.duracao && slugify(c.duracao) === slug);
+}
+
+// ── Tipo de Ensino ───────────────────────────────────────────────────────────
+
+export function getTiposEnsino(): string[] {
+  return Array.from(
+    new Set(getAllCourses().map((c) => c.tipoEnsino).filter((t): t is string => Boolean(t)))
+  ).sort((a, b) => a.localeCompare(b, "pt"));
+}
+
+export function getTipoEnsinoBySlug(slug: string): string | undefined {
+  return getTiposEnsino().find((t) => slugify(t) === slug);
+}
+
+export function getCoursesByTipoEnsino(slug: string): Course[] {
+  return getAllCourses().filter((c) => c.tipoEnsino && slugify(c.tipoEnsino) === slug);
+}
+
+// ── Provas de Ingresso ───────────────────────────────────────────────────────
+
+export type ProvaIngressoEntry = { code: string; name: string };
+
+export function getAllProvasIngresso(): ProvaIngressoEntry[] {
+  const seen = new Map<string, ProvaIngressoEntry>();
+  for (const course of getAllCourses()) {
+    if (!course.provasIngresso) continue;
+    for (const set of course.provasIngresso.sets) {
+      for (const prova of set) {
+        if (!seen.has(prova.code)) seen.set(prova.code, prova);
+      }
+    }
+  }
+  return Array.from(seen.values()).sort((a, b) => a.name.localeCompare(b.name, "pt"));
+}
+
+export function getProvaIngressoBySlug(slug: string): ProvaIngressoEntry | undefined {
+  return getAllProvasIngresso().find((p) => slugify(p.name) === slug);
+}
+
+export function getCoursesByProvaIngresso(slug: string): Course[] {
+  return getAllCourses().filter((c) =>
+    c.provasIngresso?.sets.some((set) => set.some((p) => slugify(p.name) === slug))
+  );
+}
+
+// ── Conjuntos de provas ───────────────────────────────────────────────────────
+
+export type ProvaSetEntry = {
+  slug: string;
+  provas: { code: string; name: string }[];
+};
+
+export function provaSetSlug(set: { code: string; name: string }[]): string {
+  return [...set].sort((a, b) => a.code.localeCompare(b.code)).map((p) => slugify(p.name)).join("-e-");
+}
+
+export function getAllProvaSets(): ProvaSetEntry[] {
+  const seen = new Map<string, ProvaSetEntry>();
+  for (const course of getAllCourses()) {
+    if (!course.provasIngresso) continue;
+    for (const set of course.provasIngresso.sets) {
+      if (set.length < 2) continue;
+      const slug = provaSetSlug(set);
+      if (!seen.has(slug)) seen.set(slug, { slug, provas: set });
+    }
+  }
+  return Array.from(seen.values());
+}
+
+export function getProvaSetBySlug(slug: string): ProvaSetEntry | undefined {
+  return getAllProvaSets().find((s) => s.slug === slug);
+}
+
+export function getCoursesByProvaSet(slug: string): Course[] {
+  return getAllCourses().filter((c) =>
+    c.provasIngresso?.sets.some((set) => provaSetSlug(set) === slug)
+  );
 }

@@ -4,10 +4,11 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 const nav = [
+  { href: "/areas/", label: "Áreas" },
   { href: "/cursos/", label: "Cursos" },
   { href: "/universidades/", label: "Universidades" },
   { href: "/ciclos/", label: "Ciclos" },
-  { href: "/top-10/", label: "Top 10" },
+  { href: "/top-10-cursos/", label: "Top 10" },
 ];
 
 export function MobileNav() {

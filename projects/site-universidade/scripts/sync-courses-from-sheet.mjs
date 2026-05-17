@@ -32,6 +32,39 @@ function csvEscape(value) {
   return text;
 }
 
+function parseCsvLine(line) {
+  const cells = [];
+  let cell = "";
+  let inQuotes = false;
+
+  for (let index = 0; index < line.length; index += 1) {
+    const char = line[index];
+    const next = line[index + 1];
+
+    if (char === '"' && inQuotes && next === '"') {
+      cell += '"';
+      index += 1;
+      continue;
+    }
+
+    if (char === '"') {
+      inQuotes = !inQuotes;
+      continue;
+    }
+
+    if (char === "," && !inQuotes) {
+      cells.push(cell);
+      cell = "";
+      continue;
+    }
+
+    cell += char;
+  }
+
+  cells.push(cell);
+  return cells;
+}
+
 function trimTrailingEmptyCells(row) {
   const next = [...row];
   while (next.length > 0 && String(next.at(-1) ?? "").trim() === "") next.pop();
@@ -52,6 +85,11 @@ function normaliseRows(values) {
 }
 
 function validateHeaders(headers) {
+  const duplicateHeaders = headers.filter((header, index) => headers.indexOf(header) !== index);
+  if (duplicateHeaders.length > 0) {
+    throw new Error(`Spreadsheet has duplicate columns: ${[...new Set(duplicateHeaders)].join(", ")}`);
+  }
+
   const missing = requiredHeaders.filter((header) => !headers.includes(header));
   if (missing.length > 0) {
     throw new Error(`Spreadsheet is missing required columns: ${missing.join(", ")}`);
@@ -82,22 +120,64 @@ async function gogGetSheet() {
   return payload.values;
 }
 
-async function main() {
+async function getCurrentCsvHeaders() {
+  try {
+    const csv = await fs.readFile(outputPath, "utf8");
+    const [headerLine] = csv.split(/\r?\n/, 1);
+    const headers = parseCsvLine(headerLine).map((header) => header.trim()).filter(Boolean);
+    if (headers.length > 0) return headers;
+  } catch (error) {
+    if (error?.code !== "ENOENT") throw error;
+  }
+
+  return null;
+}
+
+function buildOutputHeaders(sheetHeaders, currentCsvHeaders) {
+  if (!currentCsvHeaders) return sheetHeaders;
+
+  const missingCurrentHeaders = currentCsvHeaders.filter((header) => !sheetHeaders.includes(header));
+  if (missingCurrentHeaders.length > 0) {
+    throw new Error(
+      `Spreadsheet is missing columns that already exist in data/courses.csv: ${missingCurrentHeaders.join(", ")}`
+    );
+  }
+
+  const newSheetHeaders = sheetHeaders.filter((header) => !currentCsvHeaders.includes(header));
+  return [...currentCsvHeaders, ...newSheetHeaders];
+}
+
+function reorderRowsByHeader(values, outputHeaders) {
+  const sheetHeaders = values[0].map((value) => String(value ?? "").trim());
+  const sheetIndexes = new Map(sheetHeaders.map((header, index) => [header, index]));
+  return [
+    outputHeaders,
+    ...values.slice(1).map((row) => outputHeaders.map((header) => row[sheetIndexes.get(header)] ?? ""))
+  ];
+}
+
+export async function main() {
   console.log(`Syncing ${sheetName} from Google Sheets...`);
   const values = normaliseRows(await gogGetSheet());
   const headers = values[0].map((value) => String(value ?? "").trim());
   validateHeaders(headers);
+  const currentCsvHeaders = await getCurrentCsvHeaders();
+  const outputHeaders = buildOutputHeaders(headers, currentCsvHeaders);
+  const outputValues = reorderRowsByHeader(values, outputHeaders);
 
-  const csv = values
+  const csv = outputValues
     .map((row) => row.map(csvEscape).join(","))
     .join("\n") + "\n";
 
   await fs.mkdir(path.dirname(outputPath), { recursive: true });
   await fs.writeFile(outputPath, csv, "utf8");
 
-  const dataRows = values.length - 1;
-  const filledDescriptions = countFilledDescriptions(values, headers);
+  const dataRows = outputValues.length - 1;
+  const filledDescriptions = countFilledDescriptions(outputValues, outputHeaders);
+  const addedColumns = outputHeaders.filter((header) => !currentCsvHeaders?.includes(header));
   console.log(`Wrote ${dataRows} rows to ${path.relative(root, outputPath)}`);
+  console.log(`CSV columns: ${outputHeaders.length} (${addedColumns.length} new from sheet)`);
+  if (addedColumns.length > 0) console.log(`Added columns: ${addedColumns.join(", ")}`);
   console.log(`course_description filled: ${filledDescriptions}/${dataRows}`);
 
   console.log("Regenerating search index...");
@@ -105,7 +185,9 @@ async function main() {
   console.log("Done.");
 }
 
-main().catch((error) => {
-  console.error(error instanceof Error ? error.message : error);
-  process.exit(1);
-});
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  main().catch((error) => {
+    console.error(error instanceof Error ? error.message : error);
+    process.exit(1);
+  });
+}

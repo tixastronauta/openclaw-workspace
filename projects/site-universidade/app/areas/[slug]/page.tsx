@@ -1,0 +1,62 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { Container } from "@/components/Container";
+import { CourseCard } from "@/components/CourseCard";
+import { getAreas, getAreaBySlug, getCoursesByArea } from "@/lib/courses";
+import { slugify } from "@/lib/slug";
+
+type PageProps = { params: Promise<{ slug: string }> };
+
+function parseCnaef(area: string): { code: string; name: string } {
+  const match = area.match(/^(\d+)\s+(.+)$/);
+  if (match) return { code: match[1], name: match[2] };
+  return { code: "", name: area };
+}
+
+export function generateStaticParams() {
+  return getAreas().map((area) => ({ slug: slugify(area) }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const area = getAreaBySlug(slug);
+  if (!area) return {};
+  const { name } = parseCnaef(area);
+  return {
+    title: `Cursos de ${name}`,
+    description: `Cursos do ensino superior em Portugal na área de formação ${area}.`,
+    alternates: { canonical: `/areas/${slug}/` }
+  };
+}
+
+export default async function AreaPage({ params }: PageProps) {
+  const { slug } = await params;
+  const area = getAreaBySlug(slug);
+  if (!area) notFound();
+
+  const { name } = parseCnaef(area);
+  const courses = getCoursesByArea(slug);
+
+  return (
+    <Container className="py-10">
+      <Breadcrumbs items={[{ label: "Áreas de formação", href: "/areas/" }, { label: name }]} />
+
+      <section>
+        <h1 className="text-4xl font-bold tracking-tight text-slate-950">{name}</h1>
+        <p className="mt-3 text-slate-700">
+          {courses.length} curso{courses.length === 1 ? "" : "s"} {courses.length === 1 ? "disponível" : "disponíveis"} nesta área de formação.
+        </p>
+      </section>
+
+      <section className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {courses.map((course) => <CourseCard key={course.slug} course={course} />)}
+      </section>
+
+      <div className="mt-10">
+        <Link href="/areas/" className="text-sm font-semibold text-brand-700 hover:text-brand-900">← Ver todas as áreas</Link>
+      </div>
+    </Container>
+  );
+}

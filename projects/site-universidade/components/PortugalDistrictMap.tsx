@@ -41,7 +41,7 @@ export function PortugalDistrictMap({ districts }: { districts: DistrictSummary[
         </div>
       )}
 
-      <svg viewBox="165 60 355 390" role="img" aria-label="Mapa de Portugal por distrito" className="h-auto w-full">
+      <svg viewBox="165 75 355 360" role="img" aria-label="Mapa de Portugal por distrito" className="block h-auto w-full">
         <defs>
           <filter id="mapShadow" x="-8%" y="-8%" width="116%" height="116%">
             <feDropShadow dx="0" dy="2" stdDeviation="2" floodOpacity="0.12" />

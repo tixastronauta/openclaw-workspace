@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ADS_ENABLED, AdSlot } from "@/components/AdSlot";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Container } from "@/components/Container";
-import { CourseCard } from "@/components/CourseCard";
+import { CoursesAlphabetBrowser } from "@/components/CoursesAlphabetBrowser";
 import { getAllCourses } from "@/lib/courses";
 
 export const metadata: Metadata = {
@@ -35,16 +35,7 @@ export default function CoursesPage() {
         </div>
       )}
 
-      <section className="mt-10 grid gap-10">
-        {Object.entries(grouped).map(([initial, items]) => (
-          <div key={initial} id={initial}>
-            <h2 className="sticky top-[6.5rem] z-20 -mx-2 mb-4 border-b border-slate-200 bg-slate-50/95 px-2 py-2 text-2xl font-semibold text-slate-950 backdrop-blur sm:top-16">{initial}</h2>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {items.map((course) => <CourseCard key={course.slug} course={course} />)}
-            </div>
-          </div>
-        ))}
-      </section>
+      <CoursesAlphabetBrowser grouped={grouped} />
     </Container>
   );
 }
